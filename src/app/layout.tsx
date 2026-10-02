@@ -30,6 +30,7 @@ export const metadata: Metadata = {
     "Social Gaming"
   ],
   authors: [{ name: "Gappey Team" }],
+  manifest: "/site.webmanifest",
   openGraph: {
     title: "Gappey - Ultimate Voice Party Chat Rooms",
     description: "Join live voice rooms, send luxury animated gifts, rise through whale & star levels, and connect with millions. Coming soon on Google Play Store!",
@@ -53,9 +54,16 @@ export const metadata: Metadata = {
     images: ["/mockup/d7cec7bb-fafd-4c06-bc7f-ef2bb58cac7a.png"],
   },
   icons: {
-    icon: "/assets/logo.jpeg",
-    shortcut: "/assets/logo.jpeg",
-    apple: "/assets/logo.jpeg",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.png", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" }
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }
+    ],
+    shortcut: ["/favicon.png"],
   },
 };
 
@@ -67,10 +75,15 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth">
       <head>
-        <link rel="icon" href="/assets/logo.jpeg" />
-        <meta name="theme-color" content="#07070d" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="theme-color" content="#06060c" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
-      <body className={`${inter.variable} ${jakarta.variable} font-sans bg-[#06060c] text-zinc-100 antialiased selection:bg-purple-600 selection:text-white`}>
+      <body className={`${inter.variable} ${jakarta.variable} font-sans bg-[#06060c] text-zinc-100 antialiased selection:bg-pink-600 selection:text-white`}>
         {children}
       </body>
     </html>
