@@ -5,7 +5,6 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import VideoDemoSection from "@/components/VideoDemoSection";
 import FeaturesGrid from "@/components/FeaturesGrid";
-import ScreenshotsShowcase from "@/components/ScreenshotsShowcase";
 import InteractiveGifts from "@/components/InteractiveGifts";
 import DownloadSection from "@/components/DownloadSection";
 import DeveloperPromo from "@/components/DeveloperPromo";
@@ -20,7 +19,7 @@ export default function Home() {
   };
 
   const handleScrollToVideo = () => {
-    const el = document.getElementById("live-demo");
+    const el = document.getElementById("promo-film");
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
     }
@@ -34,14 +33,11 @@ export default function Home() {
       {/* Hero Section with 3D Blended Mockup */}
       <HeroSection onOpenVideo={handleScrollToVideo} />
 
-      {/* Real In-App Screen Recording Video Section */}
+      {/* Official Launch Promo Film (Landscape Widescreen Player) */}
       <VideoDemoSection />
 
-      {/* Core Features & Highlights */}
+      {/* Core Features & Real App Screens (Dynamic 1-16 Seats, Star Levels, VIP, CP Intimacy, Moments) */}
       <FeaturesGrid />
-
-      {/* Interactive In-App Screenshots Gallery & Zoom Modal */}
-      <ScreenshotsShowcase />
 
       {/* Interactive Animated Gifts & SVGA Simulator */}
       <InteractiveGifts />

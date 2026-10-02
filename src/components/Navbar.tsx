@@ -22,9 +22,8 @@ export default function Navbar({ onOpenPreRegister }: NavbarProps) {
 
   const navLinks = [
     { name: "Overview", href: "#overview" },
-    { name: "Live Demo", href: "#live-demo" },
-    { name: "Features", href: "#features" },
-    { name: "Screenshots", href: "#screenshots" },
+    { name: "Promo Film", href: "#promo-film" },
+    { name: "Features & Screens", href: "#features" },
     { name: "Gift Vault", href: "#gifts" },
     { name: "Get APK", href: "#download" },
   ];

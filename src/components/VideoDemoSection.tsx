@@ -7,11 +7,11 @@ import {
   Volume2, 
   VolumeX, 
   Sparkles, 
-  Flame, 
   Mic2, 
   MessageSquare, 
   Gift, 
-  Crown
+  Crown,
+  Tv
 } from "lucide-react";
 
 export default function VideoDemoSection() {
@@ -71,190 +71,147 @@ export default function VideoDemoSection() {
   const highlights = [
     {
       icon: <Mic2 className="w-5 h-5 text-purple-400" />,
-      title: "Real-time Multi-Seat Audio",
-      desc: "Instant voice synchronization with active speaker wave rings and host admin controls.",
+      title: "1, 2, 4, 8 & 16 Dynamic Seats",
+      desc: "Instant seat arrangement flexibility for 1v1 duos, 4-seat podcasts, 8-seat squads, or 16-seat grand parties.",
     },
     {
-      icon: <MessageSquare className="w-5 h-5 text-pink-400" />,
-      title: "Custom VIP Chat Bubbles",
-      desc: "Stand out in chat with neon glows, animated text bubbles, and prestige badges.",
+      icon: <Gift className="w-5 h-5 text-pink-400" />,
+      title: "Full-Screen Broadcast Gifts",
+      desc: "Send Gajraj, Cosmic Rockets, and Taj Mahal monuments with room-wide celebratory effects.",
     },
     {
-      icon: <Gift className="w-5 h-5 text-amber-400" />,
-      title: "Full-Screen 3D Gift Effects",
-      desc: "Send legendary broadcast gifts with whole-screen SVGA animations and room alerts.",
+      icon: <Crown className="w-5 h-5 text-amber-400" />,
+      title: "Blue & Pink Star Levels",
+      desc: "Dual star progression: Blue Star Level for gifters and Pink Star Level for star room hosts.",
     },
     {
-      icon: <Crown className="w-5 h-5 text-cyan-400" />,
-      title: "SVIP Luxury Experience",
-      desc: "Supercar entrance animations, custom profile frames, and exclusive sound effects.",
+      icon: <MessageSquare className="w-5 h-5 text-cyan-400" />,
+      title: "Intimacy CP & Social Moments",
+      desc: "Bond with CP partner matching frames, direct chatting, and sharing daily community moments.",
     },
   ];
 
   return (
-    <section id="live-demo" className="relative py-20 sm:py-28 overflow-hidden bg-gradient-to-b from-[#06060c] via-[#0b0a18] to-[#06060c]">
+    <section id="promo-film" className="relative py-20 sm:py-28 overflow-hidden bg-gradient-to-b from-[#06060c] via-[#0b0a18] to-[#06060c]">
       {/* Glow Backdrops */}
-      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-purple-600/10 blur-[130px] rounded-full pointer-events-none" />
-      <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] bg-pink-600/10 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[600px] h-[600px] bg-purple-600/10 blur-[150px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-pink-600/10 blur-[140px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xs font-bold tracking-wide uppercase">
-            <Flame className="w-3.5 h-3.5 animate-bounce" />
-            Live App Experience
+            <Tv className="w-3.5 h-3.5" />
+            Official Launch Film
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-            See Gappey in <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-300 bg-clip-text text-transparent">Action</span>
+            Watch the <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-300 bg-clip-text text-transparent">Gappey Promo Video</span>
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base leading-relaxed">
-            Watch the real screen recording of Gappey. From ultra-smooth 16-seat voice parties to animated luxury gifts and custom chat bubbles.
+            Experience the excitement, voice parties, animated broadcast gifts, and social connections awaiting you in Gappey.
           </p>
         </div>
 
-        {/* Video & Features Showcase */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
-          {/* Phone Mockup Frame containing Video */}
-          <div className="lg:col-span-6 flex justify-center">
-            <div className="relative w-full max-w-[320px] sm:max-w-[340px]">
+        {/* Landscape Video Showcase Card */}
+        <div className="max-w-5xl mx-auto mb-16">
+          <div className="relative rounded-3xl p-1 bg-gradient-to-r from-purple-600/50 via-pink-600/50 to-cyan-500/50 shadow-[0_0_50px_rgba(168,85,247,0.3)]">
+            <div className="relative rounded-[22px] overflow-hidden bg-[#0a0915] border border-white/10">
               
-              {/* Outer Neon Glow around phone */}
-              <div className="absolute -inset-1.5 bg-gradient-to-tr from-purple-600 via-pink-600 to-amber-500 rounded-[48px] blur-lg opacity-70 group-hover:opacity-100 transition duration-500 animate-pulse-slow" />
+              {/* Landscape 16:9 Video Box */}
+              <div className="relative aspect-video w-full bg-black">
+                <video
+                  ref={videoRef}
+                  src="/screenshots/document_6197079144551949903.mp4"
+                  autoPlay
+                  loop
+                  muted={isMuted}
+                  playsInline
+                  className="w-full h-full object-contain bg-black"
+                />
 
-              {/* Smartphone Bezel Body */}
-              <div className="relative bg-[#0c0a17] p-3 rounded-[46px] border border-white/20 shadow-2xl shadow-purple-950/90 overflow-hidden">
-                
-                {/* Dynamic Island / Speaker Pill */}
-                <div className="absolute top-5 left-1/2 -translate-x-1/2 w-28 h-4 bg-black rounded-full z-30 flex items-center justify-end px-3">
-                  <div className="w-2.5 h-2.5 rounded-full bg-[#1b192e] border border-zinc-800" />
+                {/* Ambient Top Glow */}
+                <div className="absolute top-0 inset-x-0 h-20 bg-gradient-to-b from-black/70 to-transparent pointer-events-none z-10 flex items-center justify-between px-6 pt-2">
+                  <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-xs font-semibold text-white">
+                    <span className="w-2 h-2 rounded-full bg-pink-500 animate-ping" />
+                    Gappey Official Promo
+                  </div>
+                  <span className="text-xs font-mono text-zinc-300 px-2.5 py-1 rounded-full bg-black/50 border border-white/10">
+                    HD 1080p
+                  </span>
                 </div>
 
-                {/* Phone Screen Area */}
-                <div className="relative aspect-[9/19.5] w-full rounded-[38px] overflow-hidden bg-black">
+                {/* Floating Bottom Control Bar */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-4 sm:p-6 z-20">
                   
-                  <video
-                    ref={videoRef}
-                    src="/screenshots/document_6197079144551949903.mp4"
-                    autoPlay
-                    loop
-                    muted={isMuted}
-                    playsInline
-                    className="w-full h-full object-cover"
+                  {/* Progress Slider */}
+                  <input
+                    type="range"
+                    min={0}
+                    max={duration || 100}
+                    value={currentTime}
+                    onChange={handleSeek}
+                    className="w-full h-1.5 bg-white/20 rounded-lg appearance-none cursor-pointer accent-pink-500 mb-3 sm:mb-4"
                   />
 
-                  {/* Top Glass Gradient Overlay */}
-                  <div className="absolute top-0 inset-x-0 h-16 bg-gradient-to-b from-black/60 to-transparent pointer-events-none z-10" />
+                  {/* Controls */}
+                  <div className="flex items-center justify-between text-white text-xs sm:text-sm">
+                    <div className="flex items-center gap-3">
+                      <button
+                        onClick={togglePlay}
+                        className="w-10 h-10 rounded-xl bg-white/20 hover:bg-white/30 backdrop-blur-md flex items-center justify-center transition-transform active:scale-95"
+                        aria-label={isPlaying ? "Pause" : "Play"}
+                      >
+                        {isPlaying ? <Pause className="w-4 h-4 fill-white" /> : <Play className="w-4 h-4 fill-white ml-0.5" />}
+                      </button>
 
-                  {/* Floating Video Overlay Controls on Hover */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-4 z-20">
-                    
-                    {/* Progress Slider */}
-                    <input
-                      type="range"
-                      min={0}
-                      max={duration || 100}
-                      value={currentTime}
-                      onChange={handleSeek}
-                      className="w-full h-1 bg-white/20 rounded-lg appearance-none cursor-pointer accent-pink-500 mb-3"
-                    />
+                      <button
+                        onClick={toggleMute}
+                        className="w-10 h-10 rounded-xl bg-white/20 hover:bg-white/30 backdrop-blur-md flex items-center justify-center transition-transform active:scale-95"
+                        aria-label={isMuted ? "Unmute" : "Mute"}
+                      >
+                        {isMuted ? <VolumeX className="w-4 h-4 text-zinc-300" /> : <Volume2 className="w-4 h-4 text-pink-400" />}
+                      </button>
 
-                    {/* Bottom Control Bar */}
-                    <div className="flex items-center justify-between text-white text-xs">
-                      <div className="flex items-center gap-2">
-                        <button
-                          onClick={togglePlay}
-                          className="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-md flex items-center justify-center transition-transform active:scale-95"
-                          aria-label={isPlaying ? "Pause" : "Play"}
-                        >
-                          {isPlaying ? <Pause className="w-3.5 h-3.5 fill-white" /> : <Play className="w-3.5 h-3.5 fill-white ml-0.5" />}
-                        </button>
-
-                        <button
-                          onClick={toggleMute}
-                          className="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-md flex items-center justify-center transition-transform active:scale-95"
-                          aria-label={isMuted ? "Unmute" : "Mute"}
-                        >
-                          {isMuted ? <VolumeX className="w-3.5 h-3.5 text-zinc-300" /> : <Volume2 className="w-3.5 h-3.5 text-pink-400" />}
-                        </button>
-
-                        <span className="font-mono text-[11px] text-zinc-300">
-                          {formatTime(currentTime)} / {formatTime(duration)}
-                        </span>
-                      </div>
-
-                      <div className="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-pink-500/30 border border-pink-500/50 text-[10px] font-bold text-pink-200">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                        Live Gappey Screen
-                      </div>
+                      <span className="font-mono text-xs text-zinc-300">
+                        {formatTime(currentTime)} / {formatTime(duration)}
+                      </span>
                     </div>
-                  </div>
 
+                    <a
+                      href="#download"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold text-xs hover:scale-105 transition-transform"
+                    >
+                      <Sparkles className="w-3.5 h-3.5 text-amber-200" />
+                      Pre-Register
+                    </a>
+                  </div>
                 </div>
+
               </div>
 
-              {/* Bottom Phone Reflection Glow */}
-              <div className="w-3/4 h-6 mx-auto bg-pink-500/20 blur-xl rounded-full" />
             </div>
           </div>
+        </div>
 
-          {/* Right Highlights & Explanations */}
-          <div className="lg:col-span-6 space-y-6">
-            
-            <div className="space-y-2">
-              <span className="text-xs font-bold text-purple-400 uppercase tracking-wider">
-                Engineered for Peak Entertainment
-              </span>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
-                Ultra-smooth, Lag-Free Social Hangouts
-              </h3>
-              <p className="text-sm sm:text-base text-zinc-300 leading-relaxed">
-                Experience seamless multi-mic voice communication with studio clarity. Whether you are hosting a karaoke session, organizing clan battles, or gifting your favorite creators, Gappey delivers unmatched performance.
+        {/* Highlights Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          {highlights.map((item, index) => (
+            <div
+              key={index}
+              className="p-5 rounded-2xl bg-zinc-900/60 border border-white/5 hover:border-purple-500/30 hover:bg-zinc-800/60 transition-all duration-300 space-y-2.5 group"
+            >
+              <div className="w-10 h-10 rounded-xl bg-zinc-800/80 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                {item.icon}
+              </div>
+              <h4 className="text-sm font-bold text-white group-hover:text-purple-300 transition-colors">
+                {item.title}
+              </h4>
+              <p className="text-xs text-zinc-400 leading-relaxed">
+                {item.desc}
               </p>
             </div>
-
-            {/* Highlights Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-              {highlights.map((item, index) => (
-                <div
-                  key={index}
-                  className="p-4 rounded-2xl bg-zinc-900/60 border border-white/5 hover:border-purple-500/30 hover:bg-zinc-800/60 transition-all duration-300 space-y-2 group"
-                >
-                  <div className="w-10 h-10 rounded-xl bg-zinc-800/80 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    {item.icon}
-                  </div>
-                  <h4 className="text-sm font-bold text-white group-hover:text-purple-300 transition-colors">
-                    {item.title}
-                  </h4>
-                  <p className="text-xs text-zinc-400 leading-normal">
-                    {item.desc}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            {/* Quick Action under Video */}
-            <div className="pt-2 flex flex-col sm:flex-row items-center gap-3">
-              <a
-                href="#download"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-pink-600 to-purple-600 text-white font-bold text-sm shadow-lg shadow-pink-600/30 hover:scale-[1.02] transition-transform"
-              >
-                <Sparkles className="w-4 h-4 text-amber-200" />
-                <span>Get Early Access on Google Play</span>
-              </a>
-
-              <a
-                href="/app/gappey.apk"
-                download="gappey.apk"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-200 text-sm font-medium border border-zinc-700 transition-colors"
-              >
-                Download Test APK
-              </a>
-            </div>
-
-          </div>
-
+          ))}
         </div>
 
       </div>

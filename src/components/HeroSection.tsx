@@ -57,22 +57,22 @@ export default function HeroSection({ onOpenVideo }: HeroSectionProps) {
 
             {/* Subtitle */}
             <p className="text-base sm:text-lg text-zinc-300 font-normal leading-relaxed max-w-xl mx-auto lg:mx-0">
-              The premier real-time voice party room app with <strong className="text-white">16 dynamic live seats</strong>, jaw-dropping <strong className="text-pink-400">full-screen animated gifts</strong>, dual-level prestige rankings, VIP rides, and mini-games. Join the revolution in voice entertainment!
+              The premier real-time voice party chat room app with <strong className="text-white">customizable 1, 2, 4, 8 & 16 seat arrangements</strong>, jaw-dropping <strong className="text-pink-400">full-screen animated broadcast gifts</strong>, Dual Blue & Pink Star Levels, VIP prestige rides, Coins & Diamonds economy, and intimate CP bonding.
             </p>
 
             {/* Feature Pills */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-1">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-purple-950/60 border border-purple-800/40 text-xs text-purple-200 font-medium">
-                <Mic2 className="w-3.5 h-3.5 text-purple-400" /> 1–16 Live Voice Seats
+                <Mic2 className="w-3.5 h-3.5 text-purple-400" /> 1 / 2 / 4 / 8 / 16 Dynamic Seats
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-pink-950/60 border border-pink-800/40 text-xs text-pink-200 font-medium">
                 <Gift className="w-3.5 h-3.5 text-pink-400" /> Full-Screen SVGA Gifts
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-amber-950/60 border border-amber-800/40 text-xs text-amber-200 font-medium">
-                <Crown className="w-3.5 h-3.5 text-amber-400" /> SVIP Prestige Badges
+                <Crown className="w-3.5 h-3.5 text-amber-400" /> Blue &amp; Pink Star Levels
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-cyan-950/60 border border-cyan-800/40 text-xs text-cyan-200 font-medium">
-                <Zap className="w-3.5 h-3.5 text-cyan-400" /> &lt;200ms Ultra-Low Latency
+                <Zap className="w-3.5 h-3.5 text-cyan-400" /> Ultra-Low Latency Audio
               </span>
             </div>
 
@@ -102,28 +102,28 @@ export default function HeroSection({ onOpenVideo }: HeroSectionProps) {
 
               {/* Watch Video Demo Button */}
               <a
-                href="#live-demo"
+                href="#promo-film"
                 onClick={onOpenVideo}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-zinc-300 hover:text-white text-sm font-medium transition-all"
               >
                 <Play className="w-4 h-4 text-pink-400 fill-pink-400" />
-                <span>Watch App Demo</span>
+                <span>Watch Promo Film</span>
               </a>
             </div>
 
             {/* Trust and status metrics */}
             <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 max-w-lg mx-auto lg:mx-0">
               <div className="text-center lg:text-left">
-                <p className="text-2xl font-black text-white">16 Seats</p>
-                <p className="text-xs text-zinc-400">Dynamic Voice Grid</p>
+                <p className="text-2xl font-black text-white">1–16 Seats</p>
+                <p className="text-xs text-zinc-400">Custom Room Grids</p>
               </div>
               <div className="text-center lg:text-left">
-                <p className="text-2xl font-black text-pink-400">&lt;200ms</p>
-                <p className="text-xs text-zinc-400">Voice Latency</p>
+                <p className="text-2xl font-black text-pink-400">Dual Star</p>
+                <p className="text-xs text-zinc-400">Blue &amp; Pink Levels</p>
               </div>
               <div className="text-center lg:text-left">
-                <p className="text-2xl font-black text-amber-300">100+ Gifts</p>
-                <p className="text-xs text-zinc-400">SVGA & 3D Broadcast</p>
+                <p className="text-2xl font-black text-amber-300">Coins &amp; Gems</p>
+                <p className="text-xs text-zinc-400">Live Virtual Economy</p>
               </div>
             </div>
 
@@ -158,23 +158,23 @@ export default function HeroSection({ onOpenVideo }: HeroSectionProps) {
                   </div>
                   <div>
                     <div className="flex items-center gap-1">
-                      <span className="text-xs font-bold text-white">Party Room #104</span>
+                      <span className="text-xs font-bold text-white">Live Voice Room</span>
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
                     </div>
-                    <p className="text-[10px] text-zinc-400">14 Speakers Online</p>
+                    <p className="text-[10px] text-zinc-400">1/2/4/8/16 Seat Layouts</p>
                   </div>
                 </div>
               </div>
 
-              {/* Floating Live Badge: Level 60 Whale Gifter */}
+              {/* Floating Live Badge: Dual Star Level */}
               <div className="absolute top-1/3 -right-2 sm:-right-4 z-20 animate-float-delayed">
                 <div className="flex items-center gap-2.5 px-3.5 py-2 rounded-2xl bg-zinc-900/90 backdrop-blur-md border border-amber-500/40 shadow-xl shadow-amber-950/80">
                   <div className="w-7 h-7 rounded-xl bg-amber-500/20 border border-amber-500/50 flex items-center justify-center text-amber-300">
                     <Crown className="w-4 h-4 text-amber-400" />
                   </div>
                   <div>
-                    <span className="text-xs font-extrabold text-amber-300">Whale Gifter Lvl 60</span>
-                    <p className="text-[10px] text-zinc-400">Sent Aurum Dragon 🐉</p>
+                    <span className="text-xs font-extrabold text-amber-300">Blue &amp; Pink Stars</span>
+                    <p className="text-[10px] text-zinc-400">Prestige Progression 🌟</p>
                   </div>
                 </div>
               </div>
@@ -186,8 +186,8 @@ export default function HeroSection({ onOpenVideo }: HeroSectionProps) {
                     <Sparkles className="w-4 h-4 text-pink-400" />
                   </div>
                   <div>
-                    <span className="text-xs font-bold text-pink-300">SVIP Royal Entry</span>
-                    <p className="text-[10px] text-zinc-400">Luxury Supercar Animation</p>
+                    <span className="text-xs font-bold text-pink-300">SVIP Luxury Rides</span>
+                    <p className="text-[10px] text-zinc-400">Royal Entry Animations</p>
                   </div>
                 </div>
               </div>
