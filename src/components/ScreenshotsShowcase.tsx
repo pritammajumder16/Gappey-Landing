@@ -8,9 +8,7 @@ import {
   Maximize2, 
   X, 
   Sparkles, 
-  Smartphone,
-  Eye,
-  CheckCircle2
+  Smartphone
 } from "lucide-react";
 
 export default function ScreenshotsShowcase() {

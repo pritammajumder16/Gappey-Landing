@@ -15,6 +15,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://gappey.app"),
   title: "Gappey - Ultimate Voice Party & Social Hangout | Coming Soon on Google Play",
   description: "Experience the next-generation voice party chat rooms with up to 16 dynamic seats, breathtaking full-screen animated gifts, dual-level progression, VIP prestige clubs, and real-time social gaming. Coming soon to Google Play Store!",
   keywords: [

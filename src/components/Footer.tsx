@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { Download, Sparkles, Heart, Flame, Shield, ArrowUp } from "lucide-react";
+import { Download, ArrowUp } from "lucide-react";
 
 export default function Footer() {
   const scrollToTop = () => {

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { Download, Sparkles, Menu, X, Play, ShieldCheck, Flame } from "lucide-react";
+import { Download, Sparkles, Menu, X, Flame } from "lucide-react";
 
 interface NavbarProps {
   onOpenPreRegister?: () => void;
@@ -59,7 +59,7 @@ export default function Navbar({ onOpenPreRegister }: NavbarProps) {
                   Gappey
                 </span>
                 <span className="hidden xs:inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-gradient-to-r from-pink-500/20 to-purple-500/20 border border-pink-500/40 text-pink-300">
-                  <Flame className="w-3 h-3 text-pink-400 animate-pulse" />
+                  <Flame className="w-3.5 h-3.5 text-pink-400 animate-pulse" />
                   Voice Party
                 </span>
               </div>

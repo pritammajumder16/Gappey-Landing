@@ -8,22 +8,18 @@ import {
   Crown, 
   TrendingUp, 
   Coins, 
-  Gamepad2, 
-  Users, 
   HeartHandshake, 
-  ShieldAlert, 
-  Radio, 
-  Sparkles,
-  Zap,
-  Star
+  Sparkles
 } from "lucide-react";
 
+type FeatureCategory = "all" | "voice" | "gifting" | "vip" | "economy";
+
 export default function FeaturesGrid() {
-  const [activeTab, setActiveTab] = useState<"all" | "voice" | "gifting" | "vip" | "economy">("all");
+  const [activeTab, setActiveTab] = useState<FeatureCategory>("all");
 
   const features = [
     {
-      category: "voice",
+      category: "voice" as const,
       icon: <Mic2 className="w-6 h-6 text-purple-400" />,
       tag: "Live Audio",
       title: "16 Dynamic Voice Seats",
@@ -33,7 +29,7 @@ export default function FeaturesGrid() {
       badgeColor: "bg-purple-900/50 text-purple-300 border-purple-700/50"
     },
     {
-      category: "gifting",
+      category: "gifting" as const,
       icon: <Gift className="w-6 h-6 text-pink-400" />,
       tag: "Luxury SVGA",
       title: "Full-Screen Broadcast Gifts",
@@ -43,7 +39,7 @@ export default function FeaturesGrid() {
       badgeColor: "bg-pink-900/50 text-pink-300 border-pink-700/50"
     },
     {
-      category: "vip",
+      category: "vip" as const,
       icon: <Crown className="w-6 h-6 text-amber-400" />,
       tag: "Prestige Status",
       title: "VIP & SVIP Luxury Tiers",
@@ -53,7 +49,7 @@ export default function FeaturesGrid() {
       badgeColor: "bg-amber-900/50 text-amber-300 border-amber-700/50"
     },
     {
-      category: "vip",
+      category: "vip" as const,
       icon: <TrendingUp className="w-6 h-6 text-cyan-400" />,
       tag: "Dual Progression",
       title: "Blue Whale & Pink Star Levels",
@@ -63,7 +59,7 @@ export default function FeaturesGrid() {
       badgeColor: "bg-cyan-900/50 text-cyan-300 border-cyan-700/50"
     },
     {
-      category: "economy",
+      category: "economy" as const,
       icon: <Coins className="w-6 h-6 text-emerald-400" />,
       tag: "4-Currency System",
       title: "Gold, Silver, Diamonds & R-Coins",
@@ -73,7 +69,7 @@ export default function FeaturesGrid() {
       badgeColor: "bg-emerald-900/50 text-emerald-300 border-emerald-700/50"
     },
     {
-      category: "voice",
+      category: "voice" as const,
       icon: <HeartHandshake className="w-6 h-6 text-rose-400" />,
       tag: "Social Connection",
       title: "CP Link, Clans & Agency Dashboard",
@@ -114,15 +110,15 @@ export default function FeaturesGrid() {
           {/* Category Tabs */}
           <div className="flex flex-wrap items-center justify-center gap-2 pt-4">
             {[
-              { id: "all", label: "All Features" },
-              { id: "voice", label: "Voice Rooms" },
-              { id: "gifting", label: "Animated Gifts" },
-              { id: "vip", label: "VIP Prestige & Levels" },
-              { id: "economy", label: "Economy & Agency" },
+              { id: "all" as const, label: "All Features" },
+              { id: "voice" as const, label: "Voice Rooms" },
+              { id: "gifting" as const, label: "Animated Gifts" },
+              { id: "vip" as const, label: "VIP Prestige & Levels" },
+              { id: "economy" as const, label: "Economy & Agency" },
             ].map((tab) => (
               <button
                 key={tab.id}
-                onClick={() => setActiveTab(tab.id as any)}
+                onClick={() => setActiveTab(tab.id)}
                 className={`text-xs sm:text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200 ${
                   activeTab === tab.id
                     ? "bg-purple-600 text-white shadow-lg shadow-purple-600/40"

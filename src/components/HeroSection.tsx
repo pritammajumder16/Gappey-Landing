@@ -9,12 +9,8 @@ import {
   Mic2, 
   Crown, 
   Gift, 
-  Flame, 
   Radio, 
-  ShieldCheck, 
-  Zap,
-  Users,
-  Smartphone
+  Zap
 } from "lucide-react";
 
 interface HeroSectionProps {

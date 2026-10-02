@@ -1,19 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 import confetti from "canvas-confetti";
 import { 
   Download, 
   Sparkles, 
-  ShieldCheck, 
   CheckCircle2, 
   Smartphone, 
-  ArrowRight, 
-  Flame, 
-  AlertCircle,
-  HelpCircle,
-  QrCode
+  HelpCircle
 } from "lucide-react";
 
 export default function DownloadSection() {

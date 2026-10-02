@@ -6,14 +6,12 @@ import {
   Pause, 
   Volume2, 
   VolumeX, 
-  Maximize2, 
   Sparkles, 
   Flame, 
   Mic2, 
   MessageSquare, 
   Gift, 
-  Crown,
-  CheckCircle2
+  Crown
 } from "lucide-react";
 
 export default function VideoDemoSection() {

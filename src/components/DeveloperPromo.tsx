@@ -8,9 +8,7 @@ import {
   Cloud, 
   Monitor, 
   Globe, 
-  Sparkles, 
-  ArrowUpRight,
-  Send
+  ArrowUpRight
 } from "lucide-react";
 
 export default function DeveloperPromo() {

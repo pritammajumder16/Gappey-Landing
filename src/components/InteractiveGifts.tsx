@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import confetti from "canvas-confetti";
-import { Gift, Sparkles, Flame, Crown, Heart, Volume2 } from "lucide-react";
+import { Gift, Sparkles, Crown, Volume2 } from "lucide-react";
 
 export default function InteractiveGifts() {
   const [selectedGift, setSelectedGift] = useState<string>("rose");
