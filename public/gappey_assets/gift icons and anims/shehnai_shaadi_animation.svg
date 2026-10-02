@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 800" width="450" height="800">
+  <title>Shehnai Shaadi — full-screen gift animation</title>
+  <defs>
+    <radialGradient id="snAsky" cx="50%" cy="40%" r="90%">
+      <stop offset="0" stop-color="#1C0F06"/><stop offset=".55" stop-color="#0E0703"/><stop offset="1" stop-color="#060302"/>
+    </radialGradient>
+    <radialGradient id="snAglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#E4A93C" stop-opacity=".16"/><stop offset="1" stop-color="#E4A93C" stop-opacity="0"/>
+    </radialGradient>
+    <path id="snApetal" d="M0 -6 C4.2 -4 5.4 1.6 0 7.2 C-5.4 1.6 -4.2 -4 0 -6 Z"/>
+    <path id="snAspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+    <g id="snAmar"><circle r="7.5" fill="#F2A43D"/><circle r="4" fill="#C97F2E"/><circle r="1.6" fill="#F6D27A"/></g>
+    <g id="snArose"><circle r="7" fill="#E2557B"/><circle r="4.2" fill="#C13B5E"/><circle r="1.8" fill="#F08CA5"/></g>
+    <g id="snAnote">
+      <ellipse rx="5" ry="3.8" transform="rotate(-18)"/>
+      <path d="M4.4 -1.2 V-22 q8 2.5 10 8" fill="none" stroke-width="2.6" stroke-linecap="round"/>
+    </g>
+    <g id="snAflame">
+      <path d="M-10 0 Q0 8 10 0 L8 -2 H-8 Z" fill="#8A4B16"/>
+      <g class="snA-flick">
+        <path d="M0 -2 C4 -6 4 -12 0 -17 C-4 -12 -4 -6 0 -2 Z" fill="#F6A23D"/>
+        <path d="M0 -3 C2 -6 2 -9 0 -12 C-2 -9 -2 -6 0 -3 Z" fill="#FFE08A"/>
+      </g>
+    </g>
+    <style>
+      .snA-all{animation:pkM 9s linear infinite}
+      @keyframes snM{0%,2%{opacity:0}4%{opacity:1}90%{opacity:1}97%,100%{opacity:0}}
+      .snA-v1,.snA-v2{fill:none;stroke:#3E7C4F;stroke-width:5;stroke-linecap:round;stroke-dasharray:240;animation:snDr1 9s linear infinite}
+      .snA-v3{fill:none;stroke:#3E7C4F;stroke-width:5;stroke-linecap:round;stroke-dasharray:400;animation:snDr3 9s linear infinite}
+      .snA-lf{fill:#3E7C4F;transform-box:fill-box;transform-origin:center;opacity:0;animation:snLf 9s linear infinite}
+      .snA-fl{transform-box:fill-box;transform-origin:center;opacity:0;animation:snFl 9s linear infinite}
+      .snA-sw3{animation:snGar 3.4s ease-in-out infinite alternate}
+      .snA-note{animation:snNote 3.8s linear infinite}
+      .snA-nv{animation:snNV 9s linear infinite}
+      .snA-pv{animation:snPV 9s linear infinite}
+      .snA-fl2{animation:snFall 4s linear infinite}
+      .snA-d1{animation-duration:3.4s}.snA-d2{animation-duration:4.3s}.snA-d3{animation-duration:5.3s}
+      .snA-sw{transform-box:fill-box;transform-origin:50% 0;animation:snSway 2.2s ease-in-out infinite alternate}
+      .snA-rot{transform-box:fill-box;transform-origin:center;animation:snRot 2.4s linear infinite}
+      .snA-flick{transform-box:fill-box;transform-origin:50% 100%;animation:snFlick .9s ease-in-out infinite alternate}
+      .snA-glow{animation:snGlow 3.6s ease-in-out infinite alternate}
+      .snA-cap{font:600 33px Georgia,'Times New Roman',serif;letter-spacing:10px;fill:#F2D48C;text-anchor:middle;animation:snCap 9s linear infinite}
+      .snA-orn{animation:snCap 9s linear infinite}
+      .snA-twk{transform-box:fill-box;transform-origin:center;animation:snTw 2.8s ease-in-out infinite}
+      @keyframes snDr1{0%,6%{stroke-dashoffset:240}28%,100%{stroke-dashoffset:0}}
+      @keyframes snDr3{0%,10%{stroke-dashoffset:400}36%,100%{stroke-dashoffset:0}}
+      @keyframes snLf{0%,30%{opacity:0;transform:scale(0)}34%{opacity:1;transform:scale(1.3)}37%,100%{opacity:1;transform:scale(1)}}
+      @keyframes snFl{0%,32%{opacity:0;transform:scale(0)}36%{opacity:1;transform:scale(1.25)}39%,100%{opacity:1;transform:scale(1)}}
+      @keyframes snGar{from{transform:rotate(-1.6deg)}to{transform:rotate(1.6deg)}}
+      @keyframes snNote{0%{opacity:0;transform:translateY(0) rotate(-6deg)}15%{opacity:.9}70%{opacity:0;transform:translateY(-110px) rotate(8deg)}100%{opacity:0;transform:translateY(-110px) rotate(8deg)}}
+      @keyframes snNV{0%,8%{opacity:0}14%{opacity:1}86%{opacity:1}92%,100%{opacity:0}}
+      @keyframes snPV{0%,7%{opacity:0}13%{opacity:1}85%{opacity:1}93%,100%{opacity:0}}
+      @keyframes snFall{from{transform:translateY(-40px)}to{transform:translateY(880px)}}
+      @keyframes snSway{from{transform:translateX(-11px) rotate(-22deg)}to{transform:translateX(11px) rotate(22deg)}}
+      @keyframes snRot{to{transform:rotate(360deg)}}
+      @keyframes snFlick{from{transform:scale(1) rotate(-2deg)}to{transform:scale(1.12,1.2) rotate(2deg)}}
+      @keyframes snGlow{from{opacity:.5}to{opacity:1}}
+      @keyframes snCap{0%,44%{opacity:0}52%{opacity:1}86%{opacity:1}94%,100%{opacity:0}}
+      @keyframes snTw{0%,100%{opacity:.06;transform:scale(.6)}50%{opacity:.85;transform:scale(1)}}
+    </style>
+  </defs>
+  <rect width="450" height="800" fill="url(#snAsky)"/>
+  <ellipse cx="225" cy="440" rx="240" ry="260" fill="url(#snAglow)" class="snA-glow"/>
+  <g class="snA-all">
+    <path class="snA-v1" d="M112 612 C102 540 122 468 112 392"/>
+    <path class="snA-v2" d="M338 612 C348 540 328 468 338 392"/>
+    <path class="snA-v3" d="M112 392 C112 296 162 264 225 264 C288 264 338 296 338 392"/>
+    <g>
+      <ellipse class="snA-lf" cx="108" cy="560" rx="5" ry="2.6" transform="rotate(-30 108 560)"/>
+      <ellipse class="snA-lf" cx="120" cy="500" rx="5" ry="2.6" transform="rotate(20 120 500)" style="animation-delay:.08s"/>
+      <ellipse class="snA-lf" cx="106" cy="440" rx="5" ry="2.6" transform="rotate(-15 106 440)" style="animation-delay:.16s"/>
+      <ellipse class="snA-lf" cx="122" cy="352" rx="5" ry="2.6" transform="rotate(30 122 352)" style="animation-delay:.24s"/>
+      <ellipse class="snA-lf" cx="150" cy="300" rx="5" ry="2.6" transform="rotate(-40 150 300)" style="animation-delay:.32s"/>
+      <ellipse class="snA-lf" cx="200" cy="268" rx="5" ry="2.6" transform="rotate(-10 200 268)" style="animation-delay:.4s"/>
+      <ellipse class="snA-lf" cx="252" cy="268" rx="5" ry="2.6" transform="rotate(10 252 268)" style="animation-delay:.48s"/>
+      <ellipse class="snA-lf" cx="304" cy="300" rx="5" ry="2.6" transform="rotate(40 304 300)" style="animation-delay:.56s"/>
+      <ellipse class="snA-lf" cx="330" cy="352" rx="5" ry="2.6" transform="rotate(-30 330 352)" style="animation-delay:.64s"/>
+      <ellipse class="snA-lf" cx="336" cy="440" rx="5" ry="2.6" transform="rotate(15 336 440)" style="animation-delay:.72s"/>
+      <ellipse class="snA-lf" cx="326" cy="500" rx="5" ry="2.6" transform="rotate(-20 326 500)" style="animation-delay:.8s"/>
+      <ellipse class="snA-lf" cx="342" cy="560" rx="5" ry="2.6" transform="rotate(30 342 560)" style="animation-delay:.88s"/>
+    </g>
+    <g>
+      <use href="#snAmar" class="snA-fl" transform="translate(112 585)"/>
+      <use href="#snAmar" class="snA-fl" transform="translate(112 505)" style="animation-delay:.1s"/>
+      <use href="#snAmar" class="snA-fl" transform="translate(112 425)" style="animation-delay:.2s"/>
+      <use href="#snAmar" class="snA-fl" transform="translate(146 308)" style="animation-delay:.3s"/>
+      <use href="#snAmar" class="snA-fl" transform="translate(225 258)" style="animation-delay:.4s"/>
+      <use href="#snAmar" class="snA-fl" transform="translate(304 308)" style="animation-delay:.5s"/>
+      <use href="#snAmar" class="snA-fl" transform="translate(338 425)" style="animation-delay:.6s"/>
+      <use href="#snAmar" class="snA-fl" transform="translate(338 505)" style="animation-delay:.7s"/>
+      <use href="#snAmar" class="snA-fl" transform="translate(338 585)" style="animation-delay:.8s"/>
+      <use href="#snAmar" class="snA-fl" transform="translate(180 276) scale(.85)" style="animation-delay:.9s"/>
+      <use href="#snAmar" class="snA-fl" transform="translate(270 276) scale(.85)" style="animation-delay:1s"/>
+      <use href="#snArose" class="snA-fl" transform="translate(112 545)" style="animation-delay:.15s"/>
+      <use href="#snArose" class="snA-fl" transform="translate(112 465)" style="animation-delay:.25s"/>
+      <use href="#snArose" class="snA-fl" transform="translate(163 288) scale(.9)" style="animation-delay:.35s"/>
+      <use href="#snArose" class="snA-fl" transform="translate(287 288) scale(.9)" style="animation-delay:.45s"/>
+      <use href="#snArose" class="snA-fl" transform="translate(338 545)" style="animation-delay:.55s"/>
+      <use href="#snArose" class="snA-fl" transform="translate(338 465)" style="animation-delay:.65s"/>
+    </g>
+    <g stroke="#D9A441" stroke-width="2" fill="none" opacity=".7">
+      <path d="M160 292 C180 348 205 372 225 376"/>
+      <path d="M290 292 C270 348 245 372 225 376"/>
+    </g>
+    <g class="snA-sw3" style="transform-origin:160px 292px">
+      <circle cx="166" cy="308" r="4" fill="#F2A43D"/><circle cx="178" cy="334" r="4" fill="#FFD98F"/><circle cx="196" cy="356" r="4" fill="#F2A43D"/><circle cx="214" cy="370" r="4" fill="#FFD98F"/>
+    </g>
+    <g class="snA-sw3" style="transform-origin:290px 292px;animation-delay:-1.7s">
+      <circle cx="284" cy="308" r="4" fill="#FFD98F"/><circle cx="272" cy="334" r="4" fill="#F2A43D"/><circle cx="254" cy="356" r="4" fill="#FFD98F"/><circle cx="236" cy="370" r="4" fill="#F2A43D"/>
+    </g>
+    <use href="#snAflame" transform="translate(112 624)"/>
+    <use href="#snAflame" transform="translate(338 624)"/>
+  </g>
+  <g class="snA-nv">
+    <use href="#snAnote" class="snA-note" transform="translate(150 500)" fill="#F3EADA" stroke="#F3EADA"/>
+    <use href="#snAnote" class="snA-note" transform="translate(298 452) scale(.85)" fill="#F2D48C" stroke="#F2D48C" style="animation-delay:-1.3s"/>
+    <use href="#snAnote" class="snA-note" transform="translate(224 548) scale(.7)" fill="#F3EADA" stroke="#F3EADA" style="animation-delay:-2.6s"/>
+  </g>
+  <g class="snA-pv">
+    <g transform="translate(30 -20)"><g class="snA-sw"><g class="snA-fl2 snA-d2" style="animation-delay:-.3s"><use href="#snApetal" fill="#E2557B"/></g></g></g>
+    <g transform="translate(66 -20)"><g class="snA-sw" style="animation-delay:-.7s"><g class="snA-fl2 snA-d1" style="animation-delay:-1.5s"><use href="#snApetal" fill="#F2A43D" transform="scale(1.1)"/></g></g></g>
+    <g transform="translate(104 -20)"><g class="snA-sw" style="animation-delay:-1.2s"><g class="snA-fl2 snA-d3" style="animation-delay:-2.4s"><use href="#snApetal" fill="#F08CA5" transform="scale(.85)"/></g></g></g>
+    <g transform="translate(142 -20)"><g class="snA-sw" style="animation-delay:-.2s"><g class="snA-fl2 snA-d1" style="animation-delay:-.8s"><use href="#snApetal" fill="#E2557B" transform="scale(1.05)"/></g></g></g>
+    <g transform="translate(180 -20)"><g class="snA-sw" style="animation-delay:-1.6s"><g class="snA-fl2 snA-d2" style="animation-delay:-3.2s"><use href="#snApetal" fill="#FFD98F" transform="scale(.9)"/></g></g></g>
+    <g transform="translate(222 -20)"><g class="snA-sw" style="animation-delay:-.9s"><g class="snA-fl2 snA-d3" style="animation-delay:-1.2s"><use href="#snApetal" fill="#F2A43D" transform="scale(1.15)"/></g></g></g>
+    <g transform="translate(262 -20)"><g class="snA-sw" style="animation-delay:-.4s"><g class="snA-fl2 snA-d1" style="animation-delay:-2.9s"><use href="#snApetal" fill="#E2557B" transform="scale(.9)"/></g></g></g>
+    <g transform="translate(300 -20)"><g class="snA-sw" style="animation-delay:-1.9s"><g class="snA-fl2 snA-d2" style="animation-delay:-.6s"><use href="#snApetal" fill="#F08CA5" transform="scale(1.1)"/></g></g></g>
+    <g transform="translate(340 -20)"><g class="snA-sw" style="animation-delay:-1.1s"><g class="snA-fl2 snA-d3" style="animation-delay:-3.8s"><use href="#snApetal" fill="#F2A43D" transform="scale(.8)"/></g></g></g>
+    <g transform="translate(380 -20)"><g class="snA-sw" style="animation-delay:-.6s"><g class="snA-fl2 snA-d1" style="animation-delay:-1.9s"><use href="#snApetal" fill="#E2557B" transform="scale(1)"/></g></g></g>
+    <g transform="translate(416 -20)"><g class="snA-sw" style="animation-delay:-1.5s"><g class="snA-fl2 snA-d2" style="animation-delay:-2.6s"><use href="#snApetal" fill="#FFD98F" transform="scale(.95)"/></g></g></g>
+    <g transform="translate(52 -20)"><g class="snA-fl2 snA-d2" style="animation-delay:-1.1s"><use href="#snAspk" class="snA-rot" fill="#F6EFE2" transform="scale(.65)"/></g></g>
+    <g transform="translate(244 -20)"><g class="snA-fl2 snA-d3" style="animation-delay:-2.2s"><use href="#snAspk" class="snA-rot" fill="#F2D48C" transform="scale(.6)"/></g></g>
+    <g transform="translate(400 -20)"><g class="snA-fl2 snA-d1" style="animation-delay:-.5s"><use href="#snAspk" class="snA-rot" fill="#F6EFE2" transform="scale(.65)"/></g></g>
+  </g>
+  <text class="snA-cap" x="229" y="700">SHEHNAI SHAADI</text>
+  <g class="snA-orn" stroke="#D9A441" fill="none">
+    <line x1="112" y1="726" x2="204" y2="726"/>
+    <line x1="256" y1="726" x2="348" y2="726"/>
+    <path d="M225 720 l6 6 -6 6 -6 -6Z"/>
+  </g>
+  <g transform="translate(70 210)"><use href="#snAspk" class="snA-twk" fill="#F2D48C"/></g>
+  <g transform="translate(384 180) scale(.8)"><use href="#snAspk" class="snA-twk" fill="#F6EFE2" style="animation-delay:-.9s"/></g>
+  <g transform="translate(58 690) scale(.7)"><use href="#snAspk" class="snA-twk" fill="#F2D48C" style="animation-delay:-1.8s"/></g>
+</svg>

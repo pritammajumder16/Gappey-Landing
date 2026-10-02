@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<defs><radialGradient id="rhsF" cx="38%" cy="30%" r="82%"><stop offset="0%" stop-color="#FFF5BC"/><stop offset="55%" stop-color="#FFD45E"/><stop offset="100%" stop-color="#FFA51F"/></radialGradient></defs>
+<style>
+.rhsH{transform-box:fill-box;transform-origin:center bottom;animation:rhsA 2s ease-in-out infinite}
+@keyframes rhsA{0%,10%{transform:translateY(44px)}45%{transform:translateY(-5px)}58%,80%{transform:translateY(0)}100%{transform:translateY(44px)}}
+.rhsS{transform-box:fill-box;transform-origin:center;opacity:0;animation:rhsB 2s ease-out infinite}
+.rhsS.e{animation-delay:.12s}
+@keyframes rhsB{0%,38%{opacity:0;transform:scale(.3) rotate(-20deg)}50%{opacity:1;transform:scale(1.1) rotate(0)}72%,100%{opacity:0;transform:scale(1.35) rotate(15deg)}}
+.rhsM{opacity:0;animation:rhsC 2s ease-out infinite}
+@keyframes rhsC{0%,8%{opacity:0}28%{opacity:.8}45%,100%{opacity:0}}
+</style>
+<line class="rhsM" x1="56" y1="118" x2="56" y2="150" stroke="#F0A11B" stroke-width="5" stroke-linecap="round"/>
+<line class="rhsM" x1="144" y1="118" x2="144" y2="150" stroke="#F0A11B" stroke-width="5" stroke-linecap="round"/>
+<g transform="translate(148,36)"><g class="rhsS"><path d="M0 -10 L2.6 -2.6 L10 0 L2.6 2.6 L0 10 L-2.6 2.6 L-10 0 L-2.6 -2.6 Z" fill="#FFD45E"/></g></g>
+<g transform="translate(52,46)"><g class="rhsS e"><path d="M0 -7 L1.8 -1.8 L7 0 L1.8 1.8 L0 7 L-1.8 1.8 L-7 0 L-1.8 -1.8 Z" fill="#FF8FB0"/></g></g>
+<g transform="translate(100,122)"><g class="rhsH">
+<rect x="-12" y="8" width="24" height="72" rx="11" fill="url(#rhsF)" stroke="#C97B2D" stroke-width="3"/>
+<rect x="-21" y="-40" width="42" height="50" rx="15" fill="url(#rhsF)" stroke="#C97B2D" stroke-width="3"/>
+<rect x="-21" y="-72" width="10" height="36" rx="5" fill="url(#rhsF)" stroke="#C97B2D" stroke-width="3"/>
+<rect x="-9" y="-80" width="10" height="44" rx="5" fill="url(#rhsF)" stroke="#C97B2D" stroke-width="3"/>
+<rect x="3" y="-76" width="10" height="40" rx="5" fill="url(#rhsF)" stroke="#C97B2D" stroke-width="3"/>
+<rect x="15" y="-65" width="9" height="29" rx="4.5" fill="url(#rhsF)" stroke="#C97B2D" stroke-width="3"/>
+<rect x="-31" y="-34" width="10" height="27" rx="5" fill="url(#rhsF)" stroke="#C97B2D" stroke-width="3" transform="rotate(-28 -26 -20)"/>
+<path d="M-9 -24 Q0 -16 10 -20" fill="none" stroke="#C97B2D" stroke-width="3" opacity=".5" stroke-linecap="round"/>
+<ellipse cx="-6" cy="-16" rx="9" ry="5" fill="#fff" opacity=".45"/>
+</g></g>
+</svg>

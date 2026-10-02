@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 800" width="450" height="800">
+  <title>Rangoli Rani — full-screen gift animation</title>
+  <defs>
+    <radialGradient id="rgAsky" cx="50%" cy="45%" r="90%">
+      <stop offset="0" stop-color="#231019"/><stop offset=".55" stop-color="#120812"/><stop offset="1" stop-color="#080309"/>
+    </radialGradient>
+    <radialGradient id="rgAglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#E2557B" stop-opacity=".12"/><stop offset="1" stop-color="#E2557B" stop-opacity="0"/>
+    </radialGradient>
+    <path id="rgApet" d="M0 -26 C11 -20 13 -7 0 0 C-13 -7 -11 -20 0 -26 Z"/>
+    <path id="rgAspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+    <style>
+      .rg-all{animation:rgAll 9s linear infinite}
+      .rg-spin{animation:rgSpin 48s linear infinite;transform-origin:225px 430px}
+      .rg-R1{fill:none;stroke:#F2B33D;stroke-width:2.5;stroke-dasharray:597;animation:rgDraw1 9s linear infinite}
+      .rg-R3{fill:none;stroke:#E2557B;stroke-width:3;stroke-dasharray:943;animation:rgDraw3 9s linear infinite}
+      .rg-R2{fill:none;stroke:#2FA08B;stroke-width:3;stroke-dasharray:7 9;transform-box:fill-box;transform-origin:center;animation:rgPop2 9s linear infinite}
+      .rg-R4{fill:none;stroke:#F6EFE2;stroke-width:2.5;stroke-dasharray:2 11;transform-box:fill-box;transform-origin:center;animation:rgPop4 9s linear infinite}
+      .rg-C{fill:#F2B33D;transform-box:fill-box;transform-origin:center;animation:rgC 9s linear infinite}
+      .rg-p{fill:#E2557B;stroke:#B23A5C;stroke-width:1.5;opacity:0;transform-box:fill-box;transform-origin:50% 100%;animation:rgP 9s linear infinite}
+      .rg-q{fill:#F2A43D;stroke:#C97F2E;stroke-width:1.2;opacity:0;transform-box:fill-box;transform-origin:50% 100%;animation:rgQ 9s linear infinite}
+      .rg-d1{fill:#F6EFE2;opacity:0;transform-box:fill-box;transform-origin:center;animation:rgD1 9s linear infinite}
+      .rg-d2{fill:#F2A43D;opacity:0;transform-box:fill-box;transform-origin:center;animation:rgD2 9s linear infinite}
+      .rg-cap{font:600 40px Georgia,'Times New Roman',serif;letter-spacing:12px;fill:#F2D3DC;text-anchor:middle;animation:rgCap 9s linear infinite}
+      .rg-orn{animation:rgCap 9s linear infinite}
+      .rg-twk{transform-box:fill-box;transform-origin:center;animation:rgTw 2.6s ease-in-out infinite}
+      @keyframes rgAll{0%{opacity:0}2%{opacity:1}87%{opacity:1}95%,100%{opacity:0}}
+      @keyframes rgSpin{to{transform:rotate(360deg)}}
+      @keyframes rgDraw1{0%,10%{stroke-dashoffset:597}36%,100%{stroke-dashoffset:0}}
+      @keyframes rgDraw3{0%,26%{stroke-dashoffset:943}50%,100%{stroke-dashoffset:0}}
+      @keyframes rgPop2{0%,30%{opacity:0;transform:scale(.6)}38%,100%{opacity:.95;transform:scale(1)}}
+      @keyframes rgPop4{0%,52%{opacity:0;transform:scale(.6)}60%,100%{opacity:.9;transform:scale(1)}}
+      @keyframes rgC{0%,2%{opacity:0;transform:scale(0)}5%{opacity:1;transform:scale(1.3)}7%,100%{opacity:1;transform:scale(1)}}
+      @keyframes rgP{0%,26%{opacity:0;transform:scale(0)}31%{opacity:1;transform:scale(1.18)}34%,100%{opacity:1;transform:scale(1)}}
+      @keyframes rgQ{0%,31%{opacity:0;transform:scale(0)}36%{opacity:1;transform:scale(1.15)}39%,100%{opacity:1;transform:scale(1)}}
+      @keyframes rgD1{0%,44%{opacity:0;transform:scale(0)}48%{opacity:1;transform:scale(1.4)}51%,100%{opacity:1;transform:scale(1)}}
+      @keyframes rgD2{0%,48%{opacity:0;transform:scale(0)}52%{opacity:1;transform:scale(1.4)}55%,100%{opacity:1;transform:scale(1)}}
+      @keyframes rgCap{0%,55%{opacity:0}62%{opacity:1}86%{opacity:1}94%,100%{opacity:0}}
+      @keyframes rgTw{0%,100%{opacity:.06;transform:scale(.6)}50%{opacity:.85;transform:scale(1)}}
+    </style>
+  </defs>
+  <rect width="450" height="800" fill="url(#rgAsky)"/>
+  <circle cx="225" cy="430" r="260" fill="url(#rgAglow)"/>
+  <g class="rg-all">
+    <g transform="translate(225 430)">
+      <g class="rg-spin">
+        <circle class="rg-R4" r="205"/>
+        <circle class="rg-R3" r="150"/>
+        <circle class="rg-R2" r="104"/>
+        <circle class="rg-R1" r="95"/>
+        <g fill="#F2A43D" stroke="#C97F2E" stroke-width="1.2">
+          <g transform="rotate(22.5)"><g transform="translate(0 -66) scale(.68)"><path class="rg-q" d="M0 -26 C11 -20 13 -7 0 0 C-13 -7 -11 -20 0 -26 Z" style="animation-delay:.45s"/></g></g>
+          <g transform="rotate(67.5)"><g transform="translate(0 -66) scale(.68)"><path class="rg-q" d="M0 -26 C11 -20 13 -7 0 0 C-13 -7 -11 -20 0 -26 Z" style="animation-delay:.67s"/></g></g>
+          <g transform="rotate(112.5)"><g transform="translate(0 -66) scale(.68)"><path class="rg-q" d="M0 -26 C11 -20 13 -7 0 0 C-13 -7 -11 -20 0 -26 Z" style="animation-delay:.89s"/></g></g>
+          <g transform="rotate(157.5)"><g transform="translate(0 -66) scale(.68)"><path class="rg-q" d="M0 -26 C11 -20 13 -7 0 0 C-13 -7 -11 -20 0 -26 Z" style="animation-delay:1.11s"/></g></g>
+          <g transform="rotate(202.5)"><g transform="translate(0 -66) scale(.68)"><path class="rg-q" d="M0 -26 C11 -20 13 -7 0 0 C-13 -7 -11 -20 0 -26 Z" style="animation-delay:1.33s"/></g></g>
+          <g transform="rotate(247.5)"><g transform="translate(0 -66) scale(.68)"><path class="rg-q" d="M0 -26 C11 -20 13 -7 0 0 C-13 -7 -11 -20 0 -26 Z" style="animation-delay:1.55s"/></g></g>
+          <g transform="rotate(292.5)"><g transform="translate(0 -66) scale(.68)"><path class="rg-q" d="M0 -26 C11 -20 13 -7 0 0 C-13 -7 -11 -20 0 -26 Z" style="animation-delay:1.77s"/></g></g>
+          <g transform="rotate(337.5)"><g transform="translate(0 -66) scale(.68)"><path class="rg-q" d="M0 -26 C11 -20 13 -7 0 0 C-13 -7 -11 -20 0 -26 Z" style="animation-delay:1.99s"/></g></g>
+        </g>
+        <g fill="#E2557B" stroke="#B23A5C" stroke-width="1.5">
+          <g transform="translate(0 -34)"><path class="rg-p" d="M0 -26 C11 -20 13 -7 0 0 C-13 -7 -11 -20 0 -26 Z"/></g>
+          <g transform="rotate(45)"><g transform="translate(0 -34)"><path class="rg-p" d="M0 -26 C11 -20 13 -7 0 0 C-13 -7 -11 -20 0 -26 Z" style="animation-delay:.22s"/></g></g>
+          <g transform="rotate(90)"><g transform="translate(0 -34)"><path class="rg-p" d="M0 -26 C11 -20 13 -7 0 0 C-13 -7 -11 -20 0 -26 Z" style="animation-delay:.44s"/></g></g>
+          <g transform="rotate(135)"><g transform="translate(0 -34)"><path class="rg-p" d="M0 -26 C11 -20 13 -7 0 0 C-13 -7 -11 -20 0 -26 Z" style="animation-delay:.66s"/></g></g>
+          <g transform="rotate(180)"><g transform="translate(0 -34)"><path class="rg-p" d="M0 -26 C11 -20 13 -7 0 0 C-13 -7 -11 -20 0 -26 Z" style="animation-delay:.88s"/></g></g>
+          <g transform="rotate(225)"><g transform="translate(0 -34)"><path class="rg-p" d="M0 -26 C11 -20 13 -7 0 0 C-13 -7 -11 -20 0 -26 Z" style="animation-delay:1.1s"/></g></g>
+          <g transform="rotate(270)"><g transform="translate(0 -34)"><path class="rg-p" d="M0 -26 C11 -20 13 -7 0 0 C-13 -7 -11 -20 0 -26 Z" style="animation-delay:1.32s"/></g></g>
+          <g transform="rotate(315)"><g transform="translate(0 -34)"><path class="rg-p" d="M0 -26 C11 -20 13 -7 0 0 C-13 -7 -11 -20 0 -26 Z" style="animation-delay:1.54s"/></g></g>
+        </g>
+        <circle class="rg-C" r="16"/>
+        <g fill="#F6EFE2">
+          <circle class="rg-d1" cy="-170" r="4"/>
+          <g transform="rotate(45)"><circle class="rg-d1" cy="-170" r="4" style="animation-delay:.08s"/></g>
+          <g transform="rotate(90)"><circle class="rg-d1" cy="-170" r="4" style="animation-delay:.16s"/></g>
+          <g transform="rotate(135)"><circle class="rg-d1" cy="-170" r="4" style="animation-delay:.24s"/></g>
+          <g transform="rotate(180)"><circle class="rg-d1" cy="-170" r="4" style="animation-delay:.32s"/></g>
+          <g transform="rotate(225)"><circle class="rg-d1" cy="-170" r="4" style="animation-delay:.4s"/></g>
+          <g transform="rotate(270)"><circle class="rg-d1" cy="-170" r="4" style="animation-delay:.48s"/></g>
+          <g transform="rotate(315)"><circle class="rg-d1" cy="-170" r="4" style="animation-delay:.56s"/></g>
+        </g>
+        <g fill="#F2A43D">
+          <g transform="rotate(22.5)"><circle class="rg-d2" cy="-186" r="3" style="animation-delay:.3s"/></g>
+          <g transform="rotate(67.5)"><circle class="rg-d2" cy="-186" r="3" style="animation-delay:.38s"/></g>
+          <g transform="rotate(112.5)"><circle class="rg-d2" cy="-186" r="3" style="animation-delay:.46s"/></g>
+          <g transform="rotate(157.5)"><circle class="rg-d2" cy="-186" r="3" style="animation-delay:.54s"/></g>
+          <g transform="rotate(202.5)"><circle class="rg-d2" cy="-186" r="3" style="animation-delay:.62s"/></g>
+          <g transform="rotate(247.5)"><circle class="rg-d2" cy="-186" r="3" style="animation-delay:.7s"/></g>
+          <g transform="rotate(292.5)"><circle class="rg-d2" cy="-186" r="3" style="animation-delay:.78s"/></g>
+          <g transform="rotate(337.5)"><circle class="rg-d2" cy="-186" r="3" style="animation-delay:.86s"/></g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <text class="rg-cap" x="231" y="150">RANGOLI RANI</text>
+  <g class="rg-orn" stroke="#8A4E63" fill="none">
+    <line x1="118" y1="174" x2="204" y2="174"/>
+    <line x1="256" y1="174" x2="342" y2="174"/>
+    <path d="M225 168 l6 6 -6 6 -6 -6Z"/>
+  </g>
+  <g transform="translate(80 260)"><use href="#rgAspk" class="rg-twk" fill="#F2A43D"/></g>
+  <g transform="translate(378 300) scale(.8)"><use href="#rgAspk" class="rg-twk" fill="#F6EFE2" style="animation-delay:-.7s"/></g>
+  <g transform="translate(64 560) scale(.7)"><use href="#rgAspk" class="rg-twk" fill="#E2557B" style="animation-delay:-1.4s"/></g>
+  <g transform="translate(390 620) scale(.85)"><use href="#rgAspk" class="rg-twk" fill="#F2A43D" style="animation-delay:-2s"/></g>
+</svg>

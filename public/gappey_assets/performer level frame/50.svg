@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-labelledby="p50t">
+  <title id="p50t">Performer Lv.50 frame — Mythic</title>
+  <defs>
+    <linearGradient id="p50rg" x1="30" y1="18" x2="170" y2="182" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFE4D6"/><stop offset=".5" stop-color="#F5B79E"/><stop offset="1" stop-color="#CE8468"/></linearGradient>
+    <radialGradient id="p50rc" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFF1E8"/><stop offset=".5" stop-color="#F5B79E"/><stop offset="1" stop-color="#C0765C"/></radialGradient>
+    <radialGradient id="p50h" cx=".5" cy=".5" r=".5"><stop offset=".7" stop-color="#F472B6" stop-opacity="0"/><stop offset=".82" stop-color="#F472B6" stop-opacity=".4"/><stop offset="1" stop-color="#F472B6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="p50b" x1="0" y1="163" x2="0" y2="189" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFE4D6"/><stop offset="1" stop-color="#E8A87C"/></linearGradient>
+    <path id="p50ra" d="M100 2 V14"/><path id="p50rb" d="M100 5 V12"/>
+  </defs>
+  <style><![CDATA[
+.halo,.comet,.comet2,.rays,.rays2,.dash{transform-box:view-box;transform-origin:50% 50%}.gem,.crown,.tw{transform-box:fill-box;transform-origin:50% 50%}
+.halo{animation:breathe 3.6s ease-in-out infinite alternate}.comet{animation:spin 7s linear infinite}.comet2{animation:spinrev 9s linear infinite}.rays{animation:spinrev 26s linear infinite}.rays2{animation:spin 34s linear infinite}.dash{animation:spin 16s linear infinite}.gem{animation:twinkle 2.4s ease-in-out infinite}.crown{animation:pulse 2.8s ease-in-out infinite alternate}.tw{animation:twinkle 1.9s ease-in-out infinite}
+.g2{animation-delay:-.6s}.g3{animation-delay:-1.2s}.g4{animation-delay:-1.8s}.g5{animation-delay:-.3s}
+@keyframes breathe{from{transform:scale(.97);opacity:.7}to{transform:scale(1.06);opacity:1}}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes spinrev{to{transform:rotate(-360deg)}}
+@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.55)}50%{opacity:1;transform:scale(1)}}
+@keyframes pulse{from{transform:scale(1)}to{transform:scale(1.12)}}
+@media (prefers-reduced-motion:reduce){.halo,.comet,.comet2,.rays,.rays2,.dash,.gem,.crown,.tw{animation:none}}
+  ]]></style>
+  <circle class="halo" cx="100" cy="100" r="96" fill="url(#p50h)"/>
+  <g class="rays" stroke="#FDA4AF" stroke-width="3" stroke-linecap="round" opacity=".55">
+    <use href="#p50ra"/><use href="#p50ra" transform="rotate(45 100 100)"/><use href="#p50ra" transform="rotate(90 100 100)"/><use href="#p50ra" transform="rotate(135 100 100)"/><use href="#p50ra" transform="rotate(180 100 100)"/><use href="#p50ra" transform="rotate(225 100 100)"/><use href="#p50ra" transform="rotate(270 100 100)"/><use href="#p50ra" transform="rotate(315 100 100)"/>
+  </g>
+  <g class="rays2" stroke="#F9A8D4" stroke-width="2" stroke-linecap="round" opacity=".4">
+    <use href="#p50rb" transform="rotate(22.5 100 100)"/><use href="#p50rb" transform="rotate(67.5 100 100)"/><use href="#p50rb" transform="rotate(112.5 100 100)"/><use href="#p50rb" transform="rotate(157.5 100 100)"/><use href="#p50rb" transform="rotate(202.5 100 100)"/><use href="#p50rb" transform="rotate(247.5 100 100)"/><use href="#p50rb" transform="rotate(292.5 100 100)"/><use href="#p50rb" transform="rotate(337.5 100 100)"/>
+  </g>
+  <circle class="dash" cx="100" cy="100" r="93" fill="none" stroke="#F6C1AC" stroke-opacity=".85" stroke-width="4.5" stroke-linecap="round" stroke-dasharray=".5 11.6"/>
+  <circle cx="100" cy="100" r="87" fill="none" stroke="#F6C1AC" stroke-opacity=".5"/>
+  <circle cx="100" cy="100" r="79" fill="none" stroke="#500724" stroke-width="12"/>
+  <circle cx="100" cy="100" r="85.6" fill="none" stroke="url(#p50rg)" stroke-width="2.6"/>
+  <circle cx="100" cy="100" r="72.4" fill="none" stroke="url(#p50rg)" stroke-width="2.6"/>
+  <circle cx="100" cy="100" r="71.6" fill="none" stroke="#FFF" stroke-opacity=".5" stroke-width="1.2"/>
+  <g class="gem"><circle cx="100" cy="21" r="3.8" fill="#F5B79E"/><circle cx="98.8" cy="19.8" r="1.3" fill="#FFF"/></g>
+  <g transform="rotate(45 100 100)"><g class="gem g2"><circle cx="100" cy="21" r="3.2" fill="#FFF"/><circle cx="99" cy="20" r="1.1" fill="#F5B79E"/></g></g>
+  <g transform="rotate(90 100 100)"><g class="gem g3"><circle cx="100" cy="21" r="3.8" fill="#F5B79E"/><circle cx="98.8" cy="19.8" r="1.3" fill="#FFF"/></g></g>
+  <g transform="rotate(135 100 100)"><g class="gem g4"><circle cx="100" cy="21" r="3.2" fill="#FFF"/><circle cx="99" cy="20" r="1.1" fill="#F5B79E"/></g></g>
+  <g transform="rotate(225 100 100)"><g class="gem g5"><circle cx="100" cy="21" r="3.2" fill="#FFF"/><circle cx="99" cy="20" r="1.1" fill="#F5B79E"/></g></g>
+  <g transform="rotate(270 100 100)"><g class="gem g2"><circle cx="100" cy="21" r="3.8" fill="#F5B79E"/><circle cx="98.8" cy="19.8" r="1.3" fill="#FFF"/></g></g>
+  <g transform="rotate(315 100 100)"><g class="gem g3"><circle cx="100" cy="21" r="3.2" fill="#FFF"/><circle cx="99" cy="20" r="1.1" fill="#F5B79E"/></g></g>
+  <g class="crown">
+    <path d="M100 8.5 L107.5 16.5 L100 24.5 L92.5 16.5 Z" fill="url(#p50rc)" stroke="#FFF" stroke-width="1.2"/>
+    <path d="M100 12.8 L103.4 16.5 L100 20.2 L96.6 16.5 Z" fill="#FFF" opacity=".95"/>
+  </g>
+  <g class="comet"><circle cx="100" cy="100" r="79" fill="none" stroke="#FFF" stroke-width="3" stroke-linecap="round" stroke-dasharray="24 478"/></g>
+  <g class="comet2"><circle cx="100" cy="100" r="79" fill="none" stroke="#FFEDE4" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="18 481" stroke-dashoffset="248"/></g>
+  <path class="tw" d="M37 36 Q38 40 42 41 Q38 42 37 46 Q36 42 32 41 Q36 40 37 36 Z" fill="#F9A8D4"/>
+  <path class="tw g3" d="M163 36 Q164 40 168 41 Q164 42 163 46 Q162 42 158 41 Q162 40 163 36 Z" fill="#F9A8D4"/>
+  <path class="tw g2" d="M41 154 Q42 158 46 159 Q42 160 41 164 Q40 160 36 159 Q40 158 41 154 Z" fill="#F9A8D4"/>
+  <path class="tw g4" d="M159 154 Q160 158 164 159 Q160 160 159 164 Q158 160 154 159 Q158 158 159 154 Z" fill="#F9A8D4"/>
+  <rect x="66" y="165.5" width="68" height="26" rx="13" fill="#4A0A22" opacity=".4"/>
+  <rect x="64.5" y="163" width="71" height="26" rx="13" fill="url(#p50b)" stroke="#FFF" stroke-width="2"/>
+  <rect x="70" y="166.5" width="60" height="7" rx="3.5" fill="#FFF" opacity=".45"/>
+  <text x="100" y="181" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800" letter-spacing="1.2" fill="#9D174D">LVL 50</text>
+</svg>

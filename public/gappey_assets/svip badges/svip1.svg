@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 26" width="66" height="26">
+<title>SVIP 1 Badge</title>
+<defs>
+<linearGradient id="ps1m" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a5068"><animate attributeName="stop-color" values="#4a5068;#5d647c;#4a5068" dur="6s" repeatCount="indefinite"/></stop><stop offset="1" stop-color="#12141d"/></linearGradient>
+<linearGradient id="ps1f" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#c0281a"/><stop offset=".55" stop-color="#ff7a1f"/><stop offset="1" stop-color="#ffd257"/></linearGradient>
+<radialGradient id="ps1c" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffb347" stop-opacity=".8"/><stop offset=".6" stop-color="#ff5a3c" stop-opacity=".35"/><stop offset="1" stop-color="#ff3b2f" stop-opacity="0"/></radialGradient>
+<filter id="ps1t" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.2"/></filter>
+<clipPath id="ps1c2"><polygon points="14.5,4 57.5,4 62.5,13 57.5,22 14.5,22 9.5,13"/></clipPath>
+</defs>
+<polygon points="14.5,4 57.5,4 62.5,13 57.5,22 14.5,22 9.5,13" fill="none" stroke="#ff5a3c" stroke-width="2.6" opacity=".3">
+<animate attributeName="opacity" values=".22;.45;.22" dur="2.6s" repeatCount="indefinite"/>
+</polygon>
+<polygon points="14.5,4 57.5,4 62.5,13 57.5,22 14.5,22 9.5,13" fill="url(#ps1m)" stroke="#d9a32e" stroke-width="1.1"/>
+<polygon points="16.5,6.3 56,6.3 59.8,13 56,19.7 16.5,19.7 12.8,13" fill="none" stroke="#ff7a1f" stroke-width=".6" opacity=".45">
+<animate attributeName="opacity" values=".3;.65;.3" dur="2.4s" repeatCount="indefinite"/>
+</polygon>
+<circle cx="17.5" cy="13" r="6" fill="url(#ps1c)">
+<animate attributeName="r" values="5.4;6.6;5.4" dur="2.2s" repeatCount="indefinite"/>
+</circle>
+<path d="M17.5 8.4 C16.1 10.2 15.4 11.5 15.7 12.8 C15.9 13.9 16.6 14.7 17.5 15.5 C18.4 14.7 19.1 13.9 19.3 12.8 C19.6 11.5 18.9 10.2 17.5 8.4 Z" fill="url(#ps1f)">
+<animateTransform attributeName="transform" type="scale" values="1;1.12;.94;1.06;1" dur="1.4s" repeatCount="indefinite"/>
+</path>
+<text x="41" y="17.4" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="800" letter-spacing=".2" fill="#ff5a3c" filter="url(#ps1t)" opacity=".7">SVIP 1
+&lt;animate attributeName="opacity" values=".45;.9;.45" dur="2.4s" repeatCount="indefinite"/&gt;
+</text>
+<text x="41" y="17.4" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="800" letter-spacing=".2" fill="#ffe8c8">SVIP 1</text>
+<g>
+<circle cx="17.5" cy="13" fill="none" stroke="#ffb347" stroke-width="1" opacity="0" r="5">
+<animate attributeName="opacity" values="0;0;.7;0;0" keyTimes="0;.55;.62;.72;1" dur="6s" repeatCount="indefinite"/>
+<animate attributeName="r" values="5;5;14;5;5" keyTimes="0;.55;.62;.72;1" dur="6s" repeatCount="indefinite"/>
+</circle>
+</g>
+</svg>

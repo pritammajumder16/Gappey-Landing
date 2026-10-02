@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-labelledby="p60t">
+  <title id="p60t">Performer Lv.60 frame — Celestial</title>
+  <defs>
+    <linearGradient id="p60rg" x1="30" y1="18" x2="170" y2="182" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFE4D6"/><stop offset=".5" stop-color="#F5B79E"/><stop offset="1" stop-color="#CE8468"/></linearGradient>
+    <radialGradient id="p60rc" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFF1E8"/><stop offset=".5" stop-color="#F5B79E"/><stop offset="1" stop-color="#C0765C"/></radialGradient>
+    <radialGradient id="p60h1" cx=".5" cy=".5" r=".5"><stop offset=".7" stop-color="#F472B6" stop-opacity="0"/><stop offset=".82" stop-color="#F472B6" stop-opacity=".4"/><stop offset="1" stop-color="#F472B6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="p60h2" cx=".5" cy=".5" r=".5"><stop offset=".72" stop-color="#F6C1AC" stop-opacity="0"/><stop offset=".84" stop-color="#F6C1AC" stop-opacity=".26"/><stop offset="1" stop-color="#F6C1AC" stop-opacity="0"/></radialGradient>
+    <linearGradient id="p60w" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFF" stop-opacity="0"/><stop offset=".5" stop-color="#FFF" stop-opacity=".9"/><stop offset="1" stop-color="#FFF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="p60b" x1="0" y1="163" x2="0" y2="189" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFE4D6"/><stop offset="1" stop-color="#E8A87C"/></linearGradient>
+    <path id="p60ra" d="M100 3 V13"/><path id="p60rb" d="M100 6 V13.5"/>
+  </defs>
+  <style><![CDATA[
+.halo,.comet,.comet2,.rays,.rays2,.dash,.dash2,.pearls,.lightrot,.sheen,.corbit,.corbit2,.cstar{transform-box:view-box;transform-origin:50% 50%}
+.corbit,.corbit2,.cstar{transform-origin:100px 16.5px}
+.gem,.crown,.tw{transform-box:fill-box;transform-origin:50% 50%}
+.halo{animation:breathe 3.6s ease-in-out infinite alternate}.comet{animation:spin 7s linear infinite}.comet2{animation:spinrev 9s linear infinite}.rays{animation:spinrev 26s linear infinite}.rays2{animation:spin 34s linear infinite}.dash{animation:spin 16s linear infinite}.dash2{animation:spinrev 20s linear infinite}.pearls{animation:spinrev 36s linear infinite}.lightrot{animation:spin 12s linear infinite}.sheen{animation:spin 11s linear infinite}.corbit{animation:spin 5s linear infinite}.corbit2{animation:spinrev 7.5s linear infinite}.cstar{animation:spin 24s linear infinite}.gem{animation:twinkle 2.4s ease-in-out infinite}.crown{animation:pulse 2.8s ease-in-out infinite alternate}.tw{animation:twinkle 1.9s ease-in-out infinite}.rpulse{animation:rpulse 4.5s ease-in-out infinite alternate}
+@keyframes breathe{from{transform:scale(.97);opacity:.7}to{transform:scale(1.06);opacity:1}}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes spinrev{to{transform:rotate(-360deg)}}
+@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.55)}50%{opacity:1;transform:scale(1)}}
+@keyframes pulse{from{transform:scale(1)}to{transform:scale(1.12)}}
+@keyframes rpulse{from{opacity:.5}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.halo,.comet,.comet2,.rays,.rays2,.dash,.dash2,.pearls,.lightrot,.sheen,.corbit,.corbit2,.cstar,.gem,.crown,.tw,.rpulse{animation:none}}
+  ]]></style>
+  <circle class="halo" cx="100" cy="100" r="96" fill="url(#p60h1)"/>
+  <circle class="halo" style="animation-delay:-1.8s" cx="100" cy="100" r="96" fill="url(#p60h2)"/>
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#F6C1AC" stroke-opacity=".55" stroke-width="1.1"/>
+  <g class="pearls">
+    <circle cx="100" cy="2.5" r="1.5" fill="#F9A8D4"/><circle cx="148.75" cy="15.56" r="1.5" fill="#FFF"/>
+    <circle cx="184.44" cy="51.25" r="1.5" fill="#F9A8D4"/><circle cx="197.5" cy="100" r="1.5" fill="#FFF"/>
+    <circle cx="184.44" cy="148.75" r="1.5" fill="#F9A8D4"/><circle cx="148.75" cy="184.44" r="1.5" fill="#FFF"/>
+    <circle cx="100" cy="197.5" r="1.5" fill="#F9A8D4"/><circle cx="51.25" cy="184.44" r="1.5" fill="#FFF"/>
+    <circle cx="15.56" cy="148.75" r="1.5" fill="#F9A8D4"/><circle cx="2.5" cy="100" r="1.5" fill="#FFF"/>
+    <circle cx="15.56" cy="51.25" r="1.5" fill="#F9A8D4"/><circle cx="51.25" cy="15.56" r="1.5" fill="#FFF"/>
+  </g>
+  <g class="rays"><g class="rpulse" stroke="#F6C1AC" stroke-width="2.8" stroke-linecap="round" opacity=".6">
+    <use href="#p60ra"/><use href="#p60ra" transform="rotate(45 100 100)"/><use href="#p60ra" transform="rotate(90 100 100)"/><use href="#p60ra" transform="rotate(135 100 100)"/><use href="#p60ra" transform="rotate(180 100 100)"/><use href="#p60ra" transform="rotate(225 100 100)"/><use href="#p60ra" transform="rotate(270 100 100)"/><use href="#p60ra" transform="rotate(315 100 100)"/>
+  </g></g>
+  <g class="rays2" stroke="#F9A8D4" stroke-width="2" stroke-linecap="round" opacity=".5">
+    <use href="#p60rb" transform="rotate(22.5 100 100)"/><use href="#p60rb" transform="rotate(67.5 100 100)"/><use href="#p60rb" transform="rotate(112.5 100 100)"/><use href="#p60rb" transform="rotate(157.5 100 100)"/><use href="#p60rb" transform="rotate(202.5 100 100)"/><use href="#p60rb" transform="rotate(247.5 100 100)"/><use href="#p60rb" transform="rotate(292.5 100 100)"/><use href="#p60rb" transform="rotate(337.5 100 100)"/>
+  </g>
+  <circle class="dash" cx="100" cy="100" r="90.5" fill="none" stroke="#F6C1AC" stroke-opacity=".9" stroke-width="4.5" stroke-linecap="round" stroke-dasharray=".5 11.6"/>
+  <circle class="dash2" cx="100" cy="100" r="87" fill="none" stroke="#F9A8D4" stroke-opacity=".65" stroke-width="2.4" stroke-linecap="round" stroke-dasharray=".5 12.51"/>
+  <circle cx="100" cy="100" r="83.8" fill="none" stroke="#F6C1AC" stroke-opacity=".5"/>
+  <circle cx="100" cy="100" r="78.5" fill="none" stroke="#500724" stroke-width="13.5"/>
+  <circle cx="100" cy="100" r="85.4" fill="none" stroke="url(#p60rg)" stroke-width="2.8"/>
+  <circle cx="100" cy="100" r="71.6" fill="none" stroke="url(#p60rg)" stroke-width="2.8"/>
+  <circle class="lightrot" cx="100" cy="100" r="85.4" fill="none" stroke="url(#p60w)" stroke-width="2.8" opacity=".55"/>
+  <circle class="sheen" cx="100" cy="100" r="78.5" fill="none" stroke="#FFF" stroke-opacity=".1" stroke-width="13.5" stroke-dasharray="110 383.2"/>
+  <circle cx="100" cy="100" r="70.5" fill="none" stroke="#FFF" stroke-opacity=".5" stroke-width="1.2"/>
+  <g transform="translate(120.32 25.1)"><g class="gem"><g transform="scale(1.15)"><path d="M0 4 C-1.6 1.2 -5.4 0 -5.4 -2.6 C-5.4 -4.6 -3.6 -5.6 -2 -5.6 C-0.8 -5.6 0 -4.8 0 -4 C0 -4.8 0.8 -5.6 2 -5.6 C3.6 -5.6 5.4 -4.6 5.4 -2.6 C5.4 0 1.6 1.2 0 4 Z" fill="#F5B79E" stroke="#FFF" stroke-width="1"/><circle cx="-1.8" cy="-2.2" r="1" fill="#FFF" opacity=".9"/></g></g></g>
+  <g transform="translate(155.51 44.5)"><g class="gem" style="animation-delay:-.2s"><circle r="3.2" fill="#FFF"/><circle cx="-1" cy="-1" r="1.1" fill="#F5B79E"/></g></g>
+  <g transform="translate(175.82 80.6)"><g class="gem" style="animation-delay:-.4s"><g transform="scale(1.15)"><path d="M0 4 C-1.6 1.2 -5.4 0 -5.4 -2.6 C-5.4 -4.6 -3.6 -5.6 -2 -5.6 C-0.8 -5.6 0 -4.8 0 -4 C0 -4.8 0.8 -5.6 2 -5.6 C3.6 -5.6 5.4 -4.6 5.4 -2.6 C5.4 0 1.6 1.2 0 4 Z" fill="#F5B79E" stroke="#FFF" stroke-width="1"/><circle cx="-1.8" cy="-2.2" r="1" fill="#FFF" opacity=".9"/></g></g></g>
+  <g transform="translate(175.82 120.3)"><g class="gem" style="animation-delay:-.6s"><circle r="3.2" fill="#FFF"/><circle cx="-1" cy="-1" r="1.1" fill="#F5B79E"/></g></g>
+  <g transform="translate(155.51 156.4)"><g class="gem" style="animation-delay:-.8s"><g transform="scale(1.15)"><path d="M0 4 C-1.6 1.2 -5.4 0 -5.4 -2.6 C-5.4 -4.6 -3.6 -5.6 -2 -5.6 C-0.8 -5.6 0 -4.8 0 -4 C0 -4.8 0.8 -5.6 2 -5.6 C3.6 -5.6 5.4 -4.6 5.4 -2.6 C5.4 0 1.6 1.2 0 4 Z" fill="#F5B79E" stroke="#FFF" stroke-width="1"/><circle cx="-1.8" cy="-2.2" r="1" fill="#FFF" opacity=".9"/></g></g></g>
+  <g transform="translate(120.32 175.8)"><g class="gem" style="animation-delay:-1s"><circle r="3.2" fill="#FFF"/><circle cx="-1" cy="-1" r="1.1" fill="#F5B79E"/></g></g>
+  <g transform="translate(79.68 176.7)"><g class="gem" style="animation-delay:-1.2s"><g transform="scale(1.15)"><path d="M0 4 C-1.6 1.2 -5.4 0 -5.4 -2.6 C-5.4 -4.6 -3.6 -5.6 -2 -5.6 C-0.8 -5.6 0 -4.8 0 -4 C0 -4.8 0.8 -5.6 2 -5.6 C3.6 -5.6 5.4 -4.6 5.4 -2.6 C5.4 0 1.6 1.2 0 4 Z" fill="#F5B79E" stroke="#FFF" stroke-width="1"/><circle cx="-1.8" cy="-2.2" r="1" fill="#FFF" opacity=".9"/></g></g></g>
+  <g transform="translate(44.49 155.5)"><g class="gem" style="animation-delay:-1.4s"><circle r="3.2" fill="#FFF"/><circle cx="-1" cy="-1" r="1.1" fill="#F5B79E"/></g></g>
+  <g transform="translate(24.18 121.2)"><g class="gem" style="animation-delay:-1.6s"><g transform="scale(1.15)"><path d="M0 4 C-1.6 1.2 -5.4 0 -5.4 -2.6 C-5.4 -4.6 -3.6 -5.6 -2 -5.6 C-0.8 -5.6 0 -4.8 0 -4 C0 -4.8 0.8 -5.6 2 -5.6 C3.6 -5.6 5.4 -4.6 5.4 -2.6 C5.4 0 1.6 1.2 0 4 Z" fill="#F5B79E" stroke="#FFF" stroke-width="1"/><circle cx="-1.8" cy="-2.2" r="1" fill="#FFF" opacity=".9"/></g></g></g>
+  <g transform="translate(24.18 79.7)"><g class="gem" style="animation-delay:-1.8s"><circle r="3.2" fill="#FFF"/><circle cx="-1" cy="-1" r="1.1" fill="#F5B79E"/></g></g>
+  <g transform="translate(44.49 44.5)"><g class="gem" style="animation-delay:-2s"><g transform="scale(1.15)"><path d="M0 4 C-1.6 1.2 -5.4 0 -5.4 -2.6 C-5.4 -4.6 -3.6 -5.6 -2 -5.6 C-0.8 -5.6 0 -4.8 0 -4 C0 -4.8 0.8 -5.6 2 -5.6 C3.6 -5.6 5.4 -4.6 5.4 -2.6 C5.4 0 1.6 1.2 0 4 Z" fill="#F5B79E" stroke="#FFF" stroke-width="1"/><circle cx="-1.8" cy="-2.2" r="1" fill="#FFF" opacity=".9"/></g></g></g>
+  <g transform="translate(79.68 25.1)"><g class="gem" style="animation-delay:-2.2s"><circle r="3.2" fill="#FFF"/><circle cx="-1" cy="-1" r="1.1" fill="#F5B79E"/></g></g>
+  <g class="crown"><g class="cstar">
+    <path d="M100 5.5 L110 16.5 L100 27.5 L90 16.5 Z" fill="url(#p60rc)" stroke="#FFF" stroke-width="1.3"/>
+    <path d="M100 5.5 L110 16.5 L100 27.5 L90 16.5 Z" transform="rotate(45 100 16.5)" fill="url(#p60rc)" stroke="#FFF" stroke-width="1.1" opacity=".92"/>
+    <path d="M100 10 L106.5 16.5 L100 23 L93.5 16.5 Z" fill="#FFF"/>
+    <circle cx="100" cy="16.5" r="1.6" fill="#F5B79E"/>
+  </g></g>
+  <g class="corbit"><circle cx="100" cy="3.5" r="1.7" fill="#FFE4E1" opacity=".95"/></g>
+  <g class="corbit2"><circle cx="100" cy="1.5" r="1.3" fill="#FFF" opacity=".9"/></g>
+  <path class="tw" style="animation-delay:-.7s" d="M76 10 Q76.8 13.2 80 14 Q76.8 14.8 76 18 Q75.2 14.8 72 14 Q75.2 13.2 76 10 Z" fill="#FBCFE8"/>
+  <path class="tw" style="animation-delay:-1.2s" d="M124 10 Q124.8 13.2 128 14 Q124.8 14.8 124 18 Q123.2 14.8 120 14 Q123.2 13.2 124 10 Z" fill="#FBCFE8"/>
+  <g class="comet"><circle cx="100" cy="100" r="78.5" fill="none" stroke="#FFF" stroke-width="3" stroke-linecap="round" stroke-dasharray="24 469"/></g>
+  <g class="comet2"><circle cx="100" cy="100" r="78.5" fill="none" stroke="#FFE9F3" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="18 475" stroke-dashoffset="246"/></g>
+  <path class="tw" d="M37 31 Q38 35 42 36 Q38 37 37 41 Q36 37 32 36 Q36 35 37 31 Z" fill="#F9A8D4"/>
+  <path class="tw" style="animation-delay:-.5s" d="M163 31 Q164 35 168 36 Q164 37 163 41 Q162 37 158 36 Q162 35 163 31 Z" fill="#F9A8D4"/>
+  <g transform="translate(11 61.5) scale(.8)"><path class="tw" style="animation-delay:-.9s" d="M0 4 C-1.6 1.2 -5.4 0 -5.4 -2.6 C-5.4 -4.6 -3.6 -5.6 -2 -5.6 C-0.8 -5.6 0 -4.8 0 -4 C0 -4.8 0.8 -5.6 2 -5.6 C3.6 -5.6 5.4 -4.6 5.4 -2.6 C5.4 0 1.6 1.2 0 4 Z" fill="#F9A8D4"/></g>
+  <g transform="translate(189 61.5) scale(.8)"><path class="tw" style="animation-delay:-1.4s" d="M0 4 C-1.6 1.2 -5.4 0 -5.4 -2.6 C-5.4 -4.6 -3.6 -5.6 -2 -5.6 C-0.8 -5.6 0 -4.8 0 -4 C0 -4.8 0.8 -5.6 2 -5.6 C3.6 -5.6 5.4 -4.6 5.4 -2.6 C5.4 0 1.6 1.2 0 4 Z" fill="#F9A8D4"/></g>
+  <path class="tw" style="animation-delay:-.3s" d="M11 130 Q12 134 16 135 Q12 136 11 140 Q10 136 6 135 Q10 134 11 130 Z" fill="#F9A8D4"/>
+  <path class="tw" style="animation-delay:-1.7s" d="M189 130 Q190 134 194 135 Q190 136 189 140 Q188 136 184 135 Q188 134 189 130 Z" fill="#F9A8D4"/>
+  <rect x="66" y="165.5" width="68" height="26" rx="13" fill="#4A0A22" opacity=".42"/>
+  <rect x="64.5" y="163" width="71" height="26" rx="13" fill="url(#p60b)" stroke="#FFF" stroke-width="2"/>
+  <rect x="67.5" y="166" width="65" height="20" rx="10" fill="none" stroke="#B76E79" stroke-opacity=".55"/>
+  <rect x="70" y="166.5" width="60" height="7" rx="3.5" fill="#FFF" opacity=".45"/>
+  <text x="100" y="181" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800" letter-spacing="1.2" fill="#9D174D">LVL 60</text>
+</svg>

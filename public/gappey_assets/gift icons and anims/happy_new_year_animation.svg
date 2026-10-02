@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 800" width="450" height="800">
+  <title>Naya Saal — full-screen gift animation</title>
+  <defs>
+    <radialGradient id="nyAsky" cx="50%" cy="34%" r="95%">
+      <stop offset="0" stop-color="#131A33"/><stop offset=".55" stop-color="#0A0F22"/><stop offset="1" stop-color="#04060F"/>
+    </radialGradient>
+    <linearGradient id="nyAw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6D27A"/><stop offset=".55" stop-color="#E4A93C"/><stop offset="1" stop-color="#B8791F"/>
+    </linearGradient>
+    <g id="nyAburst">
+      <circle r="5" opacity=".9"/>
+      <g>
+        <circle cx="26" cy="0" r="3"/><circle cx="22.5" cy="13" r="3"/><circle cx="13" cy="22.5" r="3"/><circle cx="0" cy="26" r="3"/><circle cx="-13" cy="22.5" r="3"/><circle cx="-22.5" cy="13" r="3"/><circle cx="-26" cy="0" r="3"/><circle cx="-22.5" cy="-13" r="3"/><circle cx="-13" cy="-22.5" r="3"/><circle cx="0" cy="-26" r="3"/><circle cx="13" cy="-22.5" r="3"/><circle cx="22.5" cy="-13" r="3"/>
+      </g>
+      <g>
+        <circle cx="44" cy="0" r="2.2"/><circle cx="31" cy="31" r="2.2"/><circle cx="0" cy="44" r="2.2"/><circle cx="-31" cy="31" r="2.2"/><circle cx="-44" cy="0" r="2.2"/><circle cx="-31" cy="-31" r="2.2"/><circle cx="0" cy="-44" r="2.2"/><circle cx="31" cy="-31" r="2.2"/>
+      </g>
+    </g>
+    <style>
+      .nyA-n{font:900 170px 'Arial Black','Segoe UI',Arial,sans-serif;fill:url(#nyAw);stroke:#0A0E1C;stroke-width:12;paint-order:stroke;text-anchor:middle;transform-box:fill-box;transform-origin:center;opacity:0}
+      .nyA-n3{animation:nyN3 10s linear infinite}
+      .nyA-n2{animation:nyN2 10s linear infinite}
+      .nyA-n1{animation:nyN1 10s linear infinite}
+      .nyA-r{fill:none;stroke:#F3EADA;stroke-width:3;transform-box:fill-box;transform-origin:center;opacity:0}
+      .nyA-r1{animation:nyR1 10s linear infinite}
+      .nyA-r2{animation:nyR2 10s linear infinite}
+      .nyA-r3{animation:nyR3 10s linear infinite}
+      .nyA-R1{fill:none;stroke:#F6D27A;stroke-width:6;transform-box:fill-box;transform-origin:center;opacity:0;animation:nyBigR1 10s linear infinite}
+      .nyA-R2{fill:none;stroke:#F3EADA;stroke-width:2;transform-box:fill-box;transform-origin:center;opacity:0;animation:nyBigR2 10s linear infinite}
+      .nyA-flash{fill:#FFF4DC;transform-box:fill-box;transform-origin:center;opacity:0;animation:nyFlash 10s linear infinite}
+      .nyA-b{transform-box:fill-box;transform-origin:center;opacity:0;animation:nyB 10s linear infinite}
+      .nyA-gate{opacity:0;animation:nyGate 10s linear infinite}
+      .nyA-fall{animation:nyFall 4.2s linear infinite}
+      .nyA-f2{animation-duration:5.3s}.nyA-f3{animation-duration:6.4s}
+      .nyA-spin{transform-box:fill-box;transform-origin:center;animation:nySpin 2.4s linear infinite}
+      .nyA-w1{font:800 58px 'Arial Black','Segoe UI',Arial,sans-serif;letter-spacing:4px;fill:url(#nyAw);stroke:#0A0E1C;stroke-width:8;paint-order:stroke;text-anchor:middle;transform-box:fill-box;transform-origin:center;opacity:0;animation:nyW 10s linear infinite}
+      .nyA-w2{font:900 76px 'Arial Black','Segoe UI',Arial,sans-serif;letter-spacing:2px;fill:url(#nyAw);stroke:#0A0E1C;stroke-width:10;paint-order:stroke;text-anchor:middle;transform-box:fill-box;transform-origin:center;opacity:0;animation:nyW 10s linear infinite;animation-delay:.15s}
+      .nyA-sub{font:600 19px Georgia,'Times New Roman',serif;letter-spacing:8px;fill:#F2D48C;text-anchor:middle;opacity:0;animation:nySub 10s linear infinite}
+      .nyA-win{animation:nyWin 2.6s ease-in-out infinite alternate}
+      .nyA-twk{transform-box:fill-box;transform-origin:center;animation:nyTw 2.8s ease-in-out infinite}
+      @keyframes nyN3{0%,3%{opacity:0;transform:scale(.3)}5%{opacity:1;transform:scale(1.18)}7%{transform:scale(1)}13%{opacity:1;transform:scale(1)}15.5%,100%{opacity:0;transform:scale(.75)}}
+      @keyframes nyN2{0%,15%{opacity:0;transform:scale(.3)}17%{opacity:1;transform:scale(1.18)}19%{transform:scale(1)}25%{opacity:1;transform:scale(1)}27.5%,100%{opacity:0;transform:scale(.75)}}
+      @keyframes nyN1{0%,27%{opacity:0;transform:scale(.3)}29%{opacity:1;transform:scale(1.18)}31%{transform:scale(1)}37%{opacity:1;transform:scale(1)}39.5%,100%{opacity:0;transform:scale(.75)}}
+      @keyframes nyR1{0%,4%{opacity:0;transform:scale(.2)}6%{opacity:.85;transform:scale(.5)}15%{opacity:0;transform:scale(1.7)}100%{opacity:0;transform:scale(1.7)}}
+      @keyframes nyR2{0%,16%{opacity:0;transform:scale(.2)}18%{opacity:.85;transform:scale(.5)}27%{opacity:0;transform:scale(1.7)}100%{opacity:0;transform:scale(1.7)}}
+      @keyframes nyR3{0%,28%{opacity:0;transform:scale(.2)}30%{opacity:.85;transform:scale(.5)}39%{opacity:0;transform:scale(1.7)}100%{opacity:0;transform:scale(1.7)}}
+      @keyframes nyBigR1{0%,40%{opacity:0;transform:scale(.1)}42%{opacity:.95;transform:scale(.3)}58%{opacity:0;transform:scale(4.6)}100%{opacity:0;transform:scale(4.6)}}
+      @keyframes nyBigR2{0%,42%{opacity:0;transform:scale(.1)}44%{opacity:.8;transform:scale(.3)}63%{opacity:0;transform:scale(5.4)}100%{opacity:0;transform:scale(5.4)}}
+      @keyframes nyFlash{0%,39.8%{opacity:0;transform:scale(.3)}41%{opacity:.85}49%{opacity:0;transform:scale(1.15)}100%{opacity:0}}
+      @keyframes nyB{0%{opacity:0;transform:scale(.05)}2.5%{opacity:1;transform:scale(.5)}5%{opacity:.95;transform:scale(.8)}13%{opacity:0;transform:scale(1.25)}100%{opacity:0;transform:scale(1.25)}}
+      @keyframes nyGate{0%,40%{opacity:0}44%{opacity:1}93%{opacity:1}97%,100%{opacity:0}}
+      @keyframes nyFall{from{transform:translateY(-50px)}to{transform:translateY(870px)}}
+      @keyframes nySpin{to{transform:rotate(360deg)}}
+      @keyframes nyW{0%,43%{opacity:0;transform:scale(.45) rotate(-4deg)}46%{opacity:1;transform:scale(1.1) rotate(1.5deg)}48%{transform:scale(1) rotate(0)}88%{opacity:1;transform:scale(1)}93%,100%{opacity:0;transform:scale(1)}}
+      @keyframes nySub{0%,48%{opacity:0}53%{opacity:1}88%{opacity:1}93%,100%{opacity:0}}
+      @keyframes nyWin{from{opacity:.25}to{opacity:.7}}
+      @keyframes nyTw{0%,100%{opacity:.1;transform:scale(.7)}50%{opacity:.8;transform:scale(1)}}
+    </style>
+  </defs>
+  <rect width="450" height="800" fill="url(#nyAsky)"/>
+  <circle class="nyA-twk" cx="70" cy="90" r="1.8" fill="#E9E4D2"/>
+  <circle class="nyA-twk" cx="180" cy="60" r="1.5" fill="#E9E4D2" style="animation-delay:-.6s"/>
+  <circle class="nyA-twk" cx="300" cy="100" r="1.8" fill="#E9E4D2" style="animation-delay:-1.2s"/>
+  <circle class="nyA-twk" cx="390" cy="70" r="1.5" fill="#E9E4D2" style="animation-delay:-1.8s"/>
+  <circle class="nyA-twk" cx="40" cy="200" r="1.5" fill="#E9E4D2" style="animation-delay:-2.2s"/>
+  <circle class="nyA-twk" cx="410" cy="300" r="1.8" fill="#E9E4D2" style="animation-delay:-.9s"/>
+  <path d="M0 800 V706 H30 V668 H58 V706 H92 V636 H100 V606 L108 594 L116 606 V636 H124 V706 H168 V676 H212 V706 H248 V648 H256 V620 L264 608 L272 620 V648 H280 V706 H326 V672 H358 V706 H398 V690 H450 V800 Z" fill="#0A0E1C"/>
+  <g fill="#F2B33D">
+    <rect class="nyA-win" x="10" y="724" width="8" height="10"/>
+    <rect class="nyA-win" x="20" y="746" width="8" height="10" style="animation-delay:-.9s"/>
+    <rect class="nyA-win" x="38" y="684" width="8" height="10" style="animation-delay:-1.6s"/>
+    <rect class="nyA-win" x="98" y="660" width="8" height="10" style="animation-delay:-.4s"/>
+    <rect class="nyA-win" x="176" y="690" width="8" height="10" style="animation-delay:-1.1s"/>
+    <rect class="nyA-win" x="190" y="712" width="8" height="10" style="animation-delay:-2s"/>
+    <rect class="nyA-win" x="256" y="662" width="8" height="10" style="animation-delay:-.7s"/>
+    <rect class="nyA-win" x="334" y="686" width="8" height="10" style="animation-delay:-1.9s"/>
+    <rect class="nyA-win" x="344" y="708" width="8" height="10" style="animation-delay:-.3s"/>
+  </g>
+  <g transform="translate(150 250)"><use href="#nyAburst" class="nyA-b" fill="#F2B33D" style="animation-delay:4.1s"/></g>
+  <g transform="translate(318 180)"><use href="#nyAburst" class="nyA-b" fill="#E2557B" style="animation-delay:5s"/></g>
+  <g transform="translate(225 330)"><use href="#nyAburst" class="nyA-b" fill="#2FA08B" style="animation-delay:5.8s"/></g>
+  <g transform="translate(92 430) scale(.8)"><use href="#nyAburst" class="nyA-b" fill="#E2557B" style="animation-delay:6.6s"/></g>
+  <g transform="translate(362 432) scale(.85)"><use href="#nyAburst" class="nyA-b" fill="#F2B33D" style="animation-delay:7.3s"/></g>
+  <circle class="nyA-R1" cx="225" cy="400" r="90"/>
+  <circle class="nyA-R2" cx="225" cy="400" r="90"/>
+  <circle class="nyA-flash" cx="225" cy="400" r="200"/>
+  <circle class="nyA-r nyA-r1" cx="225" cy="400" r="80"/>
+  <circle class="nyA-r nyA-r2" cx="225" cy="400" r="80"/>
+  <circle class="nyA-r nyA-r3" cx="225" cy="400" r="80"/>
+  <text class="nyA-n nyA-n3" x="225" y="452">3</text>
+  <text class="nyA-n nyA-n2" x="225" y="452">2</text>
+  <text class="nyA-n nyA-n1" x="225" y="452">1</text>
+  <g class="nyA-gate">
+    <g transform="translate(40 -40)"><g class="nyA-fall"><g class="nyA-spin"><rect x="-4" y="-8" width="8" height="16" rx="2.5" fill="#F6D27A"/></g></g></g>
+    <g transform="translate(110 -40)"><g class="nyA-fall nyA-f2" style="animation-delay:-2s"><g class="nyA-spin"><circle r="4" fill="#E2557B"/></g></g></g>
+    <g transform="translate(190 -40)"><g class="nyA-fall nyA-f3" style="animation-delay:-3.4s"><g class="nyA-spin"><rect x="-4" y="-8" width="8" height="16" rx="2.5" fill="#2FA08B"/></g></g></g>
+    <g transform="translate(268 -40)"><g class="nyA-fall" style="animation-delay:-1.2s"><g class="nyA-spin"><circle r="3.4" fill="#F6EFE2"/></g></g></g>
+    <g transform="translate(340 -40)"><g class="nyA-fall nyA-f2" style="animation-delay:-4.2s"><g class="nyA-spin"><rect x="-4" y="-8" width="8" height="16" rx="2.5" fill="#F2B33D"/></g></g></g>
+    <g transform="translate(412 -40)"><g class="nyA-fall nyA-f3" style="animation-delay:-2.7s"><g class="nyA-spin"><circle r="4" fill="#E2557B"/></g></g></g>
+  </g>
+  <text class="nyA-w1" x="229" y="160">HAPPY</text>
+  <text class="nyA-w2" x="228" y="246">NEW YEAR!</text>
+  <text class="nyA-sub" x="230" y="300">NAYA SAAL MUBARAK</text>
+</svg>

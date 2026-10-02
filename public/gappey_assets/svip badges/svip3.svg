@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 26" width="66" height="26">
+<title>SVIP 3 Badge</title>
+<defs>
+<radialGradient id="ps3m" cx=".4" cy=".3" r="1.1"><stop offset="0" stop-color="#2c3a5c"/><stop offset="1" stop-color="#0a0f1c"/></radialGradient>
+<linearGradient id="ps3st" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfe9f5"/><stop offset="1" stop-color="#5a6a85"/></linearGradient>
+<filter id="ps3t" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.2"/></filter>
+<clipPath id="ps3c2"><polygon points="14.5,4 57.5,4 62.5,13 57.5,22 14.5,22 9.5,13"/></clipPath>
+</defs>
+<polygon points="14.5,4 57.5,4 62.5,13 57.5,22 14.5,22 9.5,13" fill="none" stroke="#7fd4ff" stroke-width="2.6" opacity=".3">
+<animate attributeName="opacity" values=".22;.45;.22" dur="2.6s" repeatCount="indefinite"/>
+</polygon>
+<polygon points="14.5,4 57.5,4 62.5,13 57.5,22 14.5,22 9.5,13" fill="url(#ps3m)" stroke="url(#ps3st)" stroke-width="1.1"/>
+<polygon points="16.5,6.3 56,6.3 59.8,13 56,19.7 16.5,19.7 12.8,13" fill="none" stroke="#7fd4ff" stroke-width=".6" opacity=".4">
+<animate attributeName="opacity" values=".25;.55;.25" dur="2.8s" repeatCount="indefinite"/>
+</polygon>
+<circle cx="17.5" cy="13" r="3.6" fill="#05070d" stroke="#dff2ff" stroke-width=".7">
+<animate attributeName="stroke-opacity" values=".6;1;.6" dur="2.4s" repeatCount="indefinite"/>
+</circle>
+<ellipse cx="17.5" cy="13" rx="4.6" ry="1.5" fill="none" stroke="#bfe9ff" stroke-width=".5" opacity=".6" transform="rotate(-16 17.5 13)"/>
+<g><animateTransform attributeName="transform" type="rotate" values="0 17.5 13;360 17.5 13" dur="2.6s" repeatCount="indefinite"/>
+<circle cx="21.9" cy="13" r=".6" fill="#ffffff"/></g>
+<text x="42" y="17.4" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="800" letter-spacing=".2" fill="#7fd4ff" filter="url(#ps3t)" opacity=".55">SVIP 3
+&lt;animate attributeName="opacity" values=".3;.85;.3" dur="2.6s" repeatCount="indefinite"/&gt;
+</text>
+<text x="42" y="17.4" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="800" letter-spacing=".2" fill="#f2f8ff">SVIP 3</text>
+<circle cx="17.5" cy="13" fill="none" stroke="#7fd4ff" stroke-width=".9" opacity="0" r="6">
+<animate attributeName="opacity" values="0;.4;0" dur="4.5s" begin="1.2s" repeatCount="indefinite"/>
+<animate attributeName="r" values="6;18" dur="4.5s" begin="1.2s" repeatCount="indefinite"/>
+</circle>
+<g><animateTransform attributeName="transform" type="rotate" values="0 42 13;360 42 13" dur="3.6s" repeatCount="indefinite"/>
+<circle cx="54" cy="13" r=".9" fill="#ffffff"/></g>
+</svg>

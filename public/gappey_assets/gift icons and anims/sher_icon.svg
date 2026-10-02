@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <title>Singham Sher — gift logo</title>
+  <defs>
+    <radialGradient id="shLmane" cx=".4" cy=".35" r=".95">
+      <stop offset="0" stop-color="#F2A855"/><stop offset=".55" stop-color="#C9661F"/><stop offset="1" stop-color="#7E3410"/>
+    </radialGradient>
+    <radialGradient id="shLface" cx=".4" cy=".35" r=".95">
+      <stop offset="0" stop-color="#F6CE8A"/><stop offset="1" stop-color="#CE8434"/>
+    </radialGradient>
+    <path id="shLspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+  </defs>
+  <g fill="none" stroke="#F3EADA" stroke-width="4" stroke-linecap="round" opacity=".5">
+    <path d="M-98 -22 A44 44 0 0 0 -98 26" transform="translate(22 96)"/>
+    <path d="M-86 -12 A30 30 0 0 0 -86 16" transform="translate(34 96)" opacity=".55"/>
+    <path d="M98 -22 A44 44 0 0 1 98 26" transform="translate(-22 96)"/>
+    <path d="M86 -12 A30 30 0 0 1 86 16" transform="translate(-34 96)" opacity=".55"/>
+  </g>
+  <g transform="translate(120 122)">
+    <path d="M86 0 L58 15.5 L74.5 43 L42.4 42.4 L43 74.5 L15.5 58 L0 86 L-15.5 58 L-43 74.5 L-42.4 42.4 L-74.5 43 L-58 15.5 L-86 0 L-58 -15.5 L-74.5 -43 L-42.4 -42.4 L-43 -74.5 L-15.5 -58 L0 -86 L15.5 -58 L43 -74.5 L42.4 -42.4 L74.5 -43 L58 -15.5 Z" fill="url(#shLmane)" stroke="#5E2608" stroke-width="3" stroke-linejoin="round"/>
+    <circle r="50" fill="url(#shLface)" stroke="#5E2608" stroke-width="2"/>
+    <g stroke="#2A1406" stroke-width="4.5" stroke-linecap="round">
+      <path d="M-33 -20 L-9 -12"/><path d="M33 -20 L9 -12"/>
+    </g>
+    <circle cx="-19" cy="-7" r="5" fill="#2A1406"/>
+    <circle cx="19" cy="-7" r="5" fill="#2A1406"/>
+    <ellipse cy="19" rx="21" ry="15" fill="#F8E7C0"/>
+    <path d="M-8 11 L8 11 L0 21 Z" fill="#2A1406"/>
+    <path d="M0 21 L0 26 M0 26 Q-7 32 -13 27 M0 26 Q7 32 13 27" fill="none" stroke="#2A1406" stroke-width="2.5" stroke-linecap="round"/>
+    <g fill="#5E2608" opacity=".55">
+      <circle cx="-25" cy="15" r="1.3"/><circle cx="-30" cy="20" r="1.3"/><circle cx="-23" cy="24" r="1.3"/>
+      <circle cx="25" cy="15" r="1.3"/><circle cx="30" cy="20" r="1.3"/><circle cx="23" cy="24" r="1.3"/>
+    </g>
+  </g>
+  <use href="#shLspk" transform="translate(196 56) scale(.85)" fill="#F2B33D"/>
+  <use href="#shLspk" transform="translate(44 196) scale(.6)" fill="#F6EFE2"/>
+</svg>

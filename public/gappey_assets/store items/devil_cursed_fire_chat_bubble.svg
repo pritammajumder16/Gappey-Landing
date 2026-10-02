@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="380" height="150" viewBox="0 0 380 150" preserveAspectRatio="none">
+  <title>Devil Cursed Fire Chat Bubble</title>
+  <defs>
+    <linearGradient id="bFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#33060d"/>
+      <stop offset="1" stop-color="#14020a"/>
+    </linearGradient>
+    <linearGradient id="bStroke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff8a65"/>
+      <stop offset="1" stop-color="#8e0000"/>
+    </linearGradient>
+    <linearGradient id="dFlame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8e0000"/>
+      <stop offset="0.55" stop-color="#ff3d00"/>
+      <stop offset="1" stop-color="#ffd180"/>
+    </linearGradient>
+    <filter id="bSoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <path id="fm" d="M0 0 C -5 -4 -4.5 -10 0 -16 C 4.5 -10 5 -4 0 0 Z"/>
+  </defs>
+
+  <!-- breathing glow -->
+  <ellipse cx="190" cy="75" rx="172" ry="60" fill="#ff1e1e" filter="url(#bSoft)" opacity="0.25">
+    <animate attributeName="opacity" values="0.16;0.4;0.16" dur="2s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- box body -->
+  <rect x="10" y="10" width="360" height="130" rx="20" fill="url(#bFill)" stroke="url(#bStroke)" stroke-width="4"/>
+  <line x1="40" y1="24" x2="340" y2="24" stroke="#ffb3ab" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- ember comet around the border -->
+  <rect x="10" y="10" width="360" height="130" rx="20" fill="none" stroke="#ffab91"
+        stroke-width="2.5" stroke-linecap="round" stroke-dasharray="90 856">
+    <animate attributeName="stroke-dashoffset" from="946" to="0" dur="3.1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- cursed devil-flame emblem on the top edge -->
+  <g transform="translate(70 46)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.06;1" dur="1.8s" repeatCount="indefinite"/>
+      <path d="M-3.5 -15 C -6.5 -16.5 -8 -20 -7.5 -23.5 C -5.5 -20.5 -3.5 -19 -1.5 -18.3 Z" fill="#d32f2f"/>
+      <path d="M3.5 -15 C 6.5 -16.5 8 -20 7.5 -23.5 C 5.5 -20.5 3.5 -19 1.5 -18.3 Z" fill="#d32f2f"/>
+      <path d="M0 12 C -9 4 -8.5 -7 0 -20 C 8.5 -7 9 4 0 12 Z" fill="url(#dFlame)"/>
+      <path d="M0 9 C -4.5 3.5 -4.2 -3 0 -11 C 4.2 -3 4.5 3.5 0 9 Z" fill="#ffd180" opacity="0.9"/>
+      <path d="M-4.5 -1 Q0 2.5 4.5 -1" stroke="#5d0000" stroke-width="1.8" fill="none" stroke-linecap="round">
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="1.1s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <!-- corner mini-flames -->
+  <use xlink:href="#fm" transform="translate(332 40) scale(1.1)" fill="url(#dFlame)">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2s" repeatCount="indefinite"/>
+  </use>
+  <use xlink:href="#fm" transform="translate(46 124) scale(0.9)" fill="#ff7043">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.4s" begin="-0.8s" repeatCount="indefinite"/>
+  </use>
+  <use xlink:href="#fm" transform="translate(334 124) scale(0.8)" fill="#ff7043">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.2s" begin="-1.3s" repeatCount="indefinite"/>
+  </use>
+
+  <!-- rising embers inside -->
+  <g>
+    <circle cx="95" cy="126" r="2" fill="#ff3d00" opacity="0">
+      <animate attributeName="cy" values="126;36" dur="2.6s" begin="-1.9s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="95;102;89;95" dur="2.6s" begin="-1.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.85;0" dur="2.6s" begin="-1.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="126" r="2.4" fill="#ff7043" opacity="0">
+      <animate attributeName="cy" values="126;34" dur="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="150;158;143;150" dur="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="215" cy="126" r="3" fill="#ffb74d" opacity="0">
+      <animate attributeName="cy" values="126;36" dur="2.6s" begin="-0.7s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="215;207;223;215" dur="2.6s" begin="-0.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="2.6s" begin="-0.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="126" r="2" fill="#ff3d00" opacity="0">
+      <animate attributeName="cy" values="126;38" dur="2.6s" begin="-1.4s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="280;288;273;280" dur="2.6s" begin="-1.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.85;0" dur="2.6s" begin="-1.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="335" cy="126" r="2.6" fill="#ff7043" opacity="0">
+      <animate attributeName="cy" values="126;36" dur="2.6s" begin="-0.35s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="335;327;341;335" dur="2.6s" begin="-0.35s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.85;0" dur="2.6s" begin="-0.35s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

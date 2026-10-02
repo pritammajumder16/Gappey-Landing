@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 800" width="450" height="800">
+  <title>Patang Baaz — full-screen gift animation</title>
+  <defs>
+    <linearGradient id="ptAsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#14283A"/><stop offset=".55" stop-color="#0C1826"/><stop offset="1" stop-color="#060B12"/>
+    </linearGradient>
+    <g id="ptAkite">
+      <path d="M0 -88 L58 0 L0 88 L-58 0 Z" fill="#E2557B" stroke="#7A1F35" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M0 -88 L-58 0 L0 0 Z" fill="#F2A43D"/>
+      <path d="M0 0 L58 0 L0 88 Z" fill="#B23A5C"/>
+      <path d="M0 -88 V88 M-58 0 H58" stroke="#7A1F35" stroke-width="2" opacity=".85"/>
+      <path d="M0 -88 V88" stroke="#F6D27A" stroke-width="1" opacity=".5"/>
+      <circle cx="0" cy="-88" r="2.4" fill="#F3EADA"/><circle cx="58" cy="0" r="2.4" fill="#F3EADA"/><circle cx="0" cy="88" r="2.4" fill="#F3EADA"/><circle cx="-58" cy="0" r="2.4" fill="#F3EADA"/>
+    </g>
+    <g id="ptAbow">
+      <path d="M0 0 L-9 -5 L-9 5 Z"/>
+      <path d="M0 0 L9 -5 L9 5 Z"/>
+    </g>
+    <style>
+      .ptA-fly{animation:ptFly 8s linear infinite}
+      .ptA-bob{animation:ptBob 2.6s ease-in-out infinite alternate}
+      .ptA-tail{transform-box:fill-box;transform-origin:50% 0;animation:ptTail 1s ease-in-out infinite alternate}
+      .ptA-bw{transform-box:fill-box;transform-origin:center;animation:ptBw 1.1s ease-in-out infinite alternate}
+      .ptA-sp{fill:none;stroke:#CFE0EA;stroke-width:3;stroke-linecap:round;stroke-dasharray:26 22;opacity:.35;animation:ptDash .5s linear infinite}
+      .ptA-cld{animation:ptCld 13s ease-in-out infinite alternate}
+      .ptA-wind{fill:none;stroke:#CFE0EA;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:70 120;opacity:.15;animation:ptWind 1.6s linear infinite}
+      .ptA-str{animation:ptSway 4.5s ease-in-out infinite alternate}
+      .ptA-riv{animation:ptRiv 8s linear infinite}
+      .ptA-cap{font:600 46px Georgia,'Times New Roman',serif;letter-spacing:12px;fill:#F2D48C;text-anchor:middle;animation:ptCap 8s linear infinite}
+      .ptA-orn{animation:ptCap 8s linear infinite}
+      .ptA-tw{transform-box:fill-box;transform-origin:center;animation:ptTw 2.6s ease-in-out infinite}
+      @keyframes ptFly{
+        0%{opacity:0;transform:translate(-130px,880px) rotate(-24deg) scale(.55)}
+        5%{opacity:1}
+        16%{transform:translate(110px,600px) rotate(-8deg) scale(.95)}
+        30%{transform:translate(310px,330px) rotate(10deg) scale(1.1)}
+        42%{transform:translate(330px,200px) rotate(18deg) scale(1.15)}
+        46%{transform:translate(280px,250px) rotate(120deg) scale(1.1)}
+        50%{transform:translate(340px,320px) rotate(250deg) scale(1.08)}
+        54%{transform:translate(380px,210px) rotate(382deg) scale(1.15)}
+        66%{transform:translate(210px,110px) rotate(392deg) scale(1.05)}
+        78%{transform:translate(40px,40px) rotate(370deg) scale(.95)}
+        84%{opacity:1}
+        88%,100%{opacity:0;transform:translate(-140px,-60px) rotate(352deg) scale(.8)}}
+      @keyframes ptBob{from{transform:translateY(-7px)}to{transform:translateY(7px)}}
+      @keyframes ptTail{from{transform:rotate(-10deg)}to{transform:rotate(10deg)}}
+      @keyframes ptBw{from{transform:rotate(-18deg) scaleX(1)}to{transform:rotate(18deg) scaleX(.8)}}
+      @keyframes ptDash{to{stroke-dashoffset:-96}}
+      @keyframes ptCld{from{transform:translateX(-26px)}to{transform:translateX(26px)}}
+      @keyframes ptWind{to{stroke-dashoffset:-190}}
+      @keyframes ptSway{from{transform:rotate(-1.4deg)}to{transform:rotate(1.4deg)}}
+      @keyframes ptRiv{0%,18%{opacity:0;transform:translate(520px,170px)}24%{opacity:.55}55%{opacity:.55;transform:translate(-80px,120px) rotate(8deg)}62%,100%{opacity:0;transform:translate(-80px,120px) rotate(8deg)}}
+      @keyframes ptCap{0%,34%{opacity:0}42%{opacity:1}84%{opacity:1}92%,100%{opacity:0}}
+      @keyframes ptTw{0%,100%{opacity:.08;transform:scale(.7)}50%{opacity:.7;transform:scale(1)}}
+    </style>
+  </defs>
+  <rect width="450" height="800" fill="url(#ptAsky)"/>
+  <circle cx="370" cy="96" r="40" fill="#E9E4D2" opacity=".06"/>
+  <circle cx="370" cy="96" r="28" fill="#E9E4D2" opacity=".05"/>
+  <g class="ptA-cld" opacity=".1" fill="#E9E4D2">
+    <ellipse cx="90" cy="140" rx="60" ry="16"/><ellipse cx="140" cy="128" rx="40" ry="13"/>
+  </g>
+  <g class="ptA-cld" style="animation-duration:16s;animation-delay:-4s" opacity=".08" fill="#E9E4D2">
+    <ellipse cx="330" cy="240" rx="54" ry="14"/><ellipse cx="288" cy="230" rx="34" ry="11"/>
+  </g>
+  <g class="ptA-cld" style="animation-duration:11s;animation-delay:-7s" opacity=".06" fill="#E9E4D2">
+    <ellipse cx="220" cy="420" rx="70" ry="15"/>
+  </g>
+  <path class="ptA-wind" d="M-20 210 C120 200 300 220 470 205"/>
+  <path class="ptA-wind" d="M-20 340 C140 330 300 355 470 338" style="animation-delay:-.5s"/>
+  <path class="ptA-wind" d="M-20 530 C120 520 320 545 470 528" style="animation-delay:-1s"/>
+  <circle class="ptA-tw" cx="70" cy="90" r="1.8" fill="#E9E4D2"/>
+  <circle class="ptA-tw" cx="180" cy="70" r="1.5" fill="#E9E4D2" style="animation-delay:-.7s"/>
+  <circle class="ptA-tw" cx="300" cy="130" r="1.8" fill="#E9E4D2" style="animation-delay:-1.4s"/>
+  <circle class="ptA-tw" cx="60" cy="470" r="1.5" fill="#E9E4D2" style="animation-delay:-2s"/>
+  <g class="ptA-riv" opacity=".55">
+    <g transform="scale(.45)">
+      <path d="M0 -88 L58 0 L0 88 L-58 0 Z" fill="#7FB6A4" stroke="#2E5C4F" stroke-width="3"/>
+      <path d="M0 -88 V88 M-58 0 H58" stroke="#2E5C4F" stroke-width="3"/>
+      <path d="M0 88 C-10 108 10 122 -2 146" stroke="#F3EADA" stroke-width="4" fill="none"/>
+    </g>
+  </g>
+  <g class="ptA-str" style="transform-origin:396px 716px">
+    <path d="M390 708 C300 660 200 650 120 560 C70 500 30 430 40 330" stroke="#D9A441" stroke-width="2" fill="none" opacity=".6"/>
+    <circle cx="396" cy="716" r="11" fill="#8A5A2B" stroke="#5E3A1C" stroke-width="2"/>
+    <path d="M388 712 H404 M388 720 H404" stroke="#C9A06A" stroke-width="1.6"/>
+  </g>
+  <g class="ptA-fly">
+    <path class="ptA-sp" d="M-70 -20 C-110 -26 -150 -26 -190 -20"/>
+    <path class="ptA-sp" d="M-76 0 C-118 -4 -160 -2 -198 4" style="animation-delay:-.2s"/>
+    <path class="ptA-sp" d="M-64 20 C-104 26 -146 28 -184 24" style="animation-delay:-.35s"/>
+    <g class="ptA-bob">
+      <g transform="scale(1.5)">
+        <path class="ptA-tail" d="M0 88 C-8 104 8 116 -2 132 C-8 144 6 152 0 166" stroke="#F3EADA" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        <use href="#ptAbow" class="ptA-bw" transform="translate(-4 106) rotate(-12)" fill="#F6D27A"/>
+        <use href="#ptAbow" class="ptA-bw" transform="translate(2 124) rotate(10) scale(.9)" fill="#E2557B" style="animation-delay:-.3s"/>
+        <use href="#ptAbow" class="ptA-bw" transform="translate(-3 144) rotate(-8) scale(.8)" fill="#F2A43D" style="animation-delay:-.6s"/>
+        <use href="#ptAkite"/>
+      </g>
+    </g>
+  </g>
+  <text class="ptA-cap" x="231" y="692">PATANG BAAZ</text>
+  <g class="ptA-orn" stroke="#D9A441" fill="none">
+    <line x1="118" y1="718" x2="204" y2="718"/>
+    <line x1="256" y1="718" x2="342" y2="718"/>
+    <path d="M225 712 l6 6 -6 6 -6 -6Z"/>
+  </g>
+</svg>

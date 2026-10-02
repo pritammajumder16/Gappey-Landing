@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <title>Rangoli Rani — gift logo</title>
+  <defs>
+    <path id="rgLpet" d="M0 -26 C11 -20 13 -7 0 0 C-13 -7 -11 -20 0 -26 Z"/>
+    <path id="rgLspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+  </defs>
+  <g transform="translate(120 120)">
+    <circle r="104" fill="none" stroke="#2FA08B" stroke-width="3" stroke-dasharray="7 8"/>
+    <g fill="#E2557B" stroke="#B23A5C" stroke-width="1.5">
+      <use href="#rgLpet" transform="translate(0 -34)"/>
+      <use href="#rgLpet" transform="rotate(45) translate(0 -34)"/>
+      <use href="#rgLpet" transform="rotate(90) translate(0 -34)"/>
+      <use href="#rgLpet" transform="rotate(135) translate(0 -34)"/>
+      <use href="#rgLpet" transform="rotate(180) translate(0 -34)"/>
+      <use href="#rgLpet" transform="rotate(225) translate(0 -34)"/>
+      <use href="#rgLpet" transform="rotate(270) translate(0 -34)"/>
+      <use href="#rgLpet" transform="rotate(315) translate(0 -34)"/>
+    </g>
+    <g fill="#F2A43D" stroke="#C97F2E" stroke-width="1.2">
+      <use href="#rgLpet" transform="rotate(22.5) translate(0 -66) scale(.68)"/>
+      <use href="#rgLpet" transform="rotate(67.5) translate(0 -66) scale(.68)"/>
+      <use href="#rgLpet" transform="rotate(112.5) translate(0 -66) scale(.68)"/>
+      <use href="#rgLpet" transform="rotate(157.5) translate(0 -66) scale(.68)"/>
+      <use href="#rgLpet" transform="rotate(202.5) translate(0 -66) scale(.68)"/>
+      <use href="#rgLpet" transform="rotate(247.5) translate(0 -66) scale(.68)"/>
+      <use href="#rgLpet" transform="rotate(292.5) translate(0 -66) scale(.68)"/>
+      <use href="#rgLpet" transform="rotate(337.5) translate(0 -66) scale(.68)"/>
+    </g>
+    <circle r="24" fill="none" stroke="#E2557B" stroke-width="3"/>
+    <circle r="11" fill="#F2B33D" stroke="#8A5F1D" stroke-width="2.5"/>
+    <circle r="4" fill="#B23A5C"/>
+    <g fill="#F6EFE2">
+      <circle cy="-112" r="3.5"/>
+      <g transform="rotate(45)"><circle cy="-112" r="3.5"/></g>
+      <g transform="rotate(90)"><circle cy="-112" r="3.5"/></g>
+      <g transform="rotate(135)"><circle cy="-112" r="3.5"/></g>
+      <g transform="rotate(180)"><circle cy="-112" r="3.5"/></g>
+      <g transform="rotate(225)"><circle cy="-112" r="3.5"/></g>
+      <g transform="rotate(270)"><circle cy="-112" r="3.5"/></g>
+      <g transform="rotate(315)"><circle cy="-112" r="3.5"/></g>
+    </g>
+  </g>
+  <use href="#rgLspk" transform="translate(200 52) scale(.85)" fill="#F2A43D"/>
+  <use href="#rgLspk" transform="translate(42 182) scale(.6)" fill="#F6EFE2"/>
+  <circle cx="204" cy="168" r="2.5" fill="#E2557B"/>
+</svg>

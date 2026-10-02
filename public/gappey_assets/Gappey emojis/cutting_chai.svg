@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<defs><linearGradient id="cht" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#C98A4B"/><stop offset="100%" stop-color="#7A3E14"/></linearGradient></defs>
+<style>
+.chB{transform-box:fill-box;transform-origin:center bottom;animation:chA 1.6s ease-in-out infinite}
+@keyframes chA{0%,100%{transform:scale(1,1)}30%{transform:scale(1.04,.96) translateY(2px)}60%{transform:scale(.98,1.03) translateY(-4px)}}
+.chS{opacity:0;animation:chB 1.8s ease-out infinite}
+.chS.e{animation-delay:.9s}
+@keyframes chB{0%{opacity:0;transform:translateY(8px)}30%{opacity:.75}100%{opacity:0;transform:translateY(-16px)}}
+</style>
+<g class="chB">
+<path class="chS" d="M88 72 Q82 60 90 50 Q98 40 92 28" fill="none" stroke="#C9C9C9" stroke-width="4.5" stroke-linecap="round"/>
+<path class="chS e" d="M114 74 Q120 62 112 52 Q104 42 110 30" fill="none" stroke="#C9C9C9" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M66 84 L134 84 L126 162 Q100 172 74 162 Z" fill="#EAF4FB" opacity=".92" stroke="#9AB9CE" stroke-width="3" stroke-linejoin="round"/>
+<path d="M72 102 L128 102 L121 160 Q100 168 79 160 Z" fill="url(#cht)"/>
+<ellipse cx="100" cy="102" rx="28" ry="6" fill="#D89B5E"/>
+<circle cx="88" cy="126" r="4.5" fill="#4A2E14"/><circle cx="89.5" cy="124.5" r="1.5" fill="#fff"/>
+<circle cx="112" cy="126" r="4.5" fill="#4A2E14"/><circle cx="113.5" cy="124.5" r="1.5" fill="#fff"/>
+<path d="M92 136 Q100 142 108 136" fill="none" stroke="#4A2E14" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="80" cy="136" rx="5" ry="3.5" fill="#FF9DBB" opacity=".8"/>
+<ellipse cx="120" cy="136" rx="5" ry="3.5" fill="#FF9DBB" opacity=".8"/>
+</g>
+</svg>

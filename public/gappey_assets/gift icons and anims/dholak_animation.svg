@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 800" width="450" height="800">
+  <title>Dhol Tasha — full-screen gift animation</title>
+  <defs>
+    <radialGradient id="dhAsky" cx="50%" cy="40%" r="85%">
+      <stop offset="0" stop-color="#221208"/><stop offset=".55" stop-color="#120A05"/><stop offset="1" stop-color="#070302"/>
+    </radialGradient>
+    <radialGradient id="dhAglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#F2A43D" stop-opacity=".3"/><stop offset="1" stop-color="#F2A43D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="dhAbar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A05A2C"/><stop offset="1" stop-color="#5F2C12"/>
+    </linearGradient>
+    <path id="dhAspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+    <style>
+      .dh-sway{transform-box:fill-box;transform-origin:50% 85%;animation:dhSway 3.4s ease-in-out infinite alternate}
+      .dh-squash{transform-box:fill-box;transform-origin:50% 50%;animation:dhSquash 6s linear infinite}
+      .dh-st1{transform-box:fill-box;transform-origin:0% 0%;animation:dhSt1 6s linear infinite}
+      .dh-st2{transform-box:fill-box;transform-origin:100% 100%;animation:dhSt2 6s linear infinite}
+      .dh-ringA,.dh-ringB{fill:none;transform-box:fill-box;transform-origin:center}
+      .dh-ringA{stroke:#F2A43D;stroke-width:6;animation:dhRingA 6s linear infinite}
+      .dh-ringB{stroke:#F3EADA;stroke-width:2.5;animation:dhRingB 6s linear infinite}
+      .dh-pA,.dh-pB{transform-box:fill-box;transform-origin:center}
+      .dh-pA{animation:dhPA 6s linear infinite}
+      .dh-pB{animation:dhPB 6s linear infinite}
+      .dh-arA,.dh-arB{fill:none;stroke:#F3EADA;stroke-linecap:round;opacity:0}
+      .dh-arA{stroke-width:4;animation:dhArA 6s linear infinite}
+      .dh-arB{stroke-width:3;animation:dhArB 6s linear infinite}
+      .dh-bp1,.dh-bp2{fill:none;stroke:#E88A2D;stroke-width:2;transform-box:fill-box;transform-origin:center}
+      .dh-bp1{animation:dhBpA 6s linear infinite}
+      .dh-bp2{animation:dhBpB 6s linear infinite}
+      .dh-flash{fill:url(#dhAglow);transform-box:fill-box;transform-origin:center;animation:dhFlash 6s linear infinite}
+      .dh-cap{font:600 46px Georgia,'Times New Roman',serif;letter-spacing:12px;fill:#F2D48C;text-anchor:middle;animation:dhCap 6s linear infinite}
+      .dh-orn{animation:dhCap 6s linear infinite}
+      .dh-twk{transform-box:fill-box;transform-origin:center;animation:dhTw 2.8s ease-in-out infinite}
+      .dh-gar{transform-box:fill-box;transform-origin:50% 0;animation:dhGar 4.2s ease-in-out infinite alternate}
+      @keyframes dhSway{from{transform:rotate(-1.4deg)}to{transform:rotate(1.4deg)}}
+      @keyframes dhSquash{0%,7%{transform:scale(1,1)}8%{transform:scale(1.07,.93)}12%{transform:scale(.98,1.03)}15%,57%{transform:scale(1,1)}58%{transform:scale(1.07,.93)}62%{transform:scale(.98,1.03)}65%,100%{transform:scale(1,1)}}
+      @keyframes dhSt1{0%,5%{transform:rotate(-16deg)}8%{transform:rotate(10deg)}12%{transform:rotate(-4deg)}16%,100%{transform:rotate(-16deg)}}
+      @keyframes dhSt2{0%,55%{transform:rotate(16deg)}58%{transform:rotate(-10deg)}62%{transform:rotate(4deg)}66%,100%{transform:rotate(16deg)}}
+      @keyframes dhRingA{0%{opacity:0;transform:scale(.1)}8%{opacity:.95;transform:scale(.15)}26%{opacity:0;transform:scale(3)}100%{opacity:0;transform:scale(3)}}
+      @keyframes dhRingB{0%{opacity:0;transform:scale(.1)}58%{opacity:.85;transform:scale(.15)}76%{opacity:0;transform:scale(3.3)}100%{opacity:0;transform:scale(3.3)}}
+      @keyframes dhPA{0%,8%{opacity:1;transform:translateY(0) scale(.4)}26%{opacity:0;transform:translateY(-150px) scale(1)}100%{opacity:0;transform:translateY(-150px) scale(1)}}
+      @keyframes dhPB{0%,58%{opacity:1;transform:translateY(0) scale(.4)}76%{opacity:0;transform:translateY(-150px) scale(1)}100%{opacity:0;transform:translateY(-150px) scale(1)}}
+      @keyframes dhArA{0%,8%{opacity:0}12%{opacity:.7}24%,100%{opacity:0}}
+      @keyframes dhArB{0%,58%{opacity:0}62%{opacity:.6}74%,100%{opacity:0}}
+      @keyframes dhBpA{0%{opacity:0;transform:scale(.35)}8%{opacity:.18;transform:scale(.5)}45%,100%{opacity:0;transform:scale(1.8)}}
+      @keyframes dhBpB{0%{opacity:0;transform:scale(.35)}58%{opacity:.18;transform:scale(.5)}95%,100%{opacity:0;transform:scale(1.8)}}
+      @keyframes dhFlash{0%,8%{opacity:0}11%{opacity:.55}24%,57%{opacity:0}60%{opacity:.55}73%,100%{opacity:0}}
+      @keyframes dhCap{0%,20%{opacity:0}28%{opacity:1}86%{opacity:1}94%,100%{opacity:0}}
+      @keyframes dhTw{0%,100%{opacity:.06;transform:scale(.6)}50%{opacity:.85;transform:scale(1)}}
+      @keyframes dhGar{from{transform:rotate(-.8deg)}to{transform:rotate(.8deg)}}
+    </style>
+  </defs>
+  <rect width="450" height="800" fill="url(#dhAsky)"/>
+  <g class="dh-gar">
+    <path d="M14 62 Q225 150 436 62" fill="none" stroke="#D9A441" stroke-width="2" opacity=".55"/>
+    <circle cx="34" cy="76" r="7" fill="#E2557B"/><circle cx="80" cy="94" r="7" fill="#F2A43D"/><circle cx="128" cy="106" r="7" fill="#F6EFE2"/><circle cx="176" cy="112" r="7" fill="#F2A43D"/><circle cx="225" cy="114" r="7" fill="#E2557B"/><circle cx="274" cy="112" r="7" fill="#F2A43D"/><circle cx="322" cy="106" r="7" fill="#F6EFE2"/><circle cx="370" cy="94" r="7" fill="#F2A43D"/><circle cx="416" cy="76" r="7" fill="#E2557B"/>
+  </g>
+  <circle class="dh-bp1" cx="225" cy="430" r="210"/>
+  <circle class="dh-bp2" cx="225" cy="430" r="210"/>
+  <circle class="dh-flash" cx="225" cy="430" r="250"/>
+  <g transform="translate(225 430) rotate(0)"><g class="dh-pA"><ellipse cy="-95" rx="7" ry="11" fill="#F2A43D"/></g></g>
+  <g transform="translate(225 430) rotate(60)"><g class="dh-pA"><ellipse cy="-95" rx="7" ry="11" fill="#F6EFE2"/></g></g>
+  <g transform="translate(225 430) rotate(120)"><g class="dh-pA"><ellipse cy="-95" rx="7" ry="11" fill="#F2A43D"/></g></g>
+  <g transform="translate(225 430) rotate(180)"><g class="dh-pA"><ellipse cy="-95" rx="7" ry="11" fill="#F6EFE2"/></g></g>
+  <g transform="translate(225 430) rotate(240)"><g class="dh-pA"><ellipse cy="-95" rx="7" ry="11" fill="#F2A43D"/></g></g>
+  <g transform="translate(225 430) rotate(300)"><g class="dh-pA"><ellipse cy="-95" rx="7" ry="11" fill="#F6EFE2"/></g></g>
+  <g transform="translate(225 430) rotate(30)"><g class="dh-pB"><ellipse cy="-95" rx="7" ry="11" fill="#E88A2D"/></g></g>
+  <g transform="translate(225 430) rotate(90)"><g class="dh-pB"><ellipse cy="-95" rx="7" ry="11" fill="#F3E7D2"/></g></g>
+  <g transform="translate(225 430) rotate(150)"><g class="dh-pB"><ellipse cy="-95" rx="7" ry="11" fill="#E88A2D"/></g></g>
+  <g transform="translate(225 430) rotate(210)"><g class="dh-pB"><ellipse cy="-95" rx="7" ry="11" fill="#F3E7D2"/></g></g>
+  <g transform="translate(225 430) rotate(270)"><g class="dh-pB"><ellipse cy="-95" rx="7" ry="11" fill="#E88A2D"/></g></g>
+  <g transform="translate(225 430) rotate(330)"><g class="dh-pB"><ellipse cy="-95" rx="7" ry="11" fill="#F3E7D2"/></g></g>
+  <circle class="dh-ringA" cx="225" cy="430" r="90"/>
+  <circle class="dh-ringB" cx="225" cy="430" r="90"/>
+  <ellipse cx="225" cy="592" rx="150" ry="20" fill="#000" opacity=".4"/>
+  <g transform="translate(225 430) scale(2.3)">
+    <g class="dh-sway"><g class="dh-squash">
+      <path d="M-62 -52 C-20 -62 20 -62 62 -52 C71 -22 71 22 62 52 C20 62 -20 62 -62 52 C-71 22 -71 -22 -62 -52 Z" fill="url(#dhAbar)" stroke="#3F1D09" stroke-width="2.5"/>
+      <g stroke="#D9A441" stroke-width="3.5" stroke-linecap="round" opacity=".9">
+        <line x1="-44" y1="-32" x2="44" y2="-4"/><line x1="44" y1="-32" x2="-44" y2="-4"/>
+        <line x1="-44" y1="2" x2="44" y2="30"/><line x1="44" y1="2" x2="-44" y2="30"/>
+      </g>
+      <line x1="-44" y1="-54" x2="-44" y2="54" stroke="#3F1D09" stroke-width="5" opacity=".6"/>
+      <line x1="44" y1="-54" x2="44" y2="54" stroke="#3F1D09" stroke-width="5" opacity=".6"/>
+      <ellipse cx="-63" cy="0" rx="16" ry="56" fill="#F3E7D2" stroke="#6B3A1C" stroke-width="3"/>
+      <ellipse cx="-63" cy="0" rx="8" ry="42" fill="none" stroke="#C9B08A" stroke-width="2" opacity=".8"/>
+      <ellipse cx="63" cy="0" rx="16" ry="56" fill="#F3E7D2" stroke="#6B3A1C" stroke-width="3"/>
+      <ellipse cx="63" cy="0" rx="8" ry="42" fill="none" stroke="#C9B08A" stroke-width="2" opacity=".8"/>
+    </g></g>
+    <g class="dh-st1"><line x1="-40" y1="-150" x2="30" y2="-30" stroke="#C9A06A" stroke-width="7" stroke-linecap="round"/><circle cx="30" cy="-30" r="6" fill="#F3E7D2" stroke="#8A5F3A" stroke-width="2"/></g>
+    <g class="dh-st2"><line x1="40" y1="150" x2="-30" y2="30" stroke="#C9A06A" stroke-width="7" stroke-linecap="round"/><circle cx="-30" cy="30" r="6" fill="#F3E7D2" stroke="#8A5F3A" stroke-width="2"/></g>
+  </g>
+  <path class="dh-arA" d="M382 366 A68 68 0 0 1 382 494"/>
+  <path class="dh-arA" d="M404 386 A46 46 0 0 1 404 474" style="animation-delay:.06s"/>
+  <path class="dh-arB" d="M382 366 A68 68 0 0 1 382 494"/>
+  <path class="dh-arB" d="M404 386 A46 46 0 0 1 404 474" style="animation-delay:.06s"/>
+  <text class="dh-cap" x="231" y="700">DHOL TASHA</text>
+  <g class="dh-orn" stroke="#D9A441" fill="none">
+    <line x1="122" y1="726" x2="204" y2="726"/>
+    <line x1="256" y1="726" x2="338" y2="726"/>
+    <path d="M225 720 l6 6 -6 6 -6 -6Z"/>
+  </g>
+  <g transform="translate(60 300)"><use href="#dhAspk" class="dh-twk" fill="#F2A43D"/></g>
+  <g transform="translate(395 250) scale(.8)"><use href="#dhAspk" class="dh-twk" fill="#F6EFE2" style="animation-delay:-.9s"/></g>
+  <g transform="translate(330 660) scale(.7)"><use href="#dhAspk" class="dh-twk" fill="#F2A43D" style="animation-delay:-1.7s"/></g>
+</svg>

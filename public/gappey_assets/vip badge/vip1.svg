@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 26" width="66" height="26">
+<title>VIP 1 Badge</title>
+<defs>
+<linearGradient id="pb1m" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8b887"/><stop offset=".5" stop-color="#b06a30"/><stop offset="1" stop-color="#7c3f14"/></linearGradient>
+<linearGradient id="pb1r" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0bd8a"/><stop offset="1" stop-color="#5f3212"/></linearGradient>
+<radialGradient id="pb1in" cx=".5" cy=".35" r="1"><stop offset="0" stop-color="#2b1608"/><stop offset="1" stop-color="#150a02"/></radialGradient>
+<clipPath id="pb1c"><rect x="3" y="4" width="60" height="18" rx="9"/></clipPath>
+</defs>
+<rect x="3" y="4" width="60" height="18" rx="9" fill="none" stroke="#e09a5f" stroke-width="3" opacity=".35">
+<animate attributeName="opacity" values=".25;.5;.25" dur="2.6s" repeatCount="indefinite"/>
+</rect>
+<rect x="3" y="4" width="60" height="18" rx="9" fill="url(#pb1m)" stroke="url(#pb1r)" stroke-width="1.2"/>
+<rect x="5.2" y="6.2" width="55.6" height="13.6" rx="6.8" fill="url(#pb1in)"/>
+<rect x="5.2" y="6.2" width="55.6" height="13.6" rx="6.8" fill="none" stroke="#f0bd8a" stroke-width=".5" opacity=".4"/>
+<g transform="translate(13.5 13)">
+<path d="M-5.5 3.6 L-4.7 -1.6 L-2.2 0.4 L0 -3.4 L2.2 0.4 L4.7 -1.6 L5.5 3.6 Z" fill="#f4c493" stroke="#5f3212" stroke-width=".45" stroke-linejoin="round">
+<animate attributeName="opacity" values=".85;1;.85" dur="2.4s" repeatCount="indefinite"/>
+</path>
+<circle cy="-4" r=".7" fill="#ffe7c4"/>
+</g>
+<text x="40" y="17.4" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" letter-spacing=".2" fill="#ffe9d2">VIP 1</text>
+<g clip-path="url(#pb1c)">
+<g><animateTransform attributeName="transform" type="translate" values="-50 0;80 0" dur="3.6s" repeatCount="indefinite"/>
+<rect x="30" y="0" width="7" height="26" fill="#ffffff" opacity=".22" transform="skewX(-18)"/></g>
+</g>
+</svg>

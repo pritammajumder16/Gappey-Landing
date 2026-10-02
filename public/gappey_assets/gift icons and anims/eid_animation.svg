@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 800" width="450" height="800">
+  <title>Eid Mubarak — full-screen gift animation</title>
+  <defs>
+    <radialGradient id="emAsky" cx="50%" cy="36%" r="95%">
+      <stop offset="0" stop-color="#17323C"/><stop offset=".55" stop-color="#0B1B23"/><stop offset="1" stop-color="#040C10"/>
+    </radialGradient>
+    <radialGradient id="emAglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#E9B94F" stop-opacity=".28"/><stop offset="1" stop-color="#E9B94F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="emAlangGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FFE08A" stop-opacity=".45"/><stop offset="1" stop-color="#FFE08A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="emAgold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE9A8"/><stop offset=".5" stop-color="#E9B94F"/><stop offset="1" stop-color="#B8791F"/>
+    </linearGradient>
+    <path id="emAcres" d="M13.5 -24 A30 30 0 1 0 13.5 24 A24 24 0 0 1 13.5 -24 Z"/>
+    <path id="emAspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+    <g id="emAlantern">
+      <line x1="0" y1="0" x2="0" y2="26" stroke="#C9A06A" stroke-width="2.5"/>
+      <circle cy="28" r="4" fill="#D9A441"/>
+      <path d="M-13 32 Q0 22 13 32 L10.5 40 H-10.5 Z" fill="#D9A441" stroke="#8A5F1D" stroke-width="2"/>
+      <path d="M-12 40 H12 L17 86 Q0 98 -17 86 Z" fill="url(#emAgold)" stroke="#8A5F1D" stroke-width="2"/>
+      <path d="M-8 45 H8 L12 82 Q0 91 -12 82 Z" fill="#FFE08A"/>
+      <path d="M0 56 C4.6 61.5 4.6 68.5 0 73.5 C-4.6 68.5 -4.6 61.5 0 56Z" fill="#F6A23D"/>
+      <path d="M0 61 C2.2 64 2.2 67 0 69.6 C-2.2 67 -2.2 64 0 61Z" fill="#FFF3D0"/>
+      <circle cy="96" r="4.5" fill="#D9A441"/>
+      <path d="M-3.5 100 L0 110 L3.5 100 Z" fill="#D9A441"/>
+      <circle cy="64" r="30" fill="url(#emAlangGlow)" class="emA-pulse"/>
+    </g>
+    <style>
+      .emA-cres{animation:emCres 9s linear infinite}
+      .emA-glow{animation:emGlowP 4s ease-in-out infinite alternate}
+      .emA-star{transform-box:fill-box;transform-origin:center;opacity:0;animation:emStar 9s linear infinite}
+      .emA-dL{animation:emDL 9s linear infinite}
+      .emA-dR{animation:emDR 9s linear infinite}
+      .emA-sway{transform-box:fill-box;transform-origin:50% 0;animation:emSway 3.6s ease-in-out infinite alternate}
+      .emA-flick{transform-box:fill-box;transform-origin:50% 85%;animation:emFlick .6s ease-in-out infinite alternate}
+      .emA-pulse{animation:emPulse 2.4s ease-in-out infinite alternate}
+      .emA-cap{font:600 42px Georgia,'Times New Roman',serif;letter-spacing:10px;fill:#F2D48C;text-anchor:middle;opacity:0;animation:emCap 9s linear infinite}
+      .emA-orn{opacity:0;animation:emCap 9s linear infinite}
+      .emA-mote{fill:#BFE3D6;opacity:0;animation:emMote 6.5s linear infinite}
+      .emA-twk{transform-box:fill-box;transform-origin:center;animation:emTw 2.8s ease-in-out infinite}
+      @keyframes emCres{
+        0%{opacity:0;transform:translate(168px,440px) scale(4.2)}
+        9%{opacity:1}
+        13%{transform:translate(168px,292px) scale(4.2)}
+        16%{transform:translate(168px,302px) scale(4.2)}
+        18%,94%{opacity:1;transform:translate(168px,300px) scale(4.2)}
+        97%,100%{opacity:0;transform:translate(168px,300px) scale(4.2)}}
+      @keyframes emGlowP{from{opacity:.55}to{opacity:1}}
+      @keyframes emStar{0%,15%{opacity:0;transform:scale(0) rotate(-40deg)}18%{opacity:1;transform:scale(1.25) rotate(8deg)}20.5%{transform:scale(1) rotate(0)}94%,100%{opacity:0;transform:scale(1) rotate(0)}}
+      @keyframes emDL{0%,6%{transform:translateY(-360px)}13%{transform:translateY(6px)}15.5%,94%{transform:translateY(0)}100%{transform:translateY(0)}}
+      @keyframes emDR{0%,8%{transform:translateY(-360px)}15%{transform:translateY(6px)}17.5%,94%{transform:translateY(0)}100%{transform:translateY(0)}}
+      @keyframes emSway{from{transform:rotate(-5deg)}to{transform:rotate(5deg)}}
+      @keyframes emFlick{from{transform:scaleY(.9)}to{transform:scaleY(1.12)}}
+      @keyframes emPulse{from{opacity:.5}to{opacity:1}}
+      @keyframes emCap{0%,30%{opacity:0}38%{opacity:1}86%{opacity:1}94%,100%{opacity:0}}
+      @keyframes emMote{0%{opacity:0;transform:translateY(0)}14%{opacity:.7}72%{opacity:0;transform:translateY(-190px)}100%{opacity:0;transform:translateY(-190px)}}
+      @keyframes emTw{0%,100%{opacity:.08;transform:scale(.6)}50%{opacity:.9;transform:scale(1)}}
+    </style>
+  </defs>
+  <rect width="450" height="800" fill="url(#emAsky)"/>
+  <circle class="emA-twk" cx="60" cy="140" r="1.8" fill="#E9E4D2"/>
+  <circle class="emA-twk" cx="140" cy="80" r="1.5" fill="#E9E4D2" style="animation-delay:-.5s"/>
+  <circle class="emA-twk" cx="260" cy="70" r="1.8" fill="#E9E4D2" style="animation-delay:-1.1s"/>
+  <circle class="emA-twk" cx="350" cy="130" r="1.5" fill="#E9E4D2" style="animation-delay:-1.7s"/>
+  <circle class="emA-twk" cx="410" cy="220" r="1.8" fill="#E9E4D2" style="animation-delay:-2.2s"/>
+  <circle class="emA-twk" cx="40" cy="330" r="1.5" fill="#E9E4D2" style="animation-delay:-.9s"/>
+  <circle class="emA-twk" cx="390" cy="420" r="1.6" fill="#E9E4D2" style="animation-delay:-1.4s"/>
+  <g transform="translate(60 320)"><use href="#emAspk" class="emA-twk" fill="#F2D48C"/></g>
+  <g transform="translate(396 560) scale(.8)"><use href="#emAspk" class="emA-twk" fill="#F6EFE2" style="animation-delay:-1.2s"/></g>
+  <g transform="translate(70 640) scale(.7)"><use href="#emAspk" class="emA-twk" fill="#F2D48C" style="animation-delay:-2s"/></g>
+  <circle class="emA-mote" cx="120" cy="600" r="2.2"/>
+  <circle class="emA-mote" cx="250" cy="640" r="2" style="animation-delay:-1.8s"/>
+  <circle class="emA-mote" cx="330" cy="620" r="2.4" style="animation-delay:-3.4s"/>
+  <circle class="emA-mote" cx="190" cy="660" r="2" style="animation-delay:-4.8s"/>
+  <circle class="emA-mote" cx="300" cy="680" r="2" style="animation-delay:-5.8s"/>
+  <circle cx="150" cy="300" r="150" fill="url(#emAglow)" class="emA-glow"/>
+  <g class="emA-cres">
+    <use href="#emAcres" fill="url(#emAgold)" stroke="#8A5F1D" stroke-width="1.4"/>
+  </g>
+  <g transform="translate(318 208)">
+    <g class="emA-star">
+      <path d="M0 -30 L7 -7 L30 0 L7 7 L0 30 L-7 7 L-30 0 L-7 -7 Z" fill="#F6D27A"/>
+      <path d="M0 -13 L3 -3 L13 0 L3 3 L0 13 L-3 3 L-13 0 L-3 -3 Z" fill="#FFF6E6"/>
+    </g>
+  </g>
+  <g transform="translate(84 0)"><g class="emA-dL"><g class="emA-sway"><use href="#emAlantern" transform="scale(2.1)"/></g></g></g>
+  <g transform="translate(366 0)"><g class="emA-dR"><g class="emA-sway" style="animation-delay:-1.8s"><use href="#emAlantern" transform="scale(2.45)"/></g></g></g>
+  <path d="M0 800 V716 H60 V640 H66 V606 Q73 594 80 606 V640 H84 V716 H130 V700 Q130 676 152 672 Q174 676 174 700 V716 H186 V700 Q186 650 225 646 Q264 650 264 700 V716 H276 V700 Q276 676 298 672 Q320 676 320 700 V716 H366 V640 H370 V606 Q377 594 384 606 V640 H390 V716 H450 V800 Z" fill="#08161B"/>
+  <line x1="0" y1="716" x2="450" y2="716" stroke="#D9A441" stroke-width="1.5" opacity=".3"/>
+  <text class="emA-cap" x="229" y="560">EID MUBARAK</text>
+  <g class="emA-orn" stroke="#C9A06A" fill="none">
+    <line x1="104" y1="586" x2="204" y2="586"/>
+    <line x1="256" y1="586" x2="356" y2="586"/>
+    <path d="M225 580 l6 6 -6 6 -6 -6Z"/>
+  </g>
+</svg>

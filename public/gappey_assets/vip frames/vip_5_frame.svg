@@ -1,0 +1,519 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" width="200" height="200">
+  <title>VIP 5 Avatar Frame</title>
+
+  <defs>
+    <!-- liquid emerald (shimmers) -->
+    <linearGradient id="v5emMain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eafff3">
+        <animate attributeName="stop-color" values="#eafff3;#ffffff;#eafff3" dur="4.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.22" stop-color="#7fe0b0"/>
+      <stop offset="0.45" stop-color="#1d9e63">
+        <animate attributeName="stop-color" values="#1d9e63;#3cb37e;#1d9e63" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.6" stop-color="#0b5c3a"/>
+      <stop offset="0.78" stop-color="#4cc493"/>
+      <stop offset="1" stop-color="#d2ffe8"/>
+    </linearGradient>
+    <linearGradient id="v5emDeep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a4a2f"/>
+      <stop offset="0.5" stop-color="#3cb37e">
+        <animate attributeName="stop-color" values="#3cb37e;#7fe0b0;#3cb37e" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#063824"/>
+    </linearGradient>
+    <linearGradient id="v5goldTrim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9a8"/>
+      <stop offset="0.5" stop-color="#d9a32e"/>
+      <stop offset="1" stop-color="#8a5f08"/>
+    </linearGradient>
+    <linearGradient id="v5badge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fe6bd"/>
+      <stop offset="0.45" stop-color="#2fa877"/>
+      <stop offset="0.55" stop-color="#17875a"/>
+      <stop offset="1" stop-color="#0a4a2f"/>
+    </linearGradient>
+    <radialGradient id="v5gem" cx="0.35" cy="0.3" r="0.95">
+      <stop offset="0" stop-color="#f2fff8"/>
+      <stop offset="0.4" stop-color="#8fe6bd"/>
+      <stop offset="0.75" stop-color="#14995f"/>
+      <stop offset="1" stop-color="#06432b"/>
+    </radialGradient>
+    <radialGradient id="v5bezel" cx="0.35" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#fff3c4"/>
+      <stop offset="0.55" stop-color="#d9a32e"/>
+      <stop offset="1" stop-color="#8a5f08"/>
+    </radialGradient>
+    <radialGradient id="v5stud" cx="0.35" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.5" stop-color="#e8fff4"/>
+      <stop offset="1" stop-color="#9fd6b8"/>
+    </radialGradient>
+    <radialGradient id="v5fire" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f8ffe8"/>
+      <stop offset="0.5" stop-color="#bff2c9" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#bff2c9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="v5softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <filter id="v5fireGlow" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="1.4"/>
+    </filter>
+    <filter id="v5textGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.6"/>
+    </filter>
+    <path id="v5spark8" d="M0 -6 L0.9 -0.9 L6 0 L0.9 0.9 L0 6 L-0.9 0.9 L-6 0 L-0.9 -0.9 Z"/>
+    <path id="v5st4" d="M0 -5 L1 -1 L5 0 L1 1 L0 5 L-1 1 L-5 0 L-1 -1 Z"/>
+    <path id="v5leaf" d="M0 2.2 C-2.4 0.6 -2.2 -2.6 0 -4.6 C2.2 -2.6 2.4 0.6 0 2.2 Z"/>
+    <path id="v5oct" d="M-2.6 -6.3 L2.6 -6.3 L6.3 -2.6 L6.3 2.6 L2.6 6.3 L-2.6 6.3 L-6.3 2.6 L-6.3 -2.6 Z"/>
+    <path id="v5marq" d="M0 -7.5 C4.2 -3.2 4.6 2.6 0 7 C-4.6 2.6 -4.2 -3.2 0 -7.5 Z"/>
+    <clipPath id="v5octClip">
+      <path d="M-2.6 -6.3 L2.6 -6.3 L6.3 -2.6 L6.3 2.6 L2.6 6.3 L-2.6 6.3 L-6.3 2.6 L-6.3 -2.6 Z"/>
+    </clipPath>
+    <clipPath id="v5marqClip">
+      <path d="M0 -7.5 C4.2 -3.2 4.6 2.6 0 7 C-4.6 2.6 -4.2 -3.2 0 -7.5 Z"/>
+    </clipPath>
+    <clipPath id="v5shieldClip">
+      <path d="M71 167 L129 167 L129 180 C129 191 117 197.5 100 199.5 C83 197.5 71 191 71 180 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- aurora glow: green shifting to gold, breathing -->
+  <circle cx="100" cy="100" r="89" fill="none" stroke="#7fe0b0" stroke-width="13" opacity="0.3" filter="url(#v5softGlow)">
+    <animate attributeName="r" values="88;92;88" dur="3.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.26;0.52;0.26" dur="3.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke" values="#7fe0b0;#d9ffe9;#ffe9a8;#7fe0b0" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#8fe6bd" stroke-width="3" opacity="0.22" filter="url(#v5softGlow)">
+    <animate attributeName="r" values="96;99.5;96" dur="3.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.16;0.4;0.16" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- MAGIC PULSE WAVES rippling outward -->
+  <circle cx="100" cy="100" fill="none" stroke="#7fe0b0" stroke-width="1.5" r="72" opacity="0.4">
+    <animate attributeName="r" values="72;114" dur="4.2s" begin="0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0" dur="4.2s" begin="0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" fill="none" stroke="#b9ffd9" stroke-width="1.2" r="72" opacity="0.3">
+    <animate attributeName="r" values="72;114" dur="4.2s" begin="2.1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0" dur="4.2s" begin="2.1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" fill="none" stroke="#ffe9a8" stroke-width="1" r="72" opacity="0.25">
+    <animate attributeName="r" values="72;112" dur="4.2s" begin="1.05s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.28;0" dur="4.2s" begin="1.05s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- outer rune rings -->
+  <g>
+    <circle cx="100" cy="100" r="98.5" fill="none" stroke="#7fe0b0" stroke-width="1.2"
+            stroke-dasharray="2.5 2.5" pathLength="144" opacity="0.6"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="26s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <circle cx="100" cy="100" r="95.5" fill="none" stroke="#d9ffe9" stroke-width="3"
+            stroke-dasharray="1 7" pathLength="96" opacity="0.5"/>
+    <animateTransform attributeName="transform" type="rotate" from="360 100 100" to="0 100 100" dur="19s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <circle cx="100" cy="100" r="92" fill="none" stroke="#9fd6b8" stroke-width="1"
+            stroke-dasharray="0.5 3.5" pathLength="120" opacity="0.6"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="15s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- arcane circle behind avatar (very faint, slow) -->
+  <g>
+    <circle cx="100" cy="100" r="62" fill="none" stroke="#6fdcae" stroke-width="1"
+            stroke-dasharray="10 6 2 6" pathLength="120" opacity="0.18"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="45s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <circle cx="100" cy="100" r="56" fill="none" stroke="#6fdcae" stroke-width="1"
+            stroke-dasharray="1 5" pathLength="100" opacity="0.12"/>
+    <animateTransform attributeName="transform" type="rotate" from="360 100 100" to="0 100 100" dur="30s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- band structure -->
+  <circle cx="100" cy="100" r="92.5" fill="none" stroke="url(#v5emDeep)" stroke-width="2.5"/>
+  <circle cx="100" cy="100" r="89" fill="none" stroke="url(#v5emMain)" stroke-width="7"/>
+  <circle cx="100" cy="100" r="84.6" fill="none" stroke="url(#v5goldTrim)" stroke-width="1.4" opacity="0.9">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="82.8" fill="none" stroke="#03271a" stroke-width="2.2" opacity="0.95"/>
+  <circle cx="100" cy="100" r="78.5" fill="none" stroke="url(#v5emMain)" stroke-width="6.5"/>
+  <circle cx="100" cy="100" r="74.8" fill="none" stroke="#05301d" stroke-width="1.5" opacity="0.9"/>
+  <circle cx="100" cy="100" r="68" fill="none" stroke="#6fdcae" stroke-width="0.8" opacity="0.35">
+    <animate attributeName="opacity" values="0.25;0.5;0.25" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- BRAIDED CURRENT: green + gold strands weaving around the seam -->
+  <circle cx="100" cy="100" r="84.6" fill="none" stroke="#7fe0b0" stroke-width="4" stroke-linecap="round"
+          stroke-dasharray="6 14" opacity="0.4" filter="url(#v5softGlow)">
+    <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="84.6" fill="none" stroke="#eafff3" stroke-width="1.6" stroke-linecap="round"
+          stroke-dasharray="6 14">
+    <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="84.6" fill="none" stroke="#b9ffd9" stroke-width="1.1" stroke-linecap="round"
+          stroke-dasharray="3 17" opacity="0.55">
+    <animate attributeName="stroke-dashoffset" from="0" to="20" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="84.6" fill="none" stroke="#ffe9a8" stroke-width="1" stroke-linecap="round"
+          stroke-dasharray="5 15" opacity="0.5">
+    <animate attributeName="stroke-dashoffset" from="0" to="-30" dur="4.1s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- glint sweeps -->
+  <g stroke-linecap="round" fill="none">
+    <path d="M 63.8 18.7 A 89 89 0 0 1 136.2 18.7" stroke="#eafff3" stroke-width="6" opacity="0.3"/>
+    <path d="M 81.5 13 A 89 89 0 0 1 118.5 13" stroke="#ffffff" stroke-width="5" opacity="0.9"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="4.2s" repeatCount="indefinite"/>
+  </g>
+  <g stroke-linecap="round" fill="none">
+    <path d="M 63.8 18.7 A 89 89 0 0 1 136.2 18.7" stroke="#eafff3" stroke-width="6" opacity="0.25"/>
+    <path d="M 81.5 13 A 89 89 0 0 1 118.5 13" stroke="#ffffff" stroke-width="5" opacity="0.7"/>
+    <animateTransform attributeName="transform" type="rotate" from="120 100 100" to="480 100 100" dur="4.2s" repeatCount="indefinite"/>
+  </g>
+  <g stroke-linecap="round" fill="none">
+    <path d="M 81.5 13 A 89 89 0 0 1 118.5 13" stroke="#ffffff" stroke-width="4" opacity="0.4"/>
+    <animateTransform attributeName="transform" type="rotate" from="240 100 100" to="600 100 100" dur="4.2s" repeatCount="indefinite"/>
+  </g>
+  <g stroke-linecap="round" fill="none">
+    <path d="M 73.2 26.2 A 78.5 78.5 0 0 1 126.8 26.2" stroke="#ffffff" stroke-width="3" opacity="0.55"/>
+    <animateTransform attributeName="transform" type="rotate" from="360 100 100" to="0 100 100" dur="7.5s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- GOLD LEAF GARLAND: cascade shimmer around outer band -->
+  <g fill="url(#v5goldTrim)" stroke="#8a5f08" stroke-width="0.5">
+    <g transform="rotate(0 100 100)"><use xlink:href="#v5leaf" transform="translate(100 11)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="0s" repeatCount="indefinite"/></use></g>
+    <g transform="rotate(30 100 100)"><use xlink:href="#v5leaf" transform="translate(100 11)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="0.2s" repeatCount="indefinite"/></use></g>
+    <g transform="rotate(60 100 100)"><use xlink:href="#v5leaf" transform="translate(100 11)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="0.4s" repeatCount="indefinite"/></use></g>
+    <g transform="rotate(90 100 100)"><use xlink:href="#v5leaf" transform="translate(100 11)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="0.6s" repeatCount="indefinite"/></use></g>
+    <g transform="rotate(120 100 100)"><use xlink:href="#v5leaf" transform="translate(100 11)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="0.8s" repeatCount="indefinite"/></use></g>
+    <g transform="rotate(150 100 100)"><use xlink:href="#v5leaf" transform="translate(100 11)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="1s" repeatCount="indefinite"/></use></g>
+    <g transform="rotate(180 100 100)"><use xlink:href="#v5leaf" transform="translate(100 11)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="1.2s" repeatCount="indefinite"/></use></g>
+    <g transform="rotate(210 100 100)"><use xlink:href="#v5leaf" transform="translate(100 11)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="1.4s" repeatCount="indefinite"/></use></g>
+    <g transform="rotate(240 100 100)"><use xlink:href="#v5leaf" transform="translate(100 11)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="1.6s" repeatCount="indefinite"/></use></g>
+    <g transform="rotate(270 100 100)"><use xlink:href="#v5leaf" transform="translate(100 11)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="1.8s" repeatCount="indefinite"/></use></g>
+    <g transform="rotate(300 100 100)"><use xlink:href="#v5leaf" transform="translate(100 11)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="2s" repeatCount="indefinite"/></use></g>
+    <g transform="rotate(330 100 100)"><use xlink:href="#v5leaf" transform="translate(100 11)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="2.2s" repeatCount="indefinite"/></use></g>
+  </g>
+  <!-- inner leaf ring, smaller, counter-cascade -->
+  <g fill="url(#v5goldTrim)" stroke="#8a5f08" stroke-width="0.4">
+    <g transform="rotate(15 100 100)"><use xlink:href="#v5leaf" transform="translate(100 21.5) rotate(180) scale(0.75)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="0.1s" repeatCount="indefinite"/></use></g>
+    <g transform="rotate(60 100 100)"><use xlink:href="#v5leaf" transform="translate(100 21.5) rotate(180) scale(0.75)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="0.4s" repeatCount="indefinite"/></use></g>
+    <g transform="rotate(105 100 100)"><use xlink:href="#v5leaf" transform="translate(100 21.5) rotate(180) scale(0.75)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="0.7s" repeatCount="indefinite"/></use></g>
+    <g transform="rotate(150 100 100)"><use xlink:href="#v5leaf" transform="translate(100 21.5) rotate(180) scale(0.75)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="1s" repeatCount="indefinite"/></use></g>
+    <g transform="rotate(195 100 100)"><use xlink:href="#v5leaf" transform="translate(100 21.5) rotate(180) scale(0.75)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="1.3s" repeatCount="indefinite"/></use></g>
+    <g transform="rotate(240 100 100)"><use xlink:href="#v5leaf" transform="translate(100 21.5) rotate(180) scale(0.75)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="1.6s" repeatCount="indefinite"/></use></g>
+    <g transform="rotate(285 100 100)"><use xlink:href="#v5leaf" transform="translate(100 21.5) rotate(180) scale(0.75)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="1.9s" repeatCount="indefinite"/></use></g>
+    <g transform="rotate(330 100 100)"><use xlink:href="#v5leaf" transform="translate(100 21.5) rotate(180) scale(0.75)"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="2.2s" repeatCount="indefinite"/></use></g>
+  </g>
+
+  <!-- GROWING VINES flanking the crown (draw-on loop) -->
+  <g fill="none" stroke="#ffd970" stroke-width="1.3" stroke-linecap="round">
+    <path d="M0 5 C-7 3 -9 -4 -4 -7 C-1 -8.6 1.4 -6.4 -0.2 -4.6" pathLength="100" stroke-dasharray="100" transform="translate(79 21) rotate(12)">
+      <animate attributeName="stroke-dashoffset" values="100;0;0" keyTimes="0;0.55;1" dur="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.75;1" dur="5.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0 5 C-7 3 -9 -4 -4 -7 C-1 -8.6 1.4 -6.4 -0.2 -4.6" pathLength="100" stroke-dasharray="100" transform="translate(121 21) rotate(168)">
+      <animate attributeName="stroke-dashoffset" values="100;0;0" keyTimes="0;0.55;1" dur="5.5s" begin="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.75;1" dur="5.5s" begin="0.4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- twin emerald comets in the rune zone -->
+  <g>
+    <g transform="translate(197.5 100)">
+      <circle r="3" fill="#7fe0b0" opacity="0.3"/>
+      <path d="M0 -2.9 L2.3 0 L0 2.9 L-2.3 0 Z" fill="#ffffff" stroke="#7fe0b0" stroke-width="0.5"/>
+      <circle cx="-4.5" cy="0" r="1.1" fill="#b9ffd9" opacity="0.5"/>
+      <circle cx="-8" cy="0" r="0.75" fill="#b9ffd9" opacity="0.3"/>
+      <circle cx="-11.5" cy="0" r="0.5" fill="#b9ffd9" opacity="0.15"/>
+    </g>
+    <g transform="rotate(180 100 100)">
+      <g transform="translate(197.5 100)">
+        <circle r="3" fill="#7fe0b0" opacity="0.3"/>
+        <path d="M0 -2.9 L2.3 0 L0 2.9 L-2.3 0 Z" fill="#ffffff" stroke="#7fe0b0" stroke-width="0.5"/>
+        <circle cx="-4.5" cy="0" r="1.1" fill="#b9ffd9" opacity="0.5"/>
+        <circle cx="-8" cy="0" r="0.75" fill="#b9ffd9" opacity="0.3"/>
+        <circle cx="-11.5" cy="0" r="0.5" fill="#b9ffd9" opacity="0.15"/>
+      </g>
+    </g>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="8s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- EMERALD-CUT corner gems with refracting light inside -->
+  <g transform="translate(162.9 37.1)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="2.4s" begin="0s" repeatCount="indefinite"/>
+      <circle r="7.6" fill="url(#v5bezel)" stroke="#6b4d05" stroke-width="1"/>
+      <use xlink:href="#v5oct" fill="url(#v5gem)" stroke="#06432b" stroke-width="0.8"/>
+      <use xlink:href="#v5oct" transform="scale(0.62)" fill="none" stroke="#d9ffe9" stroke-width="0.5" opacity="0.6"/>
+      <use xlink:href="#v5oct" transform="scale(0.32)" fill="#eafff4" stroke="#7fe0b0" stroke-width="0.4"/>
+      <path d="M-2.6 -6.3 L2.6 -6.3 L0 0 Z" fill="#ffffff" opacity="0.22"/>
+      <path d="M2.6 -6.3 L6.3 -2.6 L0 0 Z" fill="#ffffff" opacity="0.12"/>
+      <path d="M-2.6 6.3 L2.6 6.3 L0 0 Z" fill="#05301e" opacity="0.18"/>
+      <g clip-path="url(#v5octClip)">
+        <rect x="-1.6" y="-8" width="3.2" height="16" fill="#ffffff" opacity="0.33">
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4.5s" begin="0s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4s" begin="0s" repeatCount="indefinite"/>
+        <use xlink:href="#v5st4" transform="scale(0.55)" fill="#ffffff">
+          <animate attributeName="opacity" values="0.35;1;0.35" dur="1.7s" repeatCount="indefinite"/>
+        </use>
+      </g>
+      <circle cx="-1.6" cy="-2" r="0.8" fill="#ffffff" opacity="0.9"/>
+    </g>
+  </g>
+  <g transform="translate(37.1 37.1)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="2.4s" begin="0.6s" repeatCount="indefinite"/>
+      <circle r="7.6" fill="url(#v5bezel)" stroke="#6b4d05" stroke-width="1"/>
+      <use xlink:href="#v5oct" fill="url(#v5gem)" stroke="#06432b" stroke-width="0.8"/>
+      <use xlink:href="#v5oct" transform="scale(0.62)" fill="none" stroke="#d9ffe9" stroke-width="0.5" opacity="0.6"/>
+      <use xlink:href="#v5oct" transform="scale(0.32)" fill="#eafff4" stroke="#7fe0b0" stroke-width="0.4"/>
+      <path d="M-2.6 -6.3 L2.6 -6.3 L0 0 Z" fill="#ffffff" opacity="0.22"/>
+      <path d="M2.6 -6.3 L6.3 -2.6 L0 0 Z" fill="#ffffff" opacity="0.12"/>
+      <path d="M-2.6 6.3 L2.6 6.3 L0 0 Z" fill="#05301e" opacity="0.18"/>
+      <g clip-path="url(#v5octClip)">
+        <rect x="-1.6" y="-8" width="3.2" height="16" fill="#ffffff" opacity="0.33">
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4.5s" begin="0.5s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4s" begin="1.2s" repeatCount="indefinite"/>
+        <use xlink:href="#v5st4" transform="scale(0.55)" fill="#ffffff">
+          <animate attributeName="opacity" values="0.35;1;0.35" dur="1.7s" begin="0.5s" repeatCount="indefinite"/>
+        </use>
+      </g>
+      <circle cx="-1.6" cy="-2" r="0.8" fill="#ffffff" opacity="0.9"/>
+    </g>
+  </g>
+  <g transform="translate(37.1 162.9)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+      <circle r="7.6" fill="url(#v5bezel)" stroke="#6b4d05" stroke-width="1"/>
+      <use xlink:href="#v5oct" fill="url(#v5gem)" stroke="#06432b" stroke-width="0.8"/>
+      <use xlink:href="#v5oct" transform="scale(0.62)" fill="none" stroke="#d9ffe9" stroke-width="0.5" opacity="0.6"/>
+      <use xlink:href="#v5oct" transform="scale(0.32)" fill="#eafff4" stroke="#7fe0b0" stroke-width="0.4"/>
+      <path d="M-2.6 -6.3 L2.6 -6.3 L0 0 Z" fill="#ffffff" opacity="0.22"/>
+      <path d="M2.6 -6.3 L6.3 -2.6 L0 0 Z" fill="#ffffff" opacity="0.12"/>
+      <path d="M-2.6 6.3 L2.6 6.3 L0 0 Z" fill="#05301e" opacity="0.18"/>
+      <g clip-path="url(#v5octClip)">
+        <rect x="-1.6" y="-8" width="3.2" height="16" fill="#ffffff" opacity="0.33">
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4.5s" begin="1s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4s" begin="2.4s" repeatCount="indefinite"/>
+        <use xlink:href="#v5st4" transform="scale(0.55)" fill="#ffffff">
+          <animate attributeName="opacity" values="0.35;1;0.35" dur="1.7s" begin="1s" repeatCount="indefinite"/>
+        </use>
+      </g>
+      <circle cx="-1.6" cy="-2" r="0.8" fill="#ffffff" opacity="0.9"/>
+    </g>
+  </g>
+  <g transform="translate(162.9 162.9)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="2.4s" begin="1.8s" repeatCount="indefinite"/>
+      <circle r="7.6" fill="url(#v5bezel)" stroke="#6b4d05" stroke-width="1"/>
+      <use xlink:href="#v5oct" fill="url(#v5gem)" stroke="#06432b" stroke-width="0.8"/>
+      <use xlink:href="#v5oct" transform="scale(0.62)" fill="none" stroke="#d9ffe9" stroke-width="0.5" opacity="0.6"/>
+      <use xlink:href="#v5oct" transform="scale(0.32)" fill="#eafff4" stroke="#7fe0b0" stroke-width="0.4"/>
+      <path d="M-2.6 -6.3 L2.6 -6.3 L0 0 Z" fill="#ffffff" opacity="0.22"/>
+      <path d="M2.6 -6.3 L6.3 -2.6 L0 0 Z" fill="#ffffff" opacity="0.12"/>
+      <path d="M-2.6 6.3 L2.6 6.3 L0 0 Z" fill="#05301e" opacity="0.18"/>
+      <g clip-path="url(#v5octClip)">
+        <rect x="-1.6" y="-8" width="3.2" height="16" fill="#ffffff" opacity="0.33">
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4.5s" begin="1.5s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4s" begin="3.6s" repeatCount="indefinite"/>
+        <use xlink:href="#v5st4" transform="scale(0.55)" fill="#ffffff">
+          <animate attributeName="opacity" values="0.35;1;0.35" dur="1.7s" begin="1.5s" repeatCount="indefinite"/>
+        </use>
+      </g>
+      <circle cx="-1.6" cy="-2" r="0.8" fill="#ffffff" opacity="0.9"/>
+    </g>
+  </g>
+
+  <!-- side ornaments: gold mount + marquise emerald + leaves -->
+  <g transform="translate(11 100)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.14;1" dur="3s" begin="1s" repeatCount="indefinite"/>
+      <use xlink:href="#v5leaf" transform="translate(-5.4 0) rotate(-55) scale(0.7)" fill="url(#v5goldTrim)" stroke="#8a5f08" stroke-width="0.5"/>
+      <use xlink:href="#v5leaf" transform="translate(5.4 0) rotate(55) scale(0.7)" fill="url(#v5goldTrim)" stroke="#8a5f08" stroke-width="0.5"/>
+      <circle r="6.4" fill="url(#v5bezel)" stroke="#6b4d05" stroke-width="1"/>
+      <use xlink:href="#v5marq" transform="scale(0.72)" fill="url(#v5gem)" stroke="#06432b" stroke-width="0.8"/>
+      <ellipse cx="-0.9" cy="-1.4" rx="0.8" ry="1.6" fill="#ffffff" opacity="0.55"/>
+    </g>
+  </g>
+  <g transform="translate(189 100)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.14;1" dur="3s" begin="2s" repeatCount="indefinite"/>
+      <use xlink:href="#v5leaf" transform="translate(-5.4 0) rotate(-55) scale(0.7)" fill="url(#v5goldTrim)" stroke="#8a5f08" stroke-width="0.5"/>
+      <use xlink:href="#v5leaf" transform="translate(5.4 0) rotate(55) scale(0.7)" fill="url(#v5goldTrim)" stroke="#8a5f08" stroke-width="0.5"/>
+      <circle r="6.4" fill="url(#v5bezel)" stroke="#6b4d05" stroke-width="1"/>
+      <use xlink:href="#v5marq" transform="scale(0.72)" fill="url(#v5gem)" stroke="#06432b" stroke-width="0.8"/>
+      <ellipse cx="-0.9" cy="-1.4" rx="0.8" ry="1.6" fill="#ffffff" opacity="0.55"/>
+    </g>
+  </g>
+
+  <!-- TOP CROWN: rays + orbit spark + marquise emerald with refracting light -->
+  <g transform="translate(100 13.5)">
+    <g fill="#d9ffe9" opacity="0.3">
+      <path d="M0 -6.5 L-1.1 -11.5 L1.1 -11.5 Z"/>
+      <path d="M0 -6.5 L-1.1 -11.5 L1.1 -11.5 Z" transform="rotate(45)"/>
+      <path d="M0 -6.5 L-1.1 -11.5 L1.1 -11.5 Z" transform="rotate(90)"/>
+      <path d="M0 -6.5 L-1.1 -11.5 L1.1 -11.5 Z" transform="rotate(135)"/>
+      <path d="M0 -6.5 L-1.1 -11.5 L1.1 -11.5 Z" transform="rotate(180)"/>
+      <path d="M0 -6.5 L-1.1 -11.5 L1.1 -11.5 Z" transform="rotate(225)"/>
+      <path d="M0 -6.5 L-1.1 -11.5 L1.1 -11.5 Z" transform="rotate(270)"/>
+      <path d="M0 -6.5 L-1.1 -11.5 L1.1 -11.5 Z" transform="rotate(315)"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <circle cx="0" cy="-11.5" r="1.2" fill="#ffffff"/>
+      <circle cx="0" cy="-9.8" r="0.7" fill="#b9ffd9" opacity="0.45"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6.5s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="3s" repeatCount="indefinite"/>
+      <circle r="8.2" fill="url(#v5bezel)" stroke="#6b4d05" stroke-width="1"/>
+      <use xlink:href="#v5marq" fill="url(#v5gem)" stroke="#06432b" stroke-width="0.9"/>
+      <path d="M0 -7.5 L0 7" stroke="#d9ffe9" stroke-width="0.7" opacity="0.5"/>
+      <path d="M0 -7.5 C4.2 -3.2 4.6 2.6 0 7 Z" fill="#ffffff" opacity="0.14"/>
+      <g clip-path="url(#v5marqClip)">
+        <rect x="-1.2" y="-9" width="2.4" height="18" fill="#ffffff" opacity="0.3">
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+      <ellipse cx="-1.5" cy="-2" rx="1.3" ry="2.6" fill="#ffffff" opacity="0.55"/>
+    </g>
+  </g>
+
+  <!-- FIREFLIES: wandering magic particles -->
+  <g>
+    <g transform="translate(55 62)"><g>
+      <animateMotion path="M0 0 C10 -14 26 -8 18 6 C12 15 -8 10 0 0 Z" dur="9s" repeatCount="indefinite"/>
+      <circle r="4" fill="url(#v5fire)"/>
+      <circle r="1.3" fill="#f8ffe8"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite"/></circle>
+    </g></g>
+    <g transform="translate(146 60)"><g>
+      <animateMotion path="M0 0 C-12 -10 -24 -2 -14 8 C-6 15 8 8 0 0 Z" dur="10s" repeatCount="indefinite"/>
+      <circle r="3.6" fill="url(#v5fire)"/>
+      <circle r="1.2" fill="#f8ffe8"><animate attributeName="opacity" values="1;0.3;1" dur="2.6s" repeatCount="indefinite"/></circle>
+    </g></g>
+    <g transform="translate(50 134)"><g>
+      <animateMotion path="M0 0 C8 10 22 12 20 0 C18 -10 6 -12 0 0 Z" dur="8s" repeatCount="indefinite"/>
+      <circle r="4.2" fill="url(#v5fire)"/>
+      <circle r="1.3" fill="#f8ffe8"><animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/></circle>
+    </g></g>
+    <g transform="translate(150 136)"><g>
+      <animateMotion path="M0 0 C-8 -12 -20 -8 -18 4 C-16 13 -4 12 0 0 Z" dur="11s" repeatCount="indefinite"/>
+      <circle r="3.4" fill="url(#v5fire)"/>
+      <circle r="1.1" fill="#f8ffe8"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" begin="0.8s" repeatCount="indefinite"/></circle>
+    </g></g>
+    <g transform="translate(100 42)"><g>
+      <animateMotion path="M0 0 C6 -8 14 -4 10 4 C7 9 -4 6 0 0 Z" dur="7s" repeatCount="indefinite"/>
+      <circle r="3.4" fill="url(#v5fire)"/>
+      <circle r="1.1" fill="#f8ffe8"><animate attributeName="opacity" values="0.5;1;0.5" dur="1.9s" begin="0.4s" repeatCount="indefinite"/></circle>
+    </g></g>
+    <g transform="translate(100 158)"><g>
+      <animateMotion path="M0 0 C-6 8 -14 6 -10 -2 C-7 -8 4 -6 0 0 Z" dur="8.5s" repeatCount="indefinite"/>
+      <circle r="3.8" fill="url(#v5fire)"/>
+      <circle r="1.2" fill="#f8ffe8"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.3s" begin="1.2s" repeatCount="indefinite"/></circle>
+    </g></g>
+  </g>
+
+  <!-- 12 sparkles, emerald + gold mix -->
+  <g>
+    <use xlink:href="#v5spark8" transform="translate(42 44) scale(1.05)" fill="#eafff3" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="0s" repeatCount="indefinite"/></use>
+    <use xlink:href="#v5spark8" transform="translate(158 44) scale(0.9)" fill="#ffe9a8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="0.35s" repeatCount="indefinite"/></use>
+    <use xlink:href="#v5spark8" transform="translate(26 126) scale(0.8)" fill="#eafff3" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="0.7s" repeatCount="indefinite"/></use>
+    <use xlink:href="#v5spark8" transform="translate(174 126) scale(1)" fill="#ffe9a8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="1.05s" repeatCount="indefinite"/></use>
+    <use xlink:href="#v5spark8" transform="translate(66 22) scale(0.75)" fill="#eafff3" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="1.4s" repeatCount="indefinite"/></use>
+    <use xlink:href="#v5spark8" transform="translate(134 22) scale(0.85)" fill="#eafff3" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="1.75s" repeatCount="indefinite"/></use>
+    <use xlink:href="#v5spark8" transform="translate(24 98) scale(0.7)" fill="#ffe9a8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="0.5s" repeatCount="indefinite"/></use>
+    <use xlink:href="#v5spark8" transform="translate(176 98) scale(0.75)" fill="#eafff3" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="1.2s" repeatCount="indefinite"/></use>
+    <use xlink:href="#v5spark8" transform="translate(56 32) scale(0.7)" fill="#ffe9a8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="1.6s" repeatCount="indefinite"/></use>
+    <use xlink:href="#v5spark8" transform="translate(144 32) scale(0.7)" fill="#eafff3" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="0.9s" repeatCount="indefinite"/></use>
+    <use xlink:href="#v5spark8" transform="translate(34 74) scale(0.65)" fill="#eafff3" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2.1s" begin="0.25s" repeatCount="indefinite"/></use>
+    <use xlink:href="#v5spark8" transform="translate(166 74) scale(0.65)" fill="#ffe9a8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2.1s" begin="1.45s" repeatCount="indefinite"/></use>
+  </g>
+
+  <!-- VIP 5 shield badge with laurel + shine sweep -->
+  <g>
+    <path d="M71 167 L129 167 L129 180 C129 191 117 197.5 100 199.5 C83 197.5 71 191 71 180 Z"
+          fill="url(#v5badge)" stroke="#052e1d" stroke-width="1.8"/>
+    <path d="M74.5 170 L125.5 170 L125.5 179 C125.5 188.5 115 194.5 100 196.5 C85 194.5 74.5 188.5 74.5 179 Z"
+          fill="none" stroke="#ffd970" stroke-width="1.3">
+      <animate attributeName="opacity" values="0.75;1;0.75" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M77.5 172.5 L122.5 172.5 L122.5 179 C122.5 187.5 113.5 193 100 195 C86.5 193 77.5 187.5 77.5 179 Z"
+          fill="none" stroke="#d9ffe9" stroke-width="0.8" opacity="0.5"/>
+
+    <!-- shine sweep -->
+    <g clip-path="url(#v5shieldClip)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-46 0;52 0" dur="5s" repeatCount="indefinite"/>
+        <rect x="94" y="158" width="12" height="48" fill="#ffffff" opacity="0.25" transform="skewX(-18)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-46 0;52 0" dur="5s" begin="2.5s" repeatCount="indefinite"/>
+        <rect x="94" y="158" width="8" height="48" fill="#d9ffe9" opacity="0.13" transform="skewX(-18)"/>
+      </g>
+    </g>
+
+    <!-- laurel branches -->
+    <g fill="url(#v5goldTrim)" stroke="#8a5f08" stroke-width="0.4" opacity="0.95">
+      <path d="M76 189 Q86 194.5 96 196" fill="none" stroke="#ffd970" stroke-width="1"/>
+      <use xlink:href="#v5leaf" transform="translate(79 190.5) rotate(-24) scale(0.75)"/>
+      <use xlink:href="#v5leaf" transform="translate(85 193) rotate(-10) scale(0.7)"/>
+      <use xlink:href="#v5leaf" transform="translate(91 195.2) rotate(4) scale(0.65)"/>
+    </g>
+    <g fill="url(#v5goldTrim)" stroke="#8a5f08" stroke-width="0.4" opacity="0.95" transform="translate(200 0) scale(-1 1)">
+      <path d="M76 189 Q86 194.5 96 196" fill="none" stroke="#ffd970" stroke-width="1"/>
+      <use xlink:href="#v5leaf" transform="translate(79 190.5) rotate(-24) scale(0.75)"/>
+      <use xlink:href="#v5leaf" transform="translate(85 193) rotate(-10) scale(0.7)"/>
+      <use xlink:href="#v5leaf" transform="translate(91 195.2) rotate(4) scale(0.65)"/>
+    </g>
+    <circle cx="100" cy="196.8" r="1.1" fill="url(#v5gem)" stroke="#ffd970" stroke-width="0.5"/>
+
+    <!-- crown with emerald -->
+    <path d="M91.5 166.5 L93.5 157.5 L97.3 161.3 L100 156.3 L102.7 161.3 L106.5 157.5 L108.5 166.5 Z"
+          fill="#ffe9a8" stroke="#8a5f08" stroke-width="0.9" stroke-linejoin="round">
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="2.6s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="100" cy="162" r="1.2" fill="url(#v5gem)" stroke="#0a4a2f" stroke-width="0.4"/>
+    <g fill="#fffbe6">
+      <circle cx="93.5" cy="156.6" r="1"/>
+      <circle cx="100" cy="155.3" r="1"/>
+      <circle cx="106.5" cy="156.6" r="1"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.9s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- rivets -->
+    <path d="M-2.1 0 L0 -2.5 L2.1 0 L0 2.5 Z" transform="translate(77.5 174)" fill="url(#v5stud)" stroke="#2fa877" stroke-width="0.5">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-2.1 0 L0 -2.5 L2.1 0 L0 2.5 Z" transform="translate(122.5 174)" fill="url(#v5stud)" stroke="#2fa877" stroke-width="0.5">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" begin="0.9s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- glowing text -->
+    <text x="100" y="185.7" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+          font-size="12.5" font-weight="800" letter-spacing="1" fill="#7fe0b0" filter="url(#v5textGlow)" opacity="0.6">VIP 5
+      &lt;animate attributeName="opacity" values="0.35;0.85;0.35" dur="3s" repeatCount="indefinite"/&gt;
+    </text>
+    <text x="100" y="186.8" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+          font-size="12.5" font-weight="800" letter-spacing="1" fill="#04301d" opacity="0.55">VIP 5</text>
+    <text x="100" y="185.8" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+          font-size="12.5" font-weight="800" letter-spacing="1" fill="#ffffff">VIP 5</text>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 26" width="66" height="26">
+<title>VIP 3 Badge</title>
+<defs>
+<linearGradient id="pb3m" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#fff3c4"><animate attributeName="stop-color" values="#fff3c4;#fffdf0;#fff3c4" dur="4s" repeatCount="indefinite"/></stop>
+<stop offset=".5" stop-color="#d9a32e"><animate attributeName="stop-color" values="#d9a32e;#f2c25a;#d9a32e" dur="4.5s" repeatCount="indefinite"/></stop>
+<stop offset="1" stop-color="#8a5f08"/>
+</linearGradient>
+<radialGradient id="pb3in" cx=".5" cy=".35" r="1"><stop offset="0" stop-color="#241a06"/><stop offset="1" stop-color="#120c02"/></radialGradient>
+<clipPath id="pb3c"><rect x="3" y="4" width="60" height="18" rx="9"/></clipPath>
+</defs>
+<rect x="3" y="4" width="60" height="18" rx="9" fill="none" stroke="#ffd970" stroke-width="3" opacity=".4">
+<animate attributeName="opacity" values=".3;.55;.3" dur="2.8s" repeatCount="indefinite"/>
+</rect>
+<rect x="3" y="4" width="60" height="18" rx="9" fill="url(#pb3m)" stroke="#6b4d05" stroke-width="1.2"/>
+<rect x="5.2" y="6.2" width="55.6" height="13.6" rx="6.8" fill="url(#pb3in)"/>
+<rect x="5.2" y="6.2" width="55.6" height="13.6" rx="6.8" fill="none" stroke="#fff3cf" stroke-width=".5" opacity=".45"/>
+<g transform="translate(13.5 13)">
+<path d="M-5.5 3.6 L-4.7 -1.6 L-2.2 0.4 L0 -3.4 L2.2 0.4 L4.7 -1.6 L5.5 3.6 Z" fill="#ffe9a8" stroke="#6b4d05" stroke-width=".45" stroke-linejoin="round">
+<animate attributeName="opacity" values=".85;1;.85" dur="2.4s" repeatCount="indefinite"/>
+</path>
+<circle cy="-4" r=".7" fill="#fff6d8"/>
+</g>
+<text x="40" y="17.4" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" letter-spacing=".2" fill="#fff6d8">VIP 3</text>
+<circle cx="53.5" cy="13" r="1.7" fill="#ffcf6e" stroke="#6b4d05" stroke-width=".4">
+<animate attributeName="opacity" values=".55;1;.55" dur="2s" repeatCount="indefinite"/>
+</circle>
+<g clip-path="url(#pb3c)">
+<g><animateTransform attributeName="transform" type="translate" values="-50 0;80 0" dur="3.2s" repeatCount="indefinite"/>
+<rect x="30" y="0" width="7" height="26" fill="#ffffff" opacity=".22" transform="skewX(-18)"/></g>
+</g>
+</svg>

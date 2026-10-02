@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 240 240" width="240" height="240" role="img">
+  <title>Day 1 reward — Copper Spark daily bonus frame (hollow center for avatar overlay)</title>
+  <defs>
+    <clipPath id="c-ribclip"><rect x="52" y="202" width="136" height="28" rx="14"/></clipPath>
+    <path id="c-spark" d="M0 -1 C.14 -.32 .32 -.14 1 0 C.32 .14 .14 .32 0 1 C-.14 .32 -.32 .14 -1 0 C-.32 -.14 -.14 -.32 0 -1 Z"/>
+    <linearGradient id="c-metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7c493"/><stop offset=".42" stop-color="#d98a56"/>
+      <stop offset=".78" stop-color="#8f4a22"/><stop offset="1" stop-color="#c97a45"/>
+    </linearGradient>
+    <linearGradient id="c-rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#efb27b"/><stop offset=".5" stop-color="#c1713a"/><stop offset="1" stop-color="#8f4a22"/>
+    </linearGradient>
+    <radialGradient id="c-gem" cx=".35" cy=".3" r=".9">
+      <stop offset="0" stop-color="#ffe8c9"/><stop offset=".55" stop-color="#e8a668"/><stop offset="1" stop-color="#9c5427"/>
+    </radialGradient>
+    <filter id="c-blur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+
+  <circle cx="120" cy="120" r="88" fill="none" stroke="#e8a668" stroke-width="14" filter="url(#c-blur)" opacity=".08">
+    <animate attributeName="opacity" values=".05;.16;.05" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="120" cy="120" r="88" fill="none" stroke="url(#c-metal)" stroke-width="11"/>
+  <circle cx="120" cy="120" r="93.8" fill="none" stroke="#f7c493" stroke-width="1" opacity=".65"/>
+  <circle cx="120" cy="120" r="82.2" fill="none" stroke="#5e2f14" stroke-width="1.4" opacity=".8"/>
+  <circle cx="120" cy="120" r="78" fill="none" stroke="#6b3a1c" stroke-width="2"/>
+
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 120 120" to="360 120 120" dur="26s" repeatCount="indefinite"/>
+    <circle cx="120" cy="120" r="101" fill="none" stroke="#e8a668" stroke-width="2" stroke-dasharray="1 11" stroke-linecap="round" opacity=".85"/>
+    <g transform="translate(120 19)">
+      <g>
+        <use href="#c-spark" xlink:href="#c-spark" transform="scale(7)" fill="#ffd9a8"/>
+        <animate attributeName="opacity" values=".4;1;.4" dur="2s" repeatCount="indefinite"/>
+      </g>
+    </g>
+    <g transform="rotate(180 120 120)">
+      <g transform="translate(120 19)">
+        <g>
+          <use href="#c-spark" xlink:href="#c-spark" transform="scale(5)" fill="#ffc98e"/>
+          <animate attributeName="opacity" values="1;.35;1" dur="2s" repeatCount="indefinite"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(120 32)">
+    <animate attributeName="opacity" values=".75;1;.75" dur="3s" repeatCount="indefinite"/>
+    <path d="M0 -7 L4.6 0 L0 7 L-4.6 0 Z" fill="url(#c-gem)" stroke="#7c3f1e" stroke-width="1"/>
+  </g>
+
+  <g>
+    <rect x="52" y="202" width="136" height="28" rx="14" fill="url(#c-rib)" stroke="#5e2f14" stroke-width="1.2"/>
+    <rect x="55.5" y="205.5" width="129" height="21" rx="10.5" fill="none" stroke="#ffe1bd" stroke-width="1" opacity=".5"/>
+    <g clip-path="url(#c-ribclip)">
+      <path d="M0 202 L12 202 L0 230 L-12 230 Z" fill="#fff" opacity=".26">
+        <animateTransform attributeName="transform" type="translate"
+          values="-46 0;-46 0;246 0;246 0" keyTimes="0;.12;.55;1" dur="5s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <text x="120" y="220.5" text-anchor="middle" font-family="Verdana, 'DejaVu Sans', Geneva, sans-serif"
+          font-size="11.5" font-weight="bold" letter-spacing="2" fill="#3a1a08">DAILY BONUS</text>
+  </g>
+</svg>

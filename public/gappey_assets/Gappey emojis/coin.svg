@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<defs><radialGradient id="cng" cx="38%" cy="30%" r="85%"><stop offset="0%" stop-color="#FFE9A0"/><stop offset="55%" stop-color="#FFD45E"/><stop offset="100%" stop-color="#E8A417"/></radialGradient></defs>
+<style>
+.cnT{animation:cnA 6s cubic-bezier(.3,.6,.4,1) infinite;animation-delay:var(--d,0s)}
+@keyframes cnA{0%{transform:translateY(0)}8%{transform:translateY(-64px)}16%{transform:translateY(0)}24%{transform:translateY(-40px)}32%{transform:translateY(0)}40%{transform:translateY(-20px)}47%{transform:translateY(0)}56%{transform:translateY(-12px)}63%,100%{transform:translateY(0)}}
+.cnX{transform-box:fill-box;transform-origin:center;animation:cnB 6s ease-in-out infinite;animation-delay:var(--d,0s)}
+@keyframes cnB{0%{transform:scaleX(1)}8%{transform:scaleX(.1)}16%{transform:scaleX(1)}24%{transform:scaleX(.1)}32%{transform:scaleX(1)}40%{transform:scaleX(.1)}47%{transform:scaleX(1)}56%{transform:scaleX(.1)}63%,100%{transform:scaleX(1)}}
+.cnF{animation:cnC 6s linear infinite;animation-delay:var(--d,0s)}
+.cnK{animation:cnD 6s linear infinite;animation-delay:var(--d,0s)}
+@keyframes cnC{0%,7%{opacity:1}8%,23%{opacity:0}24%,39%{opacity:1}40%,55%{opacity:0}56%,100%{opacity:1}}
+@keyframes cnD{0%,7%{opacity:0}8%,23%{opacity:1}24%,39%{opacity:0}40%,55%{opacity:1}56%,100%{opacity:0}}
+.cnS{transform-box:fill-box;transform-origin:center;animation:cnE 6s ease-in-out infinite;animation-delay:var(--d,0s)}
+@keyframes cnE{0%{transform:scale(1)}8%{transform:scale(.55)}16%{transform:scale(1)}24%{transform:scale(.6)}32%{transform:scale(1)}40%{transform:scale(.7)}47%{transform:scale(1)}56%{transform:scale(.8)}63%,100%{transform:scale(1)}}
+</style>
+<ellipse class="cnS" cx="100" cy="158" rx="32" ry="7" fill="#000" opacity=".18"/>
+<g class="cnT"><g class="cnX">
+<circle cx="100" cy="96" r="34" fill="url(#cng)" stroke="#C98A0B" stroke-width="3"/>
+<circle cx="100" cy="96" r="26" fill="none" stroke="#E8B93C" stroke-width="3"/>
+<g class="cnF"><text x="100" y="109" text-anchor="middle" font-size="36" font-weight="800" fill="#B07508" font-family="Arial,sans-serif">₹</text></g>
+<g class="cnK"><text x="100" y="108" text-anchor="middle" font-size="32" font-weight="800" fill="#B07508" font-family="Arial,sans-serif">★</text></g>
+</g></g>
+</svg>

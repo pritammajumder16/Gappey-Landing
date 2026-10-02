@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <title>Sone ki Baarish — gift logo</title>
+  <defs>
+    <radialGradient id="grLface" cx=".35" cy=".3" r=".95">
+      <stop offset="0" stop-color="#FFE9A8"/><stop offset=".45" stop-color="#E9B94F"/><stop offset="1" stop-color="#A8721F"/>
+    </radialGradient>
+    <path id="grLspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+  </defs>
+  <path d="M40 58 Q 66 28 102 22" fill="none" stroke="#F3EADA" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.1 10" opacity=".55"/>
+  <path d="M28 96 Q 44 72 70 62" fill="none" stroke="#F3EADA" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.1 10" opacity=".35"/>
+  <g transform="rotate(-14 76 84)">
+    <circle cx="76" cy="84" r="36" fill="#B8862F" stroke="#7A531A" stroke-width="2.5"/>
+    <circle cx="76" cy="84" r="27" fill="none" stroke="#7A531A" stroke-width="2" stroke-dasharray="3 4" opacity=".8"/>
+  </g>
+  <g transform="rotate(18 180 182)">
+    <circle cx="180" cy="182" r="27" fill="#B8862F" stroke="#7A531A" stroke-width="2.5"/>
+    <circle cx="180" cy="182" r="20" fill="none" stroke="#7A531A" stroke-width="2" stroke-dasharray="2.5 3.5" opacity=".8"/>
+  </g>
+  <g transform="translate(206 42) rotate(22) scale(.62)">
+    <circle r="30" fill="url(#grLface)" stroke="#8A5F1D" stroke-width="3"/>
+  </g>
+  <circle cx="124" cy="126" r="62" fill="url(#grLface)" stroke="#8A5F1D" stroke-width="3.5"/>
+  <circle cx="124" cy="126" r="53" fill="none" stroke="#B8862F" stroke-width="6" stroke-dasharray="4 6"/>
+  <circle cx="124" cy="126" r="42" fill="none" stroke="#8A5F1D" stroke-width="1.6" opacity=".6"/>
+  <g transform="translate(124 126) scale(1.18)" fill="none" stroke="#8A5F1D" stroke-width="4.6" stroke-linecap="round">
+    <path d="M-15 -12 H15"/><path d="M-15 -4 H15"/>
+    <path d="M-11 -4 C -11 5 -5 11 4 12"/>
+    <path d="M-14 12 H4"/>
+  </g>
+  <use href="#grLspk" transform="translate(56 152) scale(1.15)" fill="#F6D27A"/>
+  <use href="#grLspk" transform="translate(198 116) scale(.85)" fill="#F6EFE2"/>
+  <use href="#grLspk" transform="translate(152 34) scale(.7)" fill="#F2D48C"/>
+</svg>

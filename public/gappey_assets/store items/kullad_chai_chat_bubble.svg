@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="150" viewBox="0 0 380 150" preserveAspectRatio="none">
+  <title>Kulhad Chai Chat Bubble</title>
+  <defs>
+    <linearGradient id="bFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38220f"/>
+      <stop offset="1" stop-color="#180d05"/>
+    </linearGradient>
+    <linearGradient id="bStroke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8c088"/>
+      <stop offset="1" stop-color="#a95c2e"/>
+    </linearGradient>
+    <linearGradient id="cupG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c97b45"/>
+      <stop offset="1" stop-color="#8a4a22"/>
+    </linearGradient>
+    <filter id="bSoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+
+  <!-- breathing glow -->
+  <ellipse cx="190" cy="75" rx="172" ry="60" fill="#c97b3a" filter="url(#bSoft)" opacity="0.25">
+    <animate attributeName="opacity" values="0.16;0.36;0.16" dur="2.4s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- box body -->
+  <rect x="10" y="10" width="360" height="130" rx="20" fill="url(#bFill)" stroke="url(#bStroke)" stroke-width="4"/>
+  <line x1="40" y1="24" x2="340" y2="24" stroke="#f5e6d3" stroke-width="2" stroke-linecap="round" opacity="0.28"/>
+
+  <!-- cream comet around the border -->
+  <rect x="10" y="10" width="360" height="130" rx="20" fill="none" stroke="#f5e6d3"
+        stroke-width="2.5" stroke-linecap="round" stroke-dasharray="90 856">
+    <animate attributeName="stroke-dashoffset" from="946" to="0" dur="3.3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- kulhad chai emblem on the top edge -->
+  <g transform="translate(70 44)">
+    <path d="M-3 -13 C -7 -18 1 -21 -3 -26 C -6 -29 -2 -33 -4 -36" stroke="#f5e6d3" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.2">
+      <animate attributeName="opacity" values="0.15;0.7;0.15" dur="2.2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M4 -12 C 0 -16 8 -20 4 -25 C 1 -28 5 -31 3 -34" stroke="#f5e6d3" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.2">
+      <animate attributeName="opacity" values="0.15;0.6;0.15" dur="2.2s" begin="-1.1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-13 -8 L13 -8 L9 13 Q 0 16 -9 13 Z" fill="url(#cupG)" stroke="#5f3315" stroke-width="1.5"/>
+    <path d="M-11.8 -2 L11.8 -2" stroke="#6b3a1a" stroke-width="1.8" opacity="0.8"/>
+    <ellipse cx="0" cy="-8" rx="13" ry="3.6" fill="#b96b3a" stroke="#5f3315" stroke-width="1.2"/>
+    <ellipse cx="0" cy="-8" rx="9.8" ry="2.3" fill="#c98d4f"/>
+    <ellipse cx="-4" cy="-8.8" rx="4" ry="0.9" fill="#ffffff" opacity="0.35"/>
+    <path d="M-9 -6 L -6.5 10" stroke="#f0c9a0" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- gold diamond accents -->
+  <path d="M0 -6 L5 0 L0 6 L-5 0 Z" fill="#ffd54f" transform="translate(332 28)">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.2s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0 -6 L5 0 L0 6 L-5 0 Z" fill="#ffd54f" transform="translate(46 122) scale(0.8)">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.6s" begin="-1s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0 -6 L5 0 L0 6 L-5 0 Z" fill="#ffd54f" transform="translate(334 122) scale(0.7)">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.4s" begin="-0.5s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- rising steam puffs inside -->
+  <g fill="#f5e6d3">
+    <circle cx="95" cy="124" r="3" opacity="0">
+      <animate attributeName="cy" values="124;34" dur="3s" begin="-1.2s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="95;101;89;95" dur="3s" begin="-1.2s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="3;7" dur="3s" begin="-1.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.35;0" dur="3s" begin="-1.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="124" r="3" opacity="0">
+      <animate attributeName="cy" values="124;34" dur="3s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="150;144;156;150" dur="3s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="3;7" dur="3s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.35;0" dur="3s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="215" cy="124" r="3" opacity="0">
+      <animate attributeName="cy" values="124;34" dur="3s" begin="-0.9s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="215;221;209;215" dur="3s" begin="-0.9s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="3;7" dur="3s" begin="-0.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.35;0" dur="3s" begin="-0.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="124" r="3" opacity="0">
+      <animate attributeName="cy" values="124;34" dur="3s" begin="-2.1s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="280;274;286;280" dur="3s" begin="-2.1s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="3;7" dur="3s" begin="-2.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.35;0" dur="3s" begin="-2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="335" cy="124" r="3" opacity="0">
+      <animate attributeName="cy" values="124;34" dur="3s" begin="-0.5s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="335;341;329;335" dur="3s" begin="-0.5s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="3;7" dur="3s" begin="-0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.35;0" dur="3s" begin="-0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

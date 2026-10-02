@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-labelledby="p40t">
+  <title id="p40t">Performer Lv.40 frame — Royal</title>
+  <defs>
+    <linearGradient id="p40e" x1="30" y1="18" x2="170" y2="182" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F9A8D4"/><stop offset="1" stop-color="#BE185D"/></linearGradient>
+    <radialGradient id="p40h" cx=".5" cy=".5" r=".5"><stop offset=".72" stop-color="#F472B6" stop-opacity="0"/><stop offset=".84" stop-color="#F472B6" stop-opacity=".36"/><stop offset="1" stop-color="#F472B6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="p40b" x1="0" y1="163" x2="0" y2="189" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#BE185D"/><stop offset="1" stop-color="#500724"/></linearGradient>
+    <path id="p40ry" d="M100 3 V13"/>
+  </defs>
+  <style><![CDATA[
+.halo,.comet,.comet2,.rays,.rays2,.dash{transform-box:view-box;transform-origin:50% 50%}.gem,.crown,.tw{transform-box:fill-box;transform-origin:50% 50%}
+.halo{animation:breathe 3.6s ease-in-out infinite alternate}.comet{animation:spin 7s linear infinite}.comet2{animation:spinrev 9s linear infinite}.rays{animation:spinrev 26s linear infinite}.rays2{animation:spin 34s linear infinite}.dash{animation:spin 16s linear infinite}.gem{animation:twinkle 2.4s ease-in-out infinite}.crown{animation:pulse 2.8s ease-in-out infinite alternate}.tw{animation:twinkle 1.9s ease-in-out infinite}
+.g2{animation-delay:-.6s}.g3{animation-delay:-1.2s}.g4{animation-delay:-1.8s}.g5{animation-delay:-.3s}
+@keyframes breathe{from{transform:scale(.97);opacity:.7}to{transform:scale(1.06);opacity:1}}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes spinrev{to{transform:rotate(-360deg)}}
+@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.55)}50%{opacity:1;transform:scale(1)}}
+@keyframes pulse{from{transform:scale(1)}to{transform:scale(1.12)}}
+@media (prefers-reduced-motion:reduce){.halo,.comet,.comet2,.rays,.rays2,.dash,.gem,.crown,.tw{animation:none}}
+  ]]></style>
+  <circle class="halo" cx="100" cy="100" r="96" fill="url(#p40h)"/>
+  <g class="rays" stroke="#F9A8D4" stroke-width="2.6" stroke-linecap="round" opacity=".5">
+    <use href="#p40ry"/><use href="#p40ry" transform="rotate(45 100 100)"/><use href="#p40ry" transform="rotate(90 100 100)"/><use href="#p40ry" transform="rotate(135 100 100)"/><use href="#p40ry" transform="rotate(180 100 100)"/><use href="#p40ry" transform="rotate(225 100 100)"/><use href="#p40ry" transform="rotate(270 100 100)"/><use href="#p40ry" transform="rotate(315 100 100)"/>
+  </g>
+  <circle cx="100" cy="100" r="88.5" fill="none" stroke="#F9A8D4" stroke-opacity=".35"/>
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#500724" stroke-width="13"/>
+  <circle cx="100" cy="100" r="86.8" fill="none" stroke="url(#p40e)" stroke-width="2.4"/>
+  <circle cx="100" cy="100" r="73.2" fill="none" stroke="url(#p40e)" stroke-width="2.4"/>
+  <g transform="translate(100 20.9)"><g class="gem"><g transform="scale(1.15)"><path d="M0 4 C-1.6 1.2 -5.4 0 -5.4 -2.6 C-5.4 -4.6 -3.6 -5.6 -2 -5.6 C-0.8 -5.6 0 -4.8 0 -4 C0 -4.8 0.8 -5.6 2 -5.6 C3.6 -5.6 5.4 -4.6 5.4 -2.6 C5.4 0 1.6 1.2 0 4 Z" fill="#F472B6" stroke="#FCE7F3" stroke-width="1"/><circle cx="-1.8" cy="-2.2" r="1" fill="#FFF" opacity=".85"/></g></g></g>
+  <g transform="translate(176.08 76.1)"><g class="gem g2"><g transform="scale(1.15)"><path d="M0 4 C-1.6 1.2 -5.4 0 -5.4 -2.6 C-5.4 -4.6 -3.6 -5.6 -2 -5.6 C-0.8 -5.6 0 -4.8 0 -4 C0 -4.8 0.8 -5.6 2 -5.6 C3.6 -5.6 5.4 -4.6 5.4 -2.6 C5.4 0 1.6 1.2 0 4 Z" fill="#F9A8D4" stroke="#FCE7F3" stroke-width="1"/><circle cx="-1.8" cy="-2.2" r="1" fill="#FFF" opacity=".85"/></g></g></g>
+  <g transform="translate(147.02 165.6)"><g class="gem g3"><g transform="scale(1.15)"><path d="M0 4 C-1.6 1.2 -5.4 0 -5.4 -2.6 C-5.4 -4.6 -3.6 -5.6 -2 -5.6 C-0.8 -5.6 0 -4.8 0 -4 C0 -4.8 0.8 -5.6 2 -5.6 C3.6 -5.6 5.4 -4.6 5.4 -2.6 C5.4 0 1.6 1.2 0 4 Z" fill="#F472B6" stroke="#FCE7F3" stroke-width="1"/><circle cx="-1.8" cy="-2.2" r="1" fill="#FFF" opacity=".85"/></g></g></g>
+  <g transform="translate(52.98 165.6)"><g class="gem g4"><g transform="scale(1.15)"><path d="M0 4 C-1.6 1.2 -5.4 0 -5.4 -2.6 C-5.4 -4.6 -3.6 -5.6 -2 -5.6 C-0.8 -5.6 0 -4.8 0 -4 C0 -4.8 0.8 -5.6 2 -5.6 C3.6 -5.6 5.4 -4.6 5.4 -2.6 C5.4 0 1.6 1.2 0 4 Z" fill="#F9A8D4" stroke="#FCE7F3" stroke-width="1"/><circle cx="-1.8" cy="-2.2" r="1" fill="#FFF" opacity=".85"/></g></g></g>
+  <g transform="translate(23.92 76.1)"><g class="gem g5"><g transform="scale(1.15)"><path d="M0 4 C-1.6 1.2 -5.4 0 -5.4 -2.6 C-5.4 -4.6 -3.6 -5.6 -2 -5.6 C-0.8 -5.6 0 -4.8 0 -4 C0 -4.8 0.8 -5.6 2 -5.6 C3.6 -5.6 5.4 -4.6 5.4 -2.6 C5.4 0 1.6 1.2 0 4 Z" fill="#F472B6" stroke="#FCE7F3" stroke-width="1"/><circle cx="-1.8" cy="-2.2" r="1" fill="#FFF" opacity=".85"/></g></g></g>
+  <g class="comet"><circle cx="100" cy="100" r="80" fill="none" stroke="#FFF" stroke-width="3" stroke-linecap="round" stroke-dasharray="28 475"/></g>
+  <g class="comet2"><circle cx="100" cy="100" r="80" fill="none" stroke="#FBCFE8" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="20 483" stroke-dashoffset="251"/></g>
+  <rect x="66" y="165.5" width="68" height="26" rx="13" fill="#4A0A22" opacity=".4"/>
+  <rect x="64.5" y="163" width="71" height="26" rx="13" fill="url(#p40b)" stroke="#FFF" stroke-width="2"/>
+  <rect x="70" y="166.5" width="60" height="7" rx="3.5" fill="#FFF" opacity=".28"/>
+  <text x="100" y="181" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800" letter-spacing="1.2" fill="#FFF">LVL 40</text>
+</svg>

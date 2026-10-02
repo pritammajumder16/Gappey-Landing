@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" overflow="visible">
+<title>SVIP 2 Chat Bubble</title>
+<defs>
+<linearGradient id="s2m" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7a63b8"><animate attributeName="stop-color" values="#7a63b8;#8f76d4;#7a63b8" dur="6s" repeatCount="indefinite"/></stop><stop offset=".45" stop-color="#2c1d4a"/><stop offset=".6" stop-color="#1c1130"/><stop offset="1" stop-color="#8a72c8"/></linearGradient>
+<linearGradient id="s2d" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#150d26"/><stop offset=".5" stop-color="#4a3670"/><stop offset="1" stop-color="#0d0718"/></linearGradient>
+<linearGradient id="s2t" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a3670"/><stop offset="1" stop-color="#150d26"/></linearGradient>
+<radialGradient id="s2g" cx=".38" cy=".32" r=".95"><stop offset="0" stop-color="#e6d4ff"/><stop offset=".42" stop-color="#9b5fe0"><animate attributeName="stop-color" values="#9b5fe0;#b48fff;#9b5fe0" dur="4s" repeatCount="indefinite"/></stop><stop offset="1" stop-color="#16062e"/></radialGradient>
+<linearGradient id="s2gl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#140c26" stop-opacity=".72"/><stop offset="1" stop-color="#0a0616" stop-opacity=".88"/></linearGradient>
+<filter id="s2b" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="4"/></filter>
+<clipPath id="s2c2"><rect width="100%" height="100%" rx="18"/></clipPath>
+<path id="s2bolt" d="M0 0 L-2 4.6 L1.4 7.4 L-1 12.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</defs>
+<g clip-path="url(#s2c2)">
+<rect width="100%" height="100%" rx="18" fill="none" stroke="#8a5cff" stroke-width="16" opacity=".3" filter="url(#s2b)"><animate attributeName="opacity" values=".26;.5;.26" dur="3.2s" repeatCount="indefinite"/></rect>
+<rect width="100%" height="100%" rx="18" fill="none" stroke="#e6d4ff" stroke-width="16" opacity="0" filter="url(#s2b)"><animate attributeName="opacity" values="0;0;.5;.08;.4;0;0" keyTimes="0;.545;.575;.615;.645;.7;1" dur="7s" repeatCount="indefinite"/></rect>
+</g>
+<rect width="100%" height="100%" rx="18" fill="url(#s2gl)"/>
+<svg x="10" y="100%" width="1" height="1" overflow="visible"><path d="M2 -9 C1 -2 2 5 5 10 C10 6 17 1 26 -6 Z" fill="url(#s2t)" stroke="#b48fff" stroke-width="1.2" stroke-opacity=".8"/></svg>
+<g clip-path="url(#s2c2)">
+<rect width="100%" height="100%" rx="18" fill="none" stroke="url(#s2d)" stroke-width="18"/>
+<rect width="100%" height="100%" rx="18" fill="none" stroke="#0f0a1d" stroke-width="15" opacity=".95"/>
+<rect width="100%" height="100%" rx="18" fill="none" stroke="url(#s2m)" stroke-width="12"/>
+<rect width="100%" height="100%" rx="18" fill="none" stroke="#8a5cff" stroke-width="8" stroke-linecap="round" stroke-dasharray="6 28" opacity=".4" filter="url(#s2b)"><animate attributeName="stroke-dashoffset" from="0" to="-34" dur="1.6s" repeatCount="indefinite"/></rect>
+<rect width="100%" height="100%" rx="18" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-dasharray="6 28"><animate attributeName="stroke-dashoffset" from="0" to="-34" dur="1.6s" repeatCount="indefinite"/></rect>
+<rect width="100%" height="100%" rx="18" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-dasharray="12 654" opacity=".9" filter="url(#s2b)"><animate attributeName="stroke-dashoffset" from="0" to="-666" dur="2.2s" repeatCount="indefinite"/></rect>
+<rect width="100%" height="100%" rx="18" fill="none" stroke="#d9ccff" stroke-width="10" stroke-linecap="round" stroke-dasharray="40 620" opacity=".4"><animate attributeName="stroke-dashoffset" from="0" to="-660" dur="4.5s" repeatCount="indefinite"/></rect>
+</g>
+<svg x="50%" y="0" width="1" height="1" overflow="visible"><g transform="translate(0 8)" opacity="0"><animate attributeName="opacity" values="0;0;1;.2;.85;0;0" keyTimes="0;.3;.32;.35;.38;.42;1" dur="5.2s" repeatCount="indefinite"/><path d="M0 0 L-2.2 5 L1.6 8 L-1 13" fill="none" stroke="#b48fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" filter="url(#s2b)"/><path d="M0 0 L-2.2 5 L1.6 8 L-1 13" fill="none" stroke="#ffffff" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+<svg x="100%" y="0" width="1" height="1" overflow="visible"><g transform="translate(-15 15)"><g><animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="2.4s" repeatCount="indefinite"/><circle r="6.2" fill="#dfe9f5" stroke="#3a3550" stroke-width=".8"/><circle r="5" fill="url(#s2g)" stroke="#2a0a4a" stroke-width=".7"/><g transform="translate(0 -1.5) scale(.7)"><use xlink:href="#s2bolt" stroke="#ffffff" stroke-width="1.1" opacity=".3"><animate attributeName="opacity" values=".3;.3;1;.25;.85;.3;.3" keyTimes="0;.34;.37;.4;.43;.47;1" dur="2.3s" repeatCount="indefinite"/></use></g></g></g></svg>
+<svg x="100%" y="100%" width="1" height="1" overflow="visible"><g transform="translate(-15 -15)"><g><animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="2.4s" begin="1.2s" repeatCount="indefinite"/><circle r="6.2" fill="#dfe9f5" stroke="#3a3550" stroke-width=".8"/><circle r="5" fill="url(#s2g)" stroke="#2a0a4a" stroke-width=".7"/><g transform="translate(0 -1.5) scale(.7)"><use xlink:href="#s2bolt" stroke="#ffffff" stroke-width="1.1" opacity=".3"><animate attributeName="opacity" values=".3;.3;1;.25;.85;.3;.3" keyTimes="0;.5;.53;.56;.59;.63;1" dur="2.8s" begin=".5s" repeatCount="indefinite"/></use></g></g></g></svg>
+<g transform="translate(14 14)"><path d="M0 7 L1.2 .5 L4.2 3.4 L6 -.8 L7.8 3.4 L10.8 .5 L12 7 Z" fill="#2c2440" stroke="#a9b0c4" stroke-width=".8" stroke-linejoin="round"><animate attributeName="opacity" values=".85;1;.85" dur="2.6s" repeatCount="indefinite"/></path><circle cx="16.5" cy="4" r="2.6" fill="url(#s2g)" stroke="#2a0a4a" stroke-width=".7"/></g>
+<g transform="translate(52 10)"><g transform="scale(.5)"><use xlink:href="#s2bolt" stroke="#ffffff" stroke-width="1.4" opacity=".35"><animate attributeName="opacity" values=".35;.35;1;.4;.9;.35;.35" keyTimes="0;.2;.23;.27;.31;.36;1" dur="3.1s" repeatCount="indefinite"/></use></g></g>
+</svg>

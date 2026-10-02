@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="380" height="150" viewBox="0 0 380 150" preserveAspectRatio="none">
+  <title>Maharani Jhumka Chat Bubble</title>
+  <defs>
+    <linearGradient id="bFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a0a24"/>
+      <stop offset="1" stop-color="#1a0512"/>
+    </linearGradient>
+    <linearGradient id="bStroke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff9ec4"/>
+      <stop offset="1" stop-color="#c2185b"/>
+    </linearGradient>
+    <linearGradient id="goldG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe082"/>
+      <stop offset="1" stop-color="#e8a13a"/>
+    </linearGradient>
+    <linearGradient id="petG" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ff8fb8"/>
+      <stop offset="1" stop-color="#ffd1e3"/>
+    </linearGradient>
+    <g id="bfly">
+      <g>
+        <animateTransform attributeName="transform" type="scale" values="1 1;0.3 1;1 1" dur="0.4s" repeatCount="indefinite"/>
+        <ellipse cx="-5.5" cy="-1" rx="6" ry="3.6" fill="url(#petG)" stroke="#c2185b" stroke-width="0.6" transform="rotate(-28)"/>
+        <ellipse cx="5.5" cy="-1" rx="6" ry="3.6" fill="url(#petG)" stroke="#c2185b" stroke-width="0.6" transform="rotate(28)"/>
+      </g>
+      <ellipse cx="0" cy="0" rx="1.1" ry="4.2" fill="#4a0e2e"/>
+    </g>
+    <path id="petalFly" d="M0 -5 C 4.5 -3 5.5 2 3 5.5 C 1 7.5 -2.5 6 -3.5 3 C -4.3 0 -2.5 -3.5 0 -5 Z"/>
+    <filter id="bSoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+
+  <!-- breathing glow -->
+  <ellipse cx="190" cy="75" rx="172" ry="60" fill="#ff6fa5" filter="url(#bSoft)" opacity="0.24">
+    <animate attributeName="opacity" values="0.15;0.36;0.15" dur="2.2s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- box body -->
+  <rect x="10" y="10" width="360" height="130" rx="20" fill="url(#bFill)" stroke="url(#bStroke)" stroke-width="4"/>
+
+  <!-- zari inner border -->
+  <rect x="18" y="18" width="344" height="114" rx="14" fill="none" stroke="#f8a5c8"
+        stroke-width="1.2" stroke-dasharray="5 7" opacity="0.35"/>
+
+  <!-- rose comet around the border -->
+  <rect x="10" y="10" width="360" height="130" rx="20" fill="none" stroke="#ffd1e3"
+        stroke-width="2.5" stroke-linecap="round" stroke-dasharray="90 856">
+    <animate attributeName="stroke-dashoffset" from="946" to="0" dur="3.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- swinging jhumka emblem -->
+  <g transform="translate(70 46)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-5 0 -34;5 0 -34;-5 0 -34" dur="3s" repeatCount="indefinite"/>
+      <line x1="0" y1="-34" x2="0" y2="-26" stroke="url(#goldG)" stroke-width="2"/>
+      <circle cx="0" cy="-23.5" r="3" fill="url(#goldG)" stroke="#b8860b" stroke-width="0.8"/>
+      <circle cx="0" cy="-23.5" r="1.1" fill="#e53935"/>
+      <path d="M-7 -21 C -7 -26 7 -26 7 -21 L 9 -11 C 4.5 -5.5 -4.5 -5.5 -9 -11 Z"
+            fill="url(#goldG)" stroke="#b8860b" stroke-width="1.2"/>
+      <path d="M-4.5 -19 C -4.5 -22.5 4.5 -22.5 4.5 -19" fill="none" stroke="#fff8e1" stroke-width="0.8" opacity="0.6"/>
+      <circle cx="-6.5" cy="-8" r="1.3" fill="#fdf6e3"/>
+      <circle cx="-2.2" cy="-6.5" r="1.3" fill="#fdf6e3"/>
+      <circle cx="2.2" cy="-6.5" r="1.3" fill="#fdf6e3"/>
+      <circle cx="6.5" cy="-8" r="1.3" fill="#fdf6e3"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="-7 0 -6;7 0 -6;-7 0 -6" dur="2.2s" repeatCount="indefinite"/>
+        <line x1="0" y1="-6" x2="0" y2="4" stroke="url(#goldG)" stroke-width="1.2"/>
+        <circle cx="0" cy="6.5" r="2.2" fill="#fdf6e3" stroke="#d9c9a8" stroke-width="0.5"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- corner gems + pearl -->
+  <path d="M0 -5.5 L4.2 -2 L2.6 4.5 L-2.6 4.5 L-4.2 -2 Z" transform="translate(332 28) scale(0.95)" fill="#ff6fa5" stroke="#ffe082" stroke-width="1">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.2s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="46" cy="122" r="3" fill="#fdf6e3" stroke="#d9c9a8" stroke-width="0.6">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.6s" begin="-1s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M0 -5.5 L4.2 -2 L2.6 4.5 L-2.6 4.5 L-4.2 -2 Z" transform="translate(334 122) scale(0.75)" fill="#ffe082" stroke="#c2185b" stroke-width="0.8">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.4s" begin="-0.5s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- rising sparkles inside -->
+  <g>
+    <circle cx="95" cy="126" r="2" fill="#ffd1e3" opacity="0">
+      <animate attributeName="cy" values="126;36" dur="2.8s" begin="-1.9s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="95;102;89;95" dur="2.8s" begin="-1.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.85;0" dur="2.8s" begin="-1.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="126" r="2.4" fill="#fff8f4" opacity="0">
+      <animate attributeName="cy" values="126;34" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="150;158;143;150" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="215" cy="126" r="3" fill="#ffe082" opacity="0">
+      <animate attributeName="cy" values="126;36" dur="2.8s" begin="-0.7s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="215;207;223;215" dur="2.8s" begin="-0.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="2.8s" begin="-0.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="126" r="2" fill="#ffd1e3" opacity="0">
+      <animate attributeName="cy" values="126;38" dur="2.8s" begin="-1.4s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="280;288;273;280" dur="2.8s" begin="-1.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.85;0" dur="2.8s" begin="-1.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="335" cy="126" r="2.6" fill="#fff8f4" opacity="0">
+      <animate attributeName="cy" values="126;36" dur="2.8s" begin="-0.35s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="335;327;341;335" dur="2.8s" begin="-0.35s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.85;0" dur="2.8s" begin="-0.35s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- drifting butterfly + petal inside -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.15;0.8;1" dur="6s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="330 118;300 86;268 48" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
+    <use xlink:href="#bfly" transform="scale(0.85)"/>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.15;0.8;1" dur="7s" begin="-2.4s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="52 122;84 80;120 40" keyTimes="0;0.5;1" dur="7s" begin="-2.4s" repeatCount="indefinite"/>
+    <use xlink:href="#petalFly" fill="#f8a5c8">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3.2s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+</svg>

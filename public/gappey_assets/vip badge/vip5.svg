@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 66 26" width="66" height="26">
+<title>VIP 5 Badge</title>
+<defs>
+<linearGradient id="pb5m" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#5fc79a"/><stop offset=".5" stop-color="#1d9e63">
+<animate attributeName="stop-color" values="#1d9e63;#3cb37e;#1d9e63" dur="4.5s" repeatCount="indefinite"/></stop>
+<stop offset="1" stop-color="#0a4a2f"/>
+</linearGradient>
+<radialGradient id="pb5in" cx=".5" cy=".35" r="1"><stop offset="0" stop-color="#083322"/><stop offset="1" stop-color="#031b12"/></radialGradient>
+<linearGradient id="pb5au" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a8"/><stop offset="1" stop-color="#b8860b"/></linearGradient>
+<radialGradient id="pb5f" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#f8ffe8"/><stop offset="1" stop-color="#bff2c9" stop-opacity="0"/></radialGradient>
+<path id="pb5leaf" d="M0 2.6 C-2.2 .7 -2 -3 0 -5.2 C2 -3 2.2 .7 0 2.6 Z"/>
+<clipPath id="pb5c"><rect x="3" y="4" width="60" height="18" rx="9"/></clipPath>
+</defs>
+<rect x="3" y="4" width="60" height="18" rx="9" fill="none" stroke="#7fe0b0" stroke-width="3" opacity=".35">
+<animate attributeName="opacity" values=".25;.5;.25" dur="2.8s" repeatCount="indefinite"/>
+<animate attributeName="stroke" values="#7fe0b0;#d9ffe9;#ffe9a8;#7fe0b0" dur="6s" repeatCount="indefinite"/>
+</rect>
+<rect x="3" y="4" width="60" height="18" rx="9" fill="url(#pb5m)" stroke="url(#pb5au)" stroke-width="1.2"/>
+<rect x="5.2" y="6.2" width="55.6" height="13.6" rx="6.8" fill="url(#pb5in)"/>
+<use xlink:href="#pb5leaf" transform="translate(13.5 13) rotate(-30)" fill="url(#pb5au)" stroke="#8a5f08" stroke-width=".4">
+<animate attributeName="opacity" values=".7;1;.7" dur="2.4s" repeatCount="indefinite"/>
+</use>
+<text x="40" y="17.4" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" letter-spacing=".2" fill="#eafff3">VIP 5</text>
+<g><animateTransform attributeName="transform" type="rotate" values="0 48 13;360 48 13" dur="4.2s" repeatCount="indefinite"/>
+<circle cx="53.5" cy="13" r="2.6" fill="url(#pb5f)"/><circle cx="53.5" cy="13" r=".95" fill="#f8ffe8">
+<animate attributeName="opacity" values="1;.4;1" dur=".9s" repeatCount="indefinite"/></circle></g>
+<g clip-path="url(#pb5c)">
+<g><animateTransform attributeName="transform" type="translate" values="-50 0;80 0" dur="3.4s" repeatCount="indefinite"/>
+<rect x="30" y="0" width="7" height="26" fill="#ffffff" opacity=".18" transform="skewX(-18)"/></g>
+</g>
+</svg>

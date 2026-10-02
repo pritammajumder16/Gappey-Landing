@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 800" width="450" height="800">
+  <title>Shabash Trophy — full-screen gift animation</title>
+  <defs>
+    <radialGradient id="sbAsky" cx="50%" cy="38%" r="92%">
+      <stop offset="0" stop-color="#241706"/><stop offset=".55" stop-color="#120B03"/><stop offset="1" stop-color="#070401"/>
+    </radialGradient>
+    <linearGradient id="sbAgold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE9A8"/><stop offset=".5" stop-color="#E9B94F"/><stop offset="1" stop-color="#B8791F"/>
+    </linearGradient>
+    <linearGradient id="sbAw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6D27A"/><stop offset=".55" stop-color="#E4A93C"/><stop offset="1" stop-color="#B8791F"/>
+    </linearGradient>
+    <path id="sbAspk" d="M0 -11 Q2.2 -2.2 11 0 Q2.2 2.2 0 11 Q-2.2 2.2 -11 0 Q-2.2 -2.2 0 -11Z"/>
+    <g id="sbAlaurel">
+      <path d="M0 0 C-16 -30 -16 -74 0 -104" fill="none" stroke="#3E7C4F" stroke-width="3.5"/>
+      <ellipse cx="-12" cy="-14" rx="9" ry="4" fill="#D9A441" transform="rotate(-38 -12 -14)"/>
+      <ellipse cx="11" cy="-28" rx="9" ry="4" fill="#D9A441" transform="rotate(32 11 -28)"/>
+      <ellipse cx="-13" cy="-44" rx="9" ry="4" fill="#D9A441" transform="rotate(-36 -13 -44)"/>
+      <ellipse cx="12" cy="-58" rx="8.5" ry="3.8" fill="#D9A441" transform="rotate(30 12 -58)"/>
+      <ellipse cx="-11" cy="-72" rx="8" ry="3.6" fill="#D9A441" transform="rotate(-34 -11 -72)"/>
+      <ellipse cx="9" cy="-86" rx="7" ry="3.2" fill="#D9A441" transform="rotate(28 9 -86)"/>
+    </g>
+    <clipPath id="sbAclip"><path d="M-34 -50 C-34 -16 -18 4 0 4 C18 4 34 -16 34 -50 Z"/></clipPath>
+    <style>
+      .sbA-tr{animation:sbTr 8s linear infinite}
+      .sbA-flash{fill:#FFF4DC;transform-box:fill-box;transform-origin:center;opacity:0;animation:sbFlash 8s linear infinite}
+      .sbA-R1{fill:none;stroke:#F6D27A;stroke-width:6;transform-box:fill-box;transform-origin:center;opacity:0;animation:sbR1 8s linear infinite}
+      .sbA-R2{fill:none;stroke:#F3EADA;stroke-width:2;transform-box:fill-box;transform-origin:center;opacity:0;animation:sbR2 8s linear infinite}
+      .sbA-sp{transform-box:fill-box;transform-origin:50% 100%;opacity:0;animation:sbSp 8s linear infinite}
+      .sbA-lL{opacity:0;animation:sbLL 8s cubic-bezier(.2,.8,.3,1) infinite}
+      .sbA-lR{opacity:0;animation:sbLR 8s cubic-bezier(.2,.8,.3,1) infinite}
+      .sbA-star{transform-box:fill-box;transform-origin:center;animation:sbStar 8s linear infinite}
+      .sbA-glint{opacity:0;animation:sbGlint 8s linear infinite}
+      .sbA-gate{opacity:0;animation:sbGate 8s linear infinite}
+      .sbA-fall{animation:sbFall 4s linear infinite}
+      .sbA-f2{animation-duration:5.1s}
+      .sbA-spin{transform-box:fill-box;transform-origin:center;animation:sbSpin 2.3s linear infinite}
+      .sbA-w{font:900 72px 'Arial Black','Segoe UI',Arial,sans-serif;letter-spacing:3px;fill:url(#sbAw);stroke:#140C04;stroke-width:9;paint-order:stroke;text-anchor:middle;transform-box:fill-box;transform-origin:center;opacity:0;animation:sbW 8s linear infinite}
+      .sbA-sub{font:600 18px Georgia,'Times New Roman',serif;letter-spacing:8px;fill:#F2D48C;text-anchor:middle;opacity:0;animation:sbSub 8s linear infinite}
+      .sbA-twk{transform-box:fill-box;transform-origin:center;animation:sbTw 2.8s ease-in-out infinite}
+      @keyframes sbTr{
+        0%{opacity:0;transform:translate(225px,-340px)}
+        4%{opacity:1}
+        12%{transform:translate(225px,430px)}
+        13.5%{transform:translate(225px,440px) scale(1.05,.93)}
+        16%{transform:translate(225px,430px) scale(.99,1.02)}
+        17.5%,90%{opacity:1;transform:translate(225px,430px) scale(1,1)}
+        95%,100%{opacity:0;transform:translate(225px,430px) scale(1,1)}}
+      @keyframes sbFlash{0%,13%{opacity:0;transform:scale(.3)}15%{opacity:.75}23%{opacity:0;transform:scale(1.1)}100%{opacity:0}}
+      @keyframes sbR1{0%,14%{opacity:0;transform:scale(.12)}16%{opacity:.95;transform:scale(.25)}32%{opacity:0;transform:scale(3.4)}100%{opacity:0;transform:scale(3.4)}}
+      @keyframes sbR2{0%,16%{opacity:0;transform:scale(.12)}18%{opacity:.8;transform:scale(.25)}36%{opacity:0;transform:scale(4)}100%{opacity:0;transform:scale(4)}}
+      @keyframes sbSp{0%,14%{opacity:0;transform:scale(.3)}18%{opacity:1;transform:scale(1)}26%,100%{opacity:0;transform:scale(.4)}}
+      @keyframes sbLL{0%,15%{opacity:0;transform:translateX(-240px)}22%{opacity:1;transform:translateX(0)}94%,100%{opacity:0;transform:translateX(0)}}
+      @keyframes sbLR{0%,17%{opacity:0;transform:translateX(240px)}24%{opacity:1;transform:translateX(0)}94%,100%{opacity:0;transform:translateX(0)}}
+      @keyframes sbStar{0%,18%{transform:scale(0)}21%{transform:scale(1.3)}23%{transform:scale(1)}94%,100%{transform:scale(1)}}
+      @keyframes sbGlint{0%,28%{opacity:0;transform:translateX(-70px)}30%{opacity:.8}40%{opacity:0;transform:translateX(70px)}100%{opacity:0;transform:translateX(70px)}}
+      @keyframes sbGate{0%,20%{opacity:0}24%{opacity:1}93%{opacity:1}97%,100%{opacity:0}}
+      @keyframes sbFall{from{transform:translateY(-50px)}to{transform:translateY(870px)}}
+      @keyframes sbSpin{to{transform:rotate(360deg)}}
+      @keyframes sbW{0%,22%{opacity:0;transform:scale(.45) rotate(-5deg)}26%{opacity:1;transform:scale(1.12) rotate(1.5deg)}28.5%{transform:scale(.98) rotate(0)}30%,88%{opacity:1;transform:scale(1)}93%,100%{opacity:0;transform:scale(1)}}
+      @keyframes sbSub{0%,28%{opacity:0}33%{opacity:1}88%{opacity:1}93%,100%{opacity:0}}
+      @keyframes sbTw{0%,100%{opacity:.07;transform:scale(.6)}50%{opacity:.8;transform:scale(1)}}
+    </style>
+  </defs>
+  <rect width="450" height="800" fill="url(#sbAsky)"/>
+  <polygon points="120,-20 180,-20 320,560 200,560" fill="#F3EADA" opacity=".04"/>
+  <polygon points="330,-20 270,-20 130,560 250,560" fill="#F3EADA" opacity=".03"/>
+  <g transform="translate(66 160)"><use href="#sbAspk" class="sbA-twk" fill="#F2B33D"/></g>
+  <g transform="translate(392 220) scale(.8)"><use href="#sbAspk" class="sbA-twk" fill="#F6EFE2" style="animation-delay:-1s"/></g>
+  <g transform="translate(52 620) scale(.7)"><use href="#sbAspk" class="sbA-twk" fill="#F6D27A" style="animation-delay:-2s"/></g>
+  <g transform="translate(402 600) scale(.75)"><use href="#sbAspk" class="sbA-twk" fill="#F6EFE2" style="animation-delay:-.5s"/></g>
+  <circle class="sbA-flash" cx="225" cy="440" r="180"/>
+  <circle class="sbA-R1" cx="225" cy="495" r="70"/>
+  <circle class="sbA-R2" cx="225" cy="495" r="70"/>
+  <g transform="translate(225 495) rotate(0)"><line class="sbA-sp" x1="0" y1="-100" x2="0" y2="-158" stroke="#F6D27A" stroke-width="5" stroke-linecap="round"/></g>
+  <g transform="translate(225 495) rotate(36)"><line class="sbA-sp" x1="0" y1="-100" x2="0" y2="-158" stroke="#F3EADA" stroke-width="4" stroke-linecap="round" style="animation-delay:.04s"/></g>
+  <g transform="translate(225 495) rotate(72)"><line class="sbA-sp" x1="0" y1="-100" x2="0" y2="-158" stroke="#F6D27A" stroke-width="5" stroke-linecap="round"/></g>
+  <g transform="translate(225 495) rotate(108)"><line class="sbA-sp" x1="0" y1="-100" x2="0" y2="-158" stroke="#F3EADA" stroke-width="4" stroke-linecap="round" style="animation-delay:.04s"/></g>
+  <g transform="translate(225 495) rotate(144)"><line class="sbA-sp" x1="0" y1="-100" x2="0" y2="-158" stroke="#F6D27A" stroke-width="5" stroke-linecap="round"/></g>
+  <g transform="translate(225 495) rotate(180)"><line class="sbA-sp" x1="0" y1="-100" x2="0" y2="-158" stroke="#F3EADA" stroke-width="4" stroke-linecap="round" style="animation-delay:.04s"/></g>
+  <g transform="translate(225 495) rotate(216)"><line class="sbA-sp" x1="0" y1="-100" x2="0" y2="-158" stroke="#F6D27A" stroke-width="5" stroke-linecap="round"/></g>
+  <g transform="translate(225 495) rotate(252)"><line class="sbA-sp" x1="0" y1="-100" x2="0" y2="-158" stroke="#F3EADA" stroke-width="4" stroke-linecap="round" style="animation-delay:.04s"/></g>
+  <g transform="translate(225 495) rotate(288)"><line class="sbA-sp" x1="0" y1="-100" x2="0" y2="-158" stroke="#F6D27A" stroke-width="5" stroke-linecap="round"/></g>
+  <g transform="translate(225 495) rotate(324)"><line class="sbA-sp" x1="0" y1="-100" x2="0" y2="-158" stroke="#F3EADA" stroke-width="4" stroke-linecap="round" style="animation-delay:.04s"/></g>
+  <g transform="translate(104 560)"><g class="sbA-lL"><g transform="rotate(18) scale(1.5)"><use href="#sbAlaurel"/></g></g></g>
+  <g transform="translate(346 560)"><g class="sbA-lR"><g transform="scale(-1 1) rotate(18) scale(1.5)"><use href="#sbAlaurel"/></g></g></g>
+  <g class="sbA-tr">
+    <g transform="scale(2.35)">
+      <path d="M-34 -38 C-54 -38 -54 -8 -30 -2" fill="none" stroke="#D9A441" stroke-width="5" stroke-linecap="round"/>
+      <path d="M34 -38 C54 -38 54 -8 30 -2" fill="none" stroke="#D9A441" stroke-width="5" stroke-linecap="round"/>
+      <path d="M-34 -50 C-34 -16 -18 4 0 4 C18 4 34 -16 34 -50 Z" fill="url(#sbAgold)" stroke="#7A531A" stroke-width="2.5"/>
+      <g clip-path="url(#sbAclip)"><g transform="rotate(24)"><rect class="sbA-glint" x="-7" y="-72" width="13" height="90" fill="#FFF6E6"/></g></g>
+      <ellipse cy="-50" rx="34" ry="6.5" fill="#FFE9A8" stroke="#8A5F1D" stroke-width="2"/>
+      <g class="sbA-star">
+        <path d="M0 -36 L2.9 -27.9 L11.4 -27.7 L4.6 -22.5 L7.1 -14.3 L0 -19.4 L-7.1 -14.3 L-4.6 -22.5 L-11.4 -27.7 L-2.9 -27.9 Z" fill="#FFF3D0" stroke="#B8862F" stroke-width="1.2"/>
+      </g>
+      <path d="M-24 -42 Q-20 -24 -10 -14" fill="none" stroke="#FFF6E6" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+      <rect x="-5" y="4" width="10" height="16" fill="#C98F33" stroke="#8A5F1D" stroke-width="1.5"/>
+      <ellipse cy="22" rx="13" ry="4.5" fill="#E9B94F" stroke="#8A5F1D" stroke-width="1.5"/>
+      <rect x="-22" y="26" width="44" height="11" rx="3" fill="#B8862F" stroke="#7A531A" stroke-width="2"/>
+      <rect x="-32" y="37" width="64" height="13" rx="3" fill="#8A5F1D" stroke="#5E3A10" stroke-width="2"/>
+      <line x1="-32" y1="41" x2="32" y2="41" stroke="#D9A441" stroke-width="1.5" opacity=".7"/>
+    </g>
+  </g>
+  <g class="sbA-gate">
+    <g transform="translate(50 -40)"><g class="sbA-fall"><g class="sbA-spin"><rect x="-4" y="-8" width="8" height="16" rx="2.5" fill="#F6D27A"/></g></g></g>
+    <g transform="translate(140 -40)"><g class="sbA-fall sbA-f2" style="animation-delay:-1.8s"><g class="sbA-spin"><circle r="4" fill="#E2557B"/></g></g></g>
+    <g transform="translate(230 -40)"><g class="sbA-fall" style="animation-delay:-3s"><g class="sbA-spin"><rect x="-4" y="-8" width="8" height="16" rx="2.5" fill="#F3EADA"/></g></g></g>
+    <g transform="translate(320 -40)"><g class="sbA-fall sbA-f2" style="animation-delay:-.8s"><g class="sbA-spin"><circle r="3.6" fill="#F2B33D"/></g></g></g>
+    <g transform="translate(404 -40)"><g class="sbA-fall" style="animation-delay:-2.4s"><g class="sbA-spin"><rect x="-4" y="-8" width="8" height="16" rx="2.5" fill="#E2557B"/></g></g></g>
+  </g>
+  <text class="sbA-w" x="229" y="668">SHABASH!</text>
+  <text class="sbA-sub" x="230" y="714">CONGRATULATIONS</text>
+</svg>

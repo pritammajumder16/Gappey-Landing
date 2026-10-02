@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <title>Sixer — gift logo</title>
+  <defs>
+    <radialGradient id="sxLball" cx=".35" cy=".3" r=".95">
+      <stop offset="0" stop-color="#F0794F"/><stop offset=".5" stop-color="#CE4527"/><stop offset="1" stop-color="#7E1F12"/>
+    </radialGradient>
+    <path id="sxLspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+  </defs>
+  <g stroke="#F3EADA" stroke-linecap="round">
+    <line x1="26" y1="86" x2="84" y2="86" stroke-width="7" opacity=".9"/>
+    <line x1="14" y1="120" x2="68" y2="120" stroke-width="7" opacity=".5"/>
+    <line x1="32" y1="154" x2="86" y2="154" stroke-width="7" opacity=".28"/>
+  </g>
+  <circle cx="136" cy="120" r="58" fill="url(#sxLball)"/>
+  <path d="M136 62 a58 58 0 0 1 0 116 a76 76 0 0 0 0 -116 Z" fill="#7C1D12" opacity=".5"/>
+  <ellipse cx="116" cy="97" rx="15" ry="9" fill="#FF8A5E" opacity=".5" transform="rotate(-32 116 97)"/>
+  <g fill="none" stroke="#F6EFE2" stroke-width="3.6" stroke-linecap="round">
+    <path d="M112 72 Q 96 120 112 168"/>
+    <path d="M160 72 Q 176 120 160 168"/>
+  </g>
+  <g stroke="#F6EFE2" stroke-width="2.8" stroke-linecap="round">
+    <line x1="99" y1="90" x2="116" y2="86"/><line x1="95" y1="106" x2="112" y2="103"/><line x1="93" y1="122" x2="110" y2="121"/><line x1="95" y1="138" x2="112" y2="136"/><line x1="99" y1="153" x2="116" y2="150"/>
+    <line x1="156" y1="86" x2="173" y2="90"/><line x1="160" y1="103" x2="177" y2="106"/><line x1="162" y1="121" x2="179" y2="122"/><line x1="160" y1="136" x2="177" y2="138"/><line x1="156" y1="150" x2="173" y2="153"/>
+  </g>
+  <use href="#sxLspk" transform="translate(198 46) scale(1.25)" fill="#F2B33D"/>
+  <use href="#sxLspk" transform="translate(217 82) scale(.75)" fill="#F6D27A"/>
+  <circle cx="204" cy="62" r="2.6" fill="#F2B33D"/>
+  <g transform="rotate(10 188 184)">
+    <circle cx="188" cy="184" r="21" fill="#F2B33D" stroke="#8E2417" stroke-width="3"/>
+    <text x="188" y="193" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="26" fill="#221408">6</text>
+  </g>
+</svg>

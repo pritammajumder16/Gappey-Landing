@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 240 240" width="240" height="240" role="img">
+  <title>Day 5 reward — Amethyst Rider daily bonus frame (hollow center for avatar overlay)</title>
+  <defs>
+    <clipPath id="a-ribclip"><rect x="52" y="202" width="136" height="28" rx="14"/></clipPath>
+    <linearGradient id="a-metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dcc8ff"/><stop offset=".42" stop-color="#a678f0"/>
+      <stop offset=".8" stop-color="#5f37ab"/><stop offset="1" stop-color="#9a6ce0"/>
+    </linearGradient>
+    <linearGradient id="a-rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cbb3f5"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#5f3aa8"/>
+    </linearGradient>
+    <radialGradient id="a-stud" cx=".35" cy=".3" r=".9">
+      <stop offset="0" stop-color="#f3edff"/><stop offset=".6" stop-color="#c9a6ff"/><stop offset="1" stop-color="#6d3fc0"/>
+    </radialGradient>
+    <filter id="a-blur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+
+  <circle cx="120" cy="120" r="88" fill="none" stroke="#b08aff" stroke-width="14" filter="url(#a-blur)" opacity=".08">
+    <animate attributeName="opacity" values=".05;.18;.05" dur="4.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="120" cy="120" r="88" fill="none" stroke="url(#a-metal)" stroke-width="11"/>
+  <circle cx="120" cy="120" r="93.8" fill="none" stroke="#e6dbff" stroke-width="1" opacity=".7"/>
+  <circle cx="120" cy="120" r="82.2" fill="none" stroke="#3a2168" stroke-width="1.4" opacity=".85"/>
+  <circle cx="120" cy="120" r="78" fill="none" stroke="#3a2168" stroke-width="2"/>
+
+  <!-- 4 amethyst studs on the band -->
+  <g transform="translate(182.2 57.8)"><path d="M0 -5.2 L3.6 0 L0 5.2 L-3.6 0 Z" fill="url(#a-stud)" stroke="#4a2d80" stroke-width=".8"><animate attributeName="opacity" values=".45;1;.45" dur="3s" begin="0s" repeatCount="indefinite"/></path></g>
+  <g transform="translate(57.8 57.8)"><path d="M0 -5.2 L3.6 0 L0 5.2 L-3.6 0 Z" fill="url(#a-stud)" stroke="#4a2d80" stroke-width=".8"><animate attributeName="opacity" values=".45;1;.45" dur="3s" begin="-0.75s" repeatCount="indefinite"/></path></g>
+  <g transform="translate(57.8 182.2)"><path d="M0 -5.2 L3.6 0 L0 5.2 L-3.6 0 Z" fill="url(#a-stud)" stroke="#4a2d80" stroke-width=".8"><animate attributeName="opacity" values=".45;1;.45" dur="3s" begin="-1.5s" repeatCount="indefinite"/></path></g>
+  <g transform="translate(182.2 182.2)"><path d="M0 -5.2 L3.6 0 L0 5.2 L-3.6 0 Z" fill="url(#a-stud)" stroke="#4a2d80" stroke-width=".8"><animate attributeName="opacity" values=".45;1;.45" dur="3s" begin="-2.25s" repeatCount="indefinite"/></path></g>
+
+  <!-- checkered gate flags flanking the park spot -->
+  <g transform="translate(67 28.2)">
+    <line x1="0" y1="1" x2="0" y2="-12" stroke="#c9a6ff" stroke-width="1.6" stroke-linecap="round"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-6 0 -11;6 0 -11;-6 0 -11" dur="1.2s" repeatCount="indefinite"/>
+      <rect x="-10" y="-11" width="10" height="7" fill="#efe8ff"/>
+      <rect x="-10" y="-11" width="3.3" height="3.5" fill="#241238"/>
+      <rect x="-3.4" y="-11" width="3.3" height="3.5" fill="#241238"/>
+      <rect x="-6.7" y="-7.5" width="3.3" height="3.5" fill="#241238"/>
+    </g>
+  </g>
+  <g transform="translate(173 28.2)">
+    <line x1="0" y1="1" x2="0" y2="-12" stroke="#c9a6ff" stroke-width="1.6" stroke-linecap="round"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="6 0 -11;-6 0 -11;6 0 -11" dur="1.35s" repeatCount="indefinite"/>
+      <rect x="0" y="-11" width="10" height="7" fill="#efe8ff"/>
+      <rect x="0" y="-11" width="3.3" height="3.5" fill="#241238"/>
+      <rect x="6.6" y="-11" width="3.4" height="3.5" fill="#241238"/>
+      <rect x="3.3" y="-7.5" width="3.3" height="3.5" fill="#241238"/>
+    </g>
+  </g>
+
+  <!-- ============ the bike: orbits the ring, stays upright ============ -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate"
+      values="0 120 120;0 120 120;360 120 120;360 120 120"
+      keyTimes="0;.08;.86;1" dur="9s" repeatCount="indefinite"/>
+
+    <!-- speed trail (fades when parked) -->
+    <path d="M 47.9 69.5 A 88 88 0 0 1 107.8 32.9" fill="none" stroke="#d9c4ff"
+          stroke-width="3" stroke-linecap="round" stroke-dasharray="3 9" opacity="0">
+      <animate attributeName="opacity" values="0;0;.9;.5;.9;0;0" keyTimes="0;.08;.12;.35;.6;.86;1" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="0;-24" dur=".35s" repeatCount="indefinite"/>
+    </path>
+
+    <g transform="translate(120 30)">
+      <!-- counter-rotation keeps the bike upright all the way around -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="0;0;-360;-360" keyTimes="0;.08;.86;1" dur="9s" repeatCount="indefinite"/>
+
+        <!-- wheels -->
+        <g transform="translate(-10 6)">
+          <circle r="4.6" fill="#241238"/>
+          <circle r="3.2" fill="none" stroke="#9a6ce0" stroke-width="1"/>
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="0;0;1080;1080" keyTimes="0;.08;.86;1" dur="9s" repeatCount="indefinite"/>
+            <path d="M0 -3 V3 M-3 0 H3" stroke="#9a6ce0" stroke-width="1"/>
+            <circle r="1" fill="#e6dbff"/>
+          </g>
+        </g>
+        <g transform="translate(10 6)">
+          <circle r="4.6" fill="#241238"/>
+          <circle r="3.2" fill="none" stroke="#9a6ce0" stroke-width="1"/>
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="0;0;1080;1080" keyTimes="0;.08;.86;1" dur="9s" repeatCount="indefinite"/>
+            <path d="M0 -3 V3 M-3 0 H3" stroke="#9a6ce0" stroke-width="1"/>
+            <circle r="1" fill="#e6dbff"/>
+          </g>
+        </g>
+
+        <!-- frame + engine + exhaust -->
+        <path d="M -10 6 L -3 -2 L 5 -2 L 10 6" fill="none" stroke="#4a2d80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="-3" y="-1" width="7" height="5.5" rx="1.5" fill="#6d3fc0" stroke="#3a2168" stroke-width=".6"/>
+        <path d="M 3 4.5 L -6 7" stroke="#9a6ce0" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M -8.5 -3 L -2 -3" stroke="#241238" stroke-width="3" stroke-linecap="round"/>
+        <path d="M 10 6 L 8 -8 L 11 -9.5" fill="none" stroke="#4a2d80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="10.8" cy="-6" r="1.7" fill="#ffd76e">
+          <animate attributeName="opacity" values="1;.4;1" dur="1.4s" repeatCount="indefinite"/>
+        </circle>
+
+        <!-- rider -->
+        <path d="M -4.5 -4.5 C -3.5 -8.5 -0.5 -10.5 1.5 -10" fill="none" stroke="#241238" stroke-width="2.8" stroke-linecap="round"/>
+        <path d="M 0 -9.3 L 8 -7.8" fill="none" stroke="#241238" stroke-width="2" stroke-linecap="round"/>
+        <path d="M -4 -4 C -4.8 -.5 -3 1.5 -.5 2.8" fill="none" stroke="#241238" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="2.6" cy="-11.6" r="3.1" fill="#241238"/>
+        <path d="M 3.4 -12.8 A 3.1 3.1 0 0 1 5.6 -11" fill="none" stroke="#e6dbff" stroke-width="1.3" stroke-linecap="round"/>
+
+        <!-- fluttering scarf -->
+        <path d="M .5 -9.6 C -4 -10.5 -7 -8 -11 -9.8" fill="none" stroke="#ffd76e" stroke-width="1.8" stroke-linecap="round">
+          <animate attributeName="d" dur=".65s" repeatCount="indefinite"
+            values="M .5 -9.6 C -4 -10.5 -7 -8 -11 -9.8;
+                    M .5 -9.6 C -4 -8.5 -7 -11 -11 -8.6;
+                    M .5 -9.6 C -4 -10.5 -7 -8 -11 -9.8"/>
+        </path>
+      </g>
+    </g>
+  </g>
+
+  <g>
+    <rect x="52" y="202" width="136" height="28" rx="14" fill="url(#a-rib)" stroke="#3a2168" stroke-width="1.2"/>
+    <rect x="55.5" y="205.5" width="129" height="21" rx="10.5" fill="none" stroke="#efe8ff" stroke-width="1" opacity=".55"/>
+    <g clip-path="url(#a-ribclip)">
+      <path d="M0 202 L12 202 L0 230 L-12 230 Z" fill="#fff" opacity=".28">
+        <animateTransform attributeName="transform" type="translate"
+          values="-46 0;-46 0;246 0;246 0" keyTimes="0;.12;.55;1" dur="5s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <text x="120" y="220.5" text-anchor="middle" font-family="Verdana, 'DejaVu Sans', Geneva, sans-serif"
+          font-size="11.5" font-weight="bold" letter-spacing="2" fill="#241238">DAILY BONUS</text>
+  </g>
+</svg>

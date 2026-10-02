@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <title>Jalebi Twist — gift logo</title>
+  <defs>
+    <path id="jlLspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+  </defs>
+  <g fill="none" stroke-linecap="round">
+    <path d="M186 112 C186 152 154 182 116 178 C78 174 52 144 56 108 C60 72 92 48 128 54 C160 60 180 88 174 118 C168 146 142 162 116 155 C93 149 80 128 88 108 C95 91 114 84 130 92 C143 99 147 114 138 124 C131 132 118 132 111 124 C106 118 108 108 116 105" stroke="#E88A2D" stroke-width="11"/>
+    <path d="M92 74 C110 52 146 48 164 66" stroke="#FFC46B" stroke-width="3.5" opacity=".85"/>
+    <path d="M70 150 C60 138 55 124 56 110" stroke="#FFC46B" stroke-width="2.5" opacity=".5"/>
+  </g>
+  <g fill="#E88A2D">
+    <path d="M150 196 C155 202 155 209 150 213 C145 209 145 202 150 196 Z"/>
+    <path d="M104 206 C108 211 108 217 104 220 C100 217 100 211 104 206 Z" opacity=".85"/>
+  </g>
+  <circle cx="88" cy="86" r="4" fill="#FFD98F" opacity=".9"/>
+  <use href="#jlLspk" transform="translate(192 60) scale(.8)" fill="#F2B33D"/>
+  <use href="#jlLspk" transform="translate(36 132) scale(.6)" fill="#F6EFE2"/>
+</svg>

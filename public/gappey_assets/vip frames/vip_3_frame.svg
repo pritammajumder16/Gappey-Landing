@@ -1,0 +1,290 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" width="200" height="200">
+  <title>VIP 3 Avatar Frame</title>
+
+  <defs>
+    <!-- liquid gold band (gradient itself shimmers) -->
+    <linearGradient id="goldMain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff3c4">
+        <animate attributeName="stop-color" values="#fff3c4;#fffdf0;#fff3c4" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.22" stop-color="#ffd970"/>
+      <stop offset="0.45" stop-color="#c08a15">
+        <animate attributeName="stop-color" values="#c08a15;#e6b13a;#c08a15" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.6" stop-color="#8f6207"/>
+      <stop offset="0.78" stop-color="#e3ab35"/>
+      <stop offset="1" stop-color="#fff0bd"/>
+    </linearGradient>
+    <linearGradient id="goldDeep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8760d"/>
+      <stop offset="0.5" stop-color="#f2c25a">
+        <animate attributeName="stop-color" values="#f2c25a;#ffe08a;#f2c25a" dur="4.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#8a5f08"/>
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9a8"/>
+      <stop offset="0.45" stop-color="#d9a32e"/>
+      <stop offset="0.55" stop-color="#b8821a"/>
+      <stop offset="1" stop-color="#7a5806"/>
+    </linearGradient>
+    <radialGradient id="amberGem" cx="0.35" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#fff6d8"/>
+      <stop offset="0.45" stop-color="#ffcf6e"/>
+      <stop offset="1" stop-color="#b8791a"/>
+    </radialGradient>
+    <radialGradient id="beadGrad" cx="0.35" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#fff8dc"/>
+      <stop offset="0.5" stop-color="#f2c25a"/>
+      <stop offset="1" stop-color="#9a6f10"/>
+    </radialGradient>
+    <radialGradient id="bezelGrad" cx="0.35" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#ffe9a8"/>
+      <stop offset="0.55" stop-color="#c9971f"/>
+      <stop offset="1" stop-color="#7a5806"/>
+    </radialGradient>
+    <radialGradient id="studGrad" cx="0.35" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.5" stop-color="#fdf3d0"/>
+      <stop offset="1" stop-color="#d9b45c"/>
+    </radialGradient>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <path id="spark" d="M0 -5 L1.2 -1.2 L5 0 L1.2 1.2 L0 5 L-1.2 1.2 L-5 0 L-1.2 -1.2 Z"/>
+  </defs>
+
+  <!-- double breathing gold glow -->
+  <circle cx="100" cy="100" r="89" fill="none" stroke="#ffd970" stroke-width="13" opacity="0.3" filter="url(#softGlow)">
+    <animate attributeName="r" values="88;92;88" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.25;0.5;0.25" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#ffe9a8" stroke-width="3" opacity="0.3" filter="url(#softGlow)">
+    <animate attributeName="r" values="96;99;96" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.4;0.2" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- outer dashed accent + rotating segmented bezel ring -->
+  <g>
+    <circle cx="100" cy="100" r="98" fill="none" stroke="#f2c25a" stroke-width="1.2"
+            stroke-dasharray="2 4" pathLength="140" stroke-linecap="round" opacity="0.6"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="22s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <circle cx="100" cy="100" r="94.5" fill="none" stroke="#ffe9a8" stroke-width="1.6"
+            stroke-dasharray="12 4" pathLength="96" opacity="0.85"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="12s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- band structure: edge, outer band, separator, inner band, inner edge -->
+  <circle cx="100" cy="100" r="92.5" fill="none" stroke="url(#goldDeep)" stroke-width="2.5"/>
+  <circle cx="100" cy="100" r="89" fill="none" stroke="url(#goldMain)" stroke-width="7"/>
+  <circle cx="100" cy="100" r="83.5" fill="none" stroke="#5c4406" stroke-width="2.6" opacity="0.95"/>
+  <circle cx="100" cy="100" r="78.5" fill="none" stroke="url(#goldMain)" stroke-width="6.5"/>
+  <circle cx="100" cy="100" r="75" fill="none" stroke="#6b4d05" stroke-width="1.8" opacity="0.9"/>
+
+  <!-- 4 glint sweeps on outer band -->
+  <g stroke-linecap="round" fill="none">
+    <path d="M 63.8 18.7 A 89 89 0 0 1 136.2 18.7" stroke="#fff7df" stroke-width="6" opacity="0.3"/>
+    <path d="M 81.5 13 A 89 89 0 0 1 118.5 13" stroke="#ffffff" stroke-width="5" opacity="0.85"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="5s" repeatCount="indefinite"/>
+  </g>
+  <g stroke-linecap="round" fill="none">
+    <path d="M 63.8 18.7 A 89 89 0 0 1 136.2 18.7" stroke="#fff7df" stroke-width="6" opacity="0.25"/>
+    <path d="M 81.5 13 A 89 89 0 0 1 118.5 13" stroke="#ffffff" stroke-width="5" opacity="0.7"/>
+    <animateTransform attributeName="transform" type="rotate" from="120 100 100" to="480 100 100" dur="5s" repeatCount="indefinite"/>
+  </g>
+  <g stroke-linecap="round" fill="none">
+    <path d="M 63.8 18.7 A 89 89 0 0 1 136.2 18.7" stroke="#fff7df" stroke-width="6" opacity="0.22"/>
+    <path d="M 81.5 13 A 89 89 0 0 1 118.5 13" stroke="#ffffff" stroke-width="5" opacity="0.6"/>
+    <animateTransform attributeName="transform" type="rotate" from="240 100 100" to="600 100 100" dur="5s" repeatCount="indefinite"/>
+  </g>
+  <g stroke-linecap="round" fill="none">
+    <path d="M 81.5 13 A 89 89 0 0 1 118.5 13" stroke="#fff7df" stroke-width="4" opacity="0.35"/>
+    <animateTransform attributeName="transform" type="rotate" from="60 100 100" to="420 100 100" dur="8s" repeatCount="indefinite"/>
+  </g>
+  <!-- glint on inner band, counter-direction -->
+  <g stroke-linecap="round" fill="none">
+    <path d="M 73.2 26.2 A 78.5 78.5 0 0 1 126.8 26.2" stroke="#ffffff" stroke-width="3" opacity="0.5"/>
+    <animateTransform attributeName="transform" type="rotate" from="360 100 100" to="0 100 100" dur="9s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- rotating gold bead chain on inner band -->
+  <g>
+    <g fill="url(#beadGrad)" stroke="#6b4d05" stroke-width="0.6">
+      <circle cx="178.5" cy="100" r="2.3"/>
+      <circle cx="168" cy="139.3" r="1.7"/>
+      <circle cx="139.3" cy="168" r="2.3"/>
+      <circle cx="100" cy="178.5" r="1.7"/>
+      <circle cx="60.7" cy="168" r="2.3"/>
+      <circle cx="32" cy="139.3" r="1.7"/>
+      <circle cx="21.5" cy="100" r="2.3"/>
+      <circle cx="32" cy="60.7" r="1.7"/>
+      <circle cx="60.7" cy="32" r="2.3"/>
+      <circle cx="100" cy="21.5" r="1.7"/>
+      <circle cx="139.3" cy="32" r="2.3"/>
+      <circle cx="168" cy="60.7" r="1.7"/>
+    </g>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="16s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- watch-bezel tick ring, counter-rotating -->
+  <g>
+    <circle cx="100" cy="100" r="71.5" fill="none" stroke="#f5cf7a" stroke-width="2.4"
+            stroke-dasharray="1 3" pathLength="120" opacity="0.85"/>
+    <animateTransform attributeName="transform" type="rotate" from="360 100 100" to="0 100 100" dur="20s" repeatCount="indefinite"/>
+  </g>
+  <circle cx="100" cy="100" r="67.5" fill="none" stroke="#d9a32e" stroke-width="0.8" opacity="0.45"/>
+
+  <!-- orbiting comet spark with tail -->
+  <g opacity="0.9">
+    <circle cx="100" cy="11" r="1.7" fill="#fffbe6"/>
+    <circle cx="87.6" cy="11.9" r="1" fill="#ffd970" opacity="0.6"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="9s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- top crown ornament (bezel-set) -->
+  <g transform="translate(100 11)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.15;1" dur="3s" begin="0s" repeatCount="indefinite"/>
+      <circle cx="-8.8" cy="0" r="0.9" fill="#ffd970"/>
+      <circle cx="8.8" cy="0" r="0.9" fill="#ffd970"/>
+      <circle r="7.2" fill="url(#bezelGrad)" stroke="#6b4d05" stroke-width="1"/>
+      <path d="M0 -4.8 L4.2 0 L0 4.8 L-4.2 0 Z" fill="url(#studGrad)" stroke="#6b4d05" stroke-width="0.7"/>
+      <path d="M0 -4.8 L4.2 0 L0 0 Z" fill="#ffffff" opacity="0.4"/>
+      <circle cx="-1.2" cy="-1.5" r="0.7" fill="#ffffff" opacity="0.9"/>
+    </g>
+  </g>
+  <!-- left / right ornaments -->
+  <g transform="translate(11 100)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.15;1" dur="3s" begin="1s" repeatCount="indefinite"/>
+      <circle r="5.8" fill="url(#bezelGrad)" stroke="#6b4d05" stroke-width="1"/>
+      <path d="M0 -3.9 L3.4 0 L0 3.9 L-3.4 0 Z" fill="url(#studGrad)" stroke="#6b4d05" stroke-width="0.7"/>
+      <path d="M0 -3.9 L3.4 0 L0 0 Z" fill="#ffffff" opacity="0.4"/>
+      <circle cx="-1" cy="-1.2" r="0.6" fill="#ffffff" opacity="0.9"/>
+    </g>
+  </g>
+  <g transform="translate(189 100)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.15;1" dur="3s" begin="2s" repeatCount="indefinite"/>
+      <circle r="5.8" fill="url(#bezelGrad)" stroke="#6b4d05" stroke-width="1"/>
+      <path d="M0 -3.9 L3.4 0 L0 3.9 L-3.4 0 Z" fill="url(#studGrad)" stroke="#6b4d05" stroke-width="0.7"/>
+      <path d="M0 -3.9 L3.4 0 L0 0 Z" fill="#ffffff" opacity="0.4"/>
+      <circle cx="-1" cy="-1.2" r="0.6" fill="#ffffff" opacity="0.9"/>
+    </g>
+  </g>
+
+  <!-- bezel-set amber hex gems at diagonals -->
+  <g transform="translate(162.9 37.1)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="2.6s" begin="0s" repeatCount="indefinite"/>
+      <circle r="6.4" fill="url(#bezelGrad)" stroke="#6b4d05" stroke-width="1"/>
+      <path d="M0 -5 L4.33 -2.5 L4.33 2.5 L0 5 L-4.33 2.5 L-4.33 -2.5 Z" fill="url(#amberGem)" stroke="#7a5208" stroke-width="0.8"/>
+      <path d="M0 -5 L4.33 -2.5 L0 0 Z" fill="#ffffff" opacity="0.35"/>
+      <path d="M0 -5 L-4.33 -2.5 L0 0 Z" fill="#ffffff" opacity="0.15"/>
+      <path d="M0 5 L4.33 2.5 L0 0 Z" fill="#6b4d05" opacity="0.2"/>
+      <circle cx="-1.3" cy="-1.6" r="0.7" fill="#ffffff" opacity="0.85"/>
+    </g>
+  </g>
+  <g transform="translate(37.1 37.1)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="2.6s" begin="0.65s" repeatCount="indefinite"/>
+      <circle r="6.4" fill="url(#bezelGrad)" stroke="#6b4d05" stroke-width="1"/>
+      <path d="M0 -5 L4.33 -2.5 L4.33 2.5 L0 5 L-4.33 2.5 L-4.33 -2.5 Z" fill="url(#amberGem)" stroke="#7a5208" stroke-width="0.8"/>
+      <path d="M0 -5 L4.33 -2.5 L0 0 Z" fill="#ffffff" opacity="0.35"/>
+      <path d="M0 -5 L-4.33 -2.5 L0 0 Z" fill="#ffffff" opacity="0.15"/>
+      <path d="M0 5 L4.33 2.5 L0 0 Z" fill="#6b4d05" opacity="0.2"/>
+      <circle cx="-1.3" cy="-1.6" r="0.7" fill="#ffffff" opacity="0.85"/>
+    </g>
+  </g>
+  <g transform="translate(37.1 162.9)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="2.6s" begin="1.3s" repeatCount="indefinite"/>
+      <circle r="6.4" fill="url(#bezelGrad)" stroke="#6b4d05" stroke-width="1"/>
+      <path d="M0 -5 L4.33 -2.5 L4.33 2.5 L0 5 L-4.33 2.5 L-4.33 -2.5 Z" fill="url(#amberGem)" stroke="#7a5208" stroke-width="0.8"/>
+      <path d="M0 -5 L4.33 -2.5 L0 0 Z" fill="#ffffff" opacity="0.35"/>
+      <path d="M0 -5 L-4.33 -2.5 L0 0 Z" fill="#ffffff" opacity="0.15"/>
+      <path d="M0 5 L4.33 2.5 L0 0 Z" fill="#6b4d05" opacity="0.2"/>
+      <circle cx="-1.3" cy="-1.6" r="0.7" fill="#ffffff" opacity="0.85"/>
+    </g>
+  </g>
+  <g transform="translate(162.9 162.9)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="2.6s" begin="1.95s" repeatCount="indefinite"/>
+      <circle r="6.4" fill="url(#bezelGrad)" stroke="#6b4d05" stroke-width="1"/>
+      <path d="M0 -5 L4.33 -2.5 L4.33 2.5 L0 5 L-4.33 2.5 L-4.33 -2.5 Z" fill="url(#amberGem)" stroke="#7a5208" stroke-width="0.8"/>
+      <path d="M0 -5 L4.33 -2.5 L0 0 Z" fill="#ffffff" opacity="0.35"/>
+      <path d="M0 -5 L-4.33 -2.5 L0 0 Z" fill="#ffffff" opacity="0.15"/>
+      <path d="M0 5 L4.33 2.5 L0 0 Z" fill="#6b4d05" opacity="0.2"/>
+      <circle cx="-1.3" cy="-1.6" r="0.7" fill="#ffffff" opacity="0.85"/>
+    </g>
+  </g>
+
+  <!-- 8 twinkling sparkles -->
+  <g fill="#fff8e0">
+    <use xlink:href="#spark" transform="translate(42 44) scale(1.1)" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2.2s" begin="0s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#spark" transform="translate(158 44) scale(0.95)" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2.2s" begin="0.5s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#spark" transform="translate(26 126) scale(0.85)" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2.2s" begin="1s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#spark" transform="translate(174 126) scale(1.05)" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2.2s" begin="1.5s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#spark" transform="translate(66 22) scale(0.8)" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2.2s" begin="0.3s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#spark" transform="translate(134 22) scale(0.9)" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2.2s" begin="1.8s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#spark" transform="translate(24 98) scale(0.75)" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2.2s" begin="0.8s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#spark" transform="translate(176 98) scale(0.8)" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2.2s" begin="1.3s" repeatCount="indefinite"/>
+    </use>
+  </g>
+
+  <!-- VIP 3 badge -->
+  <g>
+    <ellipse cx="100" cy="180.5" rx="31" ry="15" fill="url(#badgeGrad)" stroke="#6b4d05" stroke-width="1.8"/>
+    <ellipse cx="100" cy="180.5" rx="33" ry="16.8" fill="none" stroke="#ffe9a8" stroke-width="0.8" opacity="0.4"/>
+    <ellipse cx="100" cy="180.5" rx="29.2" ry="13.4" fill="none" stroke="#7a5806" stroke-width="0.7" opacity="0.5"/>
+    <ellipse cx="100" cy="180.5" rx="26.8" ry="12" fill="none" stroke="#fff0c2" stroke-width="0.9" opacity="0.55"/>
+
+    <!-- crown with jewel -->
+    <path d="M 91.5 168 L 93.3 158.8 L 97.5 162.8 L 100 157.4 L 102.5 162.8 L 106.7 158.8 L 108.5 168 Z"
+          fill="#ffe9a8" stroke="#6b4d05" stroke-width="0.9" stroke-linejoin="round">
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="2.6s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="100" cy="163.2" r="1.1" fill="url(#amberGem)" stroke="#7a5208" stroke-width="0.5"/>
+    <g fill="#fffbe6" stroke="#b8821a" stroke-width="0.5">
+      <circle cx="93.3" cy="157.9" r="1"/>
+      <circle cx="100" cy="156.4" r="1"/>
+      <circle cx="106.7" cy="157.9" r="1"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.9s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- twinkling rivets on inner border -->
+    <g fill="url(#studGrad)" stroke="#7a5806" stroke-width="0.6">
+      <path d="M77 177.7 L79.3 180.5 L77 183.3 L74.7 180.5 Z">
+        <animate attributeName="opacity" values="0.65;1;0.65" dur="1.8s" repeatCount="indefinite"/>
+      </path>
+      <path d="M123 177.7 L125.3 180.5 L123 183.3 L120.7 180.5 Z">
+        <animate attributeName="opacity" values="0.65;1;0.65" dur="1.8s" begin="0.9s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <circle cx="70.8" cy="180.5" r="1" fill="#ffe9a8" opacity="0.85"/>
+    <circle cx="129.2" cy="180.5" r="1" fill="#ffe9a8" opacity="0.85"/>
+
+    <!-- text (shadow + face) -->
+    <text x="100" y="186.8" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+          font-size="12" font-weight="800" letter-spacing="1" fill="#4a3503" opacity="0.55">VIP 3</text>
+    <text x="100" y="185.7" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+          font-size="12" font-weight="800" letter-spacing="1" fill="#fffbe6">VIP 3</text>
+  </g>
+</svg>

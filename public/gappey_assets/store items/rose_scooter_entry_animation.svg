@@ -1,0 +1,253 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="400" viewBox="0 0 800 400">
+  <title>Rose Scooter Entry</title>
+  <defs>
+    <linearGradient id="trailG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f06292" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#f06292"/>
+      <stop offset="0.8" stop-color="#ff8aaf"/>
+      <stop offset="1" stop-color="#ffd1e0"/>
+    </linearGradient>
+    <linearGradient id="bodyG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e91e63"/>
+      <stop offset="1" stop-color="#880e4f"/>
+    </linearGradient>
+    <linearGradient id="ribbonG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a1038"/>
+      <stop offset="1" stop-color="#38071a"/>
+    </linearGradient>
+    <linearGradient id="nameG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff5f8"/>
+      <stop offset="1" stop-color="#ffc1d9"/>
+    </linearGradient>
+    <path id="hrt" d="M0 4.5 C -4 1 -8 -2 -8 -6 C -8 -9.5 -4.8 -11 -2.2 -9.6 C -1 -9 -0.4 -8 0 -7 C 0.4 -8 1 -9 2.2 -9.6 C 4.8 -11 8 -9.5 8 -6 C 8 -2 4 1 0 4.5 Z"/>
+    <path id="petalFly" d="M0 -5 C 4.5 -3 5.5 2 3 5.5 C 1 7.5 -2.5 6 -3.5 3 C -4.3 0 -2.5 -3.5 0 -5 Z"/>
+  </defs>
+
+  <!-- ground -->
+  <line x1="0" y1="330" x2="800" y2="330" stroke="#4a1030" stroke-width="3"/>
+  <ellipse cx="330" cy="331" rx="210" ry="10" fill="#ff4081" opacity="0.14">
+    <animate attributeName="opacity" values="0.08;0.2;0.08" dur="2.4s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- heart burst at the stop point -->
+  <g transform="translate(330 245)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="0.2;0.2;1.2;1.2" keyTimes="0;0.3;0.47;1" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3;0.34;0.42;0.5;1" dur="6s" repeatCount="indefinite"/>
+      <use xlink:href="#hrt" fill="#ff5c8d" transform="translate(0 -36)"/>
+      <use xlink:href="#hrt" fill="#f8a5c8" transform="rotate(45) translate(0 -36)"/>
+      <use xlink:href="#hrt" fill="#ffffff" transform="rotate(90) translate(0 -36)"/>
+      <use xlink:href="#hrt" fill="#ff8aaf" transform="rotate(135) translate(0 -36)"/>
+      <use xlink:href="#hrt" fill="#ff5c8d" transform="rotate(180) translate(0 -36)"/>
+      <use xlink:href="#hrt" fill="#f8a5c8" transform="rotate(225) translate(0 -36)"/>
+      <use xlink:href="#hrt" fill="#ffffff" transform="rotate(270) translate(0 -36)"/>
+      <use xlink:href="#hrt" fill="#ff8aaf" transform="rotate(315) translate(0 -36)"/>
+    </g>
+    <use xlink:href="#hrt" fill="#e91e63">
+      <animateTransform attributeName="transform" type="scale" values="0.2;0.2;2.4;2.4" keyTimes="0;0.3;0.44;1" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.3;0.33;0.44;1" dur="6s" repeatCount="indefinite"/>
+    </use>
+    <circle r="12" fill="none" stroke="#ff8aaf" stroke-width="3">
+      <animate attributeName="r" values="12;12;80;80" keyTimes="0;0.3;0.5;1" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;0.7;0;0" keyTimes="0;0.3;0.34;0.46;1" dur="6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ambient falling petals -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.1;0.9;1" dur="7s" begin="-1s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="180 -20;150 420" dur="7s" begin="-1s" repeatCount="indefinite"/>
+    <use xlink:href="#petalFly" fill="#f8a5c8" transform="scale(1.2)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.1;0.9;1" dur="7s" begin="-2.5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="420 -20;390 420" dur="7s" begin="-2.5s" repeatCount="indefinite"/>
+    <use xlink:href="#petalFly" fill="#ff8aaf" transform="scale(0.9)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="2.6s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.1;0.9;1" dur="7s" begin="-4s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="560 -20;530 420" dur="7s" begin="-4s" repeatCount="indefinite"/>
+    <use xlink:href="#petalFly" fill="#f48fb1" transform="scale(1.1)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3.4s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.1;0.9;1" dur="7s" begin="-5.5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="300 -20;330 420" dur="7s" begin="-5.5s" repeatCount="indefinite"/>
+    <use xlink:href="#petalFly" fill="#ffd1e0" transform="scale(0.8)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="2.9s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+
+  <!-- speed lines (only while moving) -->
+  <g stroke="#f8a5c8" stroke-width="3" stroke-linecap="round">
+    <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.31;0.6" calcMode="discrete" dur="6s" repeatCount="indefinite"/>
+    <line x1="70" y1="160" x2="170" y2="160">
+      <animateTransform attributeName="transform" type="translate" values="60 0;-320 0" dur="0.6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="120" y1="205" x2="230" y2="205">
+      <animateTransform attributeName="transform" type="translate" values="40 0;-300 0" dur="0.75s" begin="-0.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="60" y1="250" x2="150" y2="250">
+      <animateTransform attributeName="transform" type="translate" values="50 0;-310 0" dur="0.65s" begin="-0.4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="140" y1="292" x2="260" y2="292">
+      <animateTransform attributeName="transform" type="translate" values="30 0;-290 0" dur="0.7s" begin="-0.1s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- ============ SCOOTER + RIDER + BALLOONS ============ -->
+  <g transform="translate(0 330)">
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="-270 0;270 0;270 0;970 0" keyTimes="0;0.3;0.55;1"
+        calcMode="spline" keySplines="0 0 0.58 1;0 0 1 1;0.42 0 1 1"
+        dur="6s" repeatCount="indefinite"/>
+
+      <ellipse cx="72" cy="6" rx="118" ry="10" fill="#000000" opacity="0.35"/>
+
+      <!-- petal trail -->
+      <path d="M-20 -50 C -70 -60 -115 -42 -165 -52 C -215 -60 -255 -44 -300 -54"
+            fill="none" stroke="url(#trailG)" stroke-width="10" stroke-linecap="round"
+            stroke-dasharray="34 22" opacity="0.85">
+        <animate attributeName="stroke-dashoffset" from="0" to="-112" dur="0.55s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.85;0.55;0.85" dur="0.4s" repeatCount="indefinite"/>
+      </path>
+      <use xlink:href="#petalFly" fill="#f8a5c8" transform="translate(-95 -50) scale(0.9)">
+        <animate attributeName="opacity" values="0.9;0.3;0.9" dur="0.3s" repeatCount="indefinite"/>
+      </use>
+      <use xlink:href="#petalFly" fill="#ff8aaf" transform="translate(-170 -52) scale(1)">
+        <animate attributeName="opacity" values="0.3;0.9;0.3" dur="0.34s" begin="-0.1s" repeatCount="indefinite"/>
+      </use>
+      <use xlink:href="#petalFly" fill="#f8a5c8" transform="translate(-245 -53) scale(0.85)">
+        <animate attributeName="opacity" values="0.85;0.25;0.85" dur="0.28s" begin="-0.2s" repeatCount="indefinite"/>
+      </use>
+
+      <!-- heart balloons (behind body, strings anchored at rear rack) -->
+      <g transform="translate(-30 -70)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" values="-4 0 0;4 0 0;-4 0 0" dur="3.2s" repeatCount="indefinite"/>
+          <path d="M0 0 Q -30 -66 -58 -122" fill="none" stroke="#f5d0dc" stroke-width="1.6"/>
+          <ellipse cx="-58" cy="-138" rx="13" ry="16" fill="#ff5252" stroke="#c62828" stroke-width="1"/>
+          <polygon points="-61,-120 -55,-120 -58,-124" fill="#c62828"/>
+          <ellipse cx="-63" cy="-143" rx="3.5" ry="6" fill="#ffffff" opacity="0.45"/>
+        </g>
+        <g>
+          <animateTransform attributeName="transform" type="rotate" values="3.5 0 0;-3.5 0 0;3.5 0 0" dur="3.8s" begin="-1.2s" repeatCount="indefinite"/>
+          <path d="M0 0 Q -14 -76 -24 -142" fill="none" stroke="#f5d0dc" stroke-width="1.6"/>
+          <ellipse cx="-24" cy="-158" rx="13.5" ry="16.5" fill="#f8a5c8" stroke="#e48ab1" stroke-width="1"/>
+          <polygon points="-27,-140 -21,-140 -24,-144" fill="#e48ab1"/>
+          <ellipse cx="-29" cy="-163" rx="3.5" ry="6" fill="#ffffff" opacity="0.5"/>
+        </g>
+        <g>
+          <animateTransform attributeName="transform" type="rotate" values="-5 0 0;5 0 0;-5 0 0" dur="2.7s" begin="-0.6s" repeatCount="indefinite"/>
+          <path d="M0 0 Q -38 -52 -70 -98.5" fill="none" stroke="#f5d0dc" stroke-width="1.6"/>
+          <ellipse cx="-70" cy="-112" rx="11" ry="13.5" fill="#ffd180" stroke="#e8a13a" stroke-width="1"/>
+          <polygon points="-73,-96.5 -67,-96.5 -70,-100" fill="#e8a13a"/>
+          <ellipse cx="-74" cy="-116" rx="3" ry="5" fill="#ffffff" opacity="0.5"/>
+        </g>
+      </g>
+
+      <!-- far leg -->
+      <path d="M-18 -70 L16 -52 L40 -32" fill="none" stroke="#24081c" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M40 -32 L52 -32" stroke="#14060e" stroke-width="6" stroke-linecap="round"/>
+
+      <!-- rear wheel -->
+      <circle cx="-6" cy="-27" r="25" fill="#1b1b1f" stroke="#2e2e34" stroke-width="6"/>
+      <circle cx="-6" cy="-27" r="11" fill="none" stroke="#ff8aaf" stroke-width="2.5"/>
+      <g stroke="#8a8a92" stroke-width="2.2">
+        <animateTransform attributeName="transform" type="rotate" from="0 -6 -27" to="360 -6 -27" dur="0.45s" repeatCount="indefinite"/>
+        <line x1="-17" y1="-27" x2="5" y2="-27"/>
+        <line x1="-6" y1="-38" x2="-6" y2="-16"/>
+        <line x1="-14" y1="-35" x2="2" y2="-19"/>
+        <line x1="-14" y1="-19" x2="2" y2="-35"/>
+      </g>
+      <circle cx="-6" cy="-27" r="3.5" fill="#c9c9cf"/>
+
+      <!-- front wheel -->
+      <circle cx="146" cy="-27" r="25" fill="#1b1b1f" stroke="#2e2e34" stroke-width="6"/>
+      <circle cx="146" cy="-27" r="11" fill="none" stroke="#ff8aaf" stroke-width="2.5"/>
+      <g stroke="#8a8a92" stroke-width="2.2">
+        <animateTransform attributeName="transform" type="rotate" from="0 146 -27" to="360 146 -27" dur="0.45s" repeatCount="indefinite"/>
+        <line x1="135" y1="-27" x2="157" y2="-27"/>
+        <line x1="146" y1="-38" x2="146" y2="-16"/>
+        <line x1="138" y1="-35" x2="154" y2="-19"/>
+        <line x1="138" y1="-19" x2="154" y2="-35"/>
+      </g>
+      <circle cx="146" cy="-27" r="3.5" fill="#c9c9cf"/>
+
+      <!-- front fender -->
+      <path d="M120 -26 Q146 -84 172 -26 Q146 -70 120 -26 Z" fill="#880e4f"/>
+
+      <!-- body: cowl, floorboard, front shield -->
+      <path d="M18 -62 C -2 -86 -36 -82 -44 -60 C -50 -42 -40 -30 -20 -29 L24 -31 C 34 -46 32 -56 18 -62 Z"
+            fill="url(#bodyG)" stroke="#6a0f3a" stroke-width="2"/>
+      <path d="M22 -31 L98 -31 L94 -41 L30 -41 Z" fill="#7a1038" stroke="#4a0a28" stroke-width="1.5"/>
+      <path d="M92 -41 Q116 -48 118 -80 L104 -86 Q100 -58 84 -46 Z" fill="url(#bodyG)" stroke="#6a0f3a" stroke-width="2"/>
+
+      <!-- headlight -->
+      <path d="M122 -77 L150 -84 L150 -64 Z" fill="#fff3d6" opacity="0.1"/>
+      <circle cx="117" cy="-74" r="5.5" fill="#fff3d6" stroke="#d9a441" stroke-width="2"/>
+
+      <!-- handlebar + mirror + rack -->
+      <path d="M112 -84 L134 -92" stroke="#3a2430" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="136" cy="-92" r="3.5" fill="#1a0a12"/>
+      <path d="M134 -92 L140 -104" stroke="#3a2430" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="141" cy="-106" r="3" fill="#3a2430"/>
+      <path d="M-44 -68 L-16 -68" stroke="#5a3540" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- seat -->
+      <path d="M-42 -64 Q-18 -80 10 -70 Q-14 -60 -40 -60 Z" fill="#4a1530" stroke="#2a0a1a" stroke-width="1.5"/>
+
+      <!-- rider torso + fluttering scarf -->
+      <path d="M-14 -72 L-6 -114" stroke="#6d1b3d" stroke-width="13" stroke-linecap="round"/>
+      <path d="M-2 -116 Q-30 -128 -56 -118 L-52 -110 Q-30 -116 -4 -108 Z" fill="#f8a5c8" opacity="0.95">
+        <animateTransform attributeName="transform" type="rotate" values="0 -2 -112;3.5 -2 -112;0 -2 -112;-3 -2 -112;0 -2 -112" dur="2.2s" repeatCount="indefinite"/>
+      </path>
+
+      <!-- rear arm holding a rose -->
+      <path d="M-6 -108 Q10 -126 24 -136" fill="none" stroke="#6d1b3d" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="26" cy="-137" r="3.5" fill="#f2b48c"/>
+      <path d="M26 -137 L30 -141" stroke="#2e7d32" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="31" cy="-144" r="6.5" fill="#e91e63"/>
+      <circle cx="31" cy="-144" r="3" fill="#880e4f"/>
+      <circle cx="31" cy="-144" r="1.3" fill="#ff8aaf"/>
+
+      <!-- front arm to handlebar -->
+      <path d="M-4 -110 Q60 -98 132 -92" fill="none" stroke="#6d1b3d" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="135" cy="-92" r="3.5" fill="#f2b48c"/>
+
+      <!-- head + hair + bun -->
+      <circle cx="0" cy="-127" r="12" fill="#f2b48c" stroke="#d99a6c" stroke-width="1"/>
+      <path d="M-12 -130 Q0 -144 12 -131 Q10 -138 0 -140 Q-10 -138 -12 -130 Z" fill="#2d1a12"/>
+      <circle cx="11" cy="-138" r="4.5" fill="#2d1a12"/>
+
+      <!-- near leg -->
+      <path d="M-12 -70 L28 -52 L52 -33" fill="none" stroke="#6d1b3d" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M52 -33 L64 -33" stroke="#1a0a12" stroke-width="6" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- ============ BANNER ============ -->
+  <g>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.31;0.37;0.51;0.6;1" dur="6s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0 -16;0 -16;0 0;0 0;0 -10;0 -10" keyTimes="0;0.31;0.37;0.51;0.6;1" dur="6s" repeatCount="indefinite"/>
+    <path d="M252 46 L226 74 L252 102 L548 102 L574 74 L548 46 Z" fill="url(#ribbonG)" stroke="#ff8aaf" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M264 54 H536" stroke="#ff8aaf" stroke-width="1.5" opacity="0.35"/>
+    <path d="M264 94 H536" stroke="#ff8aaf" stroke-width="1.5" opacity="0.35"/>
+    <use xlink:href="#hrt" transform="translate(276 72) scale(1.1)" fill="#ff8aaf">
+      <animate attributeName="opacity" values="1;0.4;1" dur="0.5s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#hrt" transform="translate(524 72) scale(1.1)" fill="#ff8aaf">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="0.45s" repeatCount="indefinite"/>
+    </use>
+    <text id="entryName" x="400" y="84" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',sans-serif"
+          font-size="30" font-weight="bold" letter-spacing="2" fill="url(#nameG)">WELCOME</text>
+    <text x="400" y="126" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',sans-serif"
+          font-size="16" fill="#ffb3cd">riding in with Rose Balloons</text>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" role="img" aria-labelledby="e60gt" style="overflow:visible">
+  <title id="e60gt">Gifter Lv.60 emoji — Celestial Gift</title>
+  <defs>
+    <linearGradient id="g60bx" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE9A8"/><stop offset=".55" stop-color="#FFD34D"/><stop offset="1" stop-color="#D08F1F"/></linearGradient>
+    <linearGradient id="g60ld" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6D8"/><stop offset="1" stop-color="#FFC93D"/></linearGradient>
+    <radialGradient id="g60h1" cx=".5" cy=".5" r=".5"><stop offset=".55" stop-color="#60A5FA" stop-opacity="0"/><stop offset=".8" stop-color="#60A5FA" stop-opacity=".32"/><stop offset="1" stop-color="#60A5FA" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g60h2" cx=".5" cy=".5" r=".5"><stop offset=".6" stop-color="#FDE68A" stop-opacity="0"/><stop offset=".82" stop-color="#FDE68A" stop-opacity=".25"/><stop offset="1" stop-color="#FDE68A" stop-opacity="0"/></radialGradient>
+    <path id="g60tw" d="M0 -5 Q1 -1 5 0 Q1 1 0 5 Q-1 1 -5 0 Q-1 -1 0 -5 Z"/>
+  </defs>
+  <style><![CDATA[
+.body{transform-box:fill-box;transform-origin:50% 92%;animation:bnc 2.6s ease-in-out infinite}.br{transform-box:fill-box;transform-origin:50% 50%;animation:brt 3.2s ease-in-out infinite alternate}.crn{transform-box:fill-box;transform-origin:50% 100%;animation:pls 2.8s ease-in-out infinite alternate}.crst{transform-box:view-box;transform-origin:50px 28px;animation:spin 24s linear infinite}.tw{transform-box:fill-box;transform-origin:50% 50%;animation:twk 2.2s ease-in-out infinite}.t2{animation-delay:-.7s}.t3{animation-delay:-1.4s}.t4{animation-delay:-1.9s}.ring{transform-box:view-box;transform-origin:50px 50px;animation:spin 12s linear infinite}.orb{transform-box:view-box;transform-origin:50px 50px;animation:spin 8s linear infinite}.orb2{transform-box:view-box;transform-origin:50px 50px;animation:spinrev 11s linear infinite}.pearl{transform-box:view-box;transform-origin:50px 50px;animation:spinrev 22s linear infinite}.bcr{transform-box:fill-box;transform-origin:50% 100%;animation:pls 2.8s ease-in-out infinite alternate}.bdorb{transform-box:view-box;transform-origin:50px 88px;animation:spin 9s linear infinite}.bsh{animation:bsh 3s ease-in-out infinite alternate}@keyframes bnc{0%,100%{transform:translateY(0)}50%{transform:translateY(-4.5px)}}@keyframes brt{from{transform:scale(.96)}to{transform:scale(1.05)}}@keyframes pls{from{transform:scale(1)}to{transform:scale(1.12)}}@keyframes twk{0%,100%{opacity:.15;transform:scale(.5)}50%{opacity:1;transform:scale(1)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes spinrev{to{transform:rotate(-360deg)}}@keyframes bsh{from{opacity:.15}to{opacity:.5}}@media (prefers-reduced-motion:reduce){.body,.br,.crn,.crst,.tw,.ring,.orb,.orb2,.pearl,.bcr,.bdorb,.bsh{animation:none}}
+  ]]></style>
+  <circle class="br" cx="50" cy="50" r="47" fill="url(#g60h1)"/>
+  <circle class="br" style="animation-delay:-1.6s" cx="50" cy="50" r="47" fill="url(#g60h2)"/>
+  <g class="pearl">
+    <circle cx="50" cy="4" r="2.2" fill="#FFF"/><circle cx="89.8" cy="27" r="2.2" fill="#FFF7D6"/><circle cx="89.8" cy="73" r="2.2" fill="#FFF"/><circle cx="50" cy="96" r="2.2" fill="#FFF7D6"/><circle cx="10.2" cy="73" r="2.2" fill="#FFF"/><circle cx="10.2" cy="27" r="2.2" fill="#FFF7D6"/>
+  </g>
+  <circle class="ring" cx="50" cy="50" r="41" fill="none" stroke="#FFD34D" stroke-width="1.5" stroke-dasharray="3 6" opacity=".75"/>
+  <g class="body">
+    <g class="crn"><g class="crst">
+      <path d="M50 19 L52.4 25.6 L59 28 L52.4 30.4 L50 37 L47.6 30.4 L41 28 L47.6 25.6 Z" fill="url(#g60ld)" stroke="#B45309" stroke-width=".9"/>
+      <path d="M50 19 L52.4 25.6 L59 28 L52.4 30.4 L50 37 L47.6 30.4 L41 28 L47.6 25.6 Z" transform="rotate(45 50 28)" fill="url(#g60ld)" stroke="#B45309" stroke-width=".7" opacity=".9"/>
+      <circle cx="50" cy="28" r="2" fill="#FFF"/>
+    </g></g>
+    <rect x="27" y="47" width="46" height="34" rx="7" fill="url(#g60bx)" stroke="#B45309" stroke-width="1.5"/>
+    <rect x="46" y="47" width="8" height="34" fill="#FFF7D6" stroke="#E8B923" stroke-width=".5"/>
+    <rect x="22" y="37" width="56" height="14" rx="6" fill="url(#g60ld)" stroke="#B45309" stroke-width="1.5"/>
+    <rect x="46" y="37" width="8" height="14" fill="#FFF7D6" stroke="#E8B923" stroke-width=".5"/>
+    <circle cx="40" cy="62" r="2.9" fill="#7C4A03"/><circle cx="41" cy="61" r="1.1" fill="#FFF"/>
+    <circle cx="60" cy="62" r="2.9" fill="#7C4A03"/><circle cx="61" cy="61" r="1.1" fill="#FFF"/>
+    <ellipse cx="34.5" cy="67" rx="3.4" ry="2" fill="#FFF" opacity=".55"/>
+    <ellipse cx="65.5" cy="67" rx="3.4" ry="2" fill="#FFF" opacity=".55"/>
+    <path d="M44.5 66 Q50 72 55.5 66 Z" fill="#7C4A03"/>
+    <ellipse cx="50" cy="69.4" rx="2.7" ry="1.6" fill="#F9A8D4"/>
+  </g>
+  <g class="orb"><use href="#g60tw" x="50" y="3" fill="#FFF7D6"/></g>
+  <g class="orb2"><use href="#g60tw" x="50" y="97" fill="#FFF"/></g>
+  <use href="#g60tw" x="11" y="20" class="tw" fill="#FDE68A"/>
+  <use href="#g60tw" x="89" y="16" class="tw t2" fill="#FDE68A"/>
+  <use href="#g60tw" x="9" y="76" class="tw t3" fill="#BFDBFE"/>
+  <use href="#g60tw" x="91" y="72" class="tw t4" fill="#BFDBFE"/>
+  <g class="badge">
+    <g class="bdorb"><path transform="translate(50 69)" d="M0 -4 Q.8 -.8 4 0 Q.8 .8 0 4 Q-.8 .8 -4 0 Q-.8 -.8 0 -4 Z" fill="#FFF7D6"/></g>
+    <g class="bcr">
+      <path d="M50 70.5 L51.9 74.4 L56 76.3 L51.9 78.2 L50 82 L48.1 78.2 L44 76.3 L48.1 74.4 Z" fill="url(#g60ld)" stroke="#FFF" stroke-width=".8"/>
+      <path d="M50 70.5 L51.9 74.4 L56 76.3 L51.9 78.2 L50 82 L48.1 78.2 L44 76.3 L48.1 74.4 Z" transform="rotate(45 50 76.3)" fill="url(#g60ld)" stroke="#FFF" stroke-width=".6" opacity=".9"/>
+      <circle cx="50" cy="76.3" r="1.5" fill="#FFF"/>
+    </g>
+    <rect x="31" y="78" width="38" height="20" rx="10" fill="none" stroke="#FFD34D" stroke-width="1" stroke-dasharray="2.5 3.5" opacity=".55"/>
+    <rect x="33" y="80" width="34" height="16" rx="8" fill="#172554" stroke="#FFD34D" stroke-width="1.8"/>
+    <rect x="35.2" y="82" width="29.6" height="11.6" rx="5.8" fill="none" stroke="#FFD34D" stroke-opacity=".35" stroke-width=".8"/>
+    <ellipse class="bsh" cx="50" cy="83.4" rx="11" ry="2.4" fill="#FFF"/>
+    <text x="50" y="91.8" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="800" letter-spacing=".5" fill="#FFD34D">60</text>
+  </g>
+</svg>

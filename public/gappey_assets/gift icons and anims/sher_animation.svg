@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 800" width="450" height="800">
+  <title>Singham Sher — full-screen gift animation</title>
+  <defs>
+    <radialGradient id="shAsky" cx="50%" cy="38%" r="90%">
+      <stop offset="0" stop-color="#241206"/><stop offset=".55" stop-color="#120903"/><stop offset="1" stop-color="#070302"/>
+    </radialGradient>
+    <radialGradient id="shAmane" cx=".4" cy=".35" r=".95">
+      <stop offset="0" stop-color="#F2A855"/><stop offset=".55" stop-color="#C9661F"/><stop offset="1" stop-color="#7E3410"/>
+    </radialGradient>
+    <radialGradient id="shAface" cx=".4" cy=".35" r=".95">
+      <stop offset="0" stop-color="#F6CE8A"/><stop offset="1" stop-color="#CE8434"/>
+    </radialGradient>
+    <linearGradient id="shAword" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6D27A"/><stop offset=".55" stop-color="#E4A93C"/><stop offset="1" stop-color="#B8791F"/>
+    </linearGradient>
+    <path id="shAspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+    <style>
+      .sh-shake{animation:shShake 8s linear infinite}
+      .sh-lion{animation:shLion 8s linear infinite}
+      .sh-manewrap{transform-box:fill-box;transform-origin:center;animation:shMane 8s linear infinite}
+      .sh-mc{animation:shMc 8s linear infinite}
+      .sh-mo{transform-box:fill-box;transform-origin:50% 0%;animation:shMo 8s linear infinite}
+      .sh-r1,.sh-r2,.sh-r3{fill:none;transform-box:fill-box;transform-origin:center}
+      .sh-r1{stroke:#F6D27A;stroke-width:6;animation:shR1 8s linear infinite}
+      .sh-r2{stroke:#F3EADA;stroke-width:2.5;animation:shR2 8s linear infinite}
+      .sh-r3{stroke:#E0603C;stroke-width:3;animation:shR3 8s linear infinite}
+      .sh-bl{transform-box:fill-box;transform-origin:50% 100%;animation:shBl 8s linear infinite}
+      .sh-roar{font:900 100px 'Arial Black','Segoe UI',Arial,sans-serif;letter-spacing:4px;fill:url(#shAword);stroke:#140A04;stroke-width:10;paint-order:stroke;text-anchor:middle;transform-box:fill-box;transform-origin:center;animation:shRoar 8s linear infinite}
+      .sh-sub{font:700 16px 'Segoe UI',Arial,sans-serif;letter-spacing:10px;fill:#D9A441;text-anchor:middle;animation:shSub 8s linear infinite}
+      .sh-twk{transform-box:fill-box;transform-origin:center;animation:shTw 2.8s ease-in-out infinite}
+      @keyframes shShake{0%,44%{transform:translate(0,0)}46%{transform:translate(-7px,3px)}48%{transform:translate(6px,-4px)}50%{transform:translate(-5px,-2px)}52%{transform:translate(4px,3px)}54%,100%{transform:translate(0,0)}}
+      @keyframes shLion{0%{opacity:0;transform:translate(225px,350px) scale(.35)}9%{opacity:1;transform:translate(225px,350px) scale(1.07)}12%,86%{opacity:1;transform:translate(225px,350px) scale(1)}93%{opacity:0;transform:translate(225px,350px) scale(.92)}100%{opacity:0;transform:translate(225px,350px) scale(.35)}}
+      @keyframes shMane{0%,45%{transform:scale(1)}47%{transform:scale(1.05)}50%{transform:scale(1.01)}53%{transform:scale(1.045)}56%,100%{transform:scale(1)}}
+      @keyframes shMc{0%,45%{opacity:1}46%,57%{opacity:0}58%,100%{opacity:1}}
+      @keyframes shMo{0%,45%{opacity:0;transform:scaleY(.15)}47.5%,55%{opacity:1;transform:scaleY(1)}57%,100%{opacity:0;transform:scaleY(.15)}}
+      @keyframes shR1{0%{opacity:0;transform:scale(.1)}45%{opacity:.95;transform:scale(.12)}60%,100%{opacity:0;transform:scale(3.2)}}
+      @keyframes shR2{0%{opacity:0;transform:scale(.1)}48%{opacity:.85;transform:scale(.12)}64%,100%{opacity:0;transform:scale(3.9)}}
+      @keyframes shR3{0%{opacity:0;transform:scale(.1)}51%{opacity:.8;transform:scale(.12)}68%,100%{opacity:0;transform:scale(4.5)}}
+      @keyframes shBl{0%,45%{opacity:0;transform:scale(.5)}50%{opacity:.9;transform:scale(1.05)}60%,100%{opacity:0;transform:scale(1.5)}}
+      @keyframes shRoar{0%,46%{opacity:0;transform:scale(.4) rotate(-6deg)}51%{opacity:1;transform:scale(1.12) rotate(1deg)}54%{transform:scale(.98) rotate(0deg)}56%,86%{opacity:1;transform:scale(1) rotate(0deg)}93%,100%{opacity:0;transform:scale(1) rotate(0deg)}}
+      @keyframes shSub{0%,49%{opacity:0}56%{opacity:.9}86%{opacity:.9}93%,100%{opacity:0}}
+      @keyframes shTw{0%,100%{opacity:.06;transform:scale(.6)}50%{opacity:.85;transform:scale(1)}}
+    </style>
+  </defs>
+  <rect width="450" height="800" fill="url(#shAsky)"/>
+  <polygon points="330,-20 396,-20 190,520 70,520" fill="#F3EADA" opacity=".04"/>
+  <polygon points="120,-20 54,-20 260,520 380,520" fill="#F3EADA" opacity=".03"/>
+  <ellipse cx="225" cy="596" rx="240" ry="30" fill="#000" opacity=".3"/>
+  <g class="sh-shake">
+    <g class="sh-lion">
+      <g class="sh-manewrap">
+        <g transform="scale(2.05)">
+          <path d="M86 0 L58 15.5 L74.5 43 L42.4 42.4 L43 74.5 L15.5 58 L0 86 L-15.5 58 L-43 74.5 L-42.4 42.4 L-74.5 43 L-58 15.5 L-86 0 L-58 -15.5 L-74.5 -43 L-42.4 -42.4 L-43 -74.5 L-15.5 -58 L0 -86 L15.5 -58 L43 -74.5 L42.4 -42.4 L74.5 -43 L58 -15.5 Z" fill="url(#shAmane)" stroke="#5E2608" stroke-width="3" stroke-linejoin="round"/>
+          <circle r="50" fill="url(#shAface)" stroke="#5E2608" stroke-width="2"/>
+          <g stroke="#2A1406" stroke-width="4.5" stroke-linecap="round">
+            <path d="M-33 -20 L-9 -12"/><path d="M33 -20 L9 -12"/>
+          </g>
+          <circle cx="-19" cy="-7" r="5" fill="#2A1406"/>
+          <circle cx="19" cy="-7" r="5" fill="#2A1406"/>
+          <g class="sh-mc">
+            <ellipse cy="19" rx="21" ry="15" fill="#F8E7C0"/>
+            <path d="M-8 11 L8 11 L0 21 Z" fill="#2A1406"/>
+            <path d="M0 21 L0 26 M0 26 Q-7 32 -13 27 M0 26 Q7 32 13 27" fill="none" stroke="#2A1406" stroke-width="2.5" stroke-linecap="round"/>
+          </g>
+          <g class="sh-mo" transform="translate(0 20)">
+            <ellipse rx="15" ry="12" fill="#3A1206"/>
+            <ellipse cy="4" rx="7" ry="5" fill="#B3402A"/>
+            <path d="M-12 -9 L-8 -1 L-4 -9 Z" fill="#F6EFE2"/>
+            <path d="M4 -9 L8 -1 L12 -9 Z" fill="#F6EFE2"/>
+          </g>
+          <g fill="#5E2608" opacity=".55">
+            <circle cx="-25" cy="15" r="1.3"/><circle cx="-30" cy="20" r="1.3"/><circle cx="-23" cy="24" r="1.3"/>
+            <circle cx="25" cy="15" r="1.3"/><circle cx="30" cy="20" r="1.3"/><circle cx="23" cy="24" r="1.3"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <circle class="sh-r1" cx="225" cy="350" r="70"/>
+    <circle class="sh-r2" cx="225" cy="350" r="70"/>
+    <circle class="sh-r3" cx="225" cy="350" r="70"/>
+    <g transform="translate(225 350) rotate(0)"><line class="sh-bl" x1="0" y1="-120" x2="0" y2="-185" stroke="#F6D27A" stroke-width="6" stroke-linecap="round"/></g>
+    <g transform="translate(225 350) rotate(45)"><line class="sh-bl" x1="0" y1="-120" x2="0" y2="-185" stroke="#F6D27A" stroke-width="6" stroke-linecap="round" style="animation-delay:.03s"/></g>
+    <g transform="translate(225 350) rotate(90)"><line class="sh-bl" x1="0" y1="-120" x2="0" y2="-185" stroke="#F6D27A" stroke-width="6" stroke-linecap="round"/></g>
+    <g transform="translate(225 350) rotate(135)"><line class="sh-bl" x1="0" y1="-120" x2="0" y2="-185" stroke="#F6D27A" stroke-width="6" stroke-linecap="round" style="animation-delay:.03s"/></g>
+    <g transform="translate(225 350) rotate(180)"><line class="sh-bl" x1="0" y1="-120" x2="0" y2="-185" stroke="#F6D27A" stroke-width="6" stroke-linecap="round"/></g>
+    <g transform="translate(225 350) rotate(225)"><line class="sh-bl" x1="0" y1="-120" x2="0" y2="-185" stroke="#F6D27A" stroke-width="6" stroke-linecap="round" style="animation-delay:.03s"/></g>
+    <g transform="translate(225 350) rotate(270)"><line class="sh-bl" x1="0" y1="-120" x2="0" y2="-185" stroke="#F6D27A" stroke-width="6" stroke-linecap="round"/></g>
+    <g transform="translate(225 350) rotate(315)"><line class="sh-bl" x1="0" y1="-120" x2="0" y2="-185" stroke="#F6D27A" stroke-width="6" stroke-linecap="round" style="animation-delay:.03s"/></g>
+    <text class="sh-roar" x="229" y="648">ROAR!</text>
+    <text class="sh-sub" x="230" y="700">SINGHAM SHER</text>
+  </g>
+  <g transform="translate(66 140)"><use href="#shAspk" class="sh-twk" fill="#F2B33D"/></g>
+  <g transform="translate(392 208) scale(.8)"><use href="#shAspk" class="sh-twk" fill="#F6EFE2" style="animation-delay:-.9s"/></g>
+  <g transform="translate(352 560) scale(.7)"><use href="#shAspk" class="sh-twk" fill="#E0603C" style="animation-delay:-1.8s"/></g>
+</svg>

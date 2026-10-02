@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+<title>Big Bang — Gappey gift cinematic</title>
+<style>
+.sing,.singG,.preRing,.ringB,.neb,.galPop,.spk,.starP,.strk,.cm,.zm{transform-box:fill-box;transform-origin:center}
+.all{animation:allOutA .7s ease 5.7s both}
+@keyframes allOutA{to{opacity:0}}
+.scIn{animation:scInA .35s ease both}
+@keyframes scInA{from{opacity:0}to{opacity:1}}
+.zm{animation:zmA 5s ease 1.35s forwards}
+@keyframes zmA{from{transform:scale(1)}to{transform:scale(1.05)}}
+.shkX{animation:shxA .5s ease 1.36s both}
+@keyframes shxA{0%,100%{transform:none}18%{transform:translate(-9px,7px)}38%{transform:translate(9px,-8px)}58%{transform:translate(-7px,5px)}78%{transform:translate(6px,-4px)}}
+.tw{animation:twA 2.3s ease-in-out var(--d,0s) infinite alternate}
+@keyframes twA{from{opacity:.15}to{opacity:.85}}
+.starsIn{opacity:0;animation:stInA 1s ease 1.7s forwards}
+@keyframes stInA{to{opacity:1}}
+.sing{animation:sPulseA .55s ease-in-out infinite alternate,sInA .42s ease-in .95s forwards,sOutA .2s ease 1.35s forwards}
+@keyframes sPulseA{from{transform:scale(1)}to{transform:scale(1.4)}}
+@keyframes sInA{to{transform:scale(.32)}}
+@keyframes sOutA{to{opacity:0}}
+.singG{animation:sGPulseA .55s ease-in-out infinite alternate,sGInA .42s ease-in .95s forwards,sOutA .25s ease 1.35s forwards}
+@keyframes sGPulseA{from{transform:scale(1);opacity:.55}to{transform:scale(1.5);opacity:.8}}
+@keyframes sGInA{to{transform:scale(2.1);opacity:1}}
+.preRing{opacity:0;animation:prA 1s ease-in both}
+@keyframes prA{0%{transform:scale(2.3);opacity:0}25%{opacity:.5}100%{transform:scale(.12);opacity:.9}}
+.pr1{animation-delay:.4s}.pr2{animation-delay:.62s}.pr3{animation-delay:.2s}
+.flashAll{opacity:0;animation:flA .65s ease-out 1.35s both}
+@keyframes flA{0%{opacity:0}9%{opacity:1}100%{opacity:0}}
+.glowSpace{opacity:0;animation:gsA 1.6s ease 1.5s forwards}
+@keyframes gsA{to{opacity:.5}}
+.ringB{opacity:0;animation:rbA 1.3s cubic-bezier(.15,.6,.3,1) both}
+@keyframes rbA{0%{transform:scale(.04);opacity:0}10%{opacity:.95}100%{transform:scale(8.5);opacity:0}}
+.strk{opacity:0;animation:stA var(--du,1.2s) cubic-bezier(.15,.75,.3,1) var(--dl,1.42s) both}
+@keyframes stA{0%{transform:translateX(0);opacity:0}8%{opacity:.95}100%{transform:translateX(var(--td,520px));opacity:0}}
+.neb{opacity:0;animation:nbA 2.4s cubic-bezier(.2,.7,.3,1) var(--dl,1.6s) forwards}
+@keyframes nbA{0%{transform:scale(.25) translate(30px,20px);opacity:0}30%{opacity:.42}100%{transform:scale(1) translate(0,0);opacity:var(--no,.3)}}
+.galPop{opacity:0;animation:gpA 1s cubic-bezier(.2,1.2,.35,1) both}
+@keyframes gpA{0%{opacity:0;transform:scale(.15)}55%{opacity:1;transform:scale(1.14)}100%{opacity:1;transform:scale(1)}}
+.galA{animation-delay:2.55s}.galB{animation-delay:2.85s}
+.spinA{transform-box:fill-box;transform-origin:center;animation:spA 46s linear infinite}
+.spinB{transform-box:fill-box;transform-origin:center;animation:spA 60s linear infinite reverse}
+@keyframes spA{to{transform:rotate(360deg)}}
+.spk{opacity:0;animation:spkA 1.1s cubic-bezier(.1,.7,.3,1) both}
+@keyframes spkA{0%{transform:translate(0,0);opacity:0}10%{opacity:1}100%{transform:translate(var(--tx),var(--ty));opacity:0}}
+.starP{opacity:0;animation:starPA .95s ease-out both}
+@keyframes starPA{0%{transform:scale(0) rotate(-60deg);opacity:0}35%{opacity:1}100%{transform:scale(1.3) rotate(40deg);opacity:0}}
+.cm{opacity:0;animation:cmA 3.2s linear var(--dl,2s) infinite}
+@keyframes cmA{0%{transform:translateX(70px);opacity:0}15%{opacity:.7}100%{transform:translateX(240px);opacity:0}}
+.shoot{stroke-dasharray:1;stroke-dashoffset:1;opacity:0;animation:shoA .9s ease-out both}
+@keyframes shoA{0%{stroke-dashoffset:1;opacity:0}12%{opacity:.85}55%{stroke-dashoffset:0;opacity:.85}100%{stroke-dashoffset:0;opacity:0}}
+.sh1{animation-delay:2.3s}.sh2{animation-delay:4.55s}
+.rise{animation:ri2A .6s cubic-bezier(.2,.8,.25,1) both}
+@keyframes ri2A{from{opacity:0;transform:translateY(48px)}to{opacity:1;transform:none}}
+.orn{animation:oA .5s ease both}
+@keyframes oA{from{opacity:0}}
+.sub{animation:suA .6s ease both}
+@keyframes suA{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.drw{stroke-dasharray:1;stroke-dashoffset:1;animation:dwA .55s ease both}
+@keyframes dwA{to{stroke-dashoffset:0}}
+.sw{animation:swA .95s ease-in-out 4.45s both}
+@keyframes swA{from{transform:translateX(-560px)}to{transform:translateX(1180px)}}
+</style>
+<defs>
+<radialGradient id="voidG" cx=".5" cy=".46" r=".8"><stop offset="0" stop-color="#100a22"/><stop offset="1" stop-color="#070512"/></radialGradient>
+<radialGradient id="vig" cx=".5" cy=".45" r=".78"><stop offset=".6" stop-color="#040209" stop-opacity="0"/><stop offset="1" stop-color="#040209" stop-opacity=".66"/></radialGradient>
+<radialGradient id="spaceG"><stop offset="0" stop-color="#7a4ad9" stop-opacity=".35"/><stop offset=".55" stop-color="#3a2a80" stop-opacity=".18"/><stop offset="1" stop-color="#3a2a80" stop-opacity="0"/></radialGradient>
+<radialGradient id="nebM"><stop offset="0" stop-color="#e86aa0" stop-opacity=".75"/><stop offset="1" stop-color="#e86aa0" stop-opacity="0"/></radialGradient>
+<radialGradient id="nebT"><stop offset="0" stop-color="#3fd0b8" stop-opacity=".65"/><stop offset="1" stop-color="#3fd0b8" stop-opacity="0"/></radialGradient>
+<radialGradient id="nebI"><stop offset="0" stop-color="#6a5ae8" stop-opacity=".6"/><stop offset="1" stop-color="#6a5ae8" stop-opacity="0"/></radialGradient>
+<radialGradient id="nebG"><stop offset="0" stop-color="#ffbe5a" stop-opacity=".6"/><stop offset="1" stop-color="#ffbe5a" stop-opacity="0"/></radialGradient>
+<radialGradient id="sgG"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset=".4" stop-color="#ffe2a6" stop-opacity=".5"/><stop offset="1" stop-color="#ffe2a6" stop-opacity="0"/></radialGradient>
+<linearGradient id="galS" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffbe5a"/><stop offset=".5" stop-color="#e86aa0"/><stop offset="1" stop-color="#6a5ae8"/></linearGradient>
+<linearGradient id="gt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f9eec6"/><stop offset=".45" stop-color="#e6bd62"/><stop offset="1" stop-color="#a67c22"/></linearGradient>
+<linearGradient id="swG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff4d2" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<filter id="b12" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="12"/></filter>
+<mask id="swM" maskUnits="userSpaceOnUse" x="0" y="0" width="1080" height="1920">
+<text x="540" y="1415" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-weight="bold" font-size="122" letter-spacing="14" fill="#fff">BIG BANG</text>
+</mask>
+<circle id="twS" r="2" fill="#efe3c2"/>
+<path id="s4" d="M0,-9 Q1.4,-1.4 9,0 Q1.4,1.4 0,9 Q-1.4,1.4 -9,0 Q-1.4,-1.4 0,-9 Z"/>
+<path id="s4b" d="M0,-14 Q2.2,-2.2 14,0 Q2.2,2.2 0,14 Q-2.2,2.2 -14,0 Q-2.2,-2.2 0,-14 Z"/>
+<g id="gal">
+<ellipse rx="190" ry="80" fill="url(#sgG)" opacity=".28" filter="url(#b12)"/>
+<ellipse rx="160" ry="56" fill="none" stroke="url(#galS)" stroke-width="3" stroke-dasharray="34 16 8 16" opacity=".85" transform="rotate(-14)"/>
+<ellipse rx="108" ry="38" fill="none" stroke="#3fd0b8" stroke-width="2.5" stroke-dasharray="22 12" opacity=".7" transform="rotate(38)"/>
+<ellipse rx="58" ry="20" fill="none" stroke="#e86aa0" stroke-width="2" stroke-dasharray="12 8" opacity=".75" transform="rotate(-52)"/>
+<circle cx="128" cy="-24" r="3.2" fill="#ffe9a8"/><circle cx="-118" cy="30" r="2.8" fill="#bff2e4"/>
+<circle cx="-70" cy="-38" r="2.6" fill="#ffd0e8"/><circle cx="58" cy="40" r="3" fill="#d9ccff"/>
+<circle cx="0" cy="-62" r="2.4" fill="#fff3d0"/><circle cx="-30" cy="52" r="2.2" fill="#ffe9a8"/>
+<circle r="30" fill="url(#sgG)"/><circle r="11" fill="#fff"/>
+</g>
+</defs>
+
+<g class="all"><g class="scIn"><g class="zm"><g class="shkX">
+
+<rect width="1080" height="1920" fill="url(#voidG)"/>
+<ellipse class="glowSpace" cx="540" cy="880" rx="560" ry="480" fill="url(#spaceG)" style="mix-blend-mode:screen"/>
+
+<g class="neb" style="--dl:1.55s;--no:.34" filter="url(#b12)"><ellipse cx="390" cy="690" rx="270" ry="175" fill="url(#nebM)"/></g>
+<g class="neb" style="--dl:1.75s;--no:.28" filter="url(#b12)"><ellipse cx="770" cy="990" rx="300" ry="190" fill="url(#nebT)"/></g>
+<g class="neb" style="--dl:1.65s;--no:.26" filter="url(#b12)"><ellipse cx="540" cy="430" rx="330" ry="200" fill="url(#nebI)"/></g>
+<g class="neb" style="--dl:1.9s;--no:.24" filter="url(#b12)"><ellipse cx="300" cy="1130" rx="240" ry="150" fill="url(#nebG)"/></g>
+
+<circle class="ringB" cx="540" cy="880" r="80" fill="none" stroke="#fff3d0" stroke-width="6" style="animation-delay:1.36s"/>
+<circle class="ringB" cx="540" cy="880" r="80" fill="none" stroke="#ffbe5a" stroke-width="4" style="animation-delay:1.52s"/>
+<circle class="ringB" cx="540" cy="880" r="80" fill="none" stroke="#e86aa0" stroke-width="2.5" style="animation-delay:1.7s"/>
+
+<g transform="translate(540,880)">
+<g transform="rotate(0)"><rect class="strk" x="40" y="-2.5" width="260" height="5" rx="2.5" fill="#ffe9a8" style="--td:560px;--dl:1.42s;--du:1.25s"/></g>
+<g transform="rotate(24)"><rect class="strk" x="40" y="-3" width="280" height="6" rx="3" fill="#ffbe5a" style="--td:640px;--dl:1.45s;--du:1.35s"/></g>
+<g transform="rotate(48)"><rect class="strk" x="40" y="-2.5" width="240" height="5" rx="2.5" fill="#3fd0b8" style="--td:520px;--dl:1.43s;--du:1.15s"/></g>
+<g transform="rotate(72)"><rect class="strk" x="40" y="-3" width="270" height="6" rx="3" fill="#e86aa0" style="--td:620px;--dl:1.47s;--du:1.3s"/></g>
+<g transform="rotate(96)"><rect class="strk" x="40" y="-2.5" width="250" height="5" rx="2.5" fill="#fff3d0" style="--td:540px;--dl:1.44s;--du:1.2s"/></g>
+<g transform="rotate(120)"><rect class="strk" x="40" y="-3" width="290" height="6" rx="3" fill="#ffbe5a" style="--td:660px;--dl:1.46s;--du:1.4s"/></g>
+<g transform="rotate(144)"><rect class="strk" x="40" y="-2.5" width="245" height="5" rx="2.5" fill="#9fd8ff" style="--td:530px;--dl:1.42s;--du:1.18s"/></g>
+<g transform="rotate(168)"><rect class="strk" x="40" y="-3" width="265" height="6" rx="3" fill="#ffe9a8" style="--td:600px;--dl:1.48s;--du:1.32s"/></g>
+<g transform="rotate(192)"><rect class="strk" x="40" y="-2.5" width="255" height="5" rx="2.5" fill="#3fd0b8" style="--td:570px;--dl:1.44s;--du:1.26s"/></g>
+<g transform="rotate(216)"><rect class="strk" x="40" y="-3" width="285" height="6" rx="3" fill="#e86aa0" style="--td:650px;--dl:1.46s;--du:1.38s"/></g>
+<g transform="rotate(240)"><rect class="strk" x="40" y="-2.5" width="240" height="5" rx="2.5" fill="#fff3d0" style="--td:510px;--dl:1.43s;--du:1.14s"/></g>
+<g transform="rotate(264)"><rect class="strk" x="40" y="-3" width="275" height="6" rx="3" fill="#ffbe5a" style="--td:630px;--dl:1.47s;--du:1.34s"/></g>
+<g transform="rotate(288)"><rect class="strk" x="40" y="-2.5" width="250" height="5" rx="2.5" fill="#d9ccff" style="--td:550px;--dl:1.45s;--du:1.22s"/></g>
+<g transform="rotate(312)"><rect class="strk" x="40" y="-3" width="268" height="6" rx="3" fill="#ffe9a8" style="--td:610px;--dl:1.44s;--du:1.3s"/></g>
+<g transform="rotate(336)"><rect class="strk" x="40" y="-2.5" width="248" height="5" rx="2.5" fill="#3fd0b8" style="--td:525px;--dl:1.42s;--du:1.16s"/></g>
+<g transform="rotate(12)"><rect class="strk" x="40" y="-1.5" width="210" height="3" rx="1.5" fill="#fff3d0" style="--td:720px;--dl:1.62s;--du:1.45s"/></g>
+<g transform="rotate(60)"><rect class="strk" x="40" y="-1.5" width="200" height="3" rx="1.5" fill="#ffbe5a" style="--td:760px;--dl:1.66s;--du:1.5s"/></g>
+<g transform="rotate(110)"><rect class="strk" x="40" y="-1.5" width="215" height="3" rx="1.5" fill="#e86aa0" style="--td:700px;--dl:1.64s;--du:1.42s"/></g>
+<g transform="rotate(160)"><rect class="strk" x="40" y="-1.5" width="205" height="3" rx="1.5" fill="#3fd0b8" style="--td:740px;--dl:1.68s;--du:1.48s"/></g>
+<g transform="rotate(210)"><rect class="strk" x="40" y="-1.5" width="212" height="3" rx="1.5" fill="#ffe9a8" style="--td:710px;--dl:1.63s;--du:1.44s"/></g>
+<g transform="rotate(258)"><rect class="strk" x="40" y="-1.5" width="198" height="3" rx="1.5" fill="#d9ccff" style="--td:750px;--dl:1.67s;--du:1.5s"/></g>
+<g transform="rotate(306)"><rect class="strk" x="40" y="-1.5" width="206" height="3" rx="1.5" fill="#fff3d0" style="--td:705px;--dl:1.65s;--du:1.43s"/></g>
+<circle class="spk" r="4.6" fill="#ffe9a8" style="--tx:320px;--ty:-80px;animation-delay:1.48s"/>
+<circle class="spk" r="4" fill="#3fd0b8" style="--tx:280px;--ty:-190px;animation-delay:1.51s"/>
+<circle class="spk" r="5" fill="#ffbe5a" style="--tx:150px;--ty:-300px;animation-delay:1.54s"/>
+<circle class="spk" r="3.8" fill="#fff3d0" style="--tx:0px;--ty:-340px;animation-delay:1.5s"/>
+<circle class="spk" r="4.4" fill="#e86aa0" style="--tx:-160px;--ty:-300px;animation-delay:1.53s"/>
+<circle class="spk" r="4" fill="#ffe9a8" style="--tx:-300px;--ty:-180px;animation-delay:1.49s"/>
+<circle class="spk" r="4.8" fill="#ffbe5a" style="--tx:-340px;--ty:-40px;animation-delay:1.55s"/>
+<circle class="spk" r="3.8" fill="#3fd0b8" style="--tx:-280px;--ty:130px;animation-delay:1.52s"/>
+<circle class="spk" r="4.2" fill="#fff3d0" style="--tx:-140px;--ty:250px;animation-delay:1.56s"/>
+<circle class="spk" r="4" fill="#e86aa0" style="--tx:40px;--ty:320px;animation-delay:1.5s"/>
+<circle class="spk" r="4.4" fill="#ffbe5a" style="--tx:200px;--ty:240px;animation-delay:1.54s"/>
+<g transform="translate(140,-160)"><use href="#s4b" class="starP" style="animation-delay:1.56s" fill="#fff6dd"/></g>
+<g transform="translate(-130,-180)"><use href="#s4" class="starP" style="animation-delay:1.64s" fill="#bff2e4"/></g>
+<g transform="translate(150,150)"><use href="#s4" class="starP" style="animation-delay:1.72s" fill="#ffe9a8"/></g>
+<g transform="translate(-120,170)"><use href="#s4b" class="starP" style="animation-delay:1.8s" fill="#ffd0e8"/></g>
+</g>
+
+<g transform="translate(540,880)">
+<g transform="rotate(8)"><circle class="cm" r="2.2" fill="#ffe9a8" style="--dl:2s"/></g>
+<g transform="rotate(56)"><circle class="cm" r="2" fill="#3fd0b8" style="--dl:2.25s"/></g>
+<g transform="rotate(104)"><circle class="cm" r="2.4" fill="#e86aa0" style="--dl:2.5s"/></g>
+<g transform="rotate(152)"><circle class="cm" r="2" fill="#ffbe5a" style="--dl:2.15s"/></g>
+<g transform="rotate(200)"><circle class="cm" r="2.2" fill="#fff3d0" style="--dl:2.4s"/></g>
+<g transform="rotate(248)"><circle class="cm" r="2" fill="#d9ccff" style="--dl:2.3s"/></g>
+<g transform="rotate(296)"><circle class="cm" r="2.3" fill="#ffe9a8" style="--dl:2.55s"/></g>
+<g transform="rotate(344)"><circle class="cm" r="2" fill="#3fd0b8" style="--dl:2.2s"/></g>
+</g>
+
+<g class="starsIn">
+<use href="#twS" x="120" y="300" class="tw" style="--d:-.4s"/><use href="#twS" x="300" y="180" class="tw" style="--d:-1.2s"/>
+<use href="#twS" x="520" y="120" class="tw" style="--d:-2s"/><use href="#twS" x="760" y="240" class="tw" style="--d:-.8s"/>
+<use href="#twS" x="950" y="360" class="tw" style="--d:-1.6s"/><use href="#twS" x="180" y="520" class="tw" style="--d:-.2s"/>
+<use href="#twS" x="880" y="560" class="tw" style="--d:-2.2s"/><use href="#twS" x="660" y="100" class="tw" style="--d:-1s"/>
+<use href="#twS" x="60" y="700" class="tw" style="--d:-1.9s"/><use href="#twS" x="1020" y="660" class="tw" style="--d:-.6s"/>
+<use href="#twS" x="140" y="1500" class="tw" style="--d:-1.3s"/><use href="#twS" x="980" y="1560" class="tw" style="--d:-.3s"/>
+<use href="#twS" x="420" y="1620" class="tw" style="--d:-2.1s"/><use href="#twS" x="760" y="1700" class="tw" style="--d:-.9s"/>
+<use href="#twS" x="240" y="1760" class="tw" style="--d:-1.7s"/><use href="#twS" x="900" y="1440" class="tw" style="--d:-.1s"/>
+<use href="#s4" x="220" y="420" class="tw" style="--d:-.9s" fill="#ffe9a8"/>
+<use href="#s4" x="890" y="470" class="tw" style="--d:-1.7s" fill="#bff2e4"/>
+<use href="#s4" x="480" y="1560" class="tw" style="--d:-1.1s" fill="#ffd0e8"/>
+<use href="#s4" x="700" y="1760" class="tw" style="--d:-2.3s" fill="#ffe9a8"/>
+<circle cx="330" cy="1620" r="2.6" fill="#d9ccff" class="tw" style="--d:-.5s"/>
+<circle cx="820" cy="1620" r="2.4" fill="#ffe9a8" class="tw" style="--d:-1.4s"/>
+</g>
+
+<path class="shoot sh1" d="M180,1240 L520,1090" pathLength="1" stroke="#fff3d0" stroke-width="2.5" stroke-linecap="round"/>
+<path class="shoot sh2" d="M900,320 L560,480" pathLength="1" stroke="#ffe9a8" stroke-width="2" stroke-linecap="round"/>
+
+<circle class="preRing pr3" cx="540" cy="880" r="60" fill="none" stroke="#ffe9a8" stroke-width="1.5"/>
+<circle class="preRing pr1" cx="540" cy="880" r="60" fill="none" stroke="#ffbe5a" stroke-width="2"/>
+<circle class="preRing pr2" cx="540" cy="880" r="60" fill="none" stroke="#e86aa0" stroke-width="1.5"/>
+<ellipse class="singG" cx="540" cy="880" rx="46" ry="46" fill="url(#sgG)"/>
+<circle class="sing" cx="540" cy="880" r="8" fill="#fff"/>
+
+<g transform="translate(300,470) rotate(-16)"><g class="galPop galA"><g class="spinA"><use href="#gal"/></g></g></g>
+<g transform="translate(852,1078) scale(.6) rotate(24)"><g class="galPop galB"><g class="spinB"><use href="#gal"/></g></g></g>
+
+<rect class="flashAll" width="1080" height="1920" fill="#fff"/>
+
+<g>
+<g class="orn" style="animation-delay:3.4s" fill="#e8c15a">
+<path d="M310,1310 H468 M612,1310 H770" stroke="#e8c15a" stroke-width="1.5" opacity=".8"/>
+<rect x="532" y="1302" width="16" height="16" transform="rotate(45 540 1310)"/>
+<circle cx="302" cy="1310" r="3"/><circle cx="778" cy="1310" r="3"/>
+</g>
+<text class="rise" style="animation-delay:3.5s" x="540" y="1415" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-weight="bold" font-size="122" letter-spacing="14" fill="url(#gt)" stroke="#2a1a3a" stroke-width="5" paint-order="stroke">BIG BANG</text>
+<g mask="url(#swM)"><g transform="skewX(-12)"><rect class="sw" x="140" y="1300" width="360" height="150" fill="url(#swG)"/></g></g>
+<path class="drw" style="animation-delay:4.05s" d="M320,1462 H760" pathLength="1" stroke="#e8c15a" stroke-width="3"/>
+<rect class="orn" style="animation-delay:4.3s" x="533" y="1455" width="14" height="14" transform="rotate(45 540 1462)" fill="#e8c15a"/>
+<text class="sub" style="animation-delay:3.85s" x="540" y="1522" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-weight="bold" font-size="23" letter-spacing="7" fill="#b9a06a">TIER IV · BIRTH OF A UNIVERSE</text>
+</g>
+
+</g></g>
+<rect width="1080" height="1920" fill="url(#vig)"/>
+</g></g>
+</svg>

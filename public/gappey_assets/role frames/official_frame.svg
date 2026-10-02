@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+  <defs>
+    <linearGradient id="ofRed" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff1744"/><stop offset=".5" stop-color="#ff5252"/><stop offset="1" stop-color="#b71c1c"/>
+    </linearGradient>
+    <linearGradient id="ofBolt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff3b0"/><stop offset="1" stop-color="#ffb300"/>
+    </linearGradient>
+    <filter id="ofBoltGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="ofSh" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#ff1744" flood-opacity=".55"/></filter>
+  </defs>
+
+  <!-- outer halo (stroke only — never touches the center) -->
+  <g fill="none" stroke="#ff1744">
+    <circle cx="75" cy="75" r="72" stroke-width="2.5" stroke-opacity=".25">
+      <animate attributeName="stroke-opacity" values=".1;.4;.1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="75" cy="75" r="74" stroke-width="2" stroke-opacity=".12">
+      <animate attributeName="stroke-opacity" values=".05;.22;.05" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <circle cx="75" cy="75" r="71.5" fill="none" stroke="#ff5252" stroke-width="1" stroke-dasharray="4 10" opacity=".5">
+    <animateTransform attributeName="transform" type="rotate" from="360 75 75" to="0 75 75" dur="18s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="75" cy="75" r="66" fill="none" stroke="url(#ofRed)" stroke-width="4" stroke-dasharray="10 7">
+    <animateTransform attributeName="transform" type="rotate" from="0 75 75" to="360 75 75" dur="10s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="75" cy="75" r="57" fill="none" stroke="url(#ofRed)" stroke-width="6"/>
+  <circle cx="75" cy="75" r="50" fill="none" stroke="#ffb3b3" stroke-width="1" opacity=".4"/>
+
+  <polygon points="75,31 113.1,53 113.1,97 75,119 36.9,97 36.9,53" fill="none" stroke="#ff7043" stroke-width="1.5" opacity=".5">
+    <animateTransform attributeName="transform" type="rotate" from="360 75 75" to="0 75 75" dur="22s" repeatCount="indefinite"/>
+  </polygon>
+
+  <g filter="url(#ofBoltGlow)">
+    <path transform="translate(28,22)" d="M8 0 L0 12 L5 12 L-2 24 L10 10 L4.5 10 Z" fill="url(#ofBolt)">
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.12;.4;1" dur="2.8s" repeatCount="indefinite"/>
+    </path>
+    <path transform="translate(122,34) scale(-.9,.9)" d="M8 0 L0 12 L5 12 L-2 24 L10 10 L4.5 10 Z" fill="url(#ofBolt)">
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.12;.4;1" dur="3.6s" begin="-.9s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g transform="translate(75,14)">
+    <path d="M0 -11 L9.5 -7.5 V0 C9.5 6 5.5 9.5 0 12 C-5.5 9.5 -9.5 6 -9.5 0 V-7.5 Z" fill="url(#ofRed)" stroke="#4a0d12" stroke-width="1.5"/>
+    <g transform="translate(0,-1) scale(.45)">
+      <path d="M8 0 L0 12 L5 12 L-2 24 L10 10 L4.5 10 Z" fill="#ffffff">
+        <animate attributeName="opacity" values="1;.4;1" dur="1.1s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <g filter="url(#ofSh)">
+    <rect x="28" y="123" width="94" height="20" rx="10" fill="#1c0f14" stroke="url(#ofRed)" stroke-width="2"/>
+    <g transform="translate(42,133) scale(.5)">
+      <path d="M0 -11 L9.5 -7.5 V0 C9.5 6 5.5 9.5 0 12 C-5.5 9.5 -9.5 6 -9.5 0 V-7.5 Z" fill="#ff5252"/>
+    </g>
+    <text x="84" y="137.3" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="900" fill="#ffffff" letter-spacing="1.2">OFFICIAL</text>
+  </g>
+</svg>

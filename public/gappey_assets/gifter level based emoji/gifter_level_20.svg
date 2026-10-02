@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" role="img" aria-labelledby="e20gt" style="overflow:visible">
+  <title id="e20gt">Gifter Lv.20 emoji — Sparkle Gift</title>
+  <defs>
+    <linearGradient id="g20bx" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3B82F6"/><stop offset="1" stop-color="#1D4ED8"/></linearGradient>
+    <linearGradient id="g20ld" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#60A5FA"/><stop offset="1" stop-color="#2563EB"/></linearGradient>
+    <radialGradient id="g20h" cx=".5" cy=".5" r=".5"><stop offset=".55" stop-color="#3B82F6" stop-opacity="0"/><stop offset=".8" stop-color="#3B82F6" stop-opacity=".28"/><stop offset="1" stop-color="#3B82F6" stop-opacity="0"/></radialGradient>
+    <path id="g20tw" d="M0 -5 Q1 -1 5 0 Q1 1 0 5 Q-1 1 -5 0 Q-1 -1 0 -5 Z"/>
+  </defs>
+  <style><![CDATA[
+.body{transform-box:fill-box;transform-origin:50% 92%;animation:bnc 2.6s ease-in-out infinite}.wig{transform-box:fill-box;transform-origin:50% 100%;animation:wig 2.6s ease-in-out infinite}.tw{transform-box:fill-box;transform-origin:50% 50%;animation:twk 2.2s ease-in-out infinite}.ring{transform-box:view-box;transform-origin:50px 50px;animation:spin 12s linear infinite}.orb{transform-box:view-box;transform-origin:50px 50px;animation:spin 8s linear infinite}@keyframes bnc{0%,100%{transform:translateY(0)}50%{transform:translateY(-4.5px)}}@keyframes wig{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}@keyframes twk{0%,100%{opacity:.15;transform:scale(.5)}50%{opacity:1;transform:scale(1)}}@keyframes spin{to{transform:rotate(360deg)}}@media (prefers-reduced-motion:reduce){.body,.wig,.tw,.ring,.orb{animation:none}}
+  ]]></style>
+  <circle cx="50" cy="52" r="45" fill="url(#g20h)"/>
+  <circle class="ring" cx="50" cy="50" r="43" fill="none" stroke="#93C5FD" stroke-width="1.6" stroke-dasharray="4 7" opacity=".8"/>
+  <g class="body">
+    <g class="wig">
+      <path d="M50 37 C38 26 28 30 30 37 C31 42 42 42 50 37 Z" fill="#FFF" stroke="#93C5FD" stroke-width="1.2"/>
+      <path d="M50 37 C62 26 72 30 70 37 C69 42 58 42 50 37 Z" fill="#FFF" stroke="#93C5FD" stroke-width="1.2"/>
+    </g>
+    <rect x="27" y="47" width="46" height="34" rx="7" fill="url(#g20bx)" stroke="#1D4ED8" stroke-width="1.5"/>
+    <rect x="46" y="47" width="8" height="34" fill="#FFF"/>
+    <rect x="22" y="37" width="56" height="14" rx="6" fill="url(#g20ld)" stroke="#1D4ED8" stroke-width="1.5"/>
+    <rect x="46" y="37" width="8" height="14" fill="#FFF"/>
+    <circle cx="50" cy="37" r="4.5" fill="#FFF" stroke="#93C5FD" stroke-width="1.2"/>
+    <circle cx="40" cy="62" r="2.8" fill="#1E3A8A"/><circle cx="41" cy="61" r="1" fill="#FFF"/>
+    <circle cx="60" cy="62" r="2.8" fill="#1E3A8A"/><circle cx="61" cy="61" r="1" fill="#FFF"/>
+    <ellipse cx="34.5" cy="67" rx="3.4" ry="2" fill="#F9A8D4" opacity=".55"/>
+    <ellipse cx="65.5" cy="67" rx="3.4" ry="2" fill="#F9A8D4" opacity=".55"/>
+    <path d="M45 67.5 Q50 71.5 55 67.5" stroke="#1E3A8A" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </g>
+  <g class="orb"><use href="#g20tw" x="50" y="8" fill="#FFF"/></g>
+  <use href="#g20tw" x="14" y="56" class="tw" fill="#BFDBFE"/>
+  <g class="badge">
+    <rect x="30.5" y="77.5" width="39" height="21" rx="10.5" fill="none" stroke="#93C5FD" stroke-width="1.2" stroke-dasharray="2.5 3.5" opacity=".8"/>
+    <rect x="33" y="80" width="34" height="16" rx="8" fill="url(#g20bx)" stroke="#FFF" stroke-width="1.4"/>
+    <text x="50" y="91.8" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="800" letter-spacing=".5" fill="#FFF">20</text>
+  </g>
+</svg>

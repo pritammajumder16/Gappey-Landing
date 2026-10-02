@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" role="img" aria-labelledby="e30pt" style="overflow:visible">
+  <title id="e30pt">Performer Lv.30 emoji — Diva Mic</title>
+  <defs>
+    <radialGradient id="p30mh" cx=".35" cy=".3" r=".9"><stop offset="0" stop-color="#FDE7F1"/><stop offset=".55" stop-color="#F472B6"/><stop offset="1" stop-color="#DB2777"/></radialGradient>
+    <linearGradient id="p30hd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DB2777"/><stop offset="1" stop-color="#9D174D"/></linearGradient>
+    <linearGradient id="p30pg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F472B6"/><stop offset="1" stop-color="#DB2777"/></linearGradient>
+    <radialGradient id="p30h" cx=".5" cy=".5" r=".5"><stop offset=".55" stop-color="#EC4899" stop-opacity="0"/><stop offset=".8" stop-color="#EC4899" stop-opacity=".3"/><stop offset="1" stop-color="#EC4899" stop-opacity="0"/></radialGradient>
+    <clipPath id="p30cp"><circle cx="50" cy="40" r="20"/></clipPath>
+    <path id="p30tw" d="M0 -5 Q1 -1 5 0 Q1 1 0 5 Q-1 1 -5 0 Q-1 -1 0 -5 Z"/>
+  </defs>
+  <style><![CDATA[
+.body{transform-box:fill-box;transform-origin:50% 92%;animation:bnc 2.6s ease-in-out infinite}.tw{transform-box:fill-box;transform-origin:50% 50%;animation:twk 2.2s ease-in-out infinite}.ring{transform-box:view-box;transform-origin:50px 50px;animation:spin 12s linear infinite}.nt{animation:nt 2.8s ease-in-out infinite}.n2{animation-delay:-1.4s}@keyframes bnc{0%,100%{transform:translateY(0)}50%{transform:translateY(-4.5px)}}@keyframes twk{0%,100%{opacity:.15;transform:scale(.5)}50%{opacity:1;transform:scale(1)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes nt{0%{opacity:0;transform:translateY(8px)}30%{opacity:1}100%{opacity:0;transform:translateY(-20px)}}@media (prefers-reduced-motion:reduce){.body,.tw,.ring,.nt{animation:none}}
+  ]]></style>
+  <circle cx="50" cy="50" r="46" fill="url(#p30h)"/>
+  <circle cx="50" cy="50" r="47" fill="none" stroke="#F9A8D4" stroke-width="1.2" opacity=".8"/>
+  <circle class="ring" cx="50" cy="50" r="43.5" fill="none" stroke="#F9A8D4" stroke-width="1.5" stroke-dasharray="4 7" opacity=".7"/>
+  <g class="body">
+    <rect x="45.5" y="56" width="9" height="28" rx="4.5" fill="url(#p30hd)" stroke="#BE185D" stroke-width="1.2"/>
+    <rect x="42" y="54.5" width="16" height="6" rx="3" fill="#F9A8D4" stroke="#BE185D" stroke-width="1"/>
+    <circle cx="50" cy="40" r="20.5" fill="url(#p30mh)" stroke="#BE185D" stroke-width="1.5"/>
+    <g clip-path="url(#p30cp)" stroke="#FBCFE8" stroke-width="1" fill="none" opacity=".9">
+      <path d="M31 33 Q50 29.5 69 33"/><path d="M30 40.5 Q50 37.5 70 40.5"/><path d="M31.5 48 Q50 45.5 68.5 48"/>
+      <path d="M43.5 20.8 Q41.5 40 43.5 59.2"/><path d="M50 19.5 L50 60.5"/><path d="M56.5 20.8 Q58.5 40 56.5 59.2"/>
+    </g>
+    <circle cx="43" cy="37" r="2.6" fill="#831843"/><circle cx="44" cy="36" r=".9" fill="#FFF"/>
+    <circle cx="57" cy="37" r="2.6" fill="#831843"/><circle cx="58" cy="36" r=".9" fill="#FFF"/>
+    <ellipse cx="36.5" cy="42" rx="3" ry="1.8" fill="#FFF" opacity=".6"/>
+    <ellipse cx="63.5" cy="42" rx="3" ry="1.8" fill="#FFF" opacity=".6"/>
+    <path d="M44.5 42.5 Q50 49 55.5 42.5 Z" fill="#831843"/>
+    <ellipse cx="50" cy="46.6" rx="2.7" ry="1.6" fill="#F9A8D4"/>
+  </g>
+  <g transform="translate(80 46)"><g class="nt" fill="#F472B6" stroke="#F472B6"><ellipse rx="3" ry="2.2" transform="rotate(-18)"/><path d="M2.7 -.8 L2.7 -11 Q5.2 -10.3 6.6 -8.8" fill="none" stroke-width="1.6"/></g></g>
+  <g transform="translate(19 38)"><g class="nt n2" fill="#F9A8D4" stroke="#F9A8D4"><ellipse rx="2.6" ry="1.9" transform="rotate(-18)"/><path d="M2.4 -.8 L2.4 -10 Q4.6 -9.3 6 -8" fill="none" stroke-width="1.5"/></g></g>
+  <use href="#p30tw" x="86" y="16" class="tw" fill="#FBCFE8"/>
+  <g class="badge">
+    <rect x="33" y="80" width="34" height="16" rx="8" fill="url(#p30pg)" stroke="#FFF" stroke-width="1.4"/>
+    <rect x="35" y="82" width="30" height="12" rx="6" fill="none" stroke="#FFF" stroke-opacity=".45" stroke-width=".8"/>
+    <g transform="translate(29.5 88)"><path class="tw" d="M0 -2.6 L2.6 0 L0 2.6 L-2.6 0 Z" fill="#F472B6" stroke="#FFF" stroke-width=".7"/></g>
+    <g transform="translate(70.5 88)"><path class="tw" style="animation-delay:-.7s" d="M0 -2.6 L2.6 0 L0 2.6 L-2.6 0 Z" fill="#F9A8D4" stroke="#FFF" stroke-width=".7"/></g>
+    <text x="50" y="91.8" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="800" letter-spacing=".5" fill="#FFF">30</text>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <title>Chai Tapri — gift logo</title>
+  <defs>
+    <linearGradient id="chLtea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C97F2E"/><stop offset="1" stop-color="#8A4B16"/>
+    </linearGradient>
+    <path id="chLspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+  </defs>
+  <g fill="none" stroke="#F3EADA" stroke-linecap="round">
+    <path d="M108 66 C102 58 112 52 108 44" stroke-width="4" opacity=".85"/>
+    <path d="M132 66 C138 58 128 52 132 44" stroke-width="4" opacity=".55"/>
+  </g>
+  <path d="M120 48 C116 40 106 40 106 48 C106 54 113 58 120 64 C127 58 134 54 134 48 C134 40 124 40 120 48 Z" fill="#F08CA5"/>
+  <ellipse cx="120" cy="192" rx="46" ry="9" fill="#5E3A1C"/>
+  <ellipse cx="120" cy="189" rx="46" ry="8" fill="#8A5A2B"/>
+  <ellipse cx="120" cy="189" rx="30" ry="5" fill="#5E3A1C" opacity=".6"/>
+  <path d="M96 96 L144 96 L140 188 L100 188 Z" fill="#F3EADA" opacity=".14"/>
+  <path d="M96 96 L144 96 L140 188 L100 188 Z" fill="none" stroke="#F3EADA" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M101 118 L139 118 L136.4 184 L103.6 184 Z" fill="url(#chLtea)"/>
+  <path d="M101 118 L139 118 L138.3 132 L101.7 132 Z" fill="#F6E3C4"/>
+  <circle cx="110" cy="142" r="1.6" fill="#FFD98F" opacity=".6"/>
+  <circle cx="126" cy="154" r="1.6" fill="#FFD98F" opacity=".6"/>
+  <circle cx="116" cy="168" r="1.6" fill="#FFD98F" opacity=".6"/>
+  <line x1="104" y1="104" x2="107" y2="180" stroke="#FFF6E6" stroke-width="2" opacity=".35"/>
+  <line x1="96" y1="96" x2="144" y2="96" stroke="#F6D27A" stroke-width="2.5"/>
+  <g transform="translate(64 158) rotate(-14)">
+    <rect x="-11" y="-15" width="22" height="30" rx="4" fill="#D9A441" stroke="#8A5F1D" stroke-width="2"/>
+    <circle cx="-4" cy="-7" r="1.4" fill="#8A5F1D"/><circle cx="4" cy="-3" r="1.4" fill="#8A5F1D"/><circle cx="-3" cy="4" r="1.4" fill="#8A5F1D"/><circle cx="4" cy="9" r="1.4" fill="#8A5F1D"/>
+  </g>
+  <use href="#chLspk" transform="translate(188 60) scale(.75)" fill="#F2B33D"/>
+  <use href="#chLspk" transform="translate(42 96) scale(.55)" fill="#F6EFE2"/>
+  <circle cx="192" cy="188" r="2.4" fill="#D9A441"/>
+</svg>

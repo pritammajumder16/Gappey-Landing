@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="260" height="260" viewBox="0 0 260 260">
+  <title>Tiger Jungle King Avatar Frame</title>
+  <defs>
+    <radialGradient id="tGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0.74" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="0.9" stop-color="#ff9100" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#ff9100" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="clawG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffe082"/>
+      <stop offset="1" stop-color="#ff8f00"/>
+    </linearGradient>
+    <g id="pawS">
+      <path d="M0 2 C -5.5 2 -8 5.5 -8 8.5 C -8 11.5 -5.5 13.5 -2.5 13.5 L 2.5 13.5 C 5.5 13.5 8 11.5 8 8.5 C 8 5.5 5.5 2 0 2 Z"/>
+      <ellipse cx="-8.5" cy="-2.5" rx="3" ry="3.8"/>
+      <ellipse cx="-3" cy="-5.5" rx="3" ry="3.8"/>
+      <ellipse cx="3" cy="-5.5" rx="3" ry="3.8"/>
+      <ellipse cx="8.5" cy="-2.5" rx="3" ry="3.8"/>
+    </g>
+    <g id="clawE" stroke="url(#clawG)" stroke-width="5" stroke-linecap="round">
+      <line x1="-14" y1="-12" x2="14" y2="-20"/>
+      <line x1="-16" y1="-3" x2="16" y2="-11"/>
+      <line x1="-18" y1="6" x2="18" y2="-2"/>
+    </g>
+  </defs>
+
+  <!-- breathing glow -->
+  <circle cx="130" cy="130" r="127" fill="url(#tGlow)">
+    <animate attributeName="opacity" values="0.55;1;0.55" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- base rings -->
+  <circle cx="130" cy="130" r="100" fill="none" stroke="#15230c" stroke-width="26"/>
+  <circle cx="130" cy="130" r="100" fill="none" stroke="#24421a" stroke-width="18"/>
+  <circle cx="130" cy="130" r="113" fill="none" stroke="#ffb300" stroke-width="2.5"/>
+  <circle cx="130" cy="130" r="87" fill="none" stroke="#8d6e00" stroke-width="2"/>
+  <circle cx="130" cy="130" r="90" fill="none" stroke="#d4e157" stroke-width="1.5">
+    <animate attributeName="opacity" values="0.3;0.85;0.3" dur="1.7s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- rotating tiger-stripe band -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 130 130" to="360 130 130" dur="28s" repeatCount="indefinite"/>
+    <circle cx="130" cy="130" r="100" fill="none" stroke="#ff8f00" stroke-width="13"/>
+    <circle cx="130" cy="130" r="100" fill="none" stroke="#1a1a1a" stroke-width="13" stroke-dasharray="9 25"/>
+  </g>
+  <circle cx="130" cy="130" r="107.5" fill="none" stroke="#ffd54f" stroke-width="2.5"
+          stroke-dasharray="60 568" stroke-linecap="round" opacity="0.8">
+    <animateTransform attributeName="transform" type="rotate" from="360 130 130" to="0 130 130" dur="9s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- counter-rotating orbiting paw prints -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="360 130 130" to="0 130 130" dur="22s" repeatCount="indefinite"/>
+    <g transform="rotate(0 130 130) translate(130 14)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="-10;10;-10" dur="0.5s" repeatCount="indefinite"/>
+        <use xlink:href="#pawS" transform="scale(1.1) translate(0 -6)" fill="#1a1a1a" stroke="#ffb300" stroke-width="0.8"/>
+      </g>
+    </g>
+    <g transform="rotate(120 130 130) translate(130 14)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="10;-10;10" dur="0.45s" repeatCount="indefinite"/>
+        <use xlink:href="#pawS" transform="scale(1.1) translate(0 -6)" fill="#1a1a1a" stroke="#ffb300" stroke-width="0.8"/>
+      </g>
+    </g>
+    <g transform="rotate(240 130 130) translate(130 14)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="-9;9;-9" dur="0.55s" repeatCount="indefinite"/>
+        <use xlink:href="#pawS" transform="scale(1.1) translate(0 -6)" fill="#1a1a1a" stroke="#ffb300" stroke-width="0.8"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- claw-slash emblems at cardinal points -->
+  <g transform="translate(130 22) rotate(-12)"><g>
+    <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="3s" begin="0s" repeatCount="indefinite"/>
+    <use xlink:href="#clawE" transform="scale(0.95)"/>
+  </g></g>
+  <g transform="translate(238 130) rotate(-12)"><g>
+    <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="3s" begin="-0.75s" repeatCount="indefinite"/>
+    <use xlink:href="#clawE" transform="scale(0.95)"/>
+  </g></g>
+  <g transform="translate(130 238) rotate(-12)"><g>
+    <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="3s" begin="-1.5s" repeatCount="indefinite"/>
+    <use xlink:href="#clawE" transform="scale(0.95)"/>
+  </g></g>
+  <g transform="translate(22 130) rotate(-12)"><g>
+    <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="3s" begin="-2.25s" repeatCount="indefinite"/>
+    <use xlink:href="#clawE" transform="scale(0.95)"/>
+  </g></g>
+
+  <!-- sparkles -->
+  <circle cx="224" cy="96" r="2" fill="#ffd54f">
+    <animate attributeName="opacity" values="1;0.1;1" dur="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="36" cy="96" r="2" fill="#ffca28">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="1.5s" begin="-0.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="96" cy="224" r="2" fill="#ffd54f">
+    <animate attributeName="opacity" values="1;0.15;1" dur="1.3s" begin="-0.7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="170" cy="40" r="2" fill="#d4e157">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" begin="-1s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- rising fireflies -->
+  <g>
+    <circle cx="60" cy="240" r="2" fill="#eaff8f" opacity="0">
+      <animate attributeName="cy" values="240;44" dur="6s" begin="-1s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="60;68;54;60" dur="6s" begin="-1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.8;0" dur="6s" begin="-1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="240" r="1.8" fill="#d4e157" opacity="0">
+      <animate attributeName="cy" values="240;40" dur="7s" begin="-3.4s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="200;192;208;200" dur="7s" begin="-3.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.7;0" dur="7s" begin="-3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="130" cy="240" r="2.2" fill="#eaff8f" opacity="0">
+      <animate attributeName="cy" values="240;48" dur="5.5s" begin="-4.6s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="130;138;124;130" dur="5.5s" begin="-4.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.85;0" dur="5.5s" begin="-4.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

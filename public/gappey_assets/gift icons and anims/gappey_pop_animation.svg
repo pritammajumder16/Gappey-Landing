@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 800" width="450" height="800">
+  <title>Gappey Pop — full-screen gift animation</title>
+  <defs>
+    <radialGradient id="gpBsky" cx="50%" cy="40%" r="90%">
+      <stop offset="0" stop-color="#131B2A"/><stop offset=".55" stop-color="#0B111C"/><stop offset="1" stop-color="#05080D"/>
+    </radialGradient>
+    <linearGradient id="gpBgold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE9A8"/><stop offset=".5" stop-color="#E9B94F"/><stop offset="1" stop-color="#C08A24"/>
+    </linearGradient>
+    <linearGradient id="gpBw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6D27A"/><stop offset=".55" stop-color="#E4A93C"/><stop offset="1" stop-color="#B8791F"/>
+    </linearGradient>
+    <path id="gpBspk" d="M0 -11 Q2.2 -2.2 11 0 Q2.2 2.2 0 11 Q-2.2 2.2 -11 0 Q-2.2 -2.2 0 -11Z"/>
+    <style>
+      .gpB-up{transform-box:fill-box;transform-origin:center;animation:gpUp 7.5s linear infinite;opacity:0}
+      .gpB-d1{animation-duration:6s}.gpB-d2{animation-duration:7.5s}.gpB-d3{animation-duration:9.4s}
+      .gpB-bob{transform-box:fill-box;transform-origin:center;animation:gpBob 3.4s ease-in-out infinite alternate}
+      .gpB-bub{transform-box:fill-box;transform-origin:center;opacity:0;animation:gpBub 7s linear infinite}
+      .gpB-dot{transform-box:fill-box;transform-origin:center;opacity:0;animation:gpD 7s linear infinite}
+      .gpB-bt{font:800 34px 'Segoe UI',Arial,sans-serif;fill:#221408;text-anchor:middle;transform-box:fill-box;transform-origin:center;opacity:0;animation:gpBt 7s linear infinite}
+      .gpB-flash{fill:#FFF4DC;transform-box:fill-box;transform-origin:center;animation:gpFlash 7s linear infinite}
+      .gpB-ring{fill:none;stroke:#F6D27A;stroke-width:5;transform-box:fill-box;transform-origin:center;animation:gpRing 7s linear infinite}
+      .gpB-p{transform-box:fill-box;transform-origin:center}
+      .gpB-cr{animation:gpCR 7s linear infinite}
+      .gpB-cl{animation:gpCL 7s linear infinite}
+      .gpB-sp{transform-box:fill-box;transform-origin:center;animation:gpSp 7s linear infinite}
+      .gpB-word{font:900 84px 'Arial Black','Segoe UI',Arial,sans-serif;letter-spacing:3px;fill:url(#gpBw);stroke:#0A0F16;stroke-width:9;paint-order:stroke;text-anchor:middle;transform-box:fill-box;transform-origin:center;opacity:0;animation:gpWord 7s linear infinite}
+      .gpB-sub{font:600 21px Georgia,'Times New Roman',serif;letter-spacing:11px;fill:#F2D48C;text-anchor:middle;animation:gpSub 7s linear infinite}
+      .gpB-orn{animation:gpSub 7s linear infinite}
+      .gpB-twk{transform-box:fill-box;transform-origin:center;animation:gpTw 2.8s ease-in-out infinite}
+      @keyframes gpUp{0%{transform:translateY(0);opacity:0}12%{opacity:.5}78%{opacity:.45}100%{transform:translateY(-680px);opacity:0}}
+      @keyframes gpBob{from{transform:translateY(-7px)}to{transform:translateY(7px)}}
+      @keyframes gpBub{0%{opacity:0;transform:scale(.1)}5%{opacity:1;transform:scale(1.14)}7.5%{transform:scale(.96)}9%{transform:scale(1)}51%{opacity:1;transform:scale(1)}53%{opacity:0;transform:scale(1.32)}100%{opacity:0;transform:scale(1.32)}}
+      @keyframes gpD{0%,18%{opacity:0}22%{opacity:1}30%{opacity:1}33%,100%{opacity:0}}
+      @keyframes gpBt{0%,31%{opacity:0;transform:scale(.2)}34.5%{opacity:1;transform:scale(1.15)}36.5%{transform:scale(.98)}38%{transform:scale(1)}50%{opacity:1;transform:scale(1)}52.5%{opacity:0;transform:scale(.8)}100%{opacity:0;transform:scale(.8)}}
+      @keyframes gpFlash{0%,52%{opacity:0;transform:scale(.3)}55%{opacity:.75}62%{opacity:0;transform:scale(1.15)}100%{opacity:0}}
+      @keyframes gpRing{0%,52%{opacity:.95;transform:scale(.12)}70%{opacity:0;transform:scale(3.4)}100%{opacity:0;transform:scale(3.4)}}
+      @keyframes gpCR{0%,52%{opacity:1;transform:translate(0,0) rotate(0deg)}74%{opacity:0;transform:translate(var(--x),var(--y)) rotate(300deg)}100%{opacity:0;transform:translate(var(--x),var(--y)) rotate(300deg)}}
+      @keyframes gpCL{0%,52%{opacity:1;transform:translate(0,0) rotate(0deg)}74%{opacity:0;transform:translate(var(--x),var(--y)) rotate(-280deg)}100%{opacity:0;transform:translate(var(--x),var(--y)) rotate(-280deg)}}
+      @keyframes gpSp{0%,52%{opacity:0;transform:scale(.2)}57%{opacity:1;transform:scale(1.2)}64%,100%{opacity:0;transform:scale(.4)}}
+      @keyframes gpWord{0%,54%{opacity:0;transform:scale(.4) rotate(-5deg)}58%{opacity:1;transform:scale(1.12) rotate(2deg)}60.5%{transform:scale(.97) rotate(0deg)}62%{transform:scale(1) rotate(0deg)}88%{opacity:1;transform:scale(1) rotate(0deg)}94%,100%{opacity:0;transform:scale(1) rotate(0deg)}}
+      @keyframes gpSub{0%,58%{opacity:0}64%{opacity:1}86%{opacity:1}93%,100%{opacity:0}}
+      @keyframes gpTw{0%,100%{opacity:.08;transform:scale(.6)}50%{opacity:.8;transform:scale(1)}}
+    </style>
+  </defs>
+  <rect width="450" height="800" fill="url(#gpBsky)"/>
+  <circle cx="70" cy="120" r="1.8" fill="#E9E4D2" opacity=".5"/>
+  <circle cx="390" cy="90" r="1.5" fill="#E9E4D2" opacity=".5"/>
+  <circle cx="40" cy="330" r="1.6" fill="#E9E4D2" opacity=".5"/>
+  <circle cx="410" cy="380" r="1.8" fill="#E9E4D2" opacity=".5"/>
+  <g transform="translate(84 140)"><use href="#gpBspk" class="gpB-twk" fill="#F2B33D"/></g>
+  <g transform="translate(372 200) scale(.8)"><use href="#gpBspk" class="gpB-twk" fill="#F6EFE2" style="animation-delay:-.9s"/></g>
+  <g transform="translate(58 560) scale(.7)"><use href="#gpBspk" class="gpB-twk" fill="#2FA08B" style="animation-delay:-1.7s"/></g>
+  <g transform="translate(396 530) scale(.85)"><use href="#gpBspk" class="gpB-twk" fill="#F2B33D" style="animation-delay:-2.3s"/></g>
+  <g class="gpB-bob" opacity=".5">
+    <circle cx="76" cy="136" r="20" fill="none" stroke="#F3EADA" stroke-width="2.5"/>
+    <path d="M84 152 L91 164 L74 156 Z" fill="none" stroke="#F3EADA" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+  <g class="gpB-bob" style="animation-delay:-1.6s" opacity=".35">
+    <circle cx="384" cy="112" r="15" fill="none" stroke="#F3EADA" stroke-width="2.5"/>
+    <path d="M390 124 L396 134 L382 128 Z" fill="none" stroke="#F3EADA" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+  <g>
+    <circle class="gpB-up gpB-d2" cx="70" cy="840" r="8" fill="none" stroke="#9FB4C2" stroke-width="2.5"/>
+    <circle class="gpB-up gpB-d1" cx="120" cy="840" r="5" fill="#9FB4C2" style="animation-delay:-2.4s"/>
+    <circle class="gpB-up gpB-d3" cx="176" cy="840" r="10" fill="none" stroke="#9FB4C2" stroke-width="2.5" style="animation-delay:-4.6s"/>
+    <circle class="gpB-up gpB-d2" cx="232" cy="840" r="6" fill="#9FB4C2" style="animation-delay:-1.2s"/>
+    <circle class="gpB-up gpB-d1" cx="288" cy="840" r="9" fill="none" stroke="#9FB4C2" stroke-width="2.5" style="animation-delay:-3.8s"/>
+    <circle class="gpB-up gpB-d3" cx="344" cy="840" r="5" fill="#9FB4C2" style="animation-delay:-6.2s"/>
+    <circle class="gpB-up gpB-d2" cx="396" cy="840" r="8" fill="none" stroke="#9FB4C2" stroke-width="2.5" style="animation-delay:-5.1s"/>
+  </g>
+  <circle class="gpB-flash" cx="225" cy="368" r="170"/>
+  <circle class="gpB-ring" cx="225" cy="368" r="80"/>
+  <g transform="translate(225 368) rotate(20)"><rect class="gpB-p gpB-cr" x="-4" y="-8" width="8" height="16" rx="2.5" fill="#F6D27A" style="--x:200px;--y:230px"/></g>
+  <g transform="translate(225 368) rotate(56)"><rect class="gpB-p gpB-cl" x="-4" y="-8" width="8" height="16" rx="2.5" fill="#F3EADA" style="--x:230px;--y:-60px"/></g>
+  <g transform="translate(225 368) rotate(92)"><rect class="gpB-p gpB-cr" x="-4" y="-8" width="8" height="16" rx="2.5" fill="#E2557B" style="--x:250px;--y:180px"/></g>
+  <g transform="translate(225 368) rotate(128)"><rect class="gpB-p gpB-cl" x="-4" y="-8" width="8" height="16" rx="2.5" fill="#2FA08B" style="--x:210px;--y:210px"/></g>
+  <g transform="translate(225 368) rotate(164)"><rect class="gpB-p gpB-cr" x="-4" y="-8" width="8" height="16" rx="2.5" fill="#F6D27A" style="--x:220px;--y:-40px"/></g>
+  <g transform="translate(225 368) rotate(200)"><rect class="gpB-p gpB-cl" x="-4" y="-8" width="8" height="16" rx="2.5" fill="#F3EADA" style="--x:240px;--y:200px"/></g>
+  <g transform="translate(225 368) rotate(236)"><rect class="gpB-p gpB-cr" x="-4" y="-8" width="8" height="16" rx="2.5" fill="#E2557B" style="--x:205px;--y:-80px"/></g>
+  <g transform="translate(225 368) rotate(272)"><rect class="gpB-p gpB-cl" x="-4" y="-8" width="8" height="16" rx="2.5" fill="#F6D27A" style="--x:225px;--y:160px"/></g>
+  <g transform="translate(225 368) rotate(308)"><rect class="gpB-p gpB-cr" x="-4" y="-8" width="8" height="16" rx="2.5" fill="#2FA08B" style="--x:215px;--y:-50px"/></g>
+  <g transform="translate(225 368) rotate(344)"><rect class="gpB-p gpB-cl" x="-4" y="-8" width="8" height="16" rx="2.5" fill="#F3EADA" style="--x:245px;--y:120px"/></g>
+  <g transform="translate(140 280)"><use href="#gpBspk" class="gpB-sp" fill="#F6D27A"/></g>
+  <g transform="translate(316 276) scale(.8)"><use href="#gpBspk" class="gpB-sp" fill="#F3EADA" style="animation-delay:.04s"/></g>
+  <g transform="translate(232 250) scale(.9)"><use href="#gpBspk" class="gpB-sp" fill="#F6D27A" style="animation-delay:.08s"/></g>
+  <g transform="translate(150 470) scale(.75)"><use href="#gpBspk" class="gpB-sp" fill="#F2B33D" style="animation-delay:.06s"/></g>
+  <g transform="translate(300 478) scale(.85)"><use href="#gpBspk" class="gpB-sp" fill="#F6D27A" style="animation-delay:.1s"/></g>
+  <g class="gpB-bub">
+    <g transform="translate(225 368)">
+      <path d="M-34 62 L-58 102 L-6 78 Z" fill="#FFF6E6" stroke="#141B26" stroke-width="5" stroke-linejoin="round"/>
+      <ellipse rx="96" ry="80" fill="#FFF6E6" stroke="#141B26" stroke-width="5"/>
+      <circle class="gpB-dot" cx="-28" cy="-12" r="7" fill="#C98F33"/>
+      <circle class="gpB-dot" cx="0" cy="-12" r="7" fill="#C98F33" style="animation-delay:.4s"/>
+      <circle class="gpB-dot" cx="28" cy="-12" r="7" fill="#C98F33" style="animation-delay:.8s"/>
+      <text class="gpB-bt" y="12">Gappey!</text>
+    </g>
+  </g>
+  <text class="gpB-word" x="229" y="396">GAPPEY!</text>
+  <text class="gpB-sub" x="230" y="448">VOICE PARTY ON</text>
+  <g class="gpB-orn" stroke="#D9A441" fill="none">
+    <line x1="122" y1="472" x2="204" y2="472"/>
+    <line x1="256" y1="472" x2="338" y2="472"/>
+    <path d="M225 466 l6 6 -6 6 -6 -6Z"/>
+  </g>
+</svg>

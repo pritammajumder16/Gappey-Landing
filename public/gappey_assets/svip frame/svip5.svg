@@ -1,0 +1,546 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" width="200" height="200">
+  <title>SVIP 5 Avatar Frame</title>
+
+  <defs>
+    <!-- dark bronze clockwork metal -->
+    <linearGradient id="s5metalMain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6a4e2c">
+        <animate attributeName="stop-color" values="#6a4e2c;#7d5c34;#6a4e2c" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.22" stop-color="#46331c"/>
+      <stop offset="0.45" stop-color="#2b1d0d">
+        <animate attributeName="stop-color" values="#2b1d0d;#3a2812;#2b1d0d" dur="7s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.6" stop-color="#170e04"/>
+      <stop offset="0.78" stop-color="#3d2c15"/>
+      <stop offset="1" stop-color="#755633"/>
+    </linearGradient>
+    <linearGradient id="s5metalDeep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#170f05"/>
+      <stop offset="0.5" stop-color="#4a3620">
+        <animate attributeName="stop-color" values="#4a3620;#5f472a;#4a3620" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#0e0903"/>
+    </linearGradient>
+    <linearGradient id="s5gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9a8"/>
+      <stop offset="0.5" stop-color="#d9a32e"/>
+      <stop offset="1" stop-color="#8a5f08"/>
+    </linearGradient>
+    <linearGradient id="s5brass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0d290"/>
+      <stop offset="0.5" stop-color="#c99a48"/>
+      <stop offset="1" stop-color="#6b4c1a"/>
+    </linearGradient>
+    <linearGradient id="s5sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd98f"/>
+      <stop offset="1" stop-color="#b87a1e"/>
+    </linearGradient>
+    <radialGradient id="s5gemA" cx="0.38" cy="0.32" r="0.95">
+      <stop offset="0" stop-color="#fff3cf"/>
+      <stop offset="0.45" stop-color="#ffb347">
+        <animate attributeName="stop-color" values="#ffb347;#ffd98f;#ffb347" dur="3.4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.8" stop-color="#a85f10"/>
+      <stop offset="1" stop-color="#4a2504"/>
+    </radialGradient>
+    <radialGradient id="s5hub" cx="0.4" cy="0.35" r="0.9">
+      <stop offset="0" stop-color="#fff8e2"/>
+      <stop offset="0.5" stop-color="#ffb347"/>
+      <stop offset="1" stop-color="#7a4a08"/>
+    </radialGradient>
+    <radialGradient id="s5sparkG" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="0.4" stop-color="#ffd98f" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#ffb347" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="s5softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <filter id="s5rayBlur" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+    <filter id="s5textGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.8"/>
+    </filter>
+    <path id="s5spark8" d="M0 -6 L0.9 -0.9 L6 0 L0.9 0.9 L0 6 L-0.9 0.9 L-6 0 L-0.9 -0.9 Z"/>
+    <path id="s5st4" d="M0 -5 L1 -1 L5 0 L1 1 L0 5 L-1 1 L-5 0 L-1 -1 Z"/>
+    <path id="s5wedge" d="M0 -13 L-1.2 -19 L1.2 -19 Z"/>
+    <!-- 8-tooth brass gear -->
+    <g id="s5gear">
+      <g fill="url(#s5brass)" stroke="#3a2a16" stroke-width="0.6">
+        <rect x="-1.15" y="-8.9" width="2.3" height="2.5" rx="0.4"/>
+        <rect x="-1.15" y="-8.9" width="2.3" height="2.5" rx="0.4" transform="rotate(45)"/>
+        <rect x="-1.15" y="-8.9" width="2.3" height="2.5" rx="0.4" transform="rotate(90)"/>
+        <rect x="-1.15" y="-8.9" width="2.3" height="2.5" rx="0.4" transform="rotate(135)"/>
+        <rect x="-1.15" y="-8.9" width="2.3" height="2.5" rx="0.4" transform="rotate(180)"/>
+        <rect x="-1.15" y="-8.9" width="2.3" height="2.5" rx="0.4" transform="rotate(225)"/>
+        <rect x="-1.15" y="-8.9" width="2.3" height="2.5" rx="0.4" transform="rotate(270)"/>
+        <rect x="-1.15" y="-8.9" width="2.3" height="2.5" rx="0.4" transform="rotate(315)"/>
+        <circle r="7"/>
+        <circle r="4.7" fill="#201507" stroke="none"/>
+      </g>
+      <g fill="url(#s5brass)">
+        <rect x="-0.7" y="-4.7" width="1.4" height="4.7"/>
+        <rect x="-0.7" y="-4.7" width="1.4" height="4.7" transform="rotate(90)"/>
+        <rect x="-0.7" y="-4.7" width="1.4" height="4.7" transform="rotate(180)"/>
+        <rect x="-0.7" y="-4.7" width="1.4" height="4.7" transform="rotate(270)"/>
+      </g>
+      <circle r="1.9" fill="url(#s5brass)" stroke="#3a2a16" stroke-width="0.5"/>
+    </g>
+    <!-- giant 12-tooth silhouette gear -->
+    <g id="s5biggear">
+      <g fill="url(#s5brass)" stroke="#55432a" stroke-width="0.8">
+        <rect x="-1.4" y="-16.2" width="2.8" height="3.4" rx="0.5"/>
+        <rect x="-1.4" y="-16.2" width="2.8" height="3.4" rx="0.5" transform="rotate(30)"/>
+        <rect x="-1.4" y="-16.2" width="2.8" height="3.4" rx="0.5" transform="rotate(60)"/>
+        <rect x="-1.4" y="-16.2" width="2.8" height="3.4" rx="0.5" transform="rotate(90)"/>
+        <rect x="-1.4" y="-16.2" width="2.8" height="3.4" rx="0.5" transform="rotate(120)"/>
+        <rect x="-1.4" y="-16.2" width="2.8" height="3.4" rx="0.5" transform="rotate(150)"/>
+        <rect x="-1.4" y="-16.2" width="2.8" height="3.4" rx="0.5" transform="rotate(180)"/>
+        <rect x="-1.4" y="-16.2" width="2.8" height="3.4" rx="0.5" transform="rotate(210)"/>
+        <rect x="-1.4" y="-16.2" width="2.8" height="3.4" rx="0.5" transform="rotate(240)"/>
+        <rect x="-1.4" y="-16.2" width="2.8" height="3.4" rx="0.5" transform="rotate(270)"/>
+        <rect x="-1.4" y="-16.2" width="2.8" height="3.4" rx="0.5" transform="rotate(300)"/>
+        <rect x="-1.4" y="-16.2" width="2.8" height="3.4" rx="0.5" transform="rotate(330)"/>
+        <circle r="13"/>
+        <circle r="8.6" fill="#1a1006" stroke="none"/>
+      </g>
+      <g fill="url(#s5brass)">
+        <rect x="-1" y="-8.6" width="2" height="8.6"/>
+        <rect x="-1" y="-8.6" width="2" height="8.6" transform="rotate(90)"/>
+        <rect x="-1" y="-8.6" width="2" height="8.6" transform="rotate(180)"/>
+        <rect x="-1" y="-8.6" width="2" height="8.6" transform="rotate(270)"/>
+      </g>
+      <circle r="3.2" fill="url(#s5brass)" stroke="#55432a" stroke-width="0.6"/>
+    </g>
+    <clipPath id="s5badgeClip">
+      <circle cx="100" cy="181" r="15.4"/>
+    </clipPath>
+  </defs>
+
+  <!-- GIANT MESHING GEARS turning slowly behind everything -->
+  <g opacity="0.09">
+    <use xlink:href="#s5biggear" transform="translate(63 64) scale(1.35)">
+      <animateTransform attributeName="transform" type="rotate" from="0 63 64" to="360 63 64" dur="80s" additive="sum" repeatCount="indefinite"/>
+    </use>
+  </g>
+  <g opacity="0.07">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="360 138 134" to="0 138 134" dur="60s" repeatCount="indefinite"/>
+      <use xlink:href="#s5biggear" transform="translate(138 134) scale(1.05)"/>
+    </g>
+  </g>
+
+  <!-- THE GREAT DIAL behind the avatar: track, roman numerals, live hands -->
+  <circle cx="100" cy="100" r="58.5" fill="none" stroke="#c9a13c" stroke-width="1.8"
+          stroke-dasharray="0.08 0.92" pathLength="12" opacity="0.3"/>
+  <circle cx="100" cy="100" r="57.2" fill="none" stroke="#d9b36a" stroke-width="0.7"
+          stroke-dasharray="0.1 0.9" pathLength="60" opacity="0.18"/>
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="8" fill="#d9b36a" opacity="0.55" text-anchor="middle">
+    <text x="100" y="49">XII</text>
+    <text x="156.5" y="103">III</text>
+    <text x="100" y="158.5">VI</text>
+    <text x="43.5" y="103">IX</text>
+  </g>
+  <!-- hour hand -->
+  <g opacity="0.5">
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="576s" repeatCount="indefinite"/>
+    <path d="M100 100 L100 75" stroke="#d9b36a" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M100 100 L100 105.5" stroke="#d9b36a" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+  <!-- minute hand -->
+  <g opacity="0.55">
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="72s" repeatCount="indefinite"/>
+    <path d="M100 100 L100 60" stroke="#e8cf96" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M100 100 L100 107" stroke="#e8cf96" stroke-width="1.4" stroke-linecap="round"/>
+  </g>
+  <!-- TICKING second hand (12 discrete steps) -->
+  <g opacity="0.8">
+    <animateTransform attributeName="transform" type="rotate" dur="12s" calcMode="discrete" repeatCount="indefinite"
+      values="0 100 100;30 100 100;60 100 100;90 100 100;120 100 100;150 100 100;180 100 100;210 100 100;240 100 100;270 100 100;300 100 100;330 100 100"/>
+    <path d="M100 100 L100 50" stroke="#ffb347" stroke-width="0.8" stroke-linecap="round"/>
+    <path d="M100 100 L100 108" stroke="#ffb347" stroke-width="0.8" stroke-linecap="round"/>
+    <circle cx="100" cy="50" r="1.3" fill="#ffd98f"/>
+  </g>
+  <circle cx="100" cy="100" r="2.6" fill="url(#s5brass)" stroke="#3a2a16" stroke-width="0.7"/>
+  <circle cx="100" cy="100" r="0.9" fill="#ffd98f"/>
+
+  <!-- amber aura + Turning flash layer -->
+  <circle cx="100" cy="100" r="89" fill="none" stroke="#ffb347" stroke-width="13" opacity="0.3" filter="url(#s5softGlow)">
+    <animate attributeName="r" values="88;92;88" dur="3.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.26;0.5;0.26" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="89" fill="none" stroke="#fff3d0" stroke-width="13" opacity="0" filter="url(#s5softGlow)">
+    <animate attributeName="opacity" values="0;0;0.5;0.06;0" keyTimes="0;0.88;0.905;0.95;1" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#ffd98f" stroke-width="3" opacity="0.2" filter="url(#s5softGlow)">
+    <animate attributeName="r" values="96;99.5;96" dur="3.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.14;0.36;0.14" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- outer instrument rings -->
+  <g>
+    <circle cx="100" cy="100" r="96.5" fill="none" stroke="#a98a55" stroke-width="1.3"
+            stroke-dasharray="1.2 3.8" pathLength="144" stroke-linecap="round" opacity="0.5"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="26s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <circle cx="100" cy="100" r="94" fill="none" stroke="#6a5432" stroke-width="2"
+            stroke-dasharray="5.2 2.8" pathLength="96" opacity="0.5"/>
+    <animateTransform attributeName="transform" type="rotate" from="360 100 100" to="0 100 100" dur="22s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <circle cx="100" cy="100" r="92" fill="none" stroke="#55432a" stroke-width="1"
+            stroke-dasharray="1.5 3.5" pathLength="120" opacity="0.5"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="14s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- halo base + Turning flare -->
+  <circle cx="100" cy="100" r="98.8" fill="none" stroke="#b3822f" stroke-width="5" opacity="0.15" filter="url(#s5softGlow)"/>
+  <circle cx="100" cy="100" r="98.8" fill="none" stroke="#ffd98f" stroke-width="6" opacity="0" filter="url(#s5softGlow)">
+    <animate attributeName="opacity" values="0;0;0.45;0" keyTimes="0;0.885;0.915;1" dur="12s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- band structure -->
+  <circle cx="100" cy="100" r="92.5" fill="none" stroke="url(#s5metalDeep)" stroke-width="2.5"/>
+  <circle cx="100" cy="100" r="89" fill="none" stroke="url(#s5metalMain)" stroke-width="7"/>
+  <circle cx="100" cy="100" r="84.6" fill="none" stroke="#f7e9c8" stroke-width="1.1">
+    <animate attributeName="opacity" values="0.35;0.7;0.35" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="78.5" fill="none" stroke="url(#s5metalMain)" stroke-width="6.5"/>
+  <circle cx="100" cy="100" r="74.4" fill="none" stroke="#120b04" stroke-width="1.4" opacity="0.9"/>
+  <circle cx="100" cy="100" r="67.5" fill="none" stroke="#ffb347" stroke-width="0.8">
+    <animate attributeName="opacity" values="0.2;0.45;0.2" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- TEMPORAL SEAM: amber current + lightspeed packet + Turning surge -->
+  <circle cx="100" cy="100" r="82.8" fill="none" stroke="#120b04" stroke-width="3"/>
+  <circle cx="100" cy="100" r="82.8" fill="none" stroke="#ffb347" stroke-width="4.5" stroke-linecap="round"
+          stroke-dasharray="5 7" opacity="0.35" filter="url(#s5softGlow)">
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="82.8" fill="none" stroke="#ffe9b8" stroke-width="1.5" stroke-linecap="round"
+          stroke-dasharray="5 7">
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="82.8" fill="none" stroke="#ffd98f" stroke-width="1.1" stroke-linecap="round"
+          stroke-dasharray="3 9" opacity="0.55">
+    <animate attributeName="stroke-dashoffset" from="0" to="20" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="82.8" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"
+          pathLength="100" stroke-dasharray="14 86" filter="url(#s5softGlow)">
+    <animate attributeName="stroke-dashoffset" from="0" to="-100" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="82.8" fill="none" stroke="#fff3d0" stroke-width="5" opacity="0" filter="url(#s5softGlow)">
+    <animate attributeName="opacity" values="0;0;0.4;0" keyTimes="0;0.885;0.925;1" dur="12s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- glints -->
+  <g stroke-linecap="round" fill="none">
+    <path d="M 63.8 18.7 A 89 89 0 0 1 136.2 18.7" stroke="#f7e9c8" stroke-width="6" opacity="0.25"/>
+    <path d="M 81.5 13 A 89 89 0 0 1 118.5 13" stroke="#fffdf2" stroke-width="5" opacity="0.8"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="4.4s" repeatCount="indefinite"/>
+  </g>
+  <g stroke-linecap="round" fill="none">
+    <path d="M 81.5 13 A 89 89 0 0 1 118.5 13" stroke="#fffdf2" stroke-width="5" opacity="0.55"/>
+    <animateTransform attributeName="transform" type="rotate" from="130 100 100" to="490 100 100" dur="4.4s" repeatCount="indefinite"/>
+  </g>
+  <g stroke-linecap="round" fill="none">
+    <path d="M 81.5 13 A 89 89 0 0 1 118.5 13" stroke="#f7e9c8" stroke-width="4" opacity="0.3"/>
+    <animateTransform attributeName="transform" type="rotate" from="250 100 100" to="610 100 100" dur="4.4s" repeatCount="indefinite"/>
+  </g>
+  <g stroke-linecap="round" fill="none">
+    <path d="M 73.2 26.2 A 78.5 78.5 0 0 1 126.8 26.2" stroke="#fffdf2" stroke-width="3" opacity="0.45"/>
+    <animateTransform attributeName="transform" type="rotate" from="360 100 100" to="0 100 100" dur="7.4s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- twin golden comets -->
+  <g>
+    <g transform="translate(100 11)">
+      <circle r="3.4" fill="#ffb347" opacity="0.35"/>
+      <circle r="1.6" fill="#ffffff"/>
+      <circle cx="-4" cy="0" r="1" fill="#ffd98f" opacity="0.55"/>
+      <circle cx="-7" cy="0" r="0.8" fill="#ffb347" opacity="0.3"/>
+      <circle cx="-10" cy="0" r="0.6" fill="#ffb347" opacity="0.15"/>
+    </g>
+    <g transform="rotate(180 100 100)">
+      <g transform="translate(100 11)">
+        <circle r="3.4" fill="#ffb347" opacity="0.35"/>
+        <circle r="1.6" fill="#ffffff"/>
+        <circle cx="-4" cy="0" r="1" fill="#ffd98f" opacity="0.55"/>
+        <circle cx="-7" cy="0" r="0.8" fill="#ffb347" opacity="0.3"/>
+        <circle cx="-10" cy="0" r="0.6" fill="#ffb347" opacity="0.15"/>
+      </g>
+    </g>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="6.6s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- brass tick ring -->
+  <g>
+    <circle cx="100" cy="100" r="70.8" fill="none" stroke="#c9a13c" stroke-width="2"
+            stroke-dasharray="1 3" pathLength="120" opacity="0.55"/>
+    <animateTransform attributeName="transform" type="rotate" from="360 100 100" to="0 100 100" dur="18s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ESCAPEMENT GEARS at corners (stepping in discrete ticks) + Turning flash -->
+  <circle cx="162.9" cy="37.1" r="9.5" fill="#ffd98f" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.4;0" keyTimes="0;0.885;0.915;0.96;1" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  <g transform="translate(162.9 37.1)">
+    <circle r="8.3" fill="#1c1206" stroke="url(#s5brass)" stroke-width="1"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" dur="6s" calcMode="discrete" begin="-0.4s" repeatCount="indefinite"
+        values="0;30;60;90;120;150;180;210;240;270;300;330"/>
+      <use xlink:href="#s5gear" transform="scale(0.92)"/>
+    </g>
+    <circle r="1" fill="url(#s5hub)">
+      <animate attributeName="r" values="0.9;1.2;0.9" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <circle cx="37.1" cy="37.1" r="9.5" fill="#ffd98f" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.4;0" keyTimes="0;0.885;0.915;0.96;1" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  <g transform="translate(37.1 37.1)">
+    <circle r="8.3" fill="#1c1206" stroke="url(#s5brass)" stroke-width="1"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" dur="6s" calcMode="discrete" begin="-1.6s" repeatCount="indefinite"
+        values="0;30;60;90;120;150;180;210;240;270;300;330"/>
+      <use xlink:href="#s5gear" transform="scale(0.92)"/>
+    </g>
+    <circle r="1" fill="url(#s5hub)">
+      <animate attributeName="r" values="0.9;1.2;0.9" dur="2.2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <circle cx="37.1" cy="162.9" r="9.5" fill="#ffd98f" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.4;0" keyTimes="0;0.885;0.915;0.96;1" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  <g transform="translate(37.1 162.9)">
+    <circle r="8.3" fill="#1c1206" stroke="url(#s5brass)" stroke-width="1"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" dur="6s" calcMode="discrete" begin="-2.8s" repeatCount="indefinite"
+        values="0;30;60;90;120;150;180;210;240;270;300;330"/>
+      <use xlink:href="#s5gear" transform="scale(0.92)"/>
+    </g>
+    <circle r="1" fill="url(#s5hub)">
+      <animate attributeName="r" values="0.9;1.2;0.9" dur="2.2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <circle cx="162.9" cy="162.9" r="9.5" fill="#ffd98f" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.4;0" keyTimes="0;0.885;0.915;0.96;1" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  <g transform="translate(162.9 162.9)">
+    <circle r="8.3" fill="#1c1206" stroke="url(#s5brass)" stroke-width="1"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" dur="6s" calcMode="discrete" begin="-4s" repeatCount="indefinite"
+        values="0;30;60;90;120;150;180;210;240;270;300;330"/>
+      <use xlink:href="#s5gear" transform="scale(0.92)"/>
+    </g>
+    <circle r="1" fill="url(#s5hub)">
+      <animate attributeName="r" values="0.9;1.2;0.9" dur="2.2s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- STOPWATCH ROUNDELS on the sides -->
+  <g transform="translate(11 100)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="3s" begin="1s" repeatCount="indefinite"/>
+      <circle r="6.4" fill="url(#s5brass)" stroke="#3a2a16" stroke-width="1"/>
+      <circle r="4.9" fill="#f7efd9"/>
+      <circle r="4.1" fill="none" stroke="#6b4c1a" stroke-width="0.7" stroke-dasharray="0.12 0.88" pathLength="12" opacity="0.7"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4.2s" repeatCount="indefinite"/>
+        <path d="M0 0 L0 -3.6" stroke="#3a2a16" stroke-width="0.9" stroke-linecap="round"/>
+      </g>
+      <circle r="0.7" fill="#8a5f28"/>
+      <circle r="6.4" fill="none" stroke="#ffd98f" stroke-width="0.5" opacity="0">
+        <animate attributeName="opacity" values="0;0;0.8;0" keyTimes="0;0.885;0.91;0.96;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+  <g transform="translate(189 100)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="3s" begin="2s" repeatCount="indefinite"/>
+      <circle r="6.4" fill="url(#s5brass)" stroke="#3a2a16" stroke-width="1"/>
+      <circle r="4.9" fill="#f7efd9"/>
+      <circle r="4.1" fill="none" stroke="#6b4c1a" stroke-width="0.7" stroke-dasharray="0.12 0.88" pathLength="12" opacity="0.7"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="4.8s" repeatCount="indefinite"/>
+        <path d="M0 0 L0 -3.6" stroke="#3a2a16" stroke-width="0.9" stroke-linecap="round"/>
+      </g>
+      <circle r="0.7" fill="#8a5f28"/>
+      <circle r="6.4" fill="none" stroke="#ffd98f" stroke-width="0.5" opacity="0">
+        <animate attributeName="opacity" values="0;0;0.8;0" keyTimes="0;0.885;0.91;0.96;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <!-- THE GREAT HOURGLASS crest: draining sand, flips at the Turning -->
+  <g transform="translate(100 20)">
+    <g fill="#c9a13c" opacity="0.2">
+      <use xlink:href="#s5wedge"/>
+      <use xlink:href="#s5wedge" transform="rotate(45)"/>
+      <use xlink:href="#s5wedge" transform="rotate(90)"/>
+      <use xlink:href="#s5wedge" transform="rotate(135)"/>
+      <use xlink:href="#s5wedge" transform="rotate(180)"/>
+      <use xlink:href="#s5wedge" transform="rotate(225)"/>
+      <use xlink:href="#s5wedge" transform="rotate(270)"/>
+      <use xlink:href="#s5wedge" transform="rotate(315)"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
+    </g>
+    <!-- ticking orbit spark (12 discrete steps) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" dur="12s" calcMode="discrete" repeatCount="indefinite"
+        values="0;30;60;90;120;150;180;210;240;270;300;330"/>
+      <circle cy="-19" r="2.3" fill="url(#s5sparkG)"/>
+      <circle cy="-19" r="1.1" fill="#ffffff"/>
+    </g>
+    <circle r="12.5" fill="none" stroke="#ffd98f" stroke-width="1.6" opacity="0" filter="url(#s5softGlow)">
+      <animate attributeName="opacity" values="0;0;0.9;0.1;0" keyTimes="0;0.89;0.915;0.97;1" dur="12s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- flipping assembly (symmetric: the loop snap-back is invisible) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0;0;180" keyTimes="0;0.9;0.96" dur="12s" repeatCount="indefinite"/>
+      <g opacity="1">
+        <animate attributeName="opacity" values="1;1;0.12;1;1" keyTimes="0;0.88;0.925;0.97;1" dur="12s" repeatCount="indefinite"/>
+        <!-- top bulb -->
+        <path d="M-5.4 -8.8 C-5.4 -4.2 -2 -2.4 -1.1 -0.2 L1.1 -0.2 C2 -2.4 5.4 -4.2 5.4 -8.8 Z"
+              fill="#f7efd9" fill-opacity="0.1" stroke="url(#s5brass)" stroke-width="1"/>
+        <!-- bottom bulb -->
+        <path d="M-5.4 8.8 C-5.4 4.2 -2 2.4 -1.1 0.2 L1.1 0.2 C2 2.4 5.4 4.2 5.4 8.8 Z"
+              fill="#f7efd9" fill-opacity="0.1" stroke="url(#s5brass)" stroke-width="1"/>
+        <!-- glass highlights -->
+        <path d="M-4 -7.6 C-4 -5 -2.2 -3.4 -1.4 -1.6" fill="none" stroke="#ffffff" stroke-width="0.6" opacity="0.35"/>
+        <path d="M-4 7.6 C-4 5 -2.2 3.4 -1.4 1.6" fill="none" stroke="#ffffff" stroke-width="0.6" opacity="0.3"/>
+        <!-- top sand pile (drains) -->
+        <g transform="translate(0 -0.35)">
+          <g>
+            <animateTransform attributeName="transform" type="scale" values="1 1;1 1;1 0.32;1 0.32" keyTimes="0;0.05;0.9;1" dur="12s" repeatCount="indefinite"/>
+            <path d="M-3.1 0 C-2.1 -1.7 -1 -2.5 0 -2.9 C1 -2.5 2.1 -1.7 3.1 0 Z" fill="url(#s5sand)"/>
+          </g>
+        </g>
+        <!-- bottom sand pile (fills) -->
+        <g transform="translate(0 8.55)">
+          <g>
+            <animateTransform attributeName="transform" type="scale" values="1 0.32;1 0.32;1 1;1 1" keyTimes="0;0.1;0.9;1" dur="12s" repeatCount="indefinite"/>
+            <path d="M-3.6 0 C-2.3 -1.9 -1 -2.9 0 -3.3 C1 -2.9 2.3 -1.9 3.6 0 Z" fill="url(#s5sand)"/>
+          </g>
+        </g>
+        <!-- falling grains -->
+        <g fill="#ffd98f">
+          <circle cx="-0.6" cy="-1" r="0.65">
+            <animate attributeName="cy" values="-1;7.6" dur="0.95s" begin="-0.1s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.75;1" dur="0.95s" begin="-0.1s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="0.15" cy="-1" r="0.6">
+            <animate attributeName="cy" values="-1;7.6" dur="1.15s" begin="-0.55s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.75;1" dur="1.15s" begin="-0.55s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="0.65" cy="-1" r="0.55">
+            <animate attributeName="cy" values="-1;7.6" dur="0.8s" begin="-0.35s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.75;1" dur="0.8s" begin="-0.35s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="-0.15" cy="-1" r="0.7">
+            <animate attributeName="cy" values="-1;7.6" dur="1.05s" begin="-0.8s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.75;1" dur="1.05s" begin="-0.8s" repeatCount="indefinite"/>
+          </circle>
+        </g>
+        <!-- caps + finial -->
+        <rect x="-6.2" y="-10.5" width="12.4" height="1.9" rx="0.9" fill="url(#s5brass)" stroke="#3a2a16" stroke-width="0.5"/>
+        <rect x="-6.2" y="8.6" width="12.4" height="1.9" rx="0.9" fill="url(#s5brass)" stroke="#3a2a16" stroke-width="0.5"/>
+        <circle cy="-11.6" r="1.15" fill="url(#s5brass)" stroke="#3a2a16" stroke-width="0.5"/>
+      </g>
+    </g>
+    <!-- brass mount + amber gem -->
+    <path d="M-11 9.6 Q0 13.8 11 9.6 L11 12.2 Q0 16.4 -11 12.2 Z" fill="#1c1206" stroke="url(#s5brass)" stroke-width="0.9"/>
+    <circle cy="12.8" r="2" fill="url(#s5gemA)" stroke="url(#s5gold)" stroke-width="0.5">
+      <animate attributeName="r" values="1.8;2.3;1.8" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- THE TURNING OF THE HOUR: temporal ripples every 12s -->
+  <circle cx="100" cy="100" fill="none" stroke="#ffd98f" stroke-width="2" r="72" opacity="0" filter="url(#s5softGlow)">
+    <animate attributeName="r" values="72;72;118;118" keyTimes="0;0.88;0.985;1" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.5;0" keyTimes="0;0.88;0.92;1" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" fill="none" stroke="#fff3d0" stroke-width="1.2" r="72" opacity="0">
+    <animate attributeName="r" values="72;72;112;112" keyTimes="0;0.9;0.995;1" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.4;0" keyTimes="0;0.9;0.94;1" dur="12s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- 12 amber sparkles -->
+  <g>
+    <use xlink:href="#s5spark8" transform="translate(42 44) scale(1.05)" fill="#fff6d8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.8s" begin="0s" repeatCount="indefinite"/></use>
+    <use xlink:href="#s5spark8" transform="translate(158 44) scale(0.9)" fill="#ffd98f" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.8s" begin="0.3s" repeatCount="indefinite"/></use>
+    <use xlink:href="#s5spark8" transform="translate(26 126) scale(0.8)" fill="#ffe9b8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.8s" begin="0.6s" repeatCount="indefinite"/></use>
+    <use xlink:href="#s5spark8" transform="translate(174 126) scale(1)" fill="#fff6d8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.8s" begin="0.9s" repeatCount="indefinite"/></use>
+    <use xlink:href="#s5spark8" transform="translate(66 22) scale(0.75)" fill="#ffb347" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.8s" begin="1.2s" repeatCount="indefinite"/></use>
+    <use xlink:href="#s5spark8" transform="translate(134 22) scale(0.85)" fill="#ffe9b8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.8s" begin="1.5s" repeatCount="indefinite"/></use>
+    <use xlink:href="#s5spark8" transform="translate(24 98) scale(0.7)" fill="#fff6d8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.8s" begin="0.45s" repeatCount="indefinite"/></use>
+    <use xlink:href="#s5spark8" transform="translate(176 98) scale(0.75)" fill="#ffd98f" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.8s" begin="1.05s" repeatCount="indefinite"/></use>
+    <use xlink:href="#s5spark8" transform="translate(56 32) scale(0.7)" fill="#ffe9b8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.8s" begin="1.65s" repeatCount="indefinite"/></use>
+    <use xlink:href="#s5spark8" transform="translate(144 32) scale(0.7)" fill="#fff6d8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="1.8s" begin="0.75s" repeatCount="indefinite"/></use>
+    <use xlink:href="#s5spark8" transform="translate(34 74) scale(0.65)" fill="#ffb347" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2s" begin="1.35s" repeatCount="indefinite"/></use>
+    <use xlink:href="#s5spark8" transform="translate(166 74) scale(0.65)" fill="#fff6d8" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.15s" repeatCount="indefinite"/></use>
+  </g>
+
+  <!-- POCKET WATCH BADGE: text sealed inside the dial -->
+  <g>
+    <!-- winding crown + bow -->
+    <circle cx="100" cy="154.2" r="2.3" fill="none" stroke="url(#s5gold)" stroke-width="1.5"/>
+    <circle cx="100" cy="158" r="2.1" fill="url(#s5gold)" stroke="#6b4d05" stroke-width="0.6"/>
+    <path d="M99.3 156.4 L99.3 159.6 M100.7 156.4 L100.7 159.6" stroke="#8a5f08" stroke-width="0.5"/>
+    <rect x="98.7" y="159.4" width="2.6" height="3" rx="0.6" fill="url(#s5brass)" stroke="#3a2a16" stroke-width="0.5"/>
+    <!-- case -->
+    <circle cx="100" cy="181" r="18" fill="url(#s5brass)" stroke="#3a2a16" stroke-width="1.6"/>
+    <circle cx="100" cy="181" r="16.4" fill="none" stroke="#f7efd9" stroke-width="0.6" opacity="0.5"/>
+    <circle cx="100" cy="181" r="15.4" fill="#17110a"/>
+    <circle cx="100" cy="181" r="13.9" fill="none" stroke="#8a5f28" stroke-width="0.7" opacity="0.6"/>
+    <!-- minute track + cardinal dots -->
+    <circle cx="100" cy="181" r="13.2" fill="none" stroke="#d9b36a" stroke-width="0.8"
+            stroke-dasharray="0.14 0.86" pathLength="60" opacity="0.5"/>
+    <g fill="#ffd98f">
+      <circle cx="100" cy="170" r="0.95"/>
+      <circle cx="111" cy="181" r="0.95"/>
+      <circle cx="100" cy="192" r="0.95"/>
+      <circle cx="89" cy="181" r="0.95"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.4s" repeatCount="indefinite"/>
+    </g>
+    <!-- dial watermark gear -->
+    <use xlink:href="#s5gear" transform="translate(100 179.4) scale(0.5)" opacity="0.14"/>
+    <!-- live mini hands -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 100 179.4" to="360 100 179.4" dur="288s" repeatCount="indefinite"/>
+      <path d="M100 179.4 L100 174.6" stroke="#e8cf96" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 100 179.4" to="360 100 179.4" dur="24s" repeatCount="indefinite"/>
+      <path d="M100 179.4 L100 172.6" stroke="#f7efd9" stroke-width="1.1" stroke-linecap="round"/>
+    </g>
+    <circle cx="100" cy="179.4" r="1.1" fill="url(#s5gold)" stroke="#6b4d05" stroke-width="0.4"/>
+    <!-- shine sweep -->
+    <g clip-path="url(#s5badgeClip)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-52 0;58 0" dur="4.8s" repeatCount="indefinite"/>
+        <rect x="94" y="160" width="12" height="46" fill="#ffffff" opacity="0.22" transform="skewX(-18)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-52 0;58 0" dur="4.8s" begin="2.4s" repeatCount="indefinite"/>
+        <rect x="94" y="160" width="8" height="46" fill="#ffd98f" opacity="0.13" transform="skewX(-18)"/>
+      </g>
+    </g>
+    <!-- strap lugs -->
+    <circle cx="81.5" cy="181" r="1.1" fill="url(#s5brass)" stroke="#3a2a16" stroke-width="0.5"/>
+    <circle cx="118.5" cy="181" r="1.1" fill="url(#s5brass)" stroke="#3a2a16" stroke-width="0.5"/>
+    <!-- text INSIDE the watch dial -->
+    <text x="100" y="186.6" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+          font-size="7.8" font-weight="800" letter-spacing="0.4" fill="#ffb347" filter="url(#s5textGlow)" opacity="0.5">SVIP 5
+      &lt;animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.8s" repeatCount="indefinite"/&gt;
+    </text>
+    <text x="100" y="187.5" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+          font-size="7.8" font-weight="800" letter-spacing="0.4" fill="#0d0803" opacity="0.7">SVIP 5</text>
+    <text x="100" y="186.7" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+          font-size="7.8" font-weight="800" letter-spacing="0.4" fill="#f7ecd2">SVIP 5</text>
+  </g>
+</svg>

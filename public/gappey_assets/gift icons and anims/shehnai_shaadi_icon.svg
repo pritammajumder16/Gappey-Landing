@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <title>Shehnai Shaadi — gift logo</title>
+  <defs>
+    <linearGradient id="snLgold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6D27A"/><stop offset=".55" stop-color="#D9A441"/><stop offset="1" stop-color="#B8791F"/>
+    </linearGradient>
+    <path id="snLspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+    <g id="snLnote">
+      <ellipse rx="5" ry="3.8" transform="rotate(-18)"/>
+      <path d="M4.4 -1.4 V-21 q8 2.5 10 8" fill="none" stroke-width="2.4" stroke-linecap="round"/>
+    </g>
+  </defs>
+  <rect x="30" y="114" width="14" height="12" rx="3" fill="#5E1B26" stroke="#D9A441" stroke-width="1.5"/>
+  <path d="M30 118 q-8 -2 -12 -6 M30 122 q-8 2 -12 6" stroke="#C9A06A" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <rect x="42" y="112" width="112" height="16" rx="7" fill="#8E2E3E" stroke="#5E1B26" stroke-width="2"/>
+  <rect x="46" y="115" width="104" height="4" rx="2" fill="#B3475A" opacity=".7"/>
+  <g fill="#D9A441">
+    <rect x="62" y="110" width="5" height="20" rx="2"/>
+    <rect x="88" y="110" width="5" height="20" rx="2"/>
+    <rect x="114" y="110" width="5" height="20" rx="2"/>
+  </g>
+  <circle cx="76" cy="120" r="2.2" fill="#F6D27A"/>
+  <circle cx="102" cy="120" r="2.2" fill="#F6D27A"/>
+  <circle cx="128" cy="120" r="2.2" fill="#F6D27A"/>
+  <path d="M154 110 C176 105 194 94 205 80 C212 104 212 136 205 160 C194 146 176 135 154 130 Z" fill="url(#snLgold)" stroke="#7A531A" stroke-width="2"/>
+  <ellipse cx="206" cy="120" rx="5.5" ry="40" fill="#8A5F1D"/>
+  <ellipse cx="205" cy="120" rx="3" ry="32" fill="#5E3A10"/>
+  <ellipse cx="206" cy="120" rx="5.5" ry="40" fill="none" stroke="#F6D27A" stroke-width="1.5" opacity=".8"/>
+  <g>
+    <circle cx="84" cy="134" r="6" fill="#F2A43D"/><circle cx="94" cy="137" r="6" fill="#E88A2D"/><circle cx="89" cy="145" r="6" fill="#F2A43D"/>
+    <path d="M84 128 q-4 -7 -11 -7" stroke="#3E7C4F" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <circle cx="120" cy="136" r="6" fill="#E88A2D"/><circle cx="130" cy="139" r="6" fill="#F2A43D"/><circle cx="125" cy="147" r="6" fill="#E88A2D"/>
+    <path d="M130 133 q4 -7 11 -7" stroke="#3E7C4F" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  </g>
+  <g fill="#F3EADA" stroke="#F3EADA">
+    <use href="#snLnote" transform="translate(58 80) rotate(-10)"/>
+    <use href="#snLnote" transform="translate(98 58) rotate(8) scale(.85)"/>
+  </g>
+  <use href="#snLspk" transform="translate(204 46) scale(.8)" fill="#F2B33D"/>
+  <use href="#snLspk" transform="translate(40 186) scale(.6)" fill="#F6EFE2"/>
+  <circle cx="196" cy="196" r="2.4" fill="#D9A441"/>
+</svg>

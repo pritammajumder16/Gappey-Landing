@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 170" width="500" height="170">
+<title>VIP 4 Ride — Platinum Helicopter</title>
+<defs>
+<linearGradient id="c4body" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#f6fafd"/><stop offset=".45" stop-color="#aebccb">
+<animate attributeName="stop-color" values="#aebccb;#d7e1ec;#aebccb" dur="4s" repeatCount="indefinite"/>
+</stop><stop offset="1" stop-color="#7e8fa2"/>
+</linearGradient>
+<linearGradient id="c4plate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#131c26"/><stop offset="1" stop-color="#080f16"/></linearGradient>
+<linearGradient id="c4beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe9ff" stop-opacity=".55"/><stop offset="1" stop-color="#bfe9ff" stop-opacity="0"/></linearGradient>
+<linearGradient id="c4scan" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#bfe9ff" stop-opacity="0"/><stop offset=".5" stop-color="#bfe9ff" stop-opacity=".35"/><stop offset="1" stop-color="#bfe9ff" stop-opacity="0"/></linearGradient>
+<radialGradient id="c4gem" cx=".35" cy=".3" r=".95"><stop offset="0" stop-color="#f0f9ff"/><stop offset=".4" stop-color="#9fd0ff"/><stop offset="1" stop-color="#123f7d"/></radialGradient>
+<clipPath id="c4bodyClip"><path d="M66 -6 Q60 -30 32 -33 L-4 -33 Q-28 -31 -38 -10 Q-42 -2 -38 4 L58 8 Q68 6 66 -6 Z"/></clipPath>
+<clipPath id="c4plateClip"><rect x="-95" y="-19" width="190" height="38" rx="14"/></clipPath>
+</defs>
+
+<!-- landing pad -->
+<g opacity="0">
+<animate attributeName="opacity" values="0;.8" begin=".25s" dur=".45s" fill="freeze"/>
+<animate attributeName="opacity" values=".8;0" begin="4.75s" dur=".6s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 6" keyTimes="0;.88;1" dur="5.4s" fill="freeze"/>
+<ellipse cx="250" cy="151" rx="80" ry="11" fill="#7fd4ff" opacity=".14"/>
+<ellipse cx="250" cy="151" rx="66" ry="9" fill="none" stroke="#7fd4ff" stroke-width="2" pathLength="100" stroke-dasharray="6 6">
+<animate attributeName="stroke-dashoffset" from="0" to="-100" dur="3s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="250" cy="151" rx="42" ry="5.5" fill="none" stroke="#bfe9ff" stroke-width="1.2" opacity=".55" pathLength="100" stroke-dasharray="3 5">
+<animate attributeName="stroke-dashoffset" from="0" to="100" dur="2.2s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="250" cy="151" rx="5" ry="1.4" fill="#bfe9ff">
+<animate attributeName="opacity" values=".5;1;.5" dur="1.6s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="250" cy="151" rx="10" ry="2" fill="none" stroke="#bfe9ff" stroke-width="1.4" opacity="0">
+<animate attributeName="rx" values="12;64" begin="2.85s" dur="1s" fill="freeze"/>
+<animate attributeName="ry" values="2;8.5" begin="2.85s" dur="1s" fill="freeze"/>
+<animate attributeName="opacity" values="0;.55;0" keyTimes="0;.25;1" begin="2.85s" dur="1s" fill="freeze"/>
+</ellipse>
+<ellipse cx="250" cy="151" rx="10" ry="2" fill="none" stroke="#7fd4ff" stroke-width="1.1" opacity="0">
+<animate attributeName="rx" values="12;58" begin="3.25s" dur="1s" fill="freeze"/>
+<animate attributeName="ry" values="2;8" begin="3.25s" dur="1s" fill="freeze"/>
+<animate attributeName="opacity" values="0;.45;0" keyTimes="0;.25;1" begin="3.25s" dur="1s" fill="freeze"/>
+</ellipse>
+</g>
+
+<!-- hologram scan -->
+<rect x="-40" y="0" width="90" height="170" fill="url(#c4scan)" opacity="0">
+<animate attributeName="opacity" values="0;.8;.8;0" keyTimes="0;.1;.85;1" begin="2.95s" dur=".7s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-120 0;560 0" keyTimes="0;1" begin="2.95s" dur=".7s" fill="freeze"/>
+</rect>
+
+<!-- CENTER WRAPPER -->
+<g transform="translate(250 92)">
+<g>
+<animateTransform attributeName="transform" type="translate"
+values="-760 -10;-760 -10;0 0;0 0;770 -6"
+keyTimes="0;.05;.5;.82;1"
+calcMode="spline"
+keySplines="0 0 1 1;.17 .67 .24 1;0 0 1 1;.55 .06 .68 .19"
+dur="5.4s" fill="freeze"/>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 -12;0 -12;0 0" keyTimes="0;.06;.5" dur="5.4s" fill="freeze" calcMode="spline" keySplines="0 0 1 1;.3 .6 .3 1;.2 .7 .3 1"/>
+<g>
+<animateTransform attributeName="transform" type="translate"
+values="0 0;0 0;0 -3;0 3;0 -2;0 2;0 -1;0 0;0 0"
+keyTimes="0;.5;.56;.62;.68;.74;.8;.86;.93" dur="5.4s" fill="freeze"/>
+<g>
+<animateTransform attributeName="transform" type="rotate" values="0 0 0;0 0 0;-6 0 0" keyTimes="0;.82;.9" dur="5.4s" fill="freeze"/>
+
+<ellipse cx="-6" cy="40" rx="58" ry="6.5" fill="#7fd4ff" opacity="0">
+<animate attributeName="opacity" values="0;.18;.14" keyTimes="0;.2;1" begin="2.7s" dur=".4s" fill="freeze"/>
+</ellipse>
+
+<g stroke="#7fc4ff" stroke-width="2.5" stroke-linecap="round" opacity="0">
+<animate attributeName="opacity" values="0;.6;.6;0;0;.85;0" keyTimes="0;.07;.42;.5;.84;.9;1" dur="5.4s" fill="freeze"/>
+<line x1="-84" y1="-20" x2="-134" y2="-22"/>
+<line x1="-78" y1="-4" x2="-140" y2="-4"/>
+<line x1="-84" y1="12" x2="-130" y2="14"/>
+</g>
+<circle cx="-76" cy="-16" r="2" fill="#bfe9ff" opacity="0">
+<animate attributeName="opacity" values="0;.9;0;.9;0;0;.95;0" keyTimes="0;.05;.12;.3;.45;.84;.9;1" dur="5.4s" fill="freeze"/>
+</circle>
+<circle cx="-68" cy="8" r="1.6" fill="#d6f0ff" opacity="0">
+<animate attributeName="opacity" values="0;.8;0;.8;0;0;.85;0" keyTimes="0;.09;.16;.34;.48;.86;.92;1" dur="5.4s" fill="freeze"/>
+</circle>
+
+<path d="M10 8 L64 58 L-52 58 Z" fill="url(#c4beam)" opacity="0">
+<animate attributeName="opacity" values="0;.75;.75;0" keyTimes="0;.1;.9;1" begin="3.4s" dur="1s" fill="freeze"/>
+<animateTransform attributeName="transform" type="rotate" values="-12 10 8;10 10 8;-5 10 8;0 10 8" keyTimes="0;.4;.75;1" begin="3.4s" dur="1.2s" fill="freeze"/>
+</path>
+
+<path d="M-30 -14 L-92 -22 L-92 -13 L-32 -6 Z" fill="url(#c4body)" stroke="#4c5a6b" stroke-width="2"/>
+<path d="M-88 -34 L-98 -6 L-82 -10 Z" fill="url(#c4body)" stroke="#4c5a6b" stroke-width="1.8"/>
+<g transform="translate(-94 -26)">
+<ellipse rx="2.4" ry="11" fill="#dfe9f5" opacity=".35"/>
+<g><animateTransform attributeName="transform" type="rotate" values="0;180" dur=".14s" repeatCount="indefinite"/>
+<path d="M0 -11 L0 11" stroke="#eef5fc" stroke-width="2.2" stroke-linecap="round"/></g>
+<circle r="1.8" fill="#a9bacd"/>
+</g>
+
+<path d="M46 12 L40 20 L-34 20 L-40 12" fill="none" stroke="#dfe9f5" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M30 14 L28 20 M-16 14 L-18 20" stroke="#dfe9f5" stroke-width="2.5"/>
+
+<path d="M66 -6 Q60 -30 32 -33 L-4 -33 Q-28 -31 -38 -10 Q-42 -2 -38 4 L58 8 Q68 6 66 -6 Z" fill="url(#c4body)" stroke="#4c5a6b" stroke-width="2.4"/>
+<path d="M52 -12 Q48 -26 30 -27 L-2 -27 Q-18 -26 -26 -14 Q-4 -18 22 -16 Q42 -15 52 -12 Z" fill="#16232e"/>
+<rect x="-34" y="0" width="92" height="2.8" rx="1.4" fill="#e8f3fc" opacity=".8"/>
+<path d="M8 -27 L8 4" stroke="#4c5a6b" stroke-width="1" opacity=".6"/>
+<circle cx="26" cy="-18" r="5.4" fill="url(#c4gem)" stroke="#123f7d" stroke-width=".9"/>
+<circle cx="24.6" cy="-19.4" r="1.2" fill="#fff" opacity=".9"/>
+<rect x="-64" y="6" width="4" height="3" rx="1.5" fill="#e59b5c" opacity=".8"/>
+<path d="M16 6 L4 6 L6 11 L14 11 Z" fill="#3c434d"/>
+
+<rect x="10" y="-44" width="8" height="12" fill="#a9bacd"/>
+<circle cx="14" cy="-50" r="2" fill="#7fd4ff">
+<animate attributeName="opacity" values="1;.25;1" dur="1.1s" repeatCount="indefinite"/>
+</circle>
+<g transform="translate(14 -46)">
+<ellipse rx="92" ry="4" fill="#dfe9f5">
+<animate attributeName="opacity" values=".13;.3;.13" dur=".16s" repeatCount="indefinite"/>
+</ellipse>
+<g><animateTransform attributeName="transform" type="rotate" values="0;180" dur=".16s" repeatCount="indefinite"/>
+<path d="M-92 0 L92 0" stroke="#eef5fc" stroke-width="3.5" stroke-linecap="round"/></g>
+<rect x="-4" y="-3.4" width="8" height="7" rx="2" fill="#a9bacd"/>
+</g>
+
+<g clip-path="url(#c4bodyClip)">
+<g>
+<animateTransform attributeName="transform" type="translate" values="-100 0;130 0" keyTimes="0;1" begin="3.05s" dur=".6s" fill="freeze"/>
+<rect x="-8" y="-40" width="14" height="64" fill="#ffffff" opacity=".3" transform="skewX(-18)"/>
+</g>
+</g>
+
+<!-- sapphire gems -->
+<g transform="translate(-128 -26)" opacity="0">
+<animate attributeName="opacity" values="0;1" begin="2.7s" dur=".01s" fill="freeze"/>
+<animate attributeName="opacity" values="1;0" begin="4.3s" dur=".2s" fill="freeze"/>
+<g><animateTransform attributeName="transform" type="scale" values="0;1.25;1" keyTimes="0;.6;1" begin="2.7s" dur=".45s" fill="freeze"/>
+<g><animateTransform attributeName="transform" type="scale" values="1;1.08;1" dur="2.4s" repeatCount="indefinite"/>
+<circle r="6.6" fill="#dfe9f5" stroke="#4c5a6b" stroke-width=".8"/>
+<path d="M0 -4.9 L2.9 -3.6 L4.9 0 L3.6 2.9 L0 4.9 L-3.6 2.9 L-4.9 0 L-2.9 -3.6 Z" fill="url(#c4gem)" stroke="#123f7d" stroke-width=".7"/>
+<g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5s" repeatCount="indefinite"/>
+<path d="M0 -2.4 L.5 -.5 L2.4 0 L.5 .5 L0 2.4 L-.5 .5 L-2.4 0 L-.5 -.5 Z" fill="#fff">
+<animate attributeName="opacity" values=".4;1;.4" dur="1.7s" repeatCount="indefinite"/></path></g>
+<circle cx="-1.3" cy="-1.6" r=".7" fill="#fff" opacity=".9"/>
+</g>
+</g>
+</g>
+<g transform="translate(128 -30)" opacity="0">
+<animate attributeName="opacity" values="0;1" begin="2.85s" dur=".01s" fill="freeze"/>
+<animate attributeName="opacity" values="1;0" begin="4.3s" dur=".2s" fill="freeze"/>
+<g><animateTransform attributeName="transform" type="scale" values="0;1.25;1" keyTimes="0;.6;1" begin="2.85s" dur=".45s" fill="freeze"/>
+<g><animateTransform attributeName="transform" type="scale" values="1;1.08;1" dur="2.4s" begin=".5s" repeatCount="indefinite"/>
+<circle r="6.6" fill="#dfe9f5" stroke="#4c5a6b" stroke-width=".8"/>
+<path d="M0 -4.9 L2.9 -3.6 L4.9 0 L3.6 2.9 L0 4.9 L-3.6 2.9 L-4.9 0 L-2.9 -3.6 Z" fill="url(#c4gem)" stroke="#123f7d" stroke-width=".7"/>
+<g><animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="5s" repeatCount="indefinite"/>
+<path d="M0 -2.4 L.5 -.5 L2.4 0 L.5 .5 L0 2.4 L-.5 .5 L-2.4 0 L-.5 -.5 Z" fill="#fff">
+<animate attributeName="opacity" values="1;.4;1" dur="1.7s" repeatCount="indefinite"/></path></g>
+<circle cx="-1.3" cy="-1.6" r=".7" fill="#fff" opacity=".9"/>
+</g>
+</g>
+</g>
+
+<!-- satellite sparks -->
+<g opacity="0">
+<animate attributeName="opacity" values="0;1" begin="2.75s" dur=".3s" fill="freeze"/>
+<animate attributeName="opacity" values="1;0" begin="4.3s" dur=".2s" fill="freeze"/>
+<g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3.4s" repeatCount="indefinite"/>
+<circle cx="80" cy="0" r="2.2" fill="#bfe9ff" opacity=".7"/><circle cx="80" cy="0" r="1" fill="#fff"/></g>
+<g><animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="4.6s" begin=".6s" repeatCount="indefinite"/>
+<circle cx="62" cy="0" r="1.8" fill="#9fd6ff" opacity=".6"/><circle cx="62" cy="0" r=".8" fill="#fff"/></g>
+</g>
+
+</g>
+</g>
+</g>
+</g>
+
+<!-- name plate -->
+<g transform="translate(0 -74)" opacity="0">
+<animate attributeName="opacity" values="0;1" begin="2.85s" dur=".35s" fill="freeze"/>
+<animate attributeName="opacity" values="1;0" begin="4.35s" dur=".3s" fill="freeze"/>
+<g>
+<animateTransform attributeName="transform" type="scale" values=".8;.8;1.05;1" keyTimes="0;.4;.75;1" begin="2.85s" dur=".45s" fill="freeze"/>
+<rect x="-95" y="-19" width="190" height="38" rx="14" fill="url(#c4plate)" stroke="#9fd0ff" stroke-width="2"/>
+<rect x="-91" y="-15" width="182" height="30" rx="11" fill="none" stroke="#d6f0ff" stroke-width=".8" opacity=".4"/>
+<path d="M-62 -19 L-59 -15.5 L-62 -12 L-65 -15.5 Z" fill="url(#c4gem)" stroke="#123f7d" stroke-width=".6"><animate attributeName="opacity" values=".5;1;.5" dur="2s" repeatCount="indefinite"/></path>
+<path d="M62 -19 L65 -15.5 L62 -12 L59 -15.5 Z" fill="url(#c4gem)" stroke="#123f7d" stroke-width=".6"><animate attributeName="opacity" values="1;.5;1" dur="2s" begin="1s" repeatCount="indefinite"/></path>
+<g clip-path="url(#c4plateClip)">
+<g>
+<animateTransform attributeName="transform" type="translate" values="-130 0;130 0" keyTimes="0;1" begin="3.1s" dur=".65s" fill="freeze"/>
+<rect x="-8" y="-24" width="15" height="48" fill="#bfe9ff" opacity=".3" transform="skewX(-18)"/>
+</g>
+</g>
+<text x="0" y="-1" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#f4f9ff">Welcome</text>
+<text x="0" y="13" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="2.5" fill="#9fd0ff">VIP 4 HAS ENTERED</text>
+</g>
+</g>
+
+<circle cx="0" cy="-10" r="26" fill="none" stroke="#7fc4ff" stroke-width="2.5" opacity="0">
+<animate attributeName="r" values="26;125" begin="2.7s" dur=".8s" fill="freeze"/>
+<animate attributeName="opacity" values="0;.65;0" keyTimes="0;.3;1" begin="2.7s" dur=".8s" fill="freeze"/>
+</circle>
+<circle cx="0" cy="-10" r="20" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0">
+<animate attributeName="r" values="20;100" begin="2.85s" dur=".8s" fill="freeze"/>
+<animate attributeName="opacity" values="0;.5;0" keyTimes="0;.3;1" begin="2.85s" dur=".8s" fill="freeze"/>
+</circle>
+
+<g transform="translate(-90 -48)" opacity="0">
+<animate attributeName="opacity" values="0;.95;.9" keyTimes="0;.4;1" begin="2.8s" dur=".5s" fill="freeze"/>
+<g><animateTransform attributeName="transform" type="scale" values="0;1.3;1" keyTimes="0;.6;1" begin="2.8s" dur=".5s" fill="freeze"/>
+<path d="M0 -5.5 L1 -1.1 L5.5 0 L1 1.1 L0 5.5 L-1 1.1 L-5.5 0 L-1 -1.1 Z" fill="#dff2ff"/></g>
+</g>
+<g transform="translate(84 -56)" opacity="0">
+<animate attributeName="opacity" values="0;.95;.9" keyTimes="0;.4;1" begin="2.95s" dur=".5s" fill="freeze"/>
+<g><animateTransform attributeName="transform" type="scale" values="0;1.2;1" keyTimes="0;.6;1" begin="2.95s" dur=".5s" fill="freeze"/>
+<path d="M0 -5.5 L1 -1.1 L5.5 0 L1 1.1 L0 5.5 L-1 1.1 L-5.5 0 L-1 -1.1 Z" fill="#ffffff"/></g>
+</g>
+<g transform="translate(140 -12)" opacity="0">
+<animate attributeName="opacity" values="0;.9;.85" keyTimes="0;.4;1" begin="3.1s" dur=".5s" fill="freeze"/>
+<g><animateTransform attributeName="transform" type="scale" values="0;1.35;1" keyTimes="0;.6;1" begin="3.1s" dur=".5s" fill="freeze"/>
+<path d="M0 -5.5 L1 -1.1 L5.5 0 L1 1.1 L0 5.5 L-1 1.1 L-5.5 0 L-1 -1.1 Z" fill="#9fd0ff"/></g>
+</g>
+</g>
+</svg>

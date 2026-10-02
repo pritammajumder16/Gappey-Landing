@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<style>
+.dcB{transform-box:fill-box;transform-origin:center;animation:dcA 3.2s ease-in-out infinite;animation-delay:var(--d,0s)}
+@keyframes dcA{0%,100%{transform:rotate(0) translateY(0)}10%{transform:rotate(-9deg) translateY(-26px)}20%,22%{transform:rotate(5deg) translateY(0) scale(1.05,.95)}34%{transform:rotate(-4deg) translateY(-12px) scale(1,1)}44%{transform:rotate(3deg) translateY(0)}54%{transform:rotate(-6deg) translateY(-16px)}64%{transform:rotate(2deg) translateY(0)}74%{transform:rotate(-3deg) translateY(-7px)}82%,100%{transform:rotate(0) translateY(0) scale(1,1)}}
+.dc1,.dc2,.dc3,.dc4,.dc5,.dc6{opacity:0;animation-duration:3.2s;animation-timing-function:linear;animation-iteration-count:infinite;animation-delay:var(--d,0s)}
+.dc3{animation-name:dcF3}.dc6{animation-name:dcF6}.dc2{animation-name:dcF2}.dc5{animation-name:dcF5}.dc1{animation-name:dcF1}.dc4{animation-name:dcF4}
+@keyframes dcF3{0%,12%{opacity:1}14%,100%{opacity:0}}
+@keyframes dcF6{0%,13%{opacity:0}15%,30%{opacity:1}32%,100%{opacity:0}}
+@keyframes dcF2{0%,31%{opacity:0}33%,48%{opacity:1}50%,100%{opacity:0}}
+@keyframes dcF5{0%,49%{opacity:0}51%,64%{opacity:1}66%,100%{opacity:0}}
+@keyframes dcF1{0%,65%{opacity:0}67%,80%{opacity:1}82%,100%{opacity:0}}
+@keyframes dcF4{0%,81%{opacity:0}83%,100%{opacity:1}}
+</style>
+<g class="dcB">
+<rect x="55" y="55" width="90" height="90" rx="22" fill="#fff" stroke="#C9CFE0" stroke-width="3"/>
+<g fill="#3A3A4A">
+<g class="dc3"><circle cx="100" cy="100" r="7"/></g>
+<g class="dc6"><circle cx="80" cy="80" r="7"/><circle cx="80" cy="100" r="7"/><circle cx="80" cy="120" r="7"/><circle cx="120" cy="80" r="7"/><circle cx="120" cy="100" r="7"/><circle cx="120" cy="120" r="7"/></g>
+<g class="dc2"><circle cx="80" cy="80" r="7"/><circle cx="120" cy="120" r="7"/></g>
+<g class="dc5"><circle cx="80" cy="80" r="7"/><circle cx="120" cy="80" r="7"/><circle cx="100" cy="100" r="7"/><circle cx="80" cy="120" r="7"/><circle cx="120" cy="120" r="7"/></g>
+<g class="dc1"><circle cx="100" cy="100" r="8"/></g>
+<g class="dc4"><circle cx="80" cy="80" r="7"/><circle cx="120" cy="80" r="7"/><circle cx="80" cy="120" r="7"/><circle cx="120" cy="120" r="7"/></g>
+</g>
+</g>
+</svg>

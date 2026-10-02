@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 800" width="450" height="800">
+  <title>Swagat Haar — full-screen gift animation</title>
+  <defs>
+    <radialGradient id="swAsky" cx="50%" cy="40%" r="92%">
+      <stop offset="0" stop-color="#241406"/><stop offset=".55" stop-color="#130A04"/><stop offset="1" stop-color="#080402"/>
+    </radialGradient>
+    <radialGradient id="swAclaspGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#F2A43D" stop-opacity=".35"/><stop offset="1" stop-color="#F2A43D" stop-opacity="0"/>
+    </radialGradient>
+    <path id="swAspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+    <path id="swApetal" d="M0 -6 C4.2 -4 5.4 1.6 0 7.2 C-5.4 1.6 -4.2 -4 0 -6 Z"/>
+    <g id="swApom">
+      <circle r="11"/>
+      <circle r="5.6" fill="#C97F2E"/>
+      <circle r="2" fill="#7A3E12"/>
+    </g>
+    <style>
+      .swA-strL{fill:none;stroke:#3E7C4F;stroke-width:5.5;stroke-linecap:round;stroke-dasharray:700;animation:swDraw 8s linear infinite}
+      .swA-strR{fill:none;stroke:#2E5F3E;stroke-width:5.5;stroke-linecap:round;stroke-dasharray:700;animation:swDraw 8s linear infinite}
+      .swA-p{transform-box:fill-box;transform-origin:center;opacity:0;animation:swPop 8s linear infinite}
+      .swA-leaf{transform-box:fill-box;transform-origin:center;opacity:0;animation:swPop 8s linear infinite}
+      .swA-clasp{transform-box:fill-box;transform-origin:center;opacity:0;animation:swClasp 8s linear infinite}
+      .swA-cglow{transform-box:fill-box;transform-origin:center;opacity:0;animation:swClaspG 8s linear infinite}
+      .swA-tas{transform-box:fill-box;transform-origin:50% 0;animation:swTas 2.6s ease-in-out infinite alternate}
+      .swA-cap{font:600 56px Georgia,'Times New Roman',serif;letter-spacing:12px;fill:#F2D48C;text-anchor:middle;opacity:0;animation:swCap 8s linear infinite}
+      .swA-sub{font:600 19px Georgia,'Times New Roman',serif;letter-spacing:8px;fill:#C9A06A;text-anchor:middle;opacity:0;animation:swSub 8s linear infinite}
+      .swA-orn{opacity:0;animation:swSub 8s linear infinite}
+      .swA-pet{opacity:0;animation:swPetal 8s linear infinite}
+      .swA-twk{transform-box:fill-box;transform-origin:center;animation:swTw 2.8s ease-in-out infinite}
+      @keyframes swDraw{0%,4%{stroke-dashoffset:700}22%,94%{stroke-dashoffset:0}100%{stroke-dashoffset:0}}
+      @keyframes swPop{0%{opacity:0;transform:scale(0)}1.2%{opacity:1;transform:scale(1.3)}2%{transform:scale(1)}92%{opacity:1;transform:scale(1)}96%,100%{opacity:0;transform:scale(0)}}
+      @keyframes swClasp{0%,24%{opacity:0;transform:scale(0) rotate(-30deg)}27%{opacity:1;transform:scale(1.25) rotate(6deg)}29%{transform:scale(1) rotate(0)}92%,100%{opacity:0;transform:scale(1) rotate(0)}}
+      @keyframes swClaspG{0%,24%{opacity:0;transform:scale(.2)}29%{opacity:1;transform:scale(1)}80%{opacity:.6}92%,100%{opacity:0;transform:scale(1)}}
+      @keyframes swTas{from{transform:rotate(-6deg)}to{transform:rotate(6deg)}}
+      @keyframes swCap{0%,30%{opacity:0}37%{opacity:1}88%{opacity:1}94%,100%{opacity:0}}
+      @keyframes swSub{0%,33%{opacity:0}39%{opacity:1}88%{opacity:1}94%,100%{opacity:0}}
+      @keyframes swPetal{0%,38%{opacity:0;transform:translateY(0) rotate(0)}43%{opacity:.75}78%{opacity:0;transform:translateY(300px) rotate(140deg)}100%{opacity:0;transform:translateY(300px) rotate(140deg)}}
+      @keyframes swTw{0%,100%{opacity:.07;transform:scale(.6)}50%{opacity:.85;transform:scale(1)}}
+    </style>
+  </defs>
+  <rect width="450" height="800" fill="url(#swAsky)"/>
+  <g transform="translate(70 220)"><use href="#swAspk" class="swA-twk" fill="#F2B33D"/></g>
+  <g transform="translate(386 260) scale(.8)"><use href="#swAspk" class="swA-twk" fill="#F6EFE2" style="animation-delay:-.9s"/></g>
+  <g transform="translate(56 540) scale(.7)"><use href="#swAspk" class="swA-twk" fill="#F6D27A" style="animation-delay:-1.8s"/></g>
+  <g transform="translate(398 520) scale(.75)"><use href="#swAspk" class="swA-twk" fill="#F2B33D" style="animation-delay:-2.4s"/></g>
+  <g transform="translate(64 4)">
+    <g class="swA-tas"><circle r="5" fill="#D9A441"/><path d="M-4 4 L-7 26 M0 5 L0 30 M4 4 L7 26" stroke="#D9A441" stroke-width="2.5" stroke-linecap="round" fill="none"/></g>
+  </g>
+  <g transform="translate(386 4)">
+    <g class="swA-tas" style="animation-delay:-1.3s"><circle r="5" fill="#D9A441"/><path d="M-4 4 L-7 26 M0 5 L0 30 M4 4 L7 26" stroke="#D9A441" stroke-width="2.5" stroke-linecap="round" fill="none"/></g>
+  </g>
+  <path class="swA-strL" d="M64 8 C58 140 96 320 150 450 C185 540 205 580 225 606"/>
+  <path class="swA-strR" d="M386 8 C392 140 354 320 300 450 C265 540 245 580 225 606"/>
+  <use href="#swApom" class="swA-p" transform="translate(62 92)" fill="#F2A43D" style="animation-delay:.4s"/>
+  <use href="#swApom" class="swA-p" transform="translate(64 162)" fill="#FFD34D" style="animation-delay:.64s"/>
+  <use href="#swApom" class="swA-p" transform="translate(80 242)" fill="#F2A43D" style="animation-delay:.88s"/>
+  <use href="#swApom" class="swA-p" transform="translate(108 332)" fill="#FFD34D" style="animation-delay:1.12s"/>
+  <use href="#swApom" class="swA-p" transform="translate(146 422)" fill="#F2A43D" style="animation-delay:1.36s"/>
+  <use href="#swApom" class="swA-p" transform="translate(184 512)" fill="#FFD34D" style="animation-delay:1.6s"/>
+  <use href="#swApom" class="swA-p" transform="translate(212 572)" fill="#F2A43D" style="animation-delay:1.84s"/>
+  <use href="#swApom" class="swA-p" transform="translate(388 92)" fill="#FFD34D" style="animation-delay:.52s"/>
+  <use href="#swApom" class="swA-p" transform="translate(386 162)" fill="#F2A43D" style="animation-delay:.76s"/>
+  <use href="#swApom" class="swA-p" transform="translate(370 242)" fill="#FFD34D" style="animation-delay:1s"/>
+  <use href="#swApom" class="swA-p" transform="translate(342 332)" fill="#F2A43D" style="animation-delay:1.24s"/>
+  <use href="#swApom" class="swA-p" transform="translate(304 422)" fill="#FFD34D" style="animation-delay:1.48s"/>
+  <use href="#swApom" class="swA-p" transform="translate(266 512)" fill="#F2A43D" style="animation-delay:1.72s"/>
+  <use href="#swApom" class="swA-p" transform="translate(238 572)" fill="#FFD34D" style="animation-delay:1.96s"/>
+  <ellipse class="swA-leaf" cx="58" cy="128" rx="10" ry="4.5" fill="#3E7C4F" transform="rotate(-74 58 128)" style="animation-delay:.52s"/>
+  <ellipse class="swA-leaf" cx="70" cy="204" rx="10" ry="4.5" fill="#2E5F3E" transform="rotate(-60 70 204)" style="animation-delay:.76s"/>
+  <ellipse class="swA-leaf" cx="92" cy="288" rx="10" ry="4.5" fill="#3E7C4F" transform="rotate(-52 92 288)" style="animation-delay:1s"/>
+  <ellipse class="swA-leaf" cx="126" cy="378" rx="10" ry="4.5" fill="#2E5F3E" transform="rotate(-46 126 378)" style="animation-delay:1.24s"/>
+  <ellipse class="swA-leaf" cx="392" cy="128" rx="10" ry="4.5" fill="#2E5F3E" transform="rotate(74 392 128)" style="animation-delay:.64s"/>
+  <ellipse class="swA-leaf" cx="380" cy="204" rx="10" ry="4.5" fill="#3E7C4F" transform="rotate(60 380 204)" style="animation-delay:.88s"/>
+  <ellipse class="swA-leaf" cx="358" cy="288" rx="10" ry="4.5" fill="#2E5F3E" transform="rotate(52 358 288)" style="animation-delay:1.12s"/>
+  <ellipse class="swA-leaf" cx="324" cy="378" rx="10" ry="4.5" fill="#3E7C4F" transform="rotate(46 324 378)" style="animation-delay:1.36s"/>
+  <circle class="swA-cglow" cx="225" cy="606" r="70" fill="url(#swAclaspGlow)"/>
+  <g transform="translate(225 606)">
+    <g class="swA-clasp">
+      <circle r="30" fill="#F2A43D" stroke="#C97F2E" stroke-width="3"/>
+      <circle r="21" fill="none" stroke="#C97F2E" stroke-width="2.5" stroke-dasharray="4 5"/>
+      <circle r="9" fill="#7A3E12"/>
+      <path d="M-44 18 C-40 34 -26 44 -8 46" fill="none" stroke="#3E7C4F" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M44 18 C40 34 26 44 8 46" fill="none" stroke="#3E7C4F" stroke-width="3.5" stroke-linecap="round"/>
+    </g>
+  </g>
+  <g transform="translate(110 300)"><path class="swA-pet" d="M0 0 C4 6 4 14 0 20 C-4 14 -4 6 0 0Z" fill="#F2A43D"/></g>
+  <g transform="translate(240 360)"><path class="swA-pet" d="M0 0 C4 6 4 14 0 20 C-4 14 -4 6 0 0Z" fill="#FFD34D" style="animation-delay:-1.6s"/></g>
+  <g transform="translate(330 260)"><path class="swA-pet" d="M0 0 C4 6 4 14 0 20 C-4 14 -4 6 0 0Z" fill="#F2A43D" style="animation-delay:-3.2s"/></g>
+  <g transform="translate(170 480)"><path class="swA-pet" d="M0 0 C4 6 4 14 0 20 C-4 14 -4 6 0 0Z" fill="#FFD34D" style="animation-delay:-4.6s"/></g>
+  <text class="swA-cap" x="231" y="150">SWAGAT</text>
+  <text class="swA-sub" x="230" y="196">AAPKA SWAGAT HAI</text>
+  <g class="swA-orn" stroke="#C9A06A" fill="none">
+    <line x1="112" y1="222" x2="204" y2="222"/>
+    <line x1="256" y1="222" x2="348" y2="222"/>
+    <path d="M225 216 l6 6 -6 6 -6 -6Z"/>
+  </g>
+</svg>

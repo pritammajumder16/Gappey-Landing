@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 800" width="450" height="800">
+  <title>Mor Pankh — full-screen gift animation</title>
+  <defs>
+    <radialGradient id="mpAsky" cx="50%" cy="42%" r="85%">
+      <stop offset="0" stop-color="#164A4E"/><stop offset=".55" stop-color="#0C2E33"/><stop offset="1" stop-color="#05161B"/>
+    </radialGradient>
+    <radialGradient id="mpAglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#2FA08B" stop-opacity=".18"/><stop offset="1" stop-color="#2FA08B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mpAbarb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#45C793"/><stop offset=".55" stop-color="#1E8A68"/><stop offset="1" stop-color="#0C5747"/>
+    </linearGradient>
+    <path id="mpAspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+    <g id="mpAfeather">
+      <path d="M0 -26 C -60 -120 -58 -330 0 -446 C 58 -330 60 -120 0 -26 Z" fill="url(#mpAbarb)" stroke="#0B4A3C" stroke-opacity=".35"/>
+      <g fill="none" stroke="#0B4A3C" stroke-width="2.5" opacity=".45" stroke-linecap="round">
+        <path d="M0 -66 C -22 -80 -34 -100 -40 -126"/>
+        <path d="M0 -66 C 22 -80 34 -100 40 -126"/>
+        <path d="M0 -150 C -26 -166 -38 -192 -42 -220"/>
+        <path d="M0 -150 C 26 -166 38 -192 42 -220"/>
+        <path d="M0 -240 C -24 -258 -32 -282 -34 -308"/>
+        <path d="M0 -240 C 24 -258 32 -282 34 -308"/>
+        <path d="M0 -312 C -18 -328 -22 -342 -24 -356"/>
+        <path d="M0 -312 C 18 -328 22 -342 24 -356"/>
+      </g>
+      <line x1="0" y1="0" x2="0" y2="-442" stroke="#17805F" stroke-width="5" stroke-linecap="round"/>
+      <ellipse cx="0" cy="-388" rx="20" ry="26" fill="#0F7B6C" stroke="#0A4A3C"/>
+      <ellipse cx="0" cy="-388" rx="13.5" ry="18" fill="#C98F33"/>
+      <ellipse cx="0" cy="-388" rx="8.5" ry="11.5" fill="#155087"/>
+      <ellipse cx="0" cy="-388" rx="4" ry="6.5" fill="#0E1B33"/>
+      <circle cx="-3.4" cy="-394" r="2.2" fill="#F6D27A" opacity=".9"/>
+    </g>
+    <style>
+      .mpA-sway{transform-box:fill-box;transform-origin:50% 100%;animation:mpASway 3.8s ease-in-out infinite alternate}
+      .mpA-f1,.mpA-f7{animation:mpAOa 9s linear infinite}
+      .mpA-f2,.mpA-f6{animation:mpAOb 9s linear infinite}
+      .mpA-f3,.mpA-f5{animation:mpAOc 9s linear infinite}
+      .mpA-f4{animation:mpAOd 9s linear infinite}
+      .mpA-f{transform-box:fill-box;transform-origin:50% 100%}
+      .mpA-eye{transform-box:fill-box;transform-origin:center;animation:mpAEye 9s linear infinite}
+      .mpA-rip{fill:none;stroke:#2FA08B;stroke-width:2;transform-box:fill-box;transform-origin:center;animation:mpARip 9s linear infinite}
+      .mpA-cap{font:600 33px Georgia,'Times New Roman',serif;letter-spacing:12px;fill:#CFE8DB;text-anchor:middle;animation:mpACap 9s linear infinite}
+      .mpA-orn{animation:mpACap 9s linear infinite}
+      .mpA-twk{transform-box:fill-box;transform-origin:center;animation:mpATw 2.6s ease-in-out infinite}
+      .mpA-mote{fill:#7FCDB2;animation:mpAMote 7s linear infinite}
+      @keyframes mpASway{from{transform:rotate(-1.3deg)}to{transform:rotate(1.3deg)}}
+      @keyframes mpAOa{0%,34%{transform:rotate(118deg);opacity:0}36%{opacity:1}48%{transform:rotate(-5deg)}51%{transform:rotate(0deg)}88%{opacity:1;transform:rotate(0deg)}96%{opacity:0;transform:rotate(0deg)}100%{opacity:0;transform:rotate(118deg)}}
+      @keyframes mpAOb{0%,32%{transform:rotate(118deg);opacity:0}34%{opacity:1}46%{transform:rotate(-5deg)}49%{transform:rotate(0deg)}88%{opacity:1;transform:rotate(0deg)}96%{opacity:0;transform:rotate(0deg)}100%{opacity:0;transform:rotate(118deg)}}
+      @keyframes mpAOc{0%,30%{transform:rotate(118deg);opacity:0}32%{opacity:1}44%{transform:rotate(-5deg)}47%{transform:rotate(0deg)}88%{opacity:1;transform:rotate(0deg)}96%{opacity:0;transform:rotate(0deg)}100%{opacity:0;transform:rotate(118deg)}}
+      @keyframes mpAOd{0%,28%{transform:rotate(118deg);opacity:0}30%{opacity:1}42%{transform:rotate(-5deg)}45%{transform:rotate(0deg)}88%{opacity:1;transform:rotate(0deg)}96%{opacity:0;transform:rotate(0deg)}100%{opacity:0;transform:rotate(118deg)}}
+      @keyframes mpAEye{0%{opacity:0;transform:scale(.15)}7%{opacity:1;transform:scale(1.06)}11%{transform:scale(1)}28%{opacity:1;transform:translateY(0) scale(1)}38%{opacity:0;transform:translateY(400px) scale(.2)}100%{opacity:0;transform:translateY(400px) scale(.15)}}
+      @keyframes mpARip{0%{opacity:0;transform:scale(.2)}6%{opacity:.8;transform:scale(.3)}20%{opacity:0;transform:scale(2.4)}100%{opacity:0;transform:scale(2.4)}}
+      @keyframes mpACap{0%,48%{opacity:0}56%{opacity:1}86%{opacity:1}94%{opacity:0}100%{opacity:0}}
+      @keyframes mpATw{0%,100%{opacity:.05;transform:scale(.6)}50%{opacity:.9;transform:scale(1)}}
+      @keyframes mpAMote{0%{opacity:0;transform:translateY(0)}15%{opacity:.7}70%{opacity:0;transform:translateY(-170px)}100%{opacity:0;transform:translateY(-170px)}}
+    </style>
+  </defs>
+  <rect width="450" height="800" fill="url(#mpAsky)"/>
+  <circle cx="225" cy="775" r="330" fill="none" stroke="#F3EADA" opacity=".05"/>
+  <circle cx="225" cy="775" r="470" fill="none" stroke="#F3EADA" opacity=".04"/>
+  <ellipse cx="225" cy="782" rx="250" ry="70" fill="url(#mpAglow)"/>
+  <g transform="translate(225 775)">
+    <g transform="rotate(-78) scale(1.4)"><g class="mpA-sway"><g class="mpA-f mpA-f1"><use href="#mpAfeather"/></g></g></g>
+    <g transform="rotate(-52) scale(1.4)"><g class="mpA-sway"><g class="mpA-f mpA-f2"><use href="#mpAfeather"/></g></g></g>
+    <g transform="rotate(-26) scale(1.4)"><g class="mpA-sway"><g class="mpA-f mpA-f3"><use href="#mpAfeather"/></g></g></g>
+    <g transform="scale(1.4)"><g class="mpA-sway"><g class="mpA-f mpA-f4"><use href="#mpAfeather"/></g></g></g>
+    <g transform="rotate(26) scale(1.4)"><g class="mpA-sway"><g class="mpA-f mpA-f5"><use href="#mpAfeather"/></g></g></g>
+    <g transform="rotate(52) scale(1.4)"><g class="mpA-sway"><g class="mpA-f mpA-f6"><use href="#mpAfeather"/></g></g></g>
+    <g transform="rotate(78) scale(1.4)"><g class="mpA-sway"><g class="mpA-f mpA-f7"><use href="#mpAfeather"/></g></g></g>
+  </g>
+  <g transform="translate(225 330)">
+    <circle class="mpA-rip" r="60"/>
+    <g class="mpA-eye">
+      <ellipse rx="44" ry="57" fill="#0F7B6C"/>
+      <ellipse rx="30" ry="39" fill="#C98F33"/>
+      <ellipse rx="19" ry="25" fill="#155087"/>
+      <ellipse rx="9" ry="14" fill="#0E1B33"/>
+      <circle cx="-8" cy="-18" r="4" fill="#F6D27A" opacity=".9"/>
+    </g>
+  </g>
+  <circle class="mpA-mote" cx="110" cy="640" r="2.5"/>
+  <circle class="mpA-mote" cx="260" cy="600" r="2" style="animation-delay:-1.6s"/>
+  <circle class="mpA-mote" cx="350" cy="660" r="2.5" style="animation-delay:-3.1s"/>
+  <circle class="mpA-mote" cx="190" cy="700" r="2" style="animation-delay:-4.4s"/>
+  <circle class="mpA-mote" cx="320" cy="560" r="2" style="animation-delay:-5.6s"/>
+  <g transform="translate(90 240)"><use href="#mpAspk" class="mpA-twk" fill="#F2D48C"/></g>
+  <g transform="translate(360 200) scale(.85)"><use href="#mpAspk" class="mpA-twk" fill="#F6EFE2" style="animation-delay:-.6s"/></g>
+  <g transform="translate(150 150) scale(.7)"><use href="#mpAspk" class="mpA-twk" fill="#7FCDB2" style="animation-delay:-1.2s"/></g>
+  <g transform="translate(320 420) scale(.9)"><use href="#mpAspk" class="mpA-twk" fill="#F2D48C" style="animation-delay:-1.8s"/></g>
+  <g transform="translate(70 480) scale(.75)"><use href="#mpAspk" class="mpA-twk" fill="#F6EFE2" style="animation-delay:-.9s"/></g>
+  <g transform="translate(392 520) scale(.8)"><use href="#mpAspk" class="mpA-twk" fill="#7FCDB2" style="animation-delay:-2.1s"/></g>
+  <g transform="translate(225 82) scale(.9)"><use href="#mpAspk" class="mpA-twk" fill="#F2D48C" style="animation-delay:-1.5s"/></g>
+  <g transform="translate(40 320) scale(.7)"><use href="#mpAspk" class="mpA-twk" fill="#F6EFE2" style="animation-delay:-2.4s"/></g>
+  <text class="mpA-cap" x="231" y="118">MOR PANKH</text>
+  <g class="mpA-orn" stroke="#4E8A76" fill="none">
+    <line x1="104" y1="142" x2="204" y2="142"/>
+    <line x1="256" y1="142" x2="356" y2="142"/>
+    <path d="M225 136 l6 6 -6 6 -6 -6Z"/>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="v3face" cx="38%" cy="30%" r="82%">
+      <stop offset="0%" stop-color="#FFF5BC"/><stop offset="55%" stop-color="#FFD45E"/><stop offset="100%" stop-color="#FFA51F"/>
+    </radialGradient>
+    <filter id="v3soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3"/></filter>
+    <clipPath id="v3mclip"><path d="M76 126 Q100 136 124 126 Q122 158 100 162 Q78 158 76 126 Z"/></clipPath>
+  </defs>
+  <style>
+    .v3all{transform-box:fill-box;transform-origin:center bottom;animation:v3squish 1.3s ease-in-out infinite}
+    @keyframes v3squish{0%,100%{transform:scale(1,1) translateY(0)}30%{transform:scale(1.07,.93) translateY(4px)}60%{transform:scale(.96,1.05) translateY(-6px)}}
+    .v3gem{transform-box:fill-box;transform-origin:center;animation:v3tw 1.3s ease-in-out infinite}
+    .v3gem.b{animation-delay:.65s}
+    @keyframes v3tw{0%,100%{transform:scale(.75);opacity:.75}50%{transform:scale(1.15);opacity:1}}
+    .v3ha{transform-box:fill-box;transform-origin:center;animation:v3float 1.3s ease-out infinite}
+    .v3ha.b{animation-delay:.65s}
+    @keyframes v3float{0%{opacity:0;transform:translateY(6px) scale(.6)}30%{opacity:1}100%{opacity:0;transform:translateY(-16px) scale(1.1)}}
+  </style>
+  <g class="v3all">
+    <circle cx="100" cy="104" r="76" fill="url(#v3face)" stroke="#C97B2D" stroke-width="2.5" stroke-opacity=".55"/>
+    <ellipse cx="70" cy="50" rx="22" ry="11" fill="#fff" opacity=".65" transform="rotate(-16 70 50)"/>
+    <path d="M54 90 Q66 74 80 88" fill="none" stroke="#8A4B15" stroke-width="9" stroke-linecap="round"/>
+    <path d="M146 90 Q134 74 120 88" fill="none" stroke="#8A4B15" stroke-width="9" stroke-linecap="round"/>
+    <ellipse cx="52" cy="114" rx="14" ry="9" fill="#FFB3C7" opacity=".85" filter="url(#v3soft)"/>
+    <ellipse cx="148" cy="114" rx="14" ry="9" fill="#FFB3C7" opacity=".85" filter="url(#v3soft)"/>
+    <path d="M76 126 Q100 136 124 126 Q122 158 100 162 Q78 158 76 126 Z" fill="#5A1B3F"/>
+    <g clip-path="url(#v3mclip)"><ellipse cx="100" cy="154" rx="15" ry="8" fill="#FF8FB0"/></g>
+    <g class="v3gem"><path d="M40 92 C35 101 32 107 35 112 C38 117 46 116 47 110 C48 104 45 98 40 92 Z" fill="#9BDCF9"/><circle cx="41" cy="107" r="2" fill="#fff" opacity=".9"/></g>
+    <g class="v3gem b"><path d="M160 92 C165 101 168 107 165 112 C162 117 154 116 153 110 C152 104 155 98 160 92 Z" fill="#9BDCF9"/><circle cx="159" cy="107" r="2" fill="#fff" opacity=".9"/></g>
+  </g>
+  <g transform="rotate(-12 30 56)"><text class="v3ha" x="30" y="56" font-family="'Baloo 2','Comic Sans MS',sans-serif" font-size="17" font-weight="800" fill="#F26BA0">HA!</text></g>
+  <g transform="rotate(10 162 44)"><text class="v3ha b" x="162" y="44" font-family="'Baloo 2','Comic Sans MS',sans-serif" font-size="15" font-weight="800" fill="#F26BA0">HA!</text></g>
+</svg>

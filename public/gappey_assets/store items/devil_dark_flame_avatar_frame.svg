@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="260" height="260" viewBox="0 0 260 260">
+  <title>Devil Dark Flame Avatar Frame</title>
+  <defs>
+    <radialGradient id="dGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0.74" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="0.9" stop-color="#ff1e1e" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#ff1e1e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hornG" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#7f0000"/>
+      <stop offset="1" stop-color="#ff5252"/>
+    </linearGradient>
+    <linearGradient id="lickG" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8e0000"/>
+      <stop offset="0.55" stop-color="#ff3d00"/>
+      <stop offset="1" stop-color="#ffb74d"/>
+    </linearGradient>
+    <g id="lickU">
+      <path d="M0 3 C -9 -8 -8 -20 0 -32 C 8 -20 9 -8 0 3 Z" fill="url(#lickG)"/>
+      <path d="M0 3 C -4.5 -6 -4 -13 0 -20 C 4 -13 4.5 -6 0 3 Z" fill="#ffd180" opacity="0.8"/>
+    </g>
+    <path id="batS" d="M0 -3.2 L-1.1 -5.2 L-2.3 -3.9 C -4.8 -5.7 -8.4 -5.9 -11 -4.5 C -8.8 -3 -8.3 -1 -9.2 1.2 C -6.4 0.3 -3.7 1.6 -2.3 3.8 C -1.3 2.7 -0.4 2.3 0 2.3 C 0.4 2.3 1.3 2.7 2.3 3.8 C 3.7 1.6 6.4 0.3 9.2 1.2 C 8.3 -1 8.8 -3 11 -4.5 C 8.4 -5.9 4.8 -5.7 2.3 -3.9 L1.1 -5.2 Z"/>
+    <g id="hornsE">
+      <path d="M-4 4 C -10 2 -13.5 -4 -12.5 -12 C -10 -7.5 -6.5 -5.5 -3 -5 C -4.5 -2.5 -4.8 1 -4 4 Z" fill="url(#hornG)"/>
+      <path d="M4 4 C 10 2 13.5 -4 12.5 -12 C 10 -7.5 6.5 -5.5 3 -5 C 4.5 -2.5 4.8 1 4 4 Z" fill="url(#hornG)"/>
+      <circle cx="0" cy="0" r="3.4" fill="#7f0000" stroke="#ff5252" stroke-width="1"/>
+    </g>
+  </defs>
+
+  <!-- breathing glow -->
+  <circle cx="130" cy="130" r="127" fill="url(#dGlow)">
+    <animate attributeName="opacity" values="0.55;1;0.55" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- base rings -->
+  <circle cx="130" cy="130" r="100" fill="none" stroke="#1c0305" stroke-width="26"/>
+  <circle cx="130" cy="130" r="100" fill="none" stroke="#38060a" stroke-width="18"/>
+  <circle cx="130" cy="130" r="113" fill="none" stroke="#d32f2f" stroke-width="2.5"/>
+  <circle cx="130" cy="130" r="87" fill="none" stroke="#7f0000" stroke-width="2"/>
+  <circle cx="130" cy="130" r="90" fill="none" stroke="#ff5252" stroke-width="1.5">
+    <animate attributeName="opacity" values="0.35;0.9;0.35" dur="1.1s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- rotating flame ring -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 130 130" to="360 130 130" dur="14s" repeatCount="indefinite"/>
+    <g>
+      <animate attributeName="opacity" values="1;0.45;1" dur="0.7s" repeatCount="indefinite"/>
+      <use xlink:href="#lickU" transform="translate(130 34)"/>
+      <use xlink:href="#lickU" transform="rotate(72 130 130) translate(130 34)"/>
+      <use xlink:href="#lickU" transform="rotate(144 130 130) translate(130 34)"/>
+      <use xlink:href="#lickU" transform="rotate(216 130 130) translate(130 34)"/>
+      <use xlink:href="#lickU" transform="rotate(288 130 130) translate(130 34)"/>
+    </g>
+    <g>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="0.55s" repeatCount="indefinite"/>
+      <use xlink:href="#lickU" transform="rotate(36 130 130) translate(130 34)"/>
+      <use xlink:href="#lickU" transform="rotate(108 130 130) translate(130 34)"/>
+      <use xlink:href="#lickU" transform="rotate(180 130 130) translate(130 34)"/>
+      <use xlink:href="#lickU" transform="rotate(252 130 130) translate(130 34)"/>
+      <use xlink:href="#lickU" transform="rotate(324 130 130) translate(130 34)"/>
+    </g>
+  </g>
+
+  <!-- bats orbiting outside the ring -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="360 130 130" to="0 130 130" dur="20s" repeatCount="indefinite"/>
+    <g transform="rotate(0 130 130) translate(130 10)">
+      <use xlink:href="#batS" transform="scale(1.3)" fill="#1a0508" stroke="#ff5252" stroke-width="0.8"/>
+    </g>
+    <g transform="rotate(120 130 130) translate(130 10)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="-12;12;-12" dur="0.5s" repeatCount="indefinite"/>
+        <use xlink:href="#batS" transform="scale(1.3)" fill="#1a0508" stroke="#ff5252" stroke-width="0.8"/>
+      </g>
+    </g>
+    <g transform="rotate(240 130 130) translate(130 10)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="10;-10;10" dur="0.45s" repeatCount="indefinite"/>
+        <use xlink:href="#batS" transform="scale(1.3)" fill="#1a0508" stroke="#ff5252" stroke-width="0.8"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- fixed horn emblems at cardinal points -->
+  <g transform="translate(130 24)"><g>
+    <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="3s" begin="0s" repeatCount="indefinite"/>
+    <use xlink:href="#hornsE" transform="scale(1.2)"/>
+  </g></g>
+  <g transform="translate(236 130) rotate(90)"><g>
+    <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="3s" begin="-0.75s" repeatCount="indefinite"/>
+    <use xlink:href="#hornsE" transform="scale(1.2)"/>
+  </g></g>
+  <g transform="translate(130 236) rotate(180)"><g>
+    <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="3s" begin="-1.5s" repeatCount="indefinite"/>
+    <use xlink:href="#hornsE" transform="scale(1.2)"/>
+  </g></g>
+  <g transform="translate(24 130) rotate(270)"><g>
+    <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="3s" begin="-2.25s" repeatCount="indefinite"/>
+    <use xlink:href="#hornsE" transform="scale(1.2)"/>
+  </g></g>
+
+  <!-- sparkles -->
+  <circle cx="224" cy="96" r="2" fill="#ff8a80">
+    <animate attributeName="opacity" values="1;0.1;1" dur="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="36" cy="96" r="2" fill="#ffd180">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="1.5s" begin="-0.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="96" cy="224" r="2" fill="#ff8a80">
+    <animate attributeName="opacity" values="1;0.15;1" dur="1.3s" begin="-0.7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="170" cy="40" r="2" fill="#ffd180">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" begin="-1s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- rising hellfire sparks -->
+  <g>
+    <circle cx="60" cy="240" r="2.2" fill="#ff7043" opacity="0">
+      <animate attributeName="cy" values="240;44" dur="6s" begin="-1s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="60;68;54;60" dur="6s" begin="-1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.7;0" dur="6s" begin="-1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="240" r="1.8" fill="#ff3d00" opacity="0">
+      <animate attributeName="cy" values="240;40" dur="7s" begin="-3.4s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="200;192;208;200" dur="7s" begin="-3.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0" dur="7s" begin="-3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="130" cy="240" r="2.4" fill="#ffb74d" opacity="0">
+      <animate attributeName="cy" values="240;48" dur="5.5s" begin="-4.6s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="130;138;124;130" dur="5.5s" begin="-4.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.75;0" dur="5.5s" begin="-4.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

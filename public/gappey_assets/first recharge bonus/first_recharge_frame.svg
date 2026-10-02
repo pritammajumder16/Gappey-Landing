@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+  <defs>
+    <linearGradient id="frGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff3b0"/><stop offset=".5" stop-color="#ffd166"/><stop offset="1" stop-color="#f4a300"/>
+    </linearGradient>
+    <filter id="frSh" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".4"/></filter>
+  </defs>
+
+  <!-- rotating dotted ring — the only motion -->
+  <circle cx="75" cy="75" r="58" fill="none" stroke="#0fc2d8" stroke-width="3.5" stroke-dasharray="4 8" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate" from="0 75 75" to="360 75 75" dur="14s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- gift emblem on top (gentle bob) -->
+  <g filter="url(#frSh)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -1.5;0 0" dur="1.8s" repeatCount="indefinite"/>
+      <rect x="67" y="12" width="16" height="11" rx="2" fill="#ff5e6c" stroke="#7a1030" stroke-width="1.3"/>
+      <rect x="73" y="12" width="4" height="11" fill="url(#frGold)"/>
+      <rect x="64.5" y="6" width="21" height="6" rx="1.5" fill="#ff7585" stroke="#7a1030" stroke-width="1.3"/>
+      <rect x="73" y="6" width="4" height="6" fill="url(#frGold)"/>
+      <circle cx="71.5" cy="5.5" r="2.4" fill="url(#frGold)" stroke="#b8860b" stroke-width=".8"/>
+      <circle cx="78.5" cy="5.5" r="2.4" fill="url(#frGold)" stroke="#b8860b" stroke-width=".8"/>
+      <circle cx="75" cy="6.5" r="1.5" fill="#f4a300" stroke="#b8860b" stroke-width=".8"/>
+    </g>
+  </g>
+
+  <!-- badge -->
+  <g filter="url(#frSh)">
+    <rect x="24" y="122" width="102" height="20" rx="10" fill="#0fc2d8" stroke="#0891b2" stroke-width="1.5"/>
+    <g fill="#ffffff">
+      <rect x="32" y="129.5" width="8" height="6.5" rx="1"/>
+      <rect x="31" y="127.3" width="10" height="2.8" rx="1"/>
+      <rect x="35.2" y="127.3" width="1.8" height="8.7"/>
+    </g>
+    <text x="85" y="135.8" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="900" fill="#ffffff" letter-spacing=".2">FIRST RECHARGE</text>
+  </g>
+</svg>

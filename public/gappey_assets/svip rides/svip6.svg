@@ -1,0 +1,437 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 170" width="500" height="170">
+<title>SVIP 6 Ride — Genesis Star Cruiser</title>
+<defs>
+<linearGradient id="s6rHull" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#fffdf6"><animate attributeName="stop-color" values="#fffdf6;#fff2d9;#f2ecff;#fffdf6" dur="10s" repeatCount="indefinite"/></stop>
+<stop offset=".45" stop-color="#c4bece"><animate attributeName="stop-color" values="#c4bece;#d6c8ae;#c4bece" dur="9s" repeatCount="indefinite"/></stop>
+<stop offset="1" stop-color="#4a463c"/>
+</linearGradient>
+<linearGradient id="s6rGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a8"/><stop offset=".5" stop-color="#d9a32e"/><stop offset="1" stop-color="#8a5f08"/></linearGradient>
+<radialGradient id="s6rCan" cx=".4" cy=".3" r=".95">
+<stop offset="0" stop-color="#f2ecff"/>
+<stop offset=".5" stop-color="#9fd8ff"><animate attributeName="stop-color" values="#9fd8ff;#a8f0cf;#d4a8ff;#ffa8cf;#9fd8ff" dur="8s" repeatCount="indefinite"/></stop>
+<stop offset="1" stop-color="#164a8f"/>
+</radialGradient>
+<radialGradient id="s6rFlame" cx="1" cy=".5" r="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".95"/><stop offset=".45" stop-color="#ffd97a" stop-opacity=".7"/><stop offset="1" stop-color="#ff7a3c" stop-opacity="0"/></radialGradient>
+<radialGradient id="s6rGlow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffffff" stop-opacity=".95"/><stop offset=".4" stop-color="#ffd97a" stop-opacity=".5"/><stop offset="1" stop-color="#ffd97a" stop-opacity="0"/></radialGradient>
+<radialGradient id="s6rVig" cx=".5" cy=".48" r=".8"><stop offset="0" stop-color="#0a0c14" stop-opacity="0"/><stop offset=".55" stop-color="#0a0c14" stop-opacity=".32"/><stop offset="1" stop-color="#05060c" stop-opacity=".82"/></radialGradient>
+<linearGradient id="s6rPlateG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#191612"/><stop offset="1" stop-color="#0d0b08"/></linearGradient>
+<polygon id="s6rStar12" points="13,0 6,1.6 11.3,6.5 4.4,4.4 6.5,11.3 1.6,6 0,13 -1.6,6 -6.5,11.3 -4.4,4.4 -11.3,6.5 -6,1.6 -13,0 -6,-1.6 -11.3,-6.5 -4.4,-4.4 -6.5,-11.3 -1.6,-6 0,-13 1.6,-6 6.5,-11.3 4.4,-4.4 11.3,-6.5 6,-1.6"/>
+<path id="s6rSpark4" d="M0 -6 L1.2 -1.2 L6 0 L1.2 1.2 L0 6 L-1.2 1.2 L-6 0 L-1.2 -1.2 Z"/>
+<path id="s6rOrbA" d="M-88 0 A88 26 0 1 1 88 0 A88 26 0 1 1 -88 0" fill="none"/>
+<path id="s6rOrbB" d="M66 0 A66 19 0 1 0 -66 0 A66 19 0 1 0 66 0" fill="none"/>
+<filter id="s6rB" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="4"/></filter>
+<filter id="s6rB8" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="8"/></filter>
+<filter id="s6rT" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.7"/></filter>
+<clipPath id="s6rFuse"><path d="M76 0 Q64 -8 38 -9 L-40 -9 Q-60 -8 -66 -3 Q-68 0 -66 3 Q-58 7.5 -32 8 L38 7.5 Q64 6.5 76 0 Z"/></clipPath>
+<clipPath id="s6rPC"><rect x="-100" y="-19" width="200" height="38" rx="14"/></clipPath>
+</defs>
+
+<!-- ══ SPACE VIGNETTE ══ -->
+<rect width="500" height="170" fill="url(#s6rVig)" opacity="0">
+<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.04;.89;1" dur="5.6s" fill="freeze"/>
+</rect>
+
+<!-- ══ NEBULA ══ -->
+<g opacity="0"><!--G1-->
+<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.05;.87;1" dur="5.6s" fill="freeze"/>
+<ellipse cx="150" cy="48" rx="92" ry="20" fill="#2a2440" opacity=".35" filter="url(#s6rB8)">
+<animateTransform attributeName="transform" type="translate" values="-36 0;36 0;-36 0" dur="30s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="368" cy="122" rx="82" ry="18" fill="#1c2c50" opacity=".3" filter="url(#s6rB8)">
+<animateTransform attributeName="transform" type="translate" values="32 0;-32 0;32 0" dur="36s" repeatCount="indefinite"/>
+</ellipse>
+</g><!--/G1-->
+
+<!-- ══ STARFIELD ══ -->
+<g opacity="0"><!--G2-->
+<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.05;.87;1" dur="5.6s" fill="freeze"/>
+<circle cx="72" cy="24" r="1" fill="#dff2ff"><animate attributeName="opacity" values=".15;.9;.15" dur="2.4s" repeatCount="indefinite"/></circle>
+<circle cx="138" cy="58" r=".8" fill="#bfe9ff"><animate attributeName="opacity" values=".15;.8;.15" dur="2.9s" begin=".5s" repeatCount="indefinite"/></circle>
+<circle cx="204" cy="22" r=".9" fill="#ffffff"><animate attributeName="opacity" values=".15;.85;.15" dur="2.6s" begin="1s" repeatCount="indefinite"/></circle>
+<circle cx="318" cy="30" r=".8" fill="#ffd6ec"><animate attributeName="opacity" values=".15;.8;.15" dur="3.1s" begin=".7s" repeatCount="indefinite"/></circle>
+<circle cx="404" cy="20" r="1" fill="#dff2ff"><animate attributeName="opacity" values=".15;.9;.15" dur="2.5s" begin="1.4s" repeatCount="indefinite"/></circle>
+<circle cx="452" cy="64" r=".8" fill="#b8c8ff"><animate attributeName="opacity" values=".15;.75;.15" dur="2.8s" begin=".3s" repeatCount="indefinite"/></circle>
+<circle cx="54" cy="94" r=".8" fill="#ffffff"><animate attributeName="opacity" values=".12;.7;.12" dur="3.3s" begin="1.8s" repeatCount="indefinite"/></circle>
+<circle cx="456" cy="112" r=".9" fill="#bfe9ff"><animate attributeName="opacity" values=".12;.7;.12" dur="3s" begin="1.1s" repeatCount="indefinite"/></circle>
+<circle cx="120" cy="140" r=".7" fill="#ffd97a"><animate attributeName="opacity" values=".1;.6;.1" dur="3.5s" begin="2.2s" repeatCount="indefinite"/></circle>
+</g><!--/G2-->
+
+<!-- ══ SPIRAL GALAXY watermark ══ -->
+<g opacity="0"><!--G3-->
+<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.06;.85;1" dur="5.6s" fill="freeze"/>
+<g transform="translate(250 88)"><!--G4-->
+<animateTransform attributeName="transform" type="rotate" additive="sum" from="0" to="360" dur="70s" repeatCount="indefinite"/>
+<path d="M0 0 C40 -18 78 -10 96 14 C108 30 104 52 88 64" fill="none" stroke="#7fd4ff" stroke-width="9" opacity=".1" filter="url(#s6rB8)"/>
+<path d="M0 0 C-40 18 -78 10 -96 -14 C-108 -30 -104 -52 -88 -64" fill="none" stroke="#b8c8ff" stroke-width="8" opacity=".08" filter="url(#s6rB8)"/>
+</g><!--/G4-->
+</g><!--/G3-->
+
+<!-- ══ HERALD: matter streams converging ══ -->
+<g fill="none" stroke-linecap="round" opacity="0"><!--G5-->
+<animate attributeName="opacity" values="0;.7;.7;0" keyTimes="0;.06;.43;1" dur="5.6s" fill="freeze"/>
+<path d="M-30 22 C90 40 176 60 224 78" stroke="#ffd97a" stroke-width="1.2" stroke-dasharray="5 9"><animate attributeName="stroke-dashoffset" from="0" to="-28" dur=".8s" repeatCount="indefinite"/></path>
+<path d="M530 20 C420 40 328 58 278 76" stroke="#9fd8ff" stroke-width="1.2" stroke-dasharray="5 9"><animate attributeName="stroke-dashoffset" from="0" to="-28" dur=".95s" repeatCount="indefinite"/></path>
+<path d="M-24 150 C94 132 180 114 228 100" stroke="#d4a8ff" stroke-width="1.1" stroke-dasharray="5 9"><animate attributeName="stroke-dashoffset" from="0" to="-28" dur=".9s" repeatCount="indefinite"/></path>
+<path d="M524 152 C414 134 322 116 274 100" stroke="#ffa8cf" stroke-width="1.1" stroke-dasharray="5 9"><animate attributeName="stroke-dashoffset" from="0" to="-28" dur="1.05s" repeatCount="indefinite"/></path>
+</g><!--/G5-->
+
+<!-- ══ THE SEED ══ -->
+<circle cx="250" cy="96" r="10" fill="url(#s6rGlow)" opacity="0">
+<animate attributeName="opacity" values="0;.9;.9;0;0" keyTimes="0;.06;.155;.175;1" dur="5.6s" fill="freeze"/>
+<animate attributeName="r" values="6;13;13;13" keyTimes="0;.14;.16;1" dur="5.6s" fill="freeze"/>
+</circle>
+<circle cx="250" cy="96" r="2.2" fill="#ffffff" opacity="0">
+<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.05;.155;.175;1" dur="5.6s" fill="freeze"/>
+<animate attributeName="r" values="1.4;3;3;3" keyTimes="0;.14;.16;1" dur="5.6s" fill="freeze"/>
+</circle>
+<circle cx="250" cy="96" r="3" fill="#fff8e2" opacity="0">
+<animate attributeName="r" values="3;30" begin=".88s" dur=".22s" fill="freeze"/>
+<animate attributeName="opacity" values=".9;0" begin=".88s" dur=".22s" fill="freeze"/>
+</circle>
+
+<!-- ══ THE GENESIS BANG ══ -->
+<rect width="500" height="170" fill="#ffffff" opacity="0">
+<animate attributeName="opacity" values="0;.55;0" keyTimes="0;.15;1" begin=".88s" dur=".5s" fill="freeze"/>
+</rect>
+<g opacity="0" transform="translate(250 96)"><!--G6-->
+<animate attributeName="opacity" values="0;.75;0" keyTimes="0;.35;1" begin=".88s" dur=".6s" fill="freeze"/>
+<g><animateTransform attributeName="transform" type="scale" values=".3;1.55" keyTimes="0;1" begin=".88s" dur=".6s" fill="freeze"/>
+<path d="M0 -34 L-4.5 -98 L4.5 -98 Z" fill="#fff8e2"/><path d="M0 -34 L-4.5 -98 L4.5 -98 Z" fill="#fff8e2" transform="rotate(30)"/><path d="M0 -34 L-4.5 -98 L4.5 -98 Z" fill="#fff8e2" transform="rotate(60)"/><path d="M0 -34 L-4.5 -98 L4.5 -98 Z" fill="#fff8e2" transform="rotate(90)"/><path d="M0 -34 L-4.5 -98 L4.5 -98 Z" fill="#fff8e2" transform="rotate(120)"/><path d="M0 -34 L-4.5 -98 L4.5 -98 Z" fill="#fff8e2" transform="rotate(150)"/><path d="M0 -34 L-4.5 -98 L4.5 -98 Z" fill="#fff8e2" transform="rotate(180)"/><path d="M0 -34 L-4.5 -98 L4.5 -98 Z" fill="#fff8e2" transform="rotate(210)"/><path d="M0 -34 L-4.5 -98 L4.5 -98 Z" fill="#fff8e2" transform="rotate(240)"/><path d="M0 -34 L-4.5 -98 L4.5 -98 Z" fill="#fff8e2" transform="rotate(270)"/><path d="M0 -34 L-4.5 -98 L4.5 -98 Z" fill="#fff8e2" transform="rotate(300)"/><path d="M0 -34 L-4.5 -98 L4.5 -98 Z" fill="#fff8e2" transform="rotate(330)"/>
+</g>
+<g><animateTransform attributeName="transform" type="scale" values=".3;1.3" keyTimes="0;1" begin=".98s" dur=".6s" fill="freeze"/>
+<path d="M0 -30 L-3.5 -82 L3.5 -82 Z" fill="#ffe9b8" opacity=".7" transform="rotate(15)"/><path d="M0 -30 L-3.5 -82 L3.5 -82 Z" fill="#ffe9b8" opacity=".7" transform="rotate(75)"/><path d="M0 -30 L-3.5 -82 L3.5 -82 Z" fill="#ffe9b8" opacity=".7" transform="rotate(135)"/><path d="M0 -30 L-3.5 -82 L3.5 -82 Z" fill="#ffe9b8" opacity=".7" transform="rotate(195)"/><path d="M0 -30 L-3.5 -82 L3.5 -82 Z" fill="#ffe9b8" opacity=".7" transform="rotate(255)"/><path d="M0 -30 L-3.5 -82 L3.5 -82 Z" fill="#ffe9b8" opacity=".7" transform="rotate(315)"/>
+</g>
+</g><!--/G6-->
+<circle cx="250" cy="96" fill="none" stroke="#ffffff" stroke-width="2.4" opacity="0">
+<animate attributeName="r" values="18;165" begin=".9s" dur=".8s" fill="freeze"/>
+<animate attributeName="opacity" values="0;.65;0" keyTimes="0;.3;1" begin=".9s" dur=".8s" fill="freeze"/>
+</circle>
+<circle cx="250" cy="96" fill="none" stroke="#ffd97a" stroke-width="1.6" opacity="0">
+<animate attributeName="r" values="14;135" begin="1.05s" dur=".8s" fill="freeze"/>
+<animate attributeName="opacity" values="0;.55;0" keyTimes="0;.3;1" begin="1.05s" dur=".8s" fill="freeze"/>
+</circle>
+<circle cx="250" cy="96" fill="none" stroke="#9fd8ff" stroke-width="1.1" opacity="0">
+<animate attributeName="r" values="10;108" begin="1.2s" dur=".8s" fill="freeze"/>
+<animate attributeName="opacity" values="0;.45;0" keyTimes="0;.3;1" begin="1.2s" dur=".8s" fill="freeze"/>
+</circle>
+
+<!-- ══ GROUND LIGHT POOL ══ -->
+<ellipse cx="250" cy="148" rx="95" ry="8" fill="url(#s6rGlow)" opacity="0">
+<animate attributeName="opacity" values="0;.16;.12" keyTimes="0;.2;1" begin="2.7s" dur=".5s" fill="freeze"/>
+<animate attributeName="opacity" values=".12;0" begin="4.35s" dur=".4s" fill="freeze"/>
+</ellipse>
+
+<!-- ══════════ CRUISER: G7 wrapper → G8 motion (3 composed animateTransforms) ══════════ -->
+<g transform="translate(250 96)"><!--G7-->
+<g><!--G8-->
+<animateTransform attributeName="transform" type="translate" values="-820 0;-820 0;0 0;0 0;880 0" keyTimes="0;.03;.46;.78;1" calcMode="spline" keySplines="0 0 1 1;.17 .67 .24 1;0 0 1 1;.55 .06 .68 .19" dur="5.6s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0 -18;0 -18;0 0;0 -2.5;0 2;0 -1.4;0 .8;0 0;0 0" keyTimes="0;.03;.46;.52;.58;.64;.7;.78;.9;1" calcMode="spline" keySplines="0 0 1 1;.25 .6 .3 1;0 0 1 1;.3 .6 .3 1;.3 .6 .3 1;.3 .6 .3 1;.3 .6 .3 1;.3 .6 .3 1;0 0 1 1" dur="5.6s" fill="freeze"/>
+<animateTransform attributeName="transform" type="rotate" additive="sum" values="0 0 0;4 0 0;0 0 0;0 0 0;-6 0 0" keyTimes="0;.1;.3;.84;.92" dur="5.6s" fill="freeze"/>
+
+<ellipse cx="0" cy="32" rx="106" ry="6" fill="#000" opacity="0">
+<animate attributeName="opacity" values="0;.05;.26;.26;0" keyTimes="0;.3;.48;.78;1" dur="5.6s" fill="freeze"/>
+</ellipse>
+
+<!-- newborn-worlds trail -->
+<g opacity="0"><!--G9-->
+<animate attributeName="opacity" values="0;0;.85;0;0;.9;0" keyTimes="0;.04;.42;.48;.79;.85;1" dur="5.6s" fill="freeze"/>
+<animateMotion path="M0 0 C-28 -12 -58 -8 -88 -18" dur="1.2s" repeatCount="indefinite"/>
+<circle r="3" fill="url(#s6rGlow)"/><circle r="1.4" fill="#9fd8ff"/>
+</g><!--/G9-->
+<g opacity="0"><!--G10-->
+<animate attributeName="opacity" values="0;0;.85;0;0;.9;0" keyTimes="0;.04;.42;.48;.79;.85;1" dur="5.6s" begin=".3s" fill="freeze"/>
+<animateMotion path="M0 0 C-30 6 -62 2 -94 10" dur="1.35s" begin=".3s" repeatCount="indefinite"/>
+<circle r="2.8" fill="url(#s6rGlow)"/><circle r="1.3" fill="#ffd97a"/>
+</g><!--/G10-->
+<g opacity="0"><!--G11-->
+<animate attributeName="opacity" values="0;0;.85;0;0;.9;0" keyTimes="0;.04;.42;.48;.79;.85;1" dur="5.6s" begin=".55s" fill="freeze"/>
+<animateMotion path="M0 0 C-26 -20 -52 -26 -80 -34" dur="1.25s" begin=".55s" repeatCount="indefinite"/>
+<circle r="2.6" fill="url(#s6rGlow)"/><circle r="1.2" fill="#c9a8ff"/>
+</g><!--/G11-->
+
+<!-- speed lines -->
+<g stroke-linecap="round" opacity="0"><!--G12-->
+<animate attributeName="opacity" values="0;0;.4;.4;0;0;.9;0" keyTimes="0;.04;.08;.42;.48;.79;.86;1" dur="5.6s" fill="freeze"/>
+<line x1="-84" y1="-14" x2="-134" y2="-14" stroke="#c9c4d4" stroke-width="2.2"/>
+<line x1="-78" y1="0" x2="-142" y2="0" stroke="#ffffff" stroke-width="2.6"/>
+<line x1="-84" y1="12" x2="-130" y2="12" stroke="#9fd8ff" stroke-width="2"/>
+</g><!--/G12-->
+
+<!-- warp streaks (exit) -->
+<g stroke-linecap="round" opacity="0"><!--G13-->
+<animate attributeName="opacity" values="0;0;.9;.9;0" keyTimes="0;.78;.82;.9;1" dur="5.6s" fill="freeze"/>
+<line x1="-80" y1="-18" x2="-158" y2="-18" stroke="#ffe9a8" stroke-width="2"/>
+<line x1="-76" y1="-6" x2="-170" y2="-6" stroke="#ffffff" stroke-width="2.6"/>
+<line x1="-80" y1="6" x2="-162" y2="6" stroke="#9fd8ff" stroke-width="2.2"/>
+<line x1="-76" y1="16" x2="-148" y2="16" stroke="#d4a8ff" stroke-width="1.6"/>
+</g><!--/G13-->
+
+<!-- mega afterburner -->
+<ellipse cx="-74" cy="-2" rx="12" ry="4.2" fill="url(#s6rFlame)" opacity="0">
+<animate attributeName="opacity" values="0;0;.95;.95;.4;.4;1;0" keyTimes="0;.03;.06;.44;.5;.78;.84;1" dur="5.6s" fill="freeze"/>
+<animate attributeName="rx" values="9;16;11;15;9" begin=".2s" dur=".5s" repeatCount="indefinite"/>
+<animate attributeName="rx" values="12;22;14;20;12" begin="4.37s" dur=".4s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="-72" cy="5" rx="10" ry="3.6" fill="url(#s6rFlame)" opacity="0">
+<animate attributeName="opacity" values="0;0;.85;.85;.32;.32;.9;0" keyTimes="0;.03;.06;.44;.5;.78;.84;1" dur="5.6s" fill="freeze"/>
+<animate attributeName="rx" values="8;14;9;13;8" begin=".28s" dur=".55s" repeatCount="indefinite"/>
+<animate attributeName="rx" values="10;19;12;18;10" begin="4.37s" dur=".45s" repeatCount="indefinite"/>
+</ellipse>
+<circle cx="-68" cy="-2" r="1.5" fill="#ffffff" opacity="0">
+<animate attributeName="opacity" values="0;0;.95;.95;.4;.4;1;0" keyTimes="0;.03;.06;.44;.5;.78;.84;1" dur="5.6s" fill="freeze"/>
+</circle>
+
+<!-- element-cycling aura -->
+<ellipse cx="0" cy="-4" rx="94" ry="34" fill="#ff7a3c" opacity="0" filter="url(#s6rB)">
+<animate attributeName="opacity" values="0;0;.5;.5;0" keyTimes="0;.45;.5;.77;1" dur="5.6s" fill="freeze"/>
+<animate attributeName="fill" values="#ff7a3c;#8a5cff;#7fd4ff;#ffd97a;#ff7a3c" dur="6.4s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="0" cy="-4" rx="70" ry="24" fill="#8a5cff" opacity="0" filter="url(#s6rB)">
+<animate attributeName="opacity" values="0;0;.3;.3;0" keyTimes="0;.45;.5;.77;1" dur="5.6s" fill="freeze"/>
+<animate attributeName="fill" values="#8a5cff;#7fd4ff;#ffd97a;#ff7a3c;#8a5cff" dur="6.4s" repeatCount="indefinite"/>
+</ellipse>
+
+<!-- airframe -->
+<path d="M2 -7 L-20 -24 L-32 -24 L-8 -7 Z" fill="#d9cfc0" stroke="#2e2a20" stroke-width="1.4"/>
+<path d="M-40 -8.5 L-53 -31 L-44 -31 L-31 -8.5 Z" fill="url(#s6rHull)" stroke="#2e2a20" stroke-width="1.8"/>
+<path d="M4 6 L-18 20 L-30 20 L-8 6 Z" fill="#b8b2a4" stroke="#2e2a20" stroke-width="1.3"/>
+<path d="M76 0 Q64 -8 38 -9 L-40 -9 Q-60 -8 -66 -3 Q-68 0 -66 3 Q-58 7.5 -32 8 L38 7.5 Q64 6.5 76 0 Z" fill="url(#s6rHull)" stroke="#2e2a20" stroke-width="2.2"/>
+<path d="M-58 -6.8 Q0 -8.6 34 -8" fill="none" stroke="#ffffff" stroke-width=".8" opacity=".5"/>
+<path d="M28 -8.5 Q40 -18 56 -8.5 Q44 -5 28 -8.5 Z" fill="url(#s6rCan)" stroke="#2e2a20" stroke-width=".9"/>
+<path d="M34 -10 Q42 -13 50 -10" fill="none" stroke="#ffffff" stroke-width=".9" opacity=".6"/>
+
+<!-- STAR EMBLEM forges onto the fin -->
+<g transform="translate(-47.5 -36)" opacity="0"><!--G14-->
+<animate attributeName="opacity" values="0;1" begin="2.95s" dur=".01s" fill="freeze"/>
+<animate attributeName="opacity" values="1;0" begin="4.3s" dur=".2s" fill="freeze"/>
+<animateTransform attributeName="transform" type="scale" additive="sum" values="0;1.25;1" keyTimes="0;.6;1" begin="2.95s" dur=".45s" fill="freeze"/>
+<use xlink:href="#s6rStar12" transform="scale(.36)" fill="url(#s6rGold)" stroke="#3a2a16" stroke-width=".8"/>
+<circle r="2" fill="none" stroke="#ffe9a8" stroke-width="1.2" opacity="0">
+<animate attributeName="r" values="2;15" begin="2.95s" dur=".45s" fill="freeze"/>
+<animate attributeName="opacity" values="0;.8;0" keyTimes="0;.3;1" begin="2.95s" dur=".45s" fill="freeze"/>
+</circle>
+</g><!--/G14-->
+<g transform="translate(-47.5 -36)" opacity="0"><!--G15-->
+<animate attributeName="opacity" values="0;1" begin="3.3s" dur=".01s" fill="freeze"/>
+<animate attributeName="opacity" values="1;0" begin="4.3s" dur=".2s" fill="freeze"/>
+<animateTransform attributeName="transform" type="rotate" additive="sum" from="0" to="360" begin="3.3s" dur="3.2s" repeatCount="indefinite"/>
+<use xlink:href="#s6rSpark4" transform="scale(.5)" fill="#ffffff">
+<animate attributeName="opacity" values=".4;1;.4" dur="1.8s" repeatCount="indefinite"/>
+</use>
+</g><!--/G15-->
+
+<!-- windows light up one by one -->
+<circle cx="-34" cy="-4.5" r="1.7" fill="#10141a"><animate attributeName="fill" values="#10141a;#ffe9a8" begin="3s" dur=".18s" fill="freeze"/></circle>
+<circle cx="-24" cy="-4.5" r="1.7" fill="#10141a"><animate attributeName="fill" values="#10141a;#ffe9a8" begin="3.08s" dur=".18s" fill="freeze"/></circle>
+<circle cx="-14" cy="-4.5" r="1.7" fill="#10141a"><animate attributeName="fill" values="#10141a;#ffe9a8" begin="3.16s" dur=".18s" fill="freeze"/></circle>
+<circle cx="-4" cy="-4.5" r="1.7" fill="#10141a"><animate attributeName="fill" values="#10141a;#ffe9a8" begin="3.24s" dur=".18s" fill="freeze"/></circle>
+<circle cx="6" cy="-4.5" r="1.7" fill="#10141a"><animate attributeName="fill" values="#10141a;#ffe9a8" begin="3.32s" dur=".18s" fill="freeze"/></circle>
+<circle cx="16" cy="-4.5" r="1.7" fill="#10141a"><animate attributeName="fill" values="#10141a;#ffe9a8" begin="3.4s" dur=".18s" fill="freeze"/></circle>
+
+<rect x="-62" y="2.2" width="132" height="1.4" rx=".7" fill="url(#s6rGold)" opacity=".9"/>
+<rect x="-58" y="4.8" width="120" height=".8" fill="#8a5f08" opacity=".5"/>
+<rect x="-56" y="6.4" width="112" height="1.2" rx=".6" fill="url(#s6rGold)" opacity=".55"/>
+<path d="M30 -8.5 L30 7" stroke="#2e2a20" stroke-width=".7" opacity=".5"/>
+<ellipse cx="-56" cy="-2" rx="10" ry="4.4" fill="#8a8478" stroke="#2e2a20" stroke-width="1.2"/>
+<ellipse cx="-56" cy="5" rx="9" ry="4" fill="#6f6a5c" stroke="#2e2a20" stroke-width="1.1"/>
+<ellipse cx="-47" cy="-2" rx="1.8" ry="3.2" fill="#14121c" stroke="#d9a32e" stroke-width=".6"/>
+<ellipse cx="-47" cy="5" rx="1.7" ry="2.9" fill="#14121c" stroke="#d9a32e" stroke-width=".6"/>
+<circle cx="72" cy="0" r="2.4" fill="#ffffff" stroke="#9fd8ff" stroke-width=".8">
+<animate attributeName="opacity" values=".7;1;.7" dur="1.6s" repeatCount="indefinite"/>
+</circle>
+
+<!-- hull glint -->
+<g clip-path="url(#s6rFuse)"><!--G16-->
+<rect x="-8" y="-24" width="15" height="46" fill="#ffffff" opacity=".3" transform="skewX(-18)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="-110 0;160 0" keyTimes="0;1" begin="3.15s" dur=".6s" fill="freeze"/>
+</rect>
+</g><!--/G16-->
+
+<!-- flank star gems -->
+<g transform="translate(-126 -28)" opacity="0"><!--G17-->
+<animate attributeName="opacity" values="0;1" begin="2.8s" dur=".15s" fill="freeze"/>
+<animate attributeName="opacity" values="1;0" begin="4.3s" dur=".2s" fill="freeze"/>
+<animateTransform attributeName="transform" type="scale" additive="sum" values="0;1.25;1" keyTimes="0;.6;1" begin="2.8s" dur=".4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="rotate" additive="sum" from="0" to="360" dur="6s" repeatCount="indefinite"/>
+<use xlink:href="#s6rStar12" transform="scale(.55)" fill="url(#s6rGold)" stroke="#3a2a16" stroke-width=".7"/>
+<circle r="4.4" fill="#0d0b08"/>
+<circle r="3.4" fill="url(#s6rCan)" stroke="#164a8f" stroke-width=".6"/>
+<circle cx="8.4" cy="0" r=".8" fill="#ffffff"/>
+</g><!--/G17-->
+<g transform="translate(126 -32)" opacity="0"><!--G18-->
+<animate attributeName="opacity" values="0;1" begin="2.95s" dur=".15s" fill="freeze"/>
+<animate attributeName="opacity" values="1;0" begin="4.3s" dur=".2s" fill="freeze"/>
+<animateTransform attributeName="transform" type="scale" additive="sum" values="0;1.25;1" keyTimes="0;.6;1" begin="2.95s" dur=".4s" fill="freeze"/>
+<animateTransform attributeName="transform" type="rotate" additive="sum" from="360" to="0" dur="6s" repeatCount="indefinite"/>
+<use xlink:href="#s6rStar12" transform="scale(.55)" fill="url(#s6rGold)" stroke="#3a2a16" stroke-width=".7"/>
+<circle r="4.4" fill="#0d0b08"/>
+<circle r="3.4" fill="url(#s6rCan)" stroke="#164a8f" stroke-width=".6"/>
+<circle cx="8.4" cy="0" r=".8" fill="#ffffff"/>
+</g><!--/G18-->
+
+</g><!--/G8-->
+</g><!--/G7-->
+<!-- ══════════ CRUISER CLOSED (2/2) ══════════ -->
+
+<!-- ══ CREATION RIPPLES ══ -->
+<circle cx="250" cy="96" fill="none" stroke="#ffd97a" stroke-width="2.4" opacity="0">
+<animate attributeName="r" values="22;128" begin="2.72s" dur=".85s" fill="freeze"/>
+<animate attributeName="opacity" values="0;.65;0" keyTimes="0;.3;1" begin="2.72s" dur=".85s" fill="freeze"/>
+</circle>
+<circle cx="250" cy="96" fill="none" stroke="#9fd8ff" stroke-width="1.5" opacity="0">
+<animate attributeName="r" values="16;102" begin="2.9s" dur=".85s" fill="freeze"/>
+<animate attributeName="opacity" values="0;.5;0" keyTimes="0;.3;1" begin="2.9s" dur=".85s" fill="freeze"/>
+</circle>
+<circle cx="250" cy="96" fill="none" stroke="#ffffff" stroke-width="1.1" opacity="0">
+<animate attributeName="r" values="12;78" begin="3.05s" dur=".85s" fill="freeze"/>
+<animate attributeName="opacity" values="0;.45;0" keyTimes="0;.3;1" begin="3.05s" dur=".85s" fill="freeze"/>
+</circle>
+<ellipse cx="250" cy="140" rx="70" ry="6" fill="#ffffff" opacity="0">
+<animate attributeName="opacity" values="0;.4;0" keyTimes="0;.25;1" begin="2.7s" dur=".45s" fill="freeze"/>
+</ellipse>
+
+<!-- ══ MATTER STREAMS (hold) ══ -->
+<g fill="none" stroke-linecap="round" opacity="0"><!--G19-->
+<animate attributeName="opacity" values="0;.65;.65;0" keyTimes="0;.5;.767;1" dur="5.6s" fill="freeze"/>
+<path d="M52 26 C118 42 180 58 226 74" stroke="#ffd97a" stroke-width="1.1" stroke-dasharray="5 9"><animate attributeName="stroke-dashoffset" from="0" to="-28" dur=".85s" repeatCount="indefinite"/></path>
+<path d="M448 30 C382 46 322 60 276 72" stroke="#9fd8ff" stroke-width="1.1" stroke-dasharray="5 9"><animate attributeName="stroke-dashoffset" from="0" to="-28" dur="1s" repeatCount="indefinite"/></path>
+<path d="M58 142 C122 126 182 110 226 98" stroke="#d4a8ff" stroke-width="1" stroke-dasharray="5 9"><animate attributeName="stroke-dashoffset" from="0" to="-28" dur=".95s" repeatCount="indefinite"/></path>
+<path d="M442 144 C380 128 320 112 274 98" stroke="#ffa8cf" stroke-width="1" stroke-dasharray="5 9"><animate attributeName="stroke-dashoffset" from="0" to="-28" dur=".9s" repeatCount="indefinite"/></path>
+</g><!--/G19-->
+
+<!-- ══ CAPTURED WORLDS: 8 + 4, tilted precessing rings ══ -->
+<g opacity="0"><!--G20-->
+<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.5;.767;1" dur="5.6s" fill="freeze"/>
+<g transform="translate(250 96) rotate(-14)"><!--G21-->
+<animateTransform attributeName="transform" type="rotate" additive="sum" values="0;6;0" dur="45s" repeatCount="indefinite"/>
+<use xlink:href="#s6rOrbA" stroke="#ffd97a" stroke-width=".7" stroke-dasharray="3 7" opacity=".28">
+<animate attributeName="stroke-dashoffset" from="0" to="-40" dur="7s" repeatCount="indefinite"/>
+</use>
+<use xlink:href="#s6rOrbB" stroke="#9fd8ff" stroke-width=".5" stroke-dasharray="2 8" opacity=".2">
+<animate attributeName="stroke-dashoffset" from="0" to="36" dur="9s" repeatCount="indefinite"/>
+</use>
+<circle r="4.2" fill="url(#s6rGlow)" opacity=".8"><animateMotion dur="10s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbA"/></animateMotion></circle>
+<circle r="1.7" fill="#9fd8ff"><animateMotion dur="10s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbA"/></animateMotion></circle>
+<circle r="4" fill="url(#s6rGlow)" opacity=".8"><animateMotion dur="10s" begin="-1.25s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbA"/></animateMotion></circle>
+<circle r="1.6" fill="#ffb36b"><animateMotion dur="10s" begin="-1.25s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbA"/></animateMotion></circle>
+<circle r="4.4" fill="url(#s6rGlow)" opacity=".8"><animateMotion dur="10s" begin="-2.5s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbA"/></animateMotion></circle>
+<circle r="1.8" fill="#8fe6b0"><animateMotion dur="10s" begin="-2.5s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbA"/></animateMotion></circle>
+<circle r="4" fill="url(#s6rGlow)" opacity=".8"><animateMotion dur="10s" begin="-3.75s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbA"/></animateMotion></circle>
+<circle r="1.6" fill="#c9a8ff"><animateMotion dur="10s" begin="-3.75s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbA"/></animateMotion></circle>
+<circle r="4.2" fill="url(#s6rGlow)" opacity=".8"><animateMotion dur="10s" begin="-5s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbA"/></animateMotion></circle>
+<circle r="1.7" fill="#ffd97a"><animateMotion dur="10s" begin="-5s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbA"/></animateMotion></circle>
+<circle r="4" fill="url(#s6rGlow)" opacity=".8"><animateMotion dur="10s" begin="-6.25s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbA"/></animateMotion></circle>
+<circle r="1.6" fill="#ffa8cf"><animateMotion dur="10s" begin="-6.25s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbA"/></animateMotion></circle>
+<circle r="4.4" fill="url(#s6rGlow)" opacity=".8"><animateMotion dur="10s" begin="-7.5s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbA"/></animateMotion></circle>
+<circle r="1.8" fill="#ffffff"><animateMotion dur="10s" begin="-7.5s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbA"/></animateMotion></circle>
+<circle r="4" fill="url(#s6rGlow)" opacity=".8"><animateMotion dur="10s" begin="-8.75s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbA"/></animateMotion></circle>
+<circle r="1.6" fill="#6fc7ff"><animateMotion dur="10s" begin="-8.75s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbA"/></animateMotion></circle>
+<circle r="3.4" fill="url(#s6rGlow)" opacity=".75"><animateMotion dur="7.5s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbB"/></animateMotion></circle>
+<circle r="1.4" fill="#8fe6b0"><animateMotion dur="7.5s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbB"/></animateMotion></circle>
+<circle r="3.2" fill="url(#s6rGlow)" opacity=".75"><animateMotion dur="7.5s" begin="-1.875s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbB"/></animateMotion></circle>
+<circle r="1.3" fill="#ffd97a"><animateMotion dur="7.5s" begin="-1.875s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbB"/></animateMotion></circle>
+<circle r="3.4" fill="url(#s6rGlow)" opacity=".75"><animateMotion dur="7.5s" begin="-3.75s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbB"/></animateMotion></circle>
+<circle r="1.4" fill="#c9a8ff"><animateMotion dur="7.5s" begin="-3.75s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbB"/></animateMotion></circle>
+<circle r="3.2" fill="url(#s6rGlow)" opacity=".75"><animateMotion dur="7.5s" begin="-5.625s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbB"/></animateMotion></circle>
+<circle r="1.3" fill="#ffffff"><animateMotion dur="7.5s" begin="-5.625s" repeatCount="indefinite"><mpath xlink:href="#s6rOrbB"/></animateMotion></circle>
+</g><!--/G21-->
+</g><!--/G20-->
+
+<!-- ══ TWIN ORBITING RAINBOW COMETS ══ -->
+<g opacity="0"><!--G22-->
+<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.52;.767;1" dur="5.6s" fill="freeze"/>
+<g><animateTransform attributeName="transform" type="rotate" from="0" to="360" begin="2.9s" dur="4s" repeatCount="indefinite"/>
+<circle cx="94" cy="0" r="2.6" fill="#ffffff" stroke="#ff8fb0" stroke-width=".8"/>
+<circle cx="87" cy="0" r="1.6" fill="#ff8fb0" opacity=".6"/><circle cx="81" cy="0" r="1.1" fill="#d4a8ff" opacity=".4"/><circle cx="76" cy="0" r=".7" fill="#6fc7ff" opacity=".22"/>
+</g>
+<g><animateTransform attributeName="transform" type="rotate" from="360" to="0" begin="3.1s" dur="5.2s" repeatCount="indefinite"/>
+<circle cx="76" cy="0" r="2.3" fill="#ffffff" stroke="#6fc7ff" stroke-width=".8"/>
+<circle cx="70" cy="0" r="1.5" fill="#6fe3c2" opacity=".6"/><circle cx="65" cy="0" r="1" fill="#b48fff" opacity=".4"/>
+</g>
+</g><!--/G22-->
+
+<!-- ══ NAME PLATE: Seal of Genesis — absolute, dead-center ══ -->
+<g transform="translate(250 24)" opacity="0"><!--G23-->
+<animate attributeName="opacity" values="0;1" begin="2.85s" dur=".35s" fill="freeze"/>
+<animate attributeName="opacity" values="1;0" begin="4.35s" dur=".3s" fill="freeze"/>
+<g><!--G24-->
+<animateTransform attributeName="transform" type="scale" values=".8;.8;1.06;1" keyTimes="0;.4;.75;1" begin="2.85s" dur=".45s" fill="freeze"/>
+<g transform="translate(-72 0)"><!--G25 sigil-->
+<animateTransform attributeName="transform" type="rotate" additive="sum" from="0" to="360" dur="24s" repeatCount="indefinite"/>
+<use xlink:href="#s6rStar12" transform="scale(.9)" fill="url(#s6rGold)" stroke="#3a2a16" stroke-width=".8"/>
+<circle r="5.2" fill="#0d0b08" stroke="#9fd8ff" stroke-width=".8">
+<animate attributeName="stroke" values="#9fd8ff;#a8f0cf;#d4a8ff;#ffa8cf;#9fd8ff" dur="7s" repeatCount="indefinite"/>
+<animate attributeName="r" values="5;5.6;5" dur="2.2s" repeatCount="indefinite"/>
+</circle>
+</g><!--/G25-->
+<rect x="-100" y="-19" width="200" height="38" rx="14" fill="url(#s6rPlateG)" stroke="url(#s6rGold)" stroke-width="2"/>
+<rect x="-96" y="-15" width="192" height="30" rx="11" fill="none" stroke="#9fd8ff" stroke-width="1">
+<animate attributeName="stroke" values="#9fd8ff;#a8f0cf;#d4a8ff;#ffa8cf;#9fd8ff" dur="7s" repeatCount="indefinite"/>
+</rect>
+<line x1="-46" y1="-9" x2="88" y2="-9" stroke="#ffffff" stroke-width=".6" opacity=".4"/>
+<path d="M86 -2.5 L88.4 0 L86 2.5 L83.6 0 Z" fill="#ffe9a8"><animate attributeName="opacity" values=".5;1;.5" dur="1.8s" repeatCount="indefinite"/></path>
+<path d="M-48 -2.5 L-45.6 0 L-48 2.5 L-50.4 0 Z" fill="#ffe9a8"><animate attributeName="opacity" values="1;.5;1" dur="1.8s" begin=".9s" repeatCount="indefinite"/></path>
+<g clip-path="url(#s6rPC)"><!--G26-->
+<rect x="-9" y="-24" width="16" height="48" fill="#ffffff" opacity=".2" transform="skewX(-18)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="-140 0;140 0" keyTimes="0;1" begin="3.3s" dur=".7s" fill="freeze"/>
+</rect>
+</g><!--/G26-->
+<text x="8" y="-1" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="16.5" font-weight="800" fill="#9fd8ff" filter="url(#s6rT)" opacity=".55">Welcome&lt;animate attributeName="fill" values="#ff9fd0;#9fe0ff;#b49fff;#7fe0b0;#ffd98f;#ff9fd0" dur="6s" repeatCount="indefinite"/&gt;&lt;animate attributeName="opacity" values=".3;.8;.3" dur="2.8s" repeatCount="indefinite"/&gt;</text>
+<text x="8" y="-1.7" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="16.5" font-weight="800" fill="#0d0b08" opacity=".6">Welcome</text>
+<text x="8" y="-1" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="16.5" font-weight="800" fill="#ffedbe">Welcome</text>
+<text x="8" y="12.5" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="2.5" fill="#ffd97a">SVIP 6 HAS ENTERED</text>
+</g><!--/G24-->
+</g><!--/G23-->
+
+<!-- ══ THE GENESIS ECHO ══ -->
+<rect width="500" height="170" fill="#fff8e2" opacity="0">
+<animate attributeName="opacity" values="0;.5;0" keyTimes="0;.2;1" begin="4.37s" dur=".45s" fill="freeze"/>
+</rect>
+<g opacity="0" transform="translate(320 90)"><!--G27-->
+<animate attributeName="opacity" values="0;.6;0" keyTimes="0;.35;1" begin="4.37s" dur=".55s" fill="freeze"/>
+<g><animateTransform attributeName="transform" type="scale" values=".4;1.35" keyTimes="0;1" begin="4.37s" dur=".55s" fill="freeze"/>
+<path d="M0 -26 L-3.5 -74 L3.5 -74 Z" fill="#fff8e2" opacity=".85"/><path d="M0 -26 L-3.5 -74 L3.5 -74 Z" fill="#fff8e2" opacity=".85" transform="rotate(60)"/><path d="M0 -26 L-3.5 -74 L3.5 -74 Z" fill="#fff8e2" opacity=".85" transform="rotate(120)"/><path d="M0 -26 L-3.5 -74 L3.5 -74 Z" fill="#fff8e2" opacity=".85" transform="rotate(180)"/><path d="M0 -26 L-3.5 -74 L3.5 -74 Z" fill="#fff8e2" opacity=".85" transform="rotate(240)"/><path d="M0 -26 L-3.5 -74 L3.5 -74 Z" fill="#fff8e2" opacity=".85" transform="rotate(300)"/>
+</g>
+</g><!--/G27-->
+<circle cx="330" cy="90" fill="none" stroke="#ffd97a" stroke-width="2" opacity="0">
+<animate attributeName="r" values="20;140" begin="4.37s" dur=".8s" fill="freeze"/>
+<animate attributeName="opacity" values="0;.6;0" keyTimes="0;.3;1" begin="4.37s" dur=".8s" fill="freeze"/>
+</circle>
+<circle cx="330" cy="90" fill="none" stroke="#9fd8ff" stroke-width="1.3" opacity="0">
+<animate attributeName="r" values="14;112" begin="4.5s" dur=".8s" fill="freeze"/>
+<animate attributeName="opacity" values="0;.5;0" keyTimes="0;.3;1" begin="4.5s" dur=".8s" fill="freeze"/>
+</circle>
+<g><!--G28-->
+<animateMotion path="M310 92 L620 82" begin="4.5s" dur=".75s" fill="freeze"/>
+<animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.12;.75;1" begin="4.5s" dur=".75s" fill="freeze"/>
+<line x1="-15" y1="0" x2="0" y2="0" stroke="#ffd97a" stroke-width="1.6" stroke-linecap="round" opacity=".75"/><circle r="2" fill="#ffe9b8"/><circle r=".85" fill="#fff8e2"/>
+</g><!--/G28-->
+
+<!-- ══ SPARKLE POPS ══ -->
+<g transform="translate(150 44)" opacity="0"><!--G29-->
+<animate attributeName="opacity" values="0;.95;0" keyTimes="0;.4;1" begin="2.9s" dur=".5s" fill="freeze"/>
+<animateTransform attributeName="transform" type="scale" additive="sum" values="0;1.3;1" keyTimes="0;.6;1" begin="2.9s" dur=".5s" fill="freeze"/>
+<use xlink:href="#s6rSpark4" fill="#ffffff"/>
+</g><!--/G29-->
+<g transform="translate(352 52)" opacity="0"><!--G30-->
+<animate attributeName="opacity" values="0;.95;0" keyTimes="0;.4;1" begin="3.05s" dur=".5s" fill="freeze"/>
+<animateTransform attributeName="transform" type="scale" additive="sum" values="0;1.2;1" keyTimes="0;.6;1" begin="3.05s" dur=".5s" fill="freeze"/>
+<use xlink:href="#s6rSpark4" fill="#ffd97a"/>
+</g><!--/G30-->
+<g transform="translate(330 124)" opacity="0"><!--G31-->
+<animate attributeName="opacity" values="0;.9;0" keyTimes="0;.4;1" begin="3.2s" dur=".5s" fill="freeze"/>
+<animateTransform attributeName="transform" type="scale" additive="sum" values="0;1.3;1" keyTimes="0;.6;1" begin="3.2s" dur=".5s" fill="freeze"/>
+<use xlink:href="#s6rSpark4" fill="#9fd8ff"/>
+</g><!--/G31-->
+<g transform="translate(128 118)" opacity="0"><!--G32-->
+<animate attributeName="opacity" values="0;.9;0" keyTimes="0;.4;1" begin="3.35s" dur=".5s" fill="freeze"/>
+<animateTransform attributeName="transform" type="scale" additive="sum" values="0;1.2;1" keyTimes="0;.6;1" begin="3.35s" dur=".5s" fill="freeze"/>
+<use xlink:href="#s6rSpark4" fill="#c9a8ff"/>
+</g><!--/G32-->
+<g transform="translate(248 144)" opacity="0"><!--G33-->
+<animate attributeName="opacity" values="0;.9;0" keyTimes="0;.4;1" begin="3.5s" dur=".5s" fill="freeze"/>
+<animateTransform attributeName="transform" type="scale" additive="sum" values="0;1.15;1" keyTimes="0;.6;1" begin="3.5s" dur=".5s" fill="freeze"/>
+<use xlink:href="#s6rSpark4" fill="#ffa8cf"/>
+</g><!--/G33-->
+</svg>

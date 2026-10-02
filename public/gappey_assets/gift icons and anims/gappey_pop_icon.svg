@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <title>Gappey Pop — gift logo</title>
+  <defs>
+    <linearGradient id="gpLgold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE9A8"/><stop offset=".5" stop-color="#E9B94F"/><stop offset="1" stop-color="#C08A24"/>
+    </linearGradient>
+    <path id="gpLspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+  </defs>
+  <circle cx="190" cy="50" r="17" fill="none" stroke="#F3EADA" stroke-width="2.5" opacity=".6"/>
+  <path d="M199 62 L206 74 L190 66 Z" fill="none" stroke="#F3EADA" stroke-width="2.5" stroke-linejoin="round" opacity=".6"/>
+  <circle cx="117" cy="106" r="71" fill="url(#gpLgold)" stroke="#8A5F1D" stroke-width="3"/>
+  <path d="M78 158 L56 194 L106 170 Z" fill="url(#gpLgold)" stroke="#8A5F1D" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M72 160 q14 2 26 8" fill="none" stroke="url(#gpLgold)" stroke-width="7"/>
+  <text x="120" y="117" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="30" letter-spacing=".5" fill="#221408">Gappey!</text>
+  <path d="M88 132 H152" stroke="#8A5F1D" stroke-width="2.5" stroke-linecap="round" opacity=".65"/>
+  <circle cx="92" cy="52" r="4" fill="#FFF6E6" opacity=".55"/>
+  <use href="#gpLspk" transform="translate(196 120) scale(.85)" fill="#F2B33D"/>
+  <use href="#gpLspk" transform="translate(40 74) scale(.6)" fill="#F6EFE2"/>
+  <circle cx="202" cy="196" r="2.4" fill="#D9A441"/>
+  <circle cx="38" cy="176" r="2.2" fill="#E2557B"/>
+</svg>

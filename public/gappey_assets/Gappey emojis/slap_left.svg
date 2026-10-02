@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<defs><radialGradient id="splg" cx="38%" cy="30%" r="82%"><stop offset="0%" stop-color="#FFF5BC"/><stop offset="55%" stop-color="#FFD45E"/><stop offset="100%" stop-color="#FFA51F"/></radialGradient></defs>
+<style>
+.splW{transform-box:fill-box;transform-origin:50% 92%;animation:splA 1.6s infinite}
+@keyframes splA{
+0%,26%{transform:rotate(80deg);animation-timing-function:cubic-bezier(.5,0,.7,1)}
+38%{transform:rotate(-78deg);animation-timing-function:ease-out}
+46%,60%{transform:rotate(-70deg)}
+82%{transform:rotate(34deg)}
+100%{transform:rotate(80deg)}}
+.splT{opacity:0;animation:splB 1.6s infinite}
+@keyframes splB{0%,24%{opacity:0}34%,48%{opacity:.8}62%,100%{opacity:0}}
+.splX{transform-box:fill-box;transform-origin:center;opacity:0;animation:splC 1.6s ease-out infinite}
+@keyframes splC{0%,40%{opacity:0;transform:scale(.2)}50%{opacity:1;transform:scale(1.15)}74%,100%{opacity:0;transform:scale(1.4)}}
+</style>
+<path class="splT" d="M14 118 A95 95 0 0 1 186 118" fill="none" stroke="#F0A11B" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 15"/>
+<g transform="translate(30,112)"><g class="splX" fill="none" stroke="#F0605A" stroke-width="6" stroke-linecap="round">
+<path d="M0 -22 V-10 M0 22 V10 M-22 0 H-10 M22 0 H10 M-15 -15 L-7 -7 M15 -15 L7 -7 M-15 15 L-7 7 M15 15 L7 7"/>
+</g></g>
+<g transform="translate(100,146)"><g class="splW"><g transform="scale(-1,1)">
+<rect x="-19" y="2" width="38" height="20" rx="9" fill="#F26D9A" stroke="#C23363" stroke-width="3"/>
+<rect x="-21" y="-38" width="42" height="44" rx="15" fill="url(#splg)" stroke="#C97B2D" stroke-width="3"/>
+<rect x="-21" y="-72" width="10" height="38" rx="5" fill="url(#splg)" stroke="#C97B2D" stroke-width="3"/>
+<rect x="-9" y="-80" width="10" height="46" rx="5" fill="url(#splg)" stroke="#C97B2D" stroke-width="3"/>
+<rect x="3" y="-76" width="10" height="42" rx="5" fill="url(#splg)" stroke="#C97B2D" stroke-width="3"/>
+<rect x="15" y="-64" width="9" height="30" rx="4.5" fill="url(#splg)" stroke="#C97B2D" stroke-width="3"/>
+<rect x="-30" y="-36" width="10" height="27" rx="5" fill="url(#splg)" stroke="#C97B2D" stroke-width="3" transform="rotate(-26 -25 -22)"/>
+<path d="M-8 -24 Q0 -17 9 -21" fill="none" stroke="#C97B2D" stroke-width="3" opacity=".5" stroke-linecap="round"/>
+<ellipse cx="-6" cy="-18" rx="9" ry="5" fill="#fff" opacity=".45"/>
+</g></g></g>
+</svg>

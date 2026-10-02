@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+<defs>
+<linearGradient id="bgG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#241612"/><stop offset="1" stop-color="#0d0906"/></linearGradient>
+<radialGradient id="ctrG" cx=".5" cy=".45" r=".6"><stop offset="0" stop-color="#5a3a18" stop-opacity=".55"/><stop offset="1" stop-color="#5a3a18" stop-opacity="0"/></radialGradient>
+<radialGradient id="hG"><stop offset="0" stop-color="#ffb45a" stop-opacity=".45"/><stop offset="1" stop-color="#ffb45a" stop-opacity="0"/></radialGradient>
+<linearGradient id="dgG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffe9a8"/><stop offset=".55" stop-color="#d9a441"/><stop offset="1" stop-color="#8f6a1c"/></linearGradient>
+<linearGradient id="dgG2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8c15a"/><stop offset="1" stop-color="#8f6a1c"/></linearGradient>
+<linearGradient id="fbG" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ff9d45"/><stop offset="1" stop-color="#fff3cf"/></linearGradient>
+</defs>
+<rect width="240" height="240" rx="54" fill="url(#bgG)"/>
+<rect width="240" height="240" rx="54" fill="url(#ctrG)"/>
+<circle cx="120" cy="120" r="100" fill="none" stroke="#e8c15a" stroke-width="2" opacity=".4"/>
+<circle cx="120" cy="120" r="88" fill="none" stroke="#e8c15a" stroke-width="1.5" stroke-dasharray="2 10" opacity=".3"/>
+<circle cx="120" cy="118" r="72" fill="url(#hG)"/>
+<g transform="translate(84,134) scale(.56)">
+<path d="M-16,-28 C-52,-50 -100,-52 -100,-32" stroke="#b8860b" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M-12,6 C-44,10 -72,26 -90,48" stroke="#ff9d45" stroke-width="6" fill="none" stroke-linecap="round"/>
+<path d="M20,-14 C0,-26 -16,-24 -30,-10 C-12,-6 6,-6 22,-14 Z" fill="#c98f2c" opacity=".8"/>
+<path d="M40,-44 C30,-80 46,-104 76,-112 C62,-90 58,-66 62,-46 Z" fill="url(#dgG2)" stroke="#6e4f12" stroke-width="2"/>
+<path d="M12,-38 C6,-66 18,-84 40,-90 C30,-74 26,-56 30,-40 Z" fill="url(#dgG2)" stroke="#6e4f12" stroke-width="2"/>
+<path d="M-26,-34 C20,-58 80,-56 118,-30 C148,-10 162,8 160,22 C158,32 146,36 132,34 C96,40 40,34 -6,20 C-26,12 -34,-16 -26,-34 Z" fill="url(#dgG)" stroke="#6e4f12" stroke-width="2"/>
+<path d="M160,22 C130,26 92,27 58,23" stroke="#6e4f12" stroke-width="2" fill="none"/>
+<circle cx="146" cy="2" r="3" fill="#5d4210"/>
+<path d="M134,34 l-3,10 8,0 Z" fill="#fff5df"/>
+<path d="M112,37 l-2.6,9 7,0 Z" fill="#fff5df"/>
+<path d="M64,-36 L96,-42" stroke="#6e4f12" stroke-width="4" stroke-linecap="round"/>
+<path d="M72,-28 L96,-33 L103,-20 L80,-14 Z" fill="#241108"/>
+<circle cx="88" cy="-23" r="4.2" fill="#ff4b2e"/><circle cx="89.6" cy="-24.6" r="1.4" fill="#ffd9c4"/>
+<path d="M152,4 C180,0 198,-12 208,-32" stroke="#e8c15a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+<path d="M150,15 C176,21 190,35 197,55" stroke="#e8c15a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+<g transform="translate(168,28)">
+<circle cx="4" cy="0" r="11" fill="#ffb45a" opacity=".25"/>
+<path d="M0,0 C14,-4 20,-20 12,-38 C22,-26 26,-8 18,8 C10,18 -2,14 0,0 Z" fill="url(#fbG)" opacity=".95"/>
+</g>
+</g>
+<circle cx="70" cy="198" r="5" fill="#f2913c"/><circle cx="120" cy="205" r="6" fill="#f2b93c"/><circle cx="170" cy="198" r="5" fill="#e8543a"/>
+<path d="M0,-9 Q1.4,-1.4 9,0 Q1.4,1.4 0,9 Q-1.4,1.4 -9,0 Q-1.4,-1.4 0,-9 Z" transform="translate(54,54)" fill="#ffe9a8"/>
+<circle cx="194" cy="62" r="2.5" fill="#e8c15a"/>
+</svg>

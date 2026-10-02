@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 800" width="450" height="800">
+  <title>Sone ki Baarish — full-screen gift animation</title>
+  <defs>
+    <radialGradient id="grAsky" cx="50%" cy="28%" r="95%">
+      <stop offset="0" stop-color="#241708"/><stop offset=".45" stop-color="#140D05"/><stop offset="1" stop-color="#070403"/>
+    </radialGradient>
+    <radialGradient id="grAcoinF" cx=".35" cy=".3" r=".95">
+      <stop offset="0" stop-color="#FFE9A8"/><stop offset=".45" stop-color="#E9B94F"/><stop offset="1" stop-color="#A8721F"/>
+    </radialGradient>
+    <radialGradient id="grAglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#D9A441" stop-opacity=".22"/><stop offset="1" stop-color="#D9A441" stop-opacity="0"/>
+    </radialGradient>
+    <path id="grAspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+    <g id="grAcoin">
+      <circle r="16" fill="url(#grAcoinF)" stroke="#8A5F1D" stroke-width="1.6"/>
+      <circle r="11" fill="none" stroke="#8A5F1D" stroke-width="2.4" stroke-dasharray="2.5 3"/>
+      <rect x="-3" y="-3" width="6" height="6" fill="#8A5F1D" opacity=".55" transform="rotate(45)"/>
+    </g>
+    <g id="grAcoinBig">
+      <circle r="56" fill="url(#grAcoinF)" stroke="#8A5F1D" stroke-width="3"/>
+      <circle r="47" fill="none" stroke="#B8862F" stroke-width="5" stroke-dasharray="4 6"/>
+      <circle r="37" fill="none" stroke="#8A5F1D" stroke-width="1.6" opacity=".6"/>
+      <g fill="none" stroke="#8A5F1D" stroke-width="6" stroke-linecap="round">
+        <path d="M-22 -17 H22"/><path d="M-22 -6 H22"/>
+        <path d="M-16 -6 C -16 7 -8 15 5 16"/>
+        <path d="M-20 16 H5"/>
+      </g>
+    </g>
+    <style>
+      .grA-fall{animation:grAFall 3.2s linear infinite}
+      .grA-f1{animation-duration:2.6s}.grA-f2{animation-duration:3.3s}.grA-f3{animation-duration:4.1s}
+      .grA-sway{animation:grASway 2s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:50% 0}
+      .grA-flip{animation:grAFlip 1.15s linear infinite;transform-box:fill-box;transform-origin:center}
+      .grA-twirl{animation:grATwirl 2.2s linear infinite;transform-box:fill-box;transform-origin:center}
+      .grA-hero{animation:grAHero 7s linear infinite;transform-box:fill-box;transform-origin:center}
+      .grA-hr1{stroke:#F2B33D;stroke-width:5;fill:none;transform-box:fill-box;transform-origin:center;animation:grAHR1 7s linear infinite}
+      .grA-hr2{stroke:#F3EADA;stroke-width:2;fill:none;transform-box:fill-box;transform-origin:center;animation:grAHR2 7s linear infinite}
+      .grA-glint{fill:#FFF3D0;transform-box:fill-box;transform-origin:center;animation:grAGlint 7s linear infinite}
+      .grA-glint2{fill:#FFF3D0;transform-box:fill-box;transform-origin:center;animation:grAGlint2 7s linear infinite}
+      .grA-cap{font:600 33px Georgia,'Times New Roman',serif;letter-spacing:11px;fill:#F2D48C;text-anchor:middle;animation:grACap 7s linear infinite}
+      .grA-orn{animation:grACap 7s linear infinite}
+      .grA-twk{fill:#F2D48C;transform-box:fill-box;transform-origin:center;animation:grATw 2.8s ease-in-out infinite}
+      .grA-bob{animation:grABob 3.2s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center}
+      @keyframes grAFall{from{transform:translateY(-60px)}to{transform:translateY(960px)}}
+      @keyframes grASway{from{transform:rotate(-14deg)}to{transform:rotate(14deg)}}
+      @keyframes grAFlip{0%{transform:scaleX(1)}50%{transform:scaleX(-1)}100%{transform:scaleX(1)}}
+      @keyframes grATwirl{to{transform:rotate(360deg)}}
+      @keyframes grAHero{
+        0%{transform:translateY(-150px) scale(1,1);opacity:1}
+        6%{transform:translateY(40px) scale(.12,1)}
+        12%{transform:translateY(170px) scale(1,1)}
+        18%{transform:translateY(255px) scale(.12,1)}
+        24%{transform:translateY(315px) scale(1,1)}
+        28%{transform:translateY(315px) scale(1.07,1.07)}
+        32%{transform:translateY(315px) scale(1,1)}
+        52%{transform:translateY(315px) scale(1,1);opacity:1}
+        61%{transform:translateY(315px) scale(1.45,1.45);opacity:0}
+        100%{transform:translateY(-150px) scale(1,1);opacity:0}}
+      @keyframes grAHR1{0%{opacity:0;transform:scale(.1)}52%{opacity:.95;transform:scale(.12)}70%{opacity:0;transform:scale(3)}100%{opacity:0;transform:scale(3)}}
+      @keyframes grAHR2{0%{opacity:0;transform:scale(.1)}55%{opacity:.8;transform:scale(.12)}78%{opacity:0;transform:scale(3.8)}100%{opacity:0;transform:scale(3.8)}}
+      @keyframes grAGlint{0%,26%{opacity:0;transform:scale(.2)}31%{opacity:1;transform:scale(1)}37%{opacity:0;transform:scale(.3)}100%{opacity:0;transform:scale(.3)}}
+      @keyframes grAGlint2{0%,30%{opacity:0;transform:scale(.2)}35%{opacity:1;transform:scale(1)}42%{opacity:0;transform:scale(.3)}100%{opacity:0;transform:scale(.3)}}
+      @keyframes grACap{0%,5%{opacity:0}15%{opacity:1}83%{opacity:1}93%{opacity:0}100%{opacity:0}}
+      @keyframes grATw{0%,100%{opacity:.05;transform:scale(.6)}50%{opacity:.9;transform:scale(1)}}
+      @keyframes grABob{from{transform:translateY(0)}to{transform:translateY(-5px)}}
+    </style>
+  </defs>
+  <rect width="450" height="800" fill="url(#grAsky)"/>
+  <polygon points="120,-20 168,-20 330,820 226,820" fill="#F6E7C6" opacity=".05"/>
+  <polygon points="300,-20 348,-20 180,820 76,820" fill="#F6E7C6" opacity=".04"/>
+  <ellipse cx="225" cy="800" rx="270" ry="64" fill="url(#grAglow)"/>
+  <g transform="translate(120 788) scale(1.35) rotate(-12)"><use href="#grAcoin"/></g>
+  <g transform="translate(168 796) scale(1.5) rotate(8)"><use href="#grAcoin"/></g>
+  <g transform="translate(225 789) scale(1.45)"><use href="#grAcoin" class="grA-bob" style="animation-delay:-1.2s"/></g>
+  <g transform="translate(283 796) scale(1.5) rotate(-7)"><use href="#grAcoin"/></g>
+  <g transform="translate(330 788) scale(1.3) rotate(14)"><use href="#grAcoin" class="grA-bob"/></g>
+  <text class="grA-cap" x="230" y="112">SONE KI BAARISH</text>
+  <g class="grA-orn" stroke="#D9A441" fill="none">
+    <line x1="118" y1="136" x2="204" y2="136"/>
+    <line x1="256" y1="136" x2="342" y2="136"/>
+    <path d="M225 130 l6 6 -6 6 -6 -6Z"/>
+  </g>
+  <g transform="translate(225 0)">
+    <g class="grA-hero">
+      <use href="#grAcoinBig"/>
+      <g transform="translate(-36 -40)"><use href="#grAspk" class="grA-glint"/></g>
+      <g transform="translate(30 -12) scale(.7)"><use href="#grAspk" class="grA-glint2"/></g>
+    </g>
+    <circle class="grA-hr1" cx="0" cy="315" r="70"/>
+    <circle class="grA-hr2" cx="0" cy="315" r="70"/>
+  </g>
+  <g>
+    <g transform="translate(24 -90) scale(.9)"><g class="grA-sway"><g class="grA-fall grA-f3" style="animation-delay:-.2s"><use href="#grAcoin" class="grA-flip"/></g></g></g>
+    <g transform="translate(62 -90) scale(1.15)"><g class="grA-sway" style="animation-delay:-.6s"><g class="grA-fall grA-f2" style="animation-delay:-1.6s"><use href="#grAcoin" class="grA-flip" style="animation-delay:-.3s"/></g></g></g>
+    <g transform="translate(100 -90) scale(.75)"><g class="grA-sway" style="animation-delay:-1.1s"><g class="grA-fall grA-f1" style="animation-delay:-.9s"><use href="#grAcoin" class="grA-flip" style="animation-delay:-.6s"/></g></g></g>
+    <g transform="translate(136 -90)"><g class="grA-sway" style="animation-delay:-.2s"><g class="grA-fall grA-f2" style="animation-delay:-2.4s"><use href="#grAcoin" class="grA-flip" style="animation-delay:-.9s"/></g></g></g>
+    <g transform="translate(170 -90) scale(.8)"><g class="grA-sway" style="animation-delay:-1.5s"><g class="grA-fall grA-f3" style="animation-delay:-3.1s"><use href="#grAcoin" class="grA-flip" style="animation-delay:-.2s"/></g></g></g>
+    <g transform="translate(205 -90) scale(1.25)"><g class="grA-sway" style="animation-delay:-.8s"><g class="grA-fall grA-f1" style="animation-delay:-1.3s"><use href="#grAcoin" class="grA-flip" style="animation-delay:-.5s"/></g></g></g>
+    <g transform="translate(243 -90) scale(.85)"><g class="grA-sway" style="animation-delay:-.3s"><g class="grA-fall grA-f2" style="animation-delay:-2s"><use href="#grAcoin" class="grA-flip" style="animation-delay:-.7s"/></g></g></g>
+    <g transform="translate(280 -90) scale(1.1)"><g class="grA-sway" style="animation-delay:-1.7s"><g class="grA-fall grA-f3" style="animation-delay:-.5s"><use href="#grAcoin" class="grA-flip" style="animation-delay:-.1s"/></g></g></g>
+    <g transform="translate(316 -90) scale(.7)"><g class="grA-sway" style="animation-delay:-.9s"><g class="grA-fall grA-f1" style="animation-delay:-2.8s"><use href="#grAcoin" class="grA-flip" style="animation-delay:-.4s"/></g></g></g>
+    <g transform="translate(352 -90) scale(1.2)"><g class="grA-sway" style="animation-delay:-.5s"><g class="grA-fall grA-f2" style="animation-delay:-1.1s"><use href="#grAcoin" class="grA-flip" style="animation-delay:-.8s"/></g></g></g>
+    <g transform="translate(390 -90) scale(.9)"><g class="grA-sway" style="animation-delay:-1.2s"><g class="grA-fall grA-f3" style="animation-delay:-3.5s"><use href="#grAcoin" class="grA-flip" style="animation-delay:-.25s"/></g></g></g>
+    <g transform="translate(426 -90)"><g class="grA-sway" style="animation-delay:-.15s"><g class="grA-fall grA-f1" style="animation-delay:-1.9s"><use href="#grAcoin" class="grA-flip" style="animation-delay:-.55s"/></g></g></g>
+    <g transform="translate(82 -90) scale(.65)"><g class="grA-sway" style="animation-delay:-.7s"><g class="grA-fall grA-f2" style="animation-delay:-3.8s"><use href="#grAcoin" class="grA-flip" style="animation-delay:-.35s"/></g></g></g>
+    <g transform="translate(372 -90) scale(.7)"><g class="grA-sway" style="animation-delay:-1.35s"><g class="grA-fall grA-f3" style="animation-delay:-2.6s"><use href="#grAcoin" class="grA-flip" style="animation-delay:-.65s"/></g></g></g>
+    <g transform="translate(46 -80) scale(.9)"><g class="grA-fall grA-f2" style="animation-delay:-.7s"><use href="#grAspk" class="grA-twirl" fill="#F2D48C"/></g></g>
+    <g transform="translate(140 -80) scale(.7)"><g class="grA-fall grA-f3" style="animation-delay:-2.1s"><use href="#grAspk" class="grA-twirl" fill="#F6EFE2"/></g></g>
+    <g transform="translate(228 -80)"><g class="grA-fall grA-f1" style="animation-delay:-1.5s"><use href="#grAspk" class="grA-twirl" fill="#F2D48C"/></g></g>
+    <g transform="translate(300 -80) scale(.8)"><g class="grA-fall grA-f3" style="animation-delay:-3.2s"><use href="#grAspk" class="grA-twirl" fill="#F6EFE2"/></g></g>
+    <g transform="translate(356 -80) scale(.75)"><g class="grA-fall grA-f2" style="animation-delay:-.4s"><use href="#grAspk" class="grA-twirl" fill="#F2D48C"/></g></g>
+    <g transform="translate(430 -80) scale(.9)"><g class="grA-fall grA-f1" style="animation-delay:-2.9s"><use href="#grAspk" class="grA-twirl" fill="#F6EFE2"/></g></g>
+  </g>
+  <g transform="translate(90 250)"><use href="#grAspk" class="grA-twk" style="animation-delay:-.3s"/></g>
+  <g transform="translate(368 200) scale(.8)"><use href="#grAspk" class="grA-twk" style="animation-delay:-1.1s"/></g>
+  <g transform="translate(60 470) scale(.9)"><use href="#grAspk" class="grA-twk" style="animation-delay:-1.9s"/></g>
+  <g transform="translate(398 540) scale(.7)"><use href="#grAspk" class="grA-twk" style="animation-delay:-.7s"/></g>
+  <g transform="translate(330 640) scale(.85)"><use href="#grAspk" class="grA-twk" style="animation-delay:-2.3s"/></g>
+  <g transform="translate(120 600) scale(.7)"><use href="#grAspk" class="grA-twk" style="animation-delay:-1.5s"/></g>
+</svg>

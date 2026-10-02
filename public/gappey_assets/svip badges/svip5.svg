@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 26" width="66" height="26">
+<title>SVIP 5 Badge</title>
+<defs>
+<linearGradient id="ps5m" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a6a3e"><animate attributeName="stop-color" values="#8a6a3e;#a07c4c;#8a6a3e" dur="6s" repeatCount="indefinite"/></stop><stop offset="1" stop-color="#241708"/></linearGradient>
+<filter id="ps5t" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.2"/></filter>
+<clipPath id="ps5c2"><polygon points="14.5,4 57.5,4 62.5,13 57.5,22 14.5,22 9.5,13"/></clipPath>
+</defs>
+<polygon points="14.5,4 57.5,4 62.5,13 57.5,22 14.5,22 9.5,13" fill="none" stroke="#ffb347" stroke-width="2.6" opacity=".3">
+<animate attributeName="opacity" values=".22;.45;.22" dur="2.6s" repeatCount="indefinite"/>
+</polygon>
+<polygon points="14.5,4 57.5,4 62.5,13 57.5,22 14.5,22 9.5,13" fill="url(#ps5m)" stroke="#c99a48" stroke-width="1.1"/>
+<polygon points="16.5,6.3 56,6.3 59.8,13 56,19.7 16.5,19.7 12.8,13" fill="none" stroke="#c99a48" stroke-width=".6" stroke-dasharray="1.2 2.6" opacity=".55">
+<animateTransform attributeName="transform" type="rotate" values="0 36.3 13;360 36.3 13" dur="40s" repeatCount="indefinite"/>
+</polygon>
+<circle cx="17.5" cy="13" r="3.4" fill="#f7efd9" stroke="#8a5f28" stroke-width=".6"/>
+<g>
+<animateTransform attributeName="transform" type="rotate" calcMode="discrete" dur="6s" repeatCount="indefinite" values="0 17.5 13;60 17.5 13;120 17.5 13;180 17.5 13;240 17.5 13;300 17.5 13"/>
+<path d="M17.5 13 L17.5 10.6" stroke="#3a2a16" stroke-width=".9" stroke-linecap="round"/>
+</g>
+<circle cx="17.5" cy="13" r=".6" fill="#8a5f28"/>
+<text x="41" y="17.4" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="800" letter-spacing=".2" fill="#ffd97a" filter="url(#ps5t)" opacity=".55">SVIP 5
+&lt;animate attributeName="opacity" values=".3;.85;.3" dur="2.6s" repeatCount="indefinite"/&gt;
+</text>
+<text x="41" y="17.4" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="800" letter-spacing=".2" fill="#f7ecd2">SVIP 5</text>
+<polygon points="14.5,4 57.5,4 62.5,13 57.5,22 14.5,22 9.5,13" fill="none" stroke="#ffd98f" stroke-width="1.4" opacity="0">
+<animate attributeName="opacity" values="0;0;.8;0;0" keyTimes="0;.885;.915;.96;1" dur="12s" repeatCount="indefinite"/>
+</polygon>
+</svg>

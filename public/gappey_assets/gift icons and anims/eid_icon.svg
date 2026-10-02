@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <title>Eid Mubarak — gift logo</title>
+  <defs>
+    <linearGradient id="emLgold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE9A8"/><stop offset=".5" stop-color="#E9B94F"/><stop offset="1" stop-color="#B8791F"/>
+    </linearGradient>
+    <path id="emLspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+    <path id="emLcres" d="M13.5 -24 A30 30 0 1 0 13.5 24 A24 24 0 0 1 13.5 -24 Z"/>
+  </defs>
+  <g fill="none" stroke="#F3EADA" stroke-linecap="round" stroke-dasharray="0.1 8">
+    <path d="M30 40 Q22 80 28 120" stroke-width="2.5" opacity=".45"/>
+    <path d="M196 44 Q204 84 198 124" stroke-width="2.5" opacity=".35"/>
+  </g>
+  <g transform="translate(106 116) scale(1.85)">
+    <use href="#emLcres" fill="url(#emLgold)" stroke="#8A5F1D" stroke-width="1.6"/>
+  </g>
+  <path d="M162 62 L166 74 L178 78 L166 82 L162 94 L158 82 L146 78 L158 74 Z" fill="#F6D27A" stroke="#8A5F1D" stroke-width="1.5"/>
+  <circle cx="182" cy="106" r="2.6" fill="#F6EFE2"/>
+  <g transform="translate(194 168)">
+    <line x1="0" y1="-34" x2="0" y2="-12" stroke="#C9A06A" stroke-width="2"/>
+    <circle cy="-14" r="3" fill="#D9A441"/>
+    <path d="M-10 -12 Q0 -20 10 -12 L8 -6 H-8 Z" fill="#D9A441" stroke="#8A5F1D" stroke-width="1.5"/>
+    <path d="M-9 -6 H9 L13 26 Q0 36 -13 26 Z" fill="url(#emLgold)" stroke="#8A5F1D" stroke-width="1.5"/>
+    <path d="M-6 -2 H6 L9 24 Q0 31 -9 24 Z" fill="#FFE08A"/>
+    <path d="M0 8 C3.4 12 3.4 17 0 20.5 C-3.4 17 -3.4 12 0 8Z" fill="#F6A23D"/>
+    <circle cy="34" r="3.5" fill="#D9A441"/>
+    <path d="M-2.5 37 L0 44 L2.5 37 Z" fill="#D9A441"/>
+  </g>
+  <use href="#emLspk" transform="translate(48 176) scale(.75)" fill="#F6D27A"/>
+  <use href="#emLspk" transform="translate(150 200) scale(.55)" fill="#F6EFE2"/>
+  <circle cx="42" cy="72" r="2.4" fill="#2FA08B"/>
+  <circle cx="70" cy="206" r="2.2" fill="#F2B33D"/>
+</svg>

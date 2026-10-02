@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <title>Swagat Haar — gift logo</title>
+  <defs>
+    <path id="swLspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+    <g id="swLpom">
+      <circle r="9"/>
+      <circle r="4.6" fill="#C97F2E"/>
+      <circle r="1.6" fill="#7A3E12"/>
+    </g>
+  </defs>
+  <circle cx="34" cy="38" r="4.5" fill="#D9A441"/>
+  <circle cx="206" cy="38" r="4.5" fill="#D9A441"/>
+  <path d="M34 42 C30 106 66 168 116 182" fill="none" stroke="#3E7C4F" stroke-width="3.5"/>
+  <path d="M206 42 C210 106 174 168 124 182" fill="none" stroke="#3E7C4F" stroke-width="3.5"/>
+  <ellipse cx="36" cy="90" rx="6.5" ry="3" fill="#3E7C4F" transform="rotate(-72 36 90)"/>
+  <ellipse cx="46" cy="136" rx="6.5" ry="3" fill="#3E7C4F" transform="rotate(-48 46 136)"/>
+  <ellipse cx="204" cy="90" rx="6.5" ry="3" fill="#3E7C4F" transform="rotate(72 204 90)"/>
+  <ellipse cx="194" cy="136" rx="6.5" ry="3" fill="#3E7C4F" transform="rotate(48 194 136)"/>
+  <use href="#swLpom" transform="translate(34 66)" fill="#F2A43D"/>
+  <use href="#swLpom" transform="translate(36 102)" fill="#FFD34D"/>
+  <use href="#swLpom" transform="translate(48 134)" fill="#F2A43D"/>
+  <use href="#swLpom" transform="translate(70 160)" fill="#FFD34D"/>
+  <use href="#swLpom" transform="translate(98 177)" fill="#F2A43D"/>
+  <use href="#swLpom" transform="translate(206 66)" fill="#FFD34D"/>
+  <use href="#swLpom" transform="translate(204 102)" fill="#F2A43D"/>
+  <use href="#swLpom" transform="translate(192 134)" fill="#FFD34D"/>
+  <use href="#swLpom" transform="translate(170 160)" fill="#F2A43D"/>
+  <use href="#swLpom" transform="translate(142 177)" fill="#FFD34D"/>
+  <g transform="translate(120 190)">
+    <circle r="15" fill="#F2A43D" stroke="#C97F2E" stroke-width="2"/>
+    <g fill="none" stroke="#C97F2E" stroke-width="1.6" opacity=".8">
+      <circle r="10.5" stroke-dasharray="2.5 3.5"/>
+    </g>
+    <circle r="4.5" fill="#7A3E12"/>
+  </g>
+  <path d="M104 196 C108 206 112 212 120 216 C128 212 132 206 136 196" fill="none" stroke="#D9A441" stroke-width="2.5" stroke-linecap="round"/>
+  <use href="#swLspk" transform="translate(196 176) scale(.7)" fill="#F6D27A"/>
+  <use href="#swLspk" transform="translate(44 180) scale(.55)" fill="#F6EFE2"/>
+  <circle cx="206" cy="24" r="2.4" fill="#E2557B"/>
+  <circle cx="34" cy="20" r="2.2" fill="#F2B33D"/>
+</svg>

@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="260" height="260" viewBox="0 0 260 260">
+  <title>Maharani Lotus Avatar Frame</title>
+  <defs>
+    <radialGradient id="rGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0.72" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="0.9" stop-color="#ff6fa5" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#ff6fa5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe082"/>
+      <stop offset="1" stop-color="#e8a13a"/>
+    </linearGradient>
+    <linearGradient id="petG" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ff8fb8"/>
+      <stop offset="1" stop-color="#ffd1e3"/>
+    </linearGradient>
+    <linearGradient id="petG2" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ad1457"/>
+      <stop offset="1" stop-color="#ff9ec4"/>
+    </linearGradient>
+    <g id="lotP">
+      <path d="M0 0 C -6 -9 -6 -22 0 -30 C 6 -22 6 -9 0 0 Z"/>
+      <path d="M0 -4 C -1.5 -12 -1.5 -20 0 -26" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.55"/>
+    </g>
+    <g id="pearlS">
+      <circle r="2.6" fill="#fdf6e3"/>
+      <circle cx="-0.8" cy="-0.8" r="0.7" fill="#ffffff"/>
+    </g>
+    <g id="tikkaE">
+      <line x1="0" y1="-9" x2="0" y2="-2" stroke="url(#goldG)" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="4.5" fill="url(#goldG)" stroke="#b8860b" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="1.9" fill="#e53935"/>
+      <circle cx="-1.8" cy="-1.5" r="0.7" fill="#fff8e1"/>
+      <circle cx="0" cy="6.5" r="2.1" fill="#fdf6e3" stroke="#d9c9a8" stroke-width="0.5"/>
+    </g>
+    <g id="budE">
+      <path d="M0 7 C -8 2 -9 -9 0 -15 C 9 -9 8 2 0 7 Z" fill="url(#petG)" stroke="#c2185b" stroke-width="1"/>
+      <path d="M0 5 C -2.5 -1 -2.5 -8 0 -12" fill="none" stroke="#ffd1e3" stroke-width="0.9" opacity="0.7"/>
+    </g>
+    <g id="bfly">
+      <g>
+        <animateTransform attributeName="transform" type="scale" values="1 1;0.3 1;1 1" dur="0.4s" repeatCount="indefinite"/>
+        <ellipse cx="-5.5" cy="-1" rx="6" ry="3.6" fill="url(#petG)" stroke="#c2185b" stroke-width="0.6" transform="rotate(-28)"/>
+        <ellipse cx="5.5" cy="-1" rx="6" ry="3.6" fill="url(#petG)" stroke="#c2185b" stroke-width="0.6" transform="rotate(28)"/>
+      </g>
+      <ellipse cx="0" cy="0" rx="1.1" ry="4.2" fill="#4a0e2e"/>
+    </g>
+    <path id="stS" d="M0 -6 L1.6 -1.6 L6 0 L1.6 1.6 L0 6 L-1.6 1.6 L-6 0 L-1.6 -1.6 Z" fill="#ffe082"/>
+    <path id="petalFly" d="M0 -5 C 4.5 -3 5.5 2 3 5.5 C 1 7.5 -2.5 6 -3.5 3 C -4.3 0 -2.5 -3.5 0 -5 Z"/>
+  </defs>
+
+  <!-- breathing glow -->
+  <circle cx="130" cy="130" r="127" fill="url(#rGlow)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- base rings -->
+  <circle cx="130" cy="130" r="100" fill="none" stroke="#2d0a1e" stroke-width="26"/>
+  <circle cx="130" cy="130" r="100" fill="none" stroke="#4a0e2e" stroke-width="18"/>
+  <circle cx="130" cy="130" r="113" fill="none" stroke="#ff9ec4" stroke-width="2.5"/>
+  <circle cx="130" cy="130" r="87" fill="none" stroke="#f06292" stroke-width="2"/>
+  <circle cx="130" cy="130" r="90" fill="none" stroke="#ffd1e3" stroke-width="1.5">
+    <animate attributeName="opacity" values="0.35;0.9;0.35" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="130" cy="130" r="100" fill="none" stroke="url(#goldG)" stroke-width="3"/>
+  <circle cx="130" cy="130" r="95" fill="none" stroke="#ffd1e3" stroke-width="1.5" stroke-dasharray="6 10" opacity="0.4"/>
+  <circle cx="130" cy="130" r="100" fill="none" stroke="#7a1040" stroke-width="4" stroke-dasharray="2 11" opacity="0.55">
+    <animateTransform attributeName="transform" type="rotate" from="360 130 130" to="0 130 130" dur="30s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- rotating lotus-petal collar (on the band, never near the center) -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 130 130" to="360 130 130" dur="26s" repeatCount="indefinite"/>
+    <g>
+      <animate attributeName="opacity" values="1;0.45;1" dur="2s" repeatCount="indefinite"/>
+      <use xlink:href="#lotP" transform="rotate(0 130 130) translate(130 38)" fill="url(#petG)" stroke="#c2185b" stroke-width="0.8"/>
+      <use xlink:href="#lotP" transform="rotate(45 130 130) translate(130 38)" fill="url(#petG)" stroke="#c2185b" stroke-width="0.8"/>
+      <use xlink:href="#lotP" transform="rotate(90 130 130) translate(130 38)" fill="url(#petG)" stroke="#c2185b" stroke-width="0.8"/>
+      <use xlink:href="#lotP" transform="rotate(135 130 130) translate(130 38)" fill="url(#petG)" stroke="#c2185b" stroke-width="0.8"/>
+      <use xlink:href="#lotP" transform="rotate(180 130 130) translate(130 38)" fill="url(#petG)" stroke="#c2185b" stroke-width="0.8"/>
+      <use xlink:href="#lotP" transform="rotate(225 130 130) translate(130 38)" fill="url(#petG)" stroke="#c2185b" stroke-width="0.8"/>
+      <use xlink:href="#lotP" transform="rotate(270 130 130) translate(130 38)" fill="url(#petG)" stroke="#c2185b" stroke-width="0.8"/>
+      <use xlink:href="#lotP" transform="rotate(315 130 130) translate(130 38)" fill="url(#petG)" stroke="#c2185b" stroke-width="0.8"/>
+    </g>
+    <g>
+      <animate attributeName="opacity" values="0.45;1;0.45" dur="2s" begin="-1s" repeatCount="indefinite"/>
+      <use xlink:href="#lotP" transform="rotate(22.5 130 130) translate(130 38) scale(0.8)" fill="url(#petG2)" stroke="#880e4f" stroke-width="0.8"/>
+      <use xlink:href="#lotP" transform="rotate(67.5 130 130) translate(130 38) scale(0.8)" fill="url(#petG2)" stroke="#880e4f" stroke-width="0.8"/>
+      <use xlink:href="#lotP" transform="rotate(112.5 130 130) translate(130 38) scale(0.8)" fill="url(#petG2)" stroke="#880e4f" stroke-width="0.8"/>
+      <use xlink:href="#lotP" transform="rotate(157.5 130 130) translate(130 38) scale(0.8)" fill="url(#petG2)" stroke="#880e4f" stroke-width="0.8"/>
+      <use xlink:href="#lotP" transform="rotate(202.5 130 130) translate(130 38) scale(0.8)" fill="url(#petG2)" stroke="#880e4f" stroke-width="0.8"/>
+      <use xlink:href="#lotP" transform="rotate(247.5 130 130) translate(130 38) scale(0.8)" fill="url(#petG2)" stroke="#880e4f" stroke-width="0.8"/>
+      <use xlink:href="#lotP" transform="rotate(292.5 130 130) translate(130 38) scale(0.8)" fill="url(#petG2)" stroke="#880e4f" stroke-width="0.8"/>
+      <use xlink:href="#lotP" transform="rotate(337.5 130 130) translate(130 38) scale(0.8)" fill="url(#petG2)" stroke="#880e4f" stroke-width="0.8"/>
+    </g>
+  </g>
+
+  <!-- counter-rotating pearl strings -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="360 130 130" to="0 130 130" dur="18s" repeatCount="indefinite"/>
+    <use xlink:href="#pearlS" transform="rotate(0 130 130) translate(130 10)"/>
+    <use xlink:href="#pearlS" transform="rotate(45 130 130) translate(130 10)"/>
+    <use xlink:href="#pearlS" transform="rotate(90 130 130) translate(130 10)"/>
+    <use xlink:href="#pearlS" transform="rotate(135 130 130) translate(130 10)"/>
+    <use xlink:href="#pearlS" transform="rotate(180 130 130) translate(130 10)"/>
+    <use xlink:href="#pearlS" transform="rotate(225 130 130) translate(130 10)"/>
+    <use xlink:href="#pearlS" transform="rotate(270 130 130) translate(130 10)"/>
+    <use xlink:href="#pearlS" transform="rotate(315 130 130) translate(130 10)"/>
+  </g>
+
+  <!-- orbiting butterflies (outside the ring) -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 130 130" to="360 130 130" dur="22s" repeatCount="indefinite"/>
+    <g transform="translate(130 6)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="-8;8;-8" dur="0.7s" repeatCount="indefinite"/>
+        <use xlink:href="#bfly" transform="scale(1.1)"/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="360 130 130" to="0 130 130" dur="27s" begin="-9s" repeatCount="indefinite"/>
+    <g transform="translate(130 13)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="7;-7;7" dur="0.6s" repeatCount="indefinite"/>
+        <use xlink:href="#bfly" transform="scale(-0.9,0.9)"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- maang-tikka topper -->
+  <g transform="translate(130 16)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-3 0 -9;3 0 -9;-3 0 -9" dur="3s" repeatCount="indefinite"/>
+      <use xlink:href="#tikkaE"/>
+    </g>
+  </g>
+
+  <!-- lotus buds at the other cardinals -->
+  <g transform="translate(238 130)"><g>
+    <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="3s" begin="-0.75s" repeatCount="indefinite"/>
+    <use xlink:href="#budE" transform="scale(1.2)"/>
+  </g></g>
+  <g transform="translate(130 236)"><g>
+    <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="3s" begin="-1.5s" repeatCount="indefinite"/>
+    <use xlink:href="#budE" transform="scale(1.2)"/>
+  </g></g>
+  <g transform="translate(22 130)"><g>
+    <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="3s" begin="-2.25s" repeatCount="indefinite"/>
+    <use xlink:href="#budE" transform="scale(1.2)"/>
+  </g></g>
+
+  <!-- pulsing rose diamonds on diagonals -->
+  <path d="M0 -5.5 L4.2 -2 L2.6 4.5 L-2.6 4.5 L-4.2 -2 Z" transform="translate(200.7 59.3) scale(1.1)" fill="#ff6fa5" stroke="#ffe082" stroke-width="1">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0 -5.5 L4.2 -2 L2.6 4.5 L-2.6 4.5 L-4.2 -2 Z" transform="translate(59.3 59.3) scale(1)" fill="#fdf6e3" stroke="#f06292" stroke-width="1">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="-0.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0 -5.5 L4.2 -2 L2.6 4.5 L-2.6 4.5 L-4.2 -2 Z" transform="translate(59.3 200.7) scale(1.1)" fill="#ff6fa5" stroke="#ffe082" stroke-width="1">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.7s" begin="-0.9s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0 -5.5 L4.2 -2 L2.6 4.5 L-2.6 4.5 L-4.2 -2 Z" transform="translate(200.7 200.7) scale(1)" fill="#fdf6e3" stroke="#f06292" stroke-width="1">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2.1s" begin="-1.2s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- sparkles on the band -->
+  <use xlink:href="#stS" transform="translate(222 92) scale(0.8)">
+    <animate attributeName="opacity" values="1;0.1;1" dur="1.2s" repeatCount="indefinite"/>
+  </use>
+  <use xlink:href="#stS" transform="translate(38 100) scale(0.7)">
+    <animate attributeName="opacity" values="0.1;1;0.1" dur="1.5s" begin="-0.4s" repeatCount="indefinite"/>
+  </use>
+  <use xlink:href="#stS" transform="translate(96 224) scale(0.75)">
+    <animate attributeName="opacity" values="1;0.15;1" dur="1.3s" begin="-0.7s" repeatCount="indefinite"/>
+  </use>
+  <use xlink:href="#stS" transform="translate(168 40) scale(0.7)">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" begin="-1s" repeatCount="indefinite"/>
+  </use>
+
+  <!-- falling rose petals -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.12;0.85;1" dur="9s" begin="0s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="52 -14;70 128;42 276" keyTimes="0;0.5;1" dur="9s" begin="0s" repeatCount="indefinite"/>
+    <use xlink:href="#petalFly" fill="#ff9ec4" transform="scale(1.1)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3.4s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.12;0.85;1" dur="9s" begin="-1.8s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="210 -14;188 122;220 276" keyTimes="0;0.5;1" dur="9s" begin="-1.8s" repeatCount="indefinite"/>
+    <use xlink:href="#petalFly" fill="#ffd1e3" transform="scale(0.9)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="3s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.12;0.85;1" dur="9s" begin="-3.6s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="100 -14;84 138;112 276" keyTimes="0;0.5;1" dur="9s" begin="-3.6s" repeatCount="indefinite"/>
+    <use xlink:href="#petalFly" fill="#f8a5c8" transform="scale(1)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3.8s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.12;0.85;1" dur="9s" begin="-5.4s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="166 -14;184 130;154 276" keyTimes="0;0.5;1" dur="9s" begin="-5.4s" repeatCount="indefinite"/>
+    <use xlink:href="#petalFly" fill="#ffe082" transform="scale(0.85)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="3.2s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+
+  <!-- rising rose-gold dust (sides only, avatar area untouched) -->
+  <g fill="#ffd1e3">
+    <circle cx="55" cy="240" r="2" opacity="0">
+      <animate attributeName="cy" values="240;44" dur="6s" begin="-1s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="55;63;49;55" dur="6s" begin="-1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.5;0" dur="6s" begin="-1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="205" cy="240" r="1.8" opacity="0">
+      <animate attributeName="cy" values="240;40" dur="7s" begin="-3.4s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="205;197;211;205" dur="7s" begin="-3.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.45;0" dur="7s" begin="-3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="95" cy="240" r="2" opacity="0">
+      <animate attributeName="cy" values="240;48" dur="5.5s" begin="-4.6s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="95;102;89;95" dur="5.5s" begin="-4.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.5;0" dur="5.5s" begin="-4.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="168" cy="240" r="2.2" opacity="0">
+      <animate attributeName="cy" values="240;44" dur="6.5s" begin="-2.2s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="168;175;162;168" dur="6.5s" begin="-2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0" dur="6.5s" begin="-2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

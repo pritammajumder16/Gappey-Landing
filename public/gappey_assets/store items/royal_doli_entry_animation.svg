@@ -1,0 +1,444 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="400" viewBox="0 0 800 400">
+  <title>Royal Doli Entry</title>
+  <defs>
+    <linearGradient id="goldG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe082"/>
+      <stop offset="1" stop-color="#e8a13a"/>
+    </linearGradient>
+    <linearGradient id="roofG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f06292"/>
+      <stop offset="1" stop-color="#ad1457"/>
+    </linearGradient>
+    <linearGradient id="ribbonG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a0e2e"/>
+      <stop offset="1" stop-color="#1a0410"/>
+    </linearGradient>
+    <linearGradient id="nameG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffbe6"/>
+      <stop offset="1" stop-color="#ff9ec4"/>
+    </linearGradient>
+    <linearGradient id="petG" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ff8fb8"/>
+      <stop offset="1" stop-color="#ffd1e3"/>
+    </linearGradient>
+    <path id="petalFly" d="M0 -5 C 4.5 -3 5.5 2 3 5.5 C 1 7.5 -2.5 6 -3.5 3 C -4.3 0 -2.5 -3.5 0 -5 Z"/>
+    <path id="stS" d="M0 -6 L1.6 -1.6 L6 0 L1.6 1.6 L0 6 L-1.6 1.6 L-6 0 L-1.6 -1.6 Z" fill="#ffe082"/>
+    <g id="bfly">
+      <g>
+        <animateTransform attributeName="transform" type="scale" values="1 1;0.3 1;1 1" dur="0.4s" repeatCount="indefinite"/>
+        <ellipse cx="-5.5" cy="-1" rx="6" ry="3.6" fill="url(#petG)" stroke="#c2185b" stroke-width="0.6" transform="rotate(-28)"/>
+        <ellipse cx="5.5" cy="-1" rx="6" ry="3.6" fill="url(#petG)" stroke="#c2185b" stroke-width="0.6" transform="rotate(28)"/>
+      </g>
+      <ellipse cx="0" cy="0" rx="1.1" ry="4.2" fill="#4a0e2e"/>
+    </g>
+    <g id="budE">
+      <path d="M0 7 C -8 2 -9 -9 0 -15 C 9 -9 8 2 0 7 Z" fill="url(#petG)" stroke="#c2185b" stroke-width="1"/>
+      <path d="M0 5 C -2.5 -1 -2.5 -8 0 -12" fill="none" stroke="#ffd1e3" stroke-width="0.9" opacity="0.7"/>
+    </g>
+  </defs>
+
+  <!-- ============ MASTER WRAPPER: plays once, then everything vanishes ============ -->
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.03;0.9;0.97;1" dur="8s" repeatCount="1" fill="freeze"/>
+
+    <!-- ground -->
+    <line x1="0" y1="330" x2="800" y2="330" stroke="#5c2440" stroke-width="3"/>
+    <ellipse cx="330" cy="331" rx="235" ry="10" fill="#ff6fa5" opacity="0.12">
+      <animate attributeName="opacity" values="0.08;0.2;0.08" dur="2.4s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- lotus burst + rings at the halt -->
+    <g transform="translate(330 232)">
+      <circle r="12" fill="none" stroke="#ff9ec4" stroke-width="3">
+        <animate attributeName="r" values="12;12;92;92" keyTimes="0;0.34;0.56;1" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0.75;0;0" keyTimes="0;0.34;0.38;0.5;1" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="10" fill="none" stroke="#ffd1e3" stroke-width="2">
+        <animate attributeName="r" values="10;10;68;68" keyTimes="0;0.37;0.58;1" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0.6;0;0" keyTimes="0;0.37;0.41;0.52;1" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <g>
+        <animateTransform attributeName="transform" type="scale" values="0.2;0.2;1.15;1.15" keyTimes="0;0.34;0.52;1" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.34;0.39;0.54;1" dur="8s" repeatCount="indefinite"/>
+        <use xlink:href="#petalFly" fill="#ff8fb8" transform="scale(1.7) translate(0 -36)"/>
+        <use xlink:href="#petalFly" fill="#ffd1e3" transform="rotate(45) scale(1.7) translate(0 -36)"/>
+        <use xlink:href="#petalFly" fill="#f8a5c8" transform="rotate(90) scale(1.7) translate(0 -36)"/>
+        <use xlink:href="#petalFly" fill="#ffe082" transform="rotate(135) scale(1.7) translate(0 -36)"/>
+        <use xlink:href="#petalFly" fill="#ff8fb8" transform="rotate(180) scale(1.7) translate(0 -36)"/>
+        <use xlink:href="#petalFly" fill="#ffd1e3" transform="rotate(225) scale(1.7) translate(0 -36)"/>
+        <use xlink:href="#petalFly" fill="#f8a5c8" transform="rotate(270) scale(1.7) translate(0 -36)"/>
+        <use xlink:href="#petalFly" fill="#ffffff" transform="rotate(315) scale(1.7) translate(0 -36)"/>
+      </g>
+    </g>
+
+    <!-- petal storm (hold phase) -->
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.36;0.38;0.6;0.62;1" dur="8s" repeatCount="indefinite"/>
+      <use xlink:href="#petalFly" fill="#ff9ec4" transform="translate(0 0) scale(1.2)">
+        <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="1.2s" begin="-0.2s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="150 -10;170 410" dur="1.2s" begin="-0.2s" repeatCount="indefinite" additive="sum"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="0.9s" repeatCount="indefinite" additive="sum"/>
+      </use>
+      <use xlink:href="#petalFly" fill="#ffd1e3" transform="scale(1)">
+        <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="1.5s" begin="-0.7s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="260 -10;240 410" dur="1.5s" begin="-0.7s" repeatCount="indefinite" additive="sum"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="1s" repeatCount="indefinite" additive="sum"/>
+      </use>
+      <use xlink:href="#petalFly" fill="#f8a5c8" transform="scale(1.3)">
+        <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="1.3s" begin="-0.4s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="360 -10;385 410" dur="1.3s" begin="-0.4s" repeatCount="indefinite" additive="sum"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.1s" repeatCount="indefinite" additive="sum"/>
+      </use>
+      <use xlink:href="#petalFly" fill="#ffffff" transform="scale(1.05)">
+        <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="1.6s" begin="-1s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="470 -10;450 410" dur="1.6s" begin="-1s" repeatCount="indefinite" additive="sum"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="1.2s" repeatCount="indefinite" additive="sum"/>
+      </use>
+      <use xlink:href="#petalFly" fill="#ffe082" transform="scale(1.15)">
+        <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="1.25s" begin="-0.55s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="570 -10;590 410" dur="1.25s" begin="-0.55s" repeatCount="indefinite" additive="sum"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="0.95s" repeatCount="indefinite" additive="sum"/>
+      </use>
+      <use xlink:href="#petalFly" fill="#ff8fb8" transform="scale(0.95)">
+        <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="1.45s" begin="-0.9s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="665 -10;645 410" dur="1.45s" begin="-0.9s" repeatCount="indefinite" additive="sum"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="1.05s" repeatCount="indefinite" additive="sum"/>
+      </use>
+    </g>
+
+    <!-- fluttering butterflies (hold phase) -->
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.36;0.38;0.6;0.62;1" dur="8s" repeatCount="indefinite"/>
+      <g opacity="0.95">
+        <animateTransform attributeName="transform" type="translate" values="250 250;310 195;395 235;320 278;250 250" keyTimes="0;0.25;0.5;0.75;1" dur="3.4s" repeatCount="indefinite"/>
+        <use xlink:href="#bfly" transform="scale(1.1)"/>
+      </g>
+      <g opacity="0.9">
+        <animateTransform attributeName="transform" type="translate" values="545 240;480 200;420 252;490 286;545 240" keyTimes="0;0.25;0.5;0.75;1" dur="3.9s" begin="-1.3s" repeatCount="indefinite"/>
+        <use xlink:href="#bfly" transform="scale(-1,1) scale(0.95)"/>
+      </g>
+    </g>
+
+    <!-- ambient falling petals (throughout) -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.1;0.9;1" dur="7s" begin="-1s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="180 -20;150 420" dur="7s" begin="-1s" repeatCount="indefinite"/>
+      <use xlink:href="#petalFly" fill="#ff9ec4" transform="scale(1.15)">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3s" repeatCount="indefinite" additive="sum"/>
+      </use>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.1;0.9;1" dur="7s" begin="-2.5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="430 -20;400 420" dur="7s" begin="-2.5s" repeatCount="indefinite"/>
+      <use xlink:href="#petalFly" fill="#ffd1e3" transform="scale(0.9)">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="2.6s" repeatCount="indefinite" additive="sum"/>
+      </use>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.1;0.9;1" dur="7s" begin="-4s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="580 -20;550 420" dur="7s" begin="-4s" repeatCount="indefinite"/>
+      <use xlink:href="#petalFly" fill="#f8a5c8" transform="scale(1.05)">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3.4s" repeatCount="indefinite" additive="sum"/>
+      </use>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.1;0.9;1" dur="7s" begin="-5.5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="300 -20;330 420" dur="7s" begin="-5.5s" repeatCount="indefinite"/>
+      <use xlink:href="#petalFly" fill="#ffe082" transform="scale(0.85)">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="2.9s" repeatCount="indefinite" additive="sum"/>
+      </use>
+    </g>
+
+    <!-- ambient sparkles -->
+    <use xlink:href="#stS" transform="translate(140 180) scale(0.7)">
+      <animate attributeName="opacity" values="0.9;0.1;0.9" dur="1.6s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#stS" transform="translate(540 160) scale(0.6)">
+      <animate attributeName="opacity" values="0.1;0.9;0.1" dur="1.9s" begin="-0.5s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#stS" transform="translate(680 250) scale(0.75)">
+      <animate attributeName="opacity" values="0.9;0.15;0.9" dur="1.4s" begin="-0.9s" repeatCount="indefinite"/>
+    </use>
+
+    <!-- ============ DOLI PROCESSION ============ -->
+    <g transform="translate(0 330)">
+      <g>
+        <animateTransform attributeName="transform" type="translate"
+          values="-430 0;310 0;310 0;1120 0" keyTimes="0;0.34;0.66;1"
+          calcMode="spline" keySplines="0 0 0.58 1;0 0 1 1;0.45 0 0.85 1"
+          dur="8s" repeatCount="indefinite"/>
+
+        <!-- shadows -->
+        <ellipse cx="0" cy="5" rx="135" ry="11" fill="#000000" opacity="0.35"/>
+        <ellipse cx="-122" cy="4" rx="22" ry="5" fill="#000000" opacity="0.3"/>
+        <ellipse cx="84" cy="4" rx="22" ry="5" fill="#000000" opacity="0.3"/>
+
+        <!-- ===== FAR BEARERS (behind the pole) ===== -->
+        <!-- rear-far -->
+        <g transform="translate(-122 0)">
+          <g>
+            <animateTransform attributeName="transform" type="translate" values="0 0;0 -1.5;0 0" dur="0.5s" begin="-0.25s" repeatCount="indefinite"/>
+            <g transform="translate(0 -42)">
+              <g>
+                <animateTransform attributeName="transform" type="rotate" values="14;-14;14" dur="0.5s" begin="-0.25s" repeatCount="indefinite"/>
+                <path d="M0 0 L-4 20 L-6 42" fill="none" stroke="#3d0b26" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M-6 42 L3 42" stroke="#1c0512" stroke-width="5" stroke-linecap="round"/>
+              </g>
+            </g>
+            <g transform="translate(0 -42)">
+              <g>
+                <animateTransform attributeName="transform" type="rotate" values="-14;14;-14" dur="0.5s" begin="-0.25s" repeatCount="indefinite"/>
+                <path d="M0 0 L4 20 L6 42" fill="none" stroke="#3d0b26" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 42 L15 42" stroke="#1c0512" stroke-width="5" stroke-linecap="round"/>
+              </g>
+            </g>
+            <path d="M0 -42 L0 -64" stroke="#6d1b4b" stroke-width="12" stroke-linecap="round"/>
+            <circle cx="0" cy="-71" r="7" fill="#d99a6c" stroke="#c98a5b" stroke-width="1"/>
+            <path d="M-7 -74 A 7 7 0 0 1 7 -74 Z" fill="#d8a7b8"/>
+            <path d="M-3 -58 C -8 -68 -6 -78 -2 -87" fill="none" stroke="#571238" stroke-width="5" stroke-linecap="round"/>
+            <path d="M3 -58 C 8 -68 6 -78 2 -87" fill="none" stroke="#6d1b4b" stroke-width="5" stroke-linecap="round"/>
+          </g>
+        </g>
+        <!-- front-far -->
+        <g transform="translate(84 0)">
+          <g>
+            <animateTransform attributeName="transform" type="translate" values="0 0;0 -1.5;0 0" dur="0.5s" repeatCount="indefinite"/>
+            <g transform="translate(0 -42)">
+              <g>
+                <animateTransform attributeName="transform" type="rotate" values="14;-14;14" dur="0.5s" repeatCount="indefinite"/>
+                <path d="M0 0 L-4 20 L-6 42" fill="none" stroke="#3d0b26" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M-6 42 L3 42" stroke="#1c0512" stroke-width="5" stroke-linecap="round"/>
+              </g>
+            </g>
+            <g transform="translate(0 -42)">
+              <g>
+                <animateTransform attributeName="transform" type="rotate" values="-14;14;-14" dur="0.5s" repeatCount="indefinite"/>
+                <path d="M0 0 L4 20 L6 42" fill="none" stroke="#3d0b26" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 42 L15 42" stroke="#1c0512" stroke-width="5" stroke-linecap="round"/>
+              </g>
+            </g>
+            <path d="M0 -42 L0 -64" stroke="#5d1236" stroke-width="12" stroke-linecap="round"/>
+            <circle cx="0" cy="-71" r="7" fill="#d99a6c" stroke="#c98a5b" stroke-width="1"/>
+            <path d="M-7 -74 A 7 7 0 0 1 7 -74 Z" fill="#d8a7b8"/>
+            <path d="M-3 -58 C -8 -68 -6 -78 -2 -87" fill="none" stroke="#47102c" stroke-width="5" stroke-linecap="round"/>
+            <path d="M3 -58 C 8 -68 6 -78 2 -87" fill="none" stroke="#5d1236" stroke-width="5" stroke-linecap="round"/>
+          </g>
+        </g>
+
+        <!-- ===== DOLI CABIN (sways on the pole) ===== -->
+        <g>
+          <animateTransform attributeName="transform" type="rotate" values="1.6 0 -88;-1.6 0 -88;1.6 0 -88" dur="1.3s" repeatCount="indefinite"/>
+
+          <!-- back wall -->
+          <rect x="-66" y="-158" width="132" height="62" rx="4" fill="#4a0e2e" opacity="0.88"/>
+
+          <!-- cushion -->
+          <ellipse cx="0" cy="-99" rx="22" ry="5" fill="#c2185b" stroke="#ffe082" stroke-width="0.8"/>
+
+          <!-- maharani -->
+          <path d="M-9 -100 C -11 -118 -6 -132 0 -139" fill="none" stroke="#f8eaf1" stroke-width="14" stroke-linecap="round"/>
+          <path d="M-11 -104 Q 0 -97 11 -104" fill="none" stroke="#ffe082" stroke-width="1.6"/>
+          <!-- dupatta over head + fluttering pallu -->
+          <path d="M-10 -149 C -13 -161 13 -161 10 -149 C 4 -154 -4 -154 -10 -149 Z" fill="#f8bbd0" opacity="0.95"/>
+          <path d="M9 -152 C 19 -150 25 -144 27 -136" fill="none" stroke="#f8bbd0" stroke-width="4" stroke-linecap="round">
+            <animateTransform attributeName="transform" type="rotate" values="0 9 -152;6 9 -152;0 9 -152;-4 9 -152;0 9 -152" dur="2.1s" repeatCount="indefinite"/>
+          </path>
+          <!-- head + face -->
+          <circle cx="0" cy="-148" r="8.5" fill="#f2b48c" stroke="#d99a6c" stroke-width="1"/>
+          <path d="M-3 -144.8 A 3 3 0 0 0 -0.6 -142.4" fill="none" stroke="#5d4037" stroke-width="1.1" stroke-linecap="round"/>
+          <path d="M3 -144.8 A 3 3 0 0 0 0.6 -142.4" fill="none" stroke="#5d4037" stroke-width="1.1" stroke-linecap="round"/>
+          <path d="M-2.2 -140.5 Q 0 -138.8 2.2 -140.5" fill="none" stroke="#a3542e" stroke-width="1" stroke-linecap="round"/>
+          <!-- maang tikka + bindi -->
+          <line x1="0" y1="-157" x2="0" y2="-151" stroke="#ffe082" stroke-width="1.2"/>
+          <circle cx="0" cy="-150.5" r="1.8" fill="#ffe082" stroke="#b8860b" stroke-width="0.5"/>
+          <circle cx="0" cy="-150.5" r="0.7" fill="#e53935"/>
+          <circle cx="0" cy="-144" r="1" fill="#e53935"/>
+          <!-- nath + jhumkas -->
+          <circle cx="5.5" cy="-142.5" r="1.6" fill="none" stroke="#ffe082" stroke-width="0.9"/>
+          <circle cx="-8" cy="-144" r="1.2" fill="#ffe082"/>
+          <circle cx="8" cy="-144" r="1.2" fill="#ffe082"/>
+          <!-- waving arm -->
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="0 4 -126;9 4 -126;0 4 -126;-6 4 -126;0 4 -126" dur="1.8s" repeatCount="indefinite"/>
+            <path d="M4 -126 C 10 -132 15 -138 19 -144" fill="none" stroke="#f8eaf1" stroke-width="5.5" stroke-linecap="round"/>
+            <circle cx="14.5" cy="-138.5" r="1.5" fill="none" stroke="#ffe082" stroke-width="1"/>
+            <circle cx="20" cy="-145" r="2.6" fill="#f2b48c"/>
+          </g>
+          <!-- curtain-holding arm -->
+          <path d="M4 -124 C 14 -120 24 -116 33 -113" fill="none" stroke="#f8eaf1" stroke-width="5.5" stroke-linecap="round"/>
+          <circle cx="26" cy="-115.5" r="1.5" fill="none" stroke="#ffe082" stroke-width="1"/>
+          <circle cx="34" cy="-112.5" r="2.6" fill="#f2b48c"/>
+
+          <!-- curtains -->
+          <path d="M-52 -152 C -44 -136 -42 -116 -46 -98 L -30 -98 C -26 -118 -28 -138 -34 -152 Z" fill="#d81b60" opacity="0.95"/>
+          <path d="M-44 -148 C -40 -130 -39 -114 -42 -100" fill="none" stroke="#ad1457" stroke-width="1.4" opacity="0.7"/>
+          <path d="M52 -152 C 47 -134 46 -114 49 -98 L 34 -98 C 30 -120 32 -140 38 -152 Z" fill="#d81b60" opacity="0.95"/>
+          <path d="M44 -148 C 42 -130 41 -114 43 -100" fill="none" stroke="#ad1457" stroke-width="1.4" opacity="0.7"/>
+          <ellipse cx="41" cy="-124" rx="8" ry="3" fill="#ffe082" transform="rotate(-12 41 -124)"/>
+
+          <!-- posts -->
+          <rect x="-58" y="-160" width="4" height="64" fill="url(#goldG)"/>
+          <rect x="54" y="-160" width="4" height="64" fill="url(#goldG)"/>
+
+          <!-- floor -->
+          <rect x="-76" y="-97" width="152" height="9" rx="3" fill="url(#goldG)" stroke="#b8860b" stroke-width="1"/>
+
+          <!-- under-floor tassels -->
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="5 -45 -88;-5 -45 -88;5 -45 -88" dur="1.6s" repeatCount="indefinite"/>
+            <line x1="-45" y1="-88" x2="-45" y2="-70" stroke="#ffe082" stroke-width="1.4"/>
+            <circle cx="-45" cy="-67" r="2.4" fill="#fdf6e3"/>
+          </g>
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="-5 0 -88;5 0 -88;-5 0 -88" dur="1.8s" begin="-0.5s" repeatCount="indefinite"/>
+            <line x1="0" y1="-88" x2="0" y2="-70" stroke="#ffe082" stroke-width="1.4"/>
+            <circle cx="0" cy="-67" r="2.4" fill="#fdf6e3"/>
+          </g>
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="5 45 -88;-5 45 -88;5 45 -88" dur="1.7s" begin="-0.9s" repeatCount="indefinite"/>
+            <line x1="45" y1="-88" x2="45" y2="-70" stroke="#ffe082" stroke-width="1.4"/>
+            <circle cx="45" cy="-67" r="2.4" fill="#fdf6e3"/>
+          </g>
+
+          <!-- pearl strands inside -->
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="4 -24 -158;-4 -24 -158;4 -24 -158" dur="2.2s" repeatCount="indefinite"/>
+            <line x1="-24" y1="-158" x2="-24" y2="-132" stroke="#ffe082" stroke-width="1" opacity="0.7"/>
+            <circle cx="-24" cy="-152" r="2" fill="#fdf6e3"/>
+            <circle cx="-24" cy="-144" r="2" fill="#fdf6e3"/>
+            <circle cx="-24" cy="-136" r="2" fill="#fdf6e3"/>
+          </g>
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="-4 24 -158;4 24 -158;-4 24 -158" dur="2.4s" begin="-0.7s" repeatCount="indefinite"/>
+            <line x1="24" y1="-158" x2="24" y2="-132" stroke="#ffe082" stroke-width="1" opacity="0.7"/>
+            <circle cx="24" cy="-152" r="2" fill="#fdf6e3"/>
+            <circle cx="24" cy="-144" r="2" fill="#fdf6e3"/>
+            <circle cx="24" cy="-136" r="2" fill="#fdf6e3"/>
+          </g>
+
+          <!-- roof -->
+          <path d="M-86 -160 C -86 -178 -42 -186 0 -186 C 42 -186 86 -178 86 -160 Z" fill="url(#roofG)" stroke="#b8860b" stroke-width="2"/>
+          <path d="M-56 -164 C -50 -176 -28 -182 0 -183" fill="none" stroke="#ffd1e3" stroke-width="1" opacity="0.5"/>
+          <path d="M56 -164 C 50 -176 28 -182 0 -183" fill="none" stroke="#ffd1e3" stroke-width="1" opacity="0.5"/>
+          <rect x="-87" y="-162" width="174" height="5" rx="2" fill="url(#goldG)" stroke="#b8860b" stroke-width="0.8"/>
+
+          <!-- jhalar fringes -->
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="-4 -86 -157;4 -86 -157;-4 -86 -157" dur="2s" repeatCount="indefinite"/>
+            <path d="M-84 -157 q 6 9 12 0 q 6 9 12 0 q 6 9 12 0 q 6 9 12 0" fill="none" stroke="#ffe082" stroke-width="1.8"/>
+            <circle cx="-78" cy="-149.5" r="1.7" fill="#fdf6e3"/>
+            <circle cx="-66" cy="-149.5" r="1.7" fill="#fdf6e3"/>
+            <circle cx="-54" cy="-149.5" r="1.7" fill="#fdf6e3"/>
+            <circle cx="-42" cy="-149.5" r="1.7" fill="#fdf6e3"/>
+          </g>
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="4 86 -157;-4 86 -157;4 86 -157" dur="2s" begin="-0.6s" repeatCount="indefinite"/>
+            <path d="M84 -157 q -6 9 -12 0 q -6 9 -12 0 q -6 9 -12 0 q -6 9 -12 0" fill="none" stroke="#ffe082" stroke-width="1.8"/>
+            <circle cx="78" cy="-149.5" r="1.7" fill="#fdf6e3"/>
+            <circle cx="66" cy="-149.5" r="1.7" fill="#fdf6e3"/>
+            <circle cx="54" cy="-149.5" r="1.7" fill="#fdf6e3"/>
+            <circle cx="42" cy="-149.5" r="1.7" fill="#fdf6e3"/>
+          </g>
+
+          <!-- lotus finial -->
+          <path d="M0 -198 C -5 -194 -6 -188 0 -184 C 6 -188 5 -194 0 -198 Z" fill="url(#petG)" stroke="#ffe082" stroke-width="0.8"/>
+          <circle cx="0" cy="-200.5" r="2" fill="#ffe082"/>
+        </g>
+
+        <!-- ===== POLE ===== -->
+        <line x1="-132" y1="-88" x2="112" y2="-88" stroke="url(#goldG)" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="-132" cy="-88" r="3.5" fill="#ffe082"/>
+        <circle cx="112" cy="-88" r="3.5" fill="#ffe082"/>
+        <g>
+          <animateTransform attributeName="transform" type="rotate" values="-8 -132 -88;8 -132 -88;-8 -132 -88" dur="1.9s" repeatCount="indefinite"/>
+          <line x1="-132" y1="-88" x2="-132" y2="-76" stroke="#ffe082" stroke-width="1.4"/>
+          <circle cx="-132" cy="-73.5" r="2.2" fill="#fdf6e3"/>
+        </g>
+        <g>
+          <animateTransform attributeName="transform" type="rotate" values="8 112 -88;-8 112 -88;8 112 -88" dur="1.9s" begin="-0.6s" repeatCount="indefinite"/>
+          <line x1="112" y1="-88" x2="112" y2="-76" stroke="#ffe082" stroke-width="1.4"/>
+          <circle cx="112" cy="-73.5" r="2.2" fill="#fdf6e3"/>
+        </g>
+
+        <!-- ===== NEAR BEARERS (in front of the pole) ===== -->
+        <!-- rear-near -->
+        <g transform="translate(-98 0)">
+          <g>
+            <animateTransform attributeName="transform" type="translate" values="0 0;0 -1.5;0 0" dur="0.5s" repeatCount="indefinite"/>
+            <g transform="translate(0 -42)">
+              <g>
+                <animateTransform attributeName="transform" type="rotate" values="14;-14;14" dur="0.5s" repeatCount="indefinite"/>
+                <path d="M0 0 L-4 20 L-6 42" fill="none" stroke="#5d1236" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M-6 42 L3 42" stroke="#2a0718" stroke-width="5" stroke-linecap="round"/>
+              </g>
+            </g>
+            <g transform="translate(0 -42)">
+              <g>
+                <animateTransform attributeName="transform" type="rotate" values="-14;14;-14" dur="0.5s" repeatCount="indefinite"/>
+                <path d="M0 0 L4 20 L6 42" fill="none" stroke="#5d1236" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 42 L15 42" stroke="#2a0718" stroke-width="5" stroke-linecap="round"/>
+              </g>
+            </g>
+            <path d="M0 -42 L0 -64" stroke="#a31545" stroke-width="12" stroke-linecap="round"/>
+            <path d="M-5 -56 L5 -50" stroke="#ffe082" stroke-width="2"/>
+            <circle cx="0" cy="-71" r="7" fill="#e8b184" stroke="#d99a6c" stroke-width="1"/>
+            <path d="M-7 -74 A 7 7 0 0 1 7 -74 Z" fill="#fff1f6"/>
+            <circle cx="6" cy="-76" r="1.2" fill="#ffe082"/>
+            <path d="M-3 -58 C -8 -68 -6 -78 -2 -87" fill="none" stroke="#871238" stroke-width="5" stroke-linecap="round"/>
+            <path d="M3 -58 C 8 -68 6 -78 2 -87" fill="none" stroke="#a31545" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="-2" cy="-87.5" r="2.2" fill="#e8b184"/>
+            <circle cx="2" cy="-87.5" r="2.2" fill="#e8b184"/>
+          </g>
+        </g>
+        <!-- front-near -->
+        <g transform="translate(112 0)">
+          <g>
+            <animateTransform attributeName="transform" type="translate" values="0 0;0 -1.5;0 0" dur="0.5s" begin="-0.25s" repeatCount="indefinite"/>
+            <g transform="translate(0 -42)">
+              <g>
+                <animateTransform attributeName="transform" type="rotate" values="14;-14;14" dur="0.5s" begin="-0.25s" repeatCount="indefinite"/>
+                <path d="M0 0 L-4 20 L-6 42" fill="none" stroke="#5d1236" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M-6 42 L3 42" stroke="#2a0718" stroke-width="5" stroke-linecap="round"/>
+              </g>
+            </g>
+            <g transform="translate(0 -42)">
+              <g>
+                <animateTransform attributeName="transform" type="rotate" values="-14;14;-14" dur="0.5s" begin="-0.25s" repeatCount="indefinite"/>
+                <path d="M0 0 L4 20 L6 42" fill="none" stroke="#5d1236" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 42 L15 42" stroke="#2a0718" stroke-width="5" stroke-linecap="round"/>
+              </g>
+            </g>
+            <path d="M0 -42 L0 -64" stroke="#8e1e4b" stroke-width="12" stroke-linecap="round"/>
+            <path d="M-5 -56 L5 -50" stroke="#ffe082" stroke-width="2"/>
+            <circle cx="0" cy="-71" r="7" fill="#e8b184" stroke="#d99a6c" stroke-width="1"/>
+            <path d="M-7 -74 A 7 7 0 0 1 7 -74 Z" fill="#ffd9ea"/>
+            <circle cx="6" cy="-76" r="1.2" fill="#ffe082"/>
+            <path d="M-3 -58 C -8 -68 -6 -78 -2 -87" fill="none" stroke="#73153c" stroke-width="5" stroke-linecap="round"/>
+            <path d="M3 -58 C 8 -68 6 -78 2 -87" fill="none" stroke="#8e1e4b" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="-2" cy="-87.5" r="2.2" fill="#e8b184"/>
+            <circle cx="2" cy="-87.5" r="2.2" fill="#e8b184"/>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- ============ BANNER ============ -->
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.34;0.4;0.56;0.62;1" dur="8s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0 -16;0 -16;0 0;0 0;0 -10;0 -10" keyTimes="0;0.34;0.4;0.56;0.62;1" dur="8s" repeatCount="indefinite"/>
+      <path d="M252 34 L226 62 L252 90 L548 90 L574 62 L548 34 Z" fill="url(#ribbonG)" stroke="#ff9ec4" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M264 42 H536" stroke="#ffd1e3" stroke-width="1.5" opacity="0.35"/>
+      <path d="M264 82 H536" stroke="#ffd1e3" stroke-width="1.5" opacity="0.35"/>
+      <use xlink:href="#budE" transform="translate(276 68) scale(0.9)">
+        <animate attributeName="opacity" values="1;0.4;1" dur="0.5s" repeatCount="indefinite"/>
+      </use>
+      <use xlink:href="#budE" transform="translate(524 68) scale(0.9)">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="0.45s" repeatCount="indefinite"/>
+      </use>
+      <text id="entryName" x="400" y="72" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',sans-serif"
+            font-size="30" font-weight="bold" letter-spacing="2" fill="url(#nameG)">WELCOME</text>
+      <text x="400" y="112" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',sans-serif"
+            font-size="16" fill="#ffbcd9">arriving in the Royal Doli</text>
+    </g>
+  </g>
+</svg>

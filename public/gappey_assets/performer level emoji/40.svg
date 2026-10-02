@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" role="img" aria-labelledby="e40pt" style="overflow:visible">
+  <title id="e40pt">Performer Lv.40 emoji — Queen Crown</title>
+  <defs>
+    <linearGradient id="p40bd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F472B6"/><stop offset="1" stop-color="#DB2777"/></linearGradient>
+    <radialGradient id="p40h" cx=".5" cy=".5" r=".5"><stop offset=".55" stop-color="#EC4899" stop-opacity="0"/><stop offset=".8" stop-color="#EC4899" stop-opacity=".32"/><stop offset="1" stop-color="#EC4899" stop-opacity="0"/></radialGradient>
+    <path id="p40tw" d="M0 -5 Q1 -1 5 0 Q1 1 0 5 Q-1 1 -5 0 Q-1 -1 0 -5 Z"/>
+    <path id="p40ry" d="M50 12 L50 4"/>
+    <path id="p40hm" d="M0 7 C-6 2 -9 -2 -9 -5 C-9 -8 -6.5 -9.5 -4.5 -9.5 C-3 -9.5 -1 -8.5 0 -6.5 C1 -8.5 3 -9.5 4.5 -9.5 C6.5 -9.5 9 -8 9 -5 C9 -2 6 2 0 7 Z"/>
+  </defs>
+  <style><![CDATA[
+.body{transform-box:fill-box;transform-origin:50% 92%;animation:bnc 2.6s ease-in-out infinite}.tw{transform-box:fill-box;transform-origin:50% 50%;animation:twk 2.2s ease-in-out infinite}.t2{animation-delay:-.7s}.ring2{transform-box:view-box;transform-origin:50px 50px;animation:spinrev 17s linear infinite}.orb{transform-box:view-box;transform-origin:50px 50px;animation:spin 8s linear infinite}.ray{transform-box:view-box;transform-origin:50px 50px;animation:spinrev 26s linear infinite}.bcr{transform-box:fill-box;transform-origin:50% 100%;animation:pls 2.8s ease-in-out infinite alternate}@keyframes bnc{0%,100%{transform:translateY(0)}50%{transform:translateY(-4.5px)}}@keyframes twk{0%,100%{opacity:.15;transform:scale(.5)}50%{opacity:1;transform:scale(1)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes spinrev{to{transform:rotate(-360deg)}}@keyframes pls{from{transform:scale(1)}to{transform:scale(1.12)}}@media (prefers-reduced-motion:reduce){.body,.tw,.ring2,.orb,.ray,.bcr{animation:none}}
+  ]]></style>
+  <circle cx="50" cy="50" r="46" fill="url(#p40h)"/>
+  <g class="ray" stroke="#F9A8D4" stroke-width="2.4" stroke-linecap="round" opacity=".35">
+    <use href="#p40ry"/><use href="#p40ry" transform="rotate(45 50 50)"/><use href="#p40ry" transform="rotate(90 50 50)"/><use href="#p40ry" transform="rotate(135 50 50)"/><use href="#p40ry" transform="rotate(180 50 50)"/><use href="#p40ry" transform="rotate(225 50 50)"/><use href="#p40ry" transform="rotate(270 50 50)"/><use href="#p40ry" transform="rotate(315 50 50)"/>
+  </g>
+  <circle class="ring2" cx="50" cy="50" r="44" fill="none" stroke="#F9A8D4" stroke-width="1.5" stroke-dasharray="3 6" opacity=".55"/>
+  <g class="body">
+    <path d="M26 58 L26 40 L38 50 L50 34 L62 50 L74 40 L74 58 Z" fill="url(#p40bd)" stroke="#BE185D" stroke-width="1.5" stroke-linejoin="round"/>
+    <circle cx="26" cy="38" r="3" fill="#FBCFE8" stroke="#BE185D" stroke-width=".8"/>
+    <circle cx="50" cy="31.5" r="3.2" fill="#FBCFE8" stroke="#BE185D" stroke-width=".8"/>
+    <circle cx="74" cy="38" r="3" fill="#FBCFE8" stroke="#BE185D" stroke-width=".8"/>
+    <rect x="26" y="56" width="48" height="18" rx="6" fill="url(#p40bd)" stroke="#BE185D" stroke-width="1.5"/>
+    <use href="#p40hm" transform="translate(34 65) scale(.8)" fill="#FFF" opacity=".95"/>
+    <use href="#p40hm" transform="translate(66 65) scale(.8)" fill="#FFF" opacity=".95"/>
+    <circle cx="43.5" cy="64.5" r="2.4" fill="#831843"/><circle cx="44.4" cy="63.6" r=".85" fill="#FFF"/>
+    <circle cx="56.5" cy="64.5" r="2.4" fill="#831843"/><circle cx="57.4" cy="63.6" r=".85" fill="#FFF"/>
+    <ellipse cx="38.5" cy="67.5" rx="2.6" ry="1.6" fill="#FFF" opacity=".6"/>
+    <ellipse cx="61.5" cy="67.5" rx="2.6" ry="1.6" fill="#FFF" opacity=".6"/>
+    <path d="M46.5 67 Q50 70.5 53.5 67" stroke="#831843" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  </g>
+  <g class="orb"><use href="#p40tw" x="50" y="6" fill="#FFF"/></g>
+  <use href="#p40tw" x="13" y="26" class="tw" fill="#FBCFE8"/>
+  <use href="#p40tw" x="88" y="60" class="tw t2" fill="#FBCFE8"/>
+  <g class="badge">
+    <g class="bcr">
+      <path d="M44 80.5 L45.4 76.6 L47.6 78.9 L50 75.6 L52.4 78.9 L54.6 76.6 L56 80.5 Z" fill="#F5B79E" stroke="#FFF" stroke-width=".8"/>
+      <circle cx="50" cy="78.4" r="1.1" fill="#FFF"/>
+    </g>
+    <rect x="33" y="80" width="34" height="16" rx="8" fill="url(#p40bd)" stroke="#FBCFE8" stroke-width="1.8"/>
+    <rect x="35" y="82" width="30" height="12" rx="6" fill="none" stroke="#FFF" stroke-opacity=".4" stroke-width=".8"/>
+    <g transform="translate(29.5 88)"><path class="tw" d="M0 -2.6 L2.6 0 L0 2.6 L-2.6 0 Z" fill="#FBCFE8" stroke="#FFF" stroke-width=".7"/></g>
+    <g transform="translate(70.5 88)"><path class="tw t2" d="M0 -2.6 L2.6 0 L0 2.6 L-2.6 0 Z" fill="#F5B79E" stroke="#FFF" stroke-width=".7"/></g>
+    <text x="50" y="91.8" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="800" letter-spacing=".5" fill="#FFF">40</text>
+  </g>
+</svg>

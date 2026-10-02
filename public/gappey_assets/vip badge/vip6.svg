@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 26" width="66" height="26">
+<title>VIP 6 Badge</title>
+<defs>
+<linearGradient id="pb6m" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#f4f9fd"><animate attributeName="stop-color" values="#f4f9fd;#fff0f8;#e9f6ff;#f4f9fd" dur="8s" repeatCount="indefinite"/></stop>
+<stop offset=".5" stop-color="#aebccb"><animate attributeName="stop-color" values="#aebccb;#c9c0e4;#b9d8e6;#aebccb" dur="8s" repeatCount="indefinite"/></stop>
+<stop offset="1" stop-color="#74879c"/>
+</linearGradient>
+<radialGradient id="pb6in" cx=".5" cy=".35" r="1"><stop offset="0" stop-color="#161f2c"/><stop offset="1" stop-color="#0a0f18"/></radialGradient>
+<clipPath id="pb6c"><rect x="3" y="4" width="60" height="18" rx="9"/></clipPath>
+</defs>
+<rect x="3" y="4" width="60" height="18" rx="9" fill="none" stroke="#9fd8ff" stroke-width="3" opacity=".4">
+<animate attributeName="opacity" values=".3;.55;.3" dur="2.8s" repeatCount="indefinite"/>
+<animate attributeName="stroke" values="#9fd8ff;#a8f0cf;#d4a8ff;#ffa8cf;#9fd8ff" dur="6s" repeatCount="indefinite"/>
+</rect>
+<rect x="3" y="4" width="60" height="18" rx="9" fill="url(#pb6m)" stroke="#dfe9f5" stroke-width="1.2"/>
+<rect x="5.2" y="6.2" width="55.6" height="13.6" rx="6.8" fill="url(#pb6in)"/>
+<path d="M13.5 7.6 L17.6 13 L13.5 18.4 L9.4 13 Z" fill="#f4f9fd" stroke="#8fa3b8" stroke-width=".45"/>
+<path d="M13.5 7.6 L13.5 18.4 M9.4 13 H17.6" stroke="#dfe9f5" stroke-width=".4" opacity=".6"/>
+<text x="38.5" y="17.4" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" letter-spacing=".2" fill="#fbfdff">VIP 6</text>
+<path d="M50.5 9.5 l.9 2.2 2.2 .9 -2.2 .9 -.9 2.2 -.9 -2.2 -2.2 -.9 2.2 -.9 Z" fill="#ffffff">
+<animate attributeName="opacity" values="0;1;0" dur="2.2s" repeatCount="indefinite"/>
+</path>
+<path d="M58.5 12.5 l.7 1.7 1.7 .7 -1.7 .7 -.7 1.7 -.7 -1.7 -1.7 -.7 1.7 -.7 Z" fill="#ffd6ec">
+<animate attributeName="opacity" values="0;1;0" dur="2.2s" begin="1.1s" repeatCount="indefinite"/>
+</path>
+<g clip-path="url(#pb6c)">
+<g><animateTransform attributeName="transform" type="translate" values="-50 0;80 0" dur="3s" repeatCount="indefinite"/>
+<rect x="30" y="0" width="7" height="26" fill="#ffffff" opacity=".26" transform="skewX(-18)"/></g>
+</g>
+</svg>

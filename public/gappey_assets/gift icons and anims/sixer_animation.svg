@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 800" width="450" height="800">
+  <title>Sixer — full-screen gift animation</title>
+  <defs>
+    <radialGradient id="sxAsky" cx="50%" cy="30%" r="90%">
+      <stop offset="0" stop-color="#14251C"/><stop offset=".6" stop-color="#0B1712"/><stop offset="1" stop-color="#060B09"/>
+    </radialGradient>
+    <radialGradient id="sxAball" cx="35%" cy="30%" r="90%">
+      <stop offset="0" stop-color="#F0794F"/><stop offset=".5" stop-color="#CE4527"/><stop offset="1" stop-color="#7E1F12"/>
+    </radialGradient>
+    <linearGradient id="sxAword" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6D27A"/><stop offset=".55" stop-color="#E4A93C"/><stop offset="1" stop-color="#B8791F"/>
+    </linearGradient>
+    <path id="sxAspk" d="M0 -11 Q2.2 -2.2 11 0 Q2.2 2.2 0 11 Q-2.2 2.2 -11 0 Q-2.2 -2.2 0 -11Z"/>
+    <style>
+      .sxA-trail,.sxA-trail2{fill:none;stroke-linecap:round;stroke-dasharray:430;animation:sxATrail 6s linear infinite}
+      .sxA-trail{stroke:#F2B33D;stroke-width:5}
+      .sxA-trail2{stroke:#F3EADA;stroke-width:2}
+      .sxA-ballwrap{animation:sxAFly 6s linear infinite}
+      .sxA-spin{animation:sxASpin .8s linear infinite;transform-box:fill-box;transform-origin:center}
+      .sxA-burst{animation:sxABOn 6s linear infinite}
+      .sxA-flash{fill:#FFF4DC;transform-box:fill-box;transform-origin:center;animation:sxAFlash 6s linear infinite}
+      .sxA-r1{stroke:#F2B33D;stroke-width:6;fill:none;transform-box:fill-box;transform-origin:center;animation:sxARing 6s linear infinite}
+      .sxA-r2{stroke:#F3EADA;stroke-width:2.5;fill:none;transform-box:fill-box;transform-origin:center;animation:sxARing2 6s linear infinite}
+      .sxA-p{transform-box:fill-box;transform-origin:center}
+      .sxA-a{animation:sxAPA 6s linear infinite}
+      .sxA-b{animation:sxAPB 6s linear infinite}
+      .sxA-c{animation:sxAPC 6s linear infinite}
+      .sxA-g{fill:#F2B33D}.sxA-i{fill:#F3EADA}.sxA-e{fill:#E0603C}
+      .sxA-cr{transform-box:fill-box;transform-origin:center;animation:sxACR 6s linear infinite}
+      .sxA-cl{transform-box:fill-box;transform-origin:center;animation:sxACL 6s linear infinite}
+      .sxA-word{font:900 104px 'Arial Black','Segoe UI',Arial,sans-serif;letter-spacing:6px;fill:url(#sxAword);stroke:#161310;stroke-width:9;paint-order:stroke;text-anchor:middle;transform-box:fill-box;transform-origin:center;animation:sxAWord 6s linear infinite}
+      .sxA-sub{font:700 15px 'Segoe UI',Arial,sans-serif;letter-spacing:8px;fill:#EFE6D8;text-anchor:middle;animation:sxASub 6s linear infinite}
+      .sxA-beam{fill:#EFE6D8;animation:sxABeam 5s ease-in-out infinite alternate}
+      .sxA-d{fill:#EFE6D8;animation:sxATwk 3.4s ease-in-out infinite}
+      @keyframes sxATrail{0%{stroke-dashoffset:430;opacity:0}2%{opacity:.95}35%{stroke-dashoffset:0;opacity:.95}48%{stroke-dashoffset:0;opacity:0}100%{stroke-dashoffset:0;opacity:0}}
+      @keyframes sxAFly{
+        0%{transform:translate(225px,700px) scale(.45);opacity:1;animation-timing-function:cubic-bezier(.3,.6,.4,1)}
+        16%{transform:translate(204px,505px) scale(.66);animation-timing-function:cubic-bezier(.2,.7,.3,1)}
+        35%{transform:translate(225px,252px) scale(1.1);opacity:1}
+        35.1%{opacity:0}
+        100%{transform:translate(225px,252px) scale(1.1);opacity:0}}
+      @keyframes sxASpin{to{transform:rotate(360deg)}}
+      @keyframes sxABOn{0%,34.9%{opacity:0}35%{opacity:1}100%{opacity:1}}
+      @keyframes sxAFlash{0%,35%{opacity:0;transform:scale(.2)}37.5%{opacity:.9}46%{opacity:0;transform:scale(1.2)}100%{opacity:0;transform:scale(1.2)}}
+      @keyframes sxARing{0%,35%{opacity:.95;transform:scale(.12)}57%{opacity:0;transform:scale(2.7)}100%{opacity:0;transform:scale(2.7)}}
+      @keyframes sxARing2{0%,37%{opacity:.8;transform:scale(.12)}64%{opacity:0;transform:scale(3.4)}100%{opacity:0;transform:scale(3.4)}}
+      @keyframes sxAPA{0%,35%{opacity:1;transform:translateX(0) scale(1)}58%{opacity:0;transform:translateX(255px) scale(.4)}100%{opacity:0;transform:translateX(255px) scale(.4)}}
+      @keyframes sxAPB{0%,35%{opacity:1;transform:translateX(0) scale(1)}52%{opacity:0;transform:translateX(165px) scale(.35)}100%{opacity:0;transform:translateX(165px) scale(.35)}}
+      @keyframes sxAPC{0%,35%{opacity:1;transform:translateX(0) scale(1)}70%{opacity:0;transform:translateX(330px) scale(.45)}100%{opacity:0;transform:translateX(330px) scale(.45)}}
+      @keyframes sxACR{0%,35%{opacity:1;transform:translate(0,0) rotate(0deg)}72%{opacity:0;transform:translate(var(--cx),var(--cy)) rotate(340deg)}100%{opacity:0;transform:translate(var(--cx),var(--cy)) rotate(340deg)}}
+      @keyframes sxACL{0%,35%{opacity:1;transform:translate(0,0) rotate(0deg)}72%{opacity:0;transform:translate(var(--cx),var(--cy)) rotate(-320deg)}100%{opacity:0;transform:translate(var(--cx),var(--cy)) rotate(-320deg)}}
+      @keyframes sxAWord{0%,35%{opacity:0;transform:scale(.3) rotate(-7deg)}42%{opacity:1;transform:scale(1.14) rotate(2deg)}46%{transform:scale(.97) rotate(0deg)}49%{transform:scale(1) rotate(0deg)}82%{opacity:1;transform:scale(1) rotate(0deg)}92%{opacity:0;transform:scale(1.05) rotate(0deg)}100%{opacity:0;transform:scale(1.05) rotate(0deg)}}
+      @keyframes sxASub{0%,42%{opacity:0}50%{opacity:.9}80%{opacity:.9}90%{opacity:0}100%{opacity:0}}
+      @keyframes sxABeam{from{opacity:.03}to{opacity:.07}}
+      @keyframes sxATwk{0%,100%{opacity:.08}50%{opacity:.6}}
+    </style>
+  </defs>
+  <rect width="450" height="800" fill="url(#sxAsky)"/>
+  <polygon class="sxA-beam" points="330,-20 396,-20 180,560 60,560"/>
+  <polygon class="sxA-beam" points="120,-20 54,-20 270,560 390,560" style="animation-delay:-2.5s"/>
+  <circle class="sxA-d" cx="60" cy="150" r="2" style="animation-delay:-1s"/>
+  <circle class="sxA-d" cx="392" cy="118" r="2" style="animation-delay:-.4s"/>
+  <circle class="sxA-d" cx="74" cy="436" r="2" style="animation-delay:-1.8s"/>
+  <circle class="sxA-d" cx="408" cy="470" r="2" style="animation-delay:-2.5s"/>
+  <circle class="sxA-d" cx="336" cy="646" r="2" style="animation-delay:-.9s"/>
+  <circle class="sxA-d" cx="96" cy="690" r="2" style="animation-delay:-1.4s"/>
+  <ellipse cx="225" cy="702" rx="300" ry="86" fill="#0D1A12"/>
+  <polygon points="175,800 206,704 244,704 275,800" fill="#16291D"/>
+  <g opacity=".55"><path class="sxA-trail2" d="M225 690 Q 250 500 225 300"/></g>
+  <path class="sxA-trail" d="M225 690 Q 200 500 225 300"/>
+  <g class="sxA-ballwrap">
+    <g class="sxA-spin">
+      <circle r="26" fill="url(#sxAball)"/>
+      <ellipse cx="-9" cy="-10" rx="9" ry="5.5" fill="#FF8A5E" opacity=".45" transform="rotate(-32 -9 -10)"/>
+      <path d="M-11 -20 Q-22 0 -11 20" fill="none" stroke="#F6EFE2" stroke-width="2.6"/>
+      <path d="M11 -20 Q22 0 11 20" fill="none" stroke="#F6EFE2" stroke-width="2.6"/>
+      <g stroke="#F6EFE2" stroke-width="2">
+        <line x1="-15" y1="-12" x2="-8" y2="-14"/><line x1="-17" y1="-4" x2="-10" y2="-5"/><line x1="-17" y1="4" x2="-10" y2="4"/><line x1="-15" y1="12" x2="-8" y2="13"/>
+        <line x1="8" y1="-14" x2="15" y2="-12"/><line x1="10" y1="-5" x2="17" y2="-4"/><line x1="10" y1="4" x2="17" y2="4"/><line x1="8" y1="13" x2="15" y2="12"/>
+      </g>
+    </g>
+  </g>
+  <g class="sxA-burst">
+    <circle class="sxA-flash" cx="225" cy="252" r="170"/>
+    <circle class="sxA-r1" cx="225" cy="252" r="64"/>
+    <circle class="sxA-r2" cx="225" cy="252" r="64"/>
+    <g transform="translate(225 252) rotate(0)"><circle class="sxA-p sxA-a sxA-g" r="4.5"/></g>
+    <g transform="translate(225 252) rotate(30)"><circle class="sxA-p sxA-b sxA-i" r="3.6"/></g>
+    <g transform="translate(225 252) rotate(60)"><circle class="sxA-p sxA-c sxA-e" r="5"/></g>
+    <g transform="translate(225 252) rotate(90)"><circle class="sxA-p sxA-a sxA-i" r="3.4"/></g>
+    <g transform="translate(225 252) rotate(120)"><circle class="sxA-p sxA-b sxA-g" r="4.6"/></g>
+    <g transform="translate(225 252) rotate(150)"><circle class="sxA-p sxA-c sxA-i" r="3.2"/></g>
+    <g transform="translate(225 252) rotate(180)"><circle class="sxA-p sxA-a sxA-e" r="4.2"/></g>
+    <g transform="translate(225 252) rotate(210)"><circle class="sxA-p sxA-b sxA-g" r="3.8"/></g>
+    <g transform="translate(225 252) rotate(240)"><circle class="sxA-p sxA-c sxA-i" r="4.8"/></g>
+    <g transform="translate(225 252) rotate(270)"><circle class="sxA-p sxA-a sxA-g" r="3.4"/></g>
+    <g transform="translate(225 252) rotate(300)"><circle class="sxA-p sxA-b sxA-e" r="4.4"/></g>
+    <g transform="translate(225 252) rotate(330)"><circle class="sxA-p sxA-c sxA-g" r="3.2"/></g>
+    <g transform="translate(225 252) rotate(15)"><g transform="scale(.85)"><use href="#sxAspk" class="sxA-p sxA-a sxA-g"/></g></g>
+    <g transform="translate(225 252) rotate(105)"><g transform="scale(.7)"><use href="#sxAspk" class="sxA-p sxA-b sxA-i"/></g></g>
+    <g transform="translate(225 252) rotate(195)"><g transform="scale(.95)"><use href="#sxAspk" class="sxA-p sxA-a sxA-g"/></g></g>
+    <g transform="translate(225 252) rotate(285)"><g transform="scale(.8)"><use href="#sxAspk" class="sxA-p sxA-c sxA-e"/></g></g>
+    <g transform="translate(225 252) rotate(18)"><rect class="sxA-cr sxA-i" x="-3.5" y="-7" width="7" height="14" rx="2" style="--cx:70px;--cy:260px"/></g>
+    <g transform="translate(225 252) rotate(80)"><rect class="sxA-cl sxA-g" x="-3.5" y="-7" width="7" height="14" rx="2" style="--cx:80px;--cy:300px"/></g>
+    <g transform="translate(225 252) rotate(150)"><rect class="sxA-cr sxA-e" x="-3.5" y="-7" width="7" height="14" rx="2" style="--cx:60px;--cy:240px"/></g>
+    <g transform="translate(225 252) rotate(205)"><rect class="sxA-cl sxA-i" x="-3.5" y="-7" width="7" height="14" rx="2" style="--cx:90px;--cy:320px"/></g>
+    <g transform="translate(225 252) rotate(262)"><rect class="sxA-cr sxA-g" x="-3.5" y="-7" width="7" height="14" rx="2" style="--cx:55px;--cy:280px"/></g>
+    <g transform="translate(225 252) rotate(322)"><rect class="sxA-cl sxA-e" x="-3.5" y="-7" width="7" height="14" rx="2" style="--cx:75px;--cy:230px"/></g>
+  </g>
+  <text class="sxA-word" x="228" y="470">SIX!</text>
+  <text class="sxA-sub" x="229" y="524">IT'S A MAXIMUM</text>
+</svg>

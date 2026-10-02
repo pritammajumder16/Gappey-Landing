@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" role="img" aria-labelledby="e10pt" style="overflow:visible">
+  <title id="e10pt">Performer Lv.10 emoji — Star Buddy</title>
+  <defs>
+    <radialGradient id="p10st" cx=".35" cy=".3" r=".9"><stop offset="0" stop-color="#FBCFE8"/><stop offset=".55" stop-color="#F472B6"/><stop offset="1" stop-color="#DB2777"/></radialGradient>
+    <radialGradient id="p10h" cx=".5" cy=".5" r=".5"><stop offset=".55" stop-color="#EC4899" stop-opacity="0"/><stop offset=".8" stop-color="#EC4899" stop-opacity=".26"/><stop offset="1" stop-color="#EC4899" stop-opacity="0"/></radialGradient>
+    <path id="p10tw" d="M0 -5 Q1 -1 5 0 Q1 1 0 5 Q-1 1 -5 0 Q-1 -1 0 -5 Z"/>
+    <path id="p10hm" d="M0 7 C-6 2 -9 -2 -9 -5 C-9 -8 -6.5 -9.5 -4.5 -9.5 C-3 -9.5 -1 -8.5 0 -6.5 C1 -8.5 3 -9.5 4.5 -9.5 C6.5 -9.5 9 -8 9 -5 C9 -2 6 2 0 7 Z"/>
+  </defs>
+  <style><![CDATA[
+.body{transform-box:fill-box;transform-origin:50% 92%;animation:bnc 2.6s ease-in-out infinite}.tw{transform-box:fill-box;transform-origin:50% 50%;animation:twk 2.2s ease-in-out infinite}.t2{animation-delay:-.7s}.nt{animation:nt 2.8s ease-in-out infinite}@keyframes bnc{0%,100%{transform:translateY(0)}50%{transform:translateY(-4.5px)}}@keyframes twk{0%,100%{opacity:.15;transform:scale(.5)}50%{opacity:1;transform:scale(1)}}@keyframes nt{0%{opacity:0;transform:translateY(8px)}30%{opacity:1}100%{opacity:0;transform:translateY(-20px)}}@media (prefers-reduced-motion:reduce){.body,.tw,.nt{animation:none}}
+  ]]></style>
+  <circle cx="50" cy="50" r="44" fill="url(#p10h)"/>
+  <g class="body">
+    <path d="M50 18 L58.2 40.8 L82 41.5 L63 56 L70 79 L50 65.5 L30 79 L37 56 L18 41.5 L41.8 40.8 Z" fill="url(#p10st)" stroke="#BE185D" stroke-width="1.5" stroke-linejoin="round"/>
+    <circle cx="43" cy="51" r="2.7" fill="#831843"/><circle cx="44" cy="50" r=".95" fill="#FFF"/>
+    <circle cx="57" cy="51" r="2.7" fill="#831843"/><circle cx="58" cy="50" r=".95" fill="#FFF"/>
+    <ellipse cx="37.5" cy="56" rx="3" ry="1.8" fill="#FFF" opacity=".6"/>
+    <ellipse cx="62.5" cy="56" rx="3" ry="1.8" fill="#FFF" opacity=".6"/>
+    <path d="M45.5 56.5 Q50 60.5 54.5 56.5" stroke="#831843" stroke-width="1.7" fill="none" stroke-linecap="round"/>
+    <circle cx="50" cy="27" r="2" fill="#FFF" opacity=".85"/>
+  </g>
+  <g transform="translate(81 62)"><g class="nt"><use href="#p10hm" fill="#F9A8D4"/></g></g>
+  <use href="#p10tw" x="15" y="28" class="tw" fill="#FBCFE8"/>
+  <use href="#p10tw" x="84" y="26" class="tw t2" fill="#FBCFE8"/>
+  <g class="badge">
+    <rect x="33" y="80" width="34" height="16" rx="8" fill="#FFF" stroke="#DB2777" stroke-width="1.4"/>
+    <text x="50" y="91.8" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="800" letter-spacing=".5" fill="#DB2777">10</text>
+  </g>
+</svg>

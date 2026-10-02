@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <title>Palki-e-Sultan — gift logo</title>
+  <defs>
+    <linearGradient id="pkLcnp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8E2E3E"/><stop offset="1" stop-color="#5E1B26"/>
+    </linearGradient>
+    <linearGradient id="pkLcab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6E1A26"/><stop offset="1" stop-color="#4A0F19"/>
+    </linearGradient>
+    <radialGradient id="pkLwin" cx=".5" cy=".35" r="1">
+      <stop offset="0" stop-color="#FFE9A8"/><stop offset="1" stop-color="#E0A83C"/>
+    </radialGradient>
+    <path id="pkLspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+    <g id="pkLtas">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#D9A441" stroke-width="2"/>
+      <path d="M0 6 C3 9 3 14 0 16.5 C-3 14 -3 9 0 6 Z" fill="#D9A441"/>
+    </g>
+  </defs>
+  <g fill="none" stroke="#D9A441" stroke-linecap="round" stroke-dasharray="0.1 7">
+    <path d="M22 90 Q12 118 22 148" stroke-width="2.5" opacity=".55"/>
+    <path d="M34 100 Q26 118 34 138" stroke-width="2" opacity=".3"/>
+  </g>
+  <line x1="24" y1="152" x2="216" y2="152" stroke="#8A5A2B" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="24" cy="152" r="4.5" fill="#D9A441"/>
+  <circle cx="216" cy="152" r="4.5" fill="#D9A441"/>
+  <path d="M64 88 Q64 54 120 52 Q176 54 176 88 Z" fill="url(#pkLcnp)" stroke="#3F0C15" stroke-width="2"/>
+  <line x1="120" y1="52" x2="120" y2="40" stroke="#D9A441" stroke-width="2.5"/>
+  <circle cx="120" cy="37" r="3.5" fill="#F6D27A"/>
+  <path d="M64 88 Q92 79 120 79 Q148 79 176 88" fill="none" stroke="#D9A441" stroke-width="1.5" opacity=".6"/>
+  <path d="M64 88 a9.3 6.5 0 0 0 18.7 0 a9.3 6.5 0 0 0 18.7 0 a9.3 6.5 0 0 0 18.7 0 a9.3 6.5 0 0 0 18.6 0 a9.3 6.5 0 0 0 18.7 0 a9.3 6.5 0 0 0 18.6 0" fill="#D9A441" opacity=".9"/>
+  <circle cx="98" cy="70" r="1.6" fill="#F3EADA"/><circle cx="120" cy="63" r="1.6" fill="#F3EADA"/><circle cx="142" cy="70" r="1.6" fill="#F3EADA"/>
+  <line x1="76" y1="92" x2="76" y2="106" stroke="#D9A441" stroke-width="3"/>
+  <line x1="164" y1="92" x2="164" y2="106" stroke="#D9A441" stroke-width="3"/>
+  <rect x="70" y="106" width="100" height="46" rx="10" fill="url(#pkLcab)" stroke="#D9A441" stroke-width="2"/>
+  <path d="M107 146 V122 a13 15 0 0 1 26 0 V146 Z" fill="url(#pkLwin)" stroke="#8A5F1D" stroke-width="1.8"/>
+  <line x1="120" y1="110" x2="120" y2="144" stroke="#8A5F1D" stroke-width="1.3" opacity=".7"/>
+  <line x1="108" y1="126" x2="132" y2="126" stroke="#8A5F1D" stroke-width="1.3" opacity=".7"/>
+  <use href="#pkLtas" transform="translate(84 152)"/>
+  <use href="#pkLtas" transform="translate(120 152)"/>
+  <use href="#pkLtas" transform="translate(156 152)"/>
+  <use href="#pkLspk" transform="translate(190 56) scale(.8)" fill="#F6D27A"/>
+  <use href="#pkLspk" transform="translate(44 178) scale(.6)" fill="#F3EADA"/>
+  <circle cx="200" cy="180" r="2.4" fill="#D9A441"/>
+</svg>

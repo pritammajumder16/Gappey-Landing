@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 800" width="450" height="800">
+  <title>Chai Tapri — full-screen gift animation</title>
+  <defs>
+    <radialGradient id="chAsky" cx="50%" cy="42%" r="90%">
+      <stop offset="0" stop-color="#1A0E06"/><stop offset=".55" stop-color="#0D0603"/><stop offset="1" stop-color="#060302"/>
+    </radialGradient>
+    <linearGradient id="chAtea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C97F2E"/><stop offset="1" stop-color="#7A3E12"/>
+    </linearGradient>
+    <radialGradient id="chAglass" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#E4A93C" stop-opacity=".2"/><stop offset="1" stop-color="#E4A93C" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="chAbul" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#F6D27A" stop-opacity=".4"/><stop offset="1" stop-color="#F6D27A" stop-opacity="0"/>
+    </radialGradient>
+    <path id="chAspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+    <clipPath id="chAclip"><path d="M-19.5 -52 L19.5 -52 L17 88 L-17 88 Z"/></clipPath>
+    <style>
+      .chA-bub{animation:chBub 2.3s linear infinite}
+      .chA-st{fill:none;stroke:#F3EADA;stroke-width:5;stroke-linecap:round;stroke-dasharray:130;opacity:0;animation:chSt 2.6s linear infinite}
+      .chA-ht{fill:#F08CA5;transform-box:fill-box;transform-origin:center;opacity:0;animation:chHt 7s linear infinite}
+      .chA-hg{fill:url(#chAglass);transform-box:fill-box;transform-origin:center;opacity:0;animation:chHg 7s linear infinite}
+      .chA-gp{animation:chGp 3.6s ease-in-out infinite alternate}
+      .chA-bp{animation:chBp 2.8s ease-in-out infinite alternate}
+      .chA-swing{animation:chSwing 3.6s ease-in-out infinite alternate}
+      .chA-bok{animation:chBok 4s ease-in-out infinite alternate}
+      .chA-nib{transform-box:fill-box;transform-origin:50% 100%;animation:chNib 7s linear infinite}
+      .chA-cap{font:600 44px Georgia,'Times New Roman',serif;letter-spacing:12px;fill:#F2D48C;text-anchor:middle;animation:chCap 7s linear infinite}
+      .chA-orn{animation:chCap 7s linear infinite}
+      .chA-twk{transform-box:fill-box;transform-origin:center;animation:chTw 2.8s ease-in-out infinite}
+      @keyframes chBub{0%{transform:translateY(0);opacity:0}15%{opacity:.8}85%{opacity:.7}100%{transform:translateY(-118px);opacity:0}}
+      @keyframes chSt{0%{stroke-dashoffset:130;opacity:0}10%{opacity:.85}40%{stroke-dashoffset:0;opacity:.85}55%,100%{opacity:0;stroke-dashoffset:0}}
+      @keyframes chHt{0%,46%{opacity:0;transform:scale(.2) translateY(10px)}51%{opacity:1;transform:scale(1.15) translateY(0)}54%{transform:scale(1) translateY(0)}64%{opacity:1;transform:scale(1) translateY(-14px)}74%,100%{opacity:0;transform:scale(1) translateY(-30px)}}
+      @keyframes chHg{0%,46%{opacity:0;transform:scale(.3)}52%{opacity:.9;transform:scale(1)}74%,100%{opacity:0;transform:scale(1.15)}}
+      @keyframes chGp{from{opacity:.45}to{opacity:.8}}
+      @keyframes chBp{from{opacity:.35}to{opacity:.75}}
+      @keyframes chSwing{from{transform:rotate(-4deg)}to{transform:rotate(4deg)}}
+      @keyframes chBok{from{opacity:.04}to{opacity:.16}}
+      @keyframes chNib{0%,70%{transform:rotate(0deg)}74%{transform:rotate(6deg)}78%{transform:rotate(-4deg)}82%,100%{transform:rotate(0deg)}}
+      @keyframes chCap{0%,16%{opacity:0}24%{opacity:1}88%{opacity:1}95%,100%{opacity:0}}
+      @keyframes chTw{0%,100%{opacity:.06;transform:scale(.6)}50%{opacity:.85;transform:scale(1)}}
+    </style>
+  </defs>
+  <rect width="450" height="800" fill="url(#chAsky)"/>
+  <circle class="chA-bok" cx="70" cy="180" r="14" fill="#F2A43D"/>
+  <circle class="chA-bok" cx="390" cy="240" r="10" fill="#F2A43D" style="animation-delay:-1.2s"/>
+  <circle class="chA-bok" cx="60" cy="520" r="12" fill="#E4A93C" style="animation-delay:-2.1s"/>
+  <circle class="chA-bok" cx="392" cy="600" r="14" fill="#F2A43D" style="animation-delay:-.6s"/>
+  <circle class="chA-bok" cx="150" cy="120" r="10" fill="#E4A93C" style="animation-delay:-2.8s"/>
+  <circle class="chA-bok" cx="100" cy="640" r="12" fill="#F2A43D" style="animation-delay:-1.7s"/>
+  <g class="chA-swing" style="transform-origin:338px 0px">
+    <line x1="338" y1="0" x2="338" y2="86" stroke="#2A1B10" stroke-width="3"/>
+    <circle class="chA-bp" cx="338" cy="100" r="30" fill="url(#chAbul)"/>
+    <circle cx="338" cy="100" r="11" fill="#F6D27A" stroke="#B8791F" stroke-width="2"/>
+    <path d="M334 104 q4 -6 8 0" stroke="#B8791F" stroke-width="1.5" fill="none"/>
+  </g>
+  <g transform="translate(225 468) scale(2.05)">
+    <circle class="chA-gp" r="95" fill="url(#chAglass)"/>
+    <ellipse cy="104" rx="70" ry="10" fill="#000" opacity=".35"/>
+    <ellipse cy="100" rx="50" ry="10" fill="#4A2C12"/>
+    <ellipse cy="97" rx="50" ry="9" fill="#8A5A2B"/>
+    <ellipse cy="97" rx="32" ry="5.5" fill="#4A2C12" opacity=".7"/>
+    <path d="M-24 -92 L24 -92 L20 92 L-20 92 Z" fill="#F3EADA" opacity=".12"/>
+    <path d="M-19.5 -52 L19.5 -52 L17 88 L-17 88 Z" fill="url(#chAtea)"/>
+    <g clip-path="url(#chAclip)">
+      <circle class="chA-bub" cx="-6" cy="64" r="2.2" fill="#FFD98F"/>
+      <circle class="chA-bub" cx="4" cy="70" r="2" fill="#FFD98F" style="animation-delay:-.8s"/>
+      <circle class="chA-bub" cx="10" cy="58" r="2.4" fill="#FFD98F" style="animation-delay:-1.5s"/>
+    </g>
+    <path d="M-19.5 -52 L19.5 -52 L18.9 -36 L-18.9 -36 Z" fill="#F6E3C4" opacity=".95"/>
+    <line x1="-19.5" y1="-52" x2="19.5" y2="-52" stroke="#FFE9C8" stroke-width="2" opacity=".8"/>
+    <path d="M-24 -92 L24 -92 L20 92 L-20 92 Z" fill="none" stroke="#F3EADA" stroke-width="2.5" stroke-linejoin="round"/>
+    <line x1="-15" y1="-84" x2="-11" y2="80" stroke="#FFF6E6" stroke-width="3" opacity=".3"/>
+    <line x1="-24" y1="-92" x2="24" y2="-92" stroke="#F6D27A" stroke-width="3"/>
+    <g transform="translate(-16 -96)"><path class="chA-st" d="M0 0 C-9 -16 9 -30 0 -46 C-7 -58 7 -68 0 -80"/></g>
+    <g transform="translate(16 -96)"><path class="chA-st" style="animation-delay:-1.7s" d="M0 0 C9 -18 -8 -32 0 -50 C6 -62 -6 -72 0 -84"/></g>
+    <g transform="translate(0 -100) scale(1.15)"><path class="chA-st" style="animation-delay:-.9s" d="M0 0 C-9 -16 9 -30 0 -46 C-7 -58 7 -68 0 -84"/></g>
+    <g transform="translate(0 -196)">
+      <circle class="chA-hg" r="26"/>
+      <path class="chA-ht" d="M0 6 C-5 -4 -18 -4 -18 6 C-18 14 -8 20 0 27 C8 20 18 14 18 6 C18 -4 5 -4 0 6 Z"/>
+    </g>
+    <g transform="translate(46 84) rotate(-12) scale(.85)">
+      <g class="chA-nib">
+        <rect x="-11" y="-15" width="22" height="30" rx="4" fill="#D9A441" stroke="#8A5F1D" stroke-width="2"/>
+        <circle cx="-4" cy="-7" r="1.4" fill="#8A5F1D"/><circle cx="4" cy="-3" r="1.4" fill="#8A5F1D"/><circle cx="-3" cy="4" r="1.4" fill="#8A5F1D"/><circle cx="4" cy="9" r="1.4" fill="#8A5F1D"/>
+      </g>
+    </g>
+  </g>
+  <text class="chA-cap" x="231" y="700">CHAI TAPRI</text>
+  <g class="chA-orn" stroke="#D9A441" fill="none">
+    <line x1="128" y1="726" x2="204" y2="726"/>
+    <line x1="256" y1="726" x2="332" y2="726"/>
+    <path d="M225 720 l6 6 -6 6 -6 -6Z"/>
+  </g>
+  <g transform="translate(66 300)"><use href="#chAspk" class="chA-twk" fill="#F2B33D"/></g>
+  <g transform="translate(394 380) scale(.8)"><use href="#chAspk" class="chA-twk" fill="#F6EFE2" style="animation-delay:-.9s"/></g>
+  <g transform="translate(60 720) scale(.7)"><use href="#chAspk" class="chA-twk" fill="#F2B33D" style="animation-delay:-1.8s"/></g>
+</svg>

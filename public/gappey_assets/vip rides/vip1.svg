@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 170" width="500" height="170">
+<title>VIP 1 Ride — Copper Cruiser</title>
+<defs>
+<linearGradient id="c1body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8d3a5"/><stop offset=".45" stop-color="#a05a24"/><stop offset="1" stop-color="#7c3f14"/></linearGradient>
+<linearGradient id="c1plate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#241205"/><stop offset="1" stop-color="#140a02"/></linearGradient>
+<radialGradient id="c1hub" cx=".35" cy=".3" r=".9"><stop offset="0" stop-color="#ffe7c4"/><stop offset=".45" stop-color="#e59b5c"/><stop offset="1" stop-color="#8a4a1e"/></radialGradient>
+<clipPath id="c1bodyClip"><path d="M-95 8 Q-95 14 -88 14 L88 14 Q95 14 95 8 L95 -2 Q95 -8 86 -9 L46 -11 Q36 -30 12 -31 L-22 -31 Q-44 -30 -54 -12 L-86 -9 Q-95 -8 -95 -2 Z"/></clipPath>
+<clipPath id="c1plateClip"><rect x="-95" y="-19" width="190" height="38" rx="14"/></clipPath>
+</defs>
+
+<!-- road: appears as the car enters, dissolves away after it leaves -->
+<g opacity="0">
+<animate attributeName="opacity" values="0;.5" begin=".35s" dur=".4s" fill="freeze"/>
+<animate attributeName="opacity" values=".5;0" begin="4.55s" dur=".6s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 7" keyTimes="0;.87;1" dur="5.2s" fill="freeze"/>
+<line x1="70" y1="141" x2="430" y2="141" stroke="#3a2413" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="88" y1="149.5" x2="412" y2="149.5" stroke="#3a2413" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="13 9" opacity=".6"/>
+</g>
+
+<!-- static center wrapper: car rests exactly at canvas center -->
+<g transform="translate(250 112)">
+<g>
+<!-- master move: in (ease-out) → hold → out (ease-in) -->
+<animateTransform attributeName="transform" type="translate"
+values="-750 0;-750 0;0 0;0 0;750 0"
+keyTimes="0;.03;.48;.8;1"
+calcMode="spline"
+keySplines="0 0 1 1;.17 .67 .24 1;0 0 1 1;.55 .06 .68 .19"
+dur="5.2s" fill="freeze"/>
+
+<!-- ground shadow -->
+<ellipse cx="0" cy="29" rx="102" ry="6" fill="#000" opacity="0">
+<animate attributeName="opacity" values="0;.28;.3;.3;0" keyTimes="0;.03;.48;.8;1" dur="5.2s" fill="freeze"/>
+</ellipse>
+
+<!-- dust: entry puffs -->
+<circle cx="-100" cy="30" r="3" fill="#8a5a34" opacity="0">
+<animate attributeName="opacity" values="0;.5;0" dur="1.3s" begin=".35s"/>
+<animate attributeName="cx" values="-100;-140" dur="1.3s" begin=".35s"/>
+<animate attributeName="r" values="3;7" dur="1.3s" begin=".35s"/>
+</circle>
+<circle cx="-104" cy="34" r="2.6" fill="#8a5a34" opacity="0">
+<animate attributeName="opacity" values="0;.45;0" dur="1.3s" begin=".8s"/>
+<animate attributeName="cx" values="-104;-146" dur="1.3s" begin=".8s"/>
+<animate attributeName="r" values="2.6;6.4" dur="1.3s" begin=".8s"/>
+</circle>
+<circle cx="-98" cy="26" r="2.4" fill="#a06a3c" opacity="0">
+<animate attributeName="opacity" values="0;.4;0" dur="1.3s" begin="1.3s"/>
+<animate attributeName="cx" values="-98;-136" dur="1.3s" begin="1.3s"/>
+<animate attributeName="r" values="2.4;6" dur="1.3s" begin="1.3s"/>
+</circle>
+<!-- dust: exit puffs -->
+<circle cx="-100" cy="30" r="3.4" fill="#8a5a34" opacity="0">
+<animate attributeName="opacity" values="0;.55;0" dur="1s" begin="4.2s"/>
+<animate attributeName="cx" values="-100;-150" dur="1s" begin="4.2s"/>
+<animate attributeName="r" values="3.4;8" dur="1s" begin="4.2s"/>
+</circle>
+<circle cx="-96" cy="36" r="2.8" fill="#a06a3c" opacity="0">
+<animate attributeName="opacity" values="0;.45;0" dur=".75s" begin="4.45s"/>
+<animate attributeName="cx" values="-96;-148" dur=".75s" begin="4.45s"/>
+<animate attributeName="r" values="2.8;7" dur=".75s" begin="4.45s"/>
+</circle>
+
+<!-- speed lines: soft on entry, strong on exit -->
+<g stroke="#d9b08c" stroke-width="2.5" stroke-linecap="round" opacity="0">
+<animate attributeName="opacity" values="0;.35;.35;0;0;.8;0" keyTimes="0;.08;.42;.5;.56;.66;.8" dur="5.2s" fill="freeze"/>
+<line x1="-80" y1="-8" x2="-122" y2="-8"/>
+<line x1="-74" y1="2" x2="-128" y2="2"/>
+<line x1="-80" y1="12" x2="-118" y2="12"/>
+</g>
+
+<!-- rear wheel -->
+<g transform="translate(-58 15)">
+<circle r="13" fill="#14100a" stroke="#e09a5f" stroke-width="2.5"/>
+<g>
+<animateTransform attributeName="transform" type="rotate"
+values="0;0;900;900;1500" keyTimes="0;.03;.48;.8;1"
+calcMode="spline" keySplines="0 0 1 1;.17 .67 .24 1;0 0 1 1;.55 .06 .68 .19"
+dur="5.2s" fill="freeze"/>
+<g stroke="#c47f43" stroke-width="2">
+<path d="M0 -10.5 L0 10.5"/><path d="M-10.5 0 L10.5 0"/>
+<path d="M-7.4 -7.4 L7.4 7.4"/><path d="M-7.4 7.4 L7.4 -7.4"/>
+</g>
+</g>
+<circle r="4.5" fill="url(#c1hub)" stroke="#5f3212" stroke-width="1"/>
+</g>
+
+<!-- front wheel -->
+<g transform="translate(56 15)">
+<circle r="13" fill="#14100a" stroke="#e09a5f" stroke-width="2.5"/>
+<g>
+<animateTransform attributeName="transform" type="rotate"
+values="0;0;900;900;1500" keyTimes="0;.03;.48;.8;1"
+calcMode="spline" keySplines="0 0 1 1;.17 .67 .24 1;0 0 1 1;.55 .06 .68 .19"
+dur="5.2s" fill="freeze"/>
+<g stroke="#c47f43" stroke-width="2">
+<path d="M0 -10.5 L0 10.5"/><path d="M-10.5 0 L10.5 0"/>
+<path d="M-7.4 -7.4 L7.4 7.4"/><path d="M-7.4 7.4 L7.4 -7.4"/>
+</g>
+</g>
+<circle r="4.5" fill="url(#c1hub)" stroke="#5f3212" stroke-width="1"/>
+</g>
+
+<!-- body: suspension bounce (brake dip + settle) -->
+<g>
+<animateTransform attributeName="transform" type="translate"
+values="0 0;0 0;0 3;0 -2;0 1;0 0;0 -1.2;0 .8;0 0;0 0;0 0"
+keyTimes="0;.44;.49;.54;.58;.62;.68;.74;.8;.9;1"
+dur="5.2s" fill="freeze"/>
+<!-- nose dip on braking -->
+<g>
+<animateTransform attributeName="transform" type="rotate"
+values="0;0;-1.6;.9;0;0" keyTimes="0;.44;.5;.57;.62;1"
+dur="5.2s" fill="freeze"/>
+
+<path d="M-95 8 Q-95 14 -88 14 L88 14 Q95 14 95 8 L95 -2 Q95 -8 86 -9 L46 -11 Q36 -30 12 -31 L-22 -31 Q-44 -30 -54 -12 L-86 -9 Q-95 -8 -95 -2 Z"
+fill="url(#c1body)" stroke="#5f3212" stroke-width="2.5"/>
+<!-- windows -->
+<path d="M-46 -12 Q-40 -27 -22 -28 L-8 -28 L-8 -12 Z" fill="#2b1708"/>
+<path d="M-2 -12 L-2 -28 L12 -28 Q32 -27 40 -12 Z" fill="#2b1708"/>
+<path d="M-40 -14 L-30 -25" stroke="#f8d3a5" stroke-width="1.5" opacity=".35"/>
+<path d="M0 -14 L8 -25" stroke="#f8d3a5" stroke-width="1.5" opacity=".35"/>
+<!-- chrome strip + rocker -->
+<rect x="-92" y="5" width="184" height="3.4" rx="1.7" fill="#f0bd8a" opacity=".75"/>
+<rect x="-88" y="12.2" width="176" height="1.6" fill="#3a1f0b" opacity=".8"/>
+<!-- door line + handle -->
+<path d="M-2 -12 L-2 12" stroke="#5f3212" stroke-width="1.2" opacity=".7"/>
+<rect x="4" y="-4" width="7" height="1.8" rx=".9" fill="#5f3212" opacity=".8"/>
+<!-- crown emblem (frame DNA) -->
+<g transform="translate(0 2)">
+<path d="M0 7 L1.2 .5 L4.2 3.4 L6 -.8 L7.8 3.4 L10.8 .5 L12 7 Z"
+transform="translate(-5.7 -1) scale(.95)"
+fill="#f4c493" stroke="#5f3212" stroke-width=".9" stroke-linejoin="round">
+<animate attributeName="opacity" values=".85;1;.85" dur="3s" repeatCount="indefinite"/>
+</path>
+<circle cx="0" cy="-2.6" r="1.5" fill="url(#c1hub)" stroke="#5f3212" stroke-width=".6"/>
+</g>
+<!-- headlight / taillight -->
+<circle cx="88" cy="3" r="5.5" fill="#ffe7c4" opacity=".2"/>
+<circle cx="88" cy="3" r="3.4" fill="#ffe7c4">
+<animate attributeName="opacity" values=".65;1;.65" dur="1.6s" repeatCount="indefinite"/>
+</circle>
+<rect x="-95.5" y="-1" width="3" height="5" rx="1.5" fill="#e59b5c" opacity=".8"/>
+<!-- body glint sweep (frame DNA) -->
+<g clip-path="url(#c1bodyClip)">
+<g>
+<animateTransform attributeName="transform" type="translate" values="-140 0;160 0" keyTimes="0;1" begin="3.05s" dur=".65s" fill="freeze"/>
+<rect x="-8" y="-40" width="14" height="70" fill="#ffffff" opacity=".28" transform="skewX(-18)"/>
+</g>
+</g>
+</g>
+</g>
+
+<!-- name plate (pops in after stop, out on exit) -->
+<g transform="translate(0 -62)" opacity="0">
+<animate attributeName="opacity" values="0;1" begin="2.65s" dur=".4s" fill="freeze"/>
+<animate attributeName="opacity" values="1;0" begin="4.25s" dur=".3s" fill="freeze"/>
+<g>
+<animateTransform attributeName="transform" type="scale" values=".8;.8;1.05;1" keyTimes="0;.4;.75;1" begin="2.65s" dur=".45s" fill="freeze"/>
+<rect x="-95" y="-19" width="190" height="38" rx="14" fill="url(#c1plate)" stroke="#a05a24" stroke-width="2"/>
+<rect x="-91" y="-15" width="182" height="30" rx="11" fill="none" stroke="#f0bd8a" stroke-width=".8" opacity=".35"/>
+<g clip-path="url(#c1plateClip)">
+<g>
+<animateTransform attributeName="transform" type="translate" values="-130 0;130 0" keyTimes="0;1" begin="3.4s" dur=".7s" fill="freeze"/>
+<rect x="-9" y="-24" width="16" height="48" fill="#ffffff" opacity=".18" transform="skewX(-18)"/>
+</g>
+</g>
+<text x="0" y="-1" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#ffe9d2">Welcome</text>
+<text x="0" y="13" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="2.5" fill="#e09a5f">VIP 1 HAS ENTERED</text>
+</g>
+</g>
+
+<!-- hold burst ring -->
+<circle cx="0" cy="-6" r="26" fill="none" stroke="#e59b5c" stroke-width="2.5" opacity="0">
+<animate attributeName="r" values="26;115" begin="2.55s" dur=".8s" fill="freeze"/>
+<animate attributeName="opacity" values="0;.55;0" keyTimes="0;.3;1" begin="2.55s" dur=".8s" fill="freeze"/>
+</circle>
+
+<!-- copper sparkle pops -->
+<g transform="translate(-52 -44)" opacity="0">
+<animate attributeName="opacity" values="0;.9;.85" keyTimes="0;.4;1" begin="2.7s" dur=".5s" fill="freeze"/>
+<g><animateTransform attributeName="transform" type="scale" values="0;1.25;1" keyTimes="0;.6;1" begin="2.7s" dur=".5s" fill="freeze"/>
+<path d="M0 -5 L1 -1 L5 0 L1 1 L0 5 L-1 1 L-5 0 L-1 -1 Z" fill="#ffe7c4"/></g>
+</g>
+<g transform="translate(48 -52)" opacity="0">
+<animate attributeName="opacity" values="0;.9;.85" keyTimes="0;.4;1" begin="2.85s" dur=".5s" fill="freeze"/>
+<g><animateTransform attributeName="transform" type="scale" values="0;1.15;1" keyTimes="0;.6;1" begin="2.85s" dur=".5s" fill="freeze"/>
+<path d="M0 -5 L1 -1 L5 0 L1 1 L0 5 L-1 1 L-5 0 L-1 -1 Z" fill="#f4c493"/></g>
+</g>
+<g transform="translate(84 -10)" opacity="0">
+<animate attributeName="opacity" values="0;.9;.85;.45;.85" keyTimes="0;.2;.5;.75;1" begin="3s" dur=".5s" fill="freeze"/>
+<g><animateTransform attributeName="transform" type="scale" values="0;1.3;1" keyTimes="0;.6;1" begin="3s" dur=".5s" fill="freeze"/>
+<path d="M0 -5 L1 -1 L5 0 L1 1 L0 5 L-1 1 L-5 0 L-1 -1 Z" fill="#ffe7c4"/></g>
+</g>
+</g>
+</g>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 800" width="450" height="800">
+  <title>Jalebi Twist — full-screen gift animation</title>
+  <defs>
+    <radialGradient id="jlAsky" cx="50%" cy="38%" r="90%">
+      <stop offset="0" stop-color="#170B06"/><stop offset=".55" stop-color="#0E0603"/><stop offset="1" stop-color="#070301"/>
+    </radialGradient>
+    <radialGradient id="jlAglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#E88A2D" stop-opacity=".16"/><stop offset="1" stop-color="#E88A2D" stop-opacity="0"/>
+    </radialGradient>
+    <path id="jlAspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+    <style>
+      .jl-in{transform-box:fill-box;transform-origin:center;animation:jlIn 7s linear infinite}
+      .jl-wob{transform-box:fill-box;transform-origin:center;animation:jlWob 2.8s ease-in-out infinite alternate}
+      .jl-gl{transform-box:fill-box;transform-origin:center;animation:jlGl 2s ease-in-out infinite alternate}
+      .jl-d1,.jl-d2{opacity:0;transform-box:fill-box;transform-origin:50% 0%}
+      .jl-d1{animation:jlDrip 7s linear infinite}
+      .jl-d2{animation:jlDrip 7s linear infinite;animation-delay:2.6s}
+      .jl-f{opacity:0;animation:jlFall 7s linear infinite}
+      .jl-cap{font:600 24px Georgia,'Times New Roman',serif;letter-spacing:6px;fill:#F2D48C;text-anchor:middle;animation:jlCap 7s linear infinite}
+      .jl-orn{animation:jlCap 7s linear infinite}
+      .jl-twk{transform-box:fill-box;transform-origin:center;animation:jlTw 2.6s ease-in-out infinite}
+      @keyframes jlIn{0%{opacity:0;transform:rotate(-160deg) scale(.2)}14%{opacity:1;transform:rotate(12deg) scale(1.08)}18%{transform:rotate(-4deg) scale(.98)}21%,86%{opacity:1;transform:rotate(0deg) scale(1)}92%{opacity:0;transform:rotate(0deg) scale(1)}100%{opacity:0;transform:rotate(-160deg) scale(.2)}}
+      @keyframes jlWob{from{transform:rotate(-3deg)}to{transform:rotate(3deg)}}
+      @keyframes jlGl{from{opacity:.25;transform:scale(.8)}to{opacity:.9;transform:scale(1.1)}}
+      @keyframes jlDrip{0%,26%{opacity:0;transform:translateY(0) scale(.6,.7)}29%{opacity:1;transform:translateY(8px) scale(1,1)}44%,100%{opacity:0;transform:translateY(120px) scale(.9,1.2)}}
+      @keyframes jlFall{0%{opacity:0;transform:translateY(0)}12%{opacity:.8}60%,100%{opacity:0;transform:translateY(260px)}}
+      @keyframes jlCap{0%,30%{opacity:0}38%{opacity:1}86%{opacity:1}94%,100%{opacity:0}}
+      @keyframes jlTw{0%,100%{opacity:.06;transform:scale(.6)}50%{opacity:.85;transform:scale(1)}}
+    </style>
+  </defs>
+  <rect width="450" height="800" fill="url(#jlAsky)"/>
+  <circle cx="225" cy="330" r="230" fill="url(#jlAglow)"/>
+  <ellipse cx="225" cy="505" rx="150" ry="20" fill="#000" opacity=".35"/>
+  <g transform="translate(225 330)">
+    <g class="jl-in"><g class="jl-wob">
+      <g transform="scale(1.7) translate(-119 -117)">
+        <path d="M186 112 C186 152 154 182 116 178 C78 174 52 144 56 108 C60 72 92 48 128 54 C160 60 180 88 174 118 C168 146 142 162 116 155 C93 149 80 128 88 108 C95 91 114 84 130 92 C143 99 147 114 138 124 C131 132 118 132 111 124 C106 118 108 108 116 105" fill="none" stroke="#E88A2D" stroke-width="11" stroke-linecap="round"/>
+        <path d="M92 74 C110 52 146 48 164 66" fill="none" stroke="#FFC46B" stroke-width="3.5" stroke-linecap="round" opacity=".85"/>
+        <path d="M70 150 C60 138 55 124 56 110" fill="none" stroke="#FFC46B" stroke-width="2.5" stroke-linecap="round" opacity=".5"/>
+        <circle class="jl-gl" cx="-24" cy="-37" r="4.5" fill="#FFD98F"/>
+        <circle class="jl-gl" cx="31" cy="33" r="3.5" fill="#FFD98F" style="animation-delay:-1s"/>
+      </g>
+    </g></g>
+  </g>
+  <g transform="translate(205 470)"><path class="jl-d1" d="M0 -8 C6 -1 6 8 0 14 C-6 8 -6 -1 0 -8 Z" fill="#E88A2D"/></g>
+  <g transform="translate(250 466)"><path class="jl-d2" d="M0 -8 C6 -1 6 8 0 14 C-6 8 -6 -1 0 -8 Z" fill="#E88A2D"/></g>
+  <circle class="jl-f" cx="120" cy="140" r="2" fill="#FFD98F"/>
+  <circle class="jl-f" cx="210" cy="120" r="2" fill="#FFD98F" style="animation-delay:-1.8s"/>
+  <circle class="jl-f" cx="300" cy="150" r="2" fill="#FFD98F" style="animation-delay:-3.4s"/>
+  <circle class="jl-f" cx="370" cy="130" r="2" fill="#FFD98F" style="animation-delay:-5s"/>
+  <text class="jl-cap" x="229" y="648">MEETHI BAAT HO GAYI</text>
+  <g class="jl-orn" stroke="#D9A441" fill="none">
+    <line x1="138" y1="672" x2="204" y2="672"/>
+    <line x1="256" y1="672" x2="322" y2="672"/>
+    <path d="M225 666 l6 6 -6 6 -6 -6Z"/>
+  </g>
+  <g transform="translate(70 250)"><use href="#jlAspk" class="jl-twk" fill="#F2B33D"/></g>
+  <g transform="translate(390 220) scale(.8)"><use href="#jlAspk" class="jl-twk" fill="#F6EFE2" style="animation-delay:-.8s"/></g>
+  <g transform="translate(60 560) scale(.7)"><use href="#jlAspk" class="jl-twk" fill="#F2B33D" style="animation-delay:-1.6s"/></g>
+  <g transform="translate(396 520) scale(.75)"><use href="#jlAspk" class="jl-twk" fill="#F6EFE2" style="animation-delay:-2.2s"/></g>
+</svg>

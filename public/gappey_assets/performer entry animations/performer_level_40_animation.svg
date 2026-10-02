@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="200" viewBox="0 0 760 200" role="img" aria-labelledby="l40pt" style="overflow:visible">
+  <title id="l40pt">Performer Lv.40 entry — auto rickshaw</title>
+  <defs>
+    <linearGradient id="l40pcn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FCE7F3"/><stop offset="1" stop-color="#F9A8D4"/></linearGradient>
+    <linearGradient id="l40pbd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DB2777"/><stop offset="1" stop-color="#BE185D"/></linearGradient>
+    <linearGradient id="l40prb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F472B6"/><stop offset="1" stop-color="#DB2777"/></linearGradient>
+    <path id="l40ptw" d="M0 -6 Q1.2 -1.2 6 0 Q1.2 1.2 0 6 Q-1.2 1.2 -6 0 Q-1.2 -1.2 0 -6 Z"/>
+    <path id="l40pht" d="M0 4.2 C-1.7 1.2 -5.4 0 -5.4 -2.7 C-5.4 -4.7 -3.7 -5.8 -2.1 -5.8 C-1 -5.8 0 -5 0 -4.1 C0 -5 1 -5.8 2.1 -5.8 C3.7 -5.8 5.4 -4.7 5.4 -2.7 C5.4 0 1.7 .8 0 4.2 Z"/>
+  </defs>
+  <style><![CDATA[
+.drive{animation:drv 1.9s cubic-bezier(.2,.65,.3,1) both,outR 1.1s cubic-bezier(.4,.02,.9,.45) 4.3s forwards}
+.wob{transform-box:fill-box;transform-origin:50% 92%;animation:wob .16s ease-in-out infinite alternate}
+.sq{transform-box:fill-box;transform-origin:50% 100%;animation:squash .4s ease-out 1.9s both}
+.whl{transform-box:fill-box;transform-origin:50% 50%;animation:roll 1.9s cubic-bezier(.25,.65,.35,1) 1 both,rollx .9s linear 4.3s forwards}
+.wv{transform-box:fill-box;transform-origin:100% 100%;animation:wave 1.4s ease-in-out 2.5s infinite alternate}
+.puf{transform-box:fill-box;transform-origin:50% 50%;animation:puff 1.4s linear infinite}
+.puf2{animation-delay:-.5s}.puf3{animation-delay:-1s}
+.dust{transform-box:fill-box;transform-origin:50% 50%;animation:dust .6s ease-out both}
+.shdw{transform-box:fill-box;transform-origin:50% 50%;animation:shdw 1.9s ease-out both,outFade .6s ease-in 4.35s forwards}
+.spd{animation:spd 1.9s ease-out both}
+.spd2{animation-delay:.1s}
+.honk{animation:honk .9s linear 2.15s both}
+.beep{transform-box:fill-box;transform-origin:0 100%;animation:beep 1.05s ease-out 2.2s both}
+.bdrop{animation:drop .7s cubic-bezier(.2,.8,.3,1.2) 2.4s both,outUp .6s ease-in 4.5s forwards}
+.d1,.d2,.d3,.d4{transform-box:fill-box;transform-origin:50% 50%;animation:fly .8s ease-out 2.4s both}
+.d1{animation-name:f1}.d2{animation-name:f2}.d3{animation-name:f3}.d4{animation-name:f4}
+.clear{animation:outFade .55s ease-in 4.4s forwards}
+.tw{transform-box:fill-box;transform-origin:50% 50%;animation:twinkle 2.1s ease-in-out 2.9s infinite both}
+.tw2{animation-delay:3.3s}.tw3{animation-delay:3.6s}.tw4{animation-delay:4s}
+@keyframes drv{0%{transform:translateX(-640px)}72%{transform:translateX(10px)}86%{transform:translateX(-4px)}100%{transform:translateX(0)}}
+@keyframes wob{from{transform:rotate(-1deg)}to{transform:rotate(1deg) translateY(-1.5px)}}
+@keyframes squash{0%{transform:scale(1)}40%{transform:scale(1.04,.94)}100%{transform:scale(1)}}
+@keyframes roll{to{transform:rotate(720deg)}}
+@keyframes rollx{to{transform:rotate(1080deg)}}
+@keyframes wave{from{transform:rotate(-4deg)}to{transform:rotate(-24deg)}}
+@keyframes puff{0%{opacity:0;transform:translate(0,0) scale(.4)}20%{opacity:.5}100%{opacity:0;transform:translate(-26px,-6px) scale(1.5)}}
+@keyframes dust{0%{opacity:.55;transform:scale(.3)}100%{opacity:0;transform:translate(-14px,-10px) scale(1.4)}}
+@keyframes shdw{0%{opacity:0;transform:scale(.5)}70%{opacity:1;transform:scale(1.05)}100%{opacity:1;transform:scale(1)}}
+@keyframes spd{0%{opacity:0}30%{opacity:.7}80%{opacity:.5}100%{opacity:0}}
+@keyframes honk{0%{opacity:0}8%{opacity:1}16%{opacity:0}24%{opacity:1}45%{opacity:1}60%{opacity:0}100%{opacity:0}}
+@keyframes beep{0%{opacity:0;transform:translateY(4px) scale(.6)}12%{opacity:1;transform:translateY(0) scale(1.1)}20%{transform:scale(1)}70%{opacity:1}100%{opacity:0}}
+@keyframes drop{0%{opacity:0;transform:translateY(-80px)}60%{opacity:1;transform:translateY(6px)}80%{transform:translateY(-3px)}100%{transform:translateY(0)}}
+@keyframes f1{0%{opacity:1;transform:translate(0,0) rotate(0) scale(.4)}100%{opacity:0;transform:translate(-64px,-52px) rotate(160deg) scale(1)}}
+@keyframes f2{0%{opacity:1;transform:translate(0,0) rotate(0) scale(.4)}100%{opacity:0;transform:translate(64px,-52px) rotate(-160deg) scale(1)}}
+@keyframes f3{0%{opacity:1;transform:translate(0,0) rotate(0) scale(.4)}100%{opacity:0;transform:translate(-30px,-84px) rotate(200deg) scale(1)}}
+@keyframes f4{0%{opacity:1;transform:translate(0,0) rotate(0) scale(.4)}100%{opacity:0;transform:translate(30px,-84px) rotate(-200deg) scale(1)}}
+@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.5)}50%{opacity:1;transform:scale(1)}}
+@keyframes outR{to{transform:translateX(880px)}}
+@keyframes outUp{to{transform:translateY(-130px);opacity:0}}
+@keyframes outFade{to{opacity:0}}
+@media (prefers-reduced-motion:reduce){.drive,.wob,.sq,.whl,.wv,.puf,.dust,.shdw,.spd,.honk,.beep,.bdrop,.d1,.d2,.d3,.d4,.clear,.tw{animation:none}}
+  ]]></style>
+  <rect x="60" y="100" width="70" height="5" rx="2.5" class="spd" fill="#F9A8D4"/>
+  <rect x="40" y="128" width="60" height="5" rx="2.5" class="spd spd2" fill="#F9A8D4"/>
+  <rect x="0" y="176" width="760" height="2.5" fill="#BE185D" opacity=".18" class="clear"/>
+  <ellipse class="shdw" cx="378" cy="179" rx="95" ry="8" fill="#9D174D" opacity=".25"/>
+  <g transform="translate(288 22)"><g class="drive"><g class="sq"><g class="wob">
+    <circle class="puf" cx="6" cy="128" r="5" fill="#E8D5DD"/>
+    <circle class="puf puf2" cx="4" cy="130" r="6" fill="#E8D5DD"/>
+    <circle class="puf puf3" cx="8" cy="126" r="4.5" fill="#F0E0E8"/>
+    <circle class="dust" cx="62" cy="152" r="5" fill="#E8D5DD" style="animation-delay:.3s"/>
+    <circle class="dust" cx="90" cy="152" r="4" fill="#E8D5DD" style="animation-delay:.8s"/>
+    <circle class="dust" cx="40" cy="150" r="5.5" fill="#F0E0E8" style="animation-delay:1.3s"/>
+    <rect x="12" y="128" width="11" height="6" rx="2" fill="#6B7280"/>
+    <path d="M26 86 L26 62 Q26 28 86 28 L116 28 Q152 30 162 68 L162 86 Z" fill="url(#l40pcn)" stroke="#D891B4" stroke-width="1.5"/>
+    <path d="M118 32 L146 32 L160 74 L118 74 Z" fill="#BFE3FF" opacity=".55" stroke="#8A97A8" stroke-width="2"/>
+    <path d="M22 86 L164 86 Q170 86 170 96 L170 128 Q170 140 156 140 L34 140 Q22 140 22 128 Z" fill="url(#l40pbd)"/>
+    <rect x="27" y="84.5" width="133" height="2.5" fill="#F0B9A0"/>
+    <rect x="58" y="92" width="72" height="40" rx="7" fill="none" stroke="#9D174D" stroke-width="2"/>
+    <rect x="118" y="98" width="7" height="3" rx="1.5" fill="#9D174D"/>
+    <rect x="64" y="58" width="26" height="30" rx="9" fill="#FFF0F6"/>
+    <path d="M66.5 40 Q56 44 58.5 59 Q60 66 66.5 63 Q61.5 55 68.5 47 Z" fill="#2A1E17"/>
+    <circle cx="76" cy="47" r="10.5" fill="#F2C79B"/>
+    <path d="M66 45 Q68 34 76 34 Q85 34 86 45 Q84 38 76 37.5 Q68 38 66 45 Z" fill="#2A1E17"/>
+    <circle cx="69.5" cy="36" r="1.6" fill="#F472B6"/><circle cx="71.8" cy="34.8" r="1.2" fill="#FBCFE8"/>
+    <circle cx="80.5" cy="46" r="1.5" fill="#2A1E17"/>
+    <path d="M82 44.5 L83.6 43.4" stroke="#2A1E17" stroke-width="1" stroke-linecap="round"/>
+    <circle cx="84.2" cy="41.6" r=".9" fill="#E11D48"/>
+    <path d="M78.4 51.6 Q80.2 53.2 82 51.6" stroke="#D6336C" stroke-width="1.7" fill="none" stroke-linecap="round"/>
+    <circle cx="66.8" cy="47.5" r="1.1" fill="#FFD34D"/><line x1="66.8" y1="48.6" x2="66.8" y2="51" stroke="#FFD34D" stroke-width="1"/><circle cx="66.8" cy="52" r="1.3" fill="#FFD34D"/>
+    <g class="wv"><path d="M63 66 Q50 58 46 40" stroke="#FFF0F6" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="46" cy="37" r="4.2" fill="#F2C79B"/></g>
+    <circle cx="150" cy="86" r="3" fill="#F472B6"/><circle cx="154.5" cy="95" r="3" fill="#FBCFE8"/><circle cx="158" cy="104" r="3" fill="#F472B6"/><circle cx="159.5" cy="113" r="3" fill="#FFF"/><circle cx="159" cy="121" r="3" fill="#F472B6"/>
+    <circle cx="163" cy="102" r="7" fill="#FFE9A8" stroke="#D891B4" stroke-width="1.5"/><circle cx="161.5" cy="100.5" r="2.5" fill="#FFF"/>
+    <rect x="161" y="124" width="13" height="9" rx="3" fill="#C3CAD4"/>
+    <circle cx="52" cy="135" r="23" fill="#4A0A22"/><circle cx="140" cy="138" r="19" fill="#4A0A22"/>
+    <g transform="translate(52 135)"><circle r="20" fill="#20242B"/><circle r="13" fill="#39404B"/><g class="whl"><path d="M0 -12 L0 12 M-12 0 L12 0 M-8.5 -8.5 L8.5 8.5 M-8.5 8.5 L8.5 -8.5" stroke="#C3CAD4" stroke-width="3.5" stroke-linecap="round"/></g><circle r="4" fill="#E2E7EE"/></g>
+    <g transform="translate(140 138)"><circle r="17" fill="#20242B"/><circle r="10.5" fill="#39404B"/><g class="whl"><path d="M0 -9.5 L0 9.5 M-9.5 0 L9.5 0 M-6.7 -6.7 L6.7 6.7 M-6.7 6.7 L6.7 -6.7" stroke="#C3CAD4" stroke-width="3" stroke-linecap="round"/></g><circle r="3.4" fill="#E2E7EE"/></g>
+    <path d="M29 135 A23 23 0 0 1 75 135" fill="none" stroke="#9D174D" stroke-width="6"/>
+    <path d="M120 138 A20 20 0 0 1 160 138" fill="none" stroke="#9D174D" stroke-width="5.5"/>
+  </g></g></g></g>
+  <g class="honk" transform="translate(462 118)" fill="none" stroke="#FBCFE8" stroke-width="2.5" stroke-linecap="round">
+    <path d="M0 -7 A7 7 0 0 1 0 7"/><path d="M4 -12 A12 12 0 0 1 4 12"/><path d="M8 -17 A17 17 0 0 1 8 17"/>
+  </g>
+  <text class="beep" transform="translate(474 90) rotate(-5)" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#F9A8D4">BEEP! BEEP!</text>
+  <g transform="translate(375 122)">
+    <use href="#l40pht" class="d1" fill="#F472B6"/>
+    <use href="#l40pht" class="d2" fill="#FBCFE8"/>
+    <use href="#l40pht" class="d3" fill="#F472B6"/>
+    <use href="#l40pht" class="d4" fill="#FFF"/>
+  </g>
+  <g class="bdrop">
+    <path d="M218 16 L248 16 L248 52 L218 52 L232 34 Z" fill="#9D174D"/>
+    <path d="M542 16 L512 16 L512 52 L542 52 L528 34 Z" fill="#9D174D"/>
+    <rect x="248" y="8" width="264" height="42" rx="8" fill="url(#l40prb)" stroke="#F9A8D4" stroke-width="1.4"/>
+    <text x="380" y="36" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="800" letter-spacing="2" fill="#FFFFFF">PERFORMER JOINED</text>
+  </g>
+  <g class="clear">
+    <use href="#l40ptw" x="120" y="60" class="tw" fill="#FBCFE8"/>
+    <use href="#l40ptw" x="640" y="58" class="tw tw2" fill="#FBCFE8"/>
+    <use href="#l40ptw" x="90" y="150" class="tw tw3" fill="#F9A8D4"/>
+    <use href="#l40ptw" x="670" y="148" class="tw tw4" fill="#F9A8D4"/>
+  </g>
+</svg>

@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+<title>Stellar Rocket — Gappey gift cinematic</title>
+<style>
+*{transform-box:fill-box}
+.all{animation:allOutA .7s ease 5.7s both}
+@keyframes allOutA{to{opacity:0}}
+.scIn{animation:scInA .3s ease both}
+@keyframes scInA{from{opacity:0}to{opacity:1}}
+.shk1{animation:s1A .55s ease .88s both}
+@keyframes s1A{0%,100%{transform:none}15%{transform:translate(5px,-4px)}35%{transform:translate(-6px,4px)}55%{transform:translate(5px,3px)}75%{transform:translate(-4px,-3px)}}
+.shk2{animation:s2A .4s ease 3.6s both}
+@keyframes s2A{0%,100%{transform:none}20%{transform:translate(-8px,6px)}40%{transform:translate(8px,-7px)}60%{transform:translate(-6px,5px)}80%{transform:translate(5px,-4px)}}
+.tw{animation:twA 2.3s ease-in-out var(--d,0s) infinite alternate}
+@keyframes twA{from{opacity:.15}to{opacity:.85}}
+.drift{animation:drA var(--dd,11s) ease-in-out var(--d,0s) infinite alternate}
+@keyframes drA{from{transform:translateX(-24px)}to{transform:translateX(24px)}}
+.blink{animation:blA 1s ease-in-out infinite}
+@keyframes blA{0%,100%{opacity:.2}50%{opacity:1}}
+.dpop{opacity:0;animation:dpA .45s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes dpA{0%{opacity:0;transform:scale(.2)}60%{opacity:1;transform:scale(1.3)}100%{opacity:1;transform:scale(1)}}
+.padGlow{animation:pgA 1.4s ease .85s both}
+@keyframes pgA{0%{opacity:.15}30%{opacity:.85}100%{opacity:.55}}
+.ignF{transform-origin:center;opacity:0;animation:igA .5s ease-out .92s both}
+@keyframes igA{0%{transform:scale(.3);opacity:0}20%{opacity:.95}100%{transform:scale(2.4);opacity:0}}
+.ign{animation:ignOn .15s linear .88s both}
+@keyframes ignOn{from{opacity:0}to{opacity:1}}
+.puff{opacity:0;animation:pfA 1.8s ease-out var(--dl,0s) both}
+@keyframes pfA{0%{transform:scale(calc(var(--sc,2)*.25));opacity:0}12%{opacity:var(--op,.5)}100%{transform:translate(var(--dx,0px),-100px) scale(var(--sc,2));opacity:0}}
+.van{animation:vanA .07s linear 3.6s both}
+@keyframes vanA{to{opacity:0}}
+.fl{transform-origin:50% 0;animation:flA var(--fd,.16s) ease-in-out infinite alternate}
+@keyframes flA{from{transform:scaleY(.78)}to{transform:scaleY(1.28)}}
+.em{animation:emA var(--ed,.5s) linear var(--el,0s) infinite}
+@keyframes emA{0%{transform:translateY(0);opacity:.9}100%{transform:translateY(85px);opacity:0}}
+.flash{transform-origin:center;opacity:0;animation:fxA .75s ease-out 3.6s both}
+@keyframes fxA{0%{transform:scale(.2);opacity:0}15%{opacity:.95}100%{transform:scale(2.7);opacity:0}}
+.ring{transform-origin:center;opacity:0;animation:riA 1s cubic-bezier(.15,.6,.3,1) 3.62s both}
+@keyframes riA{0%{transform:scale(.15);opacity:0}12%{opacity:.9}100%{transform:scale(3.3);opacity:0}}
+.spark{opacity:0;animation:spA .95s cubic-bezier(.1,.7,.3,1) 3.64s both}
+@keyframes spA{0%{transform:translate(0,0);opacity:0}10%{opacity:1}100%{transform:translate(var(--tx),var(--ty));opacity:0}}
+.starP{transform-origin:center;opacity:0;animation:stA .9s ease-out both}
+@keyframes stA{0%{transform:scale(0) rotate(-60deg);opacity:0}35%{opacity:1}100%{transform:scale(1.3) rotate(40deg);opacity:0}}
+.shoot{stroke-dasharray:1;stroke-dashoffset:1;opacity:0;animation:shA 1s ease-out 2.3s both}
+@keyframes shA{0%{stroke-dashoffset:1;opacity:0}12%{opacity:.9}55%{stroke-dashoffset:0;opacity:.9}100%{stroke-dashoffset:0;opacity:0}}
+.rise{animation:ri2A .6s cubic-bezier(.2,.8,.25,1) both}
+@keyframes ri2A{from{opacity:0;transform:translateY(48px)}to{opacity:1;transform:none}}
+.orn{animation:faA .5s ease both}
+@keyframes faA{from{opacity:0}}
+.sub{animation:suA .6s ease both}
+@keyframes suA{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.drw{stroke-dasharray:1;stroke-dashoffset:1;animation:dr2A .55s ease both}
+@keyframes dr2A{to{stroke-dashoffset:0}}
+.sweep{animation:swA .95s ease-in-out 4.85s both}
+@keyframes swA{from{transform:translateX(-560px)}to{transform:translateX(1160px)}}
+</style>
+<defs>
+<radialGradient id="skyG" cx=".5" cy=".38" r=".8"><stop offset="0" stop-color="#1d1530"/><stop offset="1" stop-color="#0d0a16"/></radialGradient>
+<radialGradient id="vig" cx=".5" cy=".45" r=".75"><stop offset=".62" stop-color="#05030a" stop-opacity="0"/><stop offset="1" stop-color="#05030a" stop-opacity=".6"/></radialGradient>
+<radialGradient id="moG"><stop offset="0" stop-color="#f2e6c8" stop-opacity=".35"/><stop offset="1" stop-color="#f2e6c8" stop-opacity="0"/></radialGradient>
+<radialGradient id="pGlow"><stop offset="0" stop-color="#ffb45a" stop-opacity=".8"/><stop offset="1" stop-color="#ffb45a" stop-opacity="0"/></radialGradient>
+<radialGradient id="rgGlow"><stop offset="0" stop-color="#ffb45a" stop-opacity=".55"/><stop offset="1" stop-color="#ffb45a" stop-opacity="0"/></radialGradient>
+<radialGradient id="fG"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="#ffe2a6" stop-opacity=".85"/><stop offset="1" stop-color="#ffd98c" stop-opacity="0"/></radialGradient>
+<linearGradient id="fO" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a8"/><stop offset=".55" stop-color="#ff9d45"/><stop offset="1" stop-color="#ff5722" stop-opacity=".05"/></linearGradient>
+<linearGradient id="fM" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3cf"/><stop offset="1" stop-color="#ffb347" stop-opacity=".2"/></linearGradient>
+<linearGradient id="noseG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff7a52"/><stop offset="1" stop-color="#c03a2e"/></linearGradient>
+<linearGradient id="finG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e85540"/><stop offset="1" stop-color="#a52d20"/></linearGradient>
+<linearGradient id="gt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f9eec6"/><stop offset=".45" stop-color="#e6bd62"/><stop offset="1" stop-color="#a67c22"/></linearGradient>
+<linearGradient id="swG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff4d2" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<filter id="b9" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="9"/></filter>
+<mask id="moM" maskUnits="userSpaceOnUse" x="770" y="140" width="220" height="220">
+<rect x="770" y="140" width="220" height="220" fill="#fff"/><circle cx="858" cy="230" r="52" fill="#000"/>
+</mask>
+<mask id="swM" maskUnits="userSpaceOnUse" x="0" y="0" width="1080" height="1920">
+<text x="540" y="1268" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-weight="bold" font-size="116" letter-spacing="16" fill="#fff">STELLAR</text>
+<text x="540" y="1386" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-weight="bold" font-size="116" letter-spacing="34" fill="#fff">ROCKET</text>
+</mask>
+<circle id="pf" r="16"/>
+<circle id="twS" r="2" fill="#efe3c2"/>
+<path id="s4" d="M0,-9 Q1.4,-1.4 9,0 Q1.4,1.4 0,9 Q-1.4,1.4 -9,0 Q-1.4,-1.4 0,-9 Z"/>
+<path id="s4b" d="M0,-14 Q2.2,-2.2 14,0 Q2.2,2.2 0,14 Q-2.2,2.2 -14,0 Q-2.2,-2.2 0,-14 Z"/>
+</defs>
+
+<g class="all"><g class="scIn">
+
+<rect width="1080" height="1920" fill="url(#skyG)"/>
+<use href="#twS" x="140" y="300" class="tw" style="--d:-.4s"/><use href="#twS" x="300" y="180" class="tw" style="--d:-1.2s"/>
+<use href="#twS" x="520" y="120" class="tw" style="--d:-2s"/><use href="#twS" x="700" y="420" class="tw" style="--d:-.8s"/>
+<use href="#twS" x="980" y="540" class="tw" style="--d:-1.6s"/><use href="#twS" x="180" y="760" class="tw" style="--d:-.2s"/>
+<use href="#twS" x="920" y="900" class="tw" style="--d:-2.2s"/><use href="#twS" x="120" y="1040" class="tw" style="--d:-1s"/>
+<use href="#twS" x="240" y="1560" class="tw" style="--d:-1.9s"/><use href="#twS" x="860" y="1480" class="tw" style="--d:-.6s"/>
+<use href="#twS" x="1000" y="1660" class="tw" style="--d:-1.4s"/><use href="#twS" x="70" y="1300" class="tw" style="--d:-2.4s"/>
+<use href="#s4" x="200" y="1240" class="tw" style="--d:-.9s" fill="#ffe9a8"/>
+<use href="#s4" x="880" y="1300" class="tw" style="--d:-1.7s" fill="#ffe9a8"/>
+<path class="shoot" d="M170,430 L420,305" pathLength="1" stroke="#fff3d0" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="880" cy="250" r="95" fill="url(#moG)"/>
+<circle cx="880" cy="250" r="60" fill="#f2e6c8" mask="url(#moM)"/>
+<g transform="translate(180,900)"><g class="drift" filter="url(#b9)">
+<ellipse cx="0" cy="0" rx="110" ry="26" fill="#cdbfd8" opacity=".06"/><ellipse cx="90" cy="12" rx="90" ry="22" fill="#cdbfd8" opacity=".05"/>
+</g></g>
+<g transform="translate(760,640)"><g class="drift" style="--dd:14s;--d:-3s" filter="url(#b9)">
+<ellipse cx="0" cy="0" rx="120" ry="28" fill="#cdbfd8" opacity=".05"/><ellipse cx="-80" cy="14" rx="80" ry="20" fill="#cdbfd8" opacity=".045"/>
+</g></g>
+
+<g class="shk1"><g class="shk2">
+<rect y="1836" width="1080" height="84" fill="#08050f"/>
+<ellipse class="padGlow" cx="540" cy="1856" rx="150" ry="20" fill="url(#pGlow)" filter="url(#b9)"/>
+<ellipse class="padGlow" style="animation-delay:.95s" cx="540" cy="1850" rx="64" ry="10" fill="url(#pGlow)"/>
+<path d="M330,1560 V1898 M300,1620 V1898 M300,1660 L330,1690 M330,1660 L300,1690 M300,1740 L330,1770 M330,1740 L300,1770" stroke="#241c30" stroke-width="7" stroke-linecap="round" fill="none"/>
+<circle cx="315" cy="1552" r="5" fill="#ff5a4a" class="blink"/>
+<g transform="rotate(45 470 1880)"><rect class="dpop" style="animation-delay:.35s" x="462" y="1872" width="16" height="16" fill="#e8c15a"/></g>
+<g transform="rotate(45 540 1884)"><rect class="dpop" style="animation-delay:.55s" x="532" y="1876" width="16" height="16" fill="#e8c15a"/></g>
+<g transform="rotate(45 610 1880)"><rect class="dpop" style="animation-delay:.75s" x="602" y="1872" width="16" height="16" fill="#e8c15a"/></g>
+<rect x="440" y="1844" width="200" height="16" rx="5" fill="#221a2e" stroke="#332845"/>
+<path d="M462,1860 V1898 M618,1860 V1898" stroke="#221a2e" stroke-width="10" stroke-linecap="round"/>
+<circle class="ignF" cx="540" cy="1846" r="26" fill="#fff"/>
+
+<use href="#pf" x="470" y="1850" class="puff" fill="#cfc6bd" style="--dl:.95s;--dx:-90px;--sc:2.6;--op:.55" filter="url(#b9)"/>
+<use href="#pf" x="585" y="1852" class="puff" fill="#cfc6bd" style="--dl:1.05s;--dx:90px;--sc:2.8;--op:.55" filter="url(#b9)"/>
+<use href="#pf" x="505" y="1860" class="puff" fill="#cfc6bd" style="--dl:1.2s;--dx:-60px;--sc:3.2;--op:.5" filter="url(#b9)"/>
+<use href="#pf" x="560" y="1858" class="puff" fill="#cfc6bd" style="--dl:1.35s;--dx:70px;--sc:3;--op:.5" filter="url(#b9)"/>
+<use href="#pf" x="460" y="1856" class="puff" fill="#cfc6bd" style="--dl:1.55s;--dx:-110px;--sc:3.4;--op:.45" filter="url(#b9)"/>
+<use href="#pf" x="620" y="1854" class="puff" fill="#cfc6bd" style="--dl:1.7s;--dx:110px;--sc:3.2;--op:.45" filter="url(#b9)"/>
+
+<use href="#pf" x="514" y="1491" class="puff" fill="#bdb4ac" style="--dl:2.2s;--dx:40px;--sc:1.6;--op:.4" filter="url(#b9)"/>
+<use href="#pf" x="497" y="1286" class="puff" fill="#bdb4ac" style="--dl:2.5s;--dx:-30px;--sc:1.8;--op:.4" filter="url(#b9)"/>
+<use href="#pf" x="490" y="1086" class="puff" fill="#bdb4ac" style="--dl:2.75s;--dx:35px;--sc:2;--op:.4" filter="url(#b9)"/>
+<use href="#pf" x="494" y="886" class="puff" fill="#bdb4ac" style="--dl:3s;--dx:-35px;--sc:2.1;--op:.4" filter="url(#b9)"/>
+<use href="#pf" x="530" y="650" class="puff" fill="#bdb4ac" style="--dl:3.26s;--dx:30px;--sc:2.2;--op:.38" filter="url(#b9)"/>
+<use href="#pf" x="589" y="488" class="puff" fill="#bdb4ac" style="--dl:3.5s;--dx:30px;--sc:2.4;--op:.35" filter="url(#b9)"/>
+
+<g transform="translate(540,1754)">
+<animateMotion dur="2.6s" begin="1s" fill="freeze" calcMode="spline"
+ keyPoints="0;0.05;0.32;1" keyTimes="0;0.3;0.55;1"
+ keySplines="0.42 0 0.58 1;0.35 0 0.5 1;0.2 0 0.4 1"
+ path="M0,0 C-30,-300 -70,-640 -40,-940 C-20,-1140 40,-1240 80,-1330"/>
+<g class="van"><g transform="scale(1.35)">
+<ellipse cx="0" cy="-10" rx="64" ry="150" fill="url(#rgGlow)" opacity=".55"/>
+<g class="ign">
+<path class="fl" style="--fd:.17s" d="M-24,68 C-28,120 -16,175 0,235 C16,175 28,120 24,68 Z" fill="url(#fO)"/>
+<path class="fl" style="--fd:.12s" d="M-15,68 C-17,105 -9,140 0,172 C9,140 17,105 15,68 Z" fill="url(#fM)"/>
+<path class="fl" style="--fd:.22s" d="M-8,68 C-9,92 -4,112 0,128 C4,112 9,92 8,68 Z" fill="#fff6df"/>
+<circle class="em" style="--ed:.5s;--el:-.1s" cx="-6" cy="84" r="3.4" fill="#ffd98c"/>
+<circle class="em" style="--ed:.55s;--el:-.3s" cx="7" cy="96" r="3.8" fill="#ff9d45"/>
+<circle class="em" style="--ed:.48s;--el:-.2s" cx="-3" cy="110" r="3" fill="#ffe9a8"/>
+<circle class="em" style="--ed:.6s;--el:-.42s" cx="5" cy="124" r="4" fill="#ff9d45"/>
+<circle class="em" style="--ed:.52s;--el:-.05s" cx="-8" cy="138" r="3.2" fill="#ffd98c"/>
+</g>
+<path d="M-33,-10 L-80,30 L-80,52 L-33,40 Z" fill="url(#finG)" stroke="#8f2318" stroke-width="2" stroke-linejoin="round"/>
+<path d="M33,-10 L80,30 L80,52 L33,40 Z" fill="url(#finG)" stroke="#8f2318" stroke-width="2" stroke-linejoin="round"/>
+<path d="M-33,-44 L-33,42 C-33,52 -27,56 -19,56 L19,56 C27,56 33,52 33,42 L33,-44 Z" fill="#f4eddd" stroke="#b8a888" stroke-width="1.5"/>
+<path d="M-33,-44 L-33,42 C-33,52 -27,56 -19,56 L-8,56 L-8,-44 Z" fill="#d8ccb2" opacity=".85"/>
+<rect x="-33" y="-20" width="66" height="9" fill="#e8503a"/>
+<rect x="-33" y="-4" width="66" height="4" fill="#e8503a" opacity=".6"/>
+<path d="M0,-95 C19,-80 29,-64 33,-44 L-33,-44 C-29,-64 -19,-80 0,-95 Z" fill="url(#noseG)" stroke="#8f2318" stroke-width="1.5"/>
+<circle cx="0" cy="-68" r="12" fill="#16222e" stroke="#e8c15a" stroke-width="5"/>
+<circle cx="-4" cy="-72" r="3.5" fill="#cfe3ea" opacity=".8"/>
+<path d="M-19,56 L19,56 L24,68 L-24,68 Z" fill="#4a3f33"/>
+</g></g>
+</g>
+
+<g transform="translate(620,424)">
+<circle class="flash" r="85" fill="url(#fG)"/>
+<circle class="ring" r="64" fill="none" stroke="#ffd98c" stroke-width="5"/>
+<circle class="ring" style="animation-delay:3.76s" r="64" fill="none" stroke="#ff9d45" stroke-width="2.5"/>
+<circle class="spark" cx="0" cy="0" r="4.5" fill="#ffdf9e" style="--tx:300px;--ty:-40px"/>
+<circle class="spark" cx="0" cy="0" r="4" fill="#ff9d45" style="--tx:260px;--ty:-140px;animation-delay:3.66s"/>
+<circle class="spark" cx="0" cy="0" r="5" fill="#ffe9a8" style="--tx:150px;--ty:-230px;animation-delay:3.68s"/>
+<circle class="spark" cx="0" cy="0" r="3.6" fill="#ffdf9e" style="--tx:20px;--ty:-280px;animation-delay:3.65s"/>
+<circle class="spark" cx="0" cy="0" r="4.4" fill="#ff9d45" style="--tx:-120px;--ty:-250px;animation-delay:3.7s"/>
+<circle class="spark" cx="0" cy="0" r="4" fill="#ffe9a8" style="--tx:-230px;--ty:-160px;animation-delay:3.67s"/>
+<circle class="spark" cx="0" cy="0" r="4.8" fill="#ffdf9e" style="--tx:-280px;--ty:-40px;animation-delay:3.69s"/>
+<circle class="spark" cx="0" cy="0" r="3.8" fill="#ff9d45" style="--tx:-250px;--ty:90px;animation-delay:3.72s"/>
+<circle class="spark" cx="0" cy="0" r="4.2" fill="#ffe9a8" style="--tx:-150px;--ty:200px;animation-delay:3.66s"/>
+<circle class="spark" cx="0" cy="0" r="4" fill="#ffdf9e" style="--tx:-20px;--ty:260px;animation-delay:3.71s"/>
+<circle class="spark" cx="0" cy="0" r="4.6" fill="#ff9d45" style="--tx:120px;--ty:240px;animation-delay:3.73s"/>
+<circle class="spark" cx="0" cy="0" r="3.6" fill="#ffe9a8" style="--tx:230px;--ty:140px;animation-delay:3.68s"/>
+<circle class="spark" cx="0" cy="0" r="4.4" fill="#ffdf9e" style="--tx:280px;--ty:20px;animation-delay:3.7s"/>
+<circle class="spark" cx="0" cy="0" r="3.8" fill="#ff9d45" style="--tx:180px;--ty:-220px;animation-delay:3.74s"/>
+<g transform="translate(96,-64)"><use href="#s4b" class="starP" style="animation-delay:3.72s" fill="#fff6dd"/></g>
+<g transform="translate(-84,-92)"><use href="#s4" class="starP" style="animation-delay:3.8s" fill="#fff6dd"/></g>
+<g transform="translate(78,96)"><use href="#s4" class="starP" style="animation-delay:3.88s" fill="#ffe9a8"/></g>
+<g transform="translate(-70,110)"><use href="#s4b" class="starP" style="animation-delay:3.95s" fill="#fff6dd"/></g>
+</g>
+</g></g>
+
+<g>
+<g class="orn" style="animation-delay:3.95s" fill="#e8c15a">
+<path d="M336,1120 H468 M612,1120 H744" stroke="#e8c15a" stroke-width="1.5" opacity=".8"/>
+<rect x="532" y="1112" width="16" height="16" transform="rotate(45 540 1120)"/>
+<circle cx="326" cy="1120" r="3"/><circle cx="754" cy="1120" r="3"/>
+</g>
+<text class="rise" style="animation-delay:4.05s" x="540" y="1268" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-weight="bold" font-size="116" letter-spacing="16" fill="url(#gt)" stroke="#3a2a12" stroke-width="5" paint-order="stroke">STELLAR</text>
+<text class="rise" style="animation-delay:4.2s" x="540" y="1386" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-weight="bold" font-size="116" letter-spacing="34" fill="url(#gt)" stroke="#3a2a12" stroke-width="5" paint-order="stroke">ROCKET</text>
+<g mask="url(#swM)"><g transform="skewX(-12)"><rect class="sweep" x="290" y="1140" width="280" height="290" fill="url(#swG)"/></g></g>
+<path class="drw" style="animation-delay:4.6s" d="M330,1430 H750" pathLength="1" stroke="#e8c15a" stroke-width="3"/>
+<rect class="orn" style="animation-delay:4.85s" x="533" y="1423" width="14" height="14" transform="rotate(45 540 1430)" fill="#e8c15a"/>
+<text class="sub" style="animation-delay:4.35s" x="540" y="1492" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-weight="bold" font-size="25" letter-spacing="9" fill="#b9a06a">TIER I · IGNITE THE SKY</text>
+</g>
+
+<rect width="1080" height="1920" fill="url(#vig)"/>
+</g></g>
+</svg>

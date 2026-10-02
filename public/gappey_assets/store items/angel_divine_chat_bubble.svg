@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="380" height="150" viewBox="0 0 380 150" preserveAspectRatio="none">
+  <title>Angel Divine Chat Bubble</title>
+  <defs>
+    <linearGradient id="bFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#223258"/>
+      <stop offset="1" stop-color="#0e1730"/>
+    </linearGradient>
+    <linearGradient id="bStroke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9b8"/>
+      <stop offset="1" stop-color="#d4a94e"/>
+    </linearGradient>
+    <path id="stS" d="M0 -6 L1.6 -1.6 L6 0 L1.6 1.6 L0 6 L-1.6 1.6 L-6 0 L-1.6 -1.6 Z" fill="#ffd54f"/>
+    <path id="fmF" d="M0 0 C -3 -4 -3 -10 0 -14 C 3 -10 3 -4 0 0 Z"/>
+    <filter id="bSoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+
+  <!-- breathing glow -->
+  <ellipse cx="190" cy="75" rx="172" ry="60" fill="#ffd54f" filter="url(#bSoft)" opacity="0.22">
+    <animate attributeName="opacity" values="0.14;0.34;0.14" dur="2.4s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- box body -->
+  <rect x="10" y="10" width="360" height="130" rx="20" fill="url(#bFill)" stroke="url(#bStroke)" stroke-width="4"/>
+  <line x1="40" y1="24" x2="340" y2="24" stroke="#fff6dd" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- gold comet around the border -->
+  <rect x="10" y="10" width="360" height="130" rx="20" fill="none" stroke="#ffe9b8"
+        stroke-width="2.5" stroke-linecap="round" stroke-dasharray="90 856">
+    <animate attributeName="stroke-dashoffset" from="946" to="0" dur="3.4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- cloud + halo emblem on the top edge -->
+  <g transform="translate(70 44)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 -2;0 2;0 -2" dur="3s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="-15" rx="11" ry="4" fill="none" stroke="#fff3c4" stroke-width="3.4" opacity="0.3">
+        <animate attributeName="opacity" values="0.15;0.45;0.15" dur="2.2s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="0" cy="-15" rx="10" ry="3.6" fill="none" stroke="#ffd54f" stroke-width="2.2"/>
+      <g fill="#f4f8ff" stroke="#c9d8f0" stroke-width="0.8">
+        <ellipse cx="-11" cy="5" rx="9" ry="7"/>
+        <ellipse cx="1" cy="1" rx="11.5" ry="9"/>
+        <ellipse cx="13" cy="6" rx="8" ry="6.5"/>
+        <rect x="-17" y="5" width="35" height="7" rx="3.5"/>
+      </g>
+      <use xlink:href="#stS" transform="translate(22 -8) scale(0.7)">
+        <animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/>
+      </use>
+    </g>
+  </g>
+
+  <!-- corner star accents -->
+  <use xlink:href="#stS" transform="translate(332 28) scale(0.9)">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.2s" repeatCount="indefinite"/>
+  </use>
+  <use xlink:href="#stS" transform="translate(46 122) scale(0.75)">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.6s" begin="-1s" repeatCount="indefinite"/>
+  </use>
+  <use xlink:href="#stS" transform="translate(334 122) scale(0.65)">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.4s" begin="-0.5s" repeatCount="indefinite"/>
+  </use>
+
+  <!-- rising sparkles inside -->
+  <g>
+    <circle cx="95" cy="126" r="2" fill="#ffe9b8" opacity="0">
+      <animate attributeName="cy" values="126;36" dur="2.8s" begin="-1.9s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="95;102;89;95" dur="2.8s" begin="-1.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.85;0" dur="2.8s" begin="-1.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="126" r="2.4" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="126;34" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="150;158;143;150" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="215" cy="126" r="3" fill="#ffd54f" opacity="0">
+      <animate attributeName="cy" values="126;36" dur="2.8s" begin="-0.7s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="215;207;223;215" dur="2.8s" begin="-0.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="2.8s" begin="-0.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="126" r="2" fill="#ffe9b8" opacity="0">
+      <animate attributeName="cy" values="126;38" dur="2.8s" begin="-1.4s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="280;288;273;280" dur="2.8s" begin="-1.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.85;0" dur="2.8s" begin="-1.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="335" cy="126" r="2.6" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="126;36" dur="2.8s" begin="-0.35s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="335;327;341;335" dur="2.8s" begin="-0.35s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.85;0" dur="2.8s" begin="-0.35s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- drifting mini feather inside -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.15;0.8;1" dur="6s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="322 118;296 84;266 42" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
+    <use xlink:href="#fmF" fill="#fff8e1">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3.2s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+</svg>

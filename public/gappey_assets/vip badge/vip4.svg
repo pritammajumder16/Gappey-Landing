@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 26" width="66" height="26">
+<title>VIP 4 Badge</title>
+<defs>
+<linearGradient id="pb4m" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6fafd"/><stop offset=".5" stop-color="#9fb0c2"/><stop offset="1" stop-color="#64748a"/></linearGradient>
+<radialGradient id="pb4in" cx=".5" cy=".35" r="1"><stop offset="0" stop-color="#16202b"/><stop offset="1" stop-color="#0a1017"/></radialGradient>
+<radialGradient id="pb4s" cx=".35" cy=".3" r=".95"><stop offset="0" stop-color="#f0f9ff"/><stop offset=".45" stop-color="#9fd0ff"/><stop offset="1" stop-color="#123f7d"/></radialGradient>
+<clipPath id="pb4c"><rect x="3" y="4" width="60" height="18" rx="9"/></clipPath>
+</defs>
+<rect x="3" y="4" width="60" height="18" rx="9" fill="none" stroke="#bfe9ff" stroke-width="3" opacity=".35">
+<animate attributeName="opacity" values=".25;.5;.25" dur="2.6s" repeatCount="indefinite"/>
+<animate attributeName="stroke" values="#bfe9ff;#ffffff;#bfe9ff" dur="4.5s" repeatCount="indefinite"/>
+</rect>
+<rect x="3" y="4" width="60" height="18" rx="9" fill="url(#pb4m)" stroke="#dfe9f5" stroke-width="1.2"/>
+<rect x="5.2" y="6.2" width="55.6" height="13.6" rx="6.8" fill="url(#pb4in)"/>
+<path d="M13.5 8.8 L15.9 12.1 L13.5 15.4 L11.1 12.1 Z" fill="url(#pb4s)" stroke="#123f7d" stroke-width=".45"/>
+<path d="M13.5 8.8 L15.9 12.1 L13.5 12.1 Z" fill="#fff" opacity=".45"/>
+<circle cx="13.5" cy="12.1" r="6.6" fill="none" stroke="#7fc4ff" stroke-width=".6" stroke-dasharray="2.4 3.4" opacity=".55">
+<animateTransform attributeName="transform" type="rotate" values="0 13.5 12.1;360 13.5 12.1" dur="6s" repeatCount="indefinite"/>
+</circle>
+<g><animateTransform attributeName="transform" type="rotate" values="0 13.5 12.1;360 13.5 12.1" dur="3.4s" repeatCount="indefinite"/>
+<circle cx="20.1" cy="12.1" r=".9" fill="#bfe9ff"/><circle cx="20.1" cy="12.1" r=".4" fill="#fff"/></g>
+<text x="40" y="17.4" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" letter-spacing=".2" fill="#f4f9ff">VIP 4</text>
+<g clip-path="url(#pb4c)">
+<g><animateTransform attributeName="transform" type="translate" values="-50 0;80 0" dur="3.2s" repeatCount="indefinite"/>
+<rect x="30" y="0" width="7" height="26" fill="#ffffff" opacity=".22" transform="skewX(-18)"/></g>
+</g>
+</svg>

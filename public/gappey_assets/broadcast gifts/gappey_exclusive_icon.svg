@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+<defs>
+<linearGradient id="bgG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1231"/><stop offset="1" stop-color="#0f0818"/></linearGradient>
+<radialGradient id="ctrG" cx=".5" cy=".45" r=".6"><stop offset="0" stop-color="#5a3418" stop-opacity=".55"/><stop offset="1" stop-color="#5a3418" stop-opacity="0"/></radialGradient>
+<linearGradient id="gg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a8"/><stop offset="1" stop-color="#c9992e"/></linearGradient>
+<linearGradient id="wt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f9eec6"/><stop offset=".5" stop-color="#e6bd62"/><stop offset="1" stop-color="#b8860b"/></linearGradient>
+</defs>
+<rect width="240" height="240" rx="54" fill="url(#bgG)"/>
+<rect width="240" height="240" rx="54" fill="url(#ctrG)"/>
+<circle cx="120" cy="120" r="100" fill="none" stroke="#e8c15a" stroke-width="2" opacity=".4"/>
+<circle cx="120" cy="120" r="88" fill="none" stroke="#e8c15a" stroke-width="1.5" stroke-dasharray="2 10" opacity=".3"/>
+<g transform="rotate(38 120 120)" opacity=".9">
+<path d="M36,170 C52,146 66,116 74,86" stroke="url(#gg)" stroke-width="3" fill="none"/>
+<path d="M42,158 C52,152 60,142 64,132 M50,136 C60,130 66,122 70,112 M58,116 C66,110 71,102 74,94" stroke="#2ea08a" stroke-width="1.8" fill="none" opacity=".8"/>
+<ellipse cx="76" cy="82" rx="9" ry="13" fill="#0d5c46"/>
+<ellipse cx="76" cy="82" rx="5.5" ry="9" fill="#14418f"/>
+<ellipse cx="76" cy="82" rx="2.6" ry="4.5" fill="#e8b64c"/>
+</g>
+<g transform="translate(120,64)">
+<path d="M-30,12 L-38,-20 L-20,-6 L0,-28 L20,-6 L38,-20 L30,12 Z" fill="url(#gg)" stroke="#8a6a1c" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="-38" cy="-24" r="4" fill="#ffe9a8" stroke="#a8791f"/>
+<circle cx="0" cy="-33" r="5" fill="#ffe9a8" stroke="#a8791f"/>
+<circle cx="38" cy="-24" r="4" fill="#ffe9a8" stroke="#a8791f"/>
+<rect x="-32" y="12" width="64" height="9" rx="4" fill="url(#gg)" stroke="#8a6a1c" stroke-width="1.5"/>
+<circle cx="0" cy="16.5" r="3.2" fill="#c03a2e" stroke="#7a1f18"/>
+</g>
+<text x="120" y="139" text-anchor="middle" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="37" letter-spacing="1.5" fill="url(#wt)" stroke="#4a3410" stroke-width="5" paint-order="stroke">GAPPEY</text>
+<path d="M62,156 H158" stroke="url(#gg)" stroke-width="2.5" stroke-linecap="round"/>
+<g transform="rotate(45 120 156)"><rect x="115.5" y="151.5" width="9" height="9" fill="#e8c15a"/></g>
+<g>
+<path d="M92,176 a14,14 0 0 1 14,-14 h28 a14,14 0 0 1 14,14 v10 a14,14 0 0 1 -14,14 h-18 l-11,11 -3,-11 h-10 a14,14 0 0 1 -14,-14 z" fill="none" stroke="url(#gg)" stroke-width="2.5"/>
+<circle cx="106" cy="180" r="3" fill="#e8c15a"/><circle cx="120" cy="180" r="3" fill="#e8c15a"/><circle cx="134" cy="180" r="3" fill="#e8c15a"/>
+</g>
+<circle cx="72" cy="208" r="5" fill="#f2913c"/><circle cx="120" cy="214" r="6" fill="#f2b93c"/><circle cx="168" cy="208" r="5" fill="#e8543a"/>
+<path d="M0,-9 Q1.4,-1.4 9,0 Q1.4,1.4 0,9 Q-1.4,1.4 -9,0 Q-1.4,-1.4 0,-9 Z" transform="translate(186,60)" fill="#ffe9a8"/>
+<circle cx="52" cy="56" r="2.5" fill="#e8c15a"/>
+</svg>

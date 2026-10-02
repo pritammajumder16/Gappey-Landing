@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="380" height="150" viewBox="0 0 380 150" preserveAspectRatio="none">
+  <title>Jungle King Chat Bubble</title>
+  <defs>
+    <linearGradient id="bFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22300f"/>
+      <stop offset="1" stop-color="#0c1206"/>
+    </linearGradient>
+    <linearGradient id="bStroke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb300"/>
+      <stop offset="1" stop-color="#e65100"/>
+    </linearGradient>
+    <g id="pawS">
+      <path d="M0 2 C -5.5 2 -8 5.5 -8 8.5 C -8 11.5 -5.5 13.5 -2.5 13.5 L 2.5 13.5 C 5.5 13.5 8 11.5 8 8.5 C 8 5.5 5.5 2 0 2 Z"/>
+      <ellipse cx="-8.5" cy="-2.5" rx="3" ry="3.8"/>
+      <ellipse cx="-3" cy="-5.5" rx="3" ry="3.8"/>
+      <ellipse cx="3" cy="-5.5" rx="3" ry="3.8"/>
+      <ellipse cx="8.5" cy="-2.5" rx="3" ry="3.8"/>
+    </g>
+    <filter id="bSoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+
+  <!-- breathing glow -->
+  <ellipse cx="190" cy="75" rx="172" ry="60" fill="#ff9100" filter="url(#bSoft)" opacity="0.24">
+    <animate attributeName="opacity" values="0.15;0.36;0.15" dur="2.2s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- box body -->
+  <rect x="10" y="10" width="360" height="130" rx="20" fill="url(#bFill)" stroke="url(#bStroke)" stroke-width="4"/>
+  <line x1="40" y1="24" x2="340" y2="24" stroke="#ffe9b8" stroke-width="2" stroke-linecap="round" opacity="0.28"/>
+
+  <!-- amber comet around the border -->
+  <rect x="10" y="10" width="360" height="130" rx="20" fill="none" stroke="#ffe082"
+        stroke-width="2.5" stroke-linecap="round" stroke-dasharray="90 856">
+    <animate attributeName="stroke-dashoffset" from="946" to="0" dur="3.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- paw emblem on the top edge -->
+  <g transform="translate(70 46)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-3 0 6;3 0 6;-3 0 6" dur="3s" repeatCount="indefinite"/>
+      <use xlink:href="#pawS" transform="scale(1.6)" fill="#ffb300" stroke="#5d3a00" stroke-width="0.8"/>
+    </g>
+  </g>
+  <g stroke="#ffca28" stroke-width="2.5" stroke-linecap="round" opacity="0.8" transform="translate(102 34)">
+    <line x1="-6" y1="4" x2="6" y2="0"/>
+    <line x1="-7" y1="10" x2="7" y2="6"/>
+  </g>
+
+  <!-- corner mini paws -->
+  <use xlink:href="#pawS" transform="translate(332 28) scale(0.9) rotate(-15)" fill="#ffca28">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.2s" repeatCount="indefinite"/>
+  </use>
+  <use xlink:href="#pawS" transform="translate(46 122) scale(0.75) rotate(12)" fill="#d4e157">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.6s" begin="-1s" repeatCount="indefinite"/>
+  </use>
+  <use xlink:href="#pawS" transform="translate(334 122) scale(0.65) rotate(-8)" fill="#ffca28">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.4s" begin="-0.5s" repeatCount="indefinite"/>
+  </use>
+
+  <!-- rising fireflies inside -->
+  <g>
+    <circle cx="95" cy="126" r="2" fill="#eaff8f" opacity="0">
+      <animate attributeName="cy" values="126;36" dur="2.8s" begin="-1.9s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="95;102;89;95" dur="2.8s" begin="-1.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.85;0" dur="2.8s" begin="-1.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="126" r="2.4" fill="#d4e157" opacity="0">
+      <animate attributeName="cy" values="126;34" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="150;158;143;150" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="215" cy="126" r="3" fill="#ffca28" opacity="0">
+      <animate attributeName="cy" values="126;36" dur="2.8s" begin="-0.7s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="215;207;223;215" dur="2.8s" begin="-0.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="2.8s" begin="-0.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="126" r="2" fill="#eaff8f" opacity="0">
+      <animate attributeName="cy" values="126;38" dur="2.8s" begin="-1.4s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="280;288;273;280" dur="2.8s" begin="-1.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.85;0" dur="2.8s" begin="-1.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="335" cy="126" r="2.6" fill="#d4e157" opacity="0">
+      <animate attributeName="cy" values="126;36" dur="2.8s" begin="-0.35s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="335;327;341;335" dur="2.8s" begin="-0.35s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.85;0" dur="2.8s" begin="-0.35s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

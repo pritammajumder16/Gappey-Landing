@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="380" height="150" viewBox="0 0 380 150" preserveAspectRatio="none">
+  <title>Rose Rush Chat Bubble</title>
+  <defs>
+    <linearGradient id="bFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#42091f"/>
+      <stop offset="1" stop-color="#1d0410"/>
+    </linearGradient>
+    <linearGradient id="bStroke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff8aaf"/>
+      <stop offset="1" stop-color="#d81b60"/>
+    </linearGradient>
+    <linearGradient id="lockGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe082"/>
+      <stop offset="1" stop-color="#ff8f00"/>
+    </linearGradient>
+    <path id="hb" d="M0 4.5 C -4 1 -8 -2 -8 -6 C -8 -9.5 -4.8 -11 -2.2 -9.6 C -1 -9 -0.4 -8 0 -7 C 0.4 -8 1 -9 2.2 -9.6 C 4.8 -11 8 -9.5 8 -6 C 8 -2 4 1 0 4.5 Z"/>
+    <filter id="bSoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+
+  <!-- breathing glow -->
+  <ellipse cx="190" cy="75" rx="172" ry="60" fill="#ff4081" filter="url(#bSoft)" opacity="0.25">
+    <animate attributeName="opacity" values="0.16;0.38;0.16" dur="2.4s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- box body -->
+  <rect x="10" y="10" width="360" height="130" rx="20" fill="url(#bFill)" stroke="url(#bStroke)" stroke-width="4"/>
+  <line x1="40" y1="24" x2="340" y2="24" stroke="#ffd1e0" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- rose comet around the border -->
+  <rect x="10" y="10" width="360" height="130" rx="20" fill="none" stroke="#ffd1e0"
+        stroke-width="2.5" stroke-linecap="round" stroke-dasharray="90 856">
+    <animate attributeName="stroke-dashoffset" from="946" to="0" dur="3.4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- swaying heart-lock emblem on the top edge -->
+  <g transform="translate(70 34)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-4 0 4;4 0 4;-4 0 4" dur="3.4s" repeatCount="indefinite"/>
+      <path d="M-6.5 -14 L-6.5 -20 A 6.5 6.5 0 0 1 6.5 -20 L6.5 -14" fill="none" stroke="url(#lockGold)" stroke-width="3.5" stroke-linecap="round"/>
+      <use xlink:href="#hb" transform="scale(1.7)" fill="url(#lockGold)" stroke="#8a4a00" stroke-width="0.6"/>
+      <circle cx="0" cy="-4" r="3" fill="#4a0d14"/>
+      <path d="M-2.2 -2 L2.2 -2 L3.6 6 L-3.6 6 Z" fill="#4a0d14"/>
+    </g>
+  </g>
+
+  <!-- corner heart accents -->
+  <use xlink:href="#hb" transform="translate(332 28) scale(0.8)" fill="url(#lockGold)">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.2s" repeatCount="indefinite"/>
+  </use>
+  <use xlink:href="#hb" transform="translate(42 120) scale(0.7)" fill="#f8a5c8">
+    <animate attributeName="opacity" values="0.4;0.9;0.4" dur="2.6s" begin="-1s" repeatCount="indefinite"/>
+  </use>
+
+  <!-- rising hearts inside -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0.85;0" dur="3s" begin="0s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="90 124;104 76;88 34" keyTimes="0;0.5;1" dur="3s" begin="0s" repeatCount="indefinite"/>
+    <use xlink:href="#hb" fill="#ff5c8d" transform="scale(0.9)">
+      <animateTransform attributeName="transform" type="rotate" values="-14;14;-14" dur="1.8s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0.85;0" dur="3s" begin="-0.6s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="150 124;138 74;156 34" keyTimes="0;0.5;1" dur="3s" begin="-0.6s" repeatCount="indefinite"/>
+    <use xlink:href="#hb" fill="#f8a5c8" transform="scale(1.1)">
+      <animateTransform attributeName="transform" type="rotate" values="12;-12;12" dur="2.1s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0.85;0" dur="3s" begin="-1.2s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="215 124;228 78;212 34" keyTimes="0;0.5;1" dur="3s" begin="-1.2s" repeatCount="indefinite"/>
+    <use xlink:href="#hb" fill="#ffd1e0" transform="scale(0.8)">
+      <animateTransform attributeName="transform" type="rotate" values="-12;12;-12" dur="1.6s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0.85;0" dur="3s" begin="-1.8s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="280 124;268 76;286 34" keyTimes="0;0.5;1" dur="3s" begin="-1.8s" repeatCount="indefinite"/>
+    <use xlink:href="#hb" fill="#ff5c8d" transform="scale(1)">
+      <animateTransform attributeName="transform" type="rotate" values="14;-14;14" dur="2s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0.85;0" dur="3s" begin="-2.4s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="330 124;318 80;336 36" keyTimes="0;0.5;1" dur="3s" begin="-2.4s" repeatCount="indefinite"/>
+    <use xlink:href="#hb" fill="#f8a5c8" transform="scale(0.85)">
+      <animateTransform attributeName="transform" type="rotate" values="-10;10;-10" dur="1.9s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+</svg>

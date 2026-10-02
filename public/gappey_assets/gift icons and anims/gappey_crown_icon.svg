@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <title>Gappey Crown — gift logo</title>
+  <defs>
+    <linearGradient id="gcLgold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE9A8"/><stop offset=".5" stop-color="#E9B94F"/><stop offset="1" stop-color="#B8791F"/>
+    </linearGradient>
+    <path id="gcLspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+  </defs>
+  <circle cx="120" cy="120" r="102" fill="none" stroke="#D9A441" stroke-width="2.5" stroke-dasharray="6 8" opacity=".7"/>
+  <g>
+    <path d="M70 116 L70 96 L86 62 L102 94 L120 54 L138 94 L154 62 L170 96 L170 116 Z" fill="url(#gcLgold)" stroke="#7A531A" stroke-width="2.5" stroke-linejoin="round"/>
+    <rect x="64" y="112" width="112" height="16" rx="5" fill="url(#gcLgold)" stroke="#7A531A" stroke-width="2.5"/>
+    <circle cx="86" cy="58" r="5.5" fill="#F6D27A" stroke="#7A531A" stroke-width="2"/>
+    <circle cx="120" cy="50" r="6.5" fill="#E2557B" stroke="#7A531A" stroke-width="2"/>
+    <circle cx="154" cy="58" r="5.5" fill="#F6D27A" stroke="#7A531A" stroke-width="2"/>
+    <path d="M86 112 l5 6 -5 6 -5 -6 Z" fill="#2FA08B" stroke="#0C5747" stroke-width="1.5"/>
+    <path d="M154 112 l5 6 -5 6 -5 -6 Z" fill="#2FA08B" stroke="#0C5747" stroke-width="1.5"/>
+    <text x="120" y="126" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="14" fill="#5E1B26">G</text>
+  </g>
+  <path d="M54 138 Q120 130 186 138 L186 172 Q120 180 54 172 Z" fill="#5E1B26" stroke="#D9A441" stroke-width="2"/>
+  <path d="M54 140 L26 148 L40 156 L26 164 L54 170 Z" fill="#7A2331" stroke="#D9A441" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M186 140 L214 148 L200 156 L214 164 L186 170 Z" fill="#7A2331" stroke="#D9A441" stroke-width="1.5" stroke-linejoin="round"/>
+  <text x="120" y="165" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-style="italic" font-size="29" letter-spacing="1" fill="#F6D27A">Gappey</text>
+  <use href="#gcLspk" transform="translate(36 88) scale(.9)" fill="#F2B33D"/>
+  <use href="#gcLspk" transform="translate(206 88) scale(.9)" fill="#F2B33D"/>
+  <use href="#gcLspk" transform="translate(120 26) scale(.7)" fill="#F6EFE2"/>
+  <circle cx="48" cy="206" r="2.4" fill="#D9A441"/>
+  <circle cx="192" cy="206" r="2.4" fill="#D9A441"/>
+</svg>

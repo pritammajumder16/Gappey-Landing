@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" role="img" aria-labelledby="e40gt" style="overflow:visible">
+  <title id="e40gt">Gifter Lv.40 emoji — Royal Chest</title>
+  <defs>
+    <linearGradient id="g40bd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#172554"/></linearGradient>
+    <linearGradient id="g40ld" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3B82F6"/><stop offset="1" stop-color="#1E40AF"/></linearGradient>
+    <linearGradient id="g40gd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE9A8"/><stop offset=".5" stop-color="#FFD34D"/><stop offset="1" stop-color="#D08F1F"/></linearGradient>
+    <radialGradient id="g40h" cx=".5" cy=".5" r=".5"><stop offset=".55" stop-color="#3B82F6" stop-opacity="0"/><stop offset=".8" stop-color="#3B82F6" stop-opacity=".32"/><stop offset="1" stop-color="#3B82F6" stop-opacity="0"/></radialGradient>
+    <path id="g40tw" d="M0 -5 Q1 -1 5 0 Q1 1 0 5 Q-1 1 -5 0 Q-1 -1 0 -5 Z"/>
+    <path id="g40ry" d="M50 12 L50 4"/>
+  </defs>
+  <style><![CDATA[
+.body{transform-box:fill-box;transform-origin:50% 92%;animation:bnc 2.6s ease-in-out infinite}.tw{transform-box:fill-box;transform-origin:50% 50%;animation:twk 2.2s ease-in-out infinite}.t2{animation-delay:-.7s}.ring2{transform-box:view-box;transform-origin:50px 50px;animation:spinrev 17s linear infinite}.orb{transform-box:view-box;transform-origin:50px 50px;animation:spin 8s linear infinite}.orb2{transform-box:view-box;transform-origin:50px 50px;animation:spinrev 11s linear infinite}.ray{transform-box:view-box;transform-origin:50px 50px;animation:spinrev 26s linear infinite}.bcr{transform-box:fill-box;transform-origin:50% 100%;animation:pls 2.8s ease-in-out infinite alternate}@keyframes bnc{0%,100%{transform:translateY(0)}50%{transform:translateY(-4.5px)}}@keyframes twk{0%,100%{opacity:.15;transform:scale(.5)}50%{opacity:1;transform:scale(1)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes spinrev{to{transform:rotate(-360deg)}}@keyframes pls{from{transform:scale(1)}to{transform:scale(1.12)}}@media (prefers-reduced-motion:reduce){.body,.tw,.ring2,.orb,.orb2,.ray,.bcr{animation:none}}
+  ]]></style>
+  <circle cx="50" cy="50" r="46" fill="url(#g40h)"/>
+  <g class="ray" stroke="#60A5FA" stroke-width="2.4" stroke-linecap="round" opacity=".35">
+    <use href="#g40ry"/><use href="#g40ry" transform="rotate(45 50 50)"/><use href="#g40ry" transform="rotate(90 50 50)"/><use href="#g40ry" transform="rotate(135 50 50)"/><use href="#g40ry" transform="rotate(180 50 50)"/><use href="#g40ry" transform="rotate(225 50 50)"/><use href="#g40ry" transform="rotate(270 50 50)"/><use href="#g40ry" transform="rotate(315 50 50)"/>
+  </g>
+  <circle class="ring2" cx="50" cy="50" r="44" fill="none" stroke="#FFD34D" stroke-width="1.5" stroke-dasharray="3 6" opacity=".55"/>
+  <g class="body">
+    <path d="M24 51 Q24 33 50 33 Q76 33 76 51 Z" fill="url(#g40ld)" stroke="#172554" stroke-width="1.5"/>
+    <rect x="31" y="35" width="7" height="16" rx="2" fill="url(#g40gd)" stroke="#B45309" stroke-width=".6"/>
+    <rect x="62" y="35" width="7" height="16" rx="2" fill="url(#g40gd)" stroke="#B45309" stroke-width=".6"/>
+    <rect x="23" y="49" width="54" height="5" rx="2.5" fill="url(#g40gd)" stroke="#B45309" stroke-width=".6"/>
+    <rect x="24" y="53" width="52" height="27" rx="6" fill="url(#g40bd)" stroke="#172554" stroke-width="1.5"/>
+    <rect x="44.5" y="46" width="11" height="12" rx="3" fill="url(#g40gd)" stroke="#B45309" stroke-width=".8"/>
+    <circle cx="50" cy="50.5" r="1.7" fill="#172554"/><rect x="49.2" y="51.5" width="1.6" height="3.4" rx=".8" fill="#172554"/>
+    <circle cx="40.5" cy="62.5" r="2.7" fill="#0B1B45"/><circle cx="41.5" cy="61.5" r=".95" fill="#FFF"/>
+    <circle cx="59.5" cy="62.5" r="2.7" fill="#0B1B45"/><circle cx="60.5" cy="61.5" r=".95" fill="#FFF"/>
+    <ellipse cx="34.5" cy="67" rx="3.2" ry="1.9" fill="#F9A8D4" opacity=".6"/>
+    <ellipse cx="65.5" cy="67" rx="3.2" ry="1.9" fill="#F9A8D4" opacity=".6"/>
+    <path d="M44.5 66 Q50 72.5 55.5 66 Z" fill="#0B1B45"/>
+    <ellipse cx="50" cy="69.6" rx="2.7" ry="1.6" fill="#F9A8D4"/>
+  </g>
+  <g class="orb"><use href="#g40tw" x="50" y="6" fill="#FFE9A8"/></g>
+  <g class="orb2"><use href="#g40tw" x="50" y="94" fill="#FFF"/></g>
+  <use href="#g40tw" x="12" y="24" class="tw" fill="#BFDBFE"/>
+  <use href="#g40tw" x="88" y="30" class="tw t2" fill="#FFD34D"/>
+  <g class="badge">
+    <g class="bcr">
+      <path d="M44 80.5 L45.4 76.6 L47.6 78.9 L50 75.6 L52.4 78.9 L54.6 76.6 L56 80.5 Z" fill="url(#g40gd)" stroke="#FFF" stroke-width=".8"/>
+      <circle cx="50" cy="78.4" r="1.1" fill="#E11D48" stroke="#FFF" stroke-width=".5"/>
+    </g>
+    <rect x="33" y="80" width="34" height="16" rx="8" fill="url(#g40ld)" stroke="#FFD34D" stroke-width="1.8"/>
+    <rect x="35" y="82" width="30" height="12" rx="6" fill="none" stroke="#FFF" stroke-opacity=".4" stroke-width=".8"/>
+    <g transform="translate(29.5 88)"><path class="tw" d="M0 -2.6 L2.6 0 L0 2.6 L-2.6 0 Z" fill="#FFD34D" stroke="#FFF" stroke-width=".7"/></g>
+    <g transform="translate(70.5 88)"><path class="tw t2" d="M0 -2.6 L2.6 0 L0 2.6 L-2.6 0 Z" fill="#FFD34D" stroke="#FFF" stroke-width=".7"/></g>
+    <text x="50" y="91.8" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="800" letter-spacing=".5" fill="#FFF">40</text>
+  </g>
+</svg>

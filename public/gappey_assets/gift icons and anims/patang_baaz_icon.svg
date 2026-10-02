@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <title>Patang Baaz — gift logo</title>
+  <defs>
+    <path id="ptLspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+    <g id="ptLbow">
+      <path d="M0 0 L-9 -5 L-9 5 Z"/>
+      <path d="M0 0 L9 -5 L9 5 Z"/>
+    </g>
+  </defs>
+  <g fill="none" stroke="#F3EADA" stroke-linecap="round" stroke-dasharray="1 9">
+    <path d="M150 44 q22 -8 40 -2" stroke-width="3" opacity=".5"/>
+    <path d="M170 66 q26 -6 44 2" stroke-width="2.5" opacity=".3"/>
+  </g>
+  <path d="M62 112 C36 124 26 148 34 172 C38 184 30 194 20 196" stroke="#D9A441" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <g transform="translate(26 186) rotate(-20)">
+    <circle r="9" fill="#8A5A2B" stroke="#5E3A1C" stroke-width="2"/>
+    <path d="M-6 -4 H6 M-6 4 H6" stroke="#C9A06A" stroke-width="1.5"/>
+  </g>
+  <g transform="rotate(-10 120 112)">
+    <path d="M120 24 L178 112 L120 200 L62 112 Z" fill="#E2557B" stroke="#7A1F35" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M120 24 L62 112 L120 112 Z" fill="#F2A43D"/>
+    <path d="M120 112 L178 112 L120 200 Z" fill="#B23A5C"/>
+    <path d="M120 24 V200 M62 112 H178" stroke="#7A1F35" stroke-width="2" opacity=".85"/>
+    <path d="M120 24 V200" stroke="#F6D27A" stroke-width="1" opacity=".5"/>
+    <circle cx="120" cy="24" r="2.4" fill="#F3EADA"/><circle cx="120" cy="200" r="2.4" fill="#F3EADA"/>
+    <path d="M120 200 C112 214 130 222 118 238" stroke="#F3EADA" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <use href="#ptLbow" transform="translate(116 214) rotate(-12)" fill="#F6D27A"/>
+    <use href="#ptLbow" transform="translate(121 230) rotate(14) scale(.85)" fill="#F2A43D"/>
+  </g>
+  <use href="#ptLspk" transform="translate(196 40) scale(.8)" fill="#F2B33D"/>
+  <use href="#ptLspk" transform="translate(46 56) scale(.55)" fill="#F6EFE2"/>
+</svg>

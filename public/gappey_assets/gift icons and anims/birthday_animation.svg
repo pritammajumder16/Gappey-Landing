@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 800" width="450" height="800">
+  <title>Janamdin Bash — full-screen gift animation</title>
+  <defs>
+    <radialGradient id="bdAsky" cx="50%" cy="38%" r="92%">
+      <stop offset="0" stop-color="#1E0F16"/><stop offset=".55" stop-color="#100810"/><stop offset="1" stop-color="#070305"/>
+    </radialGradient>
+    <linearGradient id="bdAw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6D27A"/><stop offset=".55" stop-color="#E4A93C"/><stop offset="1" stop-color="#B8791F"/>
+    </linearGradient>
+    <path id="bdAspk" d="M0 -11 Q2.2 -2.2 11 0 Q2.2 2.2 0 11 Q-2.2 2.2 -11 0 Q-2.2 -2.2 0 -11Z"/>
+    <path id="bdAflag" d="M0 0 L16 5 L5 18 Z"/>
+    <g id="bdAbal">
+      <ellipse rx="22" ry="27"/>
+      <ellipse cx="-6" cy="-8" rx="6" ry="8.5" fill="#FFF6E6" opacity=".4"/>
+      <path d="M-4 27 L4 27 L0 34 Z"/>
+      <path d="M0 34 C8 52 -8 66 2 88" fill="none" stroke="#F3EADA" stroke-width="1.5" opacity=".5"/>
+    </g>
+    <style>
+      .bdA-cake{animation:bdCake 9s linear infinite}
+      .bdA-fl{animation:bdFl 9s linear infinite}
+      .bdA-flick{transform-box:fill-box;transform-origin:50% 85%;animation:bdFlick .55s ease-in-out infinite alternate}
+      .bdA-smoke{transform-box:fill-box;transform-origin:center;opacity:0;animation:bdSmoke 9s linear infinite}
+      .bdA-balw{animation:bdBal 9.5s linear infinite}
+      .bdA-bsw{transform-box:fill-box;transform-origin:50% 15%;animation:bdBsw 2.8s ease-in-out infinite alternate}
+      .bdA-b2{animation-duration:11s}.bdA-b3{animation-duration:12.5s}.bdA-b4{animation-duration:10.2s}
+      .bdA-fall{animation:bdFall 4.4s linear infinite}
+      .bdA-f1{animation-duration:3.6s}.bdA-f3{animation-duration:5.6s}
+      .bdA-spin{transform-box:fill-box;transform-origin:center;animation:bdSpin 2.2s linear infinite}
+      .bdA-spinR{animation-direction:reverse}
+      .bdA-flash{fill:#FFF4DC;transform-box:fill-box;transform-origin:center;animation:bdFlash 9s linear infinite}
+      .bdA-ring{fill:none;stroke:#F6D27A;stroke-width:5;transform-box:fill-box;transform-origin:center;animation:bdRing 9s linear infinite}
+      .bdA-sp{transform-box:fill-box;transform-origin:50% 100%;animation:bdSp 9s linear infinite}
+      .bdA-w1{font:800 58px 'Arial Black','Segoe UI',Arial,sans-serif;letter-spacing:3px;fill:url(#bdAw);stroke:#140A0E;stroke-width:8;paint-order:stroke;text-anchor:middle;transform-box:fill-box;transform-origin:center;opacity:0;animation:bdW 9s linear infinite}
+      .bdA-w2{font:900 66px 'Arial Black','Segoe UI',Arial,sans-serif;letter-spacing:2px;fill:url(#bdAw);stroke:#140A0E;stroke-width:9;paint-order:stroke;text-anchor:middle;transform-box:fill-box;transform-origin:center;opacity:0;animation:bdW 9s linear infinite;animation-delay:.14s}
+      .bdA-sub{font:600 19px Georgia,'Times New Roman',serif;letter-spacing:8px;fill:#F2D48C;text-anchor:middle;opacity:0;animation:bdSub 9s linear infinite}
+      .bdA-gar{transform-box:fill-box;transform-origin:50% 0;animation:bdGar 4.6s ease-in-out infinite alternate}
+      .bdA-twk{transform-box:fill-box;transform-origin:center;animation:bdTw 3s ease-in-out infinite}
+      @keyframes bdCake{
+        0%{opacity:0;transform:translate(225px,900px) scale(.7)}
+        5%{opacity:1}
+        11%{transform:translate(225px,556px) scale(1.05)}
+        14%{transform:translate(225px,560px) scale(.99,1.02)}
+        16%,90%{opacity:1;transform:translate(225px,560px) scale(1,1)}
+        96%,100%{opacity:0;transform:translate(225px,560px) scale(1,1)}}
+      @keyframes bdFl{0%,61%{opacity:1}61.8%,100%{opacity:0}}
+      @keyframes bdFlick{from{transform:scaleY(.92) rotate(-2deg)}to{transform:scaleY(1.1) rotate(2.5deg)}}
+      @keyframes bdSmoke{0%,61%{opacity:0;transform:translateY(6px) scale(.5)}64%{opacity:.5;transform:translateY(0) scale(.9)}78%{opacity:0;transform:translateY(-70px) scale(1.5)}100%{opacity:0;transform:translateY(-70px) scale(1.5)}}
+      @keyframes bdBal{from{transform:translateY(0)}to{transform:translateY(-1100px)}}
+      @keyframes bdBsw{from{transform:rotate(-8deg)}to{transform:rotate(8deg)}}
+      @keyframes bdFall{from{transform:translateY(-50px)}to{transform:translateY(870px)}}
+      @keyframes bdSpin{to{transform:rotate(360deg)}}
+      @keyframes bdFlash{0%,61.5%{opacity:0;transform:scale(.3)}64%{opacity:.7}71%{opacity:0;transform:scale(1.1)}100%{opacity:0}}
+      @keyframes bdRing{0%,62%{opacity:.95;transform:scale(.12)}79%{opacity:0;transform:scale(3)}100%{opacity:0;transform:scale(3)}}
+      @keyframes bdSp{0%,62%{opacity:0;transform:scale(.3)}66%{opacity:1;transform:scale(1)}74%,100%{opacity:0;transform:scale(.4)}}
+      @keyframes bdW{0%,64.5%{opacity:0;transform:scale(.4) rotate(-5deg)}67.5%{opacity:1;transform:scale(1.12) rotate(2deg)}70%{transform:scale(.97) rotate(0)}71.5%,88%{opacity:1;transform:scale(1) rotate(0)}94%,100%{opacity:0;transform:scale(1) rotate(0)}}
+      @keyframes bdSub{0%,70%{opacity:0}75%{opacity:1}88%{opacity:1}94%,100%{opacity:0}}
+      @keyframes bdGar{from{transform:rotate(-.7deg)}to{transform:rotate(.7deg)}}
+      @keyframes bdTw{0%,100%{opacity:.07;transform:scale(.6)}50%{opacity:.8;transform:scale(1)}}
+    </style>
+  </defs>
+  <rect width="450" height="800" fill="url(#bdAsky)"/>
+  <g transform="translate(70 210)"><use href="#bdAspk" class="bdA-twk" fill="#F2B33D"/></g>
+  <g transform="translate(390 260) scale(.8)"><use href="#bdAspk" class="bdA-twk" fill="#F6EFE2" style="animation-delay:-1s"/></g>
+  <g transform="translate(52 620) scale(.7)"><use href="#bdAspk" class="bdA-twk" fill="#E2557B" style="animation-delay:-2s"/></g>
+  <g transform="translate(400 640) scale(.85)"><use href="#bdAspk" class="bdA-twk" fill="#F2B33D" style="animation-delay:-.5s"/></g>
+  <g class="bdA-gar">
+    <path d="M-10 66 Q115 128 235 94" fill="none" stroke="#C9A06A" stroke-width="2.5"/>
+    <use href="#bdAflag" transform="translate(24 80) rotate(14)" fill="#E2557B"/>
+    <use href="#bdAflag" transform="translate(64 98) rotate(18)" fill="#F2A43D"/>
+    <use href="#bdAflag" transform="translate(104 110) rotate(16)" fill="#2FA08B"/>
+    <use href="#bdAflag" transform="translate(144 112) rotate(10)" fill="#F6D27A"/>
+    <use href="#bdAflag" transform="translate(184 108) rotate(4)" fill="#E2557B"/>
+    <use href="#bdAflag" transform="translate(216 100) rotate(-4)" fill="#F2A43D"/>
+    <path d="M460 66 Q335 128 215 94" fill="none" stroke="#C9A06A" stroke-width="2.5"/>
+    <use href="#bdAflag" transform="translate(426 80) rotate(-14)" fill="#2FA08B"/>
+    <use href="#bdAflag" transform="translate(386 98) rotate(-18)" fill="#F6D27A"/>
+    <use href="#bdAflag" transform="translate(346 110) rotate(-16)" fill="#E2557B"/>
+    <use href="#bdAflag" transform="translate(306 112) rotate(-10)" fill="#F2A43D"/>
+    <use href="#bdAflag" transform="translate(266 108) rotate(-4)" fill="#2FA08B"/>
+  </g>
+  <g transform="translate(58 900)"><g class="bdA-bsw"><g class="bdA-balw"><use href="#bdAbal" fill="#E2557B"/></g></g></g>
+  <g transform="translate(392 900)"><g class="bdA-bsw" style="animation-delay:-1.2s"><g class="bdA-balw bdA-b2" style="animation-delay:-3s"><use href="#bdAbal" fill="#F2A43D"/></g></g></g>
+  <g transform="translate(104 920)"><g class="bdA-bsw" style="animation-delay:-.6s"><g class="bdA-balw bdA-b3" style="animation-delay:-6s"><use href="#bdAbal" fill="#2FA08B" transform="scale(.78)"/></g></g></g>
+  <g transform="translate(348 920)"><g class="bdA-bsw" style="animation-delay:-1.8s"><g class="bdA-balw bdA-b4" style="animation-delay:-4.5s"><use href="#bdAbal" fill="#F08CA5" transform="scale(.85)"/></g></g></g>
+  <g transform="translate(34 -40)"><g class="bdA-spin"><rect x="-4" y="-8" width="8" height="16" rx="2.5" fill="#F6D27A"/></g></g>
+  <g transform="translate(112 -40)"><g class="bdA-fall bdA-f1" style="animation-delay:-1.4s"><g class="bdA-spin bdA-spinR"><circle r="4" fill="#E2557B"/></g></g></g>
+  <g transform="translate(178 -40)"><g class="bdA-fall bdA-f3" style="animation-delay:-2.8s"><g class="bdA-spin"><rect x="-4" y="-8" width="8" height="16" rx="2.5" fill="#2FA08B"/></g></g></g>
+  <g transform="translate(248 -40)"><g class="bdA-fall" style="animation-delay:-3.6s"><g class="bdA-spin bdA-spinR"><circle r="3.4" fill="#F6EFE2"/></g></g></g>
+  <g transform="translate(318 -40)"><g class="bdA-fall bdA-f1" style="animation-delay:-.6s"><g class="bdA-spin"><rect x="-4" y="-8" width="8" height="16" rx="2.5" fill="#F2A43D"/></g></g></g>
+  <g transform="translate(392 -40)"><g class="bdA-fall bdA-f3" style="animation-delay:-4.8s"><g class="bdA-spin bdA-spinR"><circle r="4" fill="#F6D27A"/></g></g></g>
+  <g transform="translate(70 -40)"><g class="bdA-fall bdA-f3" style="animation-delay:-2s"><g class="bdA-spin bdA-spinR"><circle r="3.4" fill="#F08CA5"/></g></g></g>
+  <circle class="bdA-flash" cx="225" cy="352" r="170"/>
+  <circle class="bdA-ring" cx="225" cy="352" r="85"/>
+  <g transform="translate(225 352) rotate(0)"><line class="bdA-sp" x1="0" y1="-118" x2="0" y2="-176" stroke="#F6D27A" stroke-width="5" stroke-linecap="round"/></g>
+  <g transform="translate(225 352) rotate(45)"><line class="bdA-sp" x1="0" y1="-118" x2="0" y2="-176" stroke="#F3EADA" stroke-width="4" stroke-linecap="round" style="animation-delay:.04s"/></g>
+  <g transform="translate(225 352) rotate(90)"><line class="bdA-sp" x1="0" y1="-118" x2="0" y2="-176" stroke="#F6D27A" stroke-width="5" stroke-linecap="round"/></g>
+  <g transform="translate(225 352) rotate(135)"><line class="bdA-sp" x1="0" y1="-118" x2="0" y2="-176" stroke="#F3EADA" stroke-width="4" stroke-linecap="round" style="animation-delay:.04s"/></g>
+  <g transform="translate(225 352) rotate(180)"><line class="bdA-sp" x1="0" y1="-118" x2="0" y2="-176" stroke="#F6D27A" stroke-width="5" stroke-linecap="round"/></g>
+  <g transform="translate(225 352) rotate(225)"><line class="bdA-sp" x1="0" y1="-118" x2="0" y2="-176" stroke="#F3EADA" stroke-width="4" stroke-linecap="round" style="animation-delay:.04s"/></g>
+  <g transform="translate(225 352) rotate(270)"><line class="bdA-sp" x1="0" y1="-118" x2="0" y2="-176" stroke="#F6D27A" stroke-width="5" stroke-linecap="round"/></g>
+  <g transform="translate(225 352) rotate(315)"><line class="bdA-sp" x1="0" y1="-118" x2="0" y2="-176" stroke="#F3EADA" stroke-width="4" stroke-linecap="round" style="animation-delay:.04s"/></g>
+  <g class="bdA-cake">
+    <g transform="scale(2)">
+      <ellipse cy="140" rx="120" ry="12" fill="#000" opacity=".35"/>
+      <ellipse cy="132" rx="116" ry="14" fill="#E8D9C0"/>
+      <ellipse cy="127" rx="116" ry="14" fill="#F6EBD8"/>
+      <rect x="-100" y="64" width="200" height="64" rx="8" fill="#6B3A24" stroke="#45210D" stroke-width="2"/>
+      <path d="M-100 64 H100 V74 Q93 90 86 74 Q79 92 72 74 Q65 90 58 74 Q51 92 44 74 Q37 90 30 74 Q23 92 16 74 Q9 90 2 74 Q-5 92 -12 74 Q-19 90 -26 74 Q-33 92 -40 74 Q-47 90 -54 74 Q-61 92 -68 74 Q-75 90 -82 74 Q-89 92 -96 74 L-100 74 Z" fill="#FBEED7"/>
+      <rect x="-70" y="8" width="140" height="56" rx="8" fill="#FBEED7" stroke="#D8C4A4" stroke-width="2"/>
+      <path d="M-70 8 H70 V18 Q63 34 56 18 Q49 36 42 18 Q35 34 28 18 Q21 36 14 18 Q7 34 0 18 Q-7 36 -14 18 Q-21 34 -28 18 Q-35 36 -42 18 Q-49 34 -56 18 Q-63 36 -70 18 Z" fill="#E2557B"/>
+      <rect x="-46" y="34" width="10" height="4" rx="2" fill="#2FA08B" transform="rotate(-14 -41 36)"/>
+      <rect x="8" y="44" width="10" height="4" rx="2" fill="#F2A43D" transform="rotate(16 13 46)"/>
+      <rect x="-16" y="52" width="10" height="4" rx="2" fill="#E2557B" transform="rotate(-8 -11 54)"/>
+      <rect x="34" y="30" width="10" height="4" rx="2" fill="#F6D27A" transform="rotate(10 39 32)"/>
+      <rect x="-44" y="-38" width="88" height="46" rx="8" fill="#E2557B" stroke="#B23A5C" stroke-width="2"/>
+      <path d="M-44 -38 H44 V-30 Q38 -18 32 -30 Q26 -16 20 -30 Q14 -18 8 -30 Q2 -16 -4 -30 Q-10 -18 -16 -30 Q-22 -16 -28 -30 Q-34 -18 -40 -30 L-44 -30 Z" fill="#FBEED7"/>
+      <g>
+        <rect x="-27.5" y="-64" width="7" height="27" rx="2.5" fill="#F6D27A" stroke="#C08A24" stroke-width="1.5"/>
+        <path d="M-27.5 -57 h7 M-27.5 -49 h7 M-27.5 -41 h7" stroke="#E2557B" stroke-width="2"/>
+        <line x1="-24" y1="-64" x2="-24" y2="-69" stroke="#3A2405" stroke-width="1.5"/>
+        <g class="bdA-fl" transform="translate(-24 -76)"><g class="bdA-flick">
+          <path d="M0 -11 C5.5 -4 5.5 4 0 9.5 C-5.5 4 -5.5 -4 0 -11Z" fill="#F6A23D"/>
+          <path d="M0 -6 C2.6 -2.6 2.6 1.4 0 4.4 C-2.6 1.4 -2.6 -2.6 0 -6Z" fill="#FFE08A"/>
+        </g></g>
+      </g>
+      <g>
+        <rect x="-3.5" y="-64" width="7" height="27" rx="2.5" fill="#2FA08B" stroke="#0C5747" stroke-width="1.5"/>
+        <path d="M-3.5 -57 h7 M-3.5 -49 h7 M-3.5 -41 h7" stroke="#FBEED7" stroke-width="2"/>
+        <line x1="0" y1="-64" x2="0" y2="-69" stroke="#3A2405" stroke-width="1.5"/>
+        <g class="bdA-fl" transform="translate(0 -76)"><g class="bdA-flick" style="animation-delay:-.2s">
+          <path d="M0 -11 C5.5 -4 5.5 4 0 9.5 C-5.5 4 -5.5 -4 0 -11Z" fill="#F6A23D"/>
+          <path d="M0 -6 C2.6 -2.6 2.6 1.4 0 4.4 C-2.6 1.4 -2.6 -2.6 0 -6Z" fill="#FFE08A"/>
+        </g></g>
+      </g>
+      <g>
+        <rect x="20.5" y="-64" width="7" height="27" rx="2.5" fill="#E2557B" stroke="#B23A5C" stroke-width="1.5"/>
+        <path d="M20.5 -57 h7 M20.5 -49 h7 M20.5 -41 h7" stroke="#FBEED7" stroke-width="2"/>
+        <line x1="24" y1="-64" x2="24" y2="-69" stroke="#3A2405" stroke-width="1.5"/>
+        <g class="bdA-fl" transform="translate(24 -76)"><g class="bdA-flick" style="animation-delay:-.35s">
+          <path d="M0 -11 C5.5 -4 5.5 4 0 9.5 C-5.5 4 -5.5 -4 0 -11Z" fill="#F6A23D"/>
+          <path d="M0 -6 C2.6 -2.6 2.6 1.4 0 4.4 C-2.6 1.4 -2.6 -2.6 0 -6Z" fill="#FFE08A"/>
+        </g></g>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(177 396)" fill="#B9A88F"><g class="bdA-smoke"><circle r="6"/><circle cy="-15" r="4"/></g></g>
+  <g transform="translate(225 390)" fill="#B9A88F"><g class="bdA-smoke" style="animation-delay:.12s"><circle r="7"/><circle cy="-16" r="4.5"/></g></g>
+  <g transform="translate(273 396)" fill="#B9A88F"><g class="bdA-smoke" style="animation-delay:.24s"><circle r="6"/><circle cy="-15" r="4"/></g></g>
+  <text class="bdA-w1" x="229" y="150">HAPPY</text>
+  <text class="bdA-w2" x="228" y="226">BIRTHDAY!</text>
+  <text class="bdA-sub" x="230" y="272">JANAMDIN MUBARAK</text>
+</svg>

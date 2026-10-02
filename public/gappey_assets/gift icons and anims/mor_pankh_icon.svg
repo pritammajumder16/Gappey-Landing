@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <title>Mor Pankh — gift logo</title>
+  <defs>
+    <linearGradient id="mpLbarb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#45C793"/><stop offset=".55" stop-color="#1E8A68"/><stop offset="1" stop-color="#0C5747"/>
+    </linearGradient>
+    <path id="mpLspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+  </defs>
+  <g transform="rotate(-34 120 122)">
+    <path d="M120 28 C 76 64 68 128 120 212 C 172 128 164 64 120 28 Z" fill="url(#mpLbarb)" stroke="#0B4A3C" stroke-opacity=".35"/>
+    <g fill="none" stroke="#0B4A3C" stroke-width="2" opacity=".45" stroke-linecap="round">
+      <path d="M120 44 C 110 47 103 52 99 59"/>
+      <path d="M120 44 C 130 47 137 52 141 59"/>
+      <path d="M120 128 C 99 136 88 150 84 168"/>
+      <path d="M120 128 C 141 136 152 150 156 168"/>
+      <path d="M120 178 C 105 186 96 198 92 208"/>
+      <path d="M120 178 C 135 186 144 198 148 208"/>
+    </g>
+    <path d="M120 214 C 119 160 121 92 120 30" fill="none" stroke="#17805F" stroke-width="4.5" stroke-linecap="round"/>
+    <ellipse cx="120" cy="88" rx="25" ry="32" fill="#0F7B6C"/>
+    <ellipse cx="120" cy="88" rx="17" ry="22.5" fill="#C98F33"/>
+    <ellipse cx="120" cy="88" rx="10.5" ry="14.5" fill="#155087"/>
+    <ellipse cx="120" cy="88" rx="5" ry="8" fill="#0E1B33"/>
+    <circle cx="116" cy="80" r="2.6" fill="#F6D27A" opacity=".9"/>
+  </g>
+  <use href="#mpLspk" transform="translate(52 170) scale(1.1)" fill="#F2D48C"/>
+  <use href="#mpLspk" transform="translate(196 62) scale(.8)" fill="#F6EFE2"/>
+  <circle cx="60" cy="58" r="2.4" fill="#D9A441"/>
+</svg>

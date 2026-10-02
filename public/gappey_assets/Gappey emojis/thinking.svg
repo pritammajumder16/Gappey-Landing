@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<defs><radialGradient id="tkg" cx="38%" cy="30%" r="82%"><stop offset="0%" stop-color="#FFF5BC"/><stop offset="55%" stop-color="#FFD45E"/><stop offset="100%" stop-color="#FFA51F"/></radialGradient></defs>
+<style>
+.tkB{transform-box:fill-box;transform-origin:center bottom;animation:tkA 2s ease-in-out infinite}
+@keyframes tkA{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(-1deg) translateY(-2px)}}
+.tk1{opacity:0;animation:tkB 2s ease-out infinite}
+.tk1.e{animation-delay:.6s}.tk1.f{animation-delay:1.2s}
+@keyframes tkB{0%{opacity:0;transform:translateY(4px)}25%,60%{opacity:1}100%{opacity:0;transform:translateY(-6px)}}
+</style>
+<g class="tkB">
+<circle cx="100" cy="104" r="76" fill="url(#tkg)" stroke="#C97B2D" stroke-width="2.5" stroke-opacity=".55"/>
+<ellipse cx="70" cy="50" rx="22" ry="11" fill="#fff" opacity=".6" transform="rotate(-16 70 50)"/>
+<path d="M52 76 Q66 67 80 76" fill="none" stroke="#8A4B15" stroke-width="7" stroke-linecap="round"/>
+<path d="M122 84 L148 90" fill="none" stroke="#8A4B15" stroke-width="7" stroke-linecap="round"/>
+<circle cx="68" cy="104" r="8" fill="#5B3A1E"/><circle cx="65" cy="100.5" r="3" fill="#fff"/>
+<circle cx="132" cy="106" r="8" fill="#5B3A1E"/><circle cx="129" cy="102.5" r="3" fill="#fff"/>
+<path d="M94 140 L114 137" fill="none" stroke="#8A4B15" stroke-width="6" stroke-linecap="round"/>
+<path d="M128 152 Q144 162 158 158" fill="none" stroke="#C97B2D" stroke-width="17" stroke-linecap="round" stroke-opacity=".45"/>
+<path d="M128 152 Q144 162 158 158" fill="none" stroke="#FFD45E" stroke-width="12" stroke-linecap="round"/>
+<circle cx="124" cy="146" r="13" fill="url(#tkg)" stroke="#C97B2D" stroke-width="2.5" stroke-opacity=".55"/>
+</g>
+<circle class="tk1" cx="146" cy="62" r="4" fill="#F26D9A"/>
+<circle class="tk1 e" cx="160" cy="47" r="4.5" fill="#F26D9A"/>
+<circle class="tk1 f" cx="174" cy="31" r="5" fill="#F26D9A"/>
+</svg>

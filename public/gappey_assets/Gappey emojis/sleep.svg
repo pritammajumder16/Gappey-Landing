@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<defs><radialGradient id="zzg" cx="38%" cy="30%" r="82%"><stop offset="0%" stop-color="#FFF5BC"/><stop offset="55%" stop-color="#FFD45E"/><stop offset="100%" stop-color="#FFA51F"/></radialGradient></defs>
+<style>
+.zzB{transform-box:fill-box;transform-origin:center bottom;animation:zzA 3s ease-in-out infinite}
+@keyframes zzA{0%,100%{transform:scale(1,1)}50%{transform:scale(1.025,.985)}}
+.zzZ{opacity:0;animation:zzB 3s ease-out infinite}
+.zzZ.e{animation-delay:1s}.zzZ.f{animation-delay:2s}
+@keyframes zzB{0%{opacity:0;transform:translate(0,8px)}30%{opacity:1}100%{opacity:0;transform:translate(10px,-20px)}}
+</style>
+<g class="zzB">
+<circle cx="100" cy="104" r="76" fill="url(#zzg)" stroke="#C97B2D" stroke-width="2.5" stroke-opacity=".55"/>
+<path d="M50 78 Q100 -6 150 78 Q100 98 50 78 Z" fill="#A5C8F0" stroke="#7FA8D9" stroke-width="3" transform="rotate(-8 100 60)"/>
+<path d="M50 78 Q100 98 150 78 L150 88 Q100 108 50 88 Z" fill="#8FB4E8" transform="rotate(-8 100 60)"/>
+<circle cx="94" cy="26" r="9" fill="#FFF" stroke="#D9E6F7" stroke-width="2.5" transform="rotate(-8 100 60)"/>
+<path d="M58 118 Q68 126 78 118" fill="none" stroke="#8A4B15" stroke-width="8" stroke-linecap="round"/>
+<path d="M122 118 Q132 126 142 118" fill="none" stroke="#8A4B15" stroke-width="8" stroke-linecap="round"/>
+<ellipse cx="100" cy="148" rx="7" ry="8" fill="#5A1B3F"/>
+<ellipse cx="50" cy="134" rx="11" ry="7" fill="#FFB3C7" opacity=".85"/>
+<ellipse cx="150" cy="134" rx="11" ry="7" fill="#FFB3C7" opacity=".85"/>
+</g>
+<text class="zzZ" x="146" y="70" font-family="'Baloo 2','Comic Sans MS',cursive" font-size="16" font-weight="800" fill="#7FA8D9">z</text>
+<text class="zzZ e" x="160" y="50" font-family="'Baloo 2','Comic Sans MS',cursive" font-size="22" font-weight="800" fill="#7FA8D9">z</text>
+<text class="zzZ f" x="174" y="28" font-family="'Baloo 2','Comic Sans MS',cursive" font-size="28" font-weight="800" fill="#7FA8D9">z</text>
+</svg>

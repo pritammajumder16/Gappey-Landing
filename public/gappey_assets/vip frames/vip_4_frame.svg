@@ -1,0 +1,390 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" width="200" height="200">
+  <title>VIP 4 Avatar Frame</title>
+
+  <defs>
+    <!-- liquid platinum (shimmers, cooler tones than silver) -->
+    <linearGradient id="platMain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff">
+        <animate attributeName="stop-color" values="#ffffff;#eaf3fc;#ffffff" dur="4.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.22" stop-color="#dfe9f5"/>
+      <stop offset="0.45" stop-color="#aebccb">
+        <animate attributeName="stop-color" values="#aebccb;#cdd9e6;#aebccb" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.6" stop-color="#7e8fa2"/>
+      <stop offset="0.78" stop-color="#c2cfdd"/>
+      <stop offset="1" stop-color="#f6fafd"/>
+    </linearGradient>
+    <linearGradient id="platDeep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7c8ca0"/>
+      <stop offset="0.5" stop-color="#d7e1ec">
+        <animate attributeName="stop-color" values="#d7e1ec;#f2f8fd;#d7e1ec" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#66788c"/>
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f9ff"/>
+      <stop offset="0.45" stop-color="#c2cfdd"/>
+      <stop offset="0.55" stop-color="#9fb0c2"/>
+      <stop offset="1" stop-color="#5c6b7d"/>
+    </linearGradient>
+    <!-- sapphire -->
+    <radialGradient id="sapph" cx="0.35" cy="0.3" r="0.95">
+      <stop offset="0" stop-color="#f0f9ff"/>
+      <stop offset="0.4" stop-color="#9fd0ff"/>
+      <stop offset="0.75" stop-color="#2f7fd6"/>
+      <stop offset="1" stop-color="#123f7d"/>
+    </radialGradient>
+    <radialGradient id="bezelGrad" cx="0.35" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#f4f9ff"/>
+      <stop offset="0.55" stop-color="#b9c6d6"/>
+      <stop offset="1" stop-color="#5c6b7d"/>
+    </radialGradient>
+    <radialGradient id="studGrad" cx="0.35" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.5" stop-color="#eef5fc"/>
+      <stop offset="1" stop-color="#a9bacd"/>
+    </radialGradient>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <filter id="textGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.6"/>
+    </filter>
+    <path id="ispark" d="M0 -6 L0.9 -0.9 L6 0 L0.9 0.9 L0 6 L-0.9 0.9 L-6 0 L-0.9 -0.9 Z"/>
+    <path id="st4" d="M0 -5 L1 -1 L5 0 L1 1 L0 5 L-1 1 L-5 0 L-1 -1 Z"/>
+    <clipPath id="hexClip">
+      <path d="M74 167.5 L126 167.5 L133.5 181 L126 194.5 L74 194.5 L66.5 181 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- aurora glow: breathes AND shifts ice-blue to white -->
+  <circle cx="100" cy="100" r="89" fill="none" stroke="#bfe9ff" stroke-width="13" opacity="0.28" filter="url(#softGlow)">
+    <animate attributeName="r" values="88;92;88" dur="3.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.26;0.5;0.26" dur="3.4s" repeatCount="indefinite"/>
+    <animate attributeName="stroke" values="#bfe9ff;#ffffff;#bfe9ff" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#cfe9ff" stroke-width="3" opacity="0.2" filter="url(#softGlow)">
+    <animate attributeName="r" values="96;99.5;96" dur="3.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.15;0.38;0.15" dur="3.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- HOLOGRAPHIC GYROSCOPE: sweeping lens + orbit satellites -->
+  <g>
+    <ellipse cx="100" cy="100" rx="20" ry="97" fill="none" stroke="#cfe9ff" stroke-width="1" opacity="0.18"/>
+    <circle cx="100" cy="3" r="1.4" fill="#eaf6ff" opacity="0.85">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="197" r="1.4" fill="#eaf6ff" opacity="0.85">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="18s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <ellipse cx="100" cy="100" rx="58" ry="97" fill="none" stroke="#b9d9f2" stroke-width="0.8" opacity="0.09"/>
+    <animateTransform attributeName="transform" type="rotate" from="360 100 100" to="0 100 100" dur="30s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- outer rotating rings: diamond dust + turbine notches + fine counter ring -->
+  <g>
+    <circle cx="100" cy="100" r="98.5" fill="none" stroke="#cfe4f7" stroke-width="1.4"
+            stroke-dasharray="1.2 3.8" pathLength="144" stroke-linecap="round" opacity="0.7"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="28s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <circle cx="100" cy="100" r="95.5" fill="none" stroke="#dfe9f5" stroke-width="2.2"
+            stroke-dasharray="5.2 2.8" pathLength="96" opacity="0.55"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="24s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <circle cx="100" cy="100" r="92" fill="none" stroke="#b9c6d6" stroke-width="1"
+            stroke-dasharray="1.5 3.5" pathLength="120" opacity="0.6"/>
+    <animateTransform attributeName="transform" type="rotate" from="360 100 100" to="0 100 100" dur="15s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- band structure -->
+  <circle cx="100" cy="100" r="92.5" fill="none" stroke="url(#platDeep)" stroke-width="2.5"/>
+  <circle cx="100" cy="100" r="89" fill="none" stroke="url(#platMain)" stroke-width="7"/>
+  <circle cx="100" cy="100" r="84.6" fill="none" stroke="#e8f3fc" stroke-width="1.4" opacity="0.9">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="82.8" fill="none" stroke="#2e3947" stroke-width="2.2" opacity="0.95"/>
+  <circle cx="100" cy="100" r="78.5" fill="none" stroke="url(#platMain)" stroke-width="6.5"/>
+  <circle cx="100" cy="100" r="74.8" fill="none" stroke="#3a4553" stroke-width="1.5" opacity="0.9"/>
+  <circle cx="100" cy="100" r="68" fill="none" stroke="#9fb0c2" stroke-width="0.7" opacity="0.35"/>
+
+  <!-- ENERGY CURRENT: light flowing around the seam (new for VIP 4) -->
+  <circle cx="100" cy="100" r="84.6" fill="none" stroke="#7fc4ff" stroke-width="4" stroke-linecap="round"
+          stroke-dasharray="7 13" opacity="0.45" filter="url(#softGlow)">
+    <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="84.6" fill="none" stroke="#d6f0ff" stroke-width="1.7" stroke-linecap="round"
+          stroke-dasharray="7 13">
+    <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="84.6" fill="none" stroke="#9fd6ff" stroke-width="1.2" stroke-linecap="round"
+          stroke-dasharray="3 17" opacity="0.55">
+    <animate attributeName="stroke-dashoffset" from="0" to="20" dur="3.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- glint sweeps -->
+  <g stroke-linecap="round" fill="none">
+    <path d="M 63.8 18.7 A 89 89 0 0 1 136.2 18.7" stroke="#f4f9ff" stroke-width="6" opacity="0.3"/>
+    <path d="M 81.5 13 A 89 89 0 0 1 118.5 13" stroke="#ffffff" stroke-width="5" opacity="0.9"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="4.5s" repeatCount="indefinite"/>
+  </g>
+  <g stroke-linecap="round" fill="none">
+    <path d="M 63.8 18.7 A 89 89 0 0 1 136.2 18.7" stroke="#f4f9ff" stroke-width="6" opacity="0.25"/>
+    <path d="M 81.5 13 A 89 89 0 0 1 118.5 13" stroke="#ffffff" stroke-width="5" opacity="0.7"/>
+    <animateTransform attributeName="transform" type="rotate" from="120 100 100" to="480 100 100" dur="4.5s" repeatCount="indefinite"/>
+  </g>
+  <g stroke-linecap="round" fill="none">
+    <path d="M 81.5 13 A 89 89 0 0 1 118.5 13" stroke="#ffffff" stroke-width="4" opacity="0.4"/>
+    <animateTransform attributeName="transform" type="rotate" from="240 100 100" to="600 100 100" dur="4.5s" repeatCount="indefinite"/>
+  </g>
+  <g stroke-linecap="round" fill="none">
+    <path d="M 73.2 26.2 A 78.5 78.5 0 0 1 126.8 26.2" stroke="#ffffff" stroke-width="3" opacity="0.55"/>
+    <animateTransform attributeName="transform" type="rotate" from="360 100 100" to="0 100 100" dur="8s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- TWIN COMETS: orbiting diamond sparks with tails -->
+  <g>
+    <g transform="translate(100 11)">
+      <circle r="3.2" fill="#bfe9ff" opacity="0.45"/>
+      <path d="M0 -2.9 L2.3 0 L0 2.9 L-2.3 0 Z" fill="#ffffff" stroke="#9fd6ff" stroke-width="0.5"/>
+      <circle cx="-4.5" cy="0" r="1.1" fill="#cfe9ff" opacity="0.45"/>
+      <circle cx="-8" cy="0" r="0.75" fill="#cfe9ff" opacity="0.25"/>
+      <circle cx="-11" cy="0" r="0.5" fill="#cfe9ff" opacity="0.12"/>
+    </g>
+    <g transform="rotate(180 100 100)">
+      <g transform="translate(100 11)">
+        <circle r="3.2" fill="#bfe9ff" opacity="0.45"/>
+        <path d="M0 -2.9 L2.3 0 L0 2.9 L-2.3 0 Z" fill="#ffffff" stroke="#9fd6ff" stroke-width="0.5"/>
+        <circle cx="-4.5" cy="0" r="1.1" fill="#cfe9ff" opacity="0.45"/>
+        <circle cx="-8" cy="0" r="0.75" fill="#cfe9ff" opacity="0.25"/>
+        <circle cx="-11" cy="0" r="0.5" fill="#cfe9ff" opacity="0.12"/>
+      </g>
+    </g>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="7s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- tick ring, counter-rotating -->
+  <g>
+    <circle cx="100" cy="100" r="71.5" fill="none" stroke="#c2d9ee" stroke-width="2.4"
+            stroke-dasharray="1 3" pathLength="120" opacity="0.85"/>
+    <animateTransform attributeName="transform" type="rotate" from="360 100 100" to="0 100 100" dur="18s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- RADIANT SAPPHIRES at corners: bezel + facets + spinning star sparkle -->
+  <g transform="translate(162.9 37.1)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="2.4s" begin="0s" repeatCount="indefinite"/>
+      <circle r="7.3" fill="url(#bezelGrad)" stroke="#4c5a6b" stroke-width="1"/>
+      <path d="M0 -5.3 L3.1 -4 L5.3 0 L4 3.1 L0 5.3 L-4 3.1 L-5.3 0 L-3.1 -4 Z" fill="url(#sapph)" stroke="#123f7d" stroke-width="0.8"/>
+      <path d="M0 -5.3 L3.1 -4 L5.3 0 L4 3.1 L0 5.3 L-4 3.1 L-5.3 0 L-3.1 -4 Z" transform="scale(0.52)" fill="#79b9ff" opacity="0.95"/>
+      <path d="M0 -5.3 L0 -2.7 M5.3 0 L2.7 0 M0 5.3 L0 2.7 M-5.3 0 L-2.7 0" stroke="#123f7d" stroke-width="0.55" opacity="0.8"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5s" repeatCount="indefinite"/>
+        <use xlink:href="#st4" transform="scale(0.55)" fill="#ffffff">
+          <animate attributeName="opacity" values="0.35;1;0.35" dur="1.7s" repeatCount="indefinite"/>
+        </use>
+      </g>
+      <circle cx="-1.4" cy="-1.8" r="0.8" fill="#ffffff" opacity="0.9"/>
+    </g>
+  </g>
+  <g transform="translate(37.1 37.1)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="2.4s" begin="0.6s" repeatCount="indefinite"/>
+      <circle r="7.3" fill="url(#bezelGrad)" stroke="#4c5a6b" stroke-width="1"/>
+      <path d="M0 -5.3 L3.1 -4 L5.3 0 L4 3.1 L0 5.3 L-4 3.1 L-5.3 0 L-3.1 -4 Z" fill="url(#sapph)" stroke="#123f7d" stroke-width="0.8"/>
+      <path d="M0 -5.3 L3.1 -4 L5.3 0 L4 3.1 L0 5.3 L-4 3.1 L-5.3 0 L-3.1 -4 Z" transform="scale(0.52)" fill="#79b9ff" opacity="0.95"/>
+      <path d="M0 -5.3 L0 -2.7 M5.3 0 L2.7 0 M0 5.3 L0 2.7 M-5.3 0 L-2.7 0" stroke="#123f7d" stroke-width="0.55" opacity="0.8"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5s" begin="1.2s" repeatCount="indefinite"/>
+        <use xlink:href="#st4" transform="scale(0.55)" fill="#ffffff">
+          <animate attributeName="opacity" values="0.35;1;0.35" dur="1.7s" begin="0.5s" repeatCount="indefinite"/>
+        </use>
+      </g>
+      <circle cx="-1.4" cy="-1.8" r="0.8" fill="#ffffff" opacity="0.9"/>
+    </g>
+  </g>
+  <g transform="translate(37.1 162.9)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+      <circle r="7.3" fill="url(#bezelGrad)" stroke="#4c5a6b" stroke-width="1"/>
+      <path d="M0 -5.3 L3.1 -4 L5.3 0 L4 3.1 L0 5.3 L-4 3.1 L-5.3 0 L-3.1 -4 Z" fill="url(#sapph)" stroke="#123f7d" stroke-width="0.8"/>
+      <path d="M0 -5.3 L3.1 -4 L5.3 0 L4 3.1 L0 5.3 L-4 3.1 L-5.3 0 L-3.1 -4 Z" transform="scale(0.52)" fill="#79b9ff" opacity="0.95"/>
+      <path d="M0 -5.3 L0 -2.7 M5.3 0 L2.7 0 M0 5.3 L0 2.7 M-5.3 0 L-2.7 0" stroke="#123f7d" stroke-width="0.55" opacity="0.8"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5s" begin="2.4s" repeatCount="indefinite"/>
+        <use xlink:href="#st4" transform="scale(0.55)" fill="#ffffff">
+          <animate attributeName="opacity" values="0.35;1;0.35" dur="1.7s" begin="1s" repeatCount="indefinite"/>
+        </use>
+      </g>
+      <circle cx="-1.4" cy="-1.8" r="0.8" fill="#ffffff" opacity="0.9"/>
+    </g>
+  </g>
+  <g transform="translate(162.9 162.9)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="2.4s" begin="1.8s" repeatCount="indefinite"/>
+      <circle r="7.3" fill="url(#bezelGrad)" stroke="#4c5a6b" stroke-width="1"/>
+      <path d="M0 -5.3 L3.1 -4 L5.3 0 L4 3.1 L0 5.3 L-4 3.1 L-5.3 0 L-3.1 -4 Z" fill="url(#sapph)" stroke="#123f7d" stroke-width="0.8"/>
+      <path d="M0 -5.3 L3.1 -4 L5.3 0 L4 3.1 L0 5.3 L-4 3.1 L-5.3 0 L-3.1 -4 Z" transform="scale(0.52)" fill="#79b9ff" opacity="0.95"/>
+      <path d="M0 -5.3 L0 -2.7 M5.3 0 L2.7 0 M0 5.3 L0 2.7 M-5.3 0 L-2.7 0" stroke="#123f7d" stroke-width="0.55" opacity="0.8"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5s" begin="3.6s" repeatCount="indefinite"/>
+        <use xlink:href="#st4" transform="scale(0.55)" fill="#ffffff">
+          <animate attributeName="opacity" values="0.35;1;0.35" dur="1.7s" begin="1.5s" repeatCount="indefinite"/>
+        </use>
+      </g>
+      <circle cx="-1.4" cy="-1.8" r="0.8" fill="#ffffff" opacity="0.9"/>
+    </g>
+  </g>
+
+  <!-- TOP CROWN JEWEL: rotating ray halo + radiant sapphire -->
+  <g transform="translate(100 14)">
+    <g fill="#cfe9ff" opacity="0.35">
+      <path d="M0 -6.5 L-1.1 -11.5 L1.1 -11.5 Z"/>
+      <path d="M0 -6.5 L-1.1 -11.5 L1.1 -11.5 Z" transform="rotate(45)"/>
+      <path d="M0 -6.5 L-1.1 -11.5 L1.1 -11.5 Z" transform="rotate(90)"/>
+      <path d="M0 -6.5 L-1.1 -11.5 L1.1 -11.5 Z" transform="rotate(135)"/>
+      <path d="M0 -6.5 L-1.1 -11.5 L1.1 -11.5 Z" transform="rotate(180)"/>
+      <path d="M0 -6.5 L-1.1 -11.5 L1.1 -11.5 Z" transform="rotate(225)"/>
+      <path d="M0 -6.5 L-1.1 -11.5 L1.1 -11.5 Z" transform="rotate(270)"/>
+      <path d="M0 -6.5 L-1.1 -11.5 L1.1 -11.5 Z" transform="rotate(315)"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="22s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.12;1" dur="3s" repeatCount="indefinite"/>
+      <circle cx="-11" cy="0" r="1" fill="#eaf6ff"/>
+      <circle cx="11" cy="0" r="1" fill="#eaf6ff"/>
+      <circle r="7.6" fill="url(#bezelGrad)" stroke="#4c5a6b" stroke-width="1"/>
+      <path d="M0 -6.6 L3.9 -5 L6.6 0 L5 3.9 L0 6.6 L-5 3.9 L-6.6 0 L-3.9 -5 Z" fill="url(#sapph)" stroke="#123f7d" stroke-width="0.9"/>
+      <path d="M0 -6.6 L3.9 -5 L6.6 0 L5 3.9 L0 6.6 L-5 3.9 L-6.6 0 L-3.9 -5 Z" transform="scale(0.5)" fill="#8fc2ff" opacity="0.95"/>
+      <path d="M0 -6.6 L0 -3.3 M6.6 0 L3.3 0 M0 6.6 L0 3.3 M-6.6 0 L-3.3 0" stroke="#123f7d" stroke-width="0.6" opacity="0.8"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="4.5s" repeatCount="indefinite"/>
+        <use xlink:href="#st4" transform="scale(0.6)" fill="#ffffff">
+          <animate attributeName="opacity" values="0.4;1;0.4" dur="1.6s" repeatCount="indefinite"/>
+        </use>
+      </g>
+      <circle cx="-1.7" cy="-2.1" r="0.9" fill="#ffffff" opacity="0.9"/>
+    </g>
+  </g>
+  <!-- left / right sapphire studs -->
+  <g transform="translate(11 100)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.15;1" dur="3s" begin="1s" repeatCount="indefinite"/>
+      <circle r="6.2" fill="url(#bezelGrad)" stroke="#4c5a6b" stroke-width="1"/>
+      <path d="M0 -4.3 L2.5 -3.2 L4.3 0 L3.2 2.5 L0 4.3 L-3.2 2.5 L-4.3 0 L-2.5 -3.2 Z" fill="url(#sapph)" stroke="#123f7d" stroke-width="0.7"/>
+      <path d="M0 -4.3 L2.5 -3.2 L4.3 0 L3.2 2.5 L0 4.3 L-3.2 2.5 L-4.3 0 L-2.5 -3.2 Z" transform="scale(0.5)" fill="#8fc2ff" opacity="0.95"/>
+      <circle cx="-1" cy="-1.2" r="0.6" fill="#ffffff" opacity="0.9"/>
+    </g>
+  </g>
+  <g transform="translate(189 100)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1.15;1" dur="3s" begin="2s" repeatCount="indefinite"/>
+      <circle r="6.2" fill="url(#bezelGrad)" stroke="#4c5a6b" stroke-width="1"/>
+      <path d="M0 -4.3 L2.5 -3.2 L4.3 0 L3.2 2.5 L0 4.3 L-3.2 2.5 L-4.3 0 L-2.5 -3.2 Z" fill="url(#sapph)" stroke="#123f7d" stroke-width="0.7"/>
+      <path d="M0 -4.3 L2.5 -3.2 L4.3 0 L3.2 2.5 L0 4.3 L-3.2 2.5 L-4.3 0 L-2.5 -3.2 Z" transform="scale(0.5)" fill="#8fc2ff" opacity="0.95"/>
+      <circle cx="-1" cy="-1.2" r="0.6" fill="#ffffff" opacity="0.9"/>
+    </g>
+  </g>
+
+  <!-- 10 ice-star sparkles -->
+  <g fill="#eef6ff">
+    <use xlink:href="#ispark" transform="translate(42 44) scale(1.05)" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="0s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#ispark" transform="translate(158 44) scale(0.9)" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="0.35s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#ispark" transform="translate(26 126) scale(0.8)" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="0.7s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#ispark" transform="translate(174 126) scale(1)" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="1.05s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#ispark" transform="translate(66 22) scale(0.75)" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="1.4s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#ispark" transform="translate(134 22) scale(0.85)" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="1.75s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#ispark" transform="translate(24 98) scale(0.7)" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="0.5s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#ispark" transform="translate(176 98) scale(0.75)" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="1.2s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#ispark" transform="translate(56 32) scale(0.7)" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="1.6s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#ispark" transform="translate(144 32) scale(0.7)" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="1.9s" begin="0.9s" repeatCount="indefinite"/>
+    </use>
+  </g>
+
+  <!-- VIP 4 hex badge with shine sweep -->
+  <g>
+    <!-- wings -->
+    <path d="M62 181 L69 176.5 L69 185.5 Z" fill="url(#platMain)" stroke="#4c5a6b" stroke-width="0.8">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M138 181 L131 176.5 L131 185.5 Z" fill="url(#platMain)" stroke="#4c5a6b" stroke-width="0.8">
+      <animate attributeName="opacity" values="1;0.6;1" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+
+    <path d="M74 167.5 L126 167.5 L133.5 181 L126 194.5 L74 194.5 L66.5 181 Z"
+          fill="url(#badgeGrad)" stroke="#3a4553" stroke-width="1.8"/>
+    <path d="M78.5 170.5 L121.5 170.5 L127.5 181 L121.5 191.5 L78.5 191.5 L72.5 181 Z"
+          fill="none" stroke="#8fd0ff" stroke-width="1" opacity="0.3">
+      <animate attributeName="opacity" values="0.15;0.45;0.15" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M78.5 170.5 L121.5 170.5 L127.5 181 L121.5 191.5 L78.5 191.5 L72.5 181 Z"
+          fill="none" stroke="#eef5fc" stroke-width="0.9" opacity="0.6"/>
+
+    <!-- shine sweep across badge -->
+    <g clip-path="url(#hexClip)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-46 0;52 0" dur="4.5s" repeatCount="indefinite"/>
+        <rect x="94" y="158" width="13" height="48" fill="#ffffff" opacity="0.28" transform="skewX(-18)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-46 0;52 0" dur="4.5s" begin="2.25s" repeatCount="indefinite"/>
+        <rect x="94" y="158" width="9" height="48" fill="#ffffff" opacity="0.14" transform="skewX(-18)"/>
+      </g>
+    </g>
+
+    <!-- crown with sapphire -->
+    <path d="M91.5 166.5 L93.5 157.5 L97.3 161.3 L100 156.3 L102.7 161.3 L106.5 157.5 L108.5 166.5 Z"
+          fill="url(#platMain)" stroke="#4c5a6b" stroke-width="0.9" stroke-linejoin="round">
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="2.6s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="100" cy="162" r="1.1" fill="url(#sapph)" stroke="#123f7d" stroke-width="0.4"/>
+    <g fill="#dff2ff">
+      <circle cx="93.5" cy="156.6" r="1"/>
+      <circle cx="100" cy="155.3" r="1"/>
+      <circle cx="106.5" cy="156.6" r="1"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.9s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- twinkling corner rivets -->
+    <path d="M-2.1 0 L0 -2.5 L2.1 0 L0 2.5 Z" transform="translate(68.5 181)" fill="url(#studGrad)" stroke="#4c5a6b" stroke-width="0.5">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-2.1 0 L0 -2.5 L2.1 0 L0 2.5 Z" transform="translate(131.5 181)" fill="url(#studGrad)" stroke="#4c5a6b" stroke-width="0.5">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" begin="0.9s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- glowing text -->
+    <text x="100" y="185.7" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+          font-size="12.5" font-weight="800" letter-spacing="1" fill="#8fd0ff" filter="url(#textGlow)" opacity="0.6">VIP 4
+      &lt;animate attributeName="opacity" values="0.35;0.85;0.35" dur="3s" repeatCount="indefinite"/&gt;
+    </text>
+    <text x="100" y="186.8" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+          font-size="12.5" font-weight="800" letter-spacing="1" fill="#2c3540" opacity="0.55">VIP 4</text>
+    <text x="100" y="185.8" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+          font-size="12.5" font-weight="800" letter-spacing="1" fill="#ffffff">VIP 4</text>
+  </g>
+</svg>

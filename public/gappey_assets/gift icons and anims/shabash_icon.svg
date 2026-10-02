@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <title>Shabash Trophy — gift logo</title>
+  <defs>
+    <linearGradient id="sbLgold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE9A8"/><stop offset=".5" stop-color="#E9B94F"/><stop offset="1" stop-color="#B8791F"/>
+    </linearGradient>
+    <path id="sbLspk" d="M0 -10 Q2 -2 10 0 Q2 2 0 10 Q-2 2 -10 0 Q-2 -2 0 -10Z"/>
+    <g id="sbLleaf">
+      <path d="M0 0 C-14 -22 -14 -56 0 -78" fill="none" stroke="#3E7C4F" stroke-width="3"/>
+      <ellipse cx="-11" cy="-12" rx="8" ry="3.6" fill="#D9A441" transform="rotate(-38 -11 -12)"/>
+      <ellipse cx="10" cy="-24" rx="8" ry="3.6" fill="#D9A441" transform="rotate(32 10 -24)"/>
+      <ellipse cx="-12" cy="-38" rx="8" ry="3.6" fill="#D9A441" transform="rotate(-36 -12 -38)"/>
+      <ellipse cx="11" cy="-50" rx="7.5" ry="3.4" fill="#D9A441" transform="rotate(30 11 -50)"/>
+      <ellipse cx="-10" cy="-62" rx="7" ry="3.2" fill="#D9A441" transform="rotate(-34 -10 -62)"/>
+    </g>
+  </defs>
+  <g fill="#F2B33D">
+    <rect x="30" y="52" width="6" height="11" rx="2" transform="rotate(-20 33 57)"/>
+    <rect x="200" y="60" width="6" height="11" rx="2" transform="rotate(16 203 65)"/>
+    <circle cx="22" cy="150" r="3"/>
+    <circle cx="216" cy="140" r="2.6" fill="#E2557B"/>
+  </g>
+  <use href="#sbLleaf" transform="translate(58 168) rotate(-16)"/>
+  <use href="#sbLleaf" transform="translate(182 168) scale(-1 1) rotate(-16)"/>
+  <g transform="translate(120 104)">
+    <path d="M-34 -46 C-54 -46 -54 -14 -30 -8" fill="none" stroke="#D9A441" stroke-width="5" stroke-linecap="round"/>
+    <path d="M34 -46 C54 -46 54 -14 30 -8" fill="none" stroke="#D9A441" stroke-width="5" stroke-linecap="round"/>
+    <path d="M-34 -50 C-34 -16 -18 4 0 4 C18 4 34 -16 34 -50 Z" fill="url(#sbLgold)" stroke="#7A531A" stroke-width="2.5"/>
+    <ellipse cy="-50" rx="34" ry="6.5" fill="#FFE9A8" stroke="#8A5F1D" stroke-width="2"/>
+    <path d="M0 -36 L2.9 -27.9 L11.4 -27.7 L4.6 -22.5 L7.1 -14.3 L0 -19.4 L-7.1 -14.3 L-4.6 -22.5 L-11.4 -27.7 L-2.9 -27.9 Z" fill="#FFF3D0" stroke="#B8862F" stroke-width="1.2"/>
+    <path d="M-24 -42 Q-20 -24 -10 -14" fill="none" stroke="#FFF6E6" stroke-width="3" stroke-linecap="round" opacity=".6"/>
+    <rect x="-5" y="4" width="10" height="16" fill="#C98F33" stroke="#8A5F1D" stroke-width="1.5"/>
+    <ellipse cy="22" rx="13" ry="4.5" fill="#E9B94F" stroke="#8A5F1D" stroke-width="1.5"/>
+    <rect x="-22" y="26" width="44" height="11" rx="3" fill="#B8862F" stroke="#7A531A" stroke-width="2"/>
+    <rect x="-32" y="37" width="64" height="13" rx="3" fill="#8A5F1D" stroke="#5E3A10" stroke-width="2"/>
+    <line x1="-32" y1="41" x2="32" y2="41" stroke="#D9A441" stroke-width="1.5" opacity=".7"/>
+  </g>
+  <path d="M52 176 H188 L176 190 L188 204 H52 L64 190 Z" fill="#5E1B26" stroke="#D9A441" stroke-width="2"/>
+  <text x="120" y="196" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="17" letter-spacing="1.5" fill="#F6D27A">SHABASH!</text>
+  <use href="#sbLspk" transform="translate(198 118) scale(.7)" fill="#F6D27A"/>
+  <use href="#sbLspk" transform="translate(42 96) scale(.55)" fill="#F6EFE2"/>
+</svg>

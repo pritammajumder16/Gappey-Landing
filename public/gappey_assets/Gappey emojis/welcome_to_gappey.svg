@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<defs><radialGradient id="wgF" cx="38%" cy="30%" r="82%"><stop offset="0%" stop-color="#FFF5BC"/><stop offset="55%" stop-color="#FFD45E"/><stop offset="100%" stop-color="#FFA51F"/></radialGradient></defs>
+<style>
+.wgB{transform-box:fill-box;transform-origin:center bottom;animation:wgA 1.4s ease-in-out infinite}
+@keyframes wgA{0%,100%{transform:scale(1,1) translateY(0)}30%{transform:scale(1.05,.95) translateY(3px)}60%{transform:scale(.97,1.05) translateY(-5px)}}
+.wgBu{transform-box:fill-box;transform-origin:center;animation:wgB 1.4s ease-in-out infinite}
+@keyframes wgB{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.wgC{opacity:0;transform-box:fill-box;transform-origin:center;animation:wgC 1.7s linear infinite}
+.wgC.b{animation-delay:.35s}.wgC.c{animation-delay:.7s}.wgC.d{animation-delay:1.05s}.wgC.e{animation-delay:1.4s}
+@keyframes wgC{0%{opacity:0;transform:translateY(-8px) rotate(0)}20%{opacity:1}100%{opacity:0;transform:translateY(60px) rotate(160deg)}}
+</style>
+<rect class="wgC" x="52" y="96" width="5" height="9" rx="2" fill="#F26D9A"/>
+<circle class="wgC b" cx="30" cy="104" r="3.5" fill="#8ED8F8"/>
+<rect class="wgC c" x="148" y="98" width="5" height="9" rx="2" fill="#7ED98A"/>
+<circle class="wgC d" cx="166" cy="106" r="3.5" fill="#B28AE8"/>
+<rect class="wgC e" x="40" y="100" width="5" height="9" rx="2" fill="#FFD45E"/>
+<g class="wgBu">
+<rect x="28" y="20" width="144" height="62" rx="16" fill="#fff" stroke="#F26D9A" stroke-width="3"/>
+<path d="M90 80 L100 102 L116 81 Z" fill="#fff" stroke="#F26D9A" stroke-width="3" stroke-linejoin="round"/>
+<text x="100" y="46" text-anchor="middle" font-family="'Baloo 2','Comic Sans MS',cursive" font-size="17" font-weight="800" fill="#F26D9A">welcome to</text>
+<text x="100" y="72" text-anchor="middle" font-family="'Baloo 2','Comic Sans MS',cursive" font-size="26" font-weight="800" fill="#F26D9A">gappey!</text>
+</g>
+<g class="wgB">
+<path d="M62 134 Q46 122 44 106" fill="none" stroke="#FFD45E" stroke-width="11" stroke-linecap="round"/>
+<circle cx="43" cy="102" r="8" fill="url(#wgF)" stroke="#C97B2D" stroke-width="2.5" stroke-opacity=".55"/>
+<path d="M138 134 Q154 122 156 106" fill="none" stroke="#FFD45E" stroke-width="11" stroke-linecap="round"/>
+<circle cx="157" cy="102" r="8" fill="url(#wgF)" stroke="#C97B2D" stroke-width="2.5" stroke-opacity=".55"/>
+<circle cx="100" cy="140" r="42" fill="url(#wgF)" stroke="#C97B2D" stroke-width="2.5" stroke-opacity=".55"/>
+<ellipse cx="80" cy="98" rx="13" ry="6" fill="#fff" opacity=".6" transform="rotate(-16 80 98)"/>
+<circle cx="85" cy="136" r="6" fill="#5B3A1E"/><circle cx="87.5" cy="133.5" r="2" fill="#fff"/>
+<circle cx="115" cy="136" r="6" fill="#5B3A1E"/><circle cx="117.5" cy="133.5" r="2" fill="#fff"/>
+<ellipse cx="64" cy="150" rx="8" ry="5" fill="#FFB3C7" opacity=".9"/>
+<ellipse cx="136" cy="150" rx="8" ry="5" fill="#FFB3C7" opacity=".9"/>
+<path d="M84 154 Q100 164 116 154 Q114 170 100 172 Q86 170 84 154 Z" fill="#5A1B3F"/>
+<ellipse cx="100" cy="167" rx="10" ry="5" fill="#FF8FB0"/>
+</g>
+</svg>

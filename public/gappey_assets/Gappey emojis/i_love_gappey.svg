@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<defs>
+<radialGradient id="gpg" cx="38%" cy="30%" r="82%"><stop offset="0%" stop-color="#FFF5BC"/><stop offset="55%" stop-color="#FFD45E"/><stop offset="100%" stop-color="#FFA51F"/></radialGradient>
+<path id="gph" d="M0 7C-8-3-19-7-19-16-19-24-9-26 0-17 9-26 19-24 19-16 19-7 8-3 0 7Z"/>
+</defs>
+<style>
+.gpB{transform-box:fill-box;transform-origin:center bottom;animation:gpA 1.6s ease-in-out infinite}
+@keyframes gpA{0%,100%{transform:rotate(-2.5deg)}50%{transform:rotate(2.5deg) translateY(-3px)}}
+.gpH{opacity:0;transform-box:fill-box;transform-origin:center;animation:gpB 1.6s ease-out infinite}
+.gpH.e{animation-delay:.8s}
+@keyframes gpB{0%{opacity:0;transform:translateY(8px) scale(.5)}30%{opacity:1}100%{opacity:0;transform:translateY(-22px) scale(1.1)}}
+</style>
+<g class="gpB">
+<circle cx="52" cy="122" r="36" fill="url(#gpg)" stroke="#C97B2D" stroke-width="2.5" stroke-opacity=".55"/>
+<path d="M34 116 Q41 109 48 116" fill="none" stroke="#8A4B15" stroke-width="5.5" stroke-linecap="round"/>
+<path d="M58 116 Q65 109 72 116" fill="none" stroke="#8A4B15" stroke-width="5.5" stroke-linecap="round"/>
+<path d="M42 132 Q50 138 58 132" fill="none" stroke="#8A4B15" stroke-width="5" stroke-linecap="round"/>
+<ellipse cx="30" cy="126" rx="6" ry="4" fill="#FFB3C7" opacity=".9"/>
+<path d="M66 108 L52 140 L100 112 Z" fill="#fff" stroke="#F26D9A" stroke-width="3" stroke-linejoin="round"/>
+<rect x="46" y="52" width="118" height="64" rx="18" fill="#fff" stroke="#F26D9A" stroke-width="3"/>
+<text x="104" y="94" text-anchor="middle" font-family="'Baloo 2','Comic Sans MS',cursive" font-size="27" font-weight="800" fill="#F26D9A">gappey</text>
+<use href="#gph" transform="translate(150,68) scale(.42)" fill="#F0507A"/>
+<circle cx="56" cy="118" r="9" fill="url(#gpg)" stroke="#C97B2D" stroke-width="2.5" stroke-opacity=".55"/>
+<circle cx="154" cy="118" r="9" fill="url(#gpg)" stroke="#C97B2D" stroke-width="2.5" stroke-opacity=".55"/>
+</g>
+<g transform="translate(168,34)"><g class="gpH"><use href="#gph" fill="#FF8FB0" transform="scale(.6)"/></g></g>
+<g transform="translate(30,36)"><g class="gpH e"><use href="#gph" fill="#F0507A" transform="scale(.45)"/></g></g>
+</svg>

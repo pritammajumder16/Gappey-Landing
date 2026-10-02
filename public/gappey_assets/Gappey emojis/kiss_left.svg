@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<defs>
+<radialGradient id="klg" cx="38%" cy="30%" r="82%"><stop offset="0%" stop-color="#FFF5BC"/><stop offset="55%" stop-color="#FFD45E"/><stop offset="100%" stop-color="#FFA51F"/></radialGradient>
+<path id="klh" d="M0 7C-8-3-19-7-19-16-19-24-9-26 0-17 9-26 19-24 19-16 19-7 8-3 0 7Z"/>
+</defs>
+<style>
+.klF{transform-box:fill-box;transform-origin:center bottom;animation:klA 1.8s ease-in-out infinite}
+@keyframes klA{
+0%,100%{transform:rotate(2deg) translate(0,0)}
+20%{transform:rotate(-2deg) translate(-2px,-1px)}
+40%{transform:rotate(1.5deg) translate(2px,1px)}
+60%{transform:rotate(-2.2deg) translate(-3px,-1px)}
+80%{transform:rotate(1.2deg) translate(1px,0)}}
+.klL{transform-box:fill-box;transform-origin:center;animation:klB 1.8s ease-in-out infinite}
+@keyframes klB{0%,35%{transform:scale(1)}45%{transform:translateX(-3px) scale(1.4)}56%{transform:scale(1.08)}66%,100%{transform:scale(1)}}
+.klW{transform-box:fill-box;transform-origin:center;animation:klC 1.8s ease-in-out infinite}
+@keyframes klC{0%,40%{transform:scale(1)}50%{transform:scale(1.18,.8)}60%,100%{transform:scale(1)}}
+.klH{transform-box:fill-box;transform-origin:center;opacity:0;animation:klD 1.8s ease-out infinite}
+@keyframes klD{
+0%{opacity:0;transform:translate(0,6px) scale(.3) rotate(10deg)}
+15%{opacity:1;transform:translate(-8px,-2px) scale(.75) rotate(4deg)}
+45%{opacity:1;transform:translate(-24px,-26px) scale(1) rotate(-6deg)}
+75%{opacity:.8;transform:translate(-40px,-54px) scale(1.08) rotate(-10deg)}
+100%{opacity:0;transform:translate(-48px,-70px) scale(1.12) rotate(-12deg)}}
+.klH2{transform-box:fill-box;transform-origin:center;opacity:0;animation:klD 1.8s ease-out .9s infinite}
+</style>
+<g class="klF">
+<circle cx="100" cy="104" r="76" fill="url(#klg)" stroke="#C97B2D" stroke-width="2.5" stroke-opacity=".55"/>
+<ellipse cx="130" cy="50" rx="22" ry="11" fill="#fff" opacity=".6" transform="rotate(16 130 50)"/>
+<circle cx="88" cy="40" r="5" fill="#fff" opacity=".45"/>
+<circle cx="134" cy="102" r="9" fill="#8A4B15"/>
+<path class="klW" d="M84 94 Q69 80 54 94" fill="none" stroke="#8A4B15" stroke-width="7" stroke-linecap="round"/>
+<ellipse cx="48" cy="122" rx="12" ry="7.5" fill="#FFB3C7" opacity=".9"/>
+<ellipse cx="152" cy="122" rx="12" ry="7.5" fill="#FFB3C7" opacity=".9"/>
+<g transform="translate(99,142)"><g class="klL"><path d="M6 -14 L-7 -7 L6 0 L-7 7 L6 14" fill="none" stroke="#8A4B15" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></g></g>
+</g>
+<g transform="translate(88,138)"><g class="klH"><use href="#klh" fill="#F0507A"/></g></g>
+<g transform="translate(94,134)"><g class="klH2"><use href="#klh" fill="#FF8FB0" transform="scale(.5)"/></g></g>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<defs>
+<radialGradient id="ht2y" cx="38%" cy="30%" r="82%"><stop offset="0%" stop-color="#FFF5BC"/><stop offset="55%" stop-color="#FFD45E"/><stop offset="100%" stop-color="#FFA51F"/></radialGradient>
+<radialGradient id="ht2r" cx="38%" cy="30%" r="82%"><stop offset="0%" stop-color="#FFC9A0"/><stop offset="45%" stop-color="#FF8A5E"/><stop offset="100%" stop-color="#E8431F"/></radialGradient>
+</defs>
+<style>
+.ht2B{transform-box:fill-box;transform-origin:center bottom;animation:ht2A .8s ease-in-out infinite alternate}
+@keyframes ht2A{from{transform:scale(1,1)}to{transform:scale(1.025,.975)}}
+.ht2H{animation:ht2C 2.6s ease-in-out infinite}
+@keyframes ht2C{0%{opacity:0}35%{opacity:.85}55%{opacity:.9}85%{opacity:.25}100%{opacity:0}}
+.ht2M{transform-box:fill-box;transform-origin:center top;animation:ht2D .35s ease-in-out infinite alternate}
+@keyframes ht2D{from{transform:scale(1,.85)}to{transform:scale(.94,1.12)}}
+.ht2R{transform-box:fill-box;transform-origin:center;animation:ht2E 8s linear infinite}
+@keyframes ht2E{to{transform:rotate(360deg)}}
+.ht2W{animation:ht2F 1.5s ease-out infinite}
+.ht2W.e{animation-delay:.75s}
+@keyframes ht2F{0%{opacity:0;transform:translateY(8px)}30%{opacity:.85}100%{opacity:0;transform:translateY(-16px)}}
+.ht2D{transform-box:fill-box;transform-origin:center;animation:ht2G 1.3s ease-in infinite}
+@keyframes ht2G{0%{opacity:0;transform:translate(0,0) scale(.5)}25%{opacity:1}100%{opacity:0;transform:translate(-18px,30px) scale(1.1)}}
+.ht2D2{transform-box:fill-box;transform-origin:center;animation:ht2G 1.3s ease-in infinite;animation-delay:.65s}
+</style>
+<g transform="translate(158,38)"><circle r="15" fill="#FFD45E" stroke="#F0A11B" stroke-width="3"/><g class="ht2R" stroke="#F0A11B" stroke-width="3.5" stroke-linecap="round" fill="none"><path d="M0 -23 V-18 M0 23 V18 M-23 0 H-18 M23 0 H18 M-16 -16 L-13 -13 M16 16 L13 13 M-16 16 L-13 13 M16 -16 L13 -13"/></g></g>
+<g transform="translate(52,36)"><g class="ht2W"><path d="M0 6 Q6 -2 0 -8 Q-6 -14 0 -22" fill="none" stroke="#FF9A3D" stroke-width="4.5" stroke-linecap="round"/></g></g>
+<g transform="translate(148,24)"><g class="ht2W e"><path d="M0 6 Q6 -2 0 -8 Q-6 -14 0 -22" fill="none" stroke="#FF9A3D" stroke-width="4.5" stroke-linecap="round"/></g></g>
+<g class="ht2B">
+<circle cx="100" cy="104" r="76" fill="url(#ht2y)" stroke="#C97B2D" stroke-width="2.5" stroke-opacity=".55"/>
+<ellipse cx="100" cy="160" rx="56" ry="20" fill="#F08A00" opacity=".3"/>
+<circle class="ht2H" cx="100" cy="104" r="76" fill="url(#ht2r)"/>
+<ellipse cx="70" cy="50" rx="22" ry="11" fill="#fff" opacity=".5" transform="rotate(-16 70 50)"/>
+<path d="M54 98 L72 106 L54 114" fill="none" stroke="#8A4B15" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M146 98 L128 106 L146 114" fill="none" stroke="#8A4B15" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="46" cy="126" rx="11" ry="7" fill="#F2504B" opacity=".55"/>
+<ellipse cx="154" cy="126" rx="11" ry="7" fill="#F2504B" opacity=".55"/>
+<g class="ht2M"><ellipse cx="100" cy="140" rx="13" ry="15" fill="#5A1B3F"/><ellipse cx="100" cy="149" rx="8.5" ry="8" fill="#FF8FB0"/></g>
+<path d="M46 74 C42 81 40 86 43 90 C46 94 53 92 53 87 C53 82 49 78 46 74Z" fill="#8ED8F8"/>
+<path d="M154 78 C150 85 148 90 151 94 C154 98 161 96 161 91 C161 86 157 82 154 78Z" fill="#8ED8F8"/>
+</g>
+<g transform="translate(34,64)"><g class="ht2D"><path d="M0 -8 C-4 -1 -6 4 -3 8 C0 12 6 10 6 5 C6 0 3 -4 0 -8 Z" fill="#8ED8F8"/></g></g>
+<g transform="translate(166,58)"><g class="ht2D2"><path d="M0 -8 C-4 -1 -6 4 -3 8 C0 12 6 10 6 5 C6 0 3 -4 0 -8 Z" fill="#8ED8F8"/></g></g>
+</svg>

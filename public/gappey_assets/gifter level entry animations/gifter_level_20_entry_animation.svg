@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="200" viewBox="0 0 760 200" role="img" aria-labelledby="l20gt" style="overflow:visible">
+  <title id="l20gt">Gifter Lv.20 entry banner</title>
+  <defs>
+    <linearGradient id="l20grb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3B82F6"/><stop offset="1" stop-color="#1D4ED8"/></linearGradient>
+    <radialGradient id="l20ggl" cx=".5" cy=".5" r=".5"><stop offset=".55" stop-color="#3B82F6" stop-opacity="0"/><stop offset=".82" stop-color="#3B82F6" stop-opacity=".33"/><stop offset="1" stop-color="#3B82F6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="l20gem" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#BFDBFE"/></radialGradient>
+    <path id="l20gst" d="M0 -11 L3.2 -3.6 L11 -3 L5.2 2.4 L6.8 10 L0 6 L-6.8 10 L-5.2 2.4 L-11 -3 L-3.2 -3.6 Z"/>
+    <path id="l20gtw" d="M0 -6 Q1.2 -1.2 6 0 Q1.2 1.2 0 6 Q-1.2 1.2 -6 0 Q-1.2 -1.2 0 -6 Z"/>
+  </defs>
+  <style><![CDATA[
+.gl{transform-box:fill-box;transform-origin:50% 50%;animation:glowin .8s ease-out both,breathe 3.6s ease-in-out .8s infinite alternate,outFade .5s ease-in 4.4s forwards}
+.rib{animation:slidein 1.05s cubic-bezier(.2,.7,.3,1) both,outR .8s cubic-bezier(.5,.05,.85,.5) 4.5s forwards}
+.txt{animation:rise .55s ease-out 1.3s both}
+.em{transform-box:fill-box;transform-origin:50% 50%;animation:pop .55s cubic-bezier(.2,.8,.3,1.25) 1s both,outPop .5s ease-in 4.5s forwards}
+.ering{transform-box:view-box;transform-origin:168px 106px;animation:spin 14s linear infinite}
+.ping{transform-box:fill-box;transform-origin:50% 50%;animation:ping .6s ease-out 1.15s both}
+.d1,.d2,.d3,.d4{transform-box:fill-box;transform-origin:50% 50%;animation:fly .65s ease-out 1.2s both}
+.d1{animation-name:f1}.d2{animation-name:f2}.d3{animation-name:f3}.d4{animation-name:f4}
+.crown{transform-box:fill-box;transform-origin:50% 100%;animation:pop .5s cubic-bezier(.2,.8,.3,1.25) 1.5s both,outUp .5s ease-in 4.5s forwards}
+.clear{animation:outFade .55s ease-in 4.4s forwards}
+.tw{transform-box:fill-box;transform-origin:50% 50%;animation:twinkle 2.1s ease-in-out 1.7s infinite both}
+.tw2{animation-delay:2s}.tw3{animation-delay:2.4s}.tw4{animation-delay:2.8s}
+@keyframes glowin{from{opacity:0}to{opacity:1}}
+@keyframes breathe{from{transform:scale(.97);opacity:.75}to{transform:scale(1.05);opacity:1}}
+@keyframes slidein{0%{transform:translateX(-880px)}70%{transform:translateX(18px)}85%{transform:translateX(-6px)}100%{transform:translateX(0)}}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pop{0%{opacity:0;transform:scale(0)}65%{opacity:1;transform:scale(1.18)}100%{opacity:1;transform:scale(1)}}
+@keyframes ping{0%{opacity:.8;transform:scale(.4)}100%{opacity:0;transform:scale(1.9)}}
+@keyframes f1{0%{opacity:1;transform:translate(0,0) scale(.4)}100%{opacity:0;transform:translate(-52px,-44px) scale(1)}}
+@keyframes f2{0%{opacity:1;transform:translate(0,0) scale(.4)}100%{opacity:0;transform:translate(52px,-44px) scale(1)}}
+@keyframes f3{0%{opacity:1;transform:translate(0,0) scale(.4)}100%{opacity:0;transform:translate(-58px,10px) scale(1)}}
+@keyframes f4{0%{opacity:1;transform:translate(0,0) scale(.4)}100%{opacity:0;transform:translate(58px,10px) scale(1)}}
+@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.5)}50%{opacity:1;transform:scale(1)}}
+@keyframes outR{to{transform:translateX(900px)}}
+@keyframes outUp{to{transform:translateY(-130px);opacity:0}}
+@keyframes outPop{to{transform:scale(0);opacity:0}}
+@keyframes outFade{to{opacity:0}}
+@media (prefers-reduced-motion:reduce){.gl,.rib,.txt,.em,.ering,.ping,.d1,.d2,.d3,.d4,.crown,.clear,.tw{animation:none}}
+  ]]></style>
+  <ellipse class="gl" cx="380" cy="104" rx="310" ry="78" fill="url(#l20ggl)"/>
+  <g class="rib">
+    <path d="M60 88 L136 88 L136 148 L60 148 L78 118 Z" fill="#1E3A8A"/>
+    <path d="M700 88 L624 88 L624 148 L700 148 L682 118 Z" fill="#1E3A8A"/>
+    <rect x="120" y="72" width="520" height="68" rx="10" fill="url(#l20grb)" stroke="#93C5FD" stroke-width="1.5"/>
+    <ellipse cx="380" cy="80" rx="240" ry="7" fill="#FFF" opacity=".22"/>
+    <g class="txt">
+      <text x="408" y="119" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="800" letter-spacing="2.5" fill="#14337A" opacity=".6">GIFTER JOINED</text>
+      <text x="408" y="117" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="800" letter-spacing="2.5" fill="#FFFFFF">GIFTER JOINED</text>
+    </g>
+  </g>
+  <g class="crown"><path d="M368 66 L371.5 57 L377 62.5 L380 55 L383 62.5 L388.5 57 L392 66 Z" fill="#FFD34D" stroke="#FFF" stroke-width="1.2"/><circle cx="380" cy="60" r="1.8" fill="#E11D48"/></g>
+  <g class="em">
+    <circle cx="168" cy="106" r="27" fill="url(#l20gem)" stroke="#FFF" stroke-width="2.5"/>
+    <circle class="ering" cx="168" cy="106" r="32" fill="none" stroke="#BFDBFE" stroke-width="2" stroke-dasharray="4 7"/>
+    <use href="#l20gst" x="168" y="106" fill="#1D4ED8"/>
+    <circle cx="164" cy="99" r="2" fill="#FFF"/>
+  </g>
+  <circle class="ping" cx="168" cy="106" r="30" fill="none" stroke="#BFDBFE" stroke-width="3"/>
+  <g transform="translate(168 106)">
+    <path class="d1" d="M0 -4.5 L4.5 0 L0 4.5 L-4.5 0 Z" fill="#FFD34D"/>
+    <path class="d2" d="M0 -4.5 L4.5 0 L0 4.5 L-4.5 0 Z" fill="#FFD34D"/>
+    <path class="d3" d="M0 -4.5 L4.5 0 L0 4.5 L-4.5 0 Z" fill="#BFDBFE"/>
+    <path class="d4" d="M0 -4.5 L4.5 0 L0 4.5 L-4.5 0 Z" fill="#BFDBFE"/>
+  </g>
+  <g class="clear">
+    <use href="#l20gtw" x="150" y="58" class="tw" fill="#BFDBFE"/>
+    <use href="#l20gtw" x="620" y="56" class="tw tw2" fill="#BFDBFE"/>
+    <use href="#l20gtw" x="122" y="160" class="tw tw3" fill="#93C5FD"/>
+    <use href="#l20gtw" x="646" y="158" class="tw tw4" fill="#93C5FD"/>
+  </g>
+</svg>
