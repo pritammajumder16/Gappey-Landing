@@ -36,6 +36,11 @@ yarn-error.log*
 # vercel
 .vercel
 
+# binaries & apk
+*.apk
+/public/app/*.apk
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+

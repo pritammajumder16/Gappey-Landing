@@ -15,7 +15,7 @@ Built for seamless one-click deployment on **Vercel** with full responsiveness, 
 - 🎁 **Interactive Gift Simulator**: Interactive tap-to-send simulator with animated gifts (`rose.gif`, `ship.gif`, `kiss.gif`, `laugh.gif`, `aurum dragon`, `rocket`, `taj mahal`) and real-time confetti combos.
 - 🖼️ **In-App Screenshots Gallery**: Interactive category filtering and fullscreen zoom viewer for all core screens (Voice Rooms, Gift Drawer, VIP Prestige, Leaderboards, Daily Rewards, and Agency Dashboards).
 - 🚀 **Google Play Pre-Registration**: Interactive registration form with instant celebration confetti and Early Bird Founding Badge confirmation.
-- 📥 **Direct APK Download**: Place `gappey.apk` under `public/app/gappey.apk` for instant one-click direct Android downloads.
+- 📥 **Direct APK Download**: Fast direct Android APK download powered by Expo EAS CDN.
 - 💼 **Digital Product Services Banner**: Subtle, elegant section connecting clients with Instagram `@khushi_jha16` for custom mobile apps, web applications, backends, DevOps, and desktop software.
 
 ---
@@ -51,18 +51,10 @@ npm run start
 
 ---
 
-## 📦 Adding Your Release APK (`public/app/gappey.apk`)
+## 📦 APK Download Configuration (`src/constants/links.ts`)
 
-To provide direct APK downloads to visitors:
-1. Build your Android APK from the `GappeyFE` React Native/Expo project (`eas build -p android` or gradle build).
-2. Copy the `.apk` file into `public/app/gappey.apk`.
-3. Commit and push to GitHub / Vercel:
-   ```bash
-   git add public/app/gappey.apk
-   git commit -m "Update Gappey Android APK"
-   git push origin main
-   ```
-4. Visitors clicking **"Download APK"** will immediately receive the new binary!
+Direct APK downloads point to the EAS cloud build artifact:
+- Update `APK_DOWNLOAD_URL` in `src/constants/links.ts` whenever a new EAS preview/production build is generated.
 
 ---
 

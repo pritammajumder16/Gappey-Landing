@@ -10,6 +10,7 @@ import {
   HelpCircle,
   ExternalLink
 } from "lucide-react";
+import { APK_DOWNLOAD_URL } from "@/constants/links";
 
 export default function DownloadSection() {
   const [emailOrPhone, setEmailOrPhone] = useState("");
@@ -227,13 +228,13 @@ export default function DownloadSection() {
               {/* Direct APK Download Button */}
               <div className="pt-2">
                 <a
-                  href="/app/gappey.apk"
+                  href={APK_DOWNLOAD_URL}
                   download="gappey.apk"
                   onClick={handleApkDownload}
                   className="w-full inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 text-white font-black text-base shadow-[0_0_30px_rgba(6,182,212,0.4)] hover:shadow-[0_0_40px_rgba(6,182,212,0.6)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 group"
                 >
                   <Download className="w-5 h-5 text-cyan-200 group-hover:animate-bounce" />
-                  <span>Download gappey.apk</span>
+                  <span>Download APK (Direct EAS)</span>
                   <span className="text-xs font-mono px-2 py-0.5 rounded bg-black/40 text-cyan-200 border border-white/20">
                     APK
                   </span>

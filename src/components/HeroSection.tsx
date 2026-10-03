@@ -12,6 +12,7 @@ import {
   Radio, 
   Zap
 } from "lucide-react";
+import { APK_DOWNLOAD_URL } from "@/constants/links";
 
 interface HeroSectionProps {
   onOpenVideo?: () => void;
@@ -89,7 +90,7 @@ export default function HeroSection({ onOpenVideo }: HeroSectionProps) {
 
               {/* Direct APK Download CTA */}
               <a
-                href="/app/gappey.apk"
+                href={APK_DOWNLOAD_URL}
                 download="gappey.apk"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-2xl bg-zinc-900/90 hover:bg-zinc-800 border border-cyan-500/30 text-white font-semibold text-sm hover:border-cyan-400/60 shadow-lg shadow-black/60 transition-all duration-200 group"
               >

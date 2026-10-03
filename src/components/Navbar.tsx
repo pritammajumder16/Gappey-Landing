@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Download, Sparkles, Menu, X, Flame } from "lucide-react";
+import { APK_DOWNLOAD_URL } from "@/constants/links";
 
 interface NavbarProps {
   onOpenPreRegister?: () => void;
@@ -84,7 +85,7 @@ export default function Navbar({ onOpenPreRegister }: NavbarProps) {
           {/* Right Action Buttons */}
           <div className="hidden sm:flex items-center gap-3">
             <a
-              href="/app/gappey.apk"
+              href={APK_DOWNLOAD_URL}
               download="gappey.apk"
               className="inline-flex items-center gap-2 text-xs font-semibold px-3.5 py-2 rounded-xl bg-zinc-800/80 hover:bg-zinc-700/80 border border-zinc-700/60 text-zinc-200 hover:text-white transition-all duration-200 shadow-sm hover:shadow-purple-500/10"
               title="Download Android APK directly"
@@ -107,7 +108,7 @@ export default function Navbar({ onOpenPreRegister }: NavbarProps) {
           {/* Mobile Menu Button */}
           <div className="flex sm:hidden items-center gap-2">
             <a
-              href="/app/gappey.apk"
+              href={APK_DOWNLOAD_URL}
               download="gappey.apk"
               className="p-2 rounded-xl bg-zinc-800 border border-zinc-700 text-cyan-400"
               title="Download APK"
@@ -143,7 +144,7 @@ export default function Navbar({ onOpenPreRegister }: NavbarProps) {
 
           <div className="pt-2 border-t border-white/10 flex flex-col gap-2.5">
             <a
-              href="/app/gappey.apk"
+              href={APK_DOWNLOAD_URL}
               download="gappey.apk"
               className="w-full flex items-center justify-center gap-2 text-sm font-semibold px-4 py-2.5 rounded-xl bg-zinc-800 text-zinc-200 border border-zinc-700"
             >

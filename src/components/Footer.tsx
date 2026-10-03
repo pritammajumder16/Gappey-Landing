@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { Download, ArrowUp, ExternalLink } from "lucide-react";
+import { APK_DOWNLOAD_URL } from "@/constants/links";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -154,7 +155,7 @@ export default function Footer() {
             </h4>
             <div className="space-y-2.5">
               <a
-                href="/app/gappey.apk"
+                href={APK_DOWNLOAD_URL}
                 download="gappey.apk"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-zinc-200 hover:text-white border border-white/10 text-xs font-semibold transition-all w-full justify-center"
               >
