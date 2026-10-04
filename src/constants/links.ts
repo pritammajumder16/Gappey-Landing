@@ -1,2 +1,3 @@
 export const APK_DOWNLOAD_URL =
-  "https://expo.dev/artifacts/eas/FeNojwciXk94OoBbCGZSf3vF3oMkgKN4gxNND4mS3Is.apk";
+  "https://expo.dev/artifacts/eas/iYl1QmKE-dtBZ5SIMfGH0B8mmfwHIajloQfmWB8-_Gs.apk";
+
