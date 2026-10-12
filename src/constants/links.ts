@@ -1,5 +1,5 @@
 export const APK_DOWNLOAD_URL =
-  "https://expo.dev/artifacts/eas/xmxghhnSGgLHhT9P4IMoLXbr0dhWK-xGhnc40TFw3Wc.apk";
+  "https://expo.dev/artifacts/eas/BLRMEVTF7SiE673Q2XVPu_fAKUT89ADNLWCkeaUAPYM.apk";
 
 export const APP_VERSION = "v1.1.0";
 
