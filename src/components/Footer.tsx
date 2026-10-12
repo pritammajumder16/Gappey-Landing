@@ -173,7 +173,18 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-400">
-          <p>© {new Date().getFullYear()} Gappey App. All rights reserved.</p>
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-center sm:text-left">
+            <p>© {new Date().getFullYear()} Gappey App. All rights reserved.</p>
+            <div className="flex items-center gap-4 text-[11px] text-zinc-400">
+              <a href="/privacy" className="hover:text-purple-300 underline underline-offset-4 transition-colors">
+                Privacy Policy
+              </a>
+              <span className="text-zinc-600">·</span>
+              <a href="/terms" className="hover:text-pink-300 underline underline-offset-4 transition-colors">
+                Terms &amp; Conditions
+              </a>
+            </div>
+          </div>
 
           <div className="flex items-center gap-4">
             <button

@@ -10,9 +10,17 @@ import {
   Crown, 
   Gift, 
   Radio, 
-  Zap
+  Zap,
 } from "lucide-react";
-import { APK_DOWNLOAD_URL } from "@/constants/links";
+import { APK_DOWNLOAD_URL, APP_VERSION, IOS_DOWNLOAD_URL, APK_DIRECT_DOWNLOAD, APK_FILENAME } from "@/constants/links";
+
+function AppleIcon({ className = "w-4 h-4" }: { className?: string }) {
+  return (
+    <svg className={className} fill="currentColor" viewBox="0 0 170 170">
+      <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.07-7.66-7.85-11.88-14.34-5.9-9.1-10.45-19.16-13.66-30.17-3.21-11.01-4.82-21.57-4.82-31.68 0-14.54 3.73-26.68 11.2-36.42 7.47-9.74 16.92-14.75 28.35-15.03 4.81 0 10.27 1.25 16.39 3.76 6.12 2.51 10.15 3.82 12.09 3.93 1.94-.11 6.13-1.47 12.57-4.08 6.44-2.61 11.83-3.8 16.18-3.57 11.64.67 21.03 5.09 28.17 13.26-10.28 6.24-15.31 14.88-15.09 25.92.22 8.71 3.55 16.03 10 21.96 6.45 5.93 14.15 9.4 23.1 10.41-2.22 6.56-4.66 13.15-7.31 19.78-2.65 6.63-5.23 12.63-7.74 18zM119.22 31.84c0-7.03 2.55-13.56 7.65-19.6 5.1-6.04 11.45-9.88 19.06-11.51.22 1.34.33 2.68.33 4.02 0 6.92-2.73 13.62-8.19 20.1-5.46 6.48-11.77 10.16-18.93 11.05-.11-1.34-.17-2.68-.17-4.06z" />
+    </svg>
+  );
+}
 
 interface HeroSectionProps {
   onOpenVideo?: () => void;
@@ -78,28 +86,45 @@ export default function HeroSection({ onOpenVideo }: HeroSectionProps) {
             </div>
 
             {/* CTA Buttons */}
-            <div className="pt-3 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
-              {/* Play Store Pre-Register CTA */}
+            <div className="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4">
+              {/* Direct APK Download CTA with Version */}
               <a
-                href="#download"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white font-bold text-base shadow-[0_0_30px_rgba(168,85,247,0.4)] hover:shadow-[0_0_40px_rgba(236,72,153,0.6)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+                href={APK_DIRECT_DOWNLOAD}
+                download={APK_FILENAME}
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-2xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white font-bold text-sm shadow-[0_0_30px_rgba(168,85,247,0.4)] hover:shadow-[0_0_40px_rgba(236,72,153,0.6)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 group"
               >
-                <Sparkles className="w-5 h-5 text-amber-200" />
-                <span>Pre-Register on Google Play</span>
-              </a>
-
-              {/* Direct APK Download CTA */}
-              <a
-                href={APK_DOWNLOAD_URL}
-                download="gappey.apk"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-2xl bg-zinc-900/90 hover:bg-zinc-800 border border-cyan-500/30 text-white font-semibold text-sm hover:border-cyan-400/60 shadow-lg shadow-black/60 transition-all duration-200 group"
-              >
-                <Download className="w-4 h-4 text-cyan-400 group-hover:scale-110 transition-transform" />
-                <span>Direct APK Download</span>
-                <span className="text-[10px] uppercase font-mono px-1.5 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-800/60">
+                <Download className="w-4 h-4 text-white group-hover:scale-110 transition-transform" />
+                <span>Download APK</span>
+                <span className="text-[11px] font-mono font-extrabold px-2 py-0.5 rounded-full bg-black/40 text-amber-200 border border-amber-300/40">
+                  {APP_VERSION}
+                </span>
+                <span className="text-[10px] uppercase font-mono px-1.5 py-0.5 rounded bg-black/30 text-white/90">
                   Android
                 </span>
               </a>
+
+              {/* iOS Download Button (Coming Soon / Prepared) */}
+              {IOS_DOWNLOAD_URL ? (
+                <a
+                  href={IOS_DOWNLOAD_URL}
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-zinc-900/90 hover:bg-zinc-800 border border-white/20 text-white font-semibold text-sm transition-all duration-200 shadow-lg shadow-black/60 group"
+                >
+                  <AppleIcon className="w-4 h-4 text-white" />
+                  <span>Download iOS</span>
+                </a>
+              ) : (
+                <button
+                  type="button"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-zinc-900/90 border border-white/10 text-zinc-300 text-sm font-semibold shadow-lg shadow-black/60 cursor-pointer hover:border-white/25 hover:text-white transition-all group"
+                  onClick={() => alert("iOS build is in preparation and will be available soon!")}
+                >
+                  <AppleIcon className="w-4 h-4 text-zinc-300 group-hover:text-white transition-colors" />
+                  <span>Download iOS</span>
+                  <span className="text-[10px] uppercase font-semibold px-1.5 py-0.5 rounded bg-white/10 text-zinc-300">
+                    Soon
+                  </span>
+                </button>
+              )}
 
               {/* Watch Video Demo Button */}
               <a
