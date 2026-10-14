@@ -1,14 +1,12 @@
-export const APK_DOWNLOAD_URL =
-  "https://expo.dev/artifacts/eas/BLRMEVTF7SiE673Q2XVPu_fAKUT89ADNLWCkeaUAPYM.apk";
-
-export const APP_VERSION = "v1.1.0";
+export const APP_VERSION = "v1.2.0";
 
 export const APK_FILENAME = `gappey_${APP_VERSION}.apk`;
 
-// Uses the streaming endpoint so the browser saves with the clean filename gappey_v1.1.0.apk
-export const APK_DIRECT_DOWNLOAD = "/api/download";
+// Served straight from our server (nginx /download/ on the API VM): a real direct link with no
+// Drive virus-scan page and no streaming through a Vercel function. Upload each new build there.
+export const APK_DOWNLOAD_URL = `https://gappey.duckdns.org/download/${APK_FILENAME}`;
+
+export const APK_DIRECT_DOWNLOAD = APK_DOWNLOAD_URL;
 
 // iOS build coming soon; keep null or placeholder until build is linked
 export const IOS_DOWNLOAD_URL: string | null = null;
-
-
