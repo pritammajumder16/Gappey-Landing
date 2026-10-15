@@ -1,16 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://gappey.in/</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://gappey.in/icon-512.png</image:loc>
+      <image:title>Gappey App Official Logo</image:title>
+      <image:caption>Gappey - Live Voice Party Rooms, Audio Chat and Creator Community</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gappey.in/mockup/d7cec7bb-fafd-4c06-bc7f-ef2bb58cac7a.png</image:loc>
+      <image:title>Gappey 16-Seat Live Voice Party Room</image:title>
+      <image:caption>Real-time group voice chat room with broadcast gifts and seat layouts</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gappey.in/screens/voice%20room.png</image:loc>
+      <image:title>Gappey Voice Chat Room Interface</image:title>
+      <image:caption>Interactive multi-seat audio streaming room with live listeners</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gappey.in/screens/gift%20drawer.png</image:loc>
+      <image:title>Gappey Virtual Gifting and Animated Broadcast Gifts</image:title>
+      <image:caption>Send luxury gifts and support audio room hosts</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gappey.in/screens/leaderboard.png</image:loc>
+      <image:title>Gappey Broadcaster and Star Level Leaderboard</image:title>
+      <image:caption>Top voice party hosts and gifter rankings</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://gappey.in/download-android</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://gappey.in/icon-512.png</image:loc>
+      <image:title>Download Gappey APK for Android</image:title>
+      <image:caption>Official Android APK download for Gappey Voice Party App</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://gappey.in/privacy</loc>
