@@ -176,7 +176,7 @@ export default function PrivacyPolicyPage() {
             <div className="p-5 rounded-2xl bg-zinc-900/90 border border-purple-500/30 text-xs sm:text-sm space-y-2">
               <p>
                 <strong>Grievance Officer:</strong>{" "}
-                <span className="text-amber-300 font-mono">[Grievance Officer Name — To be appointed by Gappey Management]</span>
+                <span className="text-white font-medium">Paramita Majumder Das</span>
               </p>
               <p>
                 <strong>Designation:</strong> Head of Trust, Safety &amp; Legal Compliance
@@ -188,7 +188,7 @@ export default function PrivacyPolicyPage() {
                 </a>
               </p>
               <p>
-                <strong>Jurisdiction &amp; Address:</strong> Bengaluru / Mumbai, India
+                <strong>Address:</strong> Kolkata, West Bengal, India
               </p>
               <p className="text-zinc-400 text-xs pt-1 border-t border-white/5">
                 <strong>Statutory Timelines:</strong> Written acknowledgement within twenty-four (24) hours; substantive resolution within fifteen (15) days of complaint receipt.
