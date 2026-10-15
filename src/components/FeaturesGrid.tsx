@@ -115,10 +115,19 @@ export default function FeaturesGrid() {
     },
     {
       category: "economy",
+      icon: <Sparkles className="w-6 h-6 text-emerald-400" />,
+      tag: "Host Earnings",
+      title: "Host Rewards & Creator Monetization",
+      desc: "Turn your live voice rooms and talent into real weekly income. Receive luxury fan gifts, convert diamonds to creator payouts, and withdraw directly to bank or UPI.",
+      color: "from-emerald-500/20 to-teal-500/5",
+      badgeColor: "bg-emerald-900/50 text-emerald-300 border-emerald-700/50",
+    },
+    {
+      category: "economy",
       icon: <Zap className="w-6 h-6 text-violet-400" />,
-      tag: "Ecosystem",
-      title: "Agencies & Authorized Sellers",
-      desc: "Streamlined dashboard for host talent agencies, host commission settlement, and authorized coin seller services.",
+      tag: "Talent Agencies",
+      title: "Agency Program & Broadcaster Network",
+      desc: "Join registered talent agencies or become an agency manager. Enjoy monthly broadcaster salary targets, host training, and priority platform support.",
       color: "from-violet-500/20 to-purple-500/5",
       badgeColor: "bg-violet-900/50 text-violet-300 border-violet-700/50",
     },
@@ -160,7 +169,7 @@ export default function FeaturesGrid() {
               { id: "all" as const, label: "All Features" },
               { id: "voice" as const, label: "Voice & Seats" },
               { id: "social" as const, label: "Social & CP" },
-              { id: "economy" as const, label: "Gifts & Levels" },
+              { id: "economy" as const, label: "Host & Economy" },
               { id: "games" as const, label: "Mini-Games" },
             ].map((tab) => (
               <button

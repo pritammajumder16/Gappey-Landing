@@ -4,6 +4,7 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import FeaturesGrid from "@/components/FeaturesGrid";
+import FAQSection from "@/components/FAQSection";
 import DownloadSection from "@/components/DownloadSection";
 import DeveloperPromo from "@/components/DeveloperPromo";
 import Footer from "@/components/Footer";
@@ -26,6 +27,9 @@ export default function Home() {
 
       {/* Core Features Grid (Built from real FRS & SRS v1.0 features) */}
       <FeaturesGrid />
+
+      {/* Interactive FAQ Section (SEO & Rich Snippets) */}
+      <FAQSection />
 
       {/* Direct Android APK Download Section */}
       <DownloadSection />

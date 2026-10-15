@@ -59,6 +59,7 @@ export default function HeroSection({ onScrollToDownload }: HeroSectionProps) {
               The premier real-time voice party room app with{" "}
               <strong className="text-white">dynamic 1, 2, 4, 8 &amp; 16 seat arrangements</strong>,
               vibrant <strong className="text-pink-400">full-screen animated broadcast gifts</strong>,
+              <strong className="text-emerald-400"> creator rewards for live audio hosts</strong>,
               Dual Blue &amp; Pink Star progression, VIP prestige privileges, and intimate CP bonding.
             </p>
 
@@ -66,6 +67,9 @@ export default function HeroSection({ onScrollToDownload }: HeroSectionProps) {
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-1">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-purple-950/60 border border-purple-800/40 text-xs text-purple-200 font-medium">
                 <Mic2 className="w-3.5 h-3.5 text-purple-400" /> 1–16 Dynamic Seats
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-950/60 border border-emerald-800/40 text-xs text-emerald-200 font-medium">
+                <Sparkles className="w-3.5 h-3.5 text-emerald-400" /> Host Rewards &amp; Payouts
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-pink-950/60 border border-pink-800/40 text-xs text-pink-200 font-medium">
                 <Gift className="w-3.5 h-3.5 text-pink-400" /> Full-Screen Gifts
