@@ -71,9 +71,9 @@ export default function FeaturesGrid() {
     {
       category: "social",
       icon: <HeartHandshake className="w-6 h-6 text-rose-400" />,
-      tag: "CP Romance",
-      title: "Couple Intimacy & Twin Badges",
-      desc: "Pair with your favorite partner via CP intimacy rings, earn shared bonding points, and display matching romance frames.",
+      tag: "Love, Dating & Romance",
+      title: "Find Your Match, Girlfriend or Boyfriend",
+      desc: "Meet wonderful people across India, find your special someone, and build meaningful relationships. From late-night voice chats to finding your true life partner, express your love with CP intimacy rings, romantic twin badges, and exclusive duo rooms.",
       color: "from-rose-500/20 to-pink-500/5",
       badgeColor: "bg-rose-900/50 text-rose-300 border-rose-700/50",
     },

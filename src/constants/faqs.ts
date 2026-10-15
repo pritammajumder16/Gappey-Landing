@@ -1,7 +1,7 @@
 export interface FAQItem {
   question: string;
   answer: string;
-  category: "general" | "host" | "features" | "download";
+  category: "general" | "host" | "features" | "download" | "romance";
 }
 
 export const FAQS: FAQItem[] = [
@@ -9,13 +9,19 @@ export const FAQS: FAQItem[] = [
     category: "general",
     question: "What is Gappey and what makes it unique?",
     answer:
-      "Gappey is India's premier social audio and live voice party app. It allows users to create interactive voice rooms with 1, 2, 4, 8, or 16 dynamic seats. Whether you want to sing, chat, discuss trending topics, or play casual games with friends, Gappey offers crystal-clear, ultra-low latency WebRTC audio with luxury full-screen broadcast gifts and intimate CP bonding features.",
+      "Gappey is India's premier social audio and live voice party app. It allows users to create interactive voice rooms with 1, 2, 4, 8, or 16 dynamic seats. Whether you want to sing, chat, discuss trending topics, meet new people, or play casual games with friends, Gappey offers crystal-clear, ultra-low latency WebRTC audio with luxury full-screen broadcast gifts and intimate CP bonding features.",
+  },
+  {
+    category: "romance",
+    question: "Can I find a girlfriend, boyfriend, or life partner on Gappey?",
+    answer:
+      "Yes! Gappey is one of the most vibrant social audio communities for meeting singles, dating, and finding meaningful relationships. You can join 2-seat duo date rooms, connect over late-night audio chats, and discover people who share your vibe. Express your feelings with our exclusive CP (Couple Partner) intimacy rings, twin romance badges, and shared romantic journey milestones to find your girlfriend, boyfriend, or life partner.",
   },
   {
     category: "host",
-    question: "How do I become a live voice room host and earn creator rewards?",
+    question: "Is Gappey an earning app for live voice room hosts?",
     answer:
-      "Anyone with a passion for conversation, singing, storytelling, or entertaining can become a voice room host on Gappey! As a host, you can open your live audio party room, build a community of regular listeners, and receive virtual animated gifts. Received gifts convert into Diamonds, which can be withdrawn as real creator earnings directly to your Indian bank account or UPI ID.",
+      "Yes! Gappey functions as a creator earning app for audio broadcasters and voice room hosts. You can open live audio rooms, build an audience, showcase your singing or hosting charm, and receive virtual animated gifts from fans. Received gifts convert into Diamonds, which can be withdrawn as real creator earnings directly to your Indian bank account or UPI ID every week.",
   },
   {
     category: "host",

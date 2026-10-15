@@ -17,9 +17,9 @@ const jakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gappey.in"),
-  title: "Gappey — Live Voice Party Rooms, Audio Chat & Creator Community",
+  title: "Gappey — Live Voice Party Rooms, Dating, Chat & Host Earning App",
   description:
-    "Download the Gappey Android APK: India's trending voice chat app. Join 1–16 seat live audio rooms, send luxury animated broadcast gifts, play social table games, or earn creator rewards as a live room host.",
+    "Download Gappey APK: India's trending voice chat & dating app. Join 1–16 seat audio rooms, meet your girlfriend or boyfriend, build CP romance, send gifts, and earn real income as a live voice host.",
   keywords: [
     "Gappey",
     "Gappey App",
@@ -27,11 +27,20 @@ export const metadata: Metadata = {
     "Gappey APK Download",
     "voice chat rooms",
     "voice party app",
+    "voice dating app India",
+    "find girlfriend voice chat",
+    "make boyfriend online",
+    "find life partner audio app",
+    "online dating voice rooms",
+    "CP couple romance",
+    "meet singles voice chat",
     "live audio party",
     "group voice chat app",
     "voice room host",
+    "voice chat earning app",
     "host earning app",
     "creator monetization app",
+    "make money hosting voice rooms",
     "audio talent rewards",
     "live streaming host",
     "virtual gifting app",
@@ -54,9 +63,9 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "Gappey — Live Voice Party Rooms, Audio Chat & Creator Community",
+    title: "Gappey — Live Voice Party Rooms, Dating, Chat & Host Earning App",
     description:
-      "Join live voice party rooms, send full-screen animated gifts, level up with Blue & Pink stars, play table games, and earn creator rewards on Gappey.",
+      "Join live voice rooms, find your girlfriend or boyfriend, build CP romance, send animated gifts, and earn creator rewards as a live audio host on Gappey.",
     url: "https://gappey.in",
     siteName: "Gappey",
     images: [

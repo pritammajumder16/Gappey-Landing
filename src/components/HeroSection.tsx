@@ -11,6 +11,7 @@ import {
   Gift,
   Radio,
   Zap,
+  Heart,
 } from "lucide-react";
 import { APP_VERSION } from "@/constants/links";
 
@@ -56,29 +57,29 @@ export default function HeroSection({ onScrollToDownload }: HeroSectionProps) {
 
             {/* Subtitle */}
             <p className="text-base sm:text-lg text-zinc-300 font-normal leading-relaxed max-w-xl mx-auto lg:mx-0">
-              The premier real-time voice party room app with{" "}
-              <strong className="text-white">dynamic 1, 2, 4, 8 &amp; 16 seat arrangements</strong>,
-              vibrant <strong className="text-pink-400">full-screen animated broadcast gifts</strong>,
-              <strong className="text-emerald-400"> creator rewards for live audio hosts</strong>,
-              Dual Blue &amp; Pink Star progression, VIP prestige privileges, and intimate CP bonding.
+              India&apos;s premier real-time voice party app for{" "}
+              <strong className="text-white">dating, meeting friends &amp; live audio hangouts</strong>.
+              Join <strong className="text-purple-400">dynamic 1–16 seat audio rooms</strong>,
+              find your girlfriend, boyfriend or life partner, send vibrant <strong className="text-pink-400">animated broadcast gifts</strong>,
+              and earn <strong className="text-emerald-400">real creator rewards as a live audio host</strong>.
             </p>
 
             {/* Feature Pills */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-1">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-purple-950/60 border border-purple-800/40 text-xs text-purple-200 font-medium">
-                <Mic2 className="w-3.5 h-3.5 text-purple-400" /> 1–16 Dynamic Seats
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-rose-950/60 border border-rose-800/40 text-xs text-rose-200 font-medium">
+                <Heart className="w-3.5 h-3.5 text-rose-400" /> Dating &amp; CP Romance
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-950/60 border border-emerald-800/40 text-xs text-emerald-200 font-medium">
-                <Sparkles className="w-3.5 h-3.5 text-emerald-400" /> Host Rewards &amp; Payouts
+                <Sparkles className="w-3.5 h-3.5 text-emerald-400" /> Host Earning App
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-purple-950/60 border border-purple-800/40 text-xs text-purple-200 font-medium">
+                <Mic2 className="w-3.5 h-3.5 text-purple-400" /> 1–16 Dynamic Seats
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-pink-950/60 border border-pink-800/40 text-xs text-pink-200 font-medium">
                 <Gift className="w-3.5 h-3.5 text-pink-400" /> Full-Screen Gifts
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-amber-950/60 border border-amber-800/40 text-xs text-amber-200 font-medium">
                 <Crown className="w-3.5 h-3.5 text-amber-400" /> Blue &amp; Pink Stars
-              </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-cyan-950/60 border border-cyan-800/40 text-xs text-cyan-200 font-medium">
-                <Zap className="w-3.5 h-3.5 text-cyan-400" /> Ultra-Low Latency
               </span>
             </div>
 
