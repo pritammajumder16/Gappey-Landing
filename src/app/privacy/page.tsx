@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowLeft, Shield, Lock, FileText } from "lucide-react";
+import { ArrowLeft, Shield, Lock, FileText, AlertCircle, Mail } from "lucide-react";
 
 export const metadata = {
   title: "Privacy Policy | Gappey Live Voice Party",
-  description: "Privacy Policy and user data protection details for Gappey Voice Party platform.",
+  description:
+    "Privacy Policy and data protection practices for Gappey in accordance with the Digital Personal Data Protection Act, 2023.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -31,116 +32,167 @@ export default function PrivacyPolicyPage() {
         {/* Title Block */}
         <div className="space-y-3 border-b border-white/10 pb-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-900/40 border border-purple-500/30 text-purple-300 text-xs font-semibold">
-            <Shield className="w-3.5 h-3.5 text-purple-400" /> DPDP Act 2023 Compliant
+            <Shield className="w-3.5 h-3.5 text-purple-400" /> DPDP Act 2023 &amp; IT Rules 2021 Compliant
           </div>
           <h1 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
             Privacy Policy
           </h1>
           <p className="text-xs sm:text-sm text-zinc-400">
-            Last Updated: October 12, 2026 · Effective Date: October 12, 2026
+            Last Updated: October 15, 2026 · Effective Date: October 15, 2026
           </p>
+        </div>
+
+        {/* Legal Disclaimer Box */}
+        <div className="p-4 rounded-2xl bg-amber-950/30 border border-amber-500/30 text-amber-200/90 text-xs sm:text-sm flex items-start gap-3">
+          <AlertCircle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+          <div>
+            <strong>Legal Notice:</strong> This privacy policy reflects the technical architecture and data processing routines of the Gappey platform under the Digital Personal Data Protection Act, 2023 and the Information Technology Act, 2000. It is recommended that this policy be formally reviewed by qualified legal counsel.
+          </div>
         </div>
 
         {/* Content sections */}
         <div className="space-y-8 text-sm sm:text-base leading-relaxed text-zinc-300">
           <section className="space-y-3">
             <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-              1. Introduction &amp; Scope
+              1. Introduction &amp; Data Fiduciary Details
             </h2>
             <p>
-              Welcome to <strong>Gappey</strong> (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;), a real-time voice party room and social platform. We value your privacy and are committed to safeguarding your personal information in strict accordance with the <strong>Digital Personal Data Protection Act, 2023 (DPDP Act)</strong>, the <strong>Information Technology Act, 2000</strong>, and applicable international data protection standards.
+              Welcome to <strong>Gappey</strong> (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;), an interactive real-time voice party room and entertainment platform. Operating as a Data Fiduciary under the <strong>Digital Personal Data Protection Act, 2023 (DPDP Act)</strong>, we are committed to safeguarding personal data entrusted to us by our users.
             </p>
             <p>
-              This Privacy Policy applies to all users accessing or using the Gappey mobile applications (Android/iOS) and our official websites. By registering or using the platform, you consent to the data practices described in this document.
+              This Privacy Policy explains the specific categories of data we collect, lawful purposes for processing, data retention schedules, third-party service processors, and your statutory rights to access, correction, erasure, and grievance redressal.
             </p>
           </section>
 
           <section className="space-y-3">
             <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-              2. Age Requirement &amp; Protection of Minors (18+ Policy)
+              2. Strict 18+ Age Policy &amp; Minor Protection
             </h2>
-            <p className="p-4 rounded-2xl bg-amber-950/30 border border-amber-500/30 text-amber-200 text-xs sm:text-sm">
-              <strong>Strict 18+ Rule:</strong> Gappey is exclusively intended for users who are eighteen (18) years of age or older. We enforce strict age verification upon registration. We do not knowingly collect, broadcast, or process data belonging to children or minors under 18. If we identify an account belonging to a minor, it will be immediately terminated.
+            <p className="p-4 rounded-2xl bg-purple-950/40 border border-purple-500/30 text-purple-200 text-xs sm:text-sm">
+              <strong>Age Requirement:</strong> Gappey is exclusively intended for adults aged eighteen (18) years or older. We collect date of birth upon sign-up strictly for age gate verification. Date of birth is never broadcast or shared publicly. We do not knowingly process personal data of minors. Any account identified as belonging to an individual under 18 will be permanently closed and its associated data erased.
             </p>
           </section>
 
           <section className="space-y-3">
             <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-              3. Information We Collect
+              3. Information We Collect &amp; Processing Scope
             </h2>
-            <ul className="list-disc pl-5 space-y-2 text-zinc-300 text-sm">
+            <ul className="list-disc pl-5 space-y-2.5 text-zinc-300 text-sm">
               <li>
-                <strong>Account Information:</strong> Phone number or email address, hashed password, username, profile display name, avatar, gender, and date of birth (used strictly for 18+ verification and never broadcast publicly).
+                <strong>Account &amp; Authentication:</strong> Email address, Google OAuth profile identifiers (name, email, avatar), display name, username, bio, gender, and date of birth.
               </li>
               <li>
-                <strong>Voice &amp; Audio Streams:</strong> Real-time audio transmitted through live voice rooms. Audio streams are routed in real time for communication and are not permanently archived unless flagged for trust, safety, or moderation violations.
+                <strong>Real-Time Voice Audio:</strong> Audio transmitted during voice party rooms is routed ephemerally through WebRTC / Zego RTC infrastructure for live communication. <strong>We do NOT record, intercept, or permanently store user audio streams.</strong> Audio streams vanish in real time once transmitted.
               </li>
               <li>
-                <strong>Transactional &amp; Financial Information:</strong> Ledger entries for Coin top-ups, Diamonds received, and payout withdrawal details (such as UPI ID or bank beneficiary details for KYC compliance). We do not store raw credit card numbers or UPI PINs; all payments are processed through RBI-authorized payment gateways.
+                <strong>Chat &amp; Ephemeral Media:</strong> Text messages in 1v1 direct chats and room chat channels. Photos and voice snippets sent within private messages are held in private encrypted cloud storage with an automated <strong>7-day expiration policy</strong>, after which they are automatically and permanently purged.
               </li>
               <li>
-                <strong>Chat &amp; Media Content:</strong> Direct and group chat messages. Private media shared in chats is encrypted in transit and automatically expires from media storage after seven (7) days.
+                <strong>Public Moments:</strong> User-initiated public posts, photos, and status updates published to the Moments feed are hosted securely (via imgbb / cloud media endpoints) and displayed until deleted by the user.
               </li>
               <li>
-                <strong>Device &amp; Telemetry Data:</strong> IP address, device model, operating system version, app version, network quality telemetry, crash diagnostics, and push notification tokens.
+                <strong>Payment &amp; Financial Information:</strong> All payments for Gold Coins and virtual goods are processed exclusively via RBI-authorized payment aggregators (Cashfree Payments India Pvt. Ltd.). <strong>Gappey does NOT collect, receive, or store raw credit/debit card numbers, CVVs, expiration dates, or UPI PINs.</strong> We retain only transactional ledger IDs, timestamps, payment statuses, and diamond cashout history for statutory tax and reconciliation compliance.
+              </li>
+              <li>
+                <strong>Diagnostics &amp; Device Telemetry:</strong> IP address, device brand/model, OS version, app version, network latency telemetry, crash logs reported to our client diagnostics endpoint (<code className="text-purple-300">/client-errors</code>), and Expo push notification tokens.
               </li>
             </ul>
           </section>
 
           <section className="space-y-3">
             <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-              4. How We Use Your Data
+              4. Third-Party Service Processors
             </h2>
-            <p>We process your personal information exclusively for lawful purposes:</p>
+            <p>
+              To maintain high-availability voice streaming, database persistence, and secure payments, we partner with specialized, vetted third-party infrastructure providers under strict confidentiality agreements:
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <div className="p-3 rounded-xl bg-zinc-900 border border-white/5 space-y-1">
+                <span className="font-bold text-white">Zego Cloud / WebRTC</span>
+                <p className="text-zinc-400">Ultra-low latency real-time audio routing (no audio recording).</p>
+              </div>
+              <div className="p-3 rounded-xl bg-zinc-900 border border-white/5 space-y-1">
+                <span className="font-bold text-white">Cashfree Payments</span>
+                <p className="text-zinc-400">PCI-DSS compliant payment processing for UPI, netbanking &amp; cards.</p>
+              </div>
+              <div className="p-3 rounded-xl bg-zinc-900 border border-white/5 space-y-1">
+                <span className="font-bold text-white">Turso (libSQL) &amp; Aiven</span>
+                <p className="text-zinc-400">Encrypted relational and cache storage for account states and ledgers.</p>
+              </div>
+              <div className="p-3 rounded-xl bg-zinc-900 border border-white/5 space-y-1">
+                <span className="font-bold text-white">Tigris &amp; ImgBB</span>
+                <p className="text-zinc-400">S3-compatible private storage (7-day lifecycle) and public CDN assets.</p>
+              </div>
+              <div className="p-3 rounded-xl bg-zinc-900 border border-white/5 space-y-1">
+                <span className="font-bold text-white">Cloudflare</span>
+                <p className="text-zinc-400">DDoS mitigation, TLS 1.3 encryption in transit, and DNS security.</p>
+              </div>
+              <div className="p-3 rounded-xl bg-zinc-900 border border-white/5 space-y-1">
+                <span className="font-bold text-white">Google Identity &amp; Expo</span>
+                <p className="text-zinc-400">Federated Google OAuth login and push notification delivery.</p>
+              </div>
+            </div>
+          </section>
+
+          <section className="space-y-3">
+            <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
+              5. Data Protection Rights under DPDP Act 2023
+            </h2>
+            <p>As a Data Principal, you are entitled to exercise the following rights:</p>
             <ul className="list-disc pl-5 space-y-1.5 text-zinc-300 text-sm">
-              <li>To provide voice party rooms, seat interactions, virtual gifting, and social features.</li>
-              <li>To manage your virtual wallet balances, transactions, and legitimate diamond cashouts.</li>
-              <li>To enforce room moderation, kick/ban controls, and protect users against harassment or fraud.</li>
-              <li>To fulfill tax (TDS) and legal compliance obligations under Indian financial regulations.</li>
-              <li>To provide customer support and notify you of critical security or version updates.</li>
+              <li><strong>Right to Access:</strong> Request a summary of personal data processed by us and the processing activities undertaken.</li>
+              <li><strong>Right to Correction &amp; Erasure:</strong> Correct outdated or inaccurate information, or request complete deletion of your account and personal data.</li>
+              <li><strong>Right to Withdraw Consent:</strong> Revoke consent previously granted for optional processing activities.</li>
+              <li><strong>Right of Grievance Redressal:</strong> Submit grievances regarding data handling directly to our designated Grievance Officer.</li>
+              <li><strong>Right to Nominate:</strong> Designate an individual who shall, in the event of death or incapacity, exercise your data rights.</li>
             </ul>
-          </section>
-
-          <section className="space-y-3">
-            <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-              5. Data Storage, Security &amp; Retention
-            </h2>
-            <p>
-              Your personal data is hosted in secure, encrypted cloud data centers with strict access controls. Private chat media is stored in dedicated private object storage with automated 7-day lifecycles. We employ industry-standard encryption protocols (TLS 1.3, AES-256) to safeguard data in transit and at rest.
+            <p className="text-xs sm:text-sm text-zinc-400">
+              To exercise any of your statutory rights, please submit a written request from your registered email address to{" "}
+              <a href="mailto:gappeyindia@gmail.com" className="text-purple-400 hover:underline font-semibold">
+                gappeyindia@gmail.com
+              </a>. Requests are authenticated and processed within thirty (30) business days.
             </p>
           </section>
 
           <section className="space-y-3">
             <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-              6. Your Data Protection Rights
+              6. Data Retention, Security &amp; Breach Protocol
             </h2>
-            <p>Under the DPDP Act and applicable laws, you retain the right to:</p>
-            <ul className="list-disc pl-5 space-y-1.5 text-zinc-300 text-sm">
-              <li>Access and review personal information we hold about you.</li>
-              <li>Request correction or updating of inaccurate data.</li>
-              <li>Request deletion of your account and personal data (&quot;Right to be Forgotten&quot;).</li>
-              <li>Nominate a representative in case of incapacity.</li>
-            </ul>
             <p>
-              To exercise any of these rights, please contact our Data Protection Officer at{" "}
-              <a href="mailto:privacy@gappey.com" className="text-purple-400 hover:underline">
-                privacy@gappey.com
-              </a>.
+              We enforce strict encryption standards (TLS 1.3 in transit, AES-256 at rest) across all API endpoints and database clusters. In the unlikely event of a personal data breach impacting your privacy, we will notify the Data Protection Board of India and affected users without undue delay, outlining the nature of the breach and mitigating measures taken.
+            </p>
+            <p>
+              <strong>We do NOT sell, lease, or monetize your personal information to third-party advertisers or data brokers.</strong>
             </p>
           </section>
 
           <section className="space-y-3">
             <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-              7. Grievance Officer &amp; Inquiries
+              7. Grievance Officer (IT Rules, 2021)
             </h2>
             <p>
-              In accordance with the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, the contact details for our Grievance Officer are:
+              In accordance with Rule 3(2) of the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, the contact details for our Grievance Officer are set forth below:
             </p>
-            <div className="p-4 rounded-xl bg-zinc-900 border border-white/10 text-xs sm:text-sm space-y-1">
-              <p><strong>Grievance Officer:</strong> Legal &amp; Compliance Cell, Gappey Platform</p>
-              <p><strong>Email:</strong> <a href="mailto:legal@gappey.com" className="text-purple-400">legal@gappey.com</a></p>
-              <p><strong>Address:</strong> Mumbai / Bengaluru, India</p>
-              <p><strong>Response Timeline:</strong> Acknowledgement within 24 hours; resolution within 15 days.</p>
+            <div className="p-5 rounded-2xl bg-zinc-900/90 border border-purple-500/30 text-xs sm:text-sm space-y-2">
+              <p>
+                <strong>Grievance Officer:</strong>{" "}
+                <span className="text-amber-300 font-mono">[Grievance Officer Name — To be appointed by Gappey Management]</span>
+              </p>
+              <p>
+                <strong>Designation:</strong> Head of Trust, Safety &amp; Legal Compliance
+              </p>
+              <p>
+                <strong>Email Address:</strong>{" "}
+                <a href="mailto:gappeyindia@gmail.com" className="text-purple-400 font-semibold underline">
+                  gappeyindia@gmail.com
+                </a>
+              </p>
+              <p>
+                <strong>Jurisdiction &amp; Address:</strong> Bengaluru / Mumbai, India
+              </p>
+              <p className="text-zinc-400 text-xs pt-1 border-t border-white/5">
+                <strong>Statutory Timelines:</strong> Written acknowledgement within twenty-four (24) hours; substantive resolution within fifteen (15) days of complaint receipt.
+              </p>
             </div>
           </section>
         </div>

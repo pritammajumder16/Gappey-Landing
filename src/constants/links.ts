@@ -2,9 +2,8 @@ export const APP_VERSION = "v1.2.0";
 
 export const APK_FILENAME = `gappey_${APP_VERSION}.apk`;
 
-// Served straight from our server (nginx /download/ on the API VM): a real direct link with no
-// Drive virus-scan page and no streaming through a Vercel function. Upload each new build there.
-export const APK_DOWNLOAD_URL = `https://gappey.duckdns.org/download/${APK_FILENAME}`;
+// Direct download from assets CDN / API VM
+export const APK_DOWNLOAD_URL = `https://assets.gappey.in/releases/${APK_FILENAME}`;
 
 export const APK_DIRECT_DOWNLOAD = APK_DOWNLOAD_URL;
 

@@ -15,27 +15,33 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gappey.app"),
-  title: "Gappey - Ultimate Voice Party & Social Hangout | Coming Soon on Google Play",
-  description: "Experience the next-generation voice party chat rooms with up to 16 dynamic seats, breathtaking full-screen animated gifts, dual-level progression, VIP prestige clubs, and real-time social gaming. Coming soon to Google Play Store!",
+  metadataBase: new URL("https://gappey.in"),
+  title: "Gappey — Voice Party Rooms, Live Chat & Games",
+  description:
+    "Gappey is India's premier voice party app with 1–16 seat audio rooms, animated broadcast gifts, Blue & Pink star levels, CP bonding, and mini-games.",
   keywords: [
     "Gappey",
-    "Voice Party App",
+    "Gappey App",
+    "Gappey India",
+    "Voice Party Rooms",
     "Voice Chat Rooms",
     "Social Audio App",
-    "Google Play Store",
     "Live Party Rooms",
-    "Karaoke Live",
-    "VIP Prestige",
+    "Star Levels",
+    "CP Intimacy",
     "Virtual Gifting",
-    "Social Gaming"
+    "Social Mini Games",
   ],
   authors: [{ name: "Gappey Team" }],
+  alternates: {
+    canonical: "https://gappey.in",
+  },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "Gappey - Ultimate Voice Party Chat Rooms",
-    description: "Join live voice rooms, send luxury animated gifts, rise through whale & star levels, and connect with millions. Coming soon on Google Play Store!",
-    url: "https://gappey.app",
+    title: "Gappey — Voice Party Rooms, Live Chat & Games",
+    description:
+      "Join live voice rooms, send full-screen animated gifts, level up with Blue & Pink stars, and hang out with friends on Gappey.",
+    url: "https://gappey.in",
     siteName: "Gappey",
     images: [
       {
@@ -45,13 +51,14 @@ export const metadata: Metadata = {
         alt: "Gappey Voice Party Chat Room Mockup",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gappey - Voice Party Chat Room App",
-    description: "Coming soon on Google Play Store! 16-seat live voice rooms, SVIP rides, animated gifts, and social gaming.",
+    title: "Gappey — Voice Party Rooms, Live Chat & Games",
+    description:
+      "1–16 seat live voice rooms, animated gifts, Blue & Pink star levels, and entertainment mini-games on Gappey.",
     images: ["/mockup/d7cec7bb-fafd-4c06-bc7f-ef2bb58cac7a.png"],
   },
   icons: {
@@ -59,13 +66,64 @@ export const metadata: Metadata = {
       { url: "/favicon.ico", sizes: "any" },
       { url: "/favicon.png", type: "image/png" },
       { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
-      { url: "/icon-512.png", sizes: "512x512", type: "image/png" }
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
     ],
     apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     ],
     shortcut: ["/favicon.png"],
   },
+};
+
+const jsonLdData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://gappey.in/#organization",
+      name: "Gappey",
+      url: "https://gappey.in",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://gappey.in/icon-192.png",
+        width: 192,
+        height: 192,
+      },
+      email: "gappeyindia@gmail.com",
+      sameAs: [
+        "https://instagram.com/gappey.india",
+        "https://www.youtube.com/@GappeyIndia",
+        "https://www.facebook.com/profile.php?id=61594831059345",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://gappey.in/#website",
+      name: "Gappey",
+      url: "https://gappey.in",
+      alternateName: "Gappey App",
+      publisher: {
+        "@id": "https://gappey.in/#organization",
+      },
+      inLanguage: "en-IN",
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://gappey.in/#app",
+      name: "Gappey",
+      operatingSystem: "Android",
+      applicationCategory: "SocialNetworkingApplication",
+      downloadUrl: "https://gappey.in/download-android",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "INR",
+      },
+      publisher: {
+        "@id": "https://gappey.in/#organization",
+      },
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -83,8 +141,14 @@ export default function RootLayout({
         <meta name="theme-color" content="#06060c" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+        />
       </head>
-      <body className={`${inter.variable} ${jakarta.variable} font-sans bg-[#06060c] text-zinc-100 antialiased selection:bg-pink-600 selection:text-white`}>
+      <body
+        className={`${inter.variable} ${jakarta.variable} font-sans bg-[#06060c] text-zinc-100 antialiased selection:bg-pink-600 selection:text-white`}
+      >
         {children}
       </body>
     </html>

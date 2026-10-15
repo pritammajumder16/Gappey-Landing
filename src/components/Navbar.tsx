@@ -2,14 +2,15 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { Download, Sparkles, Menu, X, Flame } from "lucide-react";
-import { APK_DOWNLOAD_URL, APP_VERSION, APK_DIRECT_DOWNLOAD, APK_FILENAME } from "@/constants/links";
+import Link from "next/link";
+import { Download, Menu, X, Flame } from "lucide-react";
+import { APP_VERSION } from "@/constants/links";
 
 interface NavbarProps {
-  onOpenPreRegister?: () => void;
+  onScrollToDownload?: () => void;
 }
 
-export default function Navbar({ onOpenPreRegister }: NavbarProps) {
+export default function Navbar({ onScrollToDownload }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -23,10 +24,8 @@ export default function Navbar({ onOpenPreRegister }: NavbarProps) {
 
   const navLinks = [
     { name: "Overview", href: "#overview" },
-    { name: "Promo Film", href: "#promo-film" },
-    { name: "Features & Screens", href: "#features" },
-    { name: "Gift Vault", href: "#gifts" },
-    { name: "Get APK", href: "#download" },
+    { name: "Features", href: "#features" },
+    { name: "Download", href: "#download" },
   ];
 
   return (
@@ -40,7 +39,7 @@ export default function Navbar({ onOpenPreRegister }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo & Brand */}
-          <a href="#" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3 group">
             <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-2xl overflow-hidden p-0.5 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 shadow-lg shadow-purple-600/30 group-hover:scale-105 transition-transform duration-300">
               <div className="w-full h-full rounded-[14px] overflow-hidden bg-black">
                 <Image
@@ -64,10 +63,10 @@ export default function Navbar({ onOpenPreRegister }: NavbarProps) {
                 </span>
               </div>
               <p className="text-[10px] sm:text-xs text-zinc-400 font-medium -mt-0.5">
-                Coming to Play Store
+                Live Audio &amp; Social Hangout
               </p>
             </div>
-          </a>
+          </Link>
 
           {/* Desktop Navigation Links */}
           <nav className="hidden md:flex items-center gap-1 lg:gap-2 px-4 py-1.5 rounded-full bg-zinc-900/60 border border-white/10 backdrop-blur-md">
@@ -75,49 +74,36 @@ export default function Navbar({ onOpenPreRegister }: NavbarProps) {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-xs lg:text-sm font-medium text-zinc-300 hover:text-white px-3 py-1.5 rounded-full hover:bg-white/10 transition-all duration-200"
+                className="text-xs lg:text-sm font-medium text-zinc-300 hover:text-white px-3.5 py-1.5 rounded-full hover:bg-white/10 transition-all duration-200"
               >
                 {link.name}
               </a>
             ))}
           </nav>
 
-          {/* Right Action Buttons */}
+          {/* Right Action: Single Primary CTA */}
           <div className="hidden sm:flex items-center gap-3">
-            <a
-              href={APK_DIRECT_DOWNLOAD}
-              download={APK_FILENAME}
-              className="inline-flex items-center gap-2 text-xs font-semibold px-3.5 py-2 rounded-xl bg-zinc-800/80 hover:bg-zinc-700/80 border border-zinc-700/60 text-zinc-200 hover:text-white transition-all duration-200 shadow-sm hover:shadow-purple-500/10"
-              title={`Download Android APK (${APP_VERSION})`}
-            >
-              <Download className="w-3.5 h-3.5 text-cyan-400" />
-              <span>Direct APK</span>
-              <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-800/60">
-                {APP_VERSION}
-              </span>
-            </a>
-
-            <a
-              href="#download"
-              onClick={onOpenPreRegister}
+            <Link
+              href="/download-android"
               className="relative group inline-flex items-center gap-2 text-xs sm:text-sm font-bold px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white shadow-lg shadow-purple-600/30 hover:shadow-purple-600/50 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 overflow-hidden"
             >
-              <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
-              <Sparkles className="w-4 h-4 text-amber-200 animate-spin-slow" />
-              <span>Pre-Register</span>
-            </a>
+              <Download className="w-4 h-4 text-white" />
+              <span>Download for Android</span>
+              <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-black/40 text-amber-200 border border-amber-300/30">
+                {APP_VERSION}
+              </span>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="flex sm:hidden items-center gap-2">
-            <a
-              href={APK_DOWNLOAD_URL}
-              download="gappey.apk"
-              className="p-2 rounded-xl bg-zinc-800 border border-zinc-700 text-cyan-400"
+            <Link
+              href="/download-android"
+              className="p-2 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white"
               title="Download APK"
             >
               <Download className="w-4 h-4" />
-            </a>
+            </Link>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-xl bg-zinc-900 border border-white/10 text-zinc-300 hover:text-white focus:outline-none"
@@ -146,28 +132,17 @@ export default function Navbar({ onOpenPreRegister }: NavbarProps) {
           </div>
 
           <div className="pt-2 border-t border-white/10 flex flex-col gap-2.5">
-            <a
-              href={APK_DIRECT_DOWNLOAD}
-              download={APK_FILENAME}
-              className="w-full flex items-center justify-center gap-2 text-sm font-semibold px-4 py-2.5 rounded-xl bg-zinc-800 text-zinc-200 border border-zinc-700"
-            >
-              <Download className="w-4 h-4 text-cyan-400" />
-              <span>Download Android APK</span>
-              <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-800/60">
-                {APP_VERSION}
-              </span>
-            </a>
-            <a
-              href="#download"
-              onClick={() => {
-                setMobileMenuOpen(false);
-                if (onOpenPreRegister) onOpenPreRegister();
-              }}
+            <Link
+              href="/download-android"
+              onClick={() => setMobileMenuOpen(false)}
               className="w-full flex items-center justify-center gap-2 text-sm font-bold px-4 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white shadow-lg shadow-purple-600/30"
             >
-              <Sparkles className="w-4 h-4 text-amber-200" />
-              Pre-Register for Launch
-            </a>
+              <Download className="w-4 h-4 text-white" />
+              <span>Download for Android (APK)</span>
+              <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-black/40 text-amber-200">
+                {APP_VERSION}
+              </span>
+            </Link>
           </div>
         </div>
       )}
