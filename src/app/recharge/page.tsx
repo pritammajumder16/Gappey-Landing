@@ -85,7 +85,7 @@ export default function RechargePage() {
           "@type": "AggregateOffer",
           "priceCurrency": "INR",
           "lowPrice": "10",
-          "highPrice": "10000",
+          "highPrice": "1999",
           "offerCount": "8"
         }
       },

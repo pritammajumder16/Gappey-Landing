@@ -18,6 +18,8 @@ import {
   HelpCircle,
   CreditCard,
   QrCode,
+  Flame,
+  Star,
 } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 import {
@@ -30,7 +32,7 @@ import {
 import { initiateCashfreeCheckout } from "@/lib/cashfree";
 import PaymentCelebrationModal from "./PaymentCelebrationModal";
 
-// Fallback tier catalog matching CASHFREE_RECHARGE_TIERS in backend
+// Fallback tier catalog matching CASHFREE_RECHARGE_TIERS in backend & mobile version
 const DEFAULT_TIERS: CashfreeTier[] = [
   {
     id: "tier_10",
@@ -46,8 +48,21 @@ const DEFAULT_TIERS: CashfreeTier[] = [
     firstRechargeTotalCoins: 125000,
   },
   {
+    id: "tier_25",
+    displayName: "Mini",
+    inrPrice: 25,
+    baseCoins: 250000,
+    tierBonusCoins: 0,
+    bonusPercent: 0,
+    totalCoins: 250000,
+    superCoins: 2500,
+    firstRechargeBonusPercent: 25,
+    firstRechargeBonusCoins: 62500,
+    firstRechargeTotalCoins: 312500,
+  },
+  {
     id: "tier_50",
-    displayName: "Basic",
+    displayName: "Lite",
     inrPrice: 50,
     baseCoins: 500000,
     tierBonusCoins: 0,
@@ -67,74 +82,63 @@ const DEFAULT_TIERS: CashfreeTier[] = [
     bonusPercent: 0.5,
     totalCoins: 1005000,
     superCoins: 10000,
+    isPopular: true,
     firstRechargeBonusPercent: 25,
     firstRechargeBonusCoins: 250000,
     firstRechargeTotalCoins: 1255000,
   },
   {
+    id: "tier_200",
+    displayName: "Plus",
+    inrPrice: 200,
+    baseCoins: 2000000,
+    tierBonusCoins: 20000,
+    bonusPercent: 1.0,
+    totalCoins: 2020000,
+    superCoins: 20000,
+    firstRechargeBonusPercent: 25,
+    firstRechargeBonusCoins: 500000,
+    firstRechargeTotalCoins: 2520000,
+  },
+  {
     id: "tier_500",
-    displayName: "Super",
+    displayName: "Premium",
     inrPrice: 500,
     baseCoins: 5000000,
-    tierBonusCoins: 50000,
-    bonusPercent: 1.0,
-    totalCoins: 5050000,
+    tierBonusCoins: 62500,
+    bonusPercent: 1.25,
+    totalCoins: 5062500,
     superCoins: 50000,
     firstRechargeBonusPercent: 25,
     firstRechargeBonusCoins: 1250000,
-    firstRechargeTotalCoins: 6300000,
+    firstRechargeTotalCoins: 6312500,
   },
   {
-    id: "tier_1000",
-    displayName: "Mega",
-    inrPrice: 1000,
-    baseCoins: 10000000,
-    tierBonusCoins: 150000,
+    id: "tier_999",
+    displayName: "Luxury",
+    inrPrice: 999,
+    baseCoins: 9990000,
+    tierBonusCoins: 124875,
+    bonusPercent: 1.25,
+    totalCoins: 10114875,
+    superCoins: 99900,
+    isBestValue: true,
+    firstRechargeBonusPercent: 25,
+    firstRechargeBonusCoins: 2497500,
+    firstRechargeTotalCoins: 12612375,
+  },
+  {
+    id: "tier_1999",
+    displayName: "Royal",
+    inrPrice: 1999,
+    baseCoins: 19990000,
+    tierBonusCoins: 299850,
     bonusPercent: 1.5,
-    totalCoins: 10150000,
-    superCoins: 100000,
+    totalCoins: 20289850,
+    superCoins: 199900,
     firstRechargeBonusPercent: 25,
-    firstRechargeBonusCoins: 2500000,
-    firstRechargeTotalCoins: 12650000,
-  },
-  {
-    id: "tier_2000",
-    displayName: "Ultra",
-    inrPrice: 2000,
-    baseCoins: 20000000,
-    tierBonusCoins: 400000,
-    bonusPercent: 2.0,
-    totalCoins: 20400000,
-    superCoins: 200000,
-    firstRechargeBonusPercent: 25,
-    firstRechargeBonusCoins: 5000000,
-    firstRechargeTotalCoins: 25400000,
-  },
-  {
-    id: "tier_5000",
-    displayName: "VIP",
-    inrPrice: 5000,
-    baseCoins: 50000000,
-    tierBonusCoins: 1500000,
-    bonusPercent: 3.0,
-    totalCoins: 51500000,
-    superCoins: 500000,
-    firstRechargeBonusPercent: 25,
-    firstRechargeBonusCoins: 12500000,
-    firstRechargeTotalCoins: 64000000,
-  },
-  {
-    id: "tier_10000",
-    displayName: "Legend",
-    inrPrice: 10000,
-    baseCoins: 100000000,
-    tierBonusCoins: 4000000,
-    bonusPercent: 4.0,
-    totalCoins: 104000000,
-    superCoins: 1000000,
-    firstRechargeBonusPercent: 25,
-    firstRechargeBonusCoins: 25000000,
-    firstRechargeTotalCoins: 129000000,
+    firstRechargeBonusCoins: 4997500,
+    firstRechargeTotalCoins: 25287350,
   },
 ];
 
@@ -149,12 +153,29 @@ export default function RechargeStore() {
   const [celebrationReceipt, setCelebrationReceipt] = useState<CashfreeVerifyResponse | null>(null);
   const [faqOpenIndex, setFaqOpenIndex] = useState<number | null>(null);
 
-  // Load tiers from server
+  // Load tiers from server and format consistently with mobile app
   useEffect(() => {
     fetchCashfreeTiers()
       .then((data) => {
         if (data && data.length > 0) {
-          setTiers(data);
+          const formatted: CashfreeTier[] = data.map((st) => ({
+            id: st.id,
+            displayName: st.displayName || "Pack",
+            inrPrice: st.inrPrice,
+            baseCoins: st.baseCoins,
+            tierBonusCoins: st.tierBonusCoins || 0,
+            bonusPercent: st.bonusPercent || 0,
+            totalCoins: st.totalCoins ?? (st.baseCoins + (st.tierBonusCoins || 0)),
+            superCoins: st.superCoins ?? Math.round(st.inrPrice * 100),
+            isPopular: st.isPopular ?? st.id === "tier_100",
+            isBestValue: st.isBestValue ?? st.id === "tier_999",
+            firstRechargeBonusPercent: st.firstRechargeBonusPercent ?? 25,
+            firstRechargeBonusCoins: st.firstRechargeBonusCoins ?? Math.round(st.baseCoins * 0.25),
+            firstRechargeTotalCoins:
+              st.firstRechargeTotalCoins ??
+              ((st.totalCoins ?? st.baseCoins) + Math.round(st.baseCoins * 0.25)),
+          })).sort((a: CashfreeTier, b: CashfreeTier) => a.inrPrice - b.inrPrice);
+          setTiers(formatted);
         }
       })
       .catch((err) => console.warn("Using fallback tiers:", err));
@@ -201,7 +222,7 @@ export default function RechargeStore() {
     };
   }, [searchParams, session, refreshWallet]);
 
-  const selectedTier = tiers.find((t) => t.id === selectedTierId) || tiers[2] || tiers[0];
+  const selectedTier = tiers.find((t) => t.id === selectedTierId) || tiers[3] || tiers[0];
   const isFirstRechargeEligible = !wallet?.hasRecharged;
 
   // Handle Pay via Cashfree
@@ -413,69 +434,88 @@ export default function RechargeStore() {
           {tiers.map((tier) => {
             const isSelected = tier.id === selectedTierId;
             const displayCoins = getTierDisplayCoins(tier);
-            const isPopular = tier.id === "tier_100";
-            const isBestValue = tier.id === "tier_500";
+            const isPopular = tier.isPopular || tier.id === "tier_100";
+            const isBestValue = tier.isBestValue || tier.id === "tier_999";
+            const superCoins = tier.superCoins || Math.round(tier.inrPrice * 100);
+            const firstRechargeBonusCoins = tier.firstRechargeBonusCoins ?? Math.round(tier.baseCoins * 0.25);
 
             return (
               <div
                 key={tier.id}
                 onClick={() => setSelectedTierId(tier.id)}
-                className={`group relative rounded-2xl p-4 sm:p-5 cursor-pointer transition-all duration-300 ${
+                className={`group relative rounded-2xl p-4 sm:p-5 cursor-pointer transition-all duration-300 flex flex-col justify-between ${
                   isSelected
                     ? "bg-gradient-to-b from-[#251a4a] to-[#140e2b] border-2 border-amber-400 shadow-[0_0_30px_rgba(255,215,0,0.25)] scale-[1.02]"
                     : "bg-[#100c1e]/80 border border-purple-900/30 hover:border-purple-500/40 hover:bg-[#16102b]"
                 }`}
               >
-                {/* Special badges */}
-                {isPopular && (
-                  <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-gradient-to-r from-pink-600 to-purple-600 text-[10px] font-black uppercase tracking-wider text-white shadow-md">
-                    Popular
+                {/* Special badges matching mobile app */}
+                {isPopular ? (
+                  <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-gradient-to-r from-pink-600 to-purple-600 text-[10px] font-black uppercase tracking-wider text-white shadow-md flex items-center gap-1 z-10 whitespace-nowrap">
+                    <Flame className="w-3 h-3 text-white fill-white" />
+                    <span>Popular</span>
                   </span>
-                )}
-                {isBestValue && (
-                  <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-gradient-to-r from-amber-500 to-yellow-400 text-[10px] font-black uppercase tracking-wider text-zinc-950 shadow-md">
-                    Best Value
+                ) : isBestValue ? (
+                  <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-gradient-to-r from-amber-500 to-yellow-400 text-[10px] font-black uppercase tracking-wider text-zinc-950 shadow-md flex items-center gap-1 z-10 whitespace-nowrap">
+                    <Star className="w-3 h-3 text-zinc-950 fill-zinc-950" />
+                    <span>Best Value</span>
                   </span>
-                )}
+                ) : tier.bonusPercent > 0 && !isFirstRechargeEligible ? (
+                  <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-amber-400/20 border border-amber-400 text-[10px] font-black uppercase tracking-wider text-amber-300 shadow-md z-10 whitespace-nowrap">
+                    +{tier.bonusPercent}% Bonus
+                  </span>
+                ) : null}
 
-                {/* Coin icon & amount */}
+                {/* Card Content */}
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-12 h-12 rounded-2xl bg-amber-400/10 border border-amber-400/20 flex items-center justify-center mb-2.5 group-hover:scale-110 transition-transform">
-                    <Coins className="w-6 h-6 text-amber-400" />
+                  {/* Package Name matching mobile version */}
+                  <span className="text-xs sm:text-sm font-black text-white/90 tracking-wide uppercase mt-1 mb-2">
+                    {tier.displayName}
+                  </span>
+
+                  {/* Coin icon & Gold Coins amount */}
+                  <div className="w-11 h-11 rounded-2xl bg-amber-400/10 border border-amber-400/20 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                    <Coins className="w-5 h-5 text-amber-400" />
                   </div>
 
                   <div className="text-base sm:text-lg font-black text-white tracking-tight">
                     {displayCoins.toLocaleString("en-IN")}
                   </div>
-                  <div className="text-[10px] uppercase font-bold text-amber-300/80 mb-3">
+                  <div className="text-[10px] uppercase font-bold text-amber-300/80 mb-2">
                     Gold Coins
                   </div>
 
-                  {/* INR Price tag */}
-                  <div
-                    className={`w-full py-1.5 rounded-xl font-black text-sm tracking-tight transition-colors ${
-                      isSelected
-                        ? "bg-gradient-to-r from-amber-400 to-yellow-400 text-zinc-950 shadow-md"
-                        : "bg-white/5 text-zinc-200 group-hover:bg-white/10"
-                    }`}
-                  >
-                    ₹{tier.inrPrice}
+                  {/* Super Coins Row matching mobile version */}
+                  <div className="inline-flex items-center justify-center gap-1.5 px-2.5 py-1 rounded-lg bg-amber-400/10 border border-amber-400/20 text-[#fbbf24] text-xs font-black mb-2 shadow-sm">
+                    <Sparkles className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                    <span>+{superCoins.toLocaleString("en-IN")} SC</span>
                   </div>
 
                   {/* Bonus breakdown subtitle */}
-                  <div className="text-[10px] text-zinc-400 mt-2">
+                  <div className="text-[10px] text-zinc-400 mb-3 min-h-[16px]">
                     {isFirstRechargeEligible ? (
                       <span className="text-emerald-400 font-semibold">
-                        +{(Math.round(tier.baseCoins * 0.25) + (tier.tierBonusCoins || 0)).toLocaleString("en-IN")} bonus
+                        +25% 1st Bonus (+{firstRechargeBonusCoins.toLocaleString("en-IN")}c)
                       </span>
                     ) : tier.tierBonusCoins > 0 ? (
                       <span className="text-purple-300 font-semibold">
-                        +{tier.tierBonusCoins.toLocaleString("en-IN")} bonus
+                        +{tier.bonusPercent}% Extra (+{tier.tierBonusCoins.toLocaleString("en-IN")}c)
                       </span>
                     ) : (
-                      <span>Standard Pack</span>
+                      <span className="text-zinc-500">Standard Rate</span>
                     )}
                   </div>
+                </div>
+
+                {/* INR Price tag */}
+                <div
+                  className={`w-full py-1.5 rounded-xl font-black text-sm tracking-tight transition-colors text-center ${
+                    isSelected
+                      ? "bg-gradient-to-r from-amber-400 to-yellow-400 text-zinc-950 shadow-md"
+                      : "bg-white/5 text-zinc-200 group-hover:bg-white/10 group-hover:text-white"
+                  }`}
+                >
+                  ₹{tier.inrPrice}
                 </div>
               </div>
             );
@@ -495,11 +535,11 @@ export default function RechargeStore() {
       <div className="p-6 rounded-3xl bg-gradient-to-r from-[#17122b] via-[#110d21] to-[#0d0918] border border-purple-500/20 shadow-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-12">
         <div>
           <div className="text-xs uppercase font-bold text-zinc-400">Total Recharge Amount</div>
-          <div className="flex items-baseline gap-2 mt-0.5">
+          <div className="flex items-baseline gap-2 mt-0.5 flex-wrap">
             <span className="text-3xl font-black text-white">₹{selectedTier.inrPrice}</span>
             <span className="text-xs text-zinc-400 font-mono">INR</span>
-            <span className="text-xs text-amber-400 font-semibold ml-2">
-              (Yields {getTierDisplayCoins(selectedTier).toLocaleString("en-IN")} Coins)
+            <span className="text-xs text-amber-400 font-semibold ml-1">
+              ({selectedTier.displayName} Pack: {getTierDisplayCoins(selectedTier).toLocaleString("en-IN")} Gold Coins + {(selectedTier.superCoins || Math.round(selectedTier.inrPrice * 100)).toLocaleString("en-IN")} Super Coins)
             </span>
           </div>
           <div className="flex items-center gap-3 text-xs text-zinc-400 mt-2">

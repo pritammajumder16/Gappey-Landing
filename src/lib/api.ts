@@ -35,9 +35,11 @@ export interface CashfreeTier {
   bonusPercent: number;
   totalCoins: number;
   superCoins: number;
-  firstRechargeBonusPercent: number;
-  firstRechargeBonusCoins: number;
-  firstRechargeTotalCoins: number;
+  isPopular?: boolean;
+  isBestValue?: boolean;
+  firstRechargeBonusPercent?: number;
+  firstRechargeBonusCoins?: number;
+  firstRechargeTotalCoins?: number;
 }
 
 export interface CashfreeOrderResponse {

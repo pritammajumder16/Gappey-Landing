@@ -84,6 +84,15 @@ export default function PaymentCelebrationModal({ receipt, onClose }: PaymentCel
             Gold Coins Credited Instantly
           </p>
 
+          {/* Super Coins Credited */}
+          <div className="mt-3 pt-3 border-t border-white/10 flex items-center justify-center gap-2">
+            <Sparkles className="w-4 h-4 text-pink-400" />
+            <span className="text-sm font-black text-white">
+              +{(receipt.superCoinsCredited || Math.round(receipt.inrAmount * 100)).toLocaleString("en-IN")}
+            </span>
+            <span className="text-xs font-bold text-pink-300 uppercase tracking-wider">Super Coins Unlocked</span>
+          </div>
+
           {/* First Recharge Bonus Callout */}
           {receipt.isFirstRecharge && (
             <div className="mt-3 pt-3 border-t border-white/10 flex items-center justify-center gap-2 text-xs font-semibold text-pink-300">
