@@ -43,9 +43,9 @@ const DEFAULT_TIERS: CashfreeTier[] = [
     bonusPercent: 0,
     totalCoins: 100000,
     superCoins: 1000,
-    firstRechargeBonusPercent: 25,
-    firstRechargeBonusCoins: 25000,
-    firstRechargeTotalCoins: 125000,
+    firstRechargeBonusPercent: 10,
+    firstRechargeBonusCoins: 10000,
+    firstRechargeTotalCoins: 110000,
   },
   {
     id: "tier_25",
@@ -56,9 +56,9 @@ const DEFAULT_TIERS: CashfreeTier[] = [
     bonusPercent: 0,
     totalCoins: 250000,
     superCoins: 2500,
-    firstRechargeBonusPercent: 25,
-    firstRechargeBonusCoins: 62500,
-    firstRechargeTotalCoins: 312500,
+    firstRechargeBonusPercent: 10,
+    firstRechargeBonusCoins: 25000,
+    firstRechargeTotalCoins: 275000,
   },
   {
     id: "tier_50",
@@ -69,9 +69,9 @@ const DEFAULT_TIERS: CashfreeTier[] = [
     bonusPercent: 0,
     totalCoins: 500000,
     superCoins: 5000,
-    firstRechargeBonusPercent: 25,
-    firstRechargeBonusCoins: 125000,
-    firstRechargeTotalCoins: 625000,
+    firstRechargeBonusPercent: 10,
+    firstRechargeBonusCoins: 50000,
+    firstRechargeTotalCoins: 550000,
   },
   {
     id: "tier_100",
@@ -83,9 +83,9 @@ const DEFAULT_TIERS: CashfreeTier[] = [
     totalCoins: 1005000,
     superCoins: 10000,
     isPopular: true,
-    firstRechargeBonusPercent: 25,
-    firstRechargeBonusCoins: 250000,
-    firstRechargeTotalCoins: 1255000,
+    firstRechargeBonusPercent: 10,
+    firstRechargeBonusCoins: 100000,
+    firstRechargeTotalCoins: 1105000,
   },
   {
     id: "tier_200",
@@ -96,9 +96,9 @@ const DEFAULT_TIERS: CashfreeTier[] = [
     bonusPercent: 1.0,
     totalCoins: 2020000,
     superCoins: 20000,
-    firstRechargeBonusPercent: 25,
-    firstRechargeBonusCoins: 500000,
-    firstRechargeTotalCoins: 2520000,
+    firstRechargeBonusPercent: 10,
+    firstRechargeBonusCoins: 200000,
+    firstRechargeTotalCoins: 2220000,
   },
   {
     id: "tier_500",
@@ -109,9 +109,9 @@ const DEFAULT_TIERS: CashfreeTier[] = [
     bonusPercent: 1.25,
     totalCoins: 5062500,
     superCoins: 50000,
-    firstRechargeBonusPercent: 25,
-    firstRechargeBonusCoins: 1250000,
-    firstRechargeTotalCoins: 6312500,
+    firstRechargeBonusPercent: 10,
+    firstRechargeBonusCoins: 500000,
+    firstRechargeTotalCoins: 5562500,
   },
   {
     id: "tier_999",
@@ -123,9 +123,9 @@ const DEFAULT_TIERS: CashfreeTier[] = [
     totalCoins: 10114875,
     superCoins: 99900,
     isBestValue: true,
-    firstRechargeBonusPercent: 25,
-    firstRechargeBonusCoins: 2497500,
-    firstRechargeTotalCoins: 12612375,
+    firstRechargeBonusPercent: 10,
+    firstRechargeBonusCoins: 999000,
+    firstRechargeTotalCoins: 11113875,
   },
   {
     id: "tier_1999",
@@ -136,9 +136,9 @@ const DEFAULT_TIERS: CashfreeTier[] = [
     bonusPercent: 1.5,
     totalCoins: 20289850,
     superCoins: 199900,
-    firstRechargeBonusPercent: 25,
-    firstRechargeBonusCoins: 4997500,
-    firstRechargeTotalCoins: 25287350,
+    firstRechargeBonusPercent: 10,
+    firstRechargeBonusCoins: 1999000,
+    firstRechargeTotalCoins: 22288850,
   },
 ];
 
@@ -169,11 +169,10 @@ export default function RechargeStore() {
             superCoins: st.superCoins ?? Math.round(st.inrPrice * 100),
             isPopular: st.isPopular ?? st.id === "tier_100",
             isBestValue: st.isBestValue ?? st.id === "tier_999",
-            firstRechargeBonusPercent: st.firstRechargeBonusPercent ?? 25,
-            firstRechargeBonusCoins: st.firstRechargeBonusCoins ?? Math.round(st.baseCoins * 0.25),
+            firstRechargeBonusPercent: 10,
+            firstRechargeBonusCoins: Math.round(st.baseCoins * 0.1),
             firstRechargeTotalCoins:
-              st.firstRechargeTotalCoins ??
-              ((st.totalCoins ?? st.baseCoins) + Math.round(st.baseCoins * 0.25)),
+              (st.totalCoins ?? (st.baseCoins + (st.tierBonusCoins || 0))) + Math.round(st.baseCoins * 0.1),
           })).sort((a: CashfreeTier, b: CashfreeTier) => a.inrPrice - b.inrPrice);
           setTiers(formatted);
         }
@@ -260,7 +259,7 @@ export default function RechargeStore() {
 
   const getTierDisplayCoins = (tier: CashfreeTier) => {
     if (isFirstRechargeEligible) {
-      return tier.firstRechargeTotalCoins || tier.totalCoins + Math.round(tier.baseCoins * 0.25);
+      return tier.firstRechargeTotalCoins || (tier.totalCoins + Math.round(tier.baseCoins * 0.1));
     }
     return tier.totalCoins;
   };
@@ -382,10 +381,10 @@ export default function RechargeStore() {
                 <span>First Recharge Offer Active</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-black text-white">
-                Get <span className="text-amber-400">+25% Extra Coins</span> &amp; Exclusive Perks!
+                Get <span className="text-amber-400">+10% Extra Coins</span> &amp; Exclusive Perks!
               </h3>
               <p className="text-xs sm:text-sm text-zinc-300 mt-1 max-w-xl">
-                Recharge any pack today to claim an additional 25% bonus Gold Coins, plus permanent avatar frames and luxury chat cosmetics.
+                Recharge any pack today to claim an additional +10% bonus Gold Coins, plus permanent avatar frames and luxury chat cosmetics.
               </p>
             </div>
 
@@ -425,7 +424,7 @@ export default function RechargeStore() {
           </div>
           {isFirstRechargeEligible && (
             <span className="text-xs font-bold text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/30">
-              +25% First Bonus Applied
+              +10% First Bonus Applied
             </span>
           )}
         </div>
@@ -437,7 +436,7 @@ export default function RechargeStore() {
             const isPopular = tier.isPopular || tier.id === "tier_100";
             const isBestValue = tier.isBestValue || tier.id === "tier_999";
             const superCoins = tier.superCoins || Math.round(tier.inrPrice * 100);
-            const firstRechargeBonusCoins = tier.firstRechargeBonusCoins ?? Math.round(tier.baseCoins * 0.25);
+            const firstRechargeBonusCoins = tier.firstRechargeBonusCoins ?? Math.round(tier.baseCoins * 0.1);
 
             return (
               <div
@@ -495,7 +494,7 @@ export default function RechargeStore() {
                   <div className="text-[10px] text-zinc-400 mb-3 min-h-[16px]">
                     {isFirstRechargeEligible ? (
                       <span className="text-emerald-400 font-semibold">
-                        +25% 1st Bonus (+{firstRechargeBonusCoins.toLocaleString("en-IN")}c)
+                        +10% 1st Bonus (+{firstRechargeBonusCoins.toLocaleString("en-IN")}c)
                       </span>
                     ) : tier.tierBonusCoins > 0 ? (
                       <span className="text-purple-300 font-semibold">
@@ -614,7 +613,7 @@ export default function RechargeStore() {
             },
             {
               q: "How does the First Recharge Bonus work?",
-              a: "If this is your first ever coin recharge on Gappey, you automatically receive +25% extra Gold Coins, a permanent First-Recharge Avatar Frame, an exclusive 7-day entry ride, and a 3-day custom chat bubble.",
+              a: "If this is your first ever coin recharge on Gappey, you automatically receive +10% extra Gold Coins, a permanent First-Recharge Avatar Frame, an exclusive 7-day entry ride, and a 3-day custom chat bubble.",
             },
             {
               q: "Can I use these coins in the Gappey Android app?",

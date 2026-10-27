@@ -97,7 +97,7 @@ export default function PaymentCelebrationModal({ receipt, onClose }: PaymentCel
           {receipt.isFirstRecharge && (
             <div className="mt-3 pt-3 border-t border-white/10 flex items-center justify-center gap-2 text-xs font-semibold text-pink-300">
               <Gift className="w-4 h-4 text-pink-400" />
-              <span>Includes +25% First-Recharge Bonus &amp; Exclusive Avatar Frame!</span>
+              <span>Includes +10% First-Recharge Bonus &amp; Exclusive Avatar Frame!</span>
             </div>
           )}
         </div>
