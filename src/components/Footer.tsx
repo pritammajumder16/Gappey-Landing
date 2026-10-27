@@ -99,6 +99,12 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <Link href="/recharge" className="text-amber-300 hover:text-amber-200 font-semibold transition-colors flex items-center gap-1.5">
+                  <span>Top-Up Coins Online</span>
+                  <span className="text-[10px] bg-amber-400/20 px-1.5 py-0.5 rounded border border-amber-400/30">Offer</span>
+                </Link>
+              </li>
+              <li>
                 <Link href="/download-android" className="hover:text-purple-300 transition-colors">
                   Download Android APK
                 </Link>

@@ -10,8 +10,8 @@ import {
   Crown,
   Gift,
   Radio,
-  Zap,
   Heart,
+  Coins,
 } from "lucide-react";
 import { APP_VERSION } from "@/constants/links";
 
@@ -83,7 +83,7 @@ export default function HeroSection({ onScrollToDownload }: HeroSectionProps) {
               </span>
             </div>
 
-            {/* Single Prominent CTA */}
+            {/* Action CTAs */}
             <div className="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4">
               <Link
                 href="/download-android"
@@ -94,6 +94,13 @@ export default function HeroSection({ onScrollToDownload }: HeroSectionProps) {
                 <span className="text-xs font-mono font-extrabold px-2 py-0.5 rounded-full bg-black/40 text-amber-200 border border-amber-300/40">
                   {APP_VERSION}
                 </span>
+              </Link>
+              <Link
+                href="/recharge"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-4 rounded-2xl bg-amber-400/10 hover:bg-amber-400/20 border border-amber-400/30 text-amber-300 font-bold text-base hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+              >
+                <Coins className="w-5 h-5 text-amber-400" />
+                <span>Top-Up Coins Online</span>
               </Link>
             </div>
 
