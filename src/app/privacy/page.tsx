@@ -82,7 +82,7 @@ export default function PrivacyPolicyPage() {
                 <strong>Account &amp; Authentication:</strong> Email address, Google OAuth profile identifiers (name, email, avatar), display name, username, bio, gender, and date of birth.
               </li>
               <li>
-                <strong>Real-Time Voice Audio:</strong> Audio transmitted during voice party rooms is routed ephemerally through WebRTC / Zego RTC infrastructure for live communication. <strong>We do NOT record, intercept, or permanently store user audio streams.</strong> Audio streams vanish in real time once transmitted.
+                <strong>Real-Time Voice Audio:</strong> Audio transmitted during voice party rooms is routed ephemerally through self-hosted Gappey media infrastructure for live communication. <strong>We do NOT record, intercept, or permanently store user audio streams.</strong> Audio streams vanish in real time once transmitted.
               </li>
               <li>
                 <strong>Chat &amp; Ephemeral Media:</strong> Text messages in 1v1 direct chats and room chat channels. Photos and voice snippets sent within private messages are held in private encrypted cloud storage with an automated <strong>7-day expiration policy</strong>, after which they are automatically and permanently purged.
@@ -108,8 +108,8 @@ export default function PrivacyPolicyPage() {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
               <div className="p-3 rounded-xl bg-zinc-900 border border-white/5 space-y-1">
-                <span className="font-bold text-white">Zego Cloud / WebRTC</span>
-                <p className="text-zinc-400">Ultra-low latency real-time audio routing (no audio recording).</p>
+                <span className="font-bold text-white">Dedicated Media Infrastructure</span>
+                <p className="text-zinc-400">Ultra-low latency real-time audio routing on dedicated Gappey servers (no audio recording).</p>
               </div>
               <div className="p-3 rounded-xl bg-zinc-900 border border-white/5 space-y-1">
                 <span className="font-bold text-white">Cashfree Payments</span>
