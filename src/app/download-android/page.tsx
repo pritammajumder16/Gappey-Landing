@@ -199,7 +199,7 @@ export default function DownloadAndroidPage() {
                   </svg>
                   <span>Get it on Google Play</span>
                   <span className="text-[10px] font-semibold tracking-wide uppercase px-2 py-0.5 rounded-full bg-emerald-400/20 text-emerald-300 border border-emerald-400/30">
-                    Testing Track
+                    Closed Test
                   </span>
                 </a>
               </div>

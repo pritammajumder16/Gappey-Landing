@@ -13,7 +13,7 @@ import {
   Heart,
   Coins,
 } from "lucide-react";
-import { APP_VERSION } from "@/constants/links";
+import { APP_VERSION, PLAY_STORE_URL } from "@/constants/links";
 
 interface HeroSectionProps {
   onScrollToDownload?: () => void;
@@ -95,6 +95,22 @@ export default function HeroSection({ onScrollToDownload }: HeroSectionProps) {
                   {APP_VERSION}
                 </span>
               </Link>
+
+              <a
+                href={PLAY_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl border border-white/10 bg-white/[0.04] hover:bg-white/[0.08] text-zinc-200 font-semibold text-base hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+              >
+                <svg className="w-5 h-5 fill-current text-zinc-300" viewBox="0 0 24 24">
+                  <path d="M3.609 1.814L13.793 12 3.61 22.186a1.996 1.996 0 0 1-.61-1.442V3.256c0-.564.226-1.077.609-1.442zm11.234 11.236l2.302-2.302-11.83-6.83 9.528 9.132zm0 1.898l-9.528 9.132 11.83-6.83-2.302-2.302zm1.414-1.414l3.12-1.802c.866-.5 1.397-1.42 1.397-2.42 0-1-.531-1.92-1.397-2.42l-3.12-1.802-2.302 2.302 2.302 2.302z"/>
+                </svg>
+                <span>Get it on Google Play</span>
+                <span className="text-[10px] font-semibold tracking-wide uppercase px-2 py-0.5 rounded-full bg-emerald-400/20 text-emerald-300 border border-emerald-400/30">
+                  Closed Test
+                </span>
+              </a>
+
               <Link
                 href="/recharge"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-4 rounded-2xl bg-amber-400/10 hover:bg-amber-400/20 border border-amber-400/30 text-amber-300 font-bold text-base hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"

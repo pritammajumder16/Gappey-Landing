@@ -7,8 +7,8 @@ export const APK_DOWNLOAD_URL = `https://api.gappey.in/download/${APK_FILENAME}`
 
 export const APK_DIRECT_DOWNLOAD = APK_DOWNLOAD_URL;
 
-// Google Play Store listing URL (currently pointing to internal testing track)
-export const PLAY_STORE_URL = "https://play.google.com/apps/internaltest/4700888531668270294";
+// Google Play Store listing URL
+export const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.gappey.in";
 
 // iOS build coming soon; keep null or placeholder until build is linked
 export const IOS_DOWNLOAD_URL: string | null = null;
