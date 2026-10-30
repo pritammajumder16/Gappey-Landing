@@ -16,6 +16,7 @@ import {
   APK_DIRECT_DOWNLOAD,
   APK_FILENAME,
   APP_VERSION,
+  PLAY_STORE_URL,
 } from "@/constants/links";
 
 export default function DownloadSection() {
@@ -128,6 +129,21 @@ export default function DownloadSection() {
                 <Download className="w-5 h-5 text-white group-hover:scale-110 transition-transform" />
                 <span>Download for Android (APK)</span>
               </Link>
+
+              <a
+                href={PLAY_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl border border-white/10 bg-white/[0.04] hover:bg-white/[0.08] text-zinc-300 font-semibold text-sm transition-all duration-200"
+              >
+                <svg className="w-4 h-4 fill-current text-zinc-300" viewBox="0 0 24 24">
+                  <path d="M3.609 1.814L13.793 12 3.61 22.186a1.996 1.996 0 0 1-.61-1.442V3.256c0-.564.226-1.077.609-1.442zm11.234 11.236l2.302-2.302-11.83-6.83 9.528 9.132zm0 1.898l-9.528 9.132 11.83-6.83-2.302-2.302zm1.414-1.414l3.12-1.802c.866-.5 1.397-1.42 1.397-2.42 0-1-.531-1.92-1.397-2.42l-3.12-1.802-2.302 2.302 2.302 2.302z"/>
+                </svg>
+                <span>Get it on Google Play</span>
+                <span className="text-[10px] font-semibold tracking-wide uppercase px-2 py-0.5 rounded-full bg-amber-400/20 text-amber-300 border border-amber-400/30">
+                  Coming Soon
+                </span>
+              </a>
 
               <a
                 href={APK_DIRECT_DOWNLOAD}
