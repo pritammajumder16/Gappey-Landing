@@ -1,4 +1,4 @@
-export const APP_VERSION = "v2.2.2";
+export const APP_VERSION = "v2.2.3";
 
 export const APK_FILENAME = `gappey_${APP_VERSION}.apk`;
 
