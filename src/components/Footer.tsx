@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Download, ArrowUp, ExternalLink, Mail } from "lucide-react";
+import { APK_ALL_DEVICES_URL, APK_ALL_DEVICES_FILENAME } from "@/constants/links";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -168,6 +169,15 @@ export default function Footer() {
                 <Download className="w-4 h-4 text-white" />
                 Download Android (APK)
               </Link>
+
+              <a
+                href={APK_ALL_DEVICES_URL}
+                download={APK_ALL_DEVICES_FILENAME}
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-white/15 bg-white/[0.05] hover:bg-white/[0.09] text-zinc-200 font-semibold text-xs transition-all w-full justify-center"
+              >
+                <Download className="w-4 h-4" />
+                Download for all Android devices (low tier build)
+              </a>
 
               <p className="text-[11px] text-zinc-400 leading-relaxed">
                 Direct installation package verified and signed for Android devices.
