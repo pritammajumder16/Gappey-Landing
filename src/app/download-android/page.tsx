@@ -39,7 +39,7 @@ export default function DownloadAndroidPage() {
           active: true,
           version: APP_VERSION,
           apkUrl: APK_DOWNLOAD_URL,
-          sizeBytes: 109660995,
+          sizeBytes: 109665390,
         });
       }
     } catch {
@@ -77,7 +77,7 @@ export default function DownloadAndroidPage() {
             active: true,
             version: APP_VERSION,
             apkUrl: APK_DOWNLOAD_URL,
-            sizeBytes: 109660995,
+            sizeBytes: 109665390,
           });
         }
       } catch {
@@ -86,7 +86,7 @@ export default function DownloadAndroidPage() {
           active: true,
           version: APP_VERSION,
           apkUrl: APK_DOWNLOAD_URL,
-          sizeBytes: 109660995,
+          sizeBytes: 109665390,
         });
       } finally {
         if (alive) setLoading(false);
