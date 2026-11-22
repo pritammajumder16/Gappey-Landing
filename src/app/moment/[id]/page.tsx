@@ -1,6 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
-import { PLAY_STORE_URL, APK_DOWNLOAD_URL } from "@/constants/links";
+import GetTheApp from "@/components/GetTheApp";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -10,10 +10,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   return {
     title: `Moment on Gappey`,
-    description: `Check out this social moment and voice update on Gappey!`,
+    description: `Check out this social moment and audio update on Gappey!`,
     openGraph: {
       title: `Moment on Gappey`,
-      description: `Check out this social moment and voice update on Gappey!`,
+      description: `Check out this social moment and audio update on Gappey!`,
       url: `https://gappey.in/moment/${id}`,
       siteName: "Gappey",
       type: "article",
@@ -33,7 +33,7 @@ export default async function MomentDeepLinkPage({ params }: Props) {
         </div>
         <h1 className="text-2xl font-bold mb-2">Gappey Moment</h1>
         <p className="text-white/60 text-sm mb-6">
-          See full photos, videos, and comments on this moment in the Gappey app.
+          See full photos, audio clips, and comments on this moment in the Gappey app.
         </p>
 
         <a
@@ -49,21 +49,8 @@ export default async function MomentDeepLinkPage({ params }: Props) {
           <span className="h-px bg-white/10 flex-1" />
         </div>
 
-        <div className="flex flex-col gap-2.5">
-          <a
-            href={PLAY_STORE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full py-3 bg-white/10 hover:bg-white/15 text-white font-medium rounded-xl text-sm transition"
-          >
-            Get it on Google Play
-          </a>
-          <a
-            href={APK_DOWNLOAD_URL}
-            className="w-full py-3 bg-white/5 hover:bg-white/10 text-white/80 hover:text-white font-medium rounded-xl text-sm transition"
-          >
-            Direct APK Download
-          </a>
+        <div className="flex justify-center">
+          <GetTheApp />
         </div>
       </div>
     </main>

@@ -1,6 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
-import { PLAY_STORE_URL, APK_DOWNLOAD_URL } from "@/constants/links";
+import GetTheApp from "@/components/GetTheApp";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -33,7 +33,7 @@ export default async function UserDeepLinkPage({ params }: Props) {
         </div>
         <h1 className="text-2xl font-bold mb-2">Gappey Profile</h1>
         <p className="text-white/60 text-sm mb-6">
-          View this user&apos;s moments, intimacy CP status, and active party rooms on Gappey.
+          View this user&apos;s moments, badges, and active voice party rooms on Gappey.
         </p>
 
         <a
@@ -49,21 +49,8 @@ export default async function UserDeepLinkPage({ params }: Props) {
           <span className="h-px bg-white/10 flex-1" />
         </div>
 
-        <div className="flex flex-col gap-2.5">
-          <a
-            href={PLAY_STORE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full py-3 bg-white/10 hover:bg-white/15 text-white font-medium rounded-xl text-sm transition"
-          >
-            Get it on Google Play
-          </a>
-          <a
-            href={APK_DOWNLOAD_URL}
-            className="w-full py-3 bg-white/5 hover:bg-white/10 text-white/80 hover:text-white font-medium rounded-xl text-sm transition"
-          >
-            Direct APK Download
-          </a>
+        <div className="flex justify-center">
+          <GetTheApp />
         </div>
       </div>
     </main>

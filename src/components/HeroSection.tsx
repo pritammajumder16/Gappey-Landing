@@ -4,22 +4,23 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  Download,
   Sparkles,
   Mic2,
   Crown,
   Gift,
   Radio,
-  Heart,
   Coins,
+  Users,
+  Gamepad2,
 } from "lucide-react";
-import { APP_VERSION, PLAY_STORE_URL } from "@/constants/links";
+import { APP_VERSION } from "@/constants/links";
+import GetTheApp from "@/components/GetTheApp";
 
 interface HeroSectionProps {
   onScrollToDownload?: () => void;
 }
 
-export default function HeroSection({ onScrollToDownload }: HeroSectionProps) {
+export default function HeroSection({ onScrollToDownload: _onScrollToDownload }: HeroSectionProps) {
   return (
     <section id="overview" className="relative pt-28 pb-16 sm:pt-36 sm:pb-24 overflow-hidden">
       {/* Ambient background glows */}
@@ -58,20 +59,14 @@ export default function HeroSection({ onScrollToDownload }: HeroSectionProps) {
             {/* Subtitle */}
             <p className="text-base sm:text-lg text-zinc-300 font-normal leading-relaxed max-w-xl mx-auto lg:mx-0">
               India&apos;s premier real-time voice party app for{" "}
-              <strong className="text-white">dating, meeting friends &amp; live audio hangouts</strong>.
+              <strong className="text-white">meeting friends, live audio hangouts &amp; communities</strong>.
               Join <strong className="text-purple-400">dynamic 1–16 seat audio rooms</strong>,
-              find your girlfriend, boyfriend or life partner, send vibrant <strong className="text-pink-400">animated broadcast gifts</strong>,
-              and earn <strong className="text-emerald-400">real creator rewards as a live audio host</strong>.
+              connect with new people, send vibrant <strong className="text-pink-400">animated broadcast gifts</strong>,
+              and celebrate shared moments with your <strong className="text-amber-400">Family clan</strong>.
             </p>
 
             {/* Feature Pills */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-1">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-rose-950/60 border border-rose-800/40 text-xs text-rose-200 font-medium">
-                <Heart className="w-3.5 h-3.5 text-rose-400" /> Dating &amp; CP Romance
-              </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-950/60 border border-emerald-800/40 text-xs text-emerald-200 font-medium">
-                <Sparkles className="w-3.5 h-3.5 text-emerald-400" /> Host Earning App
-              </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-purple-950/60 border border-purple-800/40 text-xs text-purple-200 font-medium">
                 <Mic2 className="w-3.5 h-3.5 text-purple-400" /> 1–16 Dynamic Seats
               </span>
@@ -79,41 +74,23 @@ export default function HeroSection({ onScrollToDownload }: HeroSectionProps) {
                 <Gift className="w-3.5 h-3.5 text-pink-400" /> Full-Screen Gifts
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-amber-950/60 border border-amber-800/40 text-xs text-amber-200 font-medium">
-                <Crown className="w-3.5 h-3.5 text-amber-400" /> Blue &amp; Pink Stars
+                <Users className="w-3.5 h-3.5 text-amber-400" /> Families &amp; Clans
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-950/60 border border-emerald-800/40 text-xs text-emerald-200 font-medium">
+                <Gamepad2 className="w-3.5 h-3.5 text-emerald-400" /> Casual Mini-Games
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-rose-950/60 border border-rose-800/40 text-xs text-rose-200 font-medium">
+                <Crown className="w-3.5 h-3.5 text-rose-400" /> Blue &amp; Pink Stars
               </span>
             </div>
 
             {/* Action CTAs */}
             <div className="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4">
-              <Link
-                href="/download-android"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-2xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white font-bold text-base shadow-[0_0_30px_rgba(168,85,247,0.4)] hover:shadow-[0_0_40px_rgba(236,72,153,0.6)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 group"
-              >
-                <Download className="w-5 h-5 text-white group-hover:scale-110 transition-transform" />
-                <span>Download for Android (APK)</span>
-                <span className="text-xs font-mono font-extrabold px-2 py-0.5 rounded-full bg-black/40 text-amber-200 border border-amber-300/40">
-                  {APP_VERSION}
-                </span>
-              </Link>
-
-              <a
-                href={PLAY_STORE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl border border-white/10 bg-white/[0.04] hover:bg-white/[0.08] text-zinc-200 font-semibold text-base hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
-              >
-                <svg className="w-5 h-5 fill-current text-zinc-300" viewBox="0 0 24 24">
-                  <path d="M3.609 1.814L13.793 12 3.61 22.186a1.996 1.996 0 0 1-.61-1.442V3.256c0-.564.226-1.077.609-1.442zm11.234 11.236l2.302-2.302-11.83-6.83 9.528 9.132zm0 1.898l-9.528 9.132 11.83-6.83-2.302-2.302zm1.414-1.414l3.12-1.802c.866-.5 1.397-1.42 1.397-2.42 0-1-.531-1.92-1.397-2.42l-3.12-1.802-2.302 2.302 2.302 2.302z"/>
-                </svg>
-                <span>Get it on Google Play</span>
-                <span className="text-[10px] font-semibold tracking-wide uppercase px-2 py-0.5 rounded-full bg-emerald-400/20 text-emerald-300 border border-emerald-400/30">
-                  Closed Test
-                </span>
-              </a>
+              <GetTheApp size="lg" />
 
               <Link
                 href="/recharge"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-4 rounded-2xl bg-amber-400/10 hover:bg-amber-400/20 border border-amber-400/30 text-amber-300 font-bold text-base hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 sm:py-3.5 rounded-xl bg-amber-400/10 hover:bg-amber-400/20 border border-amber-400/30 text-amber-300 font-bold text-sm sm:text-base hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
               >
                 <Coins className="w-5 h-5 text-amber-400" />
                 <span>Top-Up Coins Online</span>

@@ -4,6 +4,7 @@ import "./globals.css";
 import { FAQS } from "@/constants/faqs";
 import { AuthProvider } from "@/context/AuthContext";
 import AuthModal from "@/components/auth/AuthModal";
+import { SUPPORT_EMAIL } from "@/constants/compliance";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,45 +20,29 @@ const jakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gappey.in"),
-  title: "Gappey — Live Voice Party Rooms, Dating, Chat & Host Earning App",
+  title: "Gappey — Live Voice Party Rooms, Audio Chat & Friends",
   description:
-    "Download Gappey APK: India's trending voice chat & dating app. Join 1–16 seat audio rooms, meet your girlfriend or boyfriend, build CP romance, send gifts, and earn real income as a live voice host.",
+    "Join Gappey: India's real-time live voice rooms and audio party app. Connect with friends in 1–16 seat audio rooms, chat, send expressive virtual gifts, and play social mini-games.",
   keywords: [
     "Gappey",
     "Gappey App",
     "Gappey India",
-    "Gappey APK Download",
     "voice chat rooms",
     "voice party app",
-    "voice dating app India",
-    "find girlfriend voice chat",
-    "make boyfriend online",
-    "find life partner audio app",
-    "online dating voice rooms",
-    "CP couple romance",
-    "meet singles voice chat",
     "live audio party",
     "group voice chat app",
     "voice room host",
-    "voice chat earning app",
-    "host earning app",
-    "creator monetization app",
-    "make money hosting voice rooms",
-    "audio talent rewards",
-    "live streaming host",
     "virtual gifting app",
     "animated broadcast gifts",
     "16 seat voice room",
     "social audio party",
-    "CP intimacy bonding",
     "VIP prestige",
-    "Blue Star gifter level",
-    "Pink Star broadcaster level",
+    "Families",
+    "community clans",
     "play ludo in voice room",
-    "carrom audio party",
     "Indian voice party app",
-    "talk to strangers voice",
     "make friends online voice chat",
+    "social audio India",
   ],
   authors: [{ name: "Gappey Team" }],
   alternates: {
@@ -65,9 +50,9 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "Gappey — Live Voice Party Rooms, Dating, Chat & Host Earning App",
+    title: "Gappey — Live Voice Party Rooms, Audio Chat & Friends",
     description:
-      "Join live voice rooms, find your girlfriend or boyfriend, build CP romance, send animated gifts, and earn creator rewards as a live audio host on Gappey.",
+      "Join live voice party rooms, chat with friends, send animated virtual gifts, and enjoy casual social mini-games on Gappey.",
     url: "https://gappey.in",
     siteName: "Gappey",
     images: [
@@ -83,9 +68,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gappey — Live Voice Party Rooms, Audio Chat & Creator Community",
+    title: "Gappey — Live Voice Party Rooms & Social Audio",
     description:
-      "1–16 seat live voice rooms, animated broadcast gifts, host creator rewards, and social games on Gappey.",
+      "1–16 seat live voice rooms, animated broadcast gifts, community Families, and casual social mini-games on Gappey.",
     images: ["/mockup/d7cec7bb-fafd-4c06-bc7f-ef2bb58cac7a.png"],
   },
   icons: {
@@ -117,7 +102,7 @@ const jsonLdData = {
         width: 192,
         height: 192,
       },
-      email: "gappeyindia@gmail.com",
+      email: SUPPORT_EMAIL,
       sameAs: [
         "https://instagram.com/gappey.india",
         "https://www.youtube.com/@GappeyIndia",

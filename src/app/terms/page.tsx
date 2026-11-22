@@ -1,217 +1,203 @@
 import React from "react";
+import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, Scale, AlertTriangle, ShieldCheck, Mail } from "lucide-react";
+import LegalPageLayout from "@/components/legal/LegalPageLayout";
+import { Scale, AlertTriangle, ShieldCheck, Coins, Diamond, Sparkles, Building } from "lucide-react";
+import { BUSINESS_IDENTITY } from "@/constants/compliance";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Terms and Conditions | Gappey Live Voice Party",
   description:
-    "Terms of Service, Virtual Currency Rules, and Compliance Agreement for the Gappey Voice Party platform.",
+    "Official Terms of Service, Virtual Currency Rules, and Compliance Agreement for the Gappey Voice Party platform.",
 };
 
 export default function TermsConditionsPage() {
   return (
-    <div className="min-h-screen bg-[#07070c] text-zinc-300 font-sans selection:bg-purple-500 selection:text-white">
-      {/* Ambient background glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-pink-700/15 blur-[140px] rounded-full pointer-events-none" />
-
-      <header className="border-b border-white/10 bg-[#090814]/80 backdrop-blur-xl sticky top-0 z-40">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-zinc-300 hover:text-white transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" /> Back to Home
-          </Link>
-          <span className="text-xs uppercase font-mono tracking-wider text-pink-400 font-bold">
-            Gappey Terms of Service
-          </span>
+    <LegalPageLayout
+      badge="Statutory Terms &amp; Compliance"
+      title="Terms and Conditions"
+      description="These Terms of Service govern your access to and use of the Gappey live audio entertainment application, website, and digital services."
+    >
+      {/* Legal Advisory Notice */}
+      <div className="p-4 rounded-2xl bg-amber-950/30 border border-amber-500/30 text-amber-200/90 text-xs sm:text-sm flex items-start gap-3">
+        <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+        <div>
+          <strong>Statutory Agreement:</strong> By creating an account, browsing live voice rooms, purchasing digital coins, or accessing Gappey, you enter into a legally binding contract with <strong>{BUSINESS_IDENTITY.enterpriseName}</strong> (Unit: <strong>{BUSINESS_IDENTITY.unitName}</strong>) governed by the laws of India.
         </div>
-      </header>
+      </div>
 
-      <main className="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16 space-y-10">
-        {/* Title Block */}
-        <div className="space-y-3 border-b border-white/10 pb-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-900/40 border border-pink-500/30 text-pink-300 text-xs font-semibold">
-            <Scale className="w-3.5 h-3.5 text-pink-400" /> Statutory Terms &amp; Compliance Agreement
-          </div>
-          <h1 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
-            Terms &amp; Conditions
-          </h1>
-          <p className="text-xs sm:text-sm text-zinc-400">
-            Last Updated: October 15, 2026 · Effective Date: October 15, 2026
+      {/* 1. Agreement to Terms */}
+      <section className="space-y-3">
+        <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
+          <Scale className="w-5 h-5 text-amber-400" /> 1. Agreement to Terms
+        </h2>
+        <p>
+          By installing, accessing, or using the Gappey mobile application, web portal (<Link href="/" className="text-amber-400 underline">gappey.in</Link>), or associated digital services, you agree to be unconditionally bound by these Terms and Conditions (&quot;Terms&quot;), our <Link href="/privacy" className="text-amber-400 underline">Privacy Policy</Link>, and our <Link href="/refund-policy" className="text-amber-400 underline">Refund and Cancellation Policy</Link>. If you do not accept these Terms, you must discontinue using Gappey and uninstall the application immediately.
+        </p>
+      </section>
+
+      {/* 2. Age Restriction (Strictly 18+) */}
+      <section className="space-y-3">
+        <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
+          <ShieldCheck className="w-5 h-5 text-amber-400" /> 2. Eligibility &amp; Age Restriction (Strictly 18+)
+        </h2>
+        <div className="p-4 rounded-xl bg-purple-950/20 border border-purple-500/20 text-xs sm:text-sm text-zinc-300 space-y-2">
+          <p>
+            <strong>Strict 18+ Requirement:</strong> Gappey is exclusively intended and designed for individuals who are at least eighteen (18) years of age. Minors under the age of 18 are strictly prohibited from creating accounts, entering rooms, participating in voice chat, or making digital purchases.
+          </p>
+          <p>
+            During registration, all users confirm their age. Any account found to belong to, or represent, an individual under 18 years of age will be permanently terminated immediately without right of reinstatement.
           </p>
         </div>
+      </section>
 
-        {/* Legal Advisory Notice */}
-        <div className="p-4 rounded-2xl bg-amber-950/30 border border-amber-500/30 text-amber-200/90 text-xs sm:text-sm flex items-start gap-3">
-          <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
-          <div>
-            <strong>Legal Notice:</strong> This document sets forth the legally binding terms governing your use of Gappey under Indian law, including the Information Technology Act, 2000 and the Promotion and Regulation of Online Gaming Act, 2025. It should be reviewed by qualified legal counsel prior to formal reliance.
+      {/* 3. Casual Entertainment Games */}
+      <section className="space-y-3">
+        <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
+          <ShieldCheck className="w-5 h-5 text-amber-400" /> 3. Casual Entertainment Games
+        </h2>
+        <div className="p-4 rounded-xl bg-emerald-950/20 border border-emerald-500/20 text-xs sm:text-sm text-zinc-300 space-y-2">
+          <p>
+            <strong>Casual Entertainment Declaration:</strong> All casual social games (such as Ludo and trivia) available on Gappey are recreational activities created solely for casual enjoyment among friends while voice chatting.
+          </p>
+          <ul className="list-disc pl-5 space-y-1 text-xs">
+            <li>Gappey is not a real-money gaming platform.</li>
+            <li>Games use free-to-spend virtual Gold that has no cash value and cannot be redeemed.</li>
+            <li>Game odds are shown inside the game before play.</li>
+            <li><strong>Zero Path from Games to Real Money:</strong> Under our strict game-money separation architecture, coins won in mini-games can never be converted into Super Diamonds, cash, or bank payouts.</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* 4. Four-Currency Architecture */}
+      <section className="space-y-3">
+        <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
+          <Coins className="w-5 h-5 text-amber-400" /> 4. Virtual Currencies &amp; Digital Assets
+        </h2>
+        <p className="text-sm">
+          Gappey operates a strictly defined four-currency economy as set forth in our product specifications:
+        </p>
+        <div className="space-y-3 text-xs sm:text-sm">
+          <div className="p-3.5 rounded-xl bg-white/[0.02] border border-white/5 space-y-1">
+            <strong className="text-amber-300 flex items-center gap-1.5 font-semibold">
+              <Coins className="w-4 h-4" /> 1. Gold Coins (Entertainment Currency)
+            </strong>
+            <p className="text-zinc-400 text-xs leading-relaxed">
+              Used for casual room gifting, cosmetic items, and mini-games. Distributed through daily logins, quests, or recharge packs. <strong>Gold Coins have zero cash value</strong>, do not accrue interest, and can never be cashed out, redeemed, or transferred off-platform.
+            </p>
+          </div>
+
+          <div className="p-3.5 rounded-xl bg-white/[0.02] border border-white/5 space-y-1">
+            <strong className="text-purple-300 flex items-center gap-1.5 font-semibold">
+              <Sparkles className="w-4 h-4" /> 2. Super Coins (Premium Recharge Currency)
+            </strong>
+            <p className="text-zinc-400 text-xs leading-relaxed">
+              Obtained exclusively by purchasing official recharge packs at the rate of ₹1 = 10,000 Super Coins. Super Coins are used to purchase Noble SVIP status tiers and send luxury animated broadcast gifts. Super Coins cannot be earned through mini-games.
+            </p>
+          </div>
+
+          <div className="p-3.5 rounded-xl bg-white/[0.02] border border-white/5 space-y-1">
+            <strong className="text-blue-300 flex items-center gap-1.5 font-semibold">
+              <Diamond className="w-4 h-4" /> 3. Diamonds (Host Appreciation Points)
+            </strong>
+            <p className="text-zinc-400 text-xs leading-relaxed">
+              Received automatically by voice room hosts when listeners send standard Gold gifts. <strong>Diamonds have no cash value and cannot be withdrawn.</strong> Hosts may convert Diamonds into Gold Coins inside the app at the rate of 0.4 Gold Coins per Diamond (e.g., 1,000 Diamonds convert to 400 Gold Coins; minimum conversion 100 Diamonds).
+            </p>
+          </div>
+
+          <div className="p-3.5 rounded-xl bg-white/[0.02] border border-white/5 space-y-1">
+            <strong className="text-emerald-300 flex items-center gap-1.5 font-semibold">
+              <Diamond className="w-4 h-4" /> 4. Super Diamonds (Withdrawable Creator Settlement)
+            </strong>
+            <p className="text-zinc-400 text-xs leading-relaxed">
+              Received by verified hosts exclusively when listeners send premium Super gifts. Super Diamonds are withdrawable in accordance with Section 6 below at the rate of 100,000 SD = ₹4.50, subject to mandatory KYC verification and Indian tax deduction laws.
+            </p>
           </div>
         </div>
+      </section>
 
-        {/* Content sections */}
-        <div className="space-y-8 text-sm sm:text-base leading-relaxed text-zinc-300">
-          <section className="space-y-3">
-            <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-              1. Agreement to Terms
-            </h2>
-            <p>
-              By installing, accessing, or using the <strong>Gappey</strong> mobile application or website, you agree to be bound by these Terms and Conditions (&quot;Terms&quot;) and our Privacy Policy. If you do not accept these Terms in their entirety, you must refrain from using the platform and delete the application from your device.
-            </p>
-          </section>
+      {/* 5. Payments & Fulfillment */}
+      <section className="space-y-3">
+        <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
+          <Building className="w-5 h-5 text-amber-400" /> 5. Payments, Gateway &amp; Fulfillment
+        </h2>
+        <p className="text-sm">
+          All digital recharge transactions on the web are processed via authorized payment aggregators, including{" "}
+          <strong>Cashfree Payments India Pvt. Ltd.</strong> (and Google Play Billing for in-app mobile transactions).
+        </p>
+        <ul className="list-disc pl-5 space-y-1 text-xs text-zinc-400">
+          <li><strong>Instant Delivery:</strong> Purchased coins and perks are credited automatically within seconds of payment confirmation.</li>
+          <li><strong>Pricing:</strong> Web prices reflect direct net pricing free of store commissions. The prices displayed on <Link href="/pricing" className="text-amber-400 underline">gappey.in/pricing</Link> and checkout are final with no hidden charges.</li>
+          <li><strong>Refunds:</strong> Per our <Link href="/refund-policy" className="text-amber-400 underline">Refund Policy</Link>, completed and credited purchases are non-refundable once delivered or partially consumed. Failed or duplicate debits are refunded automatically within 5 to 7 business days.</li>
+        </ul>
+      </section>
 
-          <section className="space-y-3">
-            <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-              2. Eligibility &amp; Age Restriction (Strictly 18+)
-            </h2>
-            <div className="p-4 rounded-2xl bg-purple-950/30 border border-purple-500/30 text-purple-200 text-xs sm:text-sm space-y-2">
-              <p>
-                <strong>Age Requirement:</strong> You must be at least eighteen (18) years of age to register an account, enter voice rooms, purchase virtual coins, or access any part of the service.
-              </p>
-              <p>
-                By registering, you represent and warrant that all age verification details provided are accurate. Misrepresenting your age constitutes fraud and will result in immediate termination of the account and forfeiture of any accrued virtual balances.
-              </p>
-            </div>
-          </section>
-
-          <section className="space-y-3">
-            <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-              3. Entertainment-Only Gaming (Online Gaming Act, 2025 Compliance)
-            </h2>
-            <div className="p-4 rounded-2xl bg-emerald-950/30 border border-emerald-500/30 text-emerald-200 text-xs sm:text-sm space-y-2">
-              <p>
-                <strong>Strict Non-Gambling Declaration:</strong> All mini-games, table features, and interactive activities within Gappey are designed solely for recreational entertainment. Gappey is <strong>NOT a Real-Money Gaming (RMG) platform</strong>, gambling service, or betting platform.
-              </p>
-              <p>
-                In compliance with the <strong>Promotion and Regulation of Online Gaming Act, 2025</strong> and applicable Indian state gaming laws:
-              </p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>No real money (₹ INR) can ever be wagered, staked, or won in any mini-game.</li>
-                <li>Mini-games use free virtual <strong>Silver Tokens</strong> only.</li>
-                <li>Tokens won in games have zero real-world value and cannot be redeemed, cashed out, or converted into Gold Coins, Diamonds, or Indian Rupees.</li>
-              </ul>
-            </div>
-          </section>
-
-          <section className="space-y-3">
-            <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-              4. Virtual Currencies &amp; Game-Money Separation
-            </h2>
-            <p>
-              Gappey strictly enforces architectural game-money separation across three distinct virtual tokens:
-            </p>
-            <ul className="list-disc pl-5 space-y-2 text-zinc-300 text-sm">
-              <li>
-                <strong>Gold Coins:</strong> Purchased virtual tokens used strictly for social gifting, avatar frames, entry rides, and room privileges. Gold Coins have no cash value, do not yield interest, and cannot be refunded or exchanged for real currency once consumed.
-              </li>
-              <li>
-                <strong>Diamonds:</strong> Virtual appreciation points credited to hosts when they receive eligible gifts from community members. Subject to identity verification, tax deduction (TDS), and minimum payout thresholds, Diamonds may be redeemed pursuant to our Host Settlement Policy.
-              </li>
-              <li>
-                <strong>Silver Tokens (Free Game Currency):</strong> Distributed free through daily check-ins, tasks, and entertainment activities. <strong>Silver is strictly game-only. Silver cannot be purchased with real money, cannot be gifted for diamonds, cannot be converted to Gold Coins, and can never be cashed out.</strong>
-              </li>
-            </ul>
-          </section>
-
-          <section className="space-y-3">
-            <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-              5. Payments, Refunds &amp; Cancellations
-            </h2>
-            <p>
-              All purchases of Gold Coins are processed via authorized payment aggregators, including <strong>Cashfree Payments</strong>. By initiating a purchase, you agree to the following financial terms:
-            </p>
-            <ul className="list-disc pl-5 space-y-1.5 text-zinc-300 text-sm">
-              <li>
-                <strong>Immediate Delivery:</strong> Virtual items and coins are digital goods delivered immediately upon successful payment confirmation.
-              </li>
-              <li>
-                <strong>No Refunds on Consumed Items:</strong> Once coins have been delivered or spent on gifts/cosmetics, the transaction is final and non-refundable.
-              </li>
-              <li>
-                <strong>Failed Transactions:</strong> If your bank account or UPI handle is debited but coins fail to credit within thirty (30) minutes, the transaction will automatically be reconciled or refunded by the payment gateway within 5 to 7 business days. For transaction inquiries, contact{" "}
-                <a href="mailto:gappeyindia@gmail.com" className="text-pink-400 underline">
-                  gappeyindia@gmail.com
-                </a>{" "}
-                with your Cashfree Order ID.
-              </li>
-              <li>
-                <strong>Chargebacks &amp; Fraud:</strong> Initiating fraudulent chargebacks or dispute claims will result in immediate suspension of the account and forfeiture of all virtual items.
-              </li>
-            </ul>
-          </section>
-
-          <section className="space-y-3">
-            <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-              6. Diamond Withdrawals &amp; Host Settlements
-            </h2>
-            <p>
-              Eligible hosts may redeem accumulated Diamonds under the following strict conditions enforced by our automated settlement engine:
-            </p>
-            <ul className="list-disc pl-5 space-y-1.5 text-zinc-300 text-sm">
-              <li>
-                <strong>Minimum Withdrawal Threshold:</strong> Payout requests must meet the platform minimum threshold as configured in the app wallet settings.
-              </li>
-              <li>
-                <strong>KYC &amp; Verification:</strong> Valid PAN and bank account / UPI details must be provided prior to withdrawal approval.
-              </li>
-              <li>
-                <strong>Tax Deduction at Source (TDS):</strong> Settlements are subject to applicable statutory tax deductions under the Indian Income Tax Act, 1961 (including Sections 194B/194J/194BA as applicable). TDS certificates will be issued in accordance with statutory timelines.
-              </li>
-            </ul>
-          </section>
-
-          <section className="space-y-3">
-            <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-              7. Talent Agencies &amp; Authorized Coin Sellers
-            </h2>
-            <p>
-              Talent agencies and authorized coin sellers operate under separate administrative agreements. Resellers and agencies are prohibited from making unauthorized representations, engaging in predatory lending, or attempting off-platform currency trades. Violation results in immediate agency revocation and account freeze.
-            </p>
-          </section>
-
-          <section className="space-y-3">
-            <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-              8. Community Rules &amp; Room Moderation
-            </h2>
-            <p>You agree not to engage in any prohibited activities on the platform, including:</p>
-            <ul className="list-disc pl-5 space-y-1.5 text-zinc-300 text-sm">
-              <li>Hate speech, obscenity, nudity, harassment, or verbal abuse in audio rooms or chats.</li>
-              <li>Impersonation of platform staff, moderators, or community members.</li>
-              <li>Attempts to bypass room kicks, bans, or audio moderation systems.</li>
-              <li>Reverse-engineering, decompiling, or exploiting platform APIs or WebSocket protocols.</li>
-            </ul>
-            <p className="text-xs text-zinc-400">
-              Room owners and moderators have full autonomy to mute or kick users from their rooms. Gappey administration reserves the right to issue temporary or permanent account suspensions for violations.
-            </p>
-          </section>
-
-          <section className="space-y-3">
-            <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-              9. Governing Law, Jurisdiction &amp; Legal Inquiries
-            </h2>
-            <p>
-              These Terms shall be governed by and construed in accordance with the laws of the Republic of India. Any disputes arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the competent courts in India.
-            </p>
-            <div className="p-4 rounded-xl bg-zinc-900 border border-white/10 text-xs sm:text-sm space-y-1">
-              <p><strong>Official Legal &amp; Support Contact:</strong></p>
-              <p className="flex items-center gap-2 text-zinc-300">
-                <Mail className="w-4 h-4 text-pink-400" />
-                <a href="mailto:gappeyindia@gmail.com" className="text-pink-400 hover:underline">
-                  gappeyindia@gmail.com
-                </a>
-              </p>
-              <p className="text-zinc-500 text-xs">
-                Inquiries regarding billing, terms, moderation appeals, or law enforcement requests.
-              </p>
-            </div>
-          </section>
+      {/* 6. Super Diamond Withdrawals */}
+      <section className="space-y-3">
+        <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
+          <Diamond className="w-5 h-5 text-amber-400" /> 6. Super Diamond Withdrawals &amp; Creator Settlement
+        </h2>
+        <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5 text-xs sm:text-sm text-zinc-300 space-y-2">
+          <p>
+            Only <strong>Super Diamonds</strong> are eligible for monetary withdrawal, subject to the following statutory conditions:
+          </p>
+          <ul className="list-disc pl-5 space-y-1 text-xs text-zinc-400">
+            <li>
+              <strong>Minimum Cash-Out Threshold:</strong> Minimum 10,000,000 Super Diamonds (equivalent to ₹450 INR) at the rate of 100,000 SD = ₹4.50. Payout packages include 10M, 50M, 100M, and 250M SD.
+            </li>
+            <li>
+              <strong>Mandatory KYC Verification:</strong> The host must provide valid government-issued identification (Permanent Account Number - PAN) and a bank account or UPI ID registered in the host&apos;s own legal name.
+            </li>
+            <li>
+              <strong>Tax Deduction at Source (TDS):</strong> All creator payouts are subject to mandatory statutory tax deduction under applicable provisions of the Indian Income Tax Act, 1961. TDS certificates are issued per statutory timelines.
+            </li>
+            <li>
+              <strong>No Income Promises:</strong> Gappey does not guarantee any minimum income, fixed earnings, or creator compensation. Payouts depend strictly on voluntary community gifting.
+            </li>
+          </ul>
         </div>
-      </main>
+      </section>
 
-      <footer className="border-t border-white/10 py-8 text-center text-xs text-zinc-400">
-        <p>© {new Date().getFullYear()} Gappey. All rights reserved.</p>
-      </footer>
-    </div>
+      {/* 7. Prohibited Conduct */}
+      <section className="space-y-3">
+        <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
+          <ShieldCheck className="w-5 h-5 text-amber-400" /> 7. Community Standards &amp; Prohibited Conduct
+        </h2>
+        <p className="text-sm">Users must not engage in any of the following activities on Gappey:</p>
+        <ul className="list-disc pl-5 space-y-1 text-xs text-zinc-400">
+          <li>Child sexual exploitation or abuse material (CSAM/CSAE), grooming, or minor endangerment (refer to our <Link href="/safety" className="text-amber-400 underline">Child Safety Policy</Link>).</li>
+          <li>Hate speech, obscenity, defamation, verbal harassment, or unlawful threats.</li>
+          <li>Unauthorized commercial coin resale, off-platform trades, or predatory financial arrangements.</li>
+          <li>Using automated scripts, bots, modified APKs, or exploiting platform vulnerabilities.</li>
+          <li>Impersonating Gappey administrators, moderators, or another individual.</li>
+        </ul>
+        <p className="text-xs text-zinc-400">
+          Violations will result in immediate suspension, permanent account termination, forfeiture of virtual assets, and referral to law enforcement where applicable.
+        </p>
+      </section>
+
+      {/* 8. Account Deletion */}
+      <section className="space-y-3">
+        <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
+          <Scale className="w-5 h-5 text-amber-400" /> 8. Account Deletion &amp; Termination
+        </h2>
+        <p className="text-sm">
+          You may delete your account at any time via the in-app path (Profile → Settings → Delete Account) or by submitting a request to our support team as described in our <Link href="/delete-account" className="text-amber-400 underline">Account Deletion Policy</Link>. Upon deletion, all profile data and active sessions are permanently erased, while financial transaction ledgers are retained for legal audit compliance.
+        </p>
+      </section>
+
+      {/* 9. Governing Law & Jurisdiction */}
+      <section className="space-y-3">
+        <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
+          <Scale className="w-5 h-5 text-amber-400" /> 9. Governing Law &amp; Dispute Resolution
+        </h2>
+        <p className="text-sm">
+          These Terms and any dispute or claim arising out of or related to your use of Gappey shall be governed by and construed in accordance with the <strong>laws of the Republic of India</strong>.
+        </p>
+        <p className="text-sm">
+          The competent courts located in <strong>{BUSINESS_IDENTITY.city}, {BUSINESS_IDENTITY.state}, India</strong> shall have exclusive jurisdiction over all claims, suits, or proceedings arising out of or relating to these Terms.
+        </p>
+      </section>
+    </LegalPageLayout>
   );
 }

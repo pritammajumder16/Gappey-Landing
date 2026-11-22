@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { ChevronDown, HelpCircle, Sparkles } from "lucide-react";
+import { ChevronDown, HelpCircle } from "lucide-react";
 import { FAQS } from "@/constants/faqs";
 
 export default function FAQSection() {
@@ -30,7 +30,7 @@ export default function FAQSection() {
             </span>
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base max-w-2xl mx-auto">
-            Find answers to common questions about live audio party rooms, creator monetization, animated broadcast gifts, and downloading the Android APK.
+            Find answers to common questions about live audio party rooms, creator monetization, animated broadcast gifts, and getting started on Android.
           </p>
         </div>
 

@@ -1,37 +1,16 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
-import confetti from "canvas-confetti";
 import {
-  Download,
   Sparkles,
-  CheckCircle2,
   Smartphone,
-  HelpCircle,
-  ExternalLink,
   ShieldCheck,
+  ExternalLink,
 } from "lucide-react";
-import {
-  APK_DIRECT_DOWNLOAD,
-  APK_FILENAME,
-  APP_VERSION,
-  PLAY_STORE_URL,
-} from "@/constants/links";
+import GetTheApp from "@/components/GetTheApp";
 
 export default function DownloadSection() {
-  const [downloadStarted, setDownloadStarted] = useState(false);
-
-  const handleApkDownload = () => {
-    setDownloadStarted(true);
-    confetti({
-      particleCount: 50,
-      spread: 70,
-      origin: { y: 0.7 },
-      colors: ["#a855f7", "#ec4899", "#38bdf8", "#fbbf24"],
-    });
-  };
-
   const socialChannels = [
     {
       name: "Instagram",
@@ -81,143 +60,86 @@ export default function DownloadSection() {
         <div className="text-center max-w-2xl mx-auto space-y-4 mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-amber-500/20 border border-purple-500/40 text-amber-300 text-xs font-bold uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-            Direct Android Install
+            Get the Gappey App
           </div>
           <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
-            Download Gappey for Android
+            Join the Voice Party Today
           </h2>
           <p className="text-zinc-300 text-sm sm:text-base leading-relaxed">
-            Get the official Gappey Android release directly to your device and jump into live voice party rooms right away.
+            Available on Android smartphones. Connect with friends in live audio party rooms and enjoy casual social mini-games.
           </p>
         </div>
 
-        {/* Central Download Card */}
+        {/* Central App Store Card */}
         <div className="rounded-3xl bg-[#120f26]/80 border border-purple-500/30 p-8 sm:p-10 backdrop-blur-xl shadow-2xl shadow-purple-950/60 relative overflow-hidden">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="space-y-4 text-center md:text-left">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 text-xs font-semibold">
                 <Smartphone className="w-3.5 h-3.5" />
-                <span>Verified Official Package</span>
-                <span className="text-zinc-500">•</span>
-                <span className="font-mono">{APP_VERSION}</span>
+                <span>Official App Releases</span>
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
-                Official Android APK Package
+                Download Gappey
               </h3>
               <p className="text-xs sm:text-sm text-zinc-300 max-w-lg leading-relaxed">
-                Clean build signed with our release certificate. Compatible with Android 8.0 and newer smartphones.
+                Enjoy crystal-clear real-time voice chat, expressive broadcast gifts, interactive companion bonding, and community Families.
               </p>
 
               <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 pt-1">
                 <span className="inline-flex items-center gap-1.5 text-xs text-emerald-400 font-medium">
-                  <ShieldCheck className="w-4 h-4" /> Virus-Free &amp; Verified
+                  <ShieldCheck className="w-4 h-4" /> Secure &amp; Verified
                 </span>
                 <span className="text-zinc-600">•</span>
-                <span className="text-xs text-zinc-400">~90 MB</span>
+                <span className="text-xs text-zinc-400">Android 8.0+</span>
                 <span className="text-zinc-600">•</span>
-                <span className="text-xs text-zinc-400 font-mono">{APK_FILENAME}</span>
+                <span className="text-xs text-zinc-400">iOS Coming Soon</span>
               </div>
             </div>
 
-            {/* Download Action */}
-            <div className="flex flex-col items-center gap-3 w-full md:w-auto shrink-0">
-              <Link
-                href="/download-android"
-                className="w-full md:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white font-extrabold text-base shadow-[0_0_30px_rgba(168,85,247,0.4)] hover:shadow-[0_0_40px_rgba(236,72,153,0.6)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 group"
-              >
-                <Download className="w-5 h-5 text-white group-hover:scale-110 transition-transform" />
-                <span>Download for Android (APK)</span>
-              </Link>
+            {/* Badges */}
+            <div className="flex flex-col items-center md:items-end gap-4 w-full md:w-auto shrink-0">
+              <GetTheApp size="lg" />
 
-              <a
-                href={PLAY_STORE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl border border-white/10 bg-white/[0.04] hover:bg-white/[0.08] text-zinc-300 font-semibold text-sm transition-all duration-200"
-              >
-                <svg className="w-4 h-4 fill-current text-zinc-300" viewBox="0 0 24 24">
-                  <path d="M3.609 1.814L13.793 12 3.61 22.186a1.996 1.996 0 0 1-.61-1.442V3.256c0-.564.226-1.077.609-1.442zm11.234 11.236l2.302-2.302-11.83-6.83 9.528 9.132zm0 1.898l-9.528 9.132 11.83-6.83-2.302-2.302zm1.414-1.414l3.12-1.802c.866-.5 1.397-1.42 1.397-2.42 0-1-.531-1.92-1.397-2.42l-3.12-1.802-2.302 2.302 2.302 2.302z"/>
-                </svg>
-                <span>Get it on Google Play</span>
-                <span className="text-[10px] font-semibold tracking-wide uppercase px-2 py-0.5 rounded-full bg-emerald-400/20 text-emerald-300 border border-emerald-400/30">
-                  Closed Test
-                </span>
-              </a>
-
-              <a
-                href={APK_DIRECT_DOWNLOAD}
-                download={APK_FILENAME}
-                onClick={handleApkDownload}
-                className="text-xs text-zinc-400 hover:text-white underline underline-offset-4 transition-colors"
-              >
-                Or start direct download immediately
-              </a>
-
-              {downloadStarted && (
-                <p className="text-xs text-emerald-400 flex items-center gap-1.5 font-medium animate-in fade-in">
-                  <CheckCircle2 className="w-4 h-4" /> Download started! Check notification or downloads folder.
-                </p>
-              )}
-            </div>
-          </div>
-
-          {/* Quick 3-Step Guide */}
-          <div className="pt-8 border-t border-white/10 mt-8 space-y-3">
-            <p className="text-xs font-bold text-zinc-300 uppercase tracking-wider flex items-center gap-1.5">
-              <HelpCircle className="w-3.5 h-3.5 text-cyan-400" />
-              How to install on Android:
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-zinc-400">
-              <div className="p-3.5 rounded-xl bg-zinc-900/60 border border-white/5 space-y-1">
-                <span className="font-bold text-amber-300">1. Download APK</span>
-                <p>Tap download to save the official package.</p>
-              </div>
-              <div className="p-3.5 rounded-xl bg-zinc-900/60 border border-white/5 space-y-1">
-                <span className="font-bold text-cyan-300">2. Allow Install</span>
-                <p>When prompted, enable &quot;Install unknown apps&quot; in Settings for Chrome/Files.</p>
-              </div>
-              <div className="p-3.5 rounded-xl bg-zinc-900/60 border border-white/5 space-y-1">
-                <span className="font-bold text-pink-300">3. Party Live!</span>
-                <p>Open Gappey and join live voice rooms with friends.</p>
-              </div>
+              <p className="text-xs text-zinc-400 pt-1 text-center md:text-right">
+                Looking for alternative direct installation?{" "}
+                <Link
+                  href="/download-android"
+                  className="text-amber-400 hover:text-amber-300 underline font-medium"
+                >
+                  Visit Android Download Page
+                </Link>
+              </p>
             </div>
           </div>
         </div>
 
-        {/* Social Media Community Banner */}
-        <div className="mt-10 p-6 rounded-3xl bg-zinc-900/60 border border-white/10 backdrop-blur-xl">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="text-center md:text-left space-y-1">
-              <h3 className="text-base sm:text-lg font-bold text-white flex items-center justify-center md:justify-start gap-2">
-                <Sparkles className="w-4 h-4 text-pink-400" />
-                Join Our Official Community
-              </h3>
-              <p className="text-xs sm:text-sm text-zinc-400">
-                Follow Gappey on Instagram, YouTube, and Facebook for events, giveaways &amp; voice party updates.
-              </p>
-            </div>
-
-            <div className="flex flex-wrap items-center justify-center gap-3">
-              {socialChannels.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white border border-white/10 text-xs font-bold hover:scale-105 transition-all shadow-md group"
+        {/* Social Communities */}
+        <div className="mt-12 text-center space-y-4">
+          <p className="text-xs font-bold uppercase tracking-widest text-zinc-400">
+            Join Our Official Communities
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {socialChannels.map((ch) => (
+              <a
+                key={ch.name}
+                href={ch.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/10 text-xs font-medium text-zinc-300 hover:text-white transition-all duration-200"
+              >
+                <div
+                  className={`w-6 h-6 rounded-lg bg-gradient-to-tr ${ch.gradient} flex items-center justify-center text-white`}
                 >
-                  <span className="p-1 rounded-lg bg-zinc-900 text-zinc-200 group-hover:text-pink-400 transition-colors">
-                    {item.icon}
-                  </span>
-                  <span>{item.name}</span>
-                  <span className="text-zinc-400 text-[11px] font-normal hidden sm:inline">
-                    ({item.handle})
-                  </span>
-                  <ExternalLink className="w-3 h-3 text-zinc-400 group-hover:text-white" />
-                </a>
-              ))}
-            </div>
+                  {ch.icon}
+                </div>
+                <span>{ch.name}</span>
+                <span className="text-zinc-500 group-hover:text-zinc-300 font-mono text-[11px]">
+                  {ch.handle}
+                </span>
+                <ExternalLink className="w-3 h-3 text-zinc-500 group-hover:text-zinc-300" />
+              </a>
+            ))}
           </div>
         </div>
       </div>

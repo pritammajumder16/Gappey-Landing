@@ -3,15 +3,15 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Download, Menu, X, Flame, Coins, LogIn } from "lucide-react";
-import { APP_VERSION } from "@/constants/links";
+import { Menu, X, Flame, Coins, LogIn } from "lucide-react";
+import { PLAY_STORE_URL } from "@/constants/links";
 import { useAuth } from "@/context/AuthContext";
 
 interface NavbarProps {
   onScrollToDownload?: () => void;
 }
 
-export default function Navbar({ onScrollToDownload }: NavbarProps) {
+export default function Navbar({ onScrollToDownload: _onScrollToDownload }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { session, user, wallet, openAuthModal } = useAuth();
@@ -125,17 +125,18 @@ export default function Navbar({ onScrollToDownload }: NavbarProps) {
               </button>
             )}
 
-            {/* Download CTA */}
-            <Link
-              href="/download-android"
-              className="relative group inline-flex items-center gap-2 text-xs sm:text-sm font-bold px-4 py-2 sm:px-4 sm:py-2 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white shadow-lg shadow-purple-600/30 hover:shadow-purple-600/50 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 overflow-hidden"
+            {/* Google Play CTA */}
+            <a
+              href={PLAY_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative group inline-flex items-center gap-2 text-xs sm:text-sm font-bold px-4 py-2 sm:px-4 sm:py-2 rounded-xl bg-white/10 hover:bg-white/15 border border-white/15 text-white shadow-lg hover:border-amber-400/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
             >
-              <Download className="w-4 h-4 text-white" />
-              <span>Download</span>
-              <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-black/40 text-amber-200 border border-amber-300/30">
-                {APP_VERSION}
-              </span>
-            </Link>
+              <svg className="w-4 h-4 fill-current text-amber-400" viewBox="0 0 24 24">
+                <path d="M3.609 1.814L13.793 12 3.61 22.186a1.996 1.996 0 0 1-.61-1.442V3.256c0-.564.226-1.077.609-1.442zm11.234 11.236l2.302-2.302-11.83-6.83 9.528 9.132zm0 1.898l-9.528 9.132 11.83-6.83-2.302-2.302zm1.414-1.414l3.12-1.802c.866-.5 1.397-1.42 1.397-2.42 0-1-.531-1.92-1.397-2.42l-3.12-1.802-2.302 2.302 2.302 2.302z"/>
+              </svg>
+              <span>Get the App</span>
+            </a>
           </div>
 
           {/* Mobile Actions */}
@@ -148,13 +149,17 @@ export default function Navbar({ onScrollToDownload }: NavbarProps) {
               <Coins className="w-4 h-4" />
             </Link>
 
-            <Link
-              href="/download-android"
-              className="p-2 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white"
-              title="Download APK"
+            <a
+              href={PLAY_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-xl bg-white/10 border border-white/10 text-white"
+              title="Get Gappey on Google Play"
             >
-              <Download className="w-4 h-4" />
-            </Link>
+              <svg className="w-4 h-4 fill-current text-amber-400" viewBox="0 0 24 24">
+                <path d="M3.609 1.814L13.793 12 3.61 22.186a1.996 1.996 0 0 1-.61-1.442V3.256c0-.564.226-1.077.609-1.442zm11.234 11.236l2.302-2.302-11.83-6.83 9.528 9.132zm0 1.898l-9.528 9.132 11.83-6.83-2.302-2.302zm1.414-1.414l3.12-1.802c.866-.5 1.397-1.42 1.397-2.42 0-1-.531-1.92-1.397-2.42l-3.12-1.802-2.302 2.302 2.302 2.302z"/>
+              </svg>
+            </a>
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -216,17 +221,18 @@ export default function Navbar({ onScrollToDownload }: NavbarProps) {
               </button>
             )}
 
-            <Link
-              href="/download-android"
+            <a
+              href={PLAY_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full flex items-center justify-center gap-2 text-sm font-bold px-4 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white shadow-lg shadow-purple-600/30"
+              className="w-full flex items-center justify-center gap-2 text-sm font-bold px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/15 text-white border border-white/15"
             >
-              <Download className="w-4 h-4 text-white" />
-              <span>Download for Android (APK)</span>
-              <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-black/40 text-amber-200">
-                {APP_VERSION}
-              </span>
-            </Link>
+              <svg className="w-4 h-4 fill-current text-amber-400" viewBox="0 0 24 24">
+                <path d="M3.609 1.814L13.793 12 3.61 22.186a1.996 1.996 0 0 1-.61-1.442V3.256c0-.564.226-1.077.609-1.442zm11.234 11.236l2.302-2.302-11.83-6.83 9.528 9.132zm0 1.898l-9.528 9.132 11.83-6.83-2.302-2.302zm1.414-1.414l3.12-1.802c.866-.5 1.397-1.42 1.397-2.42 0-1-.531-1.92-1.397-2.42l-3.12-1.802-2.302 2.302 2.302 2.302z"/>
+              </svg>
+              <span>Get on Google Play</span>
+            </a>
           </div>
         </div>
       )}

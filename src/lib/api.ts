@@ -24,19 +24,51 @@ export interface WalletData {
   superDiamonds: number;
   hasRecharged: boolean;
   canWithdraw: boolean;
+  firstRechargeMask?: number;
+  firstRechargeClaimed?: string[];
+}
+
+export interface FirstRechargeRewardItem {
+  key: string;
+  type: string;
+  durationDays: number | null;
+}
+
+export interface FirstRechargeVoucherItem {
+  kind: string;
+  param: string;
+  durationDays?: number | null;
+}
+
+export interface FirstRechargeTierRewards {
+  tier: "A" | "B" | "C";
+  bonusGold: number;
+  cosmetics: FirstRechargeRewardItem[];
+  vouchers: FirstRechargeVoucherItem[];
+  dailyChest?: { durationDays: number; goldPerDay: number };
 }
 
 export interface CashfreeTier {
   id: string;
   displayName: string;
   inrPrice: number;
+  storePrice?: number;
+  webPrice?: number;
+  netInr?: number;
+  baseGold?: number;
+  bonusGold?: number;
+  totalGold?: number;
   baseCoins: number;
   tierBonusCoins: number;
   bonusPercent: number;
   totalCoins: number;
   superCoins: number;
+  exp?: number;
+  tag?: string;
   isPopular?: boolean;
   isBestValue?: boolean;
+  firstRechargeTier?: "A" | "B" | "C";
+  firstRechargeRewards?: FirstRechargeTierRewards;
   firstRechargeBonusPercent?: number;
   firstRechargeBonusCoins?: number;
   firstRechargeTotalCoins?: number;

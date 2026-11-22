@@ -3,8 +3,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Download, ArrowUp, ExternalLink, Mail } from "lucide-react";
-import { APK_ALL_DEVICES_URL, APK_ALL_DEVICES_FILENAME } from "@/constants/links";
+import { ArrowUp, ExternalLink, Mail, ShieldCheck, FileText } from "lucide-react";
+import { BUSINESS_IDENTITY, SUPPORT_EMAIL, GRIEVANCE_EMAIL } from "@/constants/compliance";
+import GetTheApp from "./GetTheApp";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -50,9 +51,9 @@ export default function Footer() {
   return (
     <footer className="relative bg-[#040408] border-t border-white/10 pt-16 pb-12 overflow-hidden text-zinc-400 text-xs sm:text-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-white/10">
           {/* Brand Col */}
-          <div className="md:col-span-4 space-y-4">
+          <div className="md:col-span-3 space-y-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-2xl overflow-hidden bg-black p-0.5 border border-purple-500/50 shadow-md shadow-purple-900/50">
                 <Image
@@ -68,46 +69,81 @@ export default function Footer() {
               </span>
             </div>
 
-            <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed max-w-sm">
-              The premier next-generation voice party room platform. Experience low-latency 1–16 seat audio conversations, full-screen animated gifts, Blue &amp; Pink Star progression, CP intimacy, and social entertainment.
+            <p className="text-zinc-400 text-xs leading-relaxed">
+              India&apos;s real-time voice party room platform. Low-latency multi-seat audio conversations, animated virtual gifting, social games with no real-money stakes, and Families.
             </p>
 
-            <div className="pt-2">
+            <div className="space-y-1 pt-1 text-xs">
               <a
-                href="mailto:gappeyindia@gmail.com"
-                className="inline-flex items-center gap-2 text-xs text-purple-300 hover:text-white transition-colors"
+                href={`mailto:${SUPPORT_EMAIL}`}
+                className="inline-flex items-center gap-2 text-purple-300 hover:text-white transition-colors"
               >
-                <Mail className="w-4 h-4 text-purple-400" />
-                <span>gappeyindia@gmail.com</span>
+                <Mail className="w-3.5 h-3.5 text-purple-400" />
+                <span>{SUPPORT_EMAIL}</span>
               </a>
+            </div>
+
+            {/* Social Handles */}
+            <div className="flex items-center gap-2 pt-2">
+              {socialHandles.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={item.name}
+                  className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-zinc-400 hover:text-white transition-colors"
+                >
+                  {item.icon}
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Group 1: Company */}
           <div className="md:col-span-2 space-y-3">
             <h4 className="text-xs font-bold text-white uppercase tracking-wider">
-              Explore Gappey
+              Company
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <a href="#overview" className="hover:text-purple-300 transition-colors">
-                  Overview
-                </a>
-              </li>
-              <li>
-                <a href="#features" className="hover:text-purple-300 transition-colors">
-                  Features
-                </a>
-              </li>
-              <li>
-                <Link href="/recharge" className="text-amber-300 hover:text-amber-200 font-semibold transition-colors flex items-center gap-1.5">
-                  <span>Top-Up Coins Online</span>
-                  <span className="text-[10px] bg-amber-400/20 px-1.5 py-0.5 rounded border border-amber-400/30">Offer</span>
+                <Link href="/about" className="hover:text-purple-300 transition-colors">
+                  About Us
                 </Link>
               </li>
               <li>
-                <Link href="/download-android" className="hover:text-purple-300 transition-colors">
-                  Download Android APK
+                <Link href="/pricing" className="hover:text-purple-300 transition-colors">
+                  Pricing &amp; Economy
+                </Link>
+              </li>
+              <li>
+                <Link href="/recharge" className="text-amber-300 hover:text-amber-200 font-semibold transition-colors flex items-center gap-1.5">
+                  <span>Recharge Store</span>
+                  <span className="text-[10px] bg-amber-400/20 px-1.5 py-0.2 rounded border border-amber-400/30">Net INR</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-purple-300 transition-colors">
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/invite" className="hover:text-purple-300 transition-colors">
+                  Invite Friends
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Group 2: Legal & Compliance */}
+          <div className="md:col-span-3 space-y-3">
+            <h4 className="text-xs font-bold text-white uppercase tracking-wider">
+              Legal &amp; Policy
+            </h4>
+            <ul className="space-y-2 text-xs">
+              <li>
+                <Link href="/terms" className="hover:text-purple-300 transition-colors">
+                  Terms &amp; Conditions
                 </Link>
               </li>
               <li>
@@ -116,87 +152,130 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="hover:text-purple-300 transition-colors">
-                  Terms &amp; Conditions
+                <Link href="/refund-policy" className="hover:text-purple-300 transition-colors">
+                  Refund &amp; Cancellation Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/delivery-policy" className="hover:text-purple-300 transition-colors">
+                  Delivery &amp; Shipping Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/safety" className="hover:text-purple-300 transition-colors">
+                  Child Safety &amp; Reporting
+                </Link>
+              </li>
+              <li>
+                <Link href="/delete-account" className="hover:text-purple-300 transition-colors">
+                  Account Deletion
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="/legal/udyam-registration-certificate.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-purple-300 hover:text-white transition-colors"
+                >
+                  <FileText className="w-3 h-3" />
+                  <span>Udyam MSME Certificate</span>
+                  <ExternalLink className="w-2.5 h-2.5 opacity-60" />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Group 3: Support */}
+          <div className="md:col-span-2 space-y-3">
+            <h4 className="text-xs font-bold text-white uppercase tracking-wider">
+              Support
+            </h4>
+            <ul className="space-y-2 text-xs">
+              <li>
+                <Link href="/contact" className="hover:text-purple-300 transition-colors">
+                  Help Desk &amp; Inquiries
+                </Link>
+              </li>
+              <li>
+                <a href={`mailto:${SUPPORT_EMAIL}`} className="hover:text-purple-300 transition-colors">
+                  Customer Support
+                </a>
+              </li>
+              <li>
+                <a href={`mailto:${GRIEVANCE_EMAIL}`} className="hover:text-purple-300 transition-colors">
+                  Grievance Officer
+                </a>
+              </li>
+              <li>
+                <Link href="/safety" className="hover:text-purple-300 transition-colors">
+                  Report Abuse
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Official Social Media Handles */}
-          <div className="md:col-span-3 space-y-3">
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider">
-              Official Community
-            </h4>
-            <div className="space-y-2.5">
-              {socialHandles.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`flex items-center justify-between p-2.5 rounded-xl bg-zinc-900/80 border border-white/5 transition-all duration-200 group ${item.color}`}
-                >
-                  <div className="flex items-center gap-2.5">
-                    <span className="text-zinc-300 group-hover:scale-110 transition-transform">
-                      {item.icon}
-                    </span>
-                    <div>
-                      <p className="text-xs font-bold text-white group-hover:text-inherit transition-colors">
-                        {item.name}
-                      </p>
-                      <p className="text-[11px] text-zinc-400">
-                        {item.handle}
-                      </p>
-                    </div>
-                  </div>
-                  <ExternalLink className="w-3.5 h-3.5 opacity-50 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
-                </a>
-              ))}
-            </div>
-          </div>
-
-          {/* Download CTA in Footer */}
-          <div className="md:col-span-3 space-y-3">
+          {/* Group 4: Get the App */}
+          <div className="md:col-span-2 space-y-3">
             <h4 className="text-xs font-bold text-white uppercase tracking-wider">
               Get the App
             </h4>
             <div className="space-y-2.5">
-              <Link
-                href="/download-android"
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold text-xs transition-all w-full justify-center shadow-lg shadow-purple-900/40 hover:scale-[1.02]"
-              >
-                <Download className="w-4 h-4 text-white" />
-                Download Android (APK)
-              </Link>
-
-              <a
-                href={APK_ALL_DEVICES_URL}
-                download={APK_ALL_DEVICES_FILENAME}
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-white/15 bg-white/[0.05] hover:bg-white/[0.09] text-zinc-200 font-semibold text-xs transition-all w-full justify-center"
-              >
-                <Download className="w-4 h-4" />
-                Download for all Android devices (low tier build)
-              </a>
-
-              <p className="text-[11px] text-zinc-400 leading-relaxed">
-                Direct installation package verified and signed for Android devices.
-              </p>
+              <GetTheApp size="sm" />
+              <div className="pt-1">
+                <Link
+                  href="/download-android"
+                  className="inline-flex items-center gap-1.5 text-xs text-amber-300 hover:text-amber-200 transition-colors font-medium"
+                >
+                  <span>Android Download Options</span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
 
+        {/* Business Identity Box */}
+        <div className="mt-8 p-4 rounded-2xl bg-white/[0.02] border border-white/5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-zinc-400">
+          <div className="flex items-center gap-2">
+            <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
+            <div>
+              <span className="font-semibold text-zinc-200">{BUSINESS_IDENTITY.enterpriseName}</span>
+              <span className="text-zinc-500"> (Unit: {BUSINESS_IDENTITY.unitName})</span>
+              <span className="mx-2 text-zinc-600">·</span>
+              <span>Registration: <strong className="font-mono text-zinc-300">{BUSINESS_IDENTITY.registrationNumber}</strong></span>
+              <span className="mx-2 text-zinc-600">·</span>
+              <span>{BUSINESS_IDENTITY.registeredAddress}</span>
+            </div>
+          </div>
+          <a
+            href="/legal/udyam-registration-certificate.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[11px] text-purple-300 hover:text-white underline underline-offset-4 whitespace-nowrap"
+          >
+            View Official MSME Certificate
+          </a>
+        </div>
+
         {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-400">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-center sm:text-left">
-            <p>© {new Date().getFullYear()} Gappey. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} {BUSINESS_IDENTITY.enterpriseName} (Unit: {BUSINESS_IDENTITY.unitName}). All rights reserved.</p>
             <div className="flex items-center gap-4 text-[11px] text-zinc-400">
               <Link href="/privacy" className="hover:text-purple-300 underline underline-offset-4 transition-colors">
-                Privacy Policy
+                Privacy
               </Link>
               <span className="text-zinc-600">·</span>
               <Link href="/terms" className="hover:text-pink-300 underline underline-offset-4 transition-colors">
-                Terms &amp; Conditions
+                Terms
+              </Link>
+              <span className="text-zinc-600">·</span>
+              <Link href="/refund-policy" className="hover:text-purple-300 underline underline-offset-4 transition-colors">
+                Refunds
+              </Link>
+              <span className="text-zinc-600">·</span>
+              <Link href="/delivery-policy" className="hover:text-purple-300 underline underline-offset-4 transition-colors">
+                Delivery
               </Link>
             </div>
           </div>

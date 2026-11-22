@@ -16,3 +16,25 @@ export const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com
 
 // iOS build coming soon; keep null or placeholder until build is linked
 export const IOS_DOWNLOAD_URL: string | null = null;
+
+/**
+ * Builds Google Play Install Referrer parameter string.
+ * Format per spec `invite-and-earn-rebuild`: `gappey_invite=<code>` (URL-encoded once).
+ * Returns null if code is missing, empty, or malformed to avoid broken links or parameter injection.
+ */
+export function buildPlayReferrer(code?: string | null): string | null {
+  if (!code || typeof code !== "string") return null;
+  const trimmed = code.trim();
+  // Safe alphanumeric referral code check (1 to 32 chars, allowing letters, digits, underscores, hyphens)
+  if (!/^[a-zA-Z0-9_-]{1,32}$/.test(trimmed)) return null;
+  return encodeURIComponent(`gappey_invite=${trimmed}`);
+}
+
+/**
+ * Returns the full Play Store URL, appending the verified referrer if a valid code is provided.
+ */
+export function getPlayStoreUrlWithReferrer(code?: string | null): string {
+  const referrer = buildPlayReferrer(code);
+  if (!referrer) return PLAY_STORE_URL;
+  return `${PLAY_STORE_URL}&referrer=${referrer}`;
+}

@@ -48,7 +48,7 @@ export default function DownloadAndroidPage() {
         active: true,
         version: APP_VERSION,
         apkUrl: APK_DOWNLOAD_URL,
-        sizeBytes: 145901435,
+        sizeBytes: 109665390,
       });
     } finally {
       setLoading(false);
@@ -129,40 +129,61 @@ export default function DownloadAndroidPage() {
           Gappey
         </h2>
         <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-2">
-          Download Gappey for Android
+          Get Gappey for Android
         </h1>
         <p className="text-sm text-zinc-400 max-w-xs mb-6">
-          Download the latest official release, open the downloaded file, and follow the Android installation prompts.
+          Install Gappey from the Google Play Store or download the official Android APK directly.
         </p>
 
         {/* Status / Card Container */}
         <div className="w-full bg-white/[0.04] border border-white/10 rounded-2xl p-6 backdrop-blur-xl shadow-xl flex flex-col items-center mb-6">
+          {/* Primary Option: Google Play Store */}
+          <div className="w-full mb-5">
+            <a
+              href={PLAY_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full group relative inline-flex items-center justify-center gap-3 px-6 py-4 rounded-xl font-bold text-black text-base shadow-lg transition-all duration-300 active:scale-[0.98] overflow-hidden bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500 hover:brightness-105"
+            >
+              <svg className="w-5 h-5 fill-current text-black" viewBox="0 0 24 24">
+                <path d="M3.609 1.814L13.793 12 3.61 22.186a1.996 1.996 0 0 1-.61-1.442V3.256c0-.564.226-1.077.609-1.442zm11.234 11.236l2.302-2.302-11.83-6.83 9.528 9.132zm0 1.898l-9.528 9.132 11.83-6.83-2.302-2.302zm1.414-1.414l3.12-1.802c.866-.5 1.397-1.42 1.397-2.42 0-1-.531-1.92-1.397-2.42l-3.12-1.802-2.302 2.302 2.302 2.302z"/>
+              </svg>
+              <span>Get it on Google Play</span>
+            </a>
+          </div>
+
+          <div className="w-full flex items-center gap-3 my-2 text-zinc-500 text-xs">
+            <span className="h-px bg-white/10 flex-1" />
+            <span>OR DIRECT INSTALL</span>
+            <span className="h-px bg-white/10 flex-1" />
+          </div>
+
           {loading ? (
-            <div className="py-8 flex flex-col items-center gap-3">
-              <RefreshCw className="w-7 h-7 text-amber-400 animate-spin" />
+            <div className="py-6 flex flex-col items-center gap-3">
+              <RefreshCw className="w-6 h-6 text-amber-400 animate-spin" />
               <p className="text-xs text-zinc-400">Checking latest release...</p>
             </div>
           ) : error ? (
             <div className="py-4 flex flex-col items-center text-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-400">
-                <AlertCircle className="w-6 h-6" />
+              <div className="w-10 h-10 rounded-full bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-400">
+                <AlertCircle className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-sm font-semibold text-red-300">Release Unavailable</p>
-                <p className="text-xs text-zinc-400 mt-1 max-w-xs">{error}</p>
+                <p className="text-xs font-semibold text-red-300">Direct Download Unavailable</p>
+                <p className="text-[11px] text-zinc-400 mt-1 max-w-xs">{error}</p>
               </div>
               <button
                 onClick={() => void fetchRelease()}
-                className="mt-2 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-xs font-medium text-white transition active:scale-95"
+                className="mt-1 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/15 text-xs text-white"
               >
-                <RefreshCw className="w-3.5 h-3.5" />
-                Retry Check
+                <RefreshCw className="w-3 h-3" />
+                Retry
               </button>
             </div>
           ) : (
             <>
               {/* Version & Size Pill */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/20 text-amber-300 text-xs font-medium mb-5">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/10 border border-amber-400/20 text-amber-300 text-xs font-medium my-3">
                 <span className="font-semibold">{versionLabel}</span>
                 {sizeMB && (
                   <>
@@ -172,46 +193,28 @@ export default function DownloadAndroidPage() {
                 )}
                 <span className="text-amber-400/40">•</span>
                 <span className="text-emerald-400 flex items-center gap-1">
-                  <CheckCircle2 className="w-3 h-3" /> Official
+                  <CheckCircle2 className="w-3 h-3" /> Signed APK
                 </span>
               </div>
 
-              {/* Prominent Download Button */}
+              {/* Single Official APK Button */}
               <a
                 href={apkDownloadUrl}
                 download
-                className="w-full group relative inline-flex items-center justify-center gap-3 px-6 py-4 rounded-xl font-bold text-black text-base shadow-lg transition-all duration-300 active:scale-[0.98] overflow-hidden bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500 hover:brightness-105"
+                className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-semibold text-white text-sm border border-white/15 bg-white/[0.06] hover:bg-white/[0.12] transition-all duration-200 active:scale-[0.98]"
               >
-                <Download className="w-5 h-5 text-black transition-transform group-hover:translate-y-0.5" />
-                <span>Download APK</span>
+                <Download className="w-4 h-4 text-amber-400" />
+                <span>Download APK ({versionLabel})</span>
               </a>
-
-              {/* Google Play Store Button (Coming Soon) */}
-              <div className="w-full mt-3">
-                <a
-                  href={PLAY_STORE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-medium text-zinc-300 text-sm border border-white/10 bg-white/[0.04] hover:bg-white/[0.08] transition-all duration-200"
-                >
-                  <svg className="w-4 h-4 fill-current text-zinc-300" viewBox="0 0 24 24">
-                    <path d="M3.609 1.814L13.793 12 3.61 22.186a1.996 1.996 0 0 1-.61-1.442V3.256c0-.564.226-1.077.609-1.442zm11.234 11.236l2.302-2.302-11.83-6.83 9.528 9.132zm0 1.898l-9.528 9.132 11.83-6.83-2.302-2.302zm1.414-1.414l3.12-1.802c.866-.5 1.397-1.42 1.397-2.42 0-1-.531-1.92-1.397-2.42l-3.12-1.802-2.302 2.302 2.302 2.302z"/>
-                  </svg>
-                  <span>Get it on Google Play</span>
-                  <span className="text-[10px] font-semibold tracking-wide uppercase px-2 py-0.5 rounded-full bg-emerald-400/20 text-emerald-300 border border-emerald-400/30">
-                    Closed Test
-                  </span>
-                </a>
-              </div>
 
               {/* Instructions */}
               <div className="w-full mt-6 pt-5 border-t border-white/5 text-left">
-                <p className="text-xs font-semibold text-zinc-300 mb-2">How to install:</p>
+                <p className="text-xs font-semibold text-zinc-300 mb-2">How to install APK:</p>
                 <ol className="text-xs text-zinc-400 space-y-1.5 list-decimal list-inside leading-relaxed">
                   <li>Tap <strong className="text-zinc-200">Download APK</strong> above.</li>
-                  <li>When downloaded, tap the notification or open the file in Chrome.</li>
-                  <li>If prompted, tap <strong className="text-zinc-200">Settings</strong> to allow installing apps from Chrome.</li>
-                  <li>Tap <strong className="text-zinc-200">Install</strong>, then open Gappey.</li>
+                  <li>When downloaded, tap the file in notifications or Downloads.</li>
+                  <li>If prompted, enable <strong className="text-zinc-200">Install unknown apps</strong> for your browser.</li>
+                  <li>Tap <strong className="text-zinc-200">Install</strong>, then launch Gappey.</li>
                 </ol>
               </div>
             </>
@@ -222,7 +225,7 @@ export default function DownloadAndroidPage() {
         <div className="w-full flex items-start gap-3 p-3.5 rounded-xl bg-amber-500/[0.07] border border-amber-500/20 text-left">
           <ShieldAlert className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
           <p className="text-[11px] text-zinc-300 leading-normal">
-            Android or Chrome may ask for confirmation before downloading or opening APK files. This is standard security verification for direct app updates.
+            Android may prompt a confirmation before installing APK files downloaded outside Google Play. This is standard security verification for direct packages.
           </p>
         </div>
 

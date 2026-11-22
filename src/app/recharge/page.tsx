@@ -8,7 +8,7 @@ import { Loader2, Sparkles } from "lucide-react";
 export const metadata: Metadata = {
   title: "Recharge Gappey Coins Online — Official Top-Up Store | UPI & Cards",
   description:
-    "Safely recharge Gappey Gold Coins & Super Coins online via Cashfree. Instant delivery to your account with UPI, Google Pay, PhonePe, Paytm, and Cards. Get +10% extra coins on your first recharge!",
+    "Safely recharge Gappey Gold Coins & Super Coins online via Cashfree. Instant delivery to your account with UPI, Google Pay, PhonePe, Paytm, and Cards. Claim exclusive bonus coins and rewards on first recharge!",
   keywords: [
     "recharge Gappey coins",
     "Gappey coin top up",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Recharge Gappey Coins Online — Official Top-Up Store",
     description:
-      "Instant coin delivery to your Gappey wallet via UPI, Cards, and NetBanking. Claim +10% bonus coins and exclusive perks on your first recharge!",
+      "Instant coin delivery to your Gappey wallet via UPI, Cards, and NetBanking. Claim bonus coins and exclusive perks on your first recharge!",
     url: "https://gappey.in/recharge",
     siteName: "Gappey",
     images: [
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Recharge Gappey Coins Online — Official Top-Up Store",
     description:
-      "Instant coin delivery via Cashfree UPI and cards. Get +10% bonus coins on your first recharge!",
+      "Instant coin delivery via Cashfree UPI and cards. Get bonus coins and perks on your first recharge!",
     images: ["/mockup/d7cec7bb-fafd-4c06-bc7f-ef2bb58cac7a.png"],
   },
 };
@@ -85,8 +85,8 @@ export default function RechargePage() {
           "@type": "AggregateOffer",
           "priceCurrency": "INR",
           "lowPrice": "10",
-          "highPrice": "1999",
-          "offerCount": "8"
+          "highPrice": "7800",
+          "offerCount": "10"
         }
       },
       {
@@ -113,7 +113,7 @@ export default function RechargePage() {
             "name": "Is there a bonus on the first coin recharge?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, new rechargers receive +10% bonus Gold Coins, a permanent avatar frame, a 7-day exclusive ride, and a 3-day chat bubble."
+              "text": "Yes, new rechargers receive bonus Gold Coins, exclusive cosmetics (such as permanent avatar frames, exclusive rides, chat bubbles), and trial perks when claiming first-recharge tiers."
             }
           }
         ]

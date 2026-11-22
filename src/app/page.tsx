@@ -31,7 +31,7 @@ export default function Home() {
       {/* Interactive FAQ Section (SEO & Rich Snippets) */}
       <FAQSection />
 
-      {/* Direct Android APK Download Section */}
+      {/* App Download Section */}
       <DownloadSection />
 
       {/* Developer & Community Banner */}

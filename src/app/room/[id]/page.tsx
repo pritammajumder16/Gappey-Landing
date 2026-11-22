@@ -1,7 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
-import Link from "next/link";
-import { PLAY_STORE_URL, APK_DOWNLOAD_URL } from "@/constants/links";
+import GetTheApp from "@/components/GetTheApp";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -11,10 +10,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   return {
     title: `Join Room on Gappey`,
-    description: `Voice party room on Gappey. Hang out, play ludo, and listen to music together!`,
+    description: `Voice party room on Gappey. Hang out, play casual games, and talk with friends!`,
     openGraph: {
       title: `Join Room on Gappey`,
-      description: `Voice party room on Gappey. Hang out, play ludo, and listen to music together!`,
+      description: `Voice party room on Gappey. Hang out, play casual games, and talk with friends!`,
       url: `https://gappey.in/room/${id}`,
       siteName: "Gappey",
       type: "website",
@@ -50,21 +49,8 @@ export default async function RoomDeepLinkPage({ params }: Props) {
           <span className="h-px bg-white/10 flex-1" />
         </div>
 
-        <div className="flex flex-col gap-2.5">
-          <a
-            href={PLAY_STORE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full py-3 bg-white/10 hover:bg-white/15 text-white font-medium rounded-xl text-sm transition"
-          >
-            Get it on Google Play
-          </a>
-          <a
-            href={APK_DOWNLOAD_URL}
-            className="w-full py-3 bg-white/5 hover:bg-white/10 text-white/80 hover:text-white font-medium rounded-xl text-sm transition"
-          >
-            Direct APK Download
-          </a>
+        <div className="flex justify-center">
+          <GetTheApp />
         </div>
       </div>
     </main>

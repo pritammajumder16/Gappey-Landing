@@ -1,6 +1,9 @@
 import React from "react";
 import type { Metadata } from "next";
-import { PLAY_STORE_URL, APK_DOWNLOAD_URL } from "@/constants/links";
+import { headers } from "next/headers";
+import { redirect } from "next/navigation";
+import { getPlayStoreUrlWithReferrer } from "@/constants/links";
+import GetTheApp from "@/components/GetTheApp";
 
 export const metadata: Metadata = {
   title: "Join me on Gappey! Voice Party & Games",
@@ -20,6 +23,16 @@ interface Props {
 
 export default async function InviteDeepLinkPage({ searchParams }: Props) {
   const { code } = await searchParams;
+
+  // Coordinate with invite-and-earn: redirect Android visitors to Play Store with referrer
+  const headersList = await headers();
+  const userAgent = headersList.get("user-agent") || "";
+  const isAndroid = /android/i.test(userAgent);
+
+  if (isAndroid) {
+    redirect(getPlayStoreUrlWithReferrer(code));
+  }
+
   const deepLink = code
     ? `gappey://invite?code=${encodeURIComponent(code)}`
     : `gappey://invite`;
@@ -32,7 +45,7 @@ export default async function InviteDeepLinkPage({ searchParams }: Props) {
         </div>
         <h1 className="text-2xl font-bold mb-2">You&apos;re Invited to Gappey!</h1>
         <p className="text-white/60 text-sm mb-4">
-          Join voice party rooms, play ludo, send gifts, and claim welcome rewards.
+          Join voice party rooms, play casual games, send virtual gifts, and connect with friends on Gappey.
         </p>
 
         {code && (
@@ -48,7 +61,7 @@ export default async function InviteDeepLinkPage({ searchParams }: Props) {
           href={deepLink}
           className="block w-full py-3.5 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-black font-bold rounded-xl mb-3 shadow-md transition"
         >
-          Open Gappey & Claim Reward
+          Open Gappey &amp; Claim Reward
         </a>
 
         <div className="text-xs text-white/40 my-4 flex items-center justify-center gap-2">
@@ -57,21 +70,8 @@ export default async function InviteDeepLinkPage({ searchParams }: Props) {
           <span className="h-px bg-white/10 flex-1" />
         </div>
 
-        <div className="flex flex-col gap-2.5">
-          <a
-            href={PLAY_STORE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full py-3 bg-white/10 hover:bg-white/15 text-white font-medium rounded-xl text-sm transition"
-          >
-            Get it on Google Play
-          </a>
-          <a
-            href={APK_DOWNLOAD_URL}
-            className="w-full py-3 bg-white/5 hover:bg-white/10 text-white/80 hover:text-white font-medium rounded-xl text-sm transition"
-          >
-            Direct APK Download
-          </a>
+        <div className="flex justify-center">
+          <GetTheApp code={code} />
         </div>
       </div>
     </main>
