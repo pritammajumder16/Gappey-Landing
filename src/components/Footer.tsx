@@ -51,9 +51,9 @@ export default function Footer() {
   return (
     <footer className="relative bg-[#040408] border-t border-white/10 pt-16 pb-12 overflow-hidden text-zinc-400 text-xs sm:text-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-white/10">
+        <div className="grid grid-cols-2 md:grid-cols-12 gap-x-6 gap-y-9 pb-10 sm:pb-12 border-b border-white/10">
           {/* Brand Col */}
-          <div className="md:col-span-3 space-y-4">
+          <div className="col-span-2 md:col-span-3 space-y-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-2xl overflow-hidden bg-black p-0.5 border border-purple-500/50 shadow-md shadow-purple-900/50">
                 <Image
@@ -101,11 +101,11 @@ export default function Footer() {
           </div>
 
           {/* Group 1: Company */}
-          <div className="md:col-span-2 space-y-3">
+          <div className="col-span-1 md:col-span-2 space-y-3 min-w-0">
             <h4 className="text-xs font-bold text-white uppercase tracking-wider">
               Company
             </h4>
-            <ul className="space-y-2 text-xs">
+            <ul className="space-y-0.5 text-[13px] md:text-xs [&_a:not([data-inline])]:block [&_a]:py-1.5 md:[&_a]:py-1 [&_a]:break-words">
               <li>
                 <Link href="/about" className="hover:text-purple-300 transition-colors">
                   About Us
@@ -136,11 +136,11 @@ export default function Footer() {
           </div>
 
           {/* Group 2: Legal & Compliance */}
-          <div className="md:col-span-3 space-y-3">
+          <div className="col-span-1 md:col-span-3 space-y-3 min-w-0">
             <h4 className="text-xs font-bold text-white uppercase tracking-wider">
               Legal &amp; Policy
             </h4>
-            <ul className="space-y-2 text-xs">
+            <ul className="space-y-0.5 text-[13px] md:text-xs [&_a:not([data-inline])]:block [&_a]:py-1.5 md:[&_a]:py-1 [&_a]:break-words">
               <li>
                 <Link href="/terms" className="hover:text-purple-300 transition-colors">
                   Terms &amp; Conditions
@@ -176,9 +176,10 @@ export default function Footer() {
                   href="/legal/udyam-registration-certificate.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-purple-300 hover:text-white transition-colors"
+                  data-inline
+                  className="inline-flex items-center gap-1.5 text-purple-300 hover:text-white transition-colors"
                 >
-                  <FileText className="w-3 h-3" />
+                  <FileText className="w-3 h-3 shrink-0" />
                   <span>Udyam MSME Certificate</span>
                   <ExternalLink className="w-2.5 h-2.5 opacity-60" />
                 </a>
@@ -187,11 +188,11 @@ export default function Footer() {
           </div>
 
           {/* Group 3: Support */}
-          <div className="md:col-span-2 space-y-3">
+          <div className="col-span-1 md:col-span-2 space-y-3 min-w-0">
             <h4 className="text-xs font-bold text-white uppercase tracking-wider">
               Support
             </h4>
-            <ul className="space-y-2 text-xs">
+            <ul className="space-y-0.5 text-[13px] md:text-xs [&_a:not([data-inline])]:block [&_a]:py-1.5 md:[&_a]:py-1 [&_a]:break-words">
               <li>
                 <Link href="/contact" className="hover:text-purple-300 transition-colors">
                   Help Desk &amp; Inquiries
@@ -216,7 +217,7 @@ export default function Footer() {
           </div>
 
           {/* Group 4: Get the App */}
-          <div className="md:col-span-2 space-y-3">
+          <div className="col-span-2 md:col-span-2 space-y-3">
             <h4 className="text-xs font-bold text-white uppercase tracking-wider">
               Get the App
             </h4>
@@ -235,33 +236,33 @@ export default function Footer() {
         </div>
 
         {/* Business Identity Box */}
-        <div className="mt-8 p-4 rounded-2xl bg-white/[0.02] border border-white/5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-zinc-400">
-          <div className="flex items-center gap-2">
-            <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
-            <div>
-              <span className="font-semibold text-zinc-200">{BUSINESS_IDENTITY.enterpriseName}</span>
-              <span className="text-zinc-500"> (Unit: {BUSINESS_IDENTITY.unitName})</span>
-              <span className="mx-2 text-zinc-600">·</span>
-              <span>Registration: <strong className="font-mono text-zinc-300">{BUSINESS_IDENTITY.registrationNumber}</strong></span>
-              <span className="mx-2 text-zinc-600">·</span>
-              <span>{BUSINESS_IDENTITY.registeredAddress}</span>
+        <div className="mt-8 p-4 rounded-2xl bg-white/[0.02] border border-white/5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs text-zinc-400">
+          <div className="flex items-start gap-2.5 min-w-0">
+            <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+            <div className="space-y-1 min-w-0 break-words">
+              <p>
+                <span className="font-semibold text-zinc-200">{BUSINESS_IDENTITY.enterpriseName}</span>
+                <span className="text-zinc-500"> (Unit: {BUSINESS_IDENTITY.unitName})</span>
+              </p>
+              <p>Registration: <strong className="font-mono text-zinc-300 break-all">{BUSINESS_IDENTITY.registrationNumber}</strong></p>
+              <p>{BUSINESS_IDENTITY.registeredAddress}</p>
             </div>
           </div>
           <a
             href="/legal/udyam-registration-certificate.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[11px] text-purple-300 hover:text-white underline underline-offset-4 whitespace-nowrap"
+            className="shrink-0 inline-flex items-center justify-center gap-1.5 rounded-xl border border-purple-400/30 bg-purple-500/10 px-3 py-2.5 text-[12px] font-semibold text-purple-200 hover:text-white hover:bg-purple-500/20 transition-colors"
           >
-            View Official MSME Certificate
+            <FileText className="w-3.5 h-3.5" /> View Official MSME Certificate
           </a>
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500 text-center sm:text-left">
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-center sm:text-left">
             <p>© {new Date().getFullYear()} {BUSINESS_IDENTITY.enterpriseName} (Unit: {BUSINESS_IDENTITY.unitName}). All rights reserved.</p>
-            <div className="flex items-center gap-4 text-[11px] text-zinc-400">
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-[12px] text-zinc-400">
               <Link href="/privacy" className="hover:text-purple-300 underline underline-offset-4 transition-colors">
                 Privacy
               </Link>

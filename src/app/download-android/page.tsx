@@ -105,7 +105,7 @@ export default function DownloadAndroidPage() {
   return (
     <main className="min-h-screen bg-[#070312] text-zinc-100 flex flex-col items-center justify-center p-4 sm:p-6 relative overflow-hidden selection:bg-amber-500 selection:text-black">
       {/* Background Ambience */}
-      <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-br from-purple-800/25 via-fuchsia-900/10 to-transparent rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-full max-w-[600px] h-[600px] bg-gradient-to-br from-purple-800/25 via-fuchsia-900/10 to-transparent rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[400px] h-[400px] bg-amber-600/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="w-full max-w-md mx-auto z-10 flex flex-col items-center text-center">

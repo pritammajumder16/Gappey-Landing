@@ -97,6 +97,16 @@ export default function HeroSection({ onScrollToDownload: _onScrollToDownload }:
               </Link>
             </div>
 
+            <p className="text-xs sm:text-sm text-zinc-400 text-center lg:text-left">
+              Looking for a direct installation?{" "}
+              <Link
+                href="/download-android"
+                className="font-semibold text-amber-300 hover:text-amber-200 underline underline-offset-4 whitespace-nowrap"
+              >
+                Visit our Android download page
+              </Link>
+            </p>
+
             {/* Metrics */}
             <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 max-w-lg mx-auto lg:mx-0">
               <div className="text-center lg:text-left">

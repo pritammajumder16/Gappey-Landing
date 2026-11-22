@@ -19,9 +19,9 @@ export default function LegalPageLayout({
   children,
 }: LegalPageLayoutProps) {
   return (
-    <div className="min-h-screen bg-[#07070c] text-zinc-300 font-sans selection:bg-amber-500 selection:text-black">
+    <div className="relative min-h-screen overflow-x-clip bg-[#07070c] text-zinc-300 font-sans selection:bg-amber-500 selection:text-black">
       {/* Background Ambience */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-purple-700/10 blur-[140px] rounded-full pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[700px] h-[350px] bg-purple-700/10 blur-[140px] rounded-full pointer-events-none" />
 
       {/* Sticky Header */}
       <header className="border-b border-white/10 bg-[#090814]/80 backdrop-blur-xl sticky top-0 z-40">

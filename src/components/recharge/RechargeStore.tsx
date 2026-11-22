@@ -21,6 +21,14 @@ import {
   Star,
   Clock,
   RefreshCw,
+  Crown,
+  Gem,
+  Car,
+  MessageCircle,
+  BadgeCheck,
+  Palette,
+  ArrowRight,
+  Check,
 } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 import {
@@ -38,7 +46,6 @@ interface FirstRewardCard {
   name: string;
   duration: string;
   type: string;
-  icon: string;
   imageUrl?: string;
   isPermanent?: boolean;
 }
@@ -47,9 +54,7 @@ const FIRST_TIER_STATIC_REWARDS: Record<"A" | "B" | "C", {
   netInr: number;
   storePrice: number;
   packId: string;
-  valueLabel: string;
   tag?: string;
-  extraMessaging: string;
   bonusGold: number;
   rewards: FirstRewardCard[];
 }> = {
@@ -57,51 +62,55 @@ const FIRST_TIER_STATIC_REWARDS: Record<"A" | "B" | "C", {
     netInr: 50,
     storePrice: 59,
     packId: "topup_59",
-    valueLabel: "₹500 value",
-    extraMessaging: "+500,000 Bonus Gold, Permanent Frame, 15-day Cruiser, and 7-day VIP 1 trial.",
     bonusGold: 500000,
     rewards: [
-      { name: "Starter Avatar Frame", duration: "Permanent", type: "frame", icon: "👑", isPermanent: true },
-      { name: "Starter Cruiser Ride", duration: "15 days", type: "ride", icon: "🚗" },
-      { name: "Starter Chat Bubble", duration: "7 days", type: "bubble", icon: "💬" },
-      { name: "6-Char Custom ID", duration: "15 days", type: "id", icon: "🆔" },
-      { name: "Leader VIP 1 Trial", duration: "7 days", type: "voucher", icon: "⭐" },
+      { name: "Starter Avatar Frame", duration: "Permanent", type: "frame", isPermanent: true },
+      { name: "Starter Cruiser Ride", duration: "15 days", type: "ride" },
+      { name: "Starter Chat Bubble", duration: "7 days", type: "bubble" },
+      { name: "6-Char Custom ID", duration: "15 days", type: "id" },
+      { name: "Leader VIP 1 Trial", duration: "7 days", type: "voucher" },
     ],
   },
   B: {
     netInr: 500,
     storePrice: 579,
     packId: "topup_579",
-    valueLabel: "₹3,500 value",
     tag: "Popular upgrade",
-    extraMessaging: "+4,000,000 Bonus Gold, 60-day Gold Patron set, and Prince VIP 3 trial.",
     bonusGold: 4000000,
     rewards: [
-      { name: "Gold Patron Frame", duration: "60 days", type: "frame", icon: "👑" },
-      { name: "Gold Patron Ride", duration: "60 days", type: "ride", icon: "🏎️" },
-      { name: "Gold Patron Bubble", duration: "60 days", type: "bubble", icon: "💬" },
-      { name: "Room Theme & Mic Wave", duration: "30 days", type: "theme", icon: "✨" },
-      { name: "Prince VIP 3 Trial", duration: "15 days", type: "voucher", icon: "⭐" },
-      { name: "Noble SVIP 2 Trial", duration: "15 days", type: "voucher", icon: "🌟" },
+      { name: "Gold Patron Frame", duration: "60 days", type: "frame" },
+      { name: "Gold Patron Ride", duration: "60 days", type: "ride" },
+      { name: "Gold Patron Bubble", duration: "60 days", type: "bubble" },
+      { name: "Room Theme & Mic Wave", duration: "30 days", type: "theme" },
+      { name: "Prince VIP 3 Trial", duration: "15 days", type: "voucher" },
+      { name: "Noble SVIP 2 Trial", duration: "15 days", type: "voucher" },
     ],
   },
   C: {
     netInr: 5000,
     storePrice: 5799,
     packId: "topup_5799",
-    valueLabel: "₹35,000 value",
     tag: "Most rewards",
-    extraMessaging: "+50,000,000 Bonus Gold, Permanent 4-char ID, Sovereign set, and 30-day Daily Chest!",
     bonusGold: 50000000,
     rewards: [
-      { name: "Permanent 4-Char ID", duration: "Permanent", type: "id", icon: "💎", isPermanent: true },
-      { name: "Sovereign Avatar Frame", duration: "Permanent", type: "frame", icon: "👑", isPermanent: true },
-      { name: "Sovereign Luxury Ride", duration: "Permanent", type: "ride", icon: "🚀", isPermanent: true },
-      { name: "Sovereign Chat Bubble", duration: "Permanent", type: "bubble", icon: "💬", isPermanent: true },
-      { name: "President VIP 6 Trial", duration: "30 days", type: "voucher", icon: "⭐" },
-      { name: "30-Day Daily Chest (15M)", duration: "30 days", type: "chest", icon: "🎁" },
+      { name: "Permanent 4-Char ID", duration: "Permanent", type: "id", isPermanent: true },
+      { name: "Sovereign Avatar Frame", duration: "Permanent", type: "frame", isPermanent: true },
+      { name: "Sovereign Luxury Ride", duration: "Permanent", type: "ride", isPermanent: true },
+      { name: "Sovereign Chat Bubble", duration: "Permanent", type: "bubble", isPermanent: true },
+      { name: "President VIP 6 Trial", duration: "30 days", type: "voucher" },
+      { name: "30-Day Daily Chest (15M)", duration: "30 days", type: "chest" },
     ],
   },
+};
+
+const REWARD_ICON: Record<string, React.ComponentType<{ className?: string }>> = {
+  frame: Crown,
+  ride: Car,
+  bubble: MessageCircle,
+  id: BadgeCheck,
+  voucher: Star,
+  theme: Palette,
+  chest: Gift,
 };
 
 export default function RechargeStore() {
@@ -295,6 +304,9 @@ export default function RechargeStore() {
   };
 
   const currentFirstTierConfig = FIRST_TIER_STATIC_REWARDS[activeFirstTier];
+  const firstPack = tiers.find((t) => t.id === currentFirstTierConfig.packId);
+  const firstBonusGold = firstPack?.firstRechargeRewards?.bonusGold ?? currentFirstTierConfig.bonusGold;
+  const firstWorthInr = firstPack?.firstRechargeItemsValueInr ?? 0;
 
   return (
     <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
@@ -402,30 +414,29 @@ export default function RechargeStore() {
         )}
       </div>
 
-      {/* FIRST RECHARGE BONUS CARDS (Shown while unclaimed) */}
+      {/* FIRST RECHARGE GIFTS (shown while any tier is unclaimed) */}
       {showFirstRechargeBanner && (
-        <div className="relative mb-10 p-5 sm:p-7 rounded-3xl bg-gradient-to-r from-[#1b1435] via-[#150e2b] to-[#0e0a1f] border border-amber-400/30 shadow-[0_0_50px_rgba(255,215,0,0.12)] overflow-hidden">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5">
-            <div>
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/20 border border-amber-400/40 text-amber-300 text-xs font-bold uppercase tracking-wider mb-2">
-                <Gift className="w-3.5 h-3.5" />
-                <span>First Recharge Rewards Available</span>
-              </div>
-              <h3 className="text-xl sm:text-2xl font-black text-white">
-                First Recharge Packages
-              </h3>
-              <p className="text-xs sm:text-sm text-zinc-300 mt-0.5">
-                {currentFirstTierConfig.extraMessaging}
+        <div className="relative mb-10 rounded-3xl p-[1.5px] bg-gradient-to-br from-amber-300 via-fuchsia-500/60 to-purple-600/60 shadow-[0_0_60px_rgba(251,191,36,0.18)]">
+          <div className="relative overflow-hidden rounded-[22px] bg-gradient-to-b from-[#1c1238] via-[#140d2a] to-[#0d0820] p-4 sm:p-7">
+            <div className="pointer-events-none absolute -top-24 -right-16 h-56 w-56 rounded-full bg-amber-400/15 blur-3xl" />
+            <div className="pointer-events-none absolute -bottom-24 -left-16 h-56 w-56 rounded-full bg-fuchsia-500/15 blur-3xl" />
+
+            <div className="relative flex flex-col gap-1.5 mb-5 text-center sm:text-left">
+              <span className="inline-flex items-center gap-1.5 self-center sm:self-start px-3 py-1 rounded-full bg-amber-400/15 border border-amber-400/40 text-amber-300 text-[11px] font-black uppercase tracking-wider">
+                <Gift className="w-3.5 h-3.5" /> One-time gifts
+              </span>
+              <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">First Recharge Gifts</h3>
+              <p className="text-xs sm:text-sm text-zinc-300">
+                Recharge once at ₹{FIRST_TIER_STATIC_REWARDS.A.netInr}, ₹{FIRST_TIER_STATIC_REWARDS.B.netInr.toLocaleString("en-IN")} or ₹{FIRST_TIER_STATIC_REWARDS.C.netInr.toLocaleString("en-IN")} and unlock exclusive items on top of your coins.
               </p>
             </div>
 
-            {/* Amount-only Tabs (₹50, ₹500, ₹5,000) */}
-            <div className="flex items-center gap-2 p-1.5 bg-black/40 rounded-2xl border border-white/10 self-start sm:self-auto">
+            {/* Amount tabs */}
+            <div className="relative grid grid-cols-3 gap-2 sm:gap-3 mb-5">
               {(["A", "B", "C"] as const).map((tierKey) => {
                 const conf = FIRST_TIER_STATIC_REWARDS[tierKey];
                 const isSelected = activeFirstTier === tierKey;
                 const isClaimed = isTierClaimed(tierKey);
-
                 return (
                   <button
                     key={tierKey}
@@ -434,63 +445,87 @@ export default function RechargeStore() {
                       setActiveFirstTier(tierKey);
                       setSelectedTierId(conf.packId);
                     }}
-                    className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-black transition-all flex items-center gap-1.5 ${
+                    aria-pressed={isSelected}
+                    className={`relative rounded-2xl px-2 py-3 sm:py-4 text-center transition-all duration-200 ${
                       isSelected
-                        ? "bg-gradient-to-r from-amber-400 to-yellow-400 text-zinc-950 shadow-md"
-                        : "text-zinc-400 hover:text-white hover:bg-white/5"
-                    }`}
+                        ? "bg-gradient-to-b from-amber-300 to-amber-500 text-zinc-950 shadow-[0_8px_30px_rgba(251,191,36,0.35)] scale-[1.03]"
+                        : "bg-white/[0.05] border border-white/10 text-zinc-200 hover:bg-white/[0.09]"
+                    } ${isClaimed ? "opacity-60" : ""}`}
                   >
-                    <span>₹{conf.netInr.toLocaleString("en-IN")}</span>
-                    {isClaimed ? (
-                      <span className="text-[10px] px-1 py-0.2 rounded bg-zinc-800 text-zinc-400 font-normal">
-                        Claimed
-                      </span>
-                    ) : (
-                      <span className={`text-[10px] px-1.5 py-0.2 rounded font-bold ${
-                        isSelected ? "bg-black/20 text-zinc-950" : "bg-amber-400/20 text-amber-300"
-                      }`}>
-                        {conf.valueLabel}
+                    <span className="block text-xl sm:text-2xl font-black leading-none">₹{conf.netInr.toLocaleString("en-IN")}</span>
+                    <span className={`mt-1 block text-[10px] sm:text-[11px] font-bold uppercase tracking-wide ${isSelected ? "text-zinc-900/70" : "text-zinc-400"}`}>
+                      {isClaimed ? "Claimed" : conf.tag ?? "First gift"}
+                    </span>
+                    {isClaimed && (
+                      <span className="absolute -top-2 -right-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white shadow">
+                        <Check className="h-3 w-3" />
                       </span>
                     )}
                   </button>
                 );
               })}
             </div>
-          </div>
 
-          {/* Reward Items Cards for Selected Tab */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
-            {currentFirstTierConfig.rewards.map((reward, idx) => (
-              <div
-                key={idx}
-                className="p-3 rounded-2xl bg-black/30 border border-white/10 flex flex-col items-center text-center justify-between"
-              >
-                <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-400/20 flex items-center justify-center text-lg mb-2">
-                  {reward.icon}
-                </div>
-                <div>
-                  <div className="text-xs font-bold text-white leading-tight">
-                    {reward.name}
-                  </div>
-                  <div className="text-[10px] text-amber-300 font-semibold mt-1">
-                    {reward.duration}
-                  </div>
-                </div>
+            {/* Selected gift: what you get */}
+            <div className="relative rounded-2xl bg-black/30 border border-white/10 p-3 sm:p-5">
+              <div className="flex flex-wrap items-center gap-2 mb-4">
+                <span className="inline-flex items-center gap-1.5 rounded-xl bg-amber-400/15 border border-amber-400/30 px-2.5 py-1.5 text-xs font-black text-amber-300">
+                  <Coins className="w-3.5 h-3.5" /> +{firstBonusGold.toLocaleString("en-IN")} bonus Gold
+                </span>
+                {firstPack && (
+                  <span className="inline-flex items-center gap-1.5 rounded-xl bg-purple-500/15 border border-purple-400/30 px-2.5 py-1.5 text-xs font-black text-purple-200">
+                    <Sparkles className="w-3.5 h-3.5" /> {firstPack.superCoins.toLocaleString("en-IN")} Super Coins
+                  </span>
+                )}
+                {firstPack?.exp ? (
+                  <span className="inline-flex items-center gap-1.5 rounded-xl bg-pink-500/15 border border-pink-400/30 px-2.5 py-1.5 text-xs font-black text-pink-200">
+                    <Crown className="w-3.5 h-3.5" /> +{firstPack.exp.toLocaleString("en-IN")} SVIP EXP
+                  </span>
+                ) : null}
+                {firstWorthInr > 0 && (
+                  <span className="inline-flex items-center gap-1.5 rounded-xl bg-emerald-500/15 border border-emerald-400/30 px-2.5 py-1.5 text-xs font-black text-emerald-300 sm:ml-auto">
+                    <Gem className="w-3.5 h-3.5" /> Est. worth ₹{firstWorthInr.toLocaleString("en-IN")}
+                  </span>
+                )}
               </div>
-            ))}
-          </div>
 
-          <div className="mt-4 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs text-zinc-400">
-            <span>
-              Claim by purchasing the <strong className="text-white">₹{currentFirstTierConfig.netInr} Pack</strong> below (app store price ₹{currentFirstTierConfig.storePrice}).
-            </span>
-            <button
-              type="button"
-              onClick={() => setSelectedTierId(currentFirstTierConfig.packId)}
-              className="text-amber-400 hover:text-amber-300 font-semibold underline underline-offset-4"
-            >
-              Select this pack
-            </button>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5">
+                {currentFirstTierConfig.rewards.map((reward, idx) => {
+                  const Icon = REWARD_ICON[reward.type] ?? Gift;
+                  return (
+                    <div
+                      key={idx}
+                      className="relative flex flex-col items-center text-center rounded-2xl bg-gradient-to-b from-white/[0.07] to-white/[0.02] border border-white/10 p-3 min-h-[118px]"
+                    >
+                      <div className={`mb-2 flex h-11 w-11 items-center justify-center rounded-2xl border ${reward.isPermanent ? "bg-amber-400/15 border-amber-400/40 text-amber-300" : "bg-purple-500/15 border-purple-400/30 text-purple-200"}`}>
+                        <Icon className="h-5 w-5" />
+                      </div>
+                      <div className="text-[12px] font-bold text-white leading-tight">{reward.name}</div>
+                      <span className={`mt-auto pt-2 inline-block rounded-full px-2 py-0.5 text-[10px] font-black ${reward.isPermanent ? "bg-amber-400 text-zinc-950" : "bg-white/10 text-amber-200"}`}>
+                        {reward.duration}
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="relative mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <p className="text-[11px] sm:text-xs text-zinc-400 text-center sm:text-left">
+                Claimed by buying the <strong className="text-white">₹{currentFirstTierConfig.netInr.toLocaleString("en-IN")}</strong> pack (₹{currentFirstTierConfig.storePrice.toLocaleString("en-IN")} in the app). One claim per account, shared with the app.
+              </p>
+              <button
+                type="button"
+                disabled={isTierClaimed(activeFirstTier)}
+                onClick={() => {
+                  setSelectedTierId(currentFirstTierConfig.packId);
+                  document.getElementById("checkout")?.scrollIntoView({ behavior: "smooth", block: "center" });
+                }}
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-300 to-amber-500 px-5 py-3 text-sm font-black text-zinc-950 shadow-lg shadow-amber-500/25 transition active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {isTierClaimed(activeFirstTier) ? "Already claimed" : <>Claim with ₹{currentFirstTierConfig.netInr.toLocaleString("en-IN")} <ArrowRight className="h-4 w-4" /></>}
+              </button>
+            </div>
           </div>
         </div>
       )}
@@ -518,88 +553,98 @@ export default function RechargeStore() {
             <p className="text-xs text-zinc-400">Loading live top-up catalog from server...</p>
           </div>
         ) : (
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
             {tiers.map((tier) => {
               const isSelected = tier.id === selectedTierId;
               const webPrice = tier.webPrice || tier.netInr || tier.inrPrice;
-              const storePrice = tier.storePrice || Math.round(webPrice * 1.15);
-              const totalGold = tier.totalGold || tier.totalCoins || tier.baseGold || tier.baseCoins;
-              const superCoins = tier.superCoins || (tier.netInr ? tier.netInr * 10000 : webPrice * 10000);
-              const isPopular = tier.isPopular || tier.id === "topup_119";
-              const isBestValue = tier.isBestValue || tier.id === "topup_1199";
+              const storePrice = tier.storePrice || tier.inrPrice;
+              const saved = Math.max(0, storePrice - webPrice);
+              const baseGold = tier.baseGold || tier.baseCoins;
+              const bonusGold = tier.bonusGold ?? tier.tierBonusCoins ?? 0;
+              const totalGold = tier.totalGold || tier.totalCoins || baseGold;
+              const superCoins = tier.superCoins;
+              const isPopular = tier.isPopular;
+              const isBestValue = tier.isBestValue;
+              const isFirstTier = Boolean(tier.firstRechargeTier) && !isTierClaimed(tier.firstRechargeTier as "A" | "B" | "C");
 
               return (
-                <div
+                <button
+                  type="button"
                   key={tier.id}
                   onClick={() => setSelectedTierId(tier.id)}
-                  className={`group relative rounded-2xl p-4 cursor-pointer transition-all duration-200 flex flex-col justify-between ${
+                  aria-pressed={isSelected}
+                  className={`group relative flex flex-col rounded-2xl p-3 sm:p-4 text-left transition-all duration-200 ${
                     isSelected
-                      ? "bg-gradient-to-b from-[#251a4a] to-[#140e2b] border-2 border-amber-400 shadow-[0_0_30px_rgba(255,215,0,0.25)] scale-[1.02]"
-                      : "bg-[#100c1e]/80 border border-purple-900/30 hover:border-purple-500/40 hover:bg-[#16102b]"
+                      ? "bg-gradient-to-b from-[#2b1d57] to-[#150f2e] border-2 border-amber-400 shadow-[0_10px_40px_rgba(251,191,36,0.25)] scale-[1.02]"
+                      : "bg-gradient-to-b from-[#16102b] to-[#0e0a1d] border border-white/10 hover:border-purple-400/50"
                   }`}
                 >
-                  {/* Badges */}
-                  {isPopular ? (
-                    <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-gradient-to-r from-pink-600 to-purple-600 text-[10px] font-black uppercase tracking-wider text-white shadow-md flex items-center gap-1 z-10 whitespace-nowrap">
-                      <Flame className="w-3 h-3 text-white fill-white" />
-                      <span>Popular</span>
+                  {(isPopular || isBestValue || isFirstTier || bonusGold > 0) && (
+                    <span
+                      className={`absolute -top-2.5 left-3 inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider shadow-md whitespace-nowrap ${
+                        isPopular
+                          ? "bg-gradient-to-r from-pink-600 to-purple-600 text-white"
+                          : isBestValue
+                          ? "bg-gradient-to-r from-amber-400 to-yellow-300 text-zinc-950"
+                          : isFirstTier
+                          ? "bg-amber-400/20 border border-amber-400 text-amber-300"
+                          : "bg-purple-500/25 border border-purple-400/60 text-purple-200"
+                      }`}
+                    >
+                      {isPopular ? <Flame className="h-3 w-3" /> : isBestValue ? <Star className="h-3 w-3" /> : <Gift className="h-3 w-3" />}
+                      {isPopular ? "Popular" : isBestValue ? "Best value" : isFirstTier ? "First gift" : `+${tier.bonusPercent}% Gold`}
                     </span>
-                  ) : isBestValue ? (
-                    <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-gradient-to-r from-amber-500 to-yellow-400 text-[10px] font-black uppercase tracking-wider text-zinc-950 shadow-md flex items-center gap-1 z-10 whitespace-nowrap">
-                      <Star className="w-3 h-3 text-zinc-950 fill-zinc-950" />
-                      <span>Best Value</span>
+                  )}
+
+                  <div className="flex items-center gap-2.5 mt-1">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-300/25 to-amber-600/10 border border-amber-400/30">
+                      <Coins className="h-5 w-5 text-amber-300" />
                     </span>
-                  ) : tier.firstRechargeTier && !isTierClaimed(tier.firstRechargeTier) ? (
-                    <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-amber-400/20 border border-amber-400 text-[10px] font-black uppercase tracking-wider text-amber-300 shadow-md z-10 whitespace-nowrap">
-                      Tier {tier.firstRechargeTier} Pack
-                    </span>
-                  ) : tier.bonusPercent && tier.bonusPercent > 0 ? (
-                    <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-purple-500/20 border border-purple-400 text-[10px] font-black uppercase tracking-wider text-purple-300 shadow-md z-10 whitespace-nowrap">
-                      +{tier.bonusPercent}% Gold
-                    </span>
-                  ) : null}
-
-                  {/* Card Content */}
-                  <div className="flex flex-col items-center text-center">
-                    <span className="text-xs font-black text-white/90 tracking-wide uppercase mt-1 mb-2">
-                      {tier.displayName || `₹${webPrice} Pack`}
-                    </span>
-
-                    <div className="w-10 h-10 rounded-2xl bg-amber-400/10 border border-amber-400/20 flex items-center justify-center mb-2">
-                      <Coins className="w-5 h-5 text-amber-400" />
-                    </div>
-
-                    <div className="text-base font-black text-white tracking-tight">
-                      {totalGold.toLocaleString("en-IN")}
-                    </div>
-                    <div className="text-[10px] uppercase font-bold text-amber-300/80 mb-2">
-                      Gold Coins
-                    </div>
-
-                    {/* Super Coins Row */}
-                    <div className="inline-flex items-center justify-center gap-1 px-2 py-0.5 rounded-lg bg-amber-400/10 border border-amber-400/20 text-[#fbbf24] text-[11px] font-black mb-2 shadow-sm">
-                      <Sparkles className="w-3 h-3 text-amber-400 shrink-0" />
-                      <span>+{superCoins.toLocaleString("en-IN")} SC</span>
-                    </div>
-
-                    {/* Price Comparison */}
-                    <div className="text-[10px] text-zinc-400 mb-3 min-h-[16px] flex items-center gap-1.5 justify-center">
-                      <span className="line-through text-zinc-500">₹{storePrice} app</span>
-                      <span className="text-emerald-400 font-semibold">Web deal</span>
+                    <div className="min-w-0">
+                      <div className="text-[17px] sm:text-lg font-black leading-tight text-white tracking-tight">{totalGold.toLocaleString("en-IN")}</div>
+                      <div className="text-[10px] font-bold uppercase text-amber-300/80">Gold Coins</div>
                     </div>
                   </div>
 
-                  {/* Net INR Price tag */}
-                  <div
-                    className={`w-full py-1.5 rounded-xl font-black text-sm tracking-tight transition-colors text-center ${
-                      isSelected
-                        ? "bg-gradient-to-r from-amber-400 to-yellow-400 text-zinc-950 shadow-md"
-                        : "bg-white/5 text-zinc-200 group-hover:bg-white/10 group-hover:text-white"
-                    }`}
-                  >
-                    ₹{webPrice} Net
+                  {bonusGold > 0 ? (
+                    <div className="mt-2.5 rounded-lg bg-emerald-500/10 border border-emerald-400/25 px-2 py-1 text-[11px] font-bold text-emerald-300">
+                      {baseGold.toLocaleString("en-IN")} + {bonusGold.toLocaleString("en-IN")} bonus
+                    </div>
+                  ) : (
+                    <div className="mt-2.5 rounded-lg bg-white/[0.04] border border-white/10 px-2 py-1 text-[11px] font-semibold text-zinc-400">
+                      {baseGold.toLocaleString("en-IN")} base Gold
+                    </div>
+                  )}
+
+                  <div className="mt-2 space-y-1.5">
+                    <div className="flex items-center gap-1.5 text-[11px] font-black text-purple-200">
+                      <Sparkles className="h-3.5 w-3.5 shrink-0 text-purple-300" />
+                      <span className="leading-tight">{superCoins.toLocaleString("en-IN")} Super Coins</span>
+                    </div>
+                    {tier.exp ? (
+                      <div className="flex items-center gap-1.5 text-[11px] font-black text-pink-200">
+                        <Crown className="h-3.5 w-3.5 shrink-0 text-pink-300" />
+                        <span>+{tier.exp.toLocaleString("en-IN")} SVIP EXP</span>
+                      </div>
+                    ) : null}
                   </div>
-                </div>
+
+                  <div className="mt-auto pt-3">
+                    <div className="flex items-baseline justify-between gap-2 mb-1.5 min-h-[18px]">
+                      <span className="text-[10px] text-zinc-500 line-through">₹{storePrice.toLocaleString("en-IN")} in app</span>
+                      {saved > 0 && <span className="text-[10px] font-black text-emerald-400">Save ₹{saved.toLocaleString("en-IN")}</span>}
+                    </div>
+                    <div
+                      className={`w-full rounded-xl py-2 text-center text-base font-black tracking-tight transition-colors ${
+                        isSelected
+                          ? "bg-gradient-to-r from-amber-300 to-amber-500 text-zinc-950 shadow-md"
+                          : "bg-white/[0.07] text-white group-hover:bg-white/[0.12]"
+                      }`}
+                    >
+                      ₹{webPrice.toLocaleString("en-IN")}
+                    </div>
+                  </div>
+                </button>
               );
             })}
           </div>
@@ -664,7 +709,7 @@ export default function RechargeStore() {
       )}
 
       {/* CHECKOUT ACTION BAR */}
-      <div className="p-6 rounded-3xl bg-gradient-to-r from-[#17122b] via-[#110d21] to-[#0d0918] border border-purple-500/20 shadow-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-12">
+      <div id="checkout" className="scroll-mt-24 p-5 sm:p-6 rounded-3xl bg-gradient-to-r from-[#17122b] via-[#110d21] to-[#0d0918] border border-purple-500/20 shadow-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-12">
         <div>
           {/* USER NAME AND ID SHOWN BEFORE PAYING */}
           {session && user ? (

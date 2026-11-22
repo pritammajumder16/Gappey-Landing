@@ -69,6 +69,8 @@ export interface CashfreeTier {
   isBestValue?: boolean;
   firstRechargeTier?: "A" | "B" | "C";
   firstRechargeRewards?: FirstRechargeTierRewards;
+  /** Server-estimated worth in INR of the priced first-recharge reward items (shown as "Est. worth"). */
+  firstRechargeItemsValueInr?: number;
   firstRechargeBonusPercent?: number;
   firstRechargeBonusCoins?: number;
   firstRechargeTotalCoins?: number;

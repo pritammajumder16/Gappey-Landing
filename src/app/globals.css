@@ -12,7 +12,12 @@
     --glow-pink: #ff1493;
   }
 
+  html {
+    overflow-x: clip;
+  }
+
   body {
+    max-width: 100vw;
     background-color: #06060c;
     color: #f3f4f6;
     overflow-x: hidden;
