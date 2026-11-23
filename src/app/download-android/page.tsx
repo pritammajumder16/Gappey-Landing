@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { Download, AlertCircle, RefreshCw, CheckCircle2, ShieldAlert } from "lucide-react";
-import { APK_DOWNLOAD_URL, APP_VERSION, PLAY_STORE_URL } from "@/constants/links";
+import { APK_DOWNLOAD_URL, APK_SIZE_BYTES, APP_VERSION, PLAY_STORE_URL } from "@/constants/links";
 
 interface ReleaseMetadata {
   active: boolean;
@@ -14,89 +14,11 @@ interface ReleaseMetadata {
 }
 
 export default function DownloadAndroidPage() {
-  const [release, setRelease] = useState<ReleaseMetadata | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  const fetchRelease = async () => {
-    setError(null);
-    try {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "https://api.gappey.in";
-      const res = await fetch(`${apiUrl}/system-config/active-android-release`, {
-        cache: "no-store",
-      });
-      if (res.ok) {
-        const data = await res.json();
-        if (data.active === false) {
-          setError(data.reason || "The active Android release has been temporarily withdrawn.");
-          setRelease(data);
-        } else {
-          setRelease(data);
-        }
-      } else {
-        // Fallback to static release constants
-        setRelease({
-          active: true,
-          version: APP_VERSION,
-          apkUrl: APK_DOWNLOAD_URL,
-          sizeBytes: 109665390,
-        });
-      }
-    } catch {
-      // Offline or network error: fallback to default constants
-      setRelease({
-        active: true,
-        version: APP_VERSION,
-        apkUrl: APK_DOWNLOAD_URL,
-        sizeBytes: 109665390,
-      });
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    let alive = true;
-    const load = async () => {
-      try {
-        const apiUrl = process.env.NEXT_PUBLIC_API_URL || "https://api.gappey.in";
-        const res = await fetch(`${apiUrl}/system-config/active-android-release`, {
-          cache: "no-store",
-        });
-        if (!alive) return;
-        if (res.ok) {
-          const data = await res.json();
-          if (data.active === false) {
-            setError(data.reason || "The active Android release has been temporarily withdrawn.");
-            setRelease(data);
-          } else {
-            setRelease(data);
-          }
-        } else {
-          setRelease({
-            active: true,
-            version: APP_VERSION,
-            apkUrl: APK_DOWNLOAD_URL,
-            sizeBytes: 109665390,
-          });
-        }
-      } catch {
-        if (!alive) return;
-        setRelease({
-          active: true,
-          version: APP_VERSION,
-          apkUrl: APK_DOWNLOAD_URL,
-          sizeBytes: 109665390,
-        });
-      } finally {
-        if (alive) setLoading(false);
-      }
-    };
-    void load();
-    return () => {
-      alive = false;
-    };
-  }, []);
+  // The landing page always offers the current production build (constants); it no longer asks the legacy API.
+  const release: ReleaseMetadata = { active: true, version: APP_VERSION, apkUrl: APK_DOWNLOAD_URL, sizeBytes: APK_SIZE_BYTES };
+  const loading = false;
+  const error: string | null = null;
+  const fetchRelease = () => {};
 
   const apkDownloadUrl = release?.apkUrl || APK_DOWNLOAD_URL;
   const versionLabel = release?.version ? (release.version.startsWith("v") ? release.version : `v${release.version}`) : APP_VERSION;
