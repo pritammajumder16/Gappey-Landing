@@ -9,9 +9,7 @@ export const APK_SIZE_BYTES = 116699925;
 
 export const APK_DIRECT_DOWNLOAD = APK_DOWNLOAD_URL;
 
-// Universal build (32-bit + 64-bit ARM) for older / low-tier Android devices
-export const APK_ALL_DEVICES_FILENAME = `gappey_${APP_VERSION}_all-devices.apk`;
-export const APK_ALL_DEVICES_URL = `https://api.gappey.in/download/${APK_ALL_DEVICES_FILENAME}`;
+// The release APK is a universal build (32-bit and 64-bit ARM), so one file covers every phone.
 
 // Google Play Store listing URL
 export const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.gappey.in";

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const BACKEND_BASE_URL = (process.env.BACKEND_API_URL || "https://api.gappey.in").replace(/\/+$/, "");
+const BACKEND_BASE_URL = (process.env.BACKEND_API_URL || "https://api-v2.gappey.in").replace(/\/+$/, "");
 
 async function handleProxy(request: NextRequest, context: { params: Promise<{ path: string[] }> }) {
   try {
