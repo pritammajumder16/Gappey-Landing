@@ -252,7 +252,7 @@ export default function RechargeStore() {
 
   const selectedTier = tiers.find((t) => t.id === selectedTierId) || tiers[0];
   const selectedWebPrice = selectedTier?.webPrice ?? selectedTier?.netInr ?? selectedTier?.inrPrice ?? 10;
-  const selectedStorePrice = selectedTier?.storePrice ?? Math.round(selectedWebPrice * 1.15);
+  const selectedStorePrice = selectedTier?.storePrice ?? 0;
 
   // First recharge status: show section if any tier is unclaimed, or when not logged in
   const isTierClaimed = useCallback((tierKey: "A" | "B" | "C") => {
@@ -557,8 +557,9 @@ export default function RechargeStore() {
             {tiers.map((tier) => {
               const isSelected = tier.id === selectedTierId;
               const webPrice = tier.webPrice || tier.netInr || tier.inrPrice;
-              const storePrice = tier.storePrice || tier.inrPrice;
-              const saved = Math.max(0, storePrice - webPrice);
+              // Only show an "in app" price when the backend really sent one (the legacy pack list has none).
+              const storePrice = tier.storePrice ?? 0;
+              const saved = storePrice > webPrice ? storePrice - webPrice : 0;
               const baseGold = tier.baseGold || tier.baseCoins;
               const bonusGold = tier.bonusGold ?? tier.tierBonusCoins ?? 0;
               const totalGold = tier.totalGold || tier.totalCoins || baseGold;
@@ -631,7 +632,9 @@ export default function RechargeStore() {
 
                   <div className="mt-auto pt-3">
                     <div className="flex items-baseline justify-between gap-2 mb-1.5 min-h-[18px]">
-                      <span className="text-[10px] text-zinc-500 line-through">₹{storePrice.toLocaleString("en-IN")} in app</span>
+                      {storePrice > webPrice ? (
+                        <span className="text-[10px] text-zinc-500 line-through">₹{storePrice.toLocaleString("en-IN")} in app</span>
+                      ) : <span />}
                       {saved > 0 && <span className="text-[10px] font-black text-emerald-400">Save ₹{saved.toLocaleString("en-IN")}</span>}
                     </div>
                     <div
@@ -730,7 +733,9 @@ export default function RechargeStore() {
           <div className="flex items-baseline gap-2 mt-0.5 flex-wrap">
             <span className="text-3xl font-black text-white">₹{selectedWebPrice}</span>
             <span className="text-xs text-zinc-400 font-mono">Net INR</span>
-            <span className="text-xs text-zinc-500 line-through">₹{selectedStorePrice} App Store</span>
+            {selectedStorePrice > selectedWebPrice && (
+              <span className="text-xs text-zinc-500 line-through">₹{selectedStorePrice} App Store</span>
+            )}
             {selectedTier && (
               <span className="text-xs text-amber-400 font-semibold ml-1">
                 ({(selectedTier.totalGold || selectedTier.totalCoins || selectedTier.baseGold || 0).toLocaleString("en-IN")} Gold Coins + {(selectedTier.superCoins || selectedWebPrice * 10000).toLocaleString("en-IN")} Super Coins)

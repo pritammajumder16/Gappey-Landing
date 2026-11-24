@@ -135,7 +135,7 @@ export default function PricingPage() {
             </h3>
             <p className="text-zinc-300 leading-relaxed">
               Received by hosts exclusively from premium Super gifts.
-              Subject to mandatory PAN verification, minimum cash-out threshold of 10,000,000 SD (₹450), and applicable statutory TDS deductions.
+              Subject to mandatory PAN verification, minimum cash-out threshold of 10,000,000 SD (₹500), and applicable statutory TDS deductions.
             </p>
           </div>
         </div>

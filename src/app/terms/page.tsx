@@ -110,7 +110,7 @@ export default function TermsConditionsPage() {
               <Diamond className="w-4 h-4" /> 4. Super Diamonds (Withdrawable Creator Settlement)
             </strong>
             <p className="text-zinc-400 text-xs leading-relaxed">
-              Received by verified hosts exclusively when listeners send premium Super gifts. Super Diamonds are withdrawable in accordance with Section 6 below at the rate of 100,000 SD = ₹4.50, subject to mandatory KYC verification and Indian tax deduction laws.
+              Received by verified hosts exclusively when listeners send premium Super gifts. Super Diamonds are withdrawable in accordance with Section 6 below at the rate of 100,000 SD = ₹5, subject to mandatory KYC verification and Indian tax deduction laws.
             </p>
           </div>
         </div>
@@ -143,7 +143,7 @@ export default function TermsConditionsPage() {
           </p>
           <ul className="list-disc pl-5 space-y-1 text-xs text-zinc-400">
             <li>
-              <strong>Minimum Cash-Out Threshold:</strong> Minimum 10,000,000 Super Diamonds (equivalent to ₹450 INR) at the rate of 100,000 SD = ₹4.50. Payout packages include 10M, 50M, 100M, and 250M SD.
+              <strong>Minimum Cash-Out Threshold:</strong> Minimum 10,000,000 Super Diamonds (equivalent to ₹500 INR) at the rate of 100,000 SD = ₹5. Payout packages include 10M, 50M, 100M, and 250M SD.
             </li>
             <li>
               <strong>Mandatory KYC Verification:</strong> The host must provide valid government-issued identification (Permanent Account Number - PAN) and a bank account or UPI ID registered in the host&apos;s own legal name.
