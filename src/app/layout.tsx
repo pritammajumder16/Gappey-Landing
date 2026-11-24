@@ -107,6 +107,7 @@ const jsonLdData = {
         "https://instagram.com/gappey.india",
         "https://www.youtube.com/@GappeyIndia",
         "https://www.facebook.com/profile.php?id=61594831059345",
+        "https://play.google.com/store/apps/details?id=com.gappey.in",
       ],
     },
     {
@@ -127,6 +128,9 @@ const jsonLdData = {
       operatingSystem: "Android",
       applicationCategory: "SocialNetworkingApplication",
       downloadUrl: "https://gappey.in/download-android",
+      installUrl: "https://play.google.com/store/apps/details?id=com.gappey.in",
+      sameAs: "https://play.google.com/store/apps/details?id=com.gappey.in",
+      description: "Gappey is published on Google Play (com.gappey.in), publicly available to everyone, not a closed test or beta.",
       offers: {
         "@type": "Offer",
         price: "0",

@@ -45,7 +45,7 @@ export const FAQS: FAQItem[] = [
     category: "download",
     question: "Where can I download the official Gappey app?",
     answer:
-      "Gappey for Android is available on the Google Play Store (as well as direct download on our official download page at https://gappey.in/download-android). Simply install the app and create your account via Google Sign-In to start partying.",
+      "Gappey for Android is officially published and publicly available on the Google Play Store (package com.gappey.in, not a closed test or beta), as well as direct download on our official download page at https://gappey.in/download-android. Simply install the app and create your account via Google Sign-In to start partying.",
   },
   {
     category: "general",
