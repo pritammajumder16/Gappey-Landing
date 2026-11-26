@@ -1,11 +1,11 @@
-export const APP_VERSION = "v2.4.3";
+export const APP_VERSION = "v2.4.5";
 
 export const APK_FILENAME = `gappey_${APP_VERSION}.apk`;
 
 // Direct download from assets CDN / API VM
 export const APK_DOWNLOAD_URL = `https://api-v2.gappey.in/download/${APK_FILENAME}`;
 
-export const APK_SIZE_BYTES = 152433247;
+export const APK_SIZE_BYTES = 161094108;
 
 export const APK_DIRECT_DOWNLOAD = APK_DOWNLOAD_URL;
 
